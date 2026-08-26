@@ -1,0 +1,11 @@
+{
+  "id": "arm_yuj91",
+  "name": "反辐射导弹（演示参数）",
+  "freq_min_hz": 1000000000,
+  "freq_max_hz": 20000000000,
+  "range_km": 150,
+  "speed_mach": 2.5,
+  "seeker": "passive_rf",
+  "home_on": "emitter",
+  "memory_if_shutdown": true
+}

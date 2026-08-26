@@ -1,0 +1,24 @@
+{
+  "id": "ecm_pod_rkz",
+  "name": "有源干扰吊舱（演示参数）",
+  "mode": [
+    "noise",
+    "deception"
+  ],
+  "band": [
+    "S",
+    "X",
+    "Ku"
+  ],
+  "freq_min_hz": 2000000000,
+  "freq_max_hz": 18000000000,
+  "power_w": 100,
+  "gain_db": 20,
+  "bandwidth_hz": 20000000,
+  "techniques": [
+    "spot_noise",
+    "barrage_noise"
+  ],
+  "reaction_time_s": 0.5,
+  "max_targets": 4
+}

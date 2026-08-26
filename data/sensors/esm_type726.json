@@ -1,0 +1,14 @@
+{
+  "id": "esm_type726",
+  "name": "雷达侦察告警设备（演示参数）",
+  "kind": "esm",
+  "freq_min_hz": 500000000,
+  "freq_max_hz": 18000000000,
+  "sensitivity_dbm": -75,
+  "gain_db": 0,
+  "df_accuracy_deg": 3,
+  "param_library": [
+    "type346_search_radar"
+  ],
+  "processing_time_s": 1.5
+}
