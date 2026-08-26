@@ -1,0 +1,122 @@
+{
+  "source": "用户提供的 Type 003 福建舰公开/推测参数，用于游戏参考",
+  "platform": {
+    "id": "type003_fujian",
+    "name": "Type 003 福建舰 [18 Fujian]",
+    "side": "red",
+    "kind": "ship",
+    "year_commissioned": 2025,
+    "length_m": 316,
+    "beam_m": 76,
+    "draft_m": 11,
+    "displacement_full_t": 80000,
+    "speed_kt": 31,
+    "cruise_speed_kt": 20,
+    "crew": 3000,
+    "damage_points": 6000,
+    "missile_defense": 24,
+    "aircraft_capacity": 50
+  },
+  "sensors": [
+    {
+      "id": "type003_346a_aesa",
+      "name": "346A型 AESA 主动相控阵雷达",
+      "band": "C/S",
+      "role": "multifunction_radar",
+      "power_w": 200000,
+      "scan_interval_s": 1,
+      "notes": "集成于舰岛"
+    },
+    {
+      "id": "type003_x_aesa",
+      "name": "X波段 AESA 多功能相控阵雷达",
+      "band": "X",
+      "role": "multifunction_radar",
+      "power_w": 80000,
+      "scan_interval_s": 1,
+      "notes": "集成于舰岛"
+    },
+    {
+      "id": "type003_integrated_rf",
+      "name": "综合射频系统",
+      "band": "Multi",
+      "role": "integrated_radar_esm_ecm",
+      "notes": "集成雷达、通信、电子战功能"
+    },
+    {
+      "id": "type003_generic_esm",
+      "name": "Generic ESM",
+      "kind": "esm",
+      "sensitivity_dbm": -75
+    },
+    {
+      "id": "type003_generic_decm",
+      "name": "Generic DECM",
+      "kind": "ecm",
+      "power_w": 100,
+      "gain_db": 10
+    },
+    {
+      "id": "type003_nav_radar",
+      "name": "Generic Navigation Radar",
+      "kind": "radar",
+      "power_w": 25000,
+      "band": "X"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "type003_hpj14",
+      "name": "H/PJ-14 [Type 1130]",
+      "type": "ciws",
+      "mounts": 4,
+      "barrels": 11,
+      "caliber_mm": 30,
+      "rof_rpm": 10000,
+      "capacity": 5
+    },
+    {
+      "id": "type003_hq10",
+      "name": "HQ-10 [FL-3000N]",
+      "type": "sam",
+      "mounts": 4,
+      "cells_per_mount": 24,
+      "total_missiles": 96
+    },
+    {
+      "id": "type003_multi_launcher",
+      "name": "多用途发射装置",
+      "type": "decoy_rocket_launcher",
+      "mounts": "4座32联装 + 2座24联装"
+    },
+    {
+      "id": "type003_emals",
+      "name": "电磁弹射器",
+      "type": "catapult",
+      "tracks": 3
+    }
+  ],
+  "signatures": {
+    "passive_sonar": [
+      {"type": 1001, "band": "VLF (0-1000 Hz)", "front": 165.0, "side": 166.0, "rear": 167.0, "top": 166.0},
+      {"type": 1002, "band": "LF (1-5 KHz)", "front": 133.0, "side": 133.5, "rear": 134.5, "top": 133.5},
+      {"type": 1003, "band": "MF (5-10 KHz)", "front": 125.0, "side": 125.5, "rear": 126.5, "top": 125.5},
+      {"type": 1004, "band": "HF (10-500 KHz)", "front": 116.0, "side": 117.0, "rear": 118.0, "top": 117.0}
+    ],
+    "active_sonar": [
+      {"type": 2001, "band": "VLF-HF", "front": 120.0, "side": 1000.0, "rear": 120.0, "top": 1000.0}
+    ],
+    "visual": [
+      {"type": 3001, "meaning": "视觉探测距离", "front": 12.0, "side": 20.0, "rear": 12.0, "top": 26.0},
+      {"type": 3002, "meaning": "视觉识别距离", "front": 5.0, "side": 9.0, "rear": 5.0, "top": 10.0}
+    ],
+    "infrared": [
+      {"type": 4001, "meaning": "红外探测距离", "front": 10.0, "side": 17.0, "rear": 10.0, "top": 22.0},
+      {"type": 4002, "meaning": "红外识别距离", "front": 4.0, "side": 7.5, "rear": 4.0, "top": 8.5}
+    ],
+    "radar_rcs": [
+      {"type": 5001, "band": "A-D (30-2000 MHz)", "front": 38.0, "side": 42.0, "rear": 38.0, "top": 48.0},
+      {"type": 5002, "band": "E-M (2-100 GHz)", "front": 38.0, "side": 42.0, "rear": 38.0, "top": 48.0}
+    ]
+  }
+}

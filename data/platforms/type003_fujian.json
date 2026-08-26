@@ -1,0 +1,21 @@
+{
+  "id": "type003_fujian",
+  "name": "Type 003 福建舰 [18 Fujian]",
+  "side": "red",
+  "kind": "ship",
+  "altitude_ft": 0,
+  "speed_kt": 31,
+  "cruise_speed_kt": 20,
+  "weapons": [
+    "H/PJ-14 [Type 1130]",
+    "HQ-10 [FL-3000N]",
+    "多用途发射装置",
+    "电磁弹射器"
+  ],
+  "ciws": true,
+  "ciws_hit_probability": 0.5,
+  "ciws_range_km": 2.5,
+  "gun_range_km": 8,
+  "gun_hit_probability": 0.15,
+  "damage_points": 6000
+}
