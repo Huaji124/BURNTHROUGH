@@ -25,6 +25,7 @@ class Jammer:
     current_mode: str = "spot_noise"           # spot_noise / barrage_noise
     sector_half_deg: float = 360.0             # 干扰扇区半角，360=全向
     techniques: list[str] = field(default_factory=list)
+    active_technique: str = "none"    # none / rgpo / vgpo / false_target
     reaction_time_s: float = 0.5
     max_targets: int = 4
     emcon_state: str = "off"          # on / off
@@ -51,3 +52,10 @@ class Jammer:
     def set_mode(self, mode: str) -> None:
         if mode in ("spot_noise", "barrage_noise"):
             self.current_mode = mode
+
+    def set_technique(self, technique: str) -> None:
+        if technique in ("none", "rgpo", "vgpo", "false_target"):
+            self.active_technique = technique
+
+    def has_deception(self) -> bool:
+        return self.active_technique != "none" and self.is_jamming

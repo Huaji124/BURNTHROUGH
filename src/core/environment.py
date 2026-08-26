@@ -47,6 +47,19 @@ class Platform:
 
 
 @dataclass
+class FalseTarget:
+    """欺骗干扰产生的假目标。"""
+    id: str
+    radar_platform_id: str
+    jammer_id: str
+    latitude: float
+    longitude: float
+    age_s: float = 0.0
+    technique: str = ""
+    active: bool = True
+
+
+@dataclass
 class Environment:
     """模拟环境（Phase 2）。
 
@@ -68,6 +81,8 @@ class Environment:
     memory_ttl_s: float = 20.0        # 信号丢失后保留记忆接触的时长
     contact_ttl_s: float = 60.0       # 接触总生存时间
     arm_hit_probability: float = 1.0  # ARM 命中概率（蒙特卡洛时可调）
+    false_contacts: dict[str, list[FalseTarget]] = field(default_factory=dict)
+    _false_target_seq: int = 0
 
     # ------------------------------------------------------------------
     # 基础注册/查询
@@ -320,6 +335,7 @@ class Environment:
         self.step_motion(dt_s)
         self.process_attack_orders()
         self.step_missiles(dt_s)
+        self.update_deception(dt_s)
         self.update_esm(dt_s)
         self.update_contact_aging()
         self.cross_fix_contacts()
@@ -372,6 +388,115 @@ class Environment:
                 p.speed_kt = p.cruise_speed_kt
         else:
             p.speed_kt = 0.0  # 停船
+
+    # ------------------------------------------------------------------
+    # 欺骗干扰与电子防护（Phase 5）
+    # ------------------------------------------------------------------
+    def update_deception(self, dt_s: float) -> None:
+        """为每部雷达生成/维持欺骗干扰假目标。
+
+        干扰机主动使用 RGPO / VGPO / 假目标（false_target）时，
+        只有雷达的 ECCM（频率捷变/脉冲压缩/旁瓣对消）不足才可能被欺骗。
+        """
+        # 老化并清理旧假目标
+        for radar_id, targets in list(self.false_contacts.items()):
+            for t in targets:
+                t.age_s += dt_s
+                if t.age_s > 30.0:
+                    t.active = False
+            self.false_contacts[radar_id] = [t for t in targets if t.active]
+
+        for radar_platform in self.platforms.values():
+            if not radar_platform.alive:
+                continue
+            for emitter in radar_platform.emitters:
+                if emitter.emcon_state != "on":
+                    continue
+                if emitter.role not in ("multifunction_radar", "search_radar",
+                                        "fire_control_radar"):
+                    continue
+                # 本帧是否已有干扰该雷达的干扰机？
+                jammer = None
+                for other in self.platforms.values():
+                    if other.id == radar_platform.id or other.side == radar_platform.side:
+                        continue
+                    if not other.alive:
+                        continue
+                    for j in other.jammers:
+                        if not j.is_jamming or not j.has_deception():
+                            continue
+                        if not j.covers_frequency(emitter.center_freq_hz):
+                            continue
+                        if not self._jammer_sector_ok(j, other, radar_platform):
+                            continue
+                        jammer = j
+                        break
+                    if jammer is not None:
+                        break
+                if jammer is None:
+                    continue
+
+                # 检查是否已存在同干扰机对同雷达的假目标
+                existing = [t for t in self.false_contacts.get(radar_platform.id, [])
+                            if t.jammer_id == jammer.id]
+                if existing:
+                    continue
+
+                if self.rng.random() > self._deception_success_probability(emitter):
+                    continue
+
+                jammer_platform = self.platforms.get(jammer.platform_id)
+                if jammer_platform is None:
+                    continue
+                lat, lon = self._generate_false_target(
+                    radar_platform, jammer, jammer_platform)
+                self._false_target_seq += 1
+                self.false_contacts.setdefault(radar_platform.id, []).append(FalseTarget(
+                    id=f"false-{self._false_target_seq}",
+                    radar_platform_id=radar_platform.id,
+                    jammer_id=jammer.id,
+                    latitude=lat,
+                    longitude=lon,
+                    age_s=0.0,
+                    technique=jammer.active_technique,
+                ))
+
+    @staticmethod
+    def _deception_success_probability(emitter: Emitter) -> float:
+        """欺骗干扰成功率 = 基础成功率 - 雷达 ECCM 抵抗力。"""
+        base = 0.75
+        return max(0.05, base - emitter.ecm_resistance)
+
+    def _generate_false_target(self, radar_platform: Platform,
+                               jammer: Jammer, jammer_platform: Platform) -> tuple[float, float]:
+        """根据欺骗技术生成假目标位置。"""
+        bearing = initial_bearing_deg(radar_platform.latitude, radar_platform.longitude,
+                                      jammer_platform.latitude, jammer_platform.longitude)
+        if jammer.active_technique == "rgpo":
+            # 距离拖引：沿雷达-干扰机连线向远处多拉 8~30 km
+            offset_km = self.rng.uniform(8.0, 30.0)
+            lon_offset = offset_km / (111.32 * math.cos(math.radians(radar_platform.latitude)) + 1e-9)
+            lat_offset = offset_km / 111.32
+            brg = math.radians(bearing)
+            return (radar_platform.latitude + lat_offset * math.cos(brg),
+                    radar_platform.longitude + lon_offset * math.sin(brg))
+        elif jammer.active_technique == "vgpo":
+            # 速度拖引：简单用横向随机偏移 5~15 km
+            offset_km = self.rng.uniform(5.0, 15.0)
+            perp = (bearing + 90.0) % 360.0
+            lon_offset = offset_km / (111.32 * math.cos(math.radians(jammer_platform.latitude)) + 1e-9)
+            lat_offset = offset_km / 111.32
+            brg = math.radians(perp)
+            return (jammer_platform.latitude + lat_offset * math.cos(brg),
+                    jammer_platform.longitude + lon_offset * math.sin(brg))
+        else:  # false_target
+            offset_km = self.rng.uniform(3.0, 20.0)
+            bearing_off = self.rng.uniform(0.0, 360.0)
+            lon_offset = offset_km / (111.32 * math.cos(math.radians(jammer_platform.latitude)) + 1e-9)
+            lat_offset = offset_km / 111.32
+            brg = math.radians(bearing_off)
+            return (jammer_platform.latitude + lat_offset * math.cos(brg),
+                    jammer_platform.longitude + lon_offset * math.sin(brg))
 
     # ------------------------------------------------------------------
     # ESM 截获与接触管理

@@ -5,8 +5,10 @@ from __future__ import annotations
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
 from PySide6.QtWidgets import (
+    QComboBox,
     QDockWidget,
     QFileDialog,
+    QLabel,
     QMainWindow,
     QToolBar,
     QVBoxLayout,
@@ -105,6 +107,14 @@ class MainWindow(QMainWindow):
         self.jammer_mode_action = QAction("干扰样式：瞄准", self)
         self.jammer_mode_action.triggered.connect(self._on_jammer_mode_clicked)
         toolbar.addAction(self.jammer_mode_action)
+
+        toolbar.addSeparator()
+        toolbar.addWidget(QLabel(" 欺骗技术: "))
+        self.deception_combo = QComboBox()
+        self.deception_combo.addItems(["无", "RGPO", "VGPO", "假目标"])
+        self.deception_combo.setToolTip("选择蓝方干扰机的欺骗技术")
+        self.deception_combo.currentTextChanged.connect(self._on_deception_changed)
+        toolbar.addWidget(self.deception_combo)
 
         toolbar.addSeparator()
         fit_action = QAction("复位视图", self)
@@ -242,6 +252,18 @@ class MainWindow(QMainWindow):
         self.contact_list.update_contacts(self.env)
         self._update_unit_info_bar()
         self.statusBar().showMessage(f"想定已加载：{path}")
+
+    def _on_deception_changed(self, text: str) -> None:
+        technique = {
+            "无": "none",
+            "RGPO": "rgpo",
+            "VGPO": "vgpo",
+            "假目标": "false_target",
+        }.get(text, "none")
+        for jammer in self.env.all_jammers():
+            jammer.set_technique(technique)
+        self.map_widget.refresh()
+        self.statusBar().showMessage(f"欺骗技术已切换：{text}")
 
     def _on_fit_view(self) -> None:
         self.map_widget.resetTransform()

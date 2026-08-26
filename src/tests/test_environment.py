@@ -92,3 +92,31 @@ def test_jammer_mode_bandwidth():
     spot_bw = jammer.bandwidth_hz
     jammer.set_mode('barrage_noise')
     assert jammer.bandwidth_hz > spot_bw
+
+
+def test_deception_creates_false_targets():
+    env = build_demo_environment()
+    env.rng.seed(42)
+    for jammer in env.all_jammers():
+        jammer.set_technique("false_target")
+    for _ in range(30):
+        env.step(dt_s=1.0)
+    false_count = sum(len(v) for v in env.false_contacts.values())
+    assert false_count > 0
+
+
+def test_eccm_reduces_deception_success_probability():
+    from core.emitter import Emitter
+    emitter = Emitter(
+        id="test", name="test", role="search_radar", band="S",
+        freq_min_hz=2e9, freq_max_hz=4e9, peak_power_w=1e6,
+        antenna_gain_db=40,
+    )
+    # 建立临时环境
+    env = build_demo_environment()
+    p_base = env._deception_success_probability(emitter)
+    emitter.frequency_agility = True
+    emitter.sidelobe_cancellation = True
+    emitter.pulse_compression_gain_db = 20.0
+    p_eccm = env._deception_success_probability(emitter)
+    assert p_eccm < p_base

@@ -36,6 +36,7 @@ from .map_renderer import (
 from .map_renderer import (
     draw_esm_contacts,
     draw_ew_circles,
+    draw_false_targets,
     draw_grid,
     draw_jammer_sectors,
     draw_legend,
@@ -451,6 +452,7 @@ class MapWidget(QGraphicsView):
             draw_platform(self._scene, platform, self._projection,
                           self.SIDE_COLORS, self._platform_items)
         draw_ew_circles(self._scene, self._env, self._projection)
+        draw_false_targets(self._scene, self._env, self._projection)
         draw_esm_contacts(self._scene, self._env, self._projection, self._contact_items)
         draw_orders(self._scene, self._env, self._projection)
         draw_missiles(self._scene, self._env, self._projection)

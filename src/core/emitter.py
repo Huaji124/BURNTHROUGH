@@ -25,6 +25,11 @@ class Emitter:
     emcon_state: str = "on"          # on / off
     platform_id: str | None = None   # 载体平台 ID
 
+    # ECCM（电子防护）
+    frequency_agility: bool = False          # 频率捷变
+    pulse_compression_gain_db: float = 0.0    # 脉冲压缩增益
+    sidelobe_cancellation: bool = False       # 旁瓣对消
+
     @property
     def is_emitting(self) -> bool:
         return self.emcon_state == "on"
@@ -36,6 +41,17 @@ class Emitter:
     @property
     def gain_linear(self) -> float:
         return 10.0 ** (self.antenna_gain_db / 10.0)
+
+    @property
+    def ecm_resistance(self) -> float:
+        """综合电子防护能力（0~1），用于削弱欺骗干扰成功率。"""
+        r = 0.0
+        if self.frequency_agility:
+            r += 0.35
+        if self.sidelobe_cancellation:
+            r += 0.20
+        r += min(0.35, self.pulse_compression_gain_db / 40.0)
+        return min(r, 1.0)
 
     def covers_frequency(self, freq_hz: float) -> bool:
         return self.freq_min_hz <= freq_hz <= self.freq_max_hz

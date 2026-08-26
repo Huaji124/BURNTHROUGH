@@ -306,6 +306,38 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             contact_items.setdefault(f"{own_id}::{key}", []).append(marker)
 
 
+def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制欺骗干扰产生的假目标。"""
+    for targets in env.false_contacts.values():
+        for t in targets:
+            if not t.active:
+                continue
+            x, y = proj.to_xy(t.latitude, t.longitude)
+            r = 8.0
+            circle = QGraphicsEllipseItem(x - r, y - r, 2 * r, 2 * r)
+            circle.setPen(QPen(QColor("#d35400"), 1.5, Qt.PenStyle.DashLine))
+            circle.setBrush(QBrush(QColor(211, 84, 0, 50)))
+            circle.setZValue(7)
+            circle.setToolTip(f"假目标：{t.technique}（由干扰机 {t.jammer_id} 生成）")
+            scene.addItem(circle)
+            # 交叉线
+            line1 = QGraphicsLineItem(x - r, y - r, x + r, y + r)
+            line2 = QGraphicsLineItem(x - r, y + r, x + r, y - r)
+            pen = QPen(QColor("#e67e22"), 1.2)
+            line1.setPen(pen)
+            line2.setPen(pen)
+            line1.setZValue(7)
+            line2.setZValue(7)
+            scene.addItem(line1)
+            scene.addItem(line2)
+            label = QGraphicsSimpleTextItem("假目标")
+            label.setBrush(QBrush(QColor("#e67e22")))
+            label.setFont(QFont("SansSerif", 8))
+            label.setPos(x + 10, y - 8)
+            label.setZValue(8)
+            scene.addItem(label)
+
+
 def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
     """绘制攻击指令线。"""
     for order in env.orders:
