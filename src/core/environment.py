@@ -18,6 +18,7 @@ from . import propagation
 from .contact import Contact
 from .emitter import Emitter
 from .jammer import Jammer
+from .missile import Missile
 from .receiver import Receiver
 
 
@@ -33,6 +34,7 @@ class Platform:
     heading_deg: float = 0.0
     speed_kt: float = 0.0
     cruise_speed_kt: float = 0.0    # 巡航速度：航路点任务中用于自动恢复
+    alive: bool = True              # 是否存活（被击毁后不再运动/辐射）
     emitters: list[Emitter] = field(default_factory=list)
     receivers: list[Receiver] = field(default_factory=list)
     jammers: list[Jammer] = field(default_factory=list)
@@ -59,6 +61,9 @@ class Environment:
     contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
     orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
+    missiles: list[Missile] = field(default_factory=list)
+    events: list[dict] = field(default_factory=list)
+    _missile_seq: int = 0
     rng: random.Random = field(default_factory=lambda: random.Random(12345))
     memory_ttl_s: float = 20.0        # 信号丢失后保留记忆接触的时长
     contact_ttl_s: float = 60.0       # 接触总生存时间
@@ -98,6 +103,121 @@ class Environment:
         self.orders.append({"kind": "attack", "attacker": attacker_id,
                             "target": target_id, "time": self.time_s})
 
+    # ------------------------------------------------------------------
+    # 武器发射与导弹飞行（Phase 4 反辐射打击）
+    # ------------------------------------------------------------------
+    def process_attack_orders(self) -> None:
+        """将未处理的攻击指令转化为反辐射导弹发射。"""
+        for order in self.orders:
+            if order["kind"] != "attack" or order.get("processed"):
+                continue
+            attacker = self.platforms.get(order["attacker"])
+            target = self.platforms.get(order["target"])
+            order["processed"] = True
+            if attacker is None or target is None or not attacker.alive or not target.alive:
+                order["result"] = "invalid"
+                continue
+            dist_km = haversine_nm(attacker.latitude, attacker.longitude,
+                                   target.latitude, target.longitude) * 1.852
+            if dist_km > 150.0:
+                order["result"] = "out_of_range"
+                self.events.append({"time": self.time_s, "kind": "attack_order",
+                                    "message": f"{attacker.name} 攻击 {target.name}：目标超出射程"})
+                continue
+            self._launch_arm(attacker.id, target.id)
+            order["result"] = "launched"
+            self.events.append({"time": self.time_s, "kind": "launch",
+                                "message": f"{attacker.name} 向 {target.name} 发射反辐射导弹"})
+
+    def _launch_arm(self, attacker_id: str, target_id: str) -> None:
+        attacker = self.platforms.get(attacker_id)
+        target = self.platforms.get(target_id)
+        if attacker is None or target is None:
+            return
+        self._missile_seq += 1
+        missile = Missile(
+            id=f"arm-{self._missile_seq}",
+            name="反辐射导弹",
+            attacker_id=attacker_id,
+            target_id=target_id,
+            lat=attacker.latitude,
+            lon=attacker.longitude,
+            speed_mps=850.0,
+            range_km=150.0,
+            memory_if_shutdown=True,
+        )
+        missile.last_locked_lat = target.latitude
+        missile.last_locked_lon = target.longitude
+        self.missiles.append(missile)
+
+    def step_missiles(self, dt_s: float) -> None:
+        """导弹飞行、制导与命中判定（简化模型）。"""
+        for missile in list(self.missiles):
+            if not missile.active:
+                continue
+            target = self.platforms.get(missile.target_id)
+            missile.flight_time_s += dt_s
+            if missile.flight_time_s * missile.speed_mps > missile.range_km * 1000.0:
+                missile.active = False
+                missile.result = "miss"
+                self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                    "message": f"{missile.name} 燃料耗尽，未命中"})
+                continue
+            if target is None or not target.alive:
+                missile.active = False
+                missile.result = "miss"
+                continue
+
+            if self._target_is_emitting(target):
+                missile.last_locked_lat = target.latitude
+                missile.last_locked_lon = target.longitude
+                missile.no_emission_time = 0.0
+            else:
+                missile.no_emission_time += dt_s
+                if missile.memory_if_shutdown and missile.no_emission_time > missile.memory_time_s:
+                    missile.active = False
+                    missile.result = "lost_lock"
+                    self.events.append({"time": self.time_s, "kind": "missile_lost",
+                                        "message": f"{missile.name} 丢失辐射源，失的"})
+                    continue
+
+            aim_lat = missile.last_locked_lat if missile.last_locked_lat is not None else target.latitude
+            aim_lon = missile.last_locked_lon if missile.last_locked_lon is not None else target.longitude
+            dist_m = haversine_nm(missile.lat, missile.lon, aim_lat, aim_lon) * 1852.0
+            step_m = missile.speed_mps * dt_s
+
+            if dist_m <= step_m or dist_m < 100.0:
+                missile.lat, missile.lon = aim_lat, aim_lon
+                actual_m = haversine_nm(missile.lat, missile.lon,
+                                        target.latitude, target.longitude) * 1852.0
+                if actual_m < 500.0 and self._target_is_emitting(target):
+                    missile.active = False
+                    missile.result = "hit"
+                    self._destroy_platform(target, missile)
+                else:
+                    missile.active = False
+                    missile.result = "miss"
+                    self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                        "message": f"{missile.name} 未命中（辐射源已关机/机动）"})
+            else:
+                bearing = initial_bearing_deg(missile.lat, missile.lon, aim_lat, aim_lon)
+                missile.lat, missile.lon = destination_point(
+                    missile.lat, missile.lon, bearing, step_m / 1852.0)
+
+    @staticmethod
+    def _target_is_emitting(target: Platform) -> bool:
+        return any(e.is_emitting for e in target.emitters) or                any(j.is_jamming for j in target.jammers)
+
+    def _destroy_platform(self, target: Platform, missile: Missile) -> None:
+        target.alive = False
+        for e in target.emitters:
+            e.emcon_state = "off"
+        for j in target.jammers:
+            j.emcon_state = "off"
+        target.speed_kt = 0.0
+        self.events.append({"time": self.time_s, "kind": "hit",
+                            "message": f"{missile.name} 命中 {target.name}，目标被摧毁"})
+
     def find_platform_by_source_id(self, source_id: str) -> Platform | None:
         for p in self.platforms.values():
             for e in p.emitters:
@@ -132,13 +252,68 @@ class Environment:
     def active_jammers(self) -> list[Jammer]:
         return [j for j in self.all_jammers() if j.is_jamming]
 
+    def assign_jammers(self) -> dict[str, str]:
+        """为每部雷达分配干扰机（简单贪心分配，考虑 max_targets）。
+
+        返回 {emitter_id: jammer_id}。
+        """
+        assignment: dict[str, str] = {}
+        jammer_load: dict[str, int] = {}
+        for j in self.active_jammers():
+            jammer_load[j.id] = 0
+
+        for platform in self.platforms.values():
+            if not platform.alive:
+                continue
+            for emitter in platform.emitters:
+                if emitter.emcon_state != "on":
+                    continue
+                if emitter.role not in ("multifunction_radar", "search_radar",
+                                        "fire_control_radar"):
+                    continue
+                best_jammer = None
+                best_score = -1.0
+                for other in self.platforms.values():
+                    if not other.alive or other.side == platform.side:
+                        continue
+                    for jammer in other.jammers:
+                        if jammer.emcon_state != "on":
+                            continue
+                        if jammer_load.get(jammer.id, 0) >= jammer.max_targets:
+                            continue
+                        if not jammer.covers_frequency(emitter.center_freq_hz):
+                            continue
+                        if not self._jammer_sector_ok(jammer, other, platform):
+                            continue
+                        # 瞄准式噪声效果优于阻塞式：带宽越窄，J/S 越高
+                        score = jammer.power_w * jammer.gain_linear / max(jammer.bandwidth_hz, 1.0)
+                        if score > best_score:
+                            best_score = score
+                            best_jammer = jammer
+                if best_jammer is not None:
+                    assignment[emitter.id] = best_jammer.id
+                    jammer_load[best_jammer.id] = jammer_load.get(best_jammer.id, 0) + 1
+        return assignment
+
+    def _jammer_sector_ok(self, jammer: Jammer, jammer_platform: Platform,
+                          radar_platform: Platform) -> bool:
+        """检查雷达是否在干扰机的干扰扇区内。"""
+        if jammer.sector_half_deg >= 180.0:
+            return True
+        bearing = initial_bearing_deg(jammer_platform.latitude, jammer_platform.longitude,
+                                      radar_platform.latitude, radar_platform.longitude)
+        rel = (bearing - jammer_platform.heading_deg + 360.0) % 360.0
+        return rel <= jammer.sector_half_deg or (360.0 - rel) <= jammer.sector_half_deg
+
     # ------------------------------------------------------------------
     # 时间推进
     # ------------------------------------------------------------------
     def step(self, dt_s: float = 1.0) -> None:
-        """推进一帧：运动 -> ESM 截获 -> 接触老化 -> 交叉定位。"""
+        """推进一帧：运动 -> 武器发射/飞行 -> ESM 截获 -> 接触老化 -> 交叉定位。"""
         self.time_s += dt_s
         self.step_motion(dt_s)
+        self.process_attack_orders()
+        self.step_missiles(dt_s)
         self.update_esm(dt_s)
         self.update_contact_aging()
         self.cross_fix_contacts()
@@ -146,7 +321,7 @@ class Environment:
     def step_motion(self, dt_s: float) -> None:
         """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
         for p in self.platforms.values():
-            if p.speed_kt <= 0:
+            if not p.alive or p.speed_kt <= 0:
                 continue
             dist_nm = p.speed_kt * dt_s / 3600.0
 
@@ -206,6 +381,8 @@ class Environment:
                         continue
                     if other.side == own.side:
                         continue  # Phase 2：只截获跨阵营辐射源
+                    if not own.alive or not other.alive:
+                        continue
                     for source in self._active_sources_of(other):
                         result = self._intercept_source(esm, own, other, source, dt_s)
                         if result is None:

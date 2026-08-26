@@ -16,8 +16,8 @@ from __future__ import annotations
 import math
 from typing import ClassVar
 
-from PySide6.QtCore import QPoint, QPointF, QRect, Qt, Signal
-from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPen
+from PySide6.QtCore import QPoint, QPointF, QRect, QRectF, Qt, Signal
+from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPen, QPolygonF
 from PySide6.QtWidgets import (
     QApplication,
     QGraphicsEllipseItem,
@@ -34,6 +34,26 @@ from PySide6.QtWidgets import (
 
 from common.projection import LocalProjection
 from core.environment import Environment, Platform
+
+
+class _WaypointRect(QGraphicsRectItem):
+    """可拖拽的航路点标记。"""
+
+    def __init__(self, rect, pid: str, idx: int, on_moved):
+        super().__init__(rect)
+        self._pid = pid
+        self._idx = idx
+        self._on_moved = on_moved
+        self.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsMovable |
+                      QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
+                      QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges)
+        self.setData(0, f"waypoint::{pid}::{idx}")
+        self.setCursor(Qt.CursorShape.OpenHandCursor)
+
+    def itemChange(self, change, value):
+        if change == QGraphicsItem.GraphicsItemChange.ItemPositionHasChanged:
+            self._on_moved(self._pid, self._idx, self.pos())
+        return super().itemChange(change, value)
 
 
 class MapWidget(QGraphicsView):
@@ -65,6 +85,9 @@ class MapWidget(QGraphicsView):
 
         self._platform_items: dict[str, QGraphicsItem] = {}
         self._contact_items: dict[str, list[QGraphicsItem]] = {}
+        self._waypoint_items: list[_WaypointRect] = []
+        self._waypoint_press = False
+        self._waypoint_moved = False
         self._selected_platform_ids: set[str] = set()
         self._selected_contact: tuple[str, str] | None = None
 
@@ -137,9 +160,15 @@ class MapWidget(QGraphicsView):
     # ------------------------------------------------------------------
     def mousePressEvent(self, event) -> None:
         if event.button() == Qt.MouseButton.LeftButton:
-            self._left_press_screen = event.position().toPoint()
-            self._left_press_scene = self.mapToScene(event.position().toPoint())
-            self._left_dragging = False
+            scene_pos = self.mapToScene(event.position().toPoint())
+            hit = self._hit_test(scene_pos)
+            if hit is not None and hit[0] == "waypoint":
+                self._waypoint_press = True
+                self._waypoint_moved = False
+            else:
+                self._left_press_screen = event.position().toPoint()
+                self._left_press_scene = scene_pos
+                self._left_dragging = False
         elif event.button() == Qt.MouseButton.RightButton:
             self._right_press_screen = event.position().toPoint()
             self._right_dragging = False
@@ -150,7 +179,7 @@ class MapWidget(QGraphicsView):
 
     def mouseMoveEvent(self, event) -> None:
         # 左键框选
-        if self._left_press_screen is not None:
+        if self._left_press_screen is not None and not self._waypoint_press:
             delta = (event.position().toPoint() - self._left_press_screen).manhattanLength()
             if not self._left_dragging and delta > QApplication.startDragDistance():
                 self._left_dragging = True
@@ -175,14 +204,22 @@ class MapWidget(QGraphicsView):
 
     def mouseReleaseEvent(self, event) -> None:
         if event.button() == Qt.MouseButton.LeftButton:
-            if self._left_dragging:
+            if self._waypoint_press:
+                if self._waypoint_moved:
+                    self._rebuild()
+                self._waypoint_press = False
+                self._waypoint_moved = False
+            elif self._left_dragging:
                 self._finish_rubber_band()
                 self._left_band_select(self._rubber_band.geometry())
+                self._left_press_screen = None
+                self._left_press_scene = None
+                self._left_dragging = False
             else:
                 self._on_left_click(self.mapToScene(event.position().toPoint()))
-            self._left_press_screen = None
-            self._left_press_scene = None
-            self._left_dragging = False
+                self._left_press_screen = None
+                self._left_press_scene = None
+                self._left_dragging = False
         elif event.button() == Qt.MouseButton.RightButton:
             if self._right_dragging:
                 self._finish_rubber_band()
@@ -286,6 +323,8 @@ class MapWidget(QGraphicsView):
             self._show_platform_menu(global_pos, data)
         elif kind == "contact":
             self._show_contact_menu(global_pos, data[0], data[1])
+        elif kind == "waypoint":
+            self._show_waypoint_menu(global_pos, data[0], data[1])
 
     def _move_selected_to(self, scene_pos: QPointF) -> None:
         env = self._env
@@ -358,6 +397,10 @@ class MapWidget(QGraphicsView):
                 parts = data.split("::")
                 if len(parts) == 3:
                     return ("contact", (parts[1], parts[2]))
+            if isinstance(data, str) and data.startswith("waypoint::"):
+                parts = data.split("::")
+                if len(parts) == 3:
+                    return ("waypoint", (parts[1], int(parts[2])))
         return None
 
     def _items_in_band(self, band_rect: QRect) -> list[tuple[str, object]]:
@@ -380,6 +423,18 @@ class MapWidget(QGraphicsView):
         self._restore_selection_visuals()
         self.selection_changed.emit()
 
+    def _on_waypoint_moved(self, pid: str, idx: int, pos: QPointF) -> None:
+        """航路点被拖拽后，更新环境中的经纬度。"""
+        env = self._env
+        proj = self._projection
+        if env is None or proj is None:
+            return
+        wps = env.waypoints.get(pid)
+        if wps and 0 <= idx < len(wps):
+            lat, lon = proj.from_xy(pos.x(), pos.y())
+            wps[idx] = (lat, lon)
+            self._waypoint_moved = True
+
     def _restore_selection_visuals(self) -> None:
         for pid, item in self._platform_items.items():
             item.setSelected(pid in self._selected_platform_ids)
@@ -397,13 +452,16 @@ class MapWidget(QGraphicsView):
         self._scene.clear()
         self._platform_items = {}
         self._contact_items = {}
+        self._waypoint_items = []
         self._draw_grid()
         self._draw_waypoints()
+        self._draw_jammer_sectors()
         for platform in self._env.platforms.values():
             self._draw_platform(platform)
         self._draw_ew_circles()
         self._draw_esm_contacts()
         self._draw_orders()
+        self._draw_missiles()
         self._draw_legend()
         self._restore_selection_visuals()
 
@@ -464,12 +522,14 @@ class MapWidget(QGraphicsView):
             for i, (lat, lon) in enumerate(wps):
                 x, y = proj.to_xy(lat, lon)
                 pts.append((x, y))
-                rect = QGraphicsRectItem(x - 4, y - 4, 8, 8)
+                rect = _WaypointRect(QRectF(x - 5, y - 5, 10, 10), pid, i,
+                                     self._on_waypoint_moved)
                 rect.setPen(QPen(color, 1.5))
                 rect.setBrush(QBrush(color.darker(150)))
                 rect.setZValue(9)
-                rect.setToolTip(f"航路点 {i+1}")
+                rect.setToolTip(f"航路点 {i+1}（拖拽移动，右键删除）")
                 self._scene.addItem(rect)
+                self._waypoint_items.append(rect)
                 label = QGraphicsSimpleTextItem(f"WP{i+1}")
                 label.setBrush(QBrush(color))
                 label.setFont(QFont("SansSerif", 7))
@@ -491,6 +551,9 @@ class MapWidget(QGraphicsView):
         pen = QPen(color, 2)
         brush = QBrush(color.darker(160))
 
+        if not platform.alive:
+            pen = QPen(QColor("#60666e"), 2)
+            brush = QBrush(QColor("#3a3f46"))
         if platform.kind == "aircraft":
             pts = [QPointF(x, y - size * 0.7), QPointF(x - size * 0.7, y + size * 0.6),
                    QPointF(x, y + size * 0.25), QPointF(x + size * 0.7, y + size * 0.6)]
@@ -514,8 +577,9 @@ class MapWidget(QGraphicsView):
             heading_line.setZValue(9)
             self._scene.addItem(heading_line)
 
-        label = QGraphicsSimpleTextItem(platform.name)
-        label.setBrush(QBrush(color))
+        label_text = platform.name if platform.alive else f"{platform.name} (被击毁)"
+        label = QGraphicsSimpleTextItem(label_text)
+        label.setBrush(QBrush(color if platform.alive else QColor("#60666e")))
         label.setFont(QFont("SansSerif", 9, QFont.Weight.Bold))
         label.setPos(x + 8, y - 6)
         label.setZValue(11)
@@ -531,6 +595,16 @@ class MapWidget(QGraphicsView):
                 if emitter.role not in ("multifunction_radar", "search_radar", "fire_control_radar"):
                     continue
                 jammer = self._find_jammer_against(platform, emitter)
+                # Phase 3：使用全局干扰资源分配结果
+                assignment = env.assign_jammers()
+                jammer_id = assignment.get(emitter.id)
+                jammer = None
+                if jammer_id is not None:
+                    for other in env.platforms.values():
+                        for j in other.jammers:
+                            if j.id == jammer_id:
+                                jammer = j
+                                break
                 result = env.evaluate_radar_with_jamming(
                     emitter, jammer, rcs_m2=1000.0, bandwidth_hz=1_000_000,
                     noise_figure=5.0, loss=6.0, snr_min_db=13.0)
@@ -556,6 +630,41 @@ class MapWidget(QGraphicsView):
                         mid.setPos((jx + x) / 2 + 4, (jy + y) / 2 - 4)
                         mid.setZValue(3)
                         self._scene.addItem(mid)
+
+    def _draw_jammer_sectors(self) -> None:
+        """绘制有向干扰机的干扰扇区。"""
+        env = self._env
+        proj = self._projection
+        for platform in env.platforms.values():
+            if not platform.alive:
+                continue
+            for jammer in platform.jammers:
+                if jammer.emcon_state != "on" or jammer.sector_half_deg >= 180.0:
+                    continue
+                x, y = proj.to_xy(platform.latitude, platform.longitude)
+                radius_px = proj.km_to_px(200.0)
+                heading = math.radians(platform.heading_deg)
+                half = math.radians(jammer.sector_half_deg)
+                # 扇区边界角（屏幕坐标：x 东，y 南）
+                def pt(angle_rad, x=x, y=y, radius_px=radius_px):
+                    return QPointF(x + math.sin(angle_rad) * radius_px,
+                                   y - math.cos(angle_rad) * radius_px)
+                poly = QPolygonF([QPointF(x, y),
+                                  pt(heading - half),
+                                  pt(heading - half * 0.5),
+                                  pt(heading),
+                                  pt(heading + half * 0.5),
+                                  pt(heading + half)])
+                sector = self._scene.addPolygon(poly)
+                sector.setPen(QPen(QColor(155, 89, 182, 120), 1))
+                sector.setBrush(QBrush(QColor(155, 89, 182, 40)))
+                sector.setZValue(1)
+                label = QGraphicsSimpleTextItem("干扰扇区")
+                label.setBrush(QBrush(QColor("#9b59b6")))
+                label.setFont(QFont("SansSerif", 8))
+                label.setPos(pt(heading).x(), pt(heading).y())
+                label.setZValue(3)
+                self._scene.addItem(label)
 
     def _draw_esm_contacts(self) -> None:
         env = self._env
@@ -638,6 +747,29 @@ class MapWidget(QGraphicsView):
             label.setFont(QFont("SansSerif", 8))
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 10)
             label.setZValue(9)
+            self._scene.addItem(label)
+
+    def _draw_missiles(self) -> None:
+        """绘制飞行中的反辐射导弹。"""
+        env = self._env
+        proj = self._projection
+        for missile in env.missiles:
+            if not missile.active:
+                continue
+            x, y = proj.to_xy(missile.lat, missile.lon)
+            r = 5.0
+            pts = [QPointF(x, y - r), QPointF(x - r * 0.8, y + r * 0.8),
+                   QPointF(x, y + r * 0.3), QPointF(x + r * 0.8, y + r * 0.8)]
+            item = self._scene.addPolygon(pts)
+            item.setPen(QPen(QColor("#ffffff"), 1))
+            item.setBrush(QBrush(QColor("#e74c3c")))
+            item.setZValue(15)
+            item.setToolTip(f"{missile.name} -> {env.platforms.get(missile.target_id).name if missile.target_id in env.platforms else missile.target_id}")
+            label = QGraphicsSimpleTextItem("ARM")
+            label.setBrush(QBrush(QColor("#e74c3c")))
+            label.setFont(QFont("SansSerif", 7, QFont.Weight.Bold))
+            label.setPos(x + 6, y - 6)
+            label.setZValue(16)
             self._scene.addItem(label)
 
     def _draw_circle(self, x: float, y: float, radius_km: float,
@@ -788,6 +920,21 @@ class MapWidget(QGraphicsView):
             f"人工标记：{contact.marked_side or '无'}"
         )
         QMessageBox.information(self, "接触信息", info)
+
+    def _show_waypoint_menu(self, global_pos: QPoint, pid: str, idx: int) -> None:
+        menu = QMenu(self)
+        menu.addAction("删除此航路点", lambda: self._delete_waypoint(pid, idx))
+        menu.exec(global_pos)
+
+    def _delete_waypoint(self, pid: str, idx: int) -> None:
+        env = self._env
+        wps = env.waypoints.get(pid)
+        if wps and 0 <= idx < len(wps):
+            del wps[idx]
+            if not wps:
+                env.waypoints.pop(pid, None)
+            self.command_issued.emit(f"已删除航路点 {idx + 1}")
+            self._rebuild()
 
     def _show_map_menu(self, global_pos: QPoint) -> None:
         menu = QMenu(self)

@@ -68,6 +68,8 @@ class MainWindow(QMainWindow):
 
         self.statusBar().showMessage("就绪 | 左键选中 | 右键菜单/航路点 | 中键平移")
 
+        self._last_event_count = 0
+
         self.timer = QTimer(self)
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self._sim_tick)
@@ -98,6 +100,10 @@ class MainWindow(QMainWindow):
         self.jammer_action.toggled.connect(self._on_jammer_toggled)
         toolbar.addAction(self.jammer_action)
 
+        self.jammer_mode_action = QAction("干扰样式：瞄准", self)
+        self.jammer_mode_action.triggered.connect(self._on_jammer_mode_clicked)
+        toolbar.addAction(self.jammer_mode_action)
+
         toolbar.addSeparator()
         fit_action = QAction("复位视图", self)
         fit_action.setShortcut(QKeySequence("F"))
@@ -112,8 +118,13 @@ class MainWindow(QMainWindow):
         self.map_widget.refresh()
         self.contact_list.update_contacts(self.env)
         self._update_unit_info_bar()
-        self.statusBar().showMessage(
-            f"仿真时间 {self.env.time_s:.0f}s | 左键选中 | 右键菜单/航路点")
+        if len(self.env.events) > self._last_event_count:
+            self._last_event_count = len(self.env.events)
+            msg = self.env.events[-1]["message"]
+            self.statusBar().showMessage(f"[T+{self.env.time_s:.0f}s] {msg}")
+        else:
+            self.statusBar().showMessage(
+                f"仿真时间 {self.env.time_s:.0f}s | 左键选中 | 右键菜单/航路点")
 
     def _on_pause_toggled(self, checked: bool) -> None:
         if checked:
@@ -191,6 +202,16 @@ class MainWindow(QMainWindow):
         self.jammer_action.setText("干扰机开机" if checked else "干扰机关机")
         self.statusBar().showMessage(f"干扰机已{'开机' if checked else '关机'}")
         self.emcon_panel.populate(self.env)
+
+    def _on_jammer_mode_clicked(self) -> None:
+        for jammer in self.env.all_jammers():
+            new_mode = "barrage_noise" if jammer.current_mode == "spot_noise" else "spot_noise"
+            jammer.set_mode(new_mode)
+        mode = self.env.all_jammers()[0].current_mode if self.env.all_jammers() else "spot_noise"
+        label = "干扰样式：阻塞" if mode == "barrage_noise" else "干扰样式：瞄准"
+        self.jammer_mode_action.setText(label)
+        self.map_widget.refresh()
+        self.statusBar().showMessage(f"干扰样式已切换为 {'阻塞式' if mode == 'barrage_noise' else '瞄准式'}噪声")
 
     def _on_fit_view(self) -> None:
         self.map_widget.resetTransform()

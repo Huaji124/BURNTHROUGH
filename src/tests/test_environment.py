@@ -58,3 +58,37 @@ def test_aircraft_loiters_after_final_waypoint():
     assert blue.orbit_center_lat is not None
     assert blue.orbit_radius_km is not None
     assert blue.speed_kt == blue.cruise_speed_kt
+
+
+def test_arm_hits_emitting_target():
+    env = build_demo_environment()
+    env.add_attack_order('red_ddg', 'blue_ew')
+    for _ in range(200):
+        env.step(1.0)
+        if any(m.result in ('hit', 'miss', 'lost_lock') for m in env.missiles):
+            break
+    assert env.platforms['blue_ew'].alive is False
+    assert any(m.result == 'hit' for m in env.missiles)
+
+
+def test_arm_loses_lock_after_jammer_off():
+    env = build_demo_environment()
+    env.add_attack_order('red_ddg', 'blue_ew')
+    env.step(1.0)
+    for jammer in env.all_jammers():
+        jammer.emcon_state = 'off'
+    for _ in range(30):
+        env.step(1.0)
+        if any(m.result in ('lost_lock', 'miss', 'hit') for m in env.missiles):
+            break
+    assert env.platforms['blue_ew'].alive is True
+    assert any(m.result == 'lost_lock' for m in env.missiles)
+
+
+def test_jammer_mode_bandwidth():
+    env = build_demo_environment()
+    jammer = env.all_jammers()[0]
+    assert jammer.current_mode == 'spot_noise'
+    spot_bw = jammer.bandwidth_hz
+    jammer.set_mode('barrage_noise')
+    assert jammer.bandwidth_hz > spot_bw
