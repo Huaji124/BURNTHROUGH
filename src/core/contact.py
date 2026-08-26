@@ -23,6 +23,8 @@ class Contact:
     speed_kt: float | None = None
     emitter_id: str | None = None    # 若已识别，关联辐射源
     emitter_name: str | None = None
+    target_platform_id: str | None = None  # 信号源所在平台
+    marked_side: str | None = None   # 玩家人工标记：friendly/enemy/neutral/unknown
     confidence: float = 0.0          # 识别置信度 0~1
     is_memory: bool = False          # 是否记忆接触（信号已丢失）
     last_update_s: float = 0.0

@@ -50,6 +50,7 @@ def build_demo_environment() -> Environment:
         heading_deg=0.0,
         speed_kt=0.0,
     )
+    red_ddg.weapons = ["反舰导弹 x8", "防空导弹 x16"]
     red_ddg.emitters.append(Emitter(
         id="type346_search_radar",
         name="Type 346 搜索雷达（演示）",
@@ -84,6 +85,7 @@ def build_demo_environment() -> Environment:
         heading_deg=0.0,
         speed_kt=0.0,
     )
+    red_ffg.weapons = ["反舰导弹 x4", "防空导弹 x8"]
     red_ffg.receivers.append(_make_esm("red_ffg", "esm_ffg", "护卫舰 ESM"))
     env.add_platform(red_ffg)
 
@@ -104,6 +106,7 @@ def build_demo_environment() -> Environment:
         orbit_radius_km=orbit_radius_km,
         orbit_direction=1,
     )
+    blue_ew.weapons = ["反辐射导弹 x2", "空空导弹 x4"]
     blue_ew.jammers.append(Jammer(
         id="ecm_pod_rkz",
         name="有源干扰吊舱（演示）",

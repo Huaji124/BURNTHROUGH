@@ -35,6 +35,7 @@ class Platform:
     emitters: list[Emitter] = field(default_factory=list)
     receivers: list[Receiver] = field(default_factory=list)
     jammers: list[Jammer] = field(default_factory=list)
+    weapons: list[str] = field(default_factory=list)   # 武器显示（Phase 6 前为占位）
     # 绕飞轨道（可选）：绕某点做圆周运动
     orbit_center_lat: float | None = None
     orbit_center_lon: float | None = None
@@ -55,6 +56,8 @@ class Environment:
     platforms: dict[str, Platform] = field(default_factory=dict)
     time_s: float = 0.0
     contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
+    waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
+    orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
     rng: random.Random = field(default_factory=lambda: random.Random(12345))
     memory_ttl_s: float = 20.0        # 信号丢失后保留记忆接触的时长
     contact_ttl_s: float = 60.0       # 接触总生存时间
@@ -64,6 +67,43 @@ class Environment:
     # ------------------------------------------------------------------
     def add_platform(self, platform: Platform) -> None:
         self.platforms[platform.id] = platform
+
+    # ------------------------------------------------------------------
+    # 指令与航路点
+    # ------------------------------------------------------------------
+    def add_move_order(self, platform_id: str, lat: float, lon: float,
+                       append: bool = False) -> None:
+        """为平台添加移动航路点。append=False 时替换为单次航路点。"""
+        platform = self.platforms.get(platform_id)
+        if platform is None:
+            return
+        # 进入人工航路点后，取消绕飞轨道
+        platform.orbit_center_lat = None
+        platform.orbit_center_lon = None
+        platform.orbit_radius_km = None
+        if append and platform_id in self.waypoints:
+            self.waypoints[platform_id].append((lat, lon))
+        else:
+            self.waypoints[platform_id] = [(lat, lon)]
+        self.orders.append({"kind": "move", "platform": platform_id,
+                            "lat": lat, "lon": lon, "time": self.time_s})
+
+    def clear_waypoints(self, platform_id: str) -> None:
+        self.waypoints.pop(platform_id, None)
+
+    def add_attack_order(self, attacker_id: str, target_id: str) -> None:
+        self.orders.append({"kind": "attack", "attacker": attacker_id,
+                            "target": target_id, "time": self.time_s})
+
+    def find_platform_by_source_id(self, source_id: str) -> Platform | None:
+        for p in self.platforms.values():
+            for e in p.emitters:
+                if e.id == source_id:
+                    return p
+            for j in p.jammers:
+                if j.id == source_id:
+                    return p
+        return None
 
     def all_emitters(self) -> list[Emitter]:
         result = []
@@ -101,17 +141,30 @@ class Environment:
         self.cross_fix_contacts()
 
     def step_motion(self, dt_s: float) -> None:
-        """简单运动模型：直线或绕飞轨道。"""
+        """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
         for p in self.platforms.values():
             if p.speed_kt <= 0:
                 continue
             dist_nm = p.speed_kt * dt_s / 3600.0
 
+            # 1) 航路点导航
+            if p.id in self.waypoints and self.waypoints[p.id]:
+                wp_lat, wp_lon = self.waypoints[p.id][0]
+                brg = initial_bearing_deg(p.latitude, p.longitude, wp_lat, wp_lon)
+                dist_to_wp = haversine_nm(p.latitude, p.longitude, wp_lat, wp_lon)
+                p.heading_deg = brg
+                if dist_to_wp <= dist_nm:
+                    p.latitude, p.longitude = wp_lat, wp_lon
+                    self.waypoints[p.id].pop(0)
+                else:
+                    p.latitude, p.longitude = destination_point(
+                        p.latitude, p.longitude, brg, dist_nm)
+                continue
+
+            # 2) 绕飞轨道
             if p.orbit_center_lat is not None and p.orbit_radius_km is not None:
-                # 绕飞：保持与中心点距离，航向沿切线
                 bearing_to_center = initial_bearing_deg(p.latitude, p.longitude,
                                                         p.orbit_center_lat, p.orbit_center_lon)
-                # 逆时针绕飞：航向 = 中心方位 + 90°；顺时针：-90°
                 tangent = (bearing_to_center + 90.0 * p.orbit_direction + 360.0) % 360.0
                 p.heading_deg = tangent
             else:
@@ -138,7 +191,7 @@ class Environment:
                         result = self._intercept_source(esm, own, other, source, dt_s)
                         if result is None:
                             continue
-                        self._update_contact(own, esm, source, result)
+                        self._update_contact(own, esm, other, source, result)
 
     def _active_sources_of(self, platform: Platform) -> list[tuple]:
         """返回平台上所有正在辐射的信号源。
@@ -215,9 +268,8 @@ class Environment:
         # 每转主瓣扫过 ESM 的概率约 beam_width/360
         return min(1.0, scans * max(beam_width / 360.0, 0.05))
 
-    def _update_contact(self, own: Platform, esm: Receiver, source: tuple,
-                        result: dict) -> None:
-        src = source[0]
+    def _update_contact(self, own: Platform, esm: Receiver, other: Platform,
+                        source: tuple, result: dict) -> None:
         key = result["source_id"]
         if own.id not in self.contacts:
             self.contacts[own.id] = {}
@@ -238,6 +290,7 @@ class Environment:
         contact.time_s = self.time_s
         contact.last_update_s = self.time_s
         contact.is_memory = False
+        contact.target_platform_id = other.id
         contact.confidence = result["confidence"]
         contact.extra = {
             "power_dbm": result["power_dbm"],

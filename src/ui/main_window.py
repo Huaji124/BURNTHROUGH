@@ -1,10 +1,11 @@
-"""主窗口：地图 + 工具栏 + 接触列表 + EMCON 面板 + 频谱面板。"""
+"""主窗口：地图 + 底边栏 + 接触列表 + EMCON 面板 + 频谱面板。"""
 
 from __future__ import annotations
 
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
-from PySide6.QtWidgets import QMainWindow, QDockWidget, QToolBar
+from PySide6.QtWidgets import (QDockWidget, QHBoxLayout, QMainWindow,
+                               QToolBar, QVBoxLayout, QWidget)
 
 from core.demo import build_demo_environment
 
@@ -12,6 +13,7 @@ from .map_widget import MapWidget
 from .contact_list import ContactListWidget
 from .spectrum_widget import SpectrumWidget
 from .emcon_panel import EmconPanel
+from .unit_info_bar import UnitInfoBar
 
 
 class MainWindow(QMainWindow):
@@ -24,7 +26,24 @@ class MainWindow(QMainWindow):
 
         self.map_widget = MapWidget(self)
         self.map_widget.set_environment(self.env)
-        self.setCentralWidget(self.map_widget)
+        self.map_widget.selection_changed.connect(self._on_selection_changed)
+        self.map_widget.command_issued.connect(
+            lambda msg: self.statusBar().showMessage(msg))
+
+        self.unit_info_bar = UnitInfoBar(self)
+        self.unit_info_bar.fire_clicked.connect(
+            lambda: self.map_widget.set_attack_mode(True))
+        self.unit_info_bar.radar_menu_requested.connect(self._on_radar_menu_requested)
+        self.unit_info_bar.emcon_clicked.connect(
+            lambda: self.emcon_panel.setVisible(not self.emcon_panel.isVisible()))
+
+        central = QWidget(self)
+        central_layout = QVBoxLayout(central)
+        central_layout.setContentsMargins(0, 0, 0, 0)
+        central_layout.setSpacing(0)
+        central_layout.addWidget(self.map_widget, 1)
+        central_layout.addWidget(self.unit_info_bar)
+        self.setCentralWidget(central)
 
         self._build_toolbar()
 
@@ -42,9 +61,8 @@ class MainWindow(QMainWindow):
         self.add_dock(Qt.DockWidgetArea.BottomDockWidgetArea,
                       QDockWidget("频谱监视", self), self.spectrum_widget)
 
-        self.statusBar().showMessage("就绪 | 滚轮缩放，左键拖拽平移")
+        self.statusBar().showMessage("就绪 | 左键选中 | 右键菜单/航路点 | 中键平移")
 
-        # 模拟时钟：1 秒真实时间 = 1 秒仿真时间
         self.timer = QTimer(self)
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self._sim_tick)
@@ -88,8 +106,9 @@ class MainWindow(QMainWindow):
         self.env.step(dt_s=1.0)
         self.map_widget.refresh()
         self.contact_list.update_contacts(self.env)
+        self._update_unit_info_bar()
         self.statusBar().showMessage(
-            f"仿真时间 {self.env.time_s:.0f}s | 滚轮缩放，左键拖拽平移")
+            f"仿真时间 {self.env.time_s:.0f}s | 左键选中 | 右键菜单/航路点")
 
     def _on_pause_toggled(self, checked: bool) -> None:
         if checked:
@@ -101,12 +120,46 @@ class MainWindow(QMainWindow):
             self.pause_action.setText("暂停")
             self.statusBar().showMessage("运行中")
 
+    # ------------------------------------------------------------------
+    # 选择与底边栏
+    # ------------------------------------------------------------------
+    def _on_selection_changed(self) -> None:
+        self._update_unit_info_bar()
+
+    def _update_unit_info_bar(self) -> None:
+        ids = self.map_widget.selected_platform_ids()
+        contact = self.map_widget.selected_contact()
+        if ids:
+            self.unit_info_bar.show_platforms(self.env, ids)
+        elif contact is not None:
+            self.unit_info_bar.show_contact(self.env, contact[0], contact[1])
+        else:
+            self.unit_info_bar.show_platforms(self.env, [])
+
+    def _on_radar_menu_requested(self) -> None:
+        ids = self.map_widget.selected_platform_ids()
+        if not ids:
+            self.statusBar().showMessage("请先选中一个单位")
+            return
+        # 对选中的第一个有雷达的单位切换雷达
+        for pid in ids:
+            p = self.env.platforms.get(pid)
+            if p and p.emitters:
+                self._toggle_radars(p)
+                break
+
+    def _toggle_radars(self, platform) -> None:
+        new_state = "off" if any(e.is_emitting for e in platform.emitters) else "on"
+        for e in platform.emitters:
+            e.emcon_state = new_state
+        self.statusBar().showMessage(f"{platform.name}：雷达已{'关机' if new_state == 'off' else '开机'}")
+        self.map_widget.refresh()
+
     def _on_emcon_changed(self) -> None:
         self.map_widget.refresh()
         self._sync_toolbar_actions()
 
     def _sync_toolbar_actions(self) -> None:
-        """EMCON 面板改动后同步工具栏按钮状态。"""
         for jammer in self.env.all_jammers():
             self.jammer_action.blockSignals(True)
             self.jammer_action.setChecked(jammer.is_jamming)
