@@ -1,0 +1,9 @@
+{
+  "id": "harpoon_asm",
+  "name": "RGM-84 鱼叉反舰导弹（公开近似）",
+  "kind": "asm",
+  "range_km": 140,
+  "speed_mach": 0.9,
+  "seeker": "active_radar",
+  "warhead_kg": 220
+}

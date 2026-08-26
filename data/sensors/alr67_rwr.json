@@ -1,0 +1,12 @@
+{
+  "id": "alr67_rwr",
+  "name": "AN/ALR-67 雷达告警接收机（公开近似）",
+  "kind": "rwr",
+  "freq_min_hz": 500000000,
+  "freq_max_hz": 18000000000,
+  "sensitivity_dbm": -70,
+  "gain_db": 0,
+  "df_accuracy_deg": 5,
+  "param_library": ["an_spy1d", "an_apg66"],
+  "processing_time_s": 1.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "esm_advanced",
+  "name": "先进无源侦察系统（公开近似）",
+  "kind": "esm",
+  "freq_min_hz": 100000000,
+  "freq_max_hz": 40000000000,
+  "sensitivity_dbm": -90,
+  "gain_db": 3,
+  "df_accuracy_deg": 1,
+  "param_library": ["an_spy1d", "an_apg66", "alq99_tjs"],
+  "processing_time_s": 0.8
+}

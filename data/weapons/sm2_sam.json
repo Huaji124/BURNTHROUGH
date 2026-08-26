@@ -1,0 +1,9 @@
+{
+  "id": "sm2_sam",
+  "name": "RIM-66 标准-2 防空导弹（公开近似）",
+  "kind": "sam",
+  "range_km": 150,
+  "speed_mach": 3.5,
+  "seeker": "semi_active_radar",
+  "warhead_kg": 61
+}

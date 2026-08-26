@@ -1,0 +1,20 @@
+{
+  "id": "an_spy1d",
+  "name": "AN/SPY-1D 多功能相控阵雷达（公开近似）",
+  "role": "multifunction_radar",
+  "band": "S",
+  "freq_min_hz": 3100000000,
+  "freq_max_hz": 3500000000,
+  "peak_power_w": 4000000,
+  "antenna_gain_db": 42,
+  "pulse_width_min_us": 1,
+  "pulse_width_max_us": 50,
+  "prf_min_hz": 200,
+  "prf_max_hz": 5000,
+  "scan_type": "phased_array",
+  "scan_period_s": 2,
+  "beam_width_deg": 1.7,
+  "frequency_agility": true,
+  "pulse_compression_gain_db": 15,
+  "sidelobe_cancellation": true
+}

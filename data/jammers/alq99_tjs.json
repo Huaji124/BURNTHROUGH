@@ -1,0 +1,17 @@
+{
+  "id": "alq99_tjs",
+  "name": "AN/ALQ-99 战术干扰系统（公开近似）",
+  "mode": ["noise", "deception"],
+  "band": ["VHF", "UHF", "S", "X"],
+  "freq_min_hz": 30000000,
+  "freq_max_hz": 18000000000,
+  "power_w": 500,
+  "gain_db": 25,
+  "spot_bandwidth_hz": 10000000,
+  "barrage_bandwidth_hz": 800000000,
+  "current_mode": "spot_noise",
+  "sector_half_deg": 180.0,
+  "techniques": ["spot_noise", "barrage_noise", "rgpo", "vgpo", "false_target"],
+  "reaction_time_s": 0.3,
+  "max_targets": 8
+}

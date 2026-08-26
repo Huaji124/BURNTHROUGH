@@ -1,0 +1,10 @@
+{
+  "id": "ef18g",
+  "name": "EA-18G 咆哮者电子战机（公开近似）",
+  "side": "blue",
+  "kind": "aircraft",
+  "altitude_ft": 30000,
+  "speed_kt": 450,
+  "cruise_speed_kt": 420,
+  "weapons": ["arm_yuj91"]
+}

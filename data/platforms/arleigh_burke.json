@@ -1,0 +1,15 @@
+{
+  "id": "arleigh_burke",
+  "name": "阿利·伯克级驱逐舰（公开近似）",
+  "side": "blue",
+  "kind": "ship",
+  "altitude_ft": 50,
+  "speed_kt": 30,
+  "cruise_speed_kt": 20,
+  "weapons": ["harpoon_asm", "sm2_sam"],
+  "ciws": true,
+  "ciws_hit_probability": 0.45,
+  "ciws_range_km": 2.5,
+  "gun_range_km": 10,
+  "gun_hit_probability": 0.15
+}

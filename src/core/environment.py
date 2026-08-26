@@ -43,6 +43,10 @@ class Platform:
     ciws: bool = False               # 近防系统
     ciws_hit_probability: float = 0.4
     ciws_range_km: float = 3.0
+    gun_range_km: float = 8.0       # 舰炮对海/对空拦截距离
+    gun_hit_probability: float = 0.2
+    system_damage: dict[str, float] = field(default_factory=lambda: {
+        "sensor": 100.0, "weapon": 100.0, "mobility": 100.0, "power": 100.0})
     # 绕飞轨道（可选）：绕某点做圆周运动
     orbit_center_lat: float | None = None
     orbit_center_lon: float | None = None
@@ -246,27 +250,30 @@ class Environment:
 
                 if missile.kind == "asm":
                     missile.active = False
-                    if target.ciws and dist_m <= target.ciws_range_km * 1000.0:
-                        if self.rng.random() < target.ciws_hit_probability:
-                            missile.result = "miss"
-                            self.events.append({"time": self.time_s, "kind": "missile_intercepted",
-                                                "message": f"{missile.name} 被 {target.name} 近防系统拦截"})
-                        else:
-                            missile.result = "hit"
-                            self._destroy_platform(target, missile)
+                    # 舰炮拦截（远层）
+                    if (target.gun_range_km > 0 and dist_m <= target.gun_range_km * 1000.0
+                            and self.rng.random() < target.gun_hit_probability):
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_intercepted",
+                                            "message": f"{missile.name} 被 {target.name} 舰炮拦截"})
+                    # 近防拦截（近层）
+                    elif (target.ciws and dist_m <= target.ciws_range_km * 1000.0
+                          and self.rng.random() < target.ciws_hit_probability):
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_intercepted",
+                                            "message": f"{missile.name} 被 {target.name} 近防系统拦截"})
+                    elif self.rng.random() < self.arm_hit_probability:
+                        missile.result = "hit"
+                        self._damage_platform(target, missile)
                     else:
-                        if self.rng.random() < self.arm_hit_probability:
-                            missile.result = "hit"
-                            self._destroy_platform(target, missile)
-                        else:
-                            missile.result = "miss"
-                            self.events.append({"time": self.time_s, "kind": "missile_miss",
-                                                "message": f"{missile.name} 未命中（目标机动/干扰）"})
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                            "message": f"{missile.name} 未命中（目标机动/干扰）"})
                 elif actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
                     missile.active = False
                     if self.rng.random() < self.arm_hit_probability:
                         missile.result = "hit"
-                        self._destroy_platform(target, missile)
+                        self._damage_platform(target, missile)
                     else:
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_miss",
@@ -341,8 +348,44 @@ class Environment:
     def _target_is_emitting(target: Platform) -> bool:
         return any(e.is_emitting for e in target.emitters) or                any(j.is_jamming for j in target.jammers)
 
+    def _damage_platform(self, target: Platform, missile: Missile) -> None:
+        """导弹命中后的简化分系统损伤。"""
+        damage = 60.0 if missile.kind == "asm" else 120.0
+        target.hp = max(0.0, target.hp - damage)
+        if target.hp <= 0:
+            self._destroy_platform(target, missile)
+            return
+
+        # 分系统随机受损
+        for sys_name in ("sensor", "weapon", "mobility", "power"):
+            if sys_name not in target.system_damage:
+                target.system_damage[sys_name] = 100.0
+            reduction = self.rng.uniform(0.0, damage * 0.6)
+            target.system_damage[sys_name] = max(0.0, target.system_damage[sys_name] - reduction)
+
+        damages = [name for name, v in target.system_damage.items() if v <= 20.0]
+        if target.system_damage.get("sensor", 100.0) <= 20.0:
+            for e in target.emitters:
+                e.emcon_state = "off"
+        if target.system_damage.get("mobility", 100.0) <= 20.0:
+            target.speed_kt = 0.0
+        if target.system_damage.get("power", 100.0) <= 20.0:
+            for e in target.emitters:
+                e.emcon_state = "off"
+            for j in target.jammers:
+                j.emcon_state = "off"
+        if damages:
+            self.events.append({"time": self.time_s, "kind": "damage",
+                                "message": f"{missile.name} 命中 {target.name}，"
+                                           f"{'/'.join(damages)}受损"})
+        else:
+            self.events.append({"time": self.time_s, "kind": "damage",
+                                "message": f"{missile.name} 命中 {target.name}，造成损伤"})
+
     def _destroy_platform(self, target: Platform, missile: Missile) -> None:
         target.alive = False
+        target.hp = 0.0
+        target.system_damage = {"sensor": 0.0, "weapon": 0.0, "mobility": 0.0, "power": 0.0}
         for e in target.emitters:
             e.emcon_state = "off"
         for j in target.jammers:
