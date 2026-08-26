@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "name": "demo_ew",
+  "time_s": 0.0,
+  "waypoints": {},
+  "platforms": {
+    "red_ddg": {
+      "id": "red_ddg",
+      "name": "红方驱逐舰",
+      "side": "red",
+      "kind": "ship",
+      "latitude": 22.0,
+      "longitude": 120.0,
+      "altitude_ft": 50.0,
+      "heading_deg": 0.0,
+      "speed_kt": 0.0,
+      "cruise_speed_kt": 20.0,
+      "alive": true,
+      "emitters": [
+        {
+          "id": "type346_search_radar",
+          "name": "Type 346 搜索雷达（演示）",
+          "role": "multifunction_radar",
+          "band": "S",
+          "freq_min_hz": 2000000000,
+          "freq_max_hz": 4000000000,
+          "peak_power_w": 1000000,
+          "antenna_gain_db": 40,
+          "pulse_width_min_us": 0.5,
+          "pulse_width_max_us": 50,
+          "prf_min_hz": 500,
+          "prf_max_hz": 5000,
+          "scan_type": "mechanical_scan",
+          "scan_period_s": 4,
+          "beam_width_deg": 1.5,
+          "emcon_state": "on",
+          "platform_id": "red_ddg"
+        }
+      ],
+      "receivers": [
+        {
+          "id": "esm_ddg",
+          "name": "驱逐舰 ESM",
+          "kind": "esm",
+          "freq_min_hz": 500000000,
+          "freq_max_hz": 18000000000,
+          "sensitivity_dbm": -85,
+          "gain_db": 0,
+          "df_accuracy_deg": 3,
+          "param_library": [
+            "type346_search_radar",
+            "ecm_pod_rkz"
+          ],
+          "processing_time_s": 1.5,
+          "platform_id": "red_ddg"
+        }
+      ],
+      "jammers": [],
+      "weapons": [
+        "反舰导弹 x8",
+        "防空导弹 x16"
+      ],
+      "orbit_center_lat": null,
+      "orbit_center_lon": null,
+      "orbit_radius_km": null,
+      "orbit_direction": 1
+    },
+    "red_ffg": {
+      "id": "red_ffg",
+      "name": "红方护卫舰",
+      "side": "red",
+      "kind": "ship",
+      "latitude": 22.9,
+      "longitude": 120.55,
+      "altitude_ft": 40.0,
+      "heading_deg": 0.0,
+      "speed_kt": 0.0,
+      "cruise_speed_kt": 20.0,
+      "alive": true,
+      "emitters": [],
+      "receivers": [
+        {
+          "id": "esm_ffg",
+          "name": "护卫舰 ESM",
+          "kind": "esm",
+          "freq_min_hz": 500000000,
+          "freq_max_hz": 18000000000,
+          "sensitivity_dbm": -85,
+          "gain_db": 0,
+          "df_accuracy_deg": 3,
+          "param_library": [
+            "type346_search_radar",
+            "ecm_pod_rkz"
+          ],
+          "processing_time_s": 1.5,
+          "platform_id": "red_ffg"
+        }
+      ],
+      "jammers": [],
+      "weapons": [
+        "反舰导弹 x4",
+        "防空导弹 x8"
+      ],
+      "orbit_center_lat": null,
+      "orbit_center_lon": null,
+      "orbit_radius_km": null,
+      "orbit_direction": 1
+    },
+    "blue_ew": {
+      "id": "blue_ew",
+      "name": "蓝方电子战机",
+      "side": "blue",
+      "kind": "aircraft",
+      "latitude": 22.0,
+      "longitude": 121.0,
+      "altitude_ft": 30000,
+      "heading_deg": 0.0,
+      "speed_kt": 420.0,
+      "cruise_speed_kt": 420.0,
+      "alive": true,
+      "emitters": [],
+      "receivers": [],
+      "jammers": [
+        {
+          "id": "ecm_pod_rkz",
+          "name": "有源干扰吊舱（演示）",
+          "mode": [
+            "noise",
+            "deception"
+          ],
+          "band": [
+            "S",
+            "X",
+            "Ku"
+          ],
+          "freq_min_hz": 2000000000,
+          "freq_max_hz": 18000000000,
+          "power_w": 100,
+          "gain_db": 20,
+          "spot_bandwidth_hz": 20000000,
+          "barrage_bandwidth_hz": 500000000,
+          "current_mode": "spot_noise",
+          "sector_half_deg": 360.0,
+          "techniques": [
+            "spot_noise",
+            "barrage_noise"
+          ],
+          "reaction_time_s": 0.5,
+          "max_targets": 4,
+          "emcon_state": "on",
+          "platform_id": "blue_ew"
+        }
+      ],
+      "weapons": [
+        "反辐射导弹 x2",
+        "空空导弹 x4"
+      ],
+      "orbit_center_lat": 22.0,
+      "orbit_center_lon": 120.0,
+      "orbit_radius_km": 103.0,
+      "orbit_direction": 1
+    }
+  }
+}

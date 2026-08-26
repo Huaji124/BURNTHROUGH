@@ -6,6 +6,7 @@ from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
 from PySide6.QtWidgets import (
     QDockWidget,
+    QFileDialog,
     QMainWindow,
     QToolBar,
     QVBoxLayout,
@@ -13,6 +14,7 @@ from PySide6.QtWidgets import (
 )
 
 from core.demo import build_demo_environment
+from core.scenario import load_scenario, save_scenario
 
 from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
@@ -109,6 +111,14 @@ class MainWindow(QMainWindow):
         fit_action.setShortcut(QKeySequence("F"))
         fit_action.triggered.connect(self._on_fit_view)
         toolbar.addAction(fit_action)
+
+        toolbar.addSeparator()
+        save_action = QAction("保存想定", self)
+        save_action.triggered.connect(self._on_save_scenario)
+        toolbar.addAction(save_action)
+        load_action = QAction("加载想定", self)
+        load_action.triggered.connect(self._on_load_scenario)
+        toolbar.addAction(load_action)
 
     # ------------------------------------------------------------------
     # 模拟循环
@@ -212,6 +222,26 @@ class MainWindow(QMainWindow):
         self.jammer_mode_action.setText(label)
         self.map_widget.refresh()
         self.statusBar().showMessage(f"干扰样式已切换为 {'阻塞式' if mode == 'barrage_noise' else '瞄准式'}噪声")
+
+    def _on_save_scenario(self) -> None:
+        path, _ = QFileDialog.getSaveFileName(
+            self, "保存想定", "data/scenarios/demo_ew.json", "JSON (*.json)")
+        if not path:
+            return
+        save_scenario(self.env, path)
+        self.statusBar().showMessage(f"想定已保存：{path}")
+
+    def _on_load_scenario(self) -> None:
+        path, _ = QFileDialog.getOpenFileName(
+            self, "加载想定", "data/scenarios", "JSON (*.json)")
+        if not path:
+            return
+        self.env = load_scenario(path)
+        self.map_widget.set_environment(self.env)
+        self.emcon_panel.populate(self.env)
+        self.contact_list.update_contacts(self.env)
+        self._update_unit_info_bar()
+        self.statusBar().showMessage(f"想定已加载：{path}")
 
     def _on_fit_view(self) -> None:
         self.map_widget.resetTransform()

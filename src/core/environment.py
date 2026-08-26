@@ -67,6 +67,7 @@ class Environment:
     rng: random.Random = field(default_factory=lambda: random.Random(12345))
     memory_ttl_s: float = 20.0        # 信号丢失后保留记忆接触的时长
     contact_ttl_s: float = 60.0       # 接触总生存时间
+    arm_hit_probability: float = 1.0  # ARM 命中概率（蒙特卡洛时可调）
 
     # ------------------------------------------------------------------
     # 基础注册/查询
@@ -192,8 +193,13 @@ class Environment:
                                         target.latitude, target.longitude) * 1852.0
                 if actual_m < 500.0 and self._target_is_emitting(target):
                     missile.active = False
-                    missile.result = "hit"
-                    self._destroy_platform(target, missile)
+                    if self.rng.random() < self.arm_hit_probability:
+                        missile.result = "hit"
+                        self._destroy_platform(target, missile)
+                    else:
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                            "message": f"{missile.name} 未命中（目标机动/近防拦截）"})
                 else:
                     missile.active = False
                     missile.result = "miss"
