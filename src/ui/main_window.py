@@ -10,6 +10,7 @@ from PySide6.QtWidgets import (
     QFileDialog,
     QLabel,
     QMainWindow,
+    QMessageBox,
     QToolBar,
     QVBoxLayout,
     QWidget,
@@ -17,6 +18,7 @@ from PySide6.QtWidgets import (
 
 from core.demo import build_demo_environment
 from core.scenario import load_scenario, save_scenario
+from data_loader.china_loader import load_china_environment
 
 from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
@@ -136,6 +138,10 @@ class MainWindow(QMainWindow):
         load_action = QAction("加载想定", self)
         load_action.triggered.connect(self._on_load_scenario)
         toolbar.addAction(load_action)
+
+        china_action = QAction("装载中国军力", self)
+        china_action.triggered.connect(self._on_load_china)
+        toolbar.addAction(china_action)
 
     # ------------------------------------------------------------------
     # 模拟循环
@@ -275,6 +281,24 @@ class MainWindow(QMainWindow):
             jammer.set_technique(technique)
         self.map_widget.refresh()
         self.statusBar().showMessage(f"欺骗技术已切换：{text}")
+
+    def _on_load_china(self) -> None:
+        path, _ = QFileDialog.getOpenFileName(
+            self, "加载中国军力参考数据", "data", "JSON (*.json)")
+        if not path:
+            return
+        try:
+            self.env = load_china_environment(path, side="red")
+        except (OSError, ValueError, KeyError) as exc:
+            QMessageBox.warning(self, "加载失败", str(exc))
+            return
+        self.map_widget.set_environment(self.env)
+        self.emcon_panel.populate(self.env)
+        self.contact_list.update_contacts(self.env)
+        self.spectrum_widget.set_environment(self.env)
+        self.false_target_panel.update_false_targets(self.env)
+        self._update_unit_info_bar()
+        self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
 
     def _on_fit_view(self) -> None:
         self.map_widget.resetTransform()

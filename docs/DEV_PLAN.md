@@ -19,7 +19,8 @@
 - [x] UI：频谱监视面板、假目标列表
 - [x] 代码质量：pytest 24 项、ruff 全通过
 - [x] 装备数据库：新增 AN/SPY-1D、AN/APG-66、ALR-67、ALQ-99、鱼叉/标准-2 等公开近似数据
-- [x] 中国军力参考数据：DB 提取脚本 + `data/china_units.json`（305 平台/238 传感器/129 武器）
+- [x] 中国军力参考数据：`data/china_units.json` + `data/china_full.json`（305 平台/238 传感器/129 武器/802 挂载/58 弹药库/129 推进）
+- [x] 游戏接入：`china_loader.py` + UI“装载中国军力”按钮
 
 ### 待开发
 - [ ] Phase 7：想定与界面完善
