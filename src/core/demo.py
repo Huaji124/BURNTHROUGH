@@ -1,22 +1,45 @@
-"""演示想定：静态射频沙盘。
+"""演示想定：动态射频沙盘（Phase 2）。
 
-红方：驱逐舰（搜索雷达开机 + ESM）
-蓝方：电子战飞机（干扰吊舱可开关）
+红方：
+- 驱逐舰（搜索雷达 + ESM）
+- 护卫舰（ESM，与驱逐舰共同对蓝方干扰源交叉定位）
+蓝方：
+- 电子战飞机（绕红方驱逐舰飞行，干扰吊舱可开关）
 """
 
 from __future__ import annotations
+
+import math
 
 from .environment import Environment, Platform
 from .emitter import Emitter
 from .receiver import Receiver
 from .jammer import Jammer
 
+RED_ESM_PARAM_LIB = ["type346_search_radar", "ecm_pod_rkz"]
+
+
+def _make_esm(platform_id: str, esm_id: str, name: str) -> Receiver:
+    return Receiver(
+        id=esm_id,
+        name=name,
+        kind="esm",
+        freq_min_hz=500_000_000,
+        freq_max_hz=18_000_000_000,
+        sensitivity_dbm=-85,
+        gain_db=0,
+        df_accuracy_deg=3,
+        param_library=RED_ESM_PARAM_LIB,
+        processing_time_s=1.5,
+        platform_id=platform_id,
+    )
+
 
 def build_demo_environment() -> Environment:
     env = Environment()
 
     # 红方驱逐舰
-    red_ship = Platform(
+    red_ddg = Platform(
         id="red_ddg",
         name="红方驱逐舰",
         side="red",
@@ -27,7 +50,7 @@ def build_demo_environment() -> Environment:
         heading_deg=0.0,
         speed_kt=0.0,
     )
-    red_ship.emitters.append(Emitter(
+    red_ddg.emitters.append(Emitter(
         id="type346_search_radar",
         name="Type 346 搜索雷达（演示）",
         role="multifunction_radar",
@@ -46,32 +69,40 @@ def build_demo_environment() -> Environment:
         emcon_state="on",
         platform_id="red_ddg",
     ))
-    red_ship.receivers.append(Receiver(
-        id="esm_type726",
-        name="雷达侦察告警设备（演示）",
-        kind="esm",
-        freq_min_hz=500_000_000,
-        freq_max_hz=18_000_000_000,
-        sensitivity_dbm=-75,
-        gain_db=0,
-        df_accuracy_deg=3,
-        param_library=["type346_search_radar"],
-        processing_time_s=1.5,
-        platform_id="red_ddg",
-    ))
-    env.add_platform(red_ship)
+    red_ddg.receivers.append(_make_esm("red_ddg", "esm_ddg", "驱逐舰 ESM"))
+    env.add_platform(red_ddg)
 
-    # 蓝方电子战飞机
+    # 红方护卫舰（交叉定位站）
+    red_ffg = Platform(
+        id="red_ffg",
+        name="红方护卫舰",
+        side="red",
+        kind="ship",
+        latitude=22.9,
+        longitude=120.55,
+        altitude_ft=40.0,
+        heading_deg=0.0,
+        speed_kt=0.0,
+    )
+    red_ffg.receivers.append(_make_esm("red_ffg", "esm_ffg", "护卫舰 ESM"))
+    env.add_platform(red_ffg)
+
+    # 蓝方电子战飞机：绕红方驱逐舰飞行，半径约 103 km
+    orbit_radius_km = 103.0
     blue_ew = Platform(
         id="blue_ew",
         name="蓝方电子战机",
         side="blue",
         kind="aircraft",
-        latitude=21.0,
-        longitude=120.5,
+        latitude=22.0,
+        longitude=121.0,
         altitude_ft=30_000,
-        heading_deg=180.0,
+        heading_deg=0.0,
         speed_kt=420.0,
+        orbit_center_lat=22.0,
+        orbit_center_lon=120.0,
+        orbit_radius_km=orbit_radius_km,
+        orbit_direction=1,
     )
     blue_ew.jammers.append(Jammer(
         id="ecm_pod_rkz",

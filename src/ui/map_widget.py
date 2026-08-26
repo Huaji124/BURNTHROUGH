@@ -60,6 +60,10 @@ class MapWidget(QGraphicsView):
             self._projection = LocalProjection(center_lat, center_lon, px_per_km=1.2)
         self._rebuild()
 
+    def refresh(self) -> None:
+        """根据环境当前状态重建场景。"""
+        self._rebuild()
+
     def set_jammer_on(self, on: bool) -> None:
         self._jammer_on = on
         for jammer in self._env.all_jammers() if self._env else []:
@@ -90,6 +94,7 @@ class MapWidget(QGraphicsView):
         for platform in self._env.platforms.values():
             self._draw_platform(platform)
         self._draw_ew_circles()
+        self._draw_esm_contacts()
         self._draw_legend()
 
     def _draw_grid(self) -> None:
@@ -240,6 +245,53 @@ class MapWidget(QGraphicsView):
         label_item.setFont(QFont("SansSerif", 8))
         label_item.setPos(x + r_px * 0.7, y - r_px * 0.7)
         self._scene.addItem(label_item)
+
+    def _draw_esm_contacts(self) -> None:
+        """绘制 ESM 辐射源接触：测向线 + 交叉定位点。"""
+        env = self._env
+        proj = self._projection
+        if not env.contacts:
+            return
+
+        for own_id, contact_map in env.contacts.items():
+            own = env.platforms.get(own_id)
+            if own is None:
+                continue
+            x0, y0 = proj.to_xy(own.latitude, own.longitude)
+            for contact in contact_map.values():
+                if contact.bearing_deg is None:
+                    continue
+                # 测向线：从己方平台沿方位画 250 km
+                color = QColor("#f39c12") if contact.is_memory else QColor("#1abc9c")
+                pen = QPen(color, 1.2)
+                pen.setStyle(Qt.PenStyle.DashLine if contact.is_memory else Qt.PenStyle.SolidLine)
+                brg = math.radians(contact.bearing_deg)
+                length_px = proj.km_to_px(250.0)
+                x1 = x0 + math.sin(brg) * length_px
+                y1 = y0 - math.cos(brg) * length_px
+                line = QGraphicsLineItem(x0, y0, x1, y1)
+                line.setPen(pen)
+                line.setToolTip(f"{contact.emitter_name} 方位 {contact.bearing_deg:.1f}°")
+                self._scene.addItem(line)
+
+                # 已识别/未知 标签
+                ident = "已识别" if contact.confidence >= 0.6 else "未知"
+                label = QGraphicsSimpleTextItem(
+                    f"{contact.emitter_name} [{ident}] {'记忆' if contact.is_memory else ''}")
+                label.setBrush(QBrush(color))
+                label.setFont(QFont("SansSerif", 8))
+                label.setPos(x1 + 4, y1 - 4)
+                self._scene.addItem(label)
+
+                # 交叉定位估计位置
+                if contact.latitude is not None and contact.longitude is not None:
+                    ex, ey = proj.to_xy(contact.latitude, contact.longitude)
+                    r = 7.0
+                    ellipse = QGraphicsEllipseItem(ex - r, ey - r, 2 * r, 2 * r)
+                    ellipse.setPen(QPen(QColor("#1abc9c"), 1.5))
+                    ellipse.setBrush(QBrush(QColor(26, 188, 156, 60)))
+                    ellipse.setToolTip(f"交叉定位估计: {contact.latitude:.3f}, {contact.longitude:.3f}")
+                    self._scene.addItem(ellipse)
 
     def _draw_legend(self) -> None:
         items = [
