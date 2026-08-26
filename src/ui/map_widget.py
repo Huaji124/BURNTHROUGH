@@ -13,19 +13,14 @@
 
 from __future__ import annotations
 
-import math
 from typing import ClassVar
 
-from PySide6.QtCore import QPoint, QPointF, QRect, QRectF, Qt, Signal
-from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPen, QPolygonF
+from PySide6.QtCore import QPoint, QPointF, QRect, Qt, Signal
+from PySide6.QtGui import QBrush, QColor, QPainter
 from PySide6.QtWidgets import (
     QApplication,
-    QGraphicsEllipseItem,
     QGraphicsItem,
-    QGraphicsLineItem,
-    QGraphicsRectItem,
     QGraphicsScene,
-    QGraphicsSimpleTextItem,
     QGraphicsView,
     QMenu,
     QMessageBox,
@@ -33,27 +28,22 @@ from PySide6.QtWidgets import (
 )
 
 from common.projection import LocalProjection
-from core.environment import Environment, Platform
+from core.environment import Environment
 
-
-class _WaypointRect(QGraphicsRectItem):
-    """可拖拽的航路点标记。"""
-
-    def __init__(self, rect, pid: str, idx: int, on_moved):
-        super().__init__(rect)
-        self._pid = pid
-        self._idx = idx
-        self._on_moved = on_moved
-        self.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsMovable |
-                      QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                      QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges)
-        self.setData(0, f"waypoint::{pid}::{idx}")
-        self.setCursor(Qt.CursorShape.OpenHandCursor)
-
-    def itemChange(self, change, value):
-        if change == QGraphicsItem.GraphicsItemChange.ItemPositionHasChanged:
-            self._on_moved(self._pid, self._idx, self.pos())
-        return super().itemChange(change, value)
+from .map_renderer import (
+    WaypointRect as _WaypointRect,
+)
+from .map_renderer import (
+    draw_esm_contacts,
+    draw_ew_circles,
+    draw_grid,
+    draw_jammer_sectors,
+    draw_legend,
+    draw_missiles,
+    draw_orders,
+    draw_platform,
+    draw_waypoints,
+)
 
 
 class MapWidget(QGraphicsView):
@@ -453,379 +443,19 @@ class MapWidget(QGraphicsView):
         self._platform_items = {}
         self._contact_items = {}
         self._waypoint_items = []
-        self._draw_grid()
-        self._draw_waypoints()
-        self._draw_jammer_sectors()
+        draw_grid(self._scene, self._projection)
+        self._waypoint_items = draw_waypoints(
+            self._scene, self._env, self._projection, self._on_waypoint_moved)
+        draw_jammer_sectors(self._scene, self._env, self._projection)
         for platform in self._env.platforms.values():
-            self._draw_platform(platform)
-        self._draw_ew_circles()
-        self._draw_esm_contacts()
-        self._draw_orders()
-        self._draw_missiles()
-        self._draw_legend()
+            draw_platform(self._scene, platform, self._projection,
+                          self.SIDE_COLORS, self._platform_items)
+        draw_ew_circles(self._scene, self._env, self._projection)
+        draw_esm_contacts(self._scene, self._env, self._projection, self._contact_items)
+        draw_orders(self._scene, self._env, self._projection)
+        draw_missiles(self._scene, self._env, self._projection)
+        draw_legend(self._scene, self._projection)
         self._restore_selection_visuals()
-
-    def _draw_grid(self) -> None:
-        proj = self._projection
-        c_lat, c_lon = proj.center_lat, proj.center_lon
-        span = 8.0
-        step = 1.0
-        pen = QPen(QColor("#2a2f3a"), 1, Qt.PenStyle.DashLine)
-        font = QFont("SansSerif", 8)
-
-        lat = math.floor((c_lat - span) / step) * step
-        while lat <= c_lat + span:
-            x1, y1 = proj.to_xy(lat, c_lon - span)
-            x2, y2 = proj.to_xy(lat, c_lon + span)
-            line = QGraphicsLineItem(x1, y1, x2, y2)
-            line.setPen(pen)
-            line.setZValue(0)
-            self._scene.addItem(line)
-            label = QGraphicsSimpleTextItem(f"{lat:.0f}°N" if lat >= 0 else f"{-lat:.0f}°S")
-            label.setBrush(QBrush(QColor("#7f8c8d")))
-            label.setFont(font)
-            label.setPos(x1 + 3, y1 + 3)
-            label.setZValue(0)
-            self._scene.addItem(label)
-            lat += step
-
-        lon = math.floor((c_lon - span) / step) * step
-        while lon <= c_lon + span:
-            x1, y1 = proj.to_xy(c_lat - span, lon)
-            x2, y2 = proj.to_xy(c_lat + span, lon)
-            line = QGraphicsLineItem(x1, y1, x2, y2)
-            line.setPen(pen)
-            line.setZValue(0)
-            self._scene.addItem(line)
-            label = QGraphicsSimpleTextItem(f"{lon:.0f}°E" if lon >= 0 else f"{-lon:.0f}°W")
-            label.setBrush(QBrush(QColor("#7f8c8d")))
-            label.setFont(font)
-            label.setPos(x1 + 3, y1 + 3)
-            label.setZValue(0)
-            self._scene.addItem(label)
-            lon += step
-
-    def _draw_waypoints(self) -> None:
-        env = self._env
-        proj = self._projection
-        if not env.waypoints:
-            return
-        for pid, wps in env.waypoints.items():
-            p = env.platforms.get(pid)
-            if p is None:
-                continue
-            color = QColor("#e67e22")
-            pts = []
-            if wps:
-                px, py = proj.to_xy(p.latitude, p.longitude)
-                pts.append((px, py))
-            for i, (lat, lon) in enumerate(wps):
-                x, y = proj.to_xy(lat, lon)
-                pts.append((x, y))
-                rect = _WaypointRect(QRectF(x - 5, y - 5, 10, 10), pid, i,
-                                     self._on_waypoint_moved)
-                rect.setPen(QPen(color, 1.5))
-                rect.setBrush(QBrush(color.darker(150)))
-                rect.setZValue(9)
-                rect.setToolTip(f"航路点 {i+1}（拖拽移动，右键删除）")
-                self._scene.addItem(rect)
-                self._waypoint_items.append(rect)
-                label = QGraphicsSimpleTextItem(f"WP{i+1}")
-                label.setBrush(QBrush(color))
-                label.setFont(QFont("SansSerif", 7))
-                label.setPos(x + 6, y - 6)
-                label.setZValue(9)
-                self._scene.addItem(label)
-            if len(pts) >= 2:
-                for i in range(len(pts) - 1):
-                    line = QGraphicsLineItem(pts[i][0], pts[i][1], pts[i+1][0], pts[i+1][1])
-                    line.setPen(QPen(color, 1, Qt.PenStyle.DashLine))
-                    line.setZValue(1)
-                    self._scene.addItem(line)
-
-    def _draw_platform(self, platform: Platform) -> None:
-        proj = self._projection
-        x, y = proj.to_xy(platform.latitude, platform.longitude)
-        size = 10.0
-        color = self.SIDE_COLORS.get(platform.side, QColor("#95a5a6"))
-        pen = QPen(color, 2)
-        brush = QBrush(color.darker(160))
-
-        if not platform.alive:
-            pen = QPen(QColor("#60666e"), 2)
-            brush = QBrush(QColor("#3a3f46"))
-        if platform.kind == "aircraft":
-            pts = [QPointF(x, y - size * 0.7), QPointF(x - size * 0.7, y + size * 0.6),
-                   QPointF(x, y + size * 0.25), QPointF(x + size * 0.7, y + size * 0.6)]
-            item = self._scene.addPolygon(pts, pen, brush)
-        else:
-            item = self._scene.addRect(x - size / 2, y - size / 2, size, size, pen, brush)
-
-        item.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                      QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
-        item.setData(0, f"platform::{platform.id}")
-        item.setZValue(10)
-        item.setToolTip(platform.name)
-        self._platform_items[platform.id] = item
-
-        if platform.kind == "aircraft":
-            hdg = math.radians(platform.heading_deg)
-            hx = x + math.sin(hdg) * 16
-            hy = y - math.cos(hdg) * 16
-            heading_line = QGraphicsLineItem(x, y, hx, hy)
-            heading_line.setPen(QPen(color, 1, Qt.PenStyle.SolidLine))
-            heading_line.setZValue(9)
-            self._scene.addItem(heading_line)
-
-        label_text = platform.name if platform.alive else f"{platform.name} (被击毁)"
-        label = QGraphicsSimpleTextItem(label_text)
-        label.setBrush(QBrush(color if platform.alive else QColor("#60666e")))
-        label.setFont(QFont("SansSerif", 9, QFont.Weight.Bold))
-        label.setPos(x + 8, y - 6)
-        label.setZValue(11)
-        self._scene.addItem(label)
-
-    def _draw_ew_circles(self) -> None:
-        env = self._env
-        proj = self._projection
-        for platform in env.platforms.values():
-            for emitter in platform.emitters:
-                if emitter.emcon_state != "on":
-                    continue
-                if emitter.role not in ("multifunction_radar", "search_radar", "fire_control_radar"):
-                    continue
-                jammer = self._find_jammer_against(platform, emitter)
-                # Phase 3：使用全局干扰资源分配结果
-                assignment = env.assign_jammers()
-                jammer_id = assignment.get(emitter.id)
-                jammer = None
-                if jammer_id is not None:
-                    for other in env.platforms.values():
-                        for j in other.jammers:
-                            if j.id == jammer_id:
-                                jammer = j
-                                break
-                result = env.evaluate_radar_with_jamming(
-                    emitter, jammer, rcs_m2=1000.0, bandwidth_hz=1_000_000,
-                    noise_figure=5.0, loss=6.0, snr_min_db=13.0)
-                x, y = proj.to_xy(platform.latitude, platform.longitude)
-                unjammed_km = result["un-jammed_range_km"] if jammer else result["detection_range_km"]
-                self._draw_circle(x, y, unjammed_km, QColor("#f1c40f"),
-                                  "无干扰探测圈", dashed=True)
-                if jammer:
-                    self._draw_circle(x, y, result["detection_range_km"],
-                                      QColor("#e67e22"), "干扰后探测圈", dashed=False)
-                    self._draw_circle(x, y, result["burn_through_km"],
-                                      QColor("#e74c3c"), "烧穿圈", dashed=True)
-                    jp = env.find_jammer_platform(jammer)
-                    if jp is not None:
-                        jx, jy = proj.to_xy(jp.latitude, jp.longitude)
-                        line = QGraphicsLineItem(jx, jy, x, y)
-                        line.setPen(QPen(QColor("#9b59b6"), 1, Qt.PenStyle.DashLine))
-                        line.setZValue(2)
-                        self._scene.addItem(line)
-                        mid = QGraphicsSimpleTextItem("干扰")
-                        mid.setBrush(QBrush(QColor("#9b59b6")))
-                        mid.setFont(QFont("SansSerif", 8))
-                        mid.setPos((jx + x) / 2 + 4, (jy + y) / 2 - 4)
-                        mid.setZValue(3)
-                        self._scene.addItem(mid)
-
-    def _draw_jammer_sectors(self) -> None:
-        """绘制有向干扰机的干扰扇区。"""
-        env = self._env
-        proj = self._projection
-        for platform in env.platforms.values():
-            if not platform.alive:
-                continue
-            for jammer in platform.jammers:
-                if jammer.emcon_state != "on" or jammer.sector_half_deg >= 180.0:
-                    continue
-                x, y = proj.to_xy(platform.latitude, platform.longitude)
-                radius_px = proj.km_to_px(200.0)
-                heading = math.radians(platform.heading_deg)
-                half = math.radians(jammer.sector_half_deg)
-                # 扇区边界角（屏幕坐标：x 东，y 南）
-                def pt(angle_rad, x=x, y=y, radius_px=radius_px):
-                    return QPointF(x + math.sin(angle_rad) * radius_px,
-                                   y - math.cos(angle_rad) * radius_px)
-                poly = QPolygonF([QPointF(x, y),
-                                  pt(heading - half),
-                                  pt(heading - half * 0.5),
-                                  pt(heading),
-                                  pt(heading + half * 0.5),
-                                  pt(heading + half)])
-                sector = self._scene.addPolygon(poly)
-                sector.setPen(QPen(QColor(155, 89, 182, 120), 1))
-                sector.setBrush(QBrush(QColor(155, 89, 182, 40)))
-                sector.setZValue(1)
-                label = QGraphicsSimpleTextItem("干扰扇区")
-                label.setBrush(QBrush(QColor("#9b59b6")))
-                label.setFont(QFont("SansSerif", 8))
-                label.setPos(pt(heading).x(), pt(heading).y())
-                label.setZValue(3)
-                self._scene.addItem(label)
-
-    def _draw_esm_contacts(self) -> None:
-        env = self._env
-        proj = self._projection
-        if not env.contacts:
-            return
-        for own_id, contact_map in env.contacts.items():
-            own = env.platforms.get(own_id)
-            if own is None:
-                continue
-            x0, y0 = proj.to_xy(own.latitude, own.longitude)
-            for key, contact in contact_map.items():
-                if contact.bearing_deg is None:
-                    continue
-                color = QColor("#f39c12") if contact.is_memory else QColor("#1abc9c")
-                pen = QPen(color, 1.2)
-                pen.setStyle(Qt.PenStyle.DashLine if contact.is_memory else Qt.PenStyle.SolidLine)
-                brg = math.radians(contact.bearing_deg)
-                length_px = proj.km_to_px(250.0)
-                x1 = x0 + math.sin(brg) * length_px
-                y1 = y0 - math.cos(brg) * length_px
-                line = QGraphicsLineItem(x0, y0, x1, y1)
-                line.setPen(pen)
-                line.setZValue(4)
-                line.setToolTip(f"{contact.emitter_name} 方位 {contact.bearing_deg:.1f}°")
-                self._scene.addItem(line)
-
-                ident = "已识别" if contact.confidence >= 0.6 else "未知"
-                mem = " 记忆" if contact.is_memory else ""
-                side_mark = {"friendly": " [友]", "enemy": " [敌]",
-                             "neutral": " [中]", "unknown": " [未]"} \
-                    .get(contact.marked_side or "", "")
-                label_text = f"{contact.emitter_name} [{ident}]{side_mark}{mem}"
-                label = QGraphicsSimpleTextItem(label_text)
-                label.setBrush(QBrush(color))
-                label.setFont(QFont("SansSerif", 8))
-                label.setPos(x1 + 4, y1 - 4)
-                label.setZValue(12)
-                self._scene.addItem(label)
-
-                # 可点击标记
-                if contact.latitude is not None and contact.longitude is not None:
-                    ex, ey = proj.to_xy(contact.latitude, contact.longitude)
-                    r = 7.0
-                    marker = QGraphicsEllipseItem(ex - r, ey - r, 2 * r, 2 * r)
-                    marker.setPen(QPen(QColor("#1abc9c"), 1.5))
-                    marker.setBrush(QBrush(QColor(26, 188, 156, 60)))
-                else:
-                    mx = x0 + math.sin(brg) * proj.km_to_px(120.0)
-                    my = y0 - math.cos(brg) * proj.km_to_px(120.0)
-                    marker = QGraphicsEllipseItem(mx - 6, my - 6, 12, 12)
-                    marker.setPen(QPen(color, 1.5))
-                    marker.setBrush(QBrush(color.darker(200)))
-                marker.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                                QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
-                marker.setData(0, f"contact::{own_id}::{key}")
-                marker.setZValue(12)
-                marker.setToolTip(f"{label_text}\n方位 {contact.bearing_deg:.1f}°")
-                self._scene.addItem(marker)
-                self._contact_items.setdefault(f"{own_id}::{key}", []).append(marker)
-
-    def _draw_orders(self) -> None:
-        env = self._env
-        proj = self._projection
-        for order in env.orders:
-            if order["kind"] != "attack":
-                continue
-            attacker = env.platforms.get(order["attacker"])
-            target = env.platforms.get(order["target"])
-            if attacker is None or target is None:
-                continue
-            x1, y1 = proj.to_xy(attacker.latitude, attacker.longitude)
-            x2, y2 = proj.to_xy(target.latitude, target.longitude)
-            line = QGraphicsLineItem(x1, y1, x2, y2)
-            line.setPen(QPen(QColor("#e74c3c"), 1.5, Qt.PenStyle.DashLine))
-            line.setZValue(8)
-            self._scene.addItem(line)
-            label = QGraphicsSimpleTextItem("攻击")
-            label.setBrush(QBrush(QColor("#e74c3c")))
-            label.setFont(QFont("SansSerif", 8))
-            label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 10)
-            label.setZValue(9)
-            self._scene.addItem(label)
-
-    def _draw_missiles(self) -> None:
-        """绘制飞行中的反辐射导弹。"""
-        env = self._env
-        proj = self._projection
-        for missile in env.missiles:
-            if not missile.active:
-                continue
-            x, y = proj.to_xy(missile.lat, missile.lon)
-            r = 5.0
-            pts = [QPointF(x, y - r), QPointF(x - r * 0.8, y + r * 0.8),
-                   QPointF(x, y + r * 0.3), QPointF(x + r * 0.8, y + r * 0.8)]
-            item = self._scene.addPolygon(pts)
-            item.setPen(QPen(QColor("#ffffff"), 1))
-            item.setBrush(QBrush(QColor("#e74c3c")))
-            item.setZValue(15)
-            item.setToolTip(f"{missile.name} -> {env.platforms.get(missile.target_id).name if missile.target_id in env.platforms else missile.target_id}")
-            label = QGraphicsSimpleTextItem("ARM")
-            label.setBrush(QBrush(QColor("#e74c3c")))
-            label.setFont(QFont("SansSerif", 7, QFont.Weight.Bold))
-            label.setPos(x + 6, y - 6)
-            label.setZValue(16)
-            self._scene.addItem(label)
-
-    def _draw_circle(self, x: float, y: float, radius_km: float,
-                     color: QColor, label: str, dashed: bool) -> None:
-        proj = self._projection
-        r_px = max(proj.km_to_px(radius_km), 1.0)
-        circle = QGraphicsEllipseItem(x - r_px, y - r_px, 2 * r_px, 2 * r_px)
-        pen = QPen(color, 1.5)
-        if dashed:
-            pen.setStyle(Qt.PenStyle.DashLine)
-        circle.setPen(pen)
-        circle.setBrush(QBrush(QColor(0, 0, 0, 0)))
-        circle.setZValue(1)
-        self._scene.addItem(circle)
-
-        label_item = QGraphicsSimpleTextItem(f"{label} {radius_km:.0f} km")
-        label_item.setBrush(QBrush(color))
-        label_item.setFont(QFont("SansSerif", 8))
-        label_item.setPos(x + r_px * 0.7, y - r_px * 0.7)
-        label_item.setZValue(3)
-        self._scene.addItem(label_item)
-
-    def _find_jammer_against(self, victim_platform: Platform, emitter):
-        env = self._env
-        for other in env.platforms.values():
-            if other.side == victim_platform.side:
-                continue
-            for jammer in other.jammers:
-                if jammer.emcon_state != "on":
-                    continue
-                if not jammer.covers_frequency(emitter.center_freq_hz):
-                    continue
-                return jammer
-        return None
-
-    def _draw_legend(self) -> None:
-        items = [
-            ("#f1c40f", "无干扰探测圈"), ("#e67e22", "干扰后探测圈"),
-            ("#e74c3c", "烧穿圈/攻击线"), ("#9b59b6", "干扰连线"),
-            ("#1abc9c", "ESM 接触"), ("#f39c12", "记忆接触"),
-            ("#e74c3c", "红方"), ("#3498db", "蓝方"),
-        ]
-        font = QFont("SansSerif", 9)
-        x, y = -700.0, -420.0
-        for color_hex, text in items:
-            line = QGraphicsLineItem(x, y + 5, x + 22, y + 5)
-            line.setPen(QPen(QColor(color_hex), 2))
-            line.setZValue(20)
-            self._scene.addItem(line)
-            label = QGraphicsSimpleTextItem(text)
-            label.setBrush(QBrush(QColor("#ecf0f1")))
-            label.setFont(font)
-            label.setPos(x + 28, y - 4)
-            label.setZValue(20)
-            self._scene.addItem(label)
-            y += 20
 
     # ------------------------------------------------------------------
     # 上下文菜单
