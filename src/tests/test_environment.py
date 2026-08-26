@@ -120,3 +120,25 @@ def test_eccm_reduces_deception_success_probability():
     emitter.pulse_compression_gain_db = 20.0
     p_eccm = env._deception_success_probability(emitter)
     assert p_eccm < p_base
+
+
+def test_missile_can_be_decoyed_by_false_target():
+    env = build_demo_environment()
+    blue = env.platforms["blue_ew"]
+    jammer = blue.jammers[0]
+    jammer.set_technique("false_target")
+    # 先产生一个假目标
+    env.rng.seed(1)
+    for _ in range(30):
+        env.step(dt_s=1.0)
+    assert env.false_contacts
+
+    env.add_attack_order("red_ddg", "blue_ew")
+    env.process_attack_orders()
+    missile = env.missiles[0]
+    # 强制随机数命中诱骗判定
+    env.rng.random = lambda: 0.0  # type: ignore[method-assign]
+    decoyed = env._try_decoy_missile(missile, blue)
+    assert decoyed
+    assert missile.decoyed
+    assert (missile.last_locked_lat, missile.last_locked_lon) != (blue.latitude, blue.longitude)

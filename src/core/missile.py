@@ -17,6 +17,7 @@ class Missile:
     range_km: float = 150.0
     memory_if_shutdown: bool = True
     memory_time_s: float = 5.0        # 辐射源关机后记忆攻击时间
+    decoyed: bool = False             # 是否被欺骗干扰诱骗
     active: bool = True
     flight_time_s: float = 0.0
     no_emission_time: float = 0.0

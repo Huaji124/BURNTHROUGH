@@ -185,9 +185,10 @@ class Environment:
                 continue
 
             if self._target_is_emitting(target):
-                missile.last_locked_lat = target.latitude
-                missile.last_locked_lon = target.longitude
                 missile.no_emission_time = 0.0
+                if not missile.decoyed and not self._try_decoy_missile(missile, target):
+                    missile.last_locked_lat = target.latitude
+                    missile.last_locked_lon = target.longitude
             else:
                 missile.no_emission_time += dt_s
                 if missile.memory_if_shutdown and missile.no_emission_time > missile.memory_time_s:
@@ -206,7 +207,7 @@ class Environment:
                 missile.lat, missile.lon = aim_lat, aim_lon
                 actual_m = haversine_nm(missile.lat, missile.lon,
                                         target.latitude, target.longitude) * 1852.0
-                if actual_m < 500.0 and self._target_is_emitting(target):
+                if actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
                     missile.active = False
                     if self.rng.random() < self.arm_hit_probability:
                         missile.result = "hit"
@@ -215,6 +216,11 @@ class Environment:
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_miss",
                                             "message": f"{missile.name} 未命中（目标机动/近防拦截）"})
+                elif missile.decoyed:
+                    missile.active = False
+                    missile.result = "miss"
+                    self.events.append({"time": self.time_s, "kind": "missile_decoyed",
+                                        "message": f"{missile.name} 被欺骗干扰诱骗，未命中"})
                 else:
                     missile.active = False
                     missile.result = "miss"
@@ -224,6 +230,57 @@ class Environment:
                 bearing = initial_bearing_deg(missile.lat, missile.lon, aim_lat, aim_lon)
                 missile.lat, missile.lon = destination_point(
                     missile.lat, missile.lon, bearing, step_m / 1852.0)
+
+    def _try_decoy_missile(self, missile: Missile, target: Platform) -> bool:
+        """尝试让导弹被目标欺骗干扰诱骗。
+
+        返回 True 表示导弹本帧被诱骗，last_locked 已指向假目标点。
+        """
+        jammer = self._find_decoy_jammer(target)
+        if jammer is None:
+            return False
+        if self.rng.random() > 0.7:
+            return False
+        decoy_lat, decoy_lon = self._find_decoy_point(missile, target, jammer)
+        if decoy_lat is None:
+            return False
+        missile.last_locked_lat = decoy_lat
+        missile.last_locked_lon = decoy_lon
+        missile.decoyed = True
+        return True
+
+    def _find_decoy_jammer(self, target: Platform):
+        """返回目标平台上正在施放欺骗干扰的干扰机（若有）。"""
+        for jammer in target.jammers:
+            if jammer.is_jamming and jammer.has_deception():
+                return jammer
+        return None
+
+    def _find_decoy_point(self, missile: Missile, target: Platform,
+                          jammer: Jammer) -> tuple[float | None, float | None]:
+        """为导弹选择一个假目标点。
+
+        优先使用已生成的 FalseTarget（距导弹较近者），
+        否则按欺骗技术生成一个偏移点。
+        """
+        candidates: list[FalseTarget] = []
+        for radar_targets in self.false_contacts.values():
+            for t in radar_targets:
+                if t.active and t.jammer_id == jammer.id:
+                    candidates.append(t)
+        if candidates:
+            best = min(candidates,
+                       key=lambda t: haversine_nm(missile.lat, missile.lon,
+                                                  t.latitude, t.longitude))
+            return best.latitude, best.longitude
+        # 无现成假目标时，随机生成偏移 3~15 km
+        offset_km = self.rng.uniform(3.0, 15.0)
+        bearing = self.rng.uniform(0.0, 360.0)
+        lat_off = offset_km / 111.32
+        lon_off = offset_km / (111.32 * math.cos(math.radians(target.latitude)) + 1e-9)
+        brg = math.radians(bearing)
+        return (target.latitude + lat_off * math.cos(brg),
+                target.longitude + lon_off * math.sin(brg))
 
     @staticmethod
     def _target_is_emitting(target: Platform) -> bool:
