@@ -56,18 +56,19 @@ def radar_detection_range_km(env) -> float | None:
     return result["detection_range_km"]
 
 
-def run_single(seed: int, mode: str, hit_prob: float) -> dict:
+def run_single(seed: int, mode: str, hit_prob: float, deception: str = "none") -> dict:
     env = build_demo_environment()
     env.rng.seed(seed)
     env.arm_hit_probability = hit_prob
 
-    # 设置干扰样式
+    # 设置干扰样式与欺骗技术
     for jammer in env.all_jammers():
         if mode == "off":
             jammer.emcon_state = "off"
         else:
             jammer.emcon_state = "on"
             jammer.set_mode(mode)
+        jammer.set_technique(deception)
 
     red = env.platforms["red_ddg"]
     blue = env.platforms["blue_ew"]
@@ -95,12 +96,14 @@ def run_single(seed: int, mode: str, hit_prob: float) -> dict:
     return {
         "mode": mode,
         "hit_prob": hit_prob,
+        "deception": deception,
         "distance_km": dist_km,
         "detection_km": detection_km,
         "launched": launched,
         "missile_result": missile_result,
         "blue_alive": blue.alive,
         "esm_contacts": len(env.contacts.get("red_ddg", {})),
+        "events": list(env.events),
     }
 
 
@@ -139,10 +142,34 @@ def main() -> int:
             print(f"{JAMMER_MODES[mode]:<10}{prob:>8.2f}{survival/n:>8.1%}"
                   f"{launches/n:>10.1%}{avg_det:>12.1f} km{lost/n:>8.1%}")
 
+    # ================================================================
+    # 欺骗干扰对 ARM 突防影响
+    # ================================================================
+    print("\n欺骗干扰对 ARM 突防影响（阻塞式噪声使红方具备发射条件）")
+    print(f"{'欺骗技术':<8}{'突防率':>8}{'发射率':>8}{'被诱骗率':>10}")
+    deception_modes = ["none", "rgpo", "vgpo", "false_target"]
+    deception_names = {"none": "无", "rgpo": "RGPO", "vgpo": "VGPO",
+                       "false_target": "假目标"}
+    for technique in deception_modes:
+        survival = 0
+        launches = 0
+        decoyed = 0
+        for seed in range(n):
+            r = run_single(seed, "barrage_noise", 1.0, deception=technique)
+            if r["blue_alive"]:
+                survival += 1
+            if r["launched"]:
+                launches += 1
+            if any("诱骗" in e.get("message", "") for e in r["events"]):
+                decoyed += 1
+        print(f"{deception_names[technique]:<8}{survival/n:>8.1%}"
+              f"{launches/n:>8.1%}{decoyed/max(launches, 1):>10.1%}")
+
     print("\n说明：")
     print("- 突防率 = 蓝方电子战机生存比例")
     print("- 红方只对正在辐射的目标发射反辐射导弹")
     print("- 干扰机关闭时，红方无 ARM 发射条件，蓝方安全但红方雷达可全程跟踪")
+    print("- 欺骗干扰段默认 ARM 命中率 100%，用于单独观察欺骗效果")
     return 0
 
 

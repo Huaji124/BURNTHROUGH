@@ -38,7 +38,11 @@ class Platform:
     emitters: list[Emitter] = field(default_factory=list)
     receivers: list[Receiver] = field(default_factory=list)
     jammers: list[Jammer] = field(default_factory=list)
-    weapons: list[str] = field(default_factory=list)   # 武器显示（Phase 6 前为占位）
+    weapons: list[str] = field(default_factory=list)   # 武器列表，如 ["ssm"]
+    hp: float = 100.0                # 简化生命值
+    ciws: bool = False               # 近防系统
+    ciws_hit_probability: float = 0.4
+    ciws_range_km: float = 3.0
     # 绕飞轨道（可选）：绕某点做圆周运动
     orbit_center_lat: float | None = None
     orbit_center_lon: float | None = None
@@ -140,8 +144,14 @@ class Environment:
                 self.events.append({"time": self.time_s, "kind": "attack_order",
                                     "message": f"{attacker.name} 攻击 {target.name}：目标超出射程"})
                 continue
-            self._launch_arm(attacker.id, target.id)
-            order["result"] = "launched"
+            if target.kind == "ship" and "ssm" in attacker.weapons:
+                self._launch_asm(attacker.id, target.id)
+                order["result"] = "launched_asm"
+                self.events.append({"time": self.time_s, "kind": "launch",
+                                    "message": f"{attacker.name} 向 {target.name} 发射反舰导弹"})
+            else:
+                self._launch_arm(attacker.id, target.id)
+                order["result"] = "launched"
             self.events.append({"time": self.time_s, "kind": "launch",
                                 "message": f"{attacker.name} 向 {target.name} 发射反辐射导弹"})
 
@@ -154,6 +164,7 @@ class Environment:
         missile = Missile(
             id=f"arm-{self._missile_seq}",
             name="反辐射导弹",
+            kind="arm",
             attacker_id=attacker_id,
             target_id=target_id,
             lat=attacker.latitude,
@@ -164,6 +175,27 @@ class Environment:
         )
         missile.last_locked_lat = target.latitude
         missile.last_locked_lon = target.longitude
+        self.missiles.append(missile)
+
+    def _launch_asm(self, attacker_id: str, target_id: str) -> None:
+        """发射反舰导弹（ASM）。"""
+        attacker = self.platforms.get(attacker_id)
+        target = self.platforms.get(target_id)
+        if attacker is None or target is None:
+            return
+        self._missile_seq += 1
+        missile = Missile(
+            id=f"asm-{self._missile_seq}",
+            name="反舰导弹",
+            kind="asm",
+            attacker_id=attacker_id,
+            target_id=target_id,
+            lat=attacker.latitude,
+            lon=attacker.longitude,
+            speed_mps=300.0,
+            range_km=120.0,
+            memory_if_shutdown=False,
+        )
         self.missiles.append(missile)
 
     def step_missiles(self, dt_s: float) -> None:
@@ -184,7 +216,11 @@ class Environment:
                 missile.result = "miss"
                 continue
 
-            if self._target_is_emitting(target):
+            if missile.kind == "asm":
+                missile.last_locked_lat = target.latitude
+                missile.last_locked_lon = target.longitude
+                missile.no_emission_time = 0.0
+            elif self._target_is_emitting(target):
                 missile.no_emission_time = 0.0
                 if not missile.decoyed and not self._try_decoy_missile(missile, target):
                     missile.last_locked_lat = target.latitude
@@ -207,7 +243,26 @@ class Environment:
                 missile.lat, missile.lon = aim_lat, aim_lon
                 actual_m = haversine_nm(missile.lat, missile.lon,
                                         target.latitude, target.longitude) * 1852.0
-                if actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
+
+                if missile.kind == "asm":
+                    missile.active = False
+                    if target.ciws and dist_m <= target.ciws_range_km * 1000.0:
+                        if self.rng.random() < target.ciws_hit_probability:
+                            missile.result = "miss"
+                            self.events.append({"time": self.time_s, "kind": "missile_intercepted",
+                                                "message": f"{missile.name} 被 {target.name} 近防系统拦截"})
+                        else:
+                            missile.result = "hit"
+                            self._destroy_platform(target, missile)
+                    else:
+                        if self.rng.random() < self.arm_hit_probability:
+                            missile.result = "hit"
+                            self._destroy_platform(target, missile)
+                        else:
+                            missile.result = "miss"
+                            self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                                "message": f"{missile.name} 未命中（目标机动/干扰）"})
+                elif actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
                     missile.active = False
                     if self.rng.random() < self.arm_hit_probability:
                         missile.result = "hit"

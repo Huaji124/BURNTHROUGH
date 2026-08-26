@@ -24,3 +24,4 @@ class Missile:
     last_locked_lat: float | None = None
     last_locked_lon: float | None = None
     result: str | None = None         # hit / miss / lost_lock
+    kind: str = "arm"                 # arm / asm

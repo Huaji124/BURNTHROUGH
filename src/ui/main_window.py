@@ -20,6 +20,7 @@ from core.scenario import load_scenario, save_scenario
 
 from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
+from .false_target_panel import FalseTargetPanel
 from .map_widget import MapWidget
 from .spectrum_widget import SpectrumWidget
 from .unit_info_bar import UnitInfoBar
@@ -67,8 +68,14 @@ class MainWindow(QMainWindow):
                       QDockWidget("EMCON 面板", self), self.emcon_panel)
 
         self.spectrum_widget = SpectrumWidget(self)
+        self.spectrum_widget.set_environment(self.env)
         self.add_dock(Qt.DockWidgetArea.BottomDockWidgetArea,
                       QDockWidget("频谱监视", self), self.spectrum_widget)
+
+        self.false_target_panel = FalseTargetPanel(self)
+        self.false_target_panel.update_false_targets(self.env)
+        self.add_dock(Qt.DockWidgetArea.RightDockWidgetArea,
+                      QDockWidget("假目标列表", self), self.false_target_panel)
 
         self.statusBar().showMessage("就绪 | 左键选中 | 右键菜单/航路点 | 中键平移")
 
@@ -137,6 +144,8 @@ class MainWindow(QMainWindow):
         self.env.step(dt_s=1.0)
         self.map_widget.refresh()
         self.contact_list.update_contacts(self.env)
+        self.spectrum_widget.update()
+        self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
         if len(self.env.events) > self._last_event_count:
             self._last_event_count = len(self.env.events)
@@ -250,6 +259,8 @@ class MainWindow(QMainWindow):
         self.map_widget.set_environment(self.env)
         self.emcon_panel.populate(self.env)
         self.contact_list.update_contacts(self.env)
+        self.spectrum_widget.set_environment(self.env)
+        self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
         self.statusBar().showMessage(f"想定已加载：{path}")
 

@@ -1,7 +1,7 @@
 """Phase 2 环境与 ESM 截获测试。"""
 
 from core.demo import build_demo_environment
-from core.environment import triangulate_bearings
+from core.environment import Platform, triangulate_bearings
 
 
 def test_triangulate_bearings_basic():
@@ -142,3 +142,34 @@ def test_missile_can_be_decoyed_by_false_target():
     assert decoyed
     assert missile.decoyed
     assert (missile.last_locked_lat, missile.last_locked_lon) != (blue.latitude, blue.longitude)
+
+
+def test_asm_launch_and_ciws_intercept():
+    env = build_demo_environment()
+    env.rng.seed(3)
+    red = env.platforms["red_ddg"]
+    red.weapons = ["ssm"]
+    # 蓝方运输舰，带近防
+    blue_ship = Platform(
+        id="blue_ship",
+        name="蓝方运输舰",
+        side="blue",
+        kind="ship",
+        latitude=21.5,
+        longitude=120.5,
+        altitude_ft=0.0,
+        speed_kt=0.0,
+        ciws=True,
+        ciws_hit_probability=1.0,
+    )
+    env.add_platform(blue_ship)
+    env.add_attack_order("red_ddg", "blue_ship")
+    env.process_attack_orders()
+    assert env.missiles and env.missiles[0].kind == "asm"
+    # 推进直到导弹结束
+    for _ in range(600):
+        env.step(1.0)
+        if any(m.result for m in env.missiles):
+            break
+    assert env.missiles[0].result == "miss"
+    assert "近防" in (env.events[-1]["message"] if env.events else "")
