@@ -1,7 +1,7 @@
 [project]
-name = "electronic-warfare-wargame"
+name = "burnthrough"
 version = "0.1.0"
-description = "现代海空兵推软件原型：以电子战（EW）为核心，类似 Harpoon/CMO 的 2D 桌面推演工具"
+description = "烧穿 BURNTHROUGH：以电子战（EW）为核心的现代海空兵推软件原型，类似 Harpoon/CMO 的 2D 桌面推演工具"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

@@ -21,7 +21,7 @@ def fmt(km: float) -> str:
 
 def main() -> int:
     print("=" * 72)
-    print("电子战静态射频沙盘 —— J/S 与烧穿距离演示")
+    print("烧穿 BURNTHROUGH —— 电子战静态射频沙盘：J/S 与烧穿距离演示")
     print("=" * 72)
 
     # 雷达参数（Type 346 搜索雷达演示值）

@@ -1,4 +1,6 @@
-# 电子战（EW）海空兵推软件原型
+# 烧穿 BURNTHROUGH
+
+电子战（EW）海空兵推软件原型
 
 一款以电子战为核心的现代海空兵推软件原型，设计参考《Harpoon》和
 《Command: Modern Operations (CMO)》的玩法，重点模拟：

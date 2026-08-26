@@ -1,4 +1,4 @@
-# 开发计划（电子战兵推）
+# 开发计划（烧穿 BURNTHROUGH - 电子战兵推）
 
 > 完整规划见 `/home/dsh/EW_wargame_development_plan.txt`。
 

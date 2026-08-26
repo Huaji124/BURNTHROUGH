@@ -14,7 +14,7 @@ from .emcon_panel import EmconPanel
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("电子战海空兵推原型 - EW Wargame Prototype")
+        self.setWindowTitle("烧穿 BURNTHROUGH - 电子战海空兵推")
         self.resize(1280, 800)
 
         self.map_widget = MapWidget(self)
