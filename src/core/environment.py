@@ -161,7 +161,7 @@ class Environment:
                     self.waypoints[p.id].pop(0)
                     if not self.waypoints[p.id]:
                         self.waypoints.pop(p.id, None)
-                        p.speed_kt = 0.0  # 到达终点后停住
+                        self._on_reach_final_waypoint(p)
                 else:
                     p.latitude, p.longitude = destination_point(
                         p.latitude, p.longitude, brg, dist_nm)
@@ -178,6 +178,19 @@ class Environment:
 
             p.latitude, p.longitude = destination_point(
                 p.latitude, p.longitude, tangent, dist_nm)
+
+    def _on_reach_final_waypoint(self, p: Platform) -> None:
+        """到达最后一个航路点：舰船停船，飞机盘旋待命。"""
+        if p.kind == "aircraft":
+            # 在到达点上方建立盘旋轨道，保持巡航速度
+            p.orbit_center_lat = p.latitude
+            p.orbit_center_lon = p.longitude
+            p.orbit_radius_km = 5.0
+            p.orbit_direction = 1
+            if p.cruise_speed_kt > 0:
+                p.speed_kt = p.cruise_speed_kt
+        else:
+            p.speed_kt = 0.0  # 停船
 
     # ------------------------------------------------------------------
     # ESM 截获与接触管理

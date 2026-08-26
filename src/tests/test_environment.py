@@ -46,3 +46,15 @@ def test_move_order_restores_speed_and_stops_at_destination():
     assert ddg.latitude == 22.1 and ddg.longitude == 120.0
     assert ddg.speed_kt == 0.0
     assert 'red_ddg' not in env.waypoints
+
+
+def test_aircraft_loiters_after_final_waypoint():
+    env = build_demo_environment()
+    blue = env.platforms['blue_ew']
+    # 给飞机设一个很近的航路点
+    env.add_move_order('blue_ew', blue.latitude, blue.longitude + 0.05, append=False)
+    env.step_motion(dt_s=3600)
+    assert 'blue_ew' not in env.waypoints
+    assert blue.orbit_center_lat is not None
+    assert blue.orbit_radius_km is not None
+    assert blue.speed_kt == blue.cruise_speed_kt
