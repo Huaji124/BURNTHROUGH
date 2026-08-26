@@ -1,0 +1,387 @@
+# 中国军力装备清单（原始数据导出）
+
+> 来源：`data/china_full.json`（由用户提供的 CMO/MoZi 风格 DB 提取）
+>
+> 汇总：舰艇 99 型、飞机 136 型、潜艇 17 型、武器/发射装置 112 项
+
+## 一、舰艇型号
+
+- Bohai Emerald Bead [2300P/2500LM RoPax]
+- Bohai Jinzhu [1300P/1800LM RoPax]
+- DDG 136 Hangzhou [Pr.956E Sovremenny]
+- DDG 138 Taizhou [Pr.956ME Sovremenny]
+- Type 001 Liaoning [16 Liaoning, Shi Lang, Ex-Varyag]
+- Type 021 Huangfeng
+- Type 022 Houbei
+- Type 024 Hoku [Komar Mod]
+- Type 037 Hainan
+- Type 037-I Haijiu
+- Type 037-IG Houxin
+- Type 037-II Houjian [770 Yangjiang]
+- Type 037-IS Haiqing
+- Type 051 Luda I [105 Jinan]
+- Type 051 Luda II [105 Jinan]
+- Type 051B Luhai [167 Shenzhen]
+- Type 051C Luzhou [115 Shenyang]
+- Type 051D Luda I Mod [109 Kaifeng]
+- Type 051D Luda I [108 Xining]
+- Type 051DT Luda IV [109 Kaifeng]
+- Type 051G Luda III [165 Zhanjiang]
+- Type 051Z Luda I [132 Hefei]
+- Type 052 Luhu [112 Harbin]
+- Type 052 Luhu [113 Qingdao]
+- Type 052B Luyang I [168 Guangzhou]
+- Type 052C Luyang II [170 Lanzhou]
+- Type 052D Luyang III [173 Changsha]
+- Type 053H Jianghu I Mod [516 Jiujiang]
+- Type 053H Jianghu I [516 Changsha]
+- Type 053H1 Jianghu II Mod [555 Zhaotong]
+- Type 053H1 Jianghu II [533 Taizhou]
+- Type 053H1G Jianghu V [558 Zigong]
+- Type 053H2 Jianghu III [535 Huangshi]
+- Type 053H2G Jiangwei [539 Anqing]
+- Type 053H2G Jiangwei [China Coast Guard 31239]
+- Type 053H3 Jiangwei II [564 Yichang]
+- Type 053HT-H Jianghu IV [544 Siping]
+- Type 053K Jiangdong [531 Yingtan]
+- Type 054 Jiangkai I [525 Manshan]
+- Type 054A Jiangkai II [530 Xuzhou]
+- Type 054A++ Jiangkai II [576 Daqing]
+- Type 055 Renhai [Zheng He]
+- Type 056 Jiangdao [582 Bengbu]
+- Type 056A Jiangdao [593 Sanmenxia]
+- Type 062 Shanghai I
+- Type 062 Shanghai II
+- Type 062-I Haizhui
+- Type 062-I Shanghai III
+- Type 067 Yunan
+- Type 068 Yuqing
+- Type 071 Yuzhao [998 Kunlun Shan]
+- Type 072 Yukan [927 Yuntaishan]
+- Type 072 Yukan [China Coast Guard - Tow 25]
+- Type 072-II Yuting I [908 Yandangshang]
+- Type 072-III Yuting IIA [911 Tianzhushan]
+- Type 073-2 Yudao [965]
+- Type 073-3 Yudeng [990 Jincheng Shan]
+- Type 073A Yunshu [941 Shengshanhao]
+- Type 074 Yuhai [6562]
+- Type 079 Yulian [957]
+- Type 081 Wochi [805 Zhangjiagang]
+- Type 081A Wochi [841 Xiaoyi]
+- Type 082 Wosao [800]
+- Type 082B Wozang [804 Huoqiu]
+- Type 0891A [82 Shichang]
+- Type 271-II Yupen
+- Type 271-IID Yupen
+- Type 271-III Yupen
+- Type 312 Futi ROV
+- Type 65 Jiangnan [Mod Riga Class, 501 Xiaguan]
+- Type 6601 Chengdu [Pr.50 Riga, 505 Kunming]
+- Type 6610 [T-43, 807 Daishan]
+- Type 724 Jingsah II [LCAC]
+- Type 726 Yuyi [LCAC]
+- Type 75 LHD
+- Type 795 Daxin [81 Zhenghe]
+- Type 814A Dadie [Beidiao 841]
+- Type 815 [851 Beijixing]
+- Type 815A [853 Tianwangxing]
+- Type 818 [China Coast Guard 46301]
+- Type 901 Hulunhu [965]
+- Type 903 Fuchi [886 Qiandaohu]
+- Type 903A Fuchi [889 Taihu]
+- Type 904 Dayun [951 Nanyun]
+- Type 905 Taiking [881 Hongzehu, Fuqing Class]
+- Type 908 Fusu [885 Qinghaihu, Komandarm Fedko Class]
+- Type 918 Wolei [814 Liaoyang]
+- Type 918 Wolei [China Marine Surveillance 112]
+- Type 920 Anwei [866 Daishadao]
+- Type 922-II Dalang I [Nanjiu 503]
+- Type 922-III Dalang II [Beijiu 122]
+- Type 925 Dajing [861 Changxingdao]
+- Type xxx MLP [868 Donghaidao]
+- Type xxx Qiongsha [Nanyun 830]
+- Type xxx Zubr [3325, MDK Pomornik, Pr.1232.2 Zubr]
+- Type xxx [China Coast Guard 2901]
+- Type xxx [China Marine Surveillance 83]
+- Yuan Wang 5
+- Yuan Wang 7
+
+## 二、飞机型号
+
+- AS.565SA Panther
+- An-24B Coke
+- An-24RV Coke
+- An-26 Curl A
+- BZK-005 Sea Eagle UAV
+- CH-4B [Rainbow, Predator Copy] UAV
+- CH-5 [Rainbow] UCAV
+- CH-500 UCAV
+- CSA-003 [Diamond DA42 Twin Star]
+- CSA-004 [Diamond DA42 Twin Star]
+- Camcopter S-100 UAV
+- EA-03 Soar Dragon UAV
+- GJ-2 Wing Loong [Pterodactyl] II UCAV
+- H-5 Beagle
+- H-6A Badger
+- H-6C Badger
+- H-6D Badger
+- H-6E Badger
+- H-6G Badger
+- H-6G Badger [H-6M]
+- H-6H Badger
+- H-6J Badger
+- H-6K Badger [God of War]
+- H-6M Badger
+- H-6N Badger
+- HD-5 Beagle
+- HY-6D Badger [H-6DU]
+- HY-6U Badger [H-6U]
+- HZ-5 Beagle
+- HZ-6A Badger
+- Il-76MD Candid B
+- Il-78M Midas
+- J-10A Vigorous Dragon
+- J-10AH Vigorous Dragon
+- J-10B Vigorous Dragon
+- J-10C Vigorous Dragon
+- J-11 Flanker B [Su-27SK]
+- J-11B Flanker B [Su-27SK Copy]
+- J-11BH Flanker B [Su-27SK Copy]
+- J-11BS Flanker C [Su-27UBK Copy]
+- J-11BSH Flanker C [Su-27UBK Copy]
+- J-11D Flanker B [Su-27SK Copy]
+- J-15 Flying Shark [Su-33 Copy]
+- J-15S Flying Shark [Su-33 Copy]
+- J-16 Flying Shark [Su-30MKK Copy]
+- J-20 Mighty Dragon
+- J-31
+- J-31 [Carrier Variant]
+- J-5A Fresco [MiG-17PF Copy]
+- J-6 Farmer [MiG-19S Copy]
+- J-6A Farmer [MiG-19P Copy]
+- J-7C Fishbed [MiG-21 Copy]
+- J-7D Fishbed [MiG-21 Copy]
+- J-7E Fishbed [MiG-21 Copy]
+- J-7EH Fishbed [MiG-21 Copy]
+- J-7G Fishbed [MiG-21 Copy]
+- J-7I Fishbed [MiG-21 Copy]
+- J-7II Fishbed [MiG-21 Copy]
+- J-7IIH Fishbed [MiG-21 Copy]
+- J-8A Finback A [J-8I]
+- J-8B Finback B [J-8II]
+- J-8D Finback B [J-8II]
+- J-8F Finback B [J-8II]
+- J-8IE Finback A [J-8I]
+- JD-15 Flying Shark [Su-30MKK Copy]
+- JD-16 Flying Shark [Su-30MKK Copy]
+- JH-7 Flounder
+- JH-7A Flounder
+- JH-7B Flounder
+- JL-8 Karakorum
+- JZ-8F Finback B
+- JZ-8R Finback A
+- KJ-200 Cub [GX5]
+- KJ-2000 Mainring [A-50]
+- KJ-500 Cub [GX9]
+- Ka-28 Helix A
+- Ka-31 Helix
+- Mi-17 Hip H
+- Mi-171 Hip H
+- Mi-17V5 Hip H
+- Mi-17V7 Hip H
+- Mi-8T Hip C
+- Q-5 Fantan
+- Q-5C Fantan
+- Q-5D Fantan
+- Q-5I Fantan
+- Q-5IA Fantan
+- S-70C-2 Blackhawk
+- SA.321Ja Super Frelon
+- SH-5 Harbin
+- Su-30MKK Flanker G
+- Su-30MKK2 Flanker G
+- Su-35K Flanker E
+- Tu-154M Careless [Type I ELINT]
+- Tu-154M Careless [Type II ELINT / SLAR]
+- WD-1K Wing Loong [Pterodactyl] I UAV
+- Y-12
+- Y-20 Kunpeng
+- Y-7 Curl
+- Y-7H Curl
+- Y-8 Cub
+- Y-8C Cub
+- Y-8CB Cub [GX1]
+- Y-8G Cub [GX4]
+- Y-8J Cub
+- Y-8JB Cub [GX2]
+- Y-8Q Cub [GX6]
+- Y-8T Cub [GX3]
+- Y-8X Cub
+- Y-8XZ Cub [GX7]
+- Y-9 Cub
+- Y-9G Cub [GX11]
+- Y-9JB Cub [GX8]
+- Y-9XZ Cub [GX10]
+- Z-10 Fierce Thunderbolt
+- Z-11J
+- Z-11W
+- Z-11WB
+- Z-18 Super Frelon
+- Z-18FQ Super Frelon
+- Z-18YJ Super Frelon [Black Bat]
+- Z-19 Black Whirlwind
+- Z-20
+- Z-20F
+- Z-8A Super Frelon
+- Z-8G Super Frelon
+- Z-8J Super Frelon [ASW]
+- Z-8J Super Frelon [Transport & Amphibious Assault]
+- Z-8K Super Frelon [SAR]
+- Z-9 Dauphin 2
+- Z-9A Dauphin 2
+- Z-9B Dauphin 2
+- Z-9C Dauphin 2
+- Z-9D Dauphin 2
+- Z-9W Dauphin 2
+- Z-9WA Dauphin 2
+
+## 三、潜艇型号
+
+- S 364 [PL-877M Kilo]
+- S 366 [PL-636 Kilo]
+- S 368 [PL-636M Kilo]
+- Type 033 Romeo
+- Type 033G Wuhan [PL-633 Romeo Mod]
+- Type 035 Ming
+- Type 035B Ming
+- Type 035G Ming
+- Type 039 Song
+- Type 039G Song
+- Type 039G1 Song
+- Type 041 Yuan
+- Type 091 Han
+- Type 092 Xia
+- Type 093 Shang
+- Type 093B Shang
+- Type 094 Jin
+
+## 四、导弹/武器/发射装置
+
+- 100mm/55 China H/PJ-87 Single [Type 210]
+- 100mm/55 China H/PJ-87 Twin [Type 210]
+- 100mm/56 PJ33A Twin
+- 100mm/56 Single
+- 100mm/56 Twin
+- 12.7mm/50 MG [200 rnds]
+- 12.7mm/50 MG [700 rnds]
+- 12.7mm/50 Twin MG
+- 122mm MLRS
+- 130mm China H/PJ-38
+- 130mm/58 Twin
+- 14.5mm MG
+- 14.5mm/73 Twin
+- 14.5mm/93 Quad MG
+- 23mm AM-23 [100 rnds]
+- 23mm AM-23 x 2 [250 rnds x 2]
+- 23mm AM-23 x 2 [300 rnds x 2]
+- 23mm China Type 23-1 Twin [100 rnds x 2, NR-23 Copy]
+- 23mm China Type 23-1 Twin [200 rnds x 2, NR-23 Copy]
+- 23mm China Type 23-1 x 3 [80 rnds x 3, NR-23 Copy]
+- 23mm China Type 23-2 x 2 [100 rnds x 2, AM-23 Copy]
+- 23mm China Type 23-3 [200 rnds, GSh-23L Copy]
+- 23mm Gsh-23L [200 rnds]
+- 23mm Twin
+- 25mm/60 Twin
+- 25mm/80 Twin
+- 30mm China H/PJ-12 [Type 730]
+- 30mm China H/PJ-14 [Type 1130]
+- 30mm China H/PJ-17
+- 30mm China Type 1-30 [120 rnds]
+- 30mm China Type 1-30 x 2 [75 rnds]
+- 30mm China Type 1-30 x 3 [75 rnds x 2, 55 rnds x 1]
+- 30mm Gsh-30-1 [150 rnds]
+- 30mm H/PJ-11 CIWS
+- 30mm/65 China Type 65 Twin [AK-230 Copy]
+- 324mm B.515
+- 324mm TT Triple
+- 324mm Type 7424B Triple
+- 37mm/63 Twin DP
+- 37mm/63 Type 65 Twin DP
+- 37mm/63 Type 715 Twin DP
+- 37mm/63 Type 715I Twin DP
+- 37mm/63 Type 715II Twin DP, PL-8H
+- 37mm/63 Type 715II Twin DP, PL-9
+- 533mm TT
+- 533mm Twin TT
+- 57mm/70 Twin
+- 7.62mm MG
+- 76mm/60 China H/PJ-26 [AK-176 Copy]
+- A-22 [Ogon] 140mm Rockets
+- AK-130 130mm/54 Twin
+- AK-176 76mm/60 Single
+- AK-630 30mm/65 Gatling
+- AK-630M 30mm/65 Gatling
+- APP-50A x 2 [92 Cartridges]
+- CADS-N-1 [3M87 Kortik]
+- China Towed Acoustic Decoy
+- China Type 65 ASW Rockets
+- China Type 726-4 DL
+- China Type 726-4A DL
+- China Type 81 ASW Rockets
+- China Type 87 ASW Rockets
+- China Type 945G DL
+- China Type 946 DL
+- China Type 947 DL
+- China VLS Type GJB 5860-2006 [32 Cells]
+- China VLS Type GJB 5860-2006A [64 Cells]
+- China VLS [16 Cells]
+- China VLS [32 Cells]
+- China VLS [8 Cells]
+- Depth Charge Rack [12 DC]
+- Depth Charge Rack [15 DC]
+- Depth Charge Rack [4 DC]
+- FQF-6000
+- GT-1 x 2 [100 Cartridges]
+- Generic Chaff/Flare Dispenser [92 Cartridges]
+- HQ-10 [FL-3000N, 18 rnds]
+- HQ-10 [FL-3000N, 24 rnds]
+- HQ-10 [FL-3000N, 8 rnds]
+- HQ-61B Sextuple
+- HQ-61B Twin Rail
+- HQ-7 [FM-80] Naval
+- HQ-7B [FM-90] Naval
+- HQ-9A VLS [6 Cells]
+- HY-1J Single
+- HY-1J Triple
+- HY-1J Twin
+- JL-1
+- JL-2
+- Mine Magazine
+- Mk33 RBOC
+- PK-10 DL
+- PK-16 DL
+- PK-2 DL [ZIF-121]
+- RBU-1200
+- RBU-6000 [Smerch-2]
+- SA-N-12 Grizzly [9K37 Ezh] Single Rail
+- SA-N-20 Gargoyle [S-300FM Fort-M, 48N6M] VLS [8 Cells]
+- SA-N-8 Gremlin [9K34 Strela-3] Mast Launcher
+- SS-N-22 Sunburn Quad
+- Signal Ejector
+- Type 81H 122mm Rockets
+- YJ-12 Twin
+- YJ-18 Quad
+- YJ-62 Quad
+- YJ-8 [C-801] Single
+- YJ-8 [C-801] Twin
+- YJ-83 [C-802A] Quad
+- YJ-83 [C-802A] Twin
+- YJ-8A [C-801] Quad
+- YJ-8A [C-801] Triple
+- YJ-8A [C-801] Twin
+
+## 备注
+
+- 以上为数据库原始名称，部分含舷号/别名；
+- “武器/发射装置”包含导弹发射装置、舰炮、鱼雷管、干扰弹发射器等；
+- 导弹型号（如 YJ-8、YJ-83、YJ-18、HQ-9、JL-1/2 等）均包含在此列表中。
