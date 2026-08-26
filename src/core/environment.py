@@ -14,11 +14,11 @@ from dataclasses import dataclass, field
 
 from common.geo import destination_point, haversine_nm, initial_bearing_deg
 
+from . import propagation
 from .contact import Contact
 from .emitter import Emitter
 from .jammer import Jammer
 from .receiver import Receiver
-from . import propagation
 
 
 @dataclass
@@ -32,6 +32,7 @@ class Platform:
     altitude_ft: float = 0.0          # 飞机高度；舰船/地面为 0 或天线高度
     heading_deg: float = 0.0
     speed_kt: float = 0.0
+    cruise_speed_kt: float = 0.0    # 巡航速度：航路点任务中用于自动恢复
     emitters: list[Emitter] = field(default_factory=list)
     receivers: list[Receiver] = field(default_factory=list)
     jammers: list[Jammer] = field(default_factory=list)
@@ -77,6 +78,8 @@ class Environment:
         platform = self.platforms.get(platform_id)
         if platform is None:
             return
+        if platform.speed_kt <= 0 and platform.cruise_speed_kt > 0:
+            platform.speed_kt = platform.cruise_speed_kt
         # 进入人工航路点后，取消绕飞轨道
         platform.orbit_center_lat = None
         platform.orbit_center_lon = None
@@ -148,7 +151,7 @@ class Environment:
             dist_nm = p.speed_kt * dt_s / 3600.0
 
             # 1) 航路点导航
-            if p.id in self.waypoints and self.waypoints[p.id]:
+            if self.waypoints.get(p.id):
                 wp_lat, wp_lon = self.waypoints[p.id][0]
                 brg = initial_bearing_deg(p.latitude, p.longitude, wp_lat, wp_lon)
                 dist_to_wp = haversine_nm(p.latitude, p.longitude, wp_lat, wp_lon)
@@ -156,6 +159,9 @@ class Environment:
                 if dist_to_wp <= dist_nm:
                     p.latitude, p.longitude = wp_lat, wp_lon
                     self.waypoints[p.id].pop(0)
+                    if not self.waypoints[p.id]:
+                        self.waypoints.pop(p.id, None)
+                        p.speed_kt = 0.0  # 到达终点后停住
                 else:
                     p.latitude, p.longitude = destination_point(
                         p.latitude, p.longitude, brg, dist_nm)

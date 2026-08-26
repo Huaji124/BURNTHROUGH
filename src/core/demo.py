@@ -9,12 +9,10 @@
 
 from __future__ import annotations
 
-import math
-
-from .environment import Environment, Platform
 from .emitter import Emitter
-from .receiver import Receiver
+from .environment import Environment, Platform
 from .jammer import Jammer
+from .receiver import Receiver
 
 RED_ESM_PARAM_LIB = ["type346_search_radar", "ecm_pod_rkz"]
 
@@ -49,6 +47,7 @@ def build_demo_environment() -> Environment:
         altitude_ft=50.0,
         heading_deg=0.0,
         speed_kt=0.0,
+        cruise_speed_kt=20.0,
     )
     red_ddg.weapons = ["反舰导弹 x8", "防空导弹 x16"]
     red_ddg.emitters.append(Emitter(
@@ -84,6 +83,7 @@ def build_demo_environment() -> Environment:
         altitude_ft=40.0,
         heading_deg=0.0,
         speed_kt=0.0,
+        cruise_speed_kt=20.0,
     )
     red_ffg.weapons = ["反舰导弹 x4", "防空导弹 x8"]
     red_ffg.receivers.append(_make_esm("red_ffg", "esm_ffg", "护卫舰 ESM"))
@@ -101,6 +101,7 @@ def build_demo_environment() -> Environment:
         altitude_ft=30_000,
         heading_deg=0.0,
         speed_kt=420.0,
+        cruise_speed_kt=420.0,
         orbit_center_lat=22.0,
         orbit_center_lon=120.0,
         orbit_radius_km=orbit_radius_km,

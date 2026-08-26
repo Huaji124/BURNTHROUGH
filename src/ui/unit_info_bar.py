@@ -2,11 +2,10 @@
 
 from __future__ import annotations
 
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtWidgets import (QHBoxLayout, QLabel, QMenu, QPushButton,
-                               QWidget)
+from PySide6.QtCore import Signal
+from PySide6.QtWidgets import QHBoxLayout, QLabel, QPushButton, QWidget
 
-from core.environment import Environment, Platform
+from core.environment import Environment
 
 
 class UnitInfoBar(QWidget):

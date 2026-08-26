@@ -35,3 +35,14 @@ def test_jammer_off_contact_goes_memory():
         env.step(dt_s=1.0)
     contact = env.contacts["red_ddg"]["ecm_pod_rkz"]
     assert contact.is_memory
+
+
+def test_move_order_restores_speed_and_stops_at_destination():
+    env = build_demo_environment()
+    ddg = env.platforms['red_ddg']
+    env.add_move_order('red_ddg', 22.1, 120.0, append=False)
+    assert ddg.speed_kt == 20.0
+    env.step_motion(dt_s=3600)  # 20 节 x 1 小时 = 20 海里 > 6 海里
+    assert ddg.latitude == 22.1 and ddg.longitude == 120.0
+    assert ddg.speed_kt == 0.0
+    assert 'red_ddg' not in env.waypoints

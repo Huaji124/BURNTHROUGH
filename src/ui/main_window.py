@@ -4,15 +4,20 @@ from __future__ import annotations
 
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
-from PySide6.QtWidgets import (QDockWidget, QHBoxLayout, QMainWindow,
-                               QToolBar, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (
+    QDockWidget,
+    QMainWindow,
+    QToolBar,
+    QVBoxLayout,
+    QWidget,
+)
 
 from core.demo import build_demo_environment
 
-from .map_widget import MapWidget
 from .contact_list import ContactListWidget
-from .spectrum_widget import SpectrumWidget
 from .emcon_panel import EmconPanel
+from .map_widget import MapWidget
+from .spectrum_widget import SpectrumWidget
 from .unit_info_bar import UnitInfoBar
 
 

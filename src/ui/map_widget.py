@@ -14,17 +14,25 @@
 from __future__ import annotations
 
 import math
+from typing import ClassVar
 
 from PySide6.QtCore import QPoint, QPointF, QRect, Qt, Signal
 from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPen
-from PySide6.QtWidgets import (QApplication, QGraphicsEllipseItem,
-                               QGraphicsItem, QGraphicsLineItem,
-                               QGraphicsPolygonItem, QGraphicsRectItem,
-                               QGraphicsScene, QGraphicsSimpleTextItem,
-                               QGraphicsView, QMenu, QMessageBox, QRubberBand)
+from PySide6.QtWidgets import (
+    QApplication,
+    QGraphicsEllipseItem,
+    QGraphicsItem,
+    QGraphicsLineItem,
+    QGraphicsRectItem,
+    QGraphicsScene,
+    QGraphicsSimpleTextItem,
+    QGraphicsView,
+    QMenu,
+    QMessageBox,
+    QRubberBand,
+)
 
 from common.projection import LocalProjection
-
 from core.environment import Environment, Platform
 
 
@@ -34,7 +42,7 @@ class MapWidget(QGraphicsView):
     selection_changed = Signal()
     command_issued = Signal(str)
 
-    SIDE_COLORS = {
+    SIDE_COLORS: ClassVar[dict[str, QColor]] = {
         "red": QColor("#e74c3c"),
         "blue": QColor("#3498db"),
         "neutral": QColor("#95a5a6"),
@@ -120,14 +128,14 @@ class MapWidget(QGraphicsView):
     # ------------------------------------------------------------------
     # 缩放
     # ------------------------------------------------------------------
-    def wheelEvent(self, event) -> None:  # noqa: N802
+    def wheelEvent(self, event) -> None:
         factor = 1.25 if event.angleDelta().y() > 0 else 0.8
         self.scale(factor, factor)
 
     # ------------------------------------------------------------------
     # 鼠标交互
     # ------------------------------------------------------------------
-    def mousePressEvent(self, event) -> None:  # noqa: N802
+    def mousePressEvent(self, event) -> None:
         if event.button() == Qt.MouseButton.LeftButton:
             self._left_press_screen = event.position().toPoint()
             self._left_press_scene = self.mapToScene(event.position().toPoint())
@@ -140,7 +148,7 @@ class MapWidget(QGraphicsView):
             self.viewport().setCursor(Qt.CursorShape.ClosedHandCursor)
         super().mousePressEvent(event)
 
-    def mouseMoveEvent(self, event) -> None:  # noqa: N802
+    def mouseMoveEvent(self, event) -> None:
         # 左键框选
         if self._left_press_screen is not None:
             delta = (event.position().toPoint() - self._left_press_screen).manhattanLength()
@@ -165,7 +173,7 @@ class MapWidget(QGraphicsView):
             self.verticalScrollBar().setValue(self.verticalScrollBar().value() - delta.y())
         super().mouseMoveEvent(event)
 
-    def mouseReleaseEvent(self, event) -> None:  # noqa: N802
+    def mouseReleaseEvent(self, event) -> None:
         if event.button() == Qt.MouseButton.LeftButton:
             if self._left_dragging:
                 self._finish_rubber_band()
@@ -289,7 +297,7 @@ class MapWidget(QGraphicsView):
             p = env.platforms.get(pid)
             if p is None:
                 continue
-            if p.speed_kt <= 0:
+            if p.speed_kt <= 0 and p.cruise_speed_kt <= 0:
                 continue
             env.add_move_order(pid, lat, lon, append=append)
             moved.append(p.name)

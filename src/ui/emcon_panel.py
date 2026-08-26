@@ -3,8 +3,13 @@
 from __future__ import annotations
 
 from PySide6.QtCore import Qt, Signal
-from PySide6.QtWidgets import (QTableWidget, QTableWidgetItem, QWidget,
-                               QVBoxLayout, QLabel)
+from PySide6.QtWidgets import (
+    QLabel,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
+    QWidget,
+)
 
 from core.environment import Environment
 

@@ -1,6 +1,5 @@
 """电磁传播公式测试。"""
 
-import math
 
 from core import propagation
 
