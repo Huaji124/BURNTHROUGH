@@ -57,7 +57,7 @@ class MapWidget(QGraphicsView):
             center_lat = sum(lats) / len(lats)
             center_lon = sum(lons) / len(lons)
             # 初始缩放：能看见 700 km 量级的探测圈
-            self._projection = LocalProjection(center_lat, center_lon, px_per_km=1.2)
+            self._projection = LocalProjection(center_lat, center_lon, px_per_km=0.5)
         self._rebuild()
 
     def refresh(self) -> None:
