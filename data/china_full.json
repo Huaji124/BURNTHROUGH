@@ -1,9 +1,9 @@
 {
  "source": "/tmp/cmo_import_data/导入CMO中的中国数据/Resources/DataVariation/DB3K_HSP.db3",
  "operator": "China",
- "platform_count": 305,
- "sensor_count": 238,
- "mount_count": 129,
+ "platform_count": 306,
+ "sensor_count": 244,
+ "mount_count": 133,
  "loadout_count": 802,
  "magazine_count": 58,
  "propulsion_count": 129,
@@ -42232,6 +42232,140 @@
      "Top": 38.0
     }
    ]
+  },
+  {
+   "kind": "ship",
+   "raw": {
+    "ID": 9003,
+    "Category": 2001,
+    "Type": 2001,
+    "Name": "Type 003 福建舰 [18 Fujian]",
+    "Comments": "用户补充数据",
+    "OperatorCountry": 2018,
+    "OperatorService": 2002,
+    "YearCommissioned": 2025,
+    "YearDecommissioned": 0,
+    "Length": 316,
+    "Beam": 76,
+    "Draft": 11,
+    "DisplacementStandard": 85000.0,
+    "DisplacementFull": 80000,
+    "Crew": 3000,
+    "DamagePoints": 6000,
+    "MissileDefense": 24,
+    "SpeedKts": 31,
+    "MaxSeaState": 6,
+    "Hypothetical": 0
+   },
+   "sensor_ids": [
+    900301,
+    900302,
+    900303,
+    900304,
+    900305,
+    900306
+   ],
+   "mount_ids": [
+    900401,
+    900402,
+    900403,
+    900404
+   ],
+   "loadout_ids": [],
+   "magazine_ids": [],
+   "propulsion_ids": [],
+   "comm_ids": [],
+   "fuel_ids": [],
+   "signatures": [
+    {
+     "ID": 9003,
+     "Type": 1001,
+     "Front": 165.0,
+     "Side": 166.0,
+     "Rear": 167.0,
+     "Top": 166.0
+    },
+    {
+     "ID": 9003,
+     "Type": 1002,
+     "Front": 133.0,
+     "Side": 133.5,
+     "Rear": 134.5,
+     "Top": 133.5
+    },
+    {
+     "ID": 9003,
+     "Type": 1003,
+     "Front": 125.0,
+     "Side": 125.5,
+     "Rear": 126.5,
+     "Top": 125.5
+    },
+    {
+     "ID": 9003,
+     "Type": 1004,
+     "Front": 116.0,
+     "Side": 117.0,
+     "Rear": 118.0,
+     "Top": 117.0
+    },
+    {
+     "ID": 9003,
+     "Type": 2001,
+     "Front": 120.0,
+     "Side": 1000.0,
+     "Rear": 120.0,
+     "Top": 1000.0
+    },
+    {
+     "ID": 9003,
+     "Type": 3001,
+     "Front": 12.0,
+     "Side": 20.0,
+     "Rear": 12.0,
+     "Top": 26.0
+    },
+    {
+     "ID": 9003,
+     "Type": 3002,
+     "Front": 5.0,
+     "Side": 9.0,
+     "Rear": 5.0,
+     "Top": 10.0
+    },
+    {
+     "ID": 9003,
+     "Type": 4001,
+     "Front": 10.0,
+     "Side": 17.0,
+     "Rear": 10.0,
+     "Top": 22.0
+    },
+    {
+     "ID": 9003,
+     "Type": 4002,
+     "Front": 4.0,
+     "Side": 7.5,
+     "Rear": 4.0,
+     "Top": 8.5
+    },
+    {
+     "ID": 9003,
+     "Type": 5001,
+     "Front": 38.0,
+     "Side": 42.0,
+     "Rear": 38.0,
+     "Top": 48.0
+    },
+    {
+     "ID": 9003,
+     "Type": 5002,
+     "Front": 38.0,
+     "Side": 42.0,
+     "Rear": 38.0,
+     "Top": 48.0
+    }
+   ]
   }
  ],
  "sensors": {
@@ -61036,6 +61170,72 @@
    "MinimumSignature_ESM": 0.0,
    "MinimumSignature_ActiveSonar": 0.0,
    "MinimumSignature_PassiveSonar": 0.0
+  },
+  "900301": {
+   "ID": 900301,
+   "Name": "346A型 AESA 主动相控阵雷达",
+   "Role": 2132,
+   "RadarPeakPower": 200000,
+   "ESMSensitivity": 0,
+   "ECMPeakPower": 0,
+   "ECMGain": 0,
+   "ECMBandwidth": 0,
+   "ScanInterval": 1
+  },
+  "900302": {
+   "ID": 900302,
+   "Name": "X波段 AESA 多功能相控阵雷达",
+   "Role": 2121,
+   "RadarPeakPower": 80000,
+   "ESMSensitivity": 0,
+   "ECMPeakPower": 0,
+   "ECMGain": 0,
+   "ECMBandwidth": 0,
+   "ScanInterval": 1
+  },
+  "900303": {
+   "ID": 900303,
+   "Name": "综合射频系统",
+   "Role": 3031,
+   "RadarPeakPower": 0,
+   "ESMSensitivity": -75,
+   "ECMPeakPower": 100,
+   "ECMGain": 10,
+   "ECMBandwidth": 20,
+   "ScanInterval": 5
+  },
+  "900304": {
+   "ID": 900304,
+   "Name": "Generic ESM",
+   "Role": 3011,
+   "RadarPeakPower": 0,
+   "ESMSensitivity": -75,
+   "ECMPeakPower": 0,
+   "ECMGain": 0,
+   "ECMBandwidth": 0,
+   "ScanInterval": 5
+  },
+  "900305": {
+   "ID": 900305,
+   "Name": "Generic DECM",
+   "Role": 4011,
+   "RadarPeakPower": 0,
+   "ESMSensitivity": 0,
+   "ECMPeakPower": 100,
+   "ECMGain": 10,
+   "ECMBandwidth": 20,
+   "ScanInterval": 5
+  },
+  "900306": {
+   "ID": 900306,
+   "Name": "Generic Navigation Radar",
+   "Role": 2031,
+   "RadarPeakPower": 25000,
+   "ESMSensitivity": 0,
+   "ECMPeakPower": 0,
+   "ECMGain": 0,
+   "ECMBandwidth": 0,
+   "ScanInterval": 1
   }
  },
  "mounts": {
@@ -64263,6 +64463,34 @@
    "Cargo_Crew": 0.0,
    "Cargo_ParadropCapable": 0,
    "MobileUnitCategory": 0
+  },
+  "900401": {
+   "ID": 900401,
+   "Name": "H/PJ-14 [Type 1130]",
+   "ROF": 4,
+   "Capacity": 5,
+   "DamagePoints": 0
+  },
+  "900402": {
+   "ID": 900402,
+   "Name": "HQ-10 [FL-3000N]",
+   "ROF": 1,
+   "Capacity": 18,
+   "DamagePoints": 0
+  },
+  "900403": {
+   "ID": 900403,
+   "Name": "多用途发射装置",
+   "ROF": 1,
+   "Capacity": 24,
+   "DamagePoints": 0
+  },
+  "900404": {
+   "ID": 900404,
+   "Name": "电磁弹射器",
+   "ROF": 0,
+   "Capacity": 0,
+   "DamagePoints": 0
   }
  },
  "loadouts": {

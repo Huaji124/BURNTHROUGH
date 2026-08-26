@@ -174,7 +174,8 @@ def load_china_environment(path: str | Path = "data/china_full.json",
                 continue
             mname = mount.get("Name") or ""
             platform.weapons.append(mname)
-            if "ciws" in mname.lower() or "近距离" in mname:
+            if (any(k in mname.lower() for k in ("ciws", "近距离", "1130", "730", "h/pj-14", "h/pj-12", "h/pj-11"))
+                    or "近距离" in mname):
                 platform.ciws = True
                 platform.ciws_hit_probability = 0.4
             if "gun" in mname.lower() or mname.lower().startswith("h/pj"):
