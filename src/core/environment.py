@@ -137,6 +137,7 @@ class Environment:
     ir_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     sonar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     pending_esm: list[dict] = field(default_factory=list)
+    pending_radar: list[dict] = field(default_factory=list)
     waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
     orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
     missiles: list[Missile] = field(default_factory=list)
@@ -285,6 +286,9 @@ class Environment:
             terminal_speed_mps=float(spec.get("speed_mps", 300.0)) * 0.85,
             decel_mps2=float(spec.get("decel_mps2", 1.5)),
             max_g=float(spec.get("max_g", 20.0)),
+            altitude_ft=attacker.altitude_ft,
+            cruise_alt_ft=target.altitude_ft if target else 0.0,
+            climb_rate_ft_s=float(spec.get("climb_rate_ft_s", 800.0)),
             guidance=str(spec.get("guidance", "active_radar")),
             all_aspect=bool(spec.get("all_aspect", True)),
             boost_duration_s=float(spec.get("boost_duration_s", 2.0)),
@@ -498,6 +502,15 @@ class Environment:
                 bearing = initial_bearing_deg(missile.lat, missile.lon, aim_lat, aim_lon)
                 missile.lat, missile.lon = destination_point(
                     missile.lat, missile.lon, bearing, step_m / 1852.0)
+
+            # 3D 简化弹道：按爬升率调整高度
+            if missile.cruise_alt_ft is not None:
+                delta = missile.cruise_alt_ft - missile.altitude_ft
+                step_alt = missile.climb_rate_ft_s * dt_s
+                if abs(delta) <= step_alt:
+                    missile.altitude_ft = missile.cruise_alt_ft
+                else:
+                    missile.altitude_ft += step_alt if delta > 0 else -step_alt
 
             # 基于能量的助推-惯性模型（参考 CMO 教程）
             if missile.current_speed_mps is None:
@@ -749,6 +762,7 @@ class Environment:
         self.update_esm(dt_s)
         self._process_pending_esm(dt_s)
         self.update_radar_detection(dt_s)
+        self._process_pending_radar(dt_s)
         self.update_ir_detection(dt_s)
         self.update_sonar_detection(dt_s)
         self.update_comm_jamming(dt_s)
@@ -1253,15 +1267,17 @@ class Environment:
                         elif contact is None and self.rng.random() > p_scan:
                             continue
                         if contact is None:
-                            contact = Contact(
-                                id=f"{radar_platform.id}-r-{target.id}",
-                                kind="radar_contact",
-                                own_platform_id=radar_platform.id,
-                                time_s=now,
-                                emitter_id=target.id,
-                                emitter_name=target.name,
-                            )
-                            radar_map[target.id] = contact
+                            # 雷达处理延迟：新目标先进入待处理队列
+                            self.pending_radar.append({
+                                "available_at": now + emitter.processing_time_s,
+                                "radar_platform": radar_platform,
+                                "emitter": emitter,
+                                "target": target,
+                                "detection_km": detection_km,
+                                "dist_m": dist_m,
+                                "jammer": jammer,
+                            })
+                            continue
                         contact.bearing_deg = initial_bearing_deg(
                             radar_platform.latitude, radar_platform.longitude,
                             target.latitude, target.longitude)
@@ -1391,6 +1407,44 @@ class Environment:
                     target.comm_degraded = True
                     self.events.append({"time": self.time_s, "kind": "comm_jamming",
                                         "message": f"{target.name} 通信受 {jammer.name} 干扰"})
+
+    def _process_pending_radar(self, dt_s: float) -> None:
+        """处理已到处理时间的雷达新接触。"""
+        still = []
+        for item in self.pending_radar:
+            if self.time_s >= item["available_at"]:
+                radar_platform = item["radar_platform"]
+                target = item["target"]
+                radar_map = self.radar_contacts.setdefault(radar_platform.id, {})
+                contact = radar_map.get(target.id)
+                if contact is None:
+                    contact = Contact(
+                        id=f"{radar_platform.id}-r-{target.id}",
+                        kind="radar_contact",
+                        own_platform_id=radar_platform.id,
+                        time_s=self.time_s,
+                        emitter_id=target.id,
+                        emitter_name=target.name,
+                    )
+                    radar_map[target.id] = contact
+                contact.bearing_deg = initial_bearing_deg(
+                    radar_platform.latitude, radar_platform.longitude,
+                    target.latitude, target.longitude)
+                contact.range_m = item["dist_m"]
+                contact.latitude = target.latitude
+                contact.longitude = target.longitude
+                contact.time_s = self.time_s
+                contact.last_update_s = self.time_s
+                contact.is_memory = False
+                contact.confidence = 0.95
+                contact.extra = {"detection_km": item["detection_km"]}
+                jammer = item.get("jammer")
+                if jammer is not None and jammer.active_technique == "tws_gain":
+                    contact.confidence = min(contact.confidence, 0.55)
+                    contact.extra["tws_degraded"] = True
+            else:
+                still.append(item)
+        self.pending_radar = still
 
     def _process_pending_esm(self, dt_s: float) -> None:
         """处理已到处理时间的 ESM 截获结果。"""

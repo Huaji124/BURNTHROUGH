@@ -29,6 +29,9 @@ class Missile:
     terminal_speed_mps: float | None = None
     decel_mps2: float | None = None
     max_g: float = 20.0
+    altitude_ft: float = 0.0
+    cruise_alt_ft: float | None = None
+    climb_rate_ft_s: float = 800.0
     guidance: str = "active_radar"       # active_radar / passive_ir / sarh / anti_radiation / active_homing
     all_aspect: bool = True              # 全向弹（否则受尾部限制）
     boost_duration_s: float = 0.0        # 助推段时长
