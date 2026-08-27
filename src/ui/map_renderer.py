@@ -174,7 +174,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             rect._suppress = False
             rect.setPen(QPen(color, 1.5))
             rect.setBrush(QBrush(color.darker(150)))
-            rect.setZValue(9)
+            rect.setZValue(14)
             rect.setToolTip(f"航路点 {i+1}（拖拽移动，右键删除）")
             scene.addItem(rect)
             waypoint_items.append(rect)
@@ -182,7 +182,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             label.setBrush(QBrush(color))
             label.setFont(QFont("SansSerif", 7))
             label.setPos(x + 6, y - 6)
-            label.setZValue(9)
+            label.setZValue(15)
             scene.addItem(label)
         if len(pts) >= 2:
             for i in range(len(pts) - 1):
