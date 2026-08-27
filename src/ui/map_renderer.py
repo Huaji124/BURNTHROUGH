@@ -249,6 +249,24 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     screen_fixed(label)
 
 
+def draw_phased_array_sector(scene: QGraphicsScene, proj: LocalProjection,
+                              x: float, y: float, heading_deg: float,
+                              half_deg: float, radius_km: float,
+                              color: QColor) -> None:
+    """绘制相控阵雷达覆盖扇面。"""
+    radius_px = proj.km_to_px(radius_km)
+    heading = math.radians(heading_deg)
+    half = math.radians(half_deg)
+    def pt(angle_rad, x=x, y=y, radius_px=radius_px):
+        return QPointF(x + math.sin(angle_rad) * radius_px,
+                       y - math.cos(angle_rad) * radius_px)
+    poly = QPolygonF([QPointF(x, y), pt(heading - half), pt(heading), pt(heading + half)])
+    sector = scene.addPolygon(poly)
+    sector.setPen(QPen(color, 1.2, Qt.PenStyle.SolidLine))
+    sector.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 60)))
+    sector.setZValue(1)
+
+
 def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
                     side: str | None = None) -> None:
     """绘制雷达无干扰圈、干扰后圈、烧穿圈与干扰连线。"""
@@ -277,6 +295,11 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
             unjammed_km = result["un-jammed_range_km"] if jammer else result["detection_range_km"]
             draw_circle(scene, proj, x, y, unjammed_km, QColor("#f1c40f"),
                         "无干扰探测圈", dashed=True)
+            if emitter.scan_type == "phased_array":
+                # 相控阵：用扇面表示覆盖方向（默认前向 120°）
+                draw_phased_array_sector(
+                    scene, proj, x, y, platform.heading_deg,
+                    emitter.coverage_half_deg, unjammed_km, QColor("#f1c40f"))
             if jammer:
                 draw_circle(scene, proj, x, y, result["detection_range_km"],
                             QColor("#e67e22"), "干扰后探测圈", dashed=False)
@@ -284,6 +307,11 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
                 if abs(result["burn_through_km"] - result["detection_range_km"]) > 0.5:
                     draw_circle(scene, proj, x, y, result["burn_through_km"],
                                 QColor("#e74c3c"), "烧穿圈", dashed=True)
+                if emitter.scan_type == "phased_array":
+                    draw_phased_array_sector(
+                        scene, proj, x, y, platform.heading_deg,
+                        emitter.coverage_half_deg, result["detection_range_km"],
+                        QColor("#e67e22"))
                 jp = env.find_jammer_platform(jammer)
                 if jp is not None:
                     jx, jy = proj.to_xy(jp.latitude, jp.longitude)
