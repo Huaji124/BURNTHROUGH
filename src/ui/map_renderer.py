@@ -249,6 +249,33 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     screen_fixed(label)
 
 
+def draw_phased_array_beams(scene: QGraphicsScene, proj: LocalProjection,
+                              x: float, y: float, heading_deg: float,
+                              half_deg: float, radius_km: float,
+                              time_s: float, color: QColor) -> None:
+    """相控阵波束扫描动画：在扇区内扫动的波束线。"""
+    radius_px = proj.km_to_px(radius_km)
+    # 随时间在扇区内往复扫描
+    phase = (time_s * 30.0) % (2.0 * math.pi)
+    wave = math.sin(phase)
+    beam_rel = wave * half_deg * 0.8
+    angle = math.radians(heading_deg + beam_rel)
+    x2 = x + math.sin(angle) * radius_px
+    y2 = y - math.cos(angle) * radius_px
+    line = QGraphicsLineItem(x, y, x2, y2)
+    pen = QPen(color, 1.0, Qt.PenStyle.SolidLine)
+    pen.setCosmetic(True)
+    line.setPen(pen)
+    line.setZValue(2)
+    scene.addItem(line)
+    # 小圆点表示波束尖端
+    dot = QGraphicsEllipseItem(x2 - 3, y2 - 3, 6, 6)
+    dot.setBrush(QBrush(color))
+    dot.setPen(Qt.NoPen)
+    dot.setZValue(3)
+    scene.addItem(dot)
+
+
 def draw_phased_array_sector(scene: QGraphicsScene, proj: LocalProjection,
                               x: float, y: float, heading_deg: float,
                               half_deg: float, radius_km: float,
@@ -296,13 +323,16 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
             draw_circle(scene, proj, x, y, unjammed_km, QColor("#f1c40f"),
                         "无干扰探测圈", dashed=True)
             if emitter.scan_type == "phased_array":
-                # 相控阵：按天线面数绘制多个扇面
+                # 相控阵：按天线面数绘制多个扇区及扫动波束
                 face_span = 360.0 / max(emitter.face_count, 1)
                 for face in range(max(emitter.face_count, 1)):
                     center = (platform.heading_deg + face * face_span) % 360.0
                     draw_phased_array_sector(
                         scene, proj, x, y, center,
                         emitter.coverage_half_deg, unjammed_km, QColor("#f1c40f"))
+                    draw_phased_array_beams(
+                        scene, proj, x, y, center, emitter.coverage_half_deg,
+                        unjammed_km, env.time_s, QColor("#f1c40f"))
             if jammer:
                 draw_circle(scene, proj, x, y, result["detection_range_km"],
                             QColor("#e67e22"), "干扰后探测圈", dashed=False)
