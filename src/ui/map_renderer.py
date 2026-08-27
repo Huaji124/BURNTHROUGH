@@ -31,8 +31,7 @@ class WaypointRect(QGraphicsRectItem):
         self._idx = idx
         self._on_moved = on_moved
         self.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                      QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges |
-                      QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations)
+                      QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges)
         self.setData(0, f"waypoint::{pid}::{idx}")
         self.setCursor(Qt.CursorShape.OpenHandCursor)
         self._suppress = True
@@ -106,8 +105,8 @@ def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProj
     # 世界地图模式使用 world_land；本地简化海岸线仅作为后备
 
 def screen_fixed(item):
-    """让图标/文字在缩放时保持屏幕固定大小。"""
-    item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations, True)
+    """标记为屏幕固定元素；由 MapWidget 用反向缩放实现固定大小。"""
+    item.setData(1, "screen")
     return item
 
 
@@ -218,8 +217,7 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
         item = scene.addRect(-size / 2, -size / 2, size, size, pen, brush)
     item.setPos(x, y)
     item.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                  QGraphicsItem.GraphicsItemFlag.ItemIsFocusable |
-                  QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations)
+                  QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
     item.setData(0, f"platform::{platform.id}")
     item.setZValue(10)
     item.setToolTip(platform.name)
@@ -456,8 +454,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
                 marker.setBrush(QBrush(color.darker(200)))
                 marker.setPos(mx, my)
             marker.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                            QGraphicsItem.GraphicsItemFlag.ItemIsFocusable |
-                            QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations)
+                            QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
             marker.setData(0, f"contact::{own_id}::{key}")
             marker.setZValue(12)
             marker.setToolTip(f"{label_text}\n方位 {contact.bearing_deg:.1f}°")

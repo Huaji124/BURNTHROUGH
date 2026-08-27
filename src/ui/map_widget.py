@@ -122,7 +122,17 @@ class MapWidget(QGraphicsView):
         self.resetTransform()
         self.fitInView(rect, Qt.AspectRatioMode.KeepAspectRatio)
         self.centerOn(0, 0)
+        self._apply_inverse_scale()
         self._update_text_visibility()
+
+    def _apply_inverse_scale(self) -> None:
+        """反向缩放：让标记为 screen 的元素在屏幕上固定大小。"""
+        scale = abs(self.transform().m11())
+        if scale <= 0:
+            return
+        for item in self._scene.items():
+            if item.data(1) == "screen":
+                item.setScale(1.0 / scale)
 
     def _update_text_visibility(self) -> None:
         """根据当前缩放级别显示/隐藏地图文字标签。"""
@@ -176,6 +186,7 @@ class MapWidget(QGraphicsView):
     def wheelEvent(self, event) -> None:
         factor = 1.25 if event.angleDelta().y() > 0 else 0.8
         self.scale(factor, factor)
+        self._apply_inverse_scale()
         self._update_text_visibility()
 
     # ------------------------------------------------------------------
@@ -464,6 +475,7 @@ class MapWidget(QGraphicsView):
     def _set_selection(self, platform_ids: set[str], contact) -> None:
         self._selected_platform_ids = set(platform_ids)
         self._selected_contact = contact
+        self._apply_inverse_scale()
         self._update_text_visibility()
         self._restore_selection_visuals()
         self.selection_changed.emit()
@@ -529,6 +541,7 @@ class MapWidget(QGraphicsView):
         draw_missiles(self._scene, self._env, self._projection, self._player_side)
         if not self._env.world_land:
             draw_legend(self._scene, self._projection, self._player_side)
+        self._apply_inverse_scale()
         self._update_text_visibility()
         self._restore_selection_visuals()
 
