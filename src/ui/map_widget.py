@@ -169,6 +169,8 @@ class MapWidget(QGraphicsView):
             if hit is not None and hit[0] == "waypoint":
                 self._waypoint_press = True
                 self._waypoint_moved = False
+                if self._env is not None:
+                    self._env.waypoint_drag_lock = True
             else:
                 self._left_press_screen = event.position().toPoint()
                 self._left_press_scene = scene_pos
@@ -209,6 +211,8 @@ class MapWidget(QGraphicsView):
     def mouseReleaseEvent(self, event) -> None:
         if event.button() == Qt.MouseButton.LeftButton:
             if self._waypoint_press:
+                if self._env is not None:
+                    self._env.waypoint_drag_lock = False
                 if self._waypoint_moved:
                     self._rebuild()
                 self._waypoint_press = False

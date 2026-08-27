@@ -138,6 +138,7 @@ class Environment:
     sonar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     pending_esm: list[dict] = field(default_factory=list)
     pending_radar: list[dict] = field(default_factory=list)
+    waypoint_drag_lock: bool = False
     waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
     orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
     missiles: list[Missile] = field(default_factory=list)
@@ -781,6 +782,8 @@ class Environment:
     def step_motion(self, dt_s: float) -> None:
         """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
         for p in self.platforms.values():
+            if self.waypoint_drag_lock:
+                break
             if not p.alive or p.speed_kt <= 0:
                 continue
             # 推进限制与燃料
