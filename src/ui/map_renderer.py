@@ -198,8 +198,6 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             label.setPos(x + 6, y - 6)
             label.setZValue(15)
             scene.addItem(label)
-            screen_fixed(label)
-            screen_fixed(label)
         if len(pts) >= 2:
             for i in range(len(pts) - 1):
                 line = QGraphicsLineItem(pts[i][0], pts[i][1], pts[i+1][0], pts[i+1][1])
@@ -255,7 +253,6 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     label.setPos(x + 8, y - 6)
     label.setZValue(11)
     scene.addItem(label)
-    screen_fixed(label)
 
 
 def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -341,8 +338,6 @@ def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos(pt(heading).x(), pt(heading).y())
             label.setZValue(3)
             scene.addItem(label)
-            screen_fixed(label)
-            screen_fixed(label)
 
 
 def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -374,8 +369,6 @@ def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProject
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
-            screen_fixed(label)
-            screen_fixed(label)
 
 
 def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -407,8 +400,6 @@ def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
-            screen_fixed(label)
-            screen_fixed(label)
 
 
 def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -452,28 +443,28 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             label.setPos(x1 + 4, y1 - 4)
             label.setZValue(12)
             scene.addItem(label)
-            screen_fixed(label)
-            screen_fixed(label)
 
             if contact.latitude is not None and contact.longitude is not None:
                 ex, ey = proj.to_xy(contact.latitude, contact.longitude)
                 r = 7.0
-                marker = QGraphicsEllipseItem(ex - r, ey - r, 2 * r, 2 * r)
+                marker = QGraphicsEllipseItem(-r, -r, 2 * r, 2 * r)
                 marker.setPen(QPen(QColor("#1abc9c"), 1.5))
                 marker.setBrush(QBrush(QColor(26, 188, 156, 60)))
+                marker.setPos(ex, ey)
             else:
                 mx = x0 + math.sin(brg) * proj.km_to_px(120.0)
                 my = y0 - math.cos(brg) * proj.km_to_px(120.0)
-                marker = QGraphicsEllipseItem(mx - 6, my - 6, 12, 12)
+                marker = QGraphicsEllipseItem(-6, -6, 12, 12)
                 marker.setPen(QPen(color, 1.5))
                 marker.setBrush(QBrush(color.darker(200)))
+                marker.setPos(mx, my)
             marker.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                            QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
+                            QGraphicsItem.GraphicsItemFlag.ItemIsFocusable |
+                            QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations)
             marker.setData(0, f"contact::{own_id}::{key}")
             marker.setZValue(12)
             marker.setToolTip(f"{label_text}\n方位 {contact.bearing_deg:.1f}°")
             scene.addItem(marker)
-            screen_fixed(marker)
             screen_fixed(marker)
             contact_items.setdefault(f"{own_id}::{key}", []).append(marker)
 
@@ -544,8 +535,6 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 6)
             label.setZValue(4)
             scene.addItem(label)
-            screen_fixed(label)
-            screen_fixed(label)
 
 
 def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
