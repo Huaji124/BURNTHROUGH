@@ -126,11 +126,10 @@ class MapWidget(QGraphicsView):
 
     def _update_text_visibility(self) -> None:
         """根据当前缩放级别显示/隐藏地图文字标签。"""
-        scale = abs(self.transform().m11())
-        show = scale > 0.15
+        # 文字固定屏幕大小且始终显示（与图标一致）
         for item in self._scene.items():
             if isinstance(item, QGraphicsSimpleTextItem):
-                item.setVisible(show)
+                item.setVisible(True)
 
     def refresh(self) -> None:
         self._rebuild()
@@ -530,10 +529,6 @@ class MapWidget(QGraphicsView):
         draw_missiles(self._scene, self._env, self._projection, self._player_side)
         if not self._env.world_land:
             draw_legend(self._scene, self._projection, self._player_side)
-        # 强制所有文字随地图缩放（清除残留的 ItemIgnoresTransformations）
-        for item in self._scene.items():
-            if isinstance(item, QGraphicsSimpleTextItem):
-                item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations, False)
         self._update_text_visibility()
         self._restore_selection_visuals()
 

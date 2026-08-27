@@ -55,10 +55,11 @@ def draw_coastlines(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
         poly.setZValue(0)
         label = QGraphicsSimpleTextItem(coast.get("name", ""))
         label.setBrush(QBrush(QColor("#5d6d7e")))
-        label.setFont(QFont("SansSerif", 8))
+        label.setFont(QFont("SansSerif", 7))
         label.setPos(pts[0].x(), pts[0].y())
         label.setZValue(1)
         scene.addItem(label)
+        screen_fixed(label)
 
 
 def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
@@ -78,10 +79,11 @@ def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalP
         item.setToolTip(f"地形 {ob.get('height_ft',500)}$ft")
         label = QGraphicsSimpleTextItem("地形")
         label.setBrush(QBrush(QColor("#95a5a6")))
-        label.setFont(QFont("SansSerif", 8))
+        label.setFont(QFont("SansSerif", 7))
         label.setPos(x - 12, y)
         label.setZValue(1)
         scene.addItem(label)
+        screen_fixed(label)
 
 
 def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
@@ -101,21 +103,7 @@ def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProj
         land.setPen(QPen(QColor("#7a9e7f"), 1))
         land.setBrush(QBrush(QColor(176, 212, 176, 180)))
         land.setZValue(-1)
-    for coast in env.coastlines:
-        pts = [QPointF(*proj.to_xy(lat, lon)) for lat, lon in coast.get("points", [])]
-        if len(pts) < 3:
-            continue
-        poly = scene.addPolygon(QPolygonF(pts))
-        poly.setPen(QPen(QColor("#7a9e7f"), 1))
-        poly.setBrush(QBrush(QColor(176, 212, 176, 180)))
-        poly.setZValue(-1)
-        label = QGraphicsSimpleTextItem(coast.get("name", ""))
-        label.setBrush(QBrush(QColor("#5d6d7e")))
-        label.setFont(QFont("SansSerif", 8))
-        label.setPos(pts[0].x(), pts[0].y())
-        label.setZValue(0)
-        scene.addItem(label)
-
+    # 世界地图模式使用 world_land；本地简化海岸线仅作为后备
 
 def screen_fixed(item):
     """让图标/文字在缩放时保持屏幕固定大小。"""
@@ -129,7 +117,7 @@ def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
     span = 10.0
     step = 2.0
     pen = QPen(QColor("#9db4c7"), 1, Qt.PenStyle.SolidLine)
-    font = QFont("SansSerif", 9)
+    font = QFont("SansSerif", 8)
 
     lat = math.floor((c_lat - span) / step) * step
     while lat <= c_lat + span:
@@ -145,6 +133,7 @@ def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
         label.setPos(x1 + 3, y1 + 3)
         label.setZValue(0)
         scene.addItem(label)
+        screen_fixed(label)
         lat += step
 
     lon = math.floor((c_lon - span) / step) * step
@@ -161,6 +150,7 @@ def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
         label.setPos(x1 + 3, y1 + 3)
         label.setZValue(0)
         scene.addItem(label)
+        screen_fixed(label)
         lon += step
 
 
@@ -198,6 +188,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             label.setPos(x + 6, y - 6)
             label.setZValue(15)
             scene.addItem(label)
+            screen_fixed(label)
         if len(pts) >= 2:
             for i in range(len(pts) - 1):
                 line = QGraphicsLineItem(pts[i][0], pts[i][1], pts[i+1][0], pts[i+1][1])
@@ -249,10 +240,11 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     label_text = platform.name if platform.alive else f"{platform.name} (被击毁)"
     label = QGraphicsSimpleTextItem(label_text)
     label.setBrush(QBrush(color if platform.alive else QColor("#60666e")))
-    label.setFont(QFont("SansSerif", 9, QFont.Weight.Bold))
+    label.setFont(QFont("SansSerif", 8, QFont.Weight.Bold))
     label.setPos(x + 8, y - 6)
     label.setZValue(11)
     scene.addItem(label)
+    screen_fixed(label)
 
 
 def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -301,6 +293,7 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
                     mid.setPos((jx + x) / 2 + 4, (jy + y) / 2 - 4)
                     mid.setZValue(3)
                     scene.addItem(mid)
+                    screen_fixed(mid)
 
 
 def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -334,10 +327,11 @@ def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProj
             sector.setZValue(1)
             label = QGraphicsSimpleTextItem("干扰扇区")
             label.setBrush(QBrush(QColor("#9b59b6")))
-            label.setFont(QFont("SansSerif", 8))
+            label.setFont(QFont("SansSerif", 7))
             label.setPos(pt(heading).x(), pt(heading).y())
             label.setZValue(3)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -365,10 +359,11 @@ def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProject
             scene.addItem(line)
             label = QGraphicsSimpleTextItem("红外接触")
             label.setBrush(QBrush(color))
-            label.setFont(QFont("SansSerif", 8))
+            label.setFont(QFont("SansSerif", 7))
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -396,10 +391,11 @@ def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             scene.addItem(line)
             label = QGraphicsSimpleTextItem("声呐接触")
             label.setBrush(QBrush(color))
-            label.setFont(QFont("SansSerif", 8))
+            label.setFont(QFont("SansSerif", 7))
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -439,10 +435,11 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             label_text = f"{contact.emitter_name} [{ident}]{side_mark}{mem}"
             label = QGraphicsSimpleTextItem(label_text)
             label.setBrush(QBrush(color))
-            label.setFont(QFont("SansSerif", 8))
+            label.setFont(QFont("SansSerif", 7))
             label.setPos(x1 + 4, y1 - 4)
             label.setZValue(12)
             scene.addItem(label)
+            screen_fixed(label)
 
             if contact.latitude is not None and contact.longitude is not None:
                 ex, ey = proj.to_xy(contact.latitude, contact.longitude)
@@ -499,10 +496,11 @@ def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProje
             scene.addItem(line2)
             label = QGraphicsSimpleTextItem("假目标")
             label.setBrush(QBrush(QColor("#e67e22")))
-            label.setFont(QFont("SansSerif", 8))
+            label.setFont(QFont("SansSerif", 7))
             label.setPos(x + 10, y - 8)
             label.setZValue(8)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -531,10 +529,11 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             scene.addItem(line)
             label = QGraphicsSimpleTextItem("雷达接触")
             label.setBrush(QBrush(color))
-            label.setFont(QFont("SansSerif", 8))
+            label.setFont(QFont("SansSerif", 7))
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 6)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -557,10 +556,11 @@ def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
         scene.addItem(line)
         label = QGraphicsSimpleTextItem("攻击")
         label.setBrush(QBrush(QColor("#e74c3c")))
-        label.setFont(QFont("SansSerif", 8))
+        label.setFont(QFont("SansSerif", 7))
         label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 10)
         label.setZValue(9)
         scene.addItem(label)
+        screen_fixed(label)
 
 
 def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -593,6 +593,7 @@ def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection
         label.setPos(x + 6, y - 6)
         label.setZValue(16)
         scene.addItem(label)
+        screen_fixed(label)
 
 
 def draw_circle(scene: QGraphicsScene, proj: LocalProjection,
@@ -616,6 +617,7 @@ def draw_circle(scene: QGraphicsScene, proj: LocalProjection,
     label_item.setPos(x + r_px * 0.7, y - r_px * 0.7)
     label_item.setZValue(3)
     scene.addItem(label_item)
+    screen_fixed(label_item)
 
 
 def find_jammer_against(env: Environment, victim_platform: Platform, emitter) -> object | None:
@@ -641,7 +643,7 @@ def draw_legend(scene: QGraphicsScene, proj: LocalProjection, side: str | None =
         ("#1abc9c", "ESM 接触"), ("#f39c12", "记忆接触"),
         ("#e74c3c", "红方"), ("#3498db", "蓝方"),
     ]
-    font = QFont("SansSerif", 9)
+    font = QFont("SansSerif", 8)
     x, y = -700.0, -420.0
     for color_hex, text in items:
         line = QGraphicsLineItem(x, y + 5, x + 22, y + 5)
@@ -654,4 +656,5 @@ def draw_legend(scene: QGraphicsScene, proj: LocalProjection, side: str | None =
         label.setPos(x + 28, y - 4)
         label.setZValue(20)
         scene.addItem(label)
+        screen_fixed(label)
         y += 20
