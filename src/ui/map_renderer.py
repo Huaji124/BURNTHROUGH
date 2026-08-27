@@ -42,6 +42,24 @@ class WaypointRect(QGraphicsRectItem):
         return super().itemChange(change, value)
 
 
+def draw_coastlines(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制简化海岸线多边形。"""
+    for coast in env.coastlines:
+        pts = [QPointF(*proj.to_xy(lat, lon)) for lat, lon in coast.get("points", [])]
+        if len(pts) < 3:
+            continue
+        poly = scene.addPolygon(QPolygonF(pts))
+        poly.setPen(QPen(QColor("#5d6d7e"), 1))
+        poly.setBrush(QBrush(QColor(93, 109, 126, 90)))
+        poly.setZValue(0)
+        label = QGraphicsSimpleTextItem(coast.get("name", ""))
+        label.setBrush(QBrush(QColor("#7f8c8d")))
+        label.setFont(QFont("SansSerif", 8))
+        label.setPos(pts[0].x(), pts[0].y())
+        label.setZValue(1)
+        scene.addItem(label)
+
+
 def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
     """绘制地形障碍物（岛屿/高地）。"""
     for ob in env.terrain_obstacles:

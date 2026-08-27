@@ -51,4 +51,4 @@
 - [x] 雷达处理延迟（pending_radar）
 - [x] 3D 简化弹道高度（Missile.altitude_ft / cruise_alt_ft）
 - [x] 诱饵软杀伤 + RCS 概念（已有 chaff/decoy/active_decoy）
-- [ ] 真实地图/海岸线图层（进行中）
+- [x] 简化海岸线图层（后续可换真实 GSHHG）

@@ -34,6 +34,7 @@ from .map_renderer import (
     WaypointRect as _WaypointRect,
 )
 from .map_renderer import (
+    draw_coastlines,
     draw_esm_contacts,
     draw_ew_circles,
     draw_false_targets,
@@ -458,6 +459,7 @@ class MapWidget(QGraphicsView):
         self._contact_items = {}
         self._waypoint_items = []
         draw_grid(self._scene, self._projection)
+        draw_coastlines(self._scene, self._env, self._projection)
         draw_terrain_obstacles(self._scene, self._env, self._projection)
         self._waypoint_items = draw_waypoints(
             self._scene, self._env, self._projection, self._on_waypoint_moved)

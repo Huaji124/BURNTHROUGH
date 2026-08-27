@@ -137,5 +137,8 @@ def build_demo_environment() -> Environment:
     terrain_path = "data/environment/terrain.json"
     if Path(terrain_path).exists():
         env.load_terrain_from_json(terrain_path)
+    coast_path = "data/environment/coastlines.json"
+    if Path(coast_path).exists():
+        env.load_coastlines_from_json(coast_path)
 
     return env
