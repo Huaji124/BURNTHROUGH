@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-from pathlib import Path
-
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
 from PySide6.QtWidgets import (
@@ -21,7 +19,9 @@ from PySide6.QtWidgets import (
 from core.demo import build_demo_environment
 from core.scenario import load_scenario, save_scenario
 from data_loader.china_loader import load_china_environment
-from data_loader.cmo_world_loader import load_cmo_world_environment
+from data_loader.cmo_world_loader import (
+    load_cmo_country_environment,
+)
 
 from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
@@ -319,16 +319,16 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
-        self._on_side_changed(self.side_combo.currentText())
+        self.side_combo.setCurrentText("红方")
         self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
 
     def _on_load_cmo_world(self) -> None:
-        path, _ = QFileDialog.getOpenFileName(
-            self, "加载 CMO 世界数据（本地参考）", "data", "JSON (*.json)")
+        path = QFileDialog.getExistingDirectory(
+            self, "选择 CMO 国家目录", "data/cmo_full_by_country")
         if not path:
             return
         try:
-            self.env = load_cmo_world_environment(path, side="blue")
+            self.env = load_cmo_country_environment(path, side="blue")
         except (OSError, ValueError, KeyError) as exc:
             QMessageBox.warning(self, "加载失败", str(exc))
             return
@@ -338,30 +338,15 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
-        self._on_side_changed(self.side_combo.currentText())
+        self.side_combo.setCurrentText("蓝方")
         self.statusBar().showMessage(
-            f"已加载 CMO 世界数据：{path}（{len(self.env.platforms)} 个平台）")
+            f"已加载 CMO 国家数据：{path}（{len(self.env.platforms)} 个平台）")
 
     def _on_load_cmo_all(self) -> None:
-        # 直接加载本地完整 CMO 数据库（中国+世界），无需选择文件
-        path = Path("data/cmo_all_full.json")
-        if not path.exists():
-            QMessageBox.information(self, "数据不存在", "未找到 data/cmo_all_full.json")
-            return
-        try:
-            self.env = load_cmo_world_environment(path, side="blue")
-        except (OSError, ValueError, KeyError) as exc:
-            QMessageBox.warning(self, "加载失败", str(exc))
-            return
-        self.map_widget.set_environment(self.env)
-        self.emcon_panel.populate(self.env)
-        self.contact_list.update_contacts(self.env)
-        self.spectrum_widget.set_environment(self.env)
-        self.false_target_panel.update_false_targets(self.env)
-        self._update_unit_info_bar()
-        self._on_side_changed(self.side_combo.currentText())
-        self.statusBar().showMessage(
-            f"已加载完整 CMO 数据库：{len(self.env.platforms)} 个平台")
+        QMessageBox.information(
+            self, "说明",
+            "完整 CMO 合并文件已移除（只保留 data/cmo_full_by_country）。\n"
+            "请使用“装载CMO世界”选择一个国家目录加载。")
 
     def _on_contact_mark_changed(self) -> None:
         self.contact_list.update_contacts(self.env)

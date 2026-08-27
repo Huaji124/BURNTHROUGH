@@ -245,6 +245,7 @@ def load_china_environment(path: str | Path = "data/china_full.json",
                 })
                 if wname not in platform.ammo:
                     platform.ammo[wname] = count
+                    platform.max_ammo[wname] = count
                 if wname not in platform.magazine:
                     platform.magazine[wname] = 0
 
@@ -263,6 +264,8 @@ def load_china_environment(path: str | Path = "data/china_full.json",
                 platform.magazine[wname] = int(mag.get("Capacity") or 0)
                 if wname not in platform.ammo:
                     platform.ammo[wname] = 0
+                if wname not in platform.max_ammo:
+                    platform.max_ammo[wname] = max(1, int(mag.get("Capacity") or 0) and 1 or 1)
 
         # 推进性能 -> 最大速度/燃料
         max_speed = 0.0

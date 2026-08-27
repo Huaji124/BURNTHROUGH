@@ -99,17 +99,10 @@ def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter]
     return emitters, receivers, jammers
 
 
-def load_cmo_world_environment(path: str | Path = "data/cmo_world_full.json",
-                               side: str = "blue",
-                               limit_platforms: int | None = None) -> Environment:
-    """加载 CMO 世界装备数据（除中国）为环境。
-
-    平台位置默认 (0,0)，可后续通过想定/UI 设置。
-    """
-    path = Path(path)
-    data = json.loads(path.read_text(encoding="utf-8"))
+def _build_from_data(data: dict, side: str = "blue",
+                     limit_platforms: int | None = None) -> Environment:
+    """从 CMO 风格数据字典构建环境。"""
     env = Environment()
-
     selected = data["platforms"]
     if limit_platforms is not None:
         selected = selected[:limit_platforms]
@@ -178,5 +171,32 @@ def load_cmo_world_environment(path: str | Path = "data/cmo_world_full.json",
         }
         env.add_platform(platform)
 
-    env.data_source = str(path)
+    env.data_source = str(data.get("source", ""))
     return env
+
+
+def load_cmo_world_environment(path: str | Path = "data/cmo_world_full.json",
+                               side: str = "blue",
+                               limit_platforms: int | None = None) -> Environment:
+    """加载 CMO 世界数据合并 JSON（老格式）。"""
+    path = Path(path)
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return _build_from_data(data, side=side, limit_platforms=limit_platforms)
+
+
+def load_cmo_country_environment(country_dir: str | Path, side: str = "blue",
+                                 limit_platforms: int | None = None) -> Environment:
+    """从 cmo_full_by_country/<slug>/ 目录加载一个国家。
+
+    目录需包含 platforms.json / sensors.json / mounts.json。
+    """
+    base = Path(country_dir)
+    data = {
+        "platforms": json.loads((base / "platforms.json").read_text(encoding="utf-8")),
+        "sensors": json.loads((base / "sensors.json").read_text(encoding="utf-8")),
+        "mounts": json.loads((base / "mounts.json").read_text(encoding="utf-8")),
+        "weapons": json.loads((base / "weapons.json").read_text(encoding="utf-8")) if (base / "weapons.json").exists() else {},
+        "loadout_weapons": json.loads((base / "loadout_weapons.json").read_text(encoding="utf-8")) if (base / "loadout_weapons.json").exists() else [],
+        "loadouts": json.loads((base / "loadouts.json").read_text(encoding="utf-8")) if (base / "loadouts.json").exists() else {},
+    }
+    return _build_from_data(data, side=side, limit_platforms=limit_platforms)

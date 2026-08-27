@@ -56,6 +56,7 @@ class Platform:
     # 挂载与弹药
     loadout_weapons: list[dict] = field(default_factory=list)   # 实际可用导弹
     ammo: dict[str, int] = field(default_factory=dict)          # 待发/装填中
+    max_ammo: dict[str, int] = field(default_factory=dict)      # 最大待发数
     magazine: dict[str, int] = field(default_factory=dict)      # 弹库储量
     reload_time_s: float = 12.0
     reload_timers: dict[str, float] = field(default_factory=dict)
@@ -185,10 +186,11 @@ class Environment:
                 continue
             for weapon, stored in list(p.magazine.items()):
                 ready = p.ammo.get(weapon, 0)
-                if ready <= 0 and stored > 0:
+                max_ready = p.max_ammo.get(weapon, 1)
+                if ready < max_ready and stored > 0:
                     timer = p.reload_timers.get(weapon, 0.0) + dt_s
                     if timer >= p.reload_time_s:
-                        p.ammo[weapon] = min(p.ammo.get(weapon, 0) + 1, 1)
+                        p.ammo[weapon] = min(ready + 1, max_ready)
                         p.magazine[weapon] -= 1
                         timer = 0.0
                     p.reload_timers[weapon] = timer
