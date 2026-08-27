@@ -30,8 +30,7 @@ class WaypointRect(QGraphicsRectItem):
         self._pid = pid
         self._idx = idx
         self._on_moved = on_moved
-        self.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsMovable |
-                      QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
+        self.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
                       QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges)
         self.setData(0, f"waypoint::{pid}::{idx}")
         self.setCursor(Qt.CursorShape.OpenHandCursor)

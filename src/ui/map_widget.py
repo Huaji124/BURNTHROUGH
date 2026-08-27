@@ -85,6 +85,7 @@ class MapWidget(QGraphicsView):
         self._waypoint_items: list[_WaypointRect] = []
         self._waypoint_press = False
         self._waypoint_moved = False
+        self._waypoint_drag_item: _WaypointRect | None = None
         self._selected_platform_ids: set[str] = set()
         self._selected_contact: tuple[str, str] | None = None
         self._player_side: str = "red"
@@ -167,8 +168,10 @@ class MapWidget(QGraphicsView):
             scene_pos = self.mapToScene(event.position().toPoint())
             hit = self._hit_test(scene_pos)
             if hit is not None and hit[0] == "waypoint":
+                pid, idx = hit[1]
                 self._waypoint_press = True
                 self._waypoint_moved = False
+                self._waypoint_drag_item = self._find_waypoint_item(pid, idx)
                 if self._env is not None:
                     self._env.waypoint_drag_lock = True
             else:
@@ -184,6 +187,18 @@ class MapWidget(QGraphicsView):
         super().mousePressEvent(event)
 
     def mouseMoveEvent(self, event) -> None:
+        # 航路点手动拖拽（不使用 QGraphicsItem 内建移动，避免冲突）
+        if self._waypoint_press and self._waypoint_drag_item is not None:
+            scene_pos = self.mapToScene(event.position().toPoint())
+            self._waypoint_drag_item.setPos(scene_pos)
+            if self._env is not None and self._projection is not None:
+                pid = self._waypoint_drag_item._pid
+                idx = self._waypoint_drag_item._idx
+                wps = self._env.waypoints.get(pid)
+                if wps is not None and 0 <= idx < len(wps):
+                    lat, lon = self._projection.from_xy(scene_pos.x(), scene_pos.y())
+                    wps[idx] = (lat, lon)
+                    self._waypoint_moved = True
         # 左键框选
         if self._left_press_screen is not None and not self._waypoint_press:
             delta = (event.position().toPoint() - self._left_press_screen).manhattanLength()
@@ -217,6 +232,7 @@ class MapWidget(QGraphicsView):
                     self._rebuild()
                 self._waypoint_press = False
                 self._waypoint_moved = False
+                self._waypoint_drag_item = None
             elif self._left_dragging:
                 self._finish_rubber_band()
                 self._left_band_select(self._rubber_band.geometry())
@@ -432,6 +448,13 @@ class MapWidget(QGraphicsView):
         self._selected_contact = contact
         self._restore_selection_visuals()
         self.selection_changed.emit()
+
+    def _find_waypoint_item(self, pid: str, idx: int) -> _WaypointRect | None:
+        """按平台ID和序号查找航路点矩形。"""
+        for item in self._waypoint_items:
+            if item._pid == pid and item._idx == idx:
+                return item
+        return None
 
     def _on_waypoint_moved(self, pid: str, idx: int, pos: QPointF) -> None:
         """航路点被拖拽后，更新环境中的经纬度。"""
