@@ -280,8 +280,10 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
             if jammer:
                 draw_circle(scene, proj, x, y, result["detection_range_km"],
                             QColor("#e67e22"), "干扰后探测圈", dashed=False)
-                draw_circle(scene, proj, x, y, result["burn_through_km"],
-                            QColor("#e74c3c"), "烧穿圈", dashed=True)
+                # 若烧穿圈与干扰后探测圈几乎重合，则不再重复绘制，避免重叠
+                if abs(result["burn_through_km"] - result["detection_range_km"]) > 0.5:
+                    draw_circle(scene, proj, x, y, result["burn_through_km"],
+                                QColor("#e74c3c"), "烧穿圈", dashed=True)
                 jp = env.find_jammer_platform(jammer)
                 if jp is not None:
                     jx, jy = proj.to_xy(jp.latitude, jp.longitude)
