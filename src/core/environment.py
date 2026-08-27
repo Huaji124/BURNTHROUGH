@@ -117,6 +117,8 @@ class Environment:
     time_s: float = 0.0
     contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     radar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
+    ir_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
+    sonar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
     orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
     missiles: list[Missile] = field(default_factory=list)
@@ -622,6 +624,8 @@ class Environment:
         self.update_deception(dt_s)
         self.update_esm(dt_s)
         self.update_radar_detection(dt_s)
+        self.update_ir_detection(dt_s)
+        self.update_sonar_detection(dt_s)
         self.update_contact_aging()
         self.cross_fix_contacts()
 
@@ -991,6 +995,92 @@ class Environment:
                             radar_map.pop(target.id, None)
                         elif contact is not None:
                             contact.is_memory = True
+
+    def update_ir_detection(self, dt_s: float) -> None:
+        """红外探测主流程：无源可见光/红外发现目标。"""
+        now = self.time_s
+        for own in self.platforms.values():
+            if not own.alive:
+                continue
+            ir_map = self.ir_contacts.setdefault(own.id, {})
+            for target in self.platforms.values():
+                if target.id == own.id or target.side == own.side or not target.alive:
+                    continue
+                dist_km = haversine_nm(own.latitude, own.longitude,
+                                       target.latitude, target.longitude) * 1.852
+                if dist_km <= target.ir_detection_km:
+                    contact = ir_map.get(target.id)
+                    if contact is None:
+                        contact = Contact(
+                            id=f"{own.id}-ir-{target.id}",
+                            kind="ir_contact",
+                            own_platform_id=own.id,
+                            time_s=now,
+                            emitter_id=target.id,
+                            emitter_name=target.name,
+                        )
+                        ir_map[target.id] = contact
+                    contact.bearing_deg = initial_bearing_deg(
+                        own.latitude, own.longitude, target.latitude, target.longitude)
+                    contact.range_m = dist_km * 1000.0
+                    contact.latitude = target.latitude
+                    contact.longitude = target.longitude
+                    contact.time_s = now
+                    contact.last_update_s = now
+                    contact.is_memory = False
+                    contact.confidence = 0.9
+                else:
+                    contact = ir_map.get(target.id)
+                    if contact is not None and now - contact.last_update_s > self.memory_ttl_s:
+                        ir_map.pop(target.id, None)
+                    elif contact is not None:
+                        contact.is_memory = True
+
+    def update_sonar_detection(self, dt_s: float) -> None:
+        """声呐探测主流程：己方声呐对水面/水下目标形成接触。"""
+        now = self.time_s
+        for own in self.platforms.values():
+            if not own.alive:
+                continue
+            if not any(r.kind == "sonar" for r in own.receivers):
+                continue
+            sonar_map = self.sonar_contacts.setdefault(own.id, {})
+            for target in self.platforms.values():
+                if target.id == own.id or target.side == own.side or not target.alive:
+                    continue
+                if target.kind not in ("ship", "submarine"):
+                    continue
+                dist_km = haversine_nm(own.latitude, own.longitude,
+                                       target.latitude, target.longitude) * 1.852
+                # 简化声呐方程：目标信号越强，探测距离越远
+                range_km = 20.0 + max(0.0, target.sonar_signature_db - 100.0) * 0.2
+                if dist_km <= range_km:
+                    contact = sonar_map.get(target.id)
+                    if contact is None:
+                        contact = Contact(
+                            id=f"{own.id}-sonar-{target.id}",
+                            kind="sonar_contact",
+                            own_platform_id=own.id,
+                            time_s=now,
+                            emitter_id=target.id,
+                            emitter_name=target.name,
+                        )
+                        sonar_map[target.id] = contact
+                    contact.bearing_deg = initial_bearing_deg(
+                        own.latitude, own.longitude, target.latitude, target.longitude)
+                    contact.range_m = dist_km * 1000.0
+                    contact.latitude = target.latitude
+                    contact.longitude = target.longitude
+                    contact.time_s = now
+                    contact.last_update_s = now
+                    contact.is_memory = False
+                    contact.confidence = 0.75
+                else:
+                    contact = sonar_map.get(target.id)
+                    if contact is not None and now - contact.last_update_s > self.memory_ttl_s:
+                        sonar_map.pop(target.id, None)
+                    elif contact is not None:
+                        contact.is_memory = True
 
     def update_contact_aging(self) -> None:
         """接触老化：信号丢失后进入记忆，超时后删除。"""

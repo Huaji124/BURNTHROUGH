@@ -246,6 +246,60 @@ def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProj
             scene.addItem(label)
 
 
+def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制红外/视觉接触线。"""
+    for own_id, c_map in getattr(env, "ir_contacts", {}).items():
+        own = env.platforms.get(own_id)
+        if own is None:
+            continue
+        for contact in c_map.values():
+            target = env.platforms.get(contact.emitter_id)
+            if target is None:
+                continue
+            x1, y1 = proj.to_xy(own.latitude, own.longitude)
+            x2, y2 = proj.to_xy(target.latitude, target.longitude)
+            color = QColor("#f39c12")
+            pen = QPen(color, 1.0)
+            pen.setStyle(Qt.PenStyle.DashLine if contact.is_memory else Qt.PenStyle.SolidLine)
+            line = QGraphicsLineItem(x1, y1, x2, y2)
+            line.setPen(pen)
+            line.setZValue(4)
+            scene.addItem(line)
+            label = QGraphicsSimpleTextItem("红外接触")
+            label.setBrush(QBrush(color))
+            label.setFont(QFont("SansSerif", 8))
+            label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
+            label.setZValue(4)
+            scene.addItem(label)
+
+
+def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制声呐接触线。"""
+    for own_id, c_map in getattr(env, "sonar_contacts", {}).items():
+        own = env.platforms.get(own_id)
+        if own is None:
+            continue
+        for contact in c_map.values():
+            target = env.platforms.get(contact.emitter_id)
+            if target is None:
+                continue
+            x1, y1 = proj.to_xy(own.latitude, own.longitude)
+            x2, y2 = proj.to_xy(target.latitude, target.longitude)
+            color = QColor("#2ecc71")
+            pen = QPen(color, 1.0)
+            pen.setStyle(Qt.PenStyle.DashLine if contact.is_memory else Qt.PenStyle.SolidLine)
+            line = QGraphicsLineItem(x1, y1, x2, y2)
+            line.setPen(pen)
+            line.setZValue(4)
+            scene.addItem(line)
+            label = QGraphicsSimpleTextItem("声呐接触")
+            label.setBrush(QBrush(color))
+            label.setFont(QFont("SansSerif", 8))
+            label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
+            label.setZValue(4)
+            scene.addItem(label)
+
+
 def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
                       contact_items: dict[str, list[QGraphicsItem]]) -> None:
     """绘制 ESM 辐射源接触：测向线、标记点。"""

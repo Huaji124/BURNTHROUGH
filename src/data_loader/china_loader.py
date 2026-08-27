@@ -105,6 +105,21 @@ def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter]
             platform_id=platform_id,
         ))
 
+    # 声呐（简化：接收机 kind=sonar）
+    if rid is not None and rid >= 5001:
+        receivers.append(Receiver(
+            id=f"china-cmo-{sid}-sonar",
+            name=sensor.get("Name") or f"声呐 {sid}",
+            kind="sonar",
+            freq_min_hz=0,
+            freq_max_hz=0,
+            sensitivity_dbm=-80,
+            gain_db=0,
+            df_accuracy_deg=5,
+            processing_time_s=5.0,
+            platform_id=platform_id,
+        ))
+
     # 电子干扰机
     if sensor.get("ECMPeakPower") or sensor.get("ECMGain") or (rid in SENSOR_ROLE_ECM):
         jammers.append(Jammer(
