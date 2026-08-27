@@ -35,6 +35,27 @@ class ContactListWidget(QWidget):
 
     def update_contacts(self, env: Environment) -> None:
         self.table.setRowCount(0)
+        # 雷达接触
+        for own_id, radar_map in getattr(env, "radar_contacts", {}).items():
+            own = env.platforms.get(own_id)
+            for contact in radar_map.values():
+                row = self.table.rowCount()
+                self.table.insertRow(row)
+                self._set(row, 0, f"{contact.last_update_s:4.0f}s")
+                self._set(row, 1, own.name if own else own_id)
+                self._set(row, 2, f"[雷达] {contact.emitter_name or contact.emitter_id or '?'}")
+                if contact.range_m is not None:
+                    self._set(row, 3, f"{contact.range_m/1852.0:.0f}nm")
+                else:
+                    self._set(row, 3, "-")
+                self._set(row, 4, "已识别")
+                status = "记忆" if contact.is_memory else "雷达跟踪"
+                item = self._set(row, 5, status)
+                if contact.is_memory:
+                    item.setForeground(QColor("#f39c12"))
+                else:
+                    item.setForeground(QColor("#3498db"))
+        # ESM 辐射源接触
         for own_id, contact_map in env.contacts.items():
             own = env.platforms.get(own_id)
             for contact in contact_map.values():
@@ -52,6 +73,8 @@ class ContactListWidget(QWidget):
                 item = self._set(row, 5, status)
                 if contact.is_memory:
                     item.setForeground(QColor("#f39c12"))
+                else:
+                    item.setForeground(QColor("#1abc9c"))
         self.table.resizeColumnsToContents()
 
     def _set(self, row: int, col: int, text: str) -> QTableWidgetItem:

@@ -116,6 +116,7 @@ class Environment:
     platforms: dict[str, Platform] = field(default_factory=dict)
     time_s: float = 0.0
     contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
+    radar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
     orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
     missiles: list[Missile] = field(default_factory=list)
@@ -620,6 +621,7 @@ class Environment:
         self.step_missiles(dt_s)
         self.update_deception(dt_s)
         self.update_esm(dt_s)
+        self.update_radar_detection(dt_s)
         self.update_contact_aging()
         self.cross_fix_contacts()
 
@@ -915,6 +917,80 @@ class Environment:
             "range_km": result["range_km"],
             "identified": result["identified"],
         }
+
+    def update_radar_detection(self, dt_s: float) -> None:
+        """雷达接触主流程：使用目标 RCS/红外特征决定是否发现。
+
+        生成 radar_contacts[雷达平台][目标平台] = Contact。
+        """
+        now = self.time_s
+        for radar_platform in self.platforms.values():
+            if not radar_platform.alive:
+                continue
+            for emitter in radar_platform.emitters:
+                if emitter.emcon_state != "on":
+                    continue
+                if emitter.role not in ("multifunction_radar", "search_radar",
+                                        "fire_control_radar"):
+                    continue
+                # 本平台对敌方目标的雷达接触
+                radar_map = self.radar_contacts.setdefault(radar_platform.id, {})
+                for target in self.platforms.values():
+                    if target.id == radar_platform.id or target.side == radar_platform.side:
+                        continue
+                    if not target.alive:
+                        continue
+                    dist_m = _distance_m(radar_platform, target)
+                    # 视距
+                    horizon_nm = 1.23 * (math.sqrt(max(radar_platform.altitude_ft, 0.0)) +
+                                         math.sqrt(max(target.altitude_ft, 0.0)))
+                    if dist_m > horizon_nm * 1852.0:
+                        radar_map.pop(target.id, None)
+                        continue
+                    jammer = None
+                    for other in self.platforms.values():
+                        if other.side == radar_platform.side or not other.alive:
+                            continue
+                        for j in other.jammers:
+                            if j.is_jamming and j.covers_frequency(emitter.center_freq_hz):
+                                jammer = j
+                                break
+                        if jammer is not None:
+                            break
+                    result = self.evaluate_radar_with_jamming(
+                        emitter, jammer, bandwidth_hz=1_000_000,
+                        noise_figure=5.0, loss=6.0, snr_min_db=13.0,
+                        target_platform=target)
+                    detection_km = result["detection_range_km"]
+                    if dist_m <= detection_km * 1000.0:
+                        contact = radar_map.get(target.id)
+                        if contact is None:
+                            contact = Contact(
+                                id=f"{radar_platform.id}-r-{target.id}",
+                                kind="radar_contact",
+                                own_platform_id=radar_platform.id,
+                                time_s=now,
+                                emitter_id=target.id,
+                                emitter_name=target.name,
+                            )
+                            radar_map[target.id] = contact
+                        contact.bearing_deg = initial_bearing_deg(
+                            radar_platform.latitude, radar_platform.longitude,
+                            target.latitude, target.longitude)
+                        contact.range_m = dist_m
+                        contact.latitude = target.latitude
+                        contact.longitude = target.longitude
+                        contact.time_s = now
+                        contact.last_update_s = now
+                        contact.is_memory = False
+                        contact.confidence = 0.95
+                        contact.extra = {"detection_km": detection_km}
+                    else:
+                        contact = radar_map.get(target.id)
+                        if contact is not None and now - contact.last_update_s > self.memory_ttl_s:
+                            radar_map.pop(target.id, None)
+                        elif contact is not None:
+                            contact.is_memory = True
 
     def update_contact_aging(self) -> None:
         """接触老化：信号丢失后进入记忆，超时后删除。"""

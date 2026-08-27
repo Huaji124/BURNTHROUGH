@@ -18,6 +18,8 @@
 - [x] 蒙特卡洛批量推演：ARM 命中率 / 生存率 / 欺骗干扰统计脚本
 - [x] UI：频谱监视面板、假目标列表
 - [x] 信号特征接入探测模型（RCS/红外/声呐作为平台属性，雷达方程使用目标 RCS）
+  - [x] 雷达接触主流程：雷达发现目标生成 radar_contacts + UI 雷达接触线/列表
+- [x] 弹药/推进 UI：底边栏显示弹药/油量/最大速度
 - [x] 挂载方案生成实际导弹（PL-10/PL-12C/YJ-83K 等自动映射为 AAM/ASM）
 - [x] 弹药库消耗/装填（ammo/magazine/reload_time）
 - [x] 推进性能驱动速度/续航（max_speed_kt/fuel_kg/consumption）

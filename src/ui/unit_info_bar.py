@@ -68,9 +68,17 @@ class UnitInfoBar(QWidget):
             self.icon_label.setText("✈" if p.kind == "aircraft" else "▣")
             side_cn = {"red": "红方", "blue": "蓝方", "neutral": "中立"}.get(p.side, p.side)
             self.name_label.setText(f"{side_cn} {p.name}")
+            speed_txt = f"速度 {p.speed_kt:.0f}kt"
+            if p.max_speed_kt is not None:
+                speed_txt += f" / 最大{p.max_speed_kt:.0f}kt"
+            if p.fuel_kg is not None:
+                speed_txt += f" | 油量 {p.fuel_kg:.0f}kg"
             self.motion_label.setText(
-                f"速度 {p.speed_kt:.0f}kt | 高度 {p.altitude_ft:.0f}ft | 航向 {p.heading_deg:03.0f}°")
-            if p.weapons:
+                f"{speed_txt} | 高度 {p.altitude_ft:.0f}ft | 航向 {p.heading_deg:03.0f}°")
+            if p.ammo:
+                ammo_parts = [f"{w} {c}/{p.magazine.get(w, 0)+c}" for w, c in p.ammo.items()]
+                self.weapons_label.setText("弹药: " + " | ".join(ammo_parts[:6]))
+            elif p.weapons:
                 self.weapons_label.setText("武器: " + " | ".join(p.weapons))
             else:
                 self.weapons_label.setText("武器: 无")

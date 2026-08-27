@@ -338,6 +338,34 @@ def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProje
             scene.addItem(label)
 
 
+def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制雷达接触线。"""
+    for own_id, radar_map in getattr(env, "radar_contacts", {}).items():
+        own = env.platforms.get(own_id)
+        if own is None:
+            continue
+        for contact in radar_map.values():
+            target = env.platforms.get(contact.emitter_id)
+            if target is None:
+                continue
+            x1, y1 = proj.to_xy(own.latitude, own.longitude)
+            x2, y2 = proj.to_xy(target.latitude, target.longitude)
+            color = QColor("#7f8c8d") if contact.is_memory else QColor("#2980b9")
+            pen = QPen(color, 1.0)
+            pen.setStyle(Qt.PenStyle.DashLine if contact.is_memory else Qt.PenStyle.SolidLine)
+            line = QGraphicsLineItem(x1, y1, x2, y2)
+            line.setPen(pen)
+            line.setZValue(4)
+            line.setToolTip(f"雷达接触: {target.name} / {contact.range_m/1852.0:.1f}nm")
+            scene.addItem(line)
+            label = QGraphicsSimpleTextItem("雷达接触")
+            label.setBrush(QBrush(color))
+            label.setFont(QFont("SansSerif", 8))
+            label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 6)
+            label.setZValue(4)
+            scene.addItem(label)
+
+
 def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
     """绘制攻击指令线。"""
     for order in env.orders:

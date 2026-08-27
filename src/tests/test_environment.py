@@ -272,3 +272,13 @@ def test_china_signatures_and_loadout_specific():
     assert any(lw["kind"] == "aam" for lw in j20.loadout_weapons)
     j16 = next(p for p in env.platforms.values() if p.name.startswith("J-16"))
     assert any("YJ" in lw["name"] and lw["kind"] == "asm" for lw in j16.loadout_weapons)
+
+
+def test_radar_detection_creates_contact_when_jammer_off():
+    env = build_demo_environment()
+    for j in env.all_jammers():
+        j.emcon_state = "off"
+    for _ in range(5):
+        env.step(1.0)
+    assert "red_ddg" in env.radar_contacts
+    assert "blue_ew" in env.radar_contacts["red_ddg"]
