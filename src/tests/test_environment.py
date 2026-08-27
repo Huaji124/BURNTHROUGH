@@ -282,3 +282,25 @@ def test_radar_detection_creates_contact_when_jammer_off():
         env.step(1.0)
     assert "red_ddg" in env.radar_contacts
     assert "blue_ew" in env.radar_contacts["red_ddg"]
+
+
+def test_soft_kill_chaff_makes_missile_miss():
+    env = build_demo_environment()
+    env.rng.seed(7)
+    red = env.platforms["red_ddg"]
+    red.weapons = ["ssm"]
+    blue_ship = Platform(
+        id="chaff_target", name="箔条目标", side="blue", kind="ship",
+        latitude=21.5, longitude=120.5, altitude_ft=0.0, speed_kt=0.0,
+        hp=200.0, chaff_count=1, soft_kill_probability=1.0,
+    )
+    env.add_platform(blue_ship)
+    env.add_attack_order("red_ddg", "chaff_target")
+    env.process_attack_orders()
+    for _ in range(600):
+        env.step(1.0)
+        if any(m.result for m in env.missiles):
+            break
+    assert env.missiles[0].result == "miss"
+    assert blue_ship.chaff_count == 0
+    assert any("箔条" in e.get("message", "") for e in env.events)

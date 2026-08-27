@@ -24,6 +24,9 @@ class Emitter:
     beam_width_deg: float = 1.5
     blind_sector_half_deg: float = 0.0
     blind_sector_center_deg: float = 180.0
+    elevation_min_deg: float = -10.0
+    elevation_max_deg: float = 85.0
+    sidelobe_gain_db: float = -20.0
     emcon_state: str = "on"          # on / off
     platform_id: str | None = None   # 载体平台 ID
 

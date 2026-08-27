@@ -61,6 +61,11 @@ class Platform:
     reload_time_s: float = 12.0
     reload_timers: dict[str, float] = field(default_factory=dict)
 
+    # 软杀伤
+    chaff_count: int = 0
+    decoy_count: int = 0
+    soft_kill_probability: float = 0.4
+
     # 编队与交战规则
     group_id: str | None = None
     roe: str = "free"                 # free / weapons_free / hold / weapons_hold
@@ -129,6 +134,7 @@ class Environment:
     radar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     ir_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
     sonar_contacts: dict[str, dict[str, Contact]] = field(default_factory=dict)
+    pending_esm: list[dict] = field(default_factory=list)
     waypoints: dict[str, list[tuple[float, float]]] = field(default_factory=dict)
     orders: list[dict] = field(default_factory=list)  # 攻击/移动等指令
     missiles: list[Missile] = field(default_factory=list)
@@ -244,6 +250,7 @@ class Environment:
             current_speed_mps=float(spec.get("speed_mps", 300.0)),
             terminal_speed_mps=float(spec.get("speed_mps", 300.0)) * 0.85,
             decel_mps2=float(spec.get("decel_mps2", 1.5)),
+            max_g=float(spec.get("max_g", 20.0)),
         )
         if kind == "arm":
             missile.last_locked_lat = target.latitude
@@ -392,7 +399,11 @@ class Environment:
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_intercepted",
                                             "message": f"{missile.name} 被 {target.name} 近防系统拦截"})
-                    elif self.rng.random() < self._hit_chance(target):
+                    elif self._try_soft_kill(target, missile):
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_decoyed",
+                                            "message": f"{missile.name} 被 {target.name} 箔条/诱饵诱骗"})
+                    elif self.rng.random() < self._hit_chance(target, missile):
                         missile.result = "hit"
                         self._damage_platform(target, missile)
                     else:
@@ -402,7 +413,11 @@ class Environment:
                 elif missile.kind == "aam":
                     missile.active = False
                     if actual_m < 500.0:
-                        if self.rng.random() < self._hit_chance(target):
+                        if self._try_soft_kill(target, missile):
+                            missile.result = "miss"
+                            self.events.append({"time": self.time_s, "kind": "missile_decoyed",
+                                                "message": f"{missile.name} 被 {target.name} 箔条/诱饵诱骗"})
+                        elif self.rng.random() < self._hit_chance(target, missile):
                             missile.result = "hit"
                             self._damage_platform(target, missile)
                         else:
@@ -415,7 +430,11 @@ class Environment:
                                             "message": f"{missile.name} 未命中（目标机动）"})
                 elif actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
                     missile.active = False
-                    if self.rng.random() < self._hit_chance(target):
+                    if self._try_soft_kill(target, missile):
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_decoyed",
+                                            "message": f"{missile.name} 被 {target.name} 箔条/诱饵诱骗"})
+                    elif self.rng.random() < self._hit_chance(target, missile):
                         missile.result = "hit"
                         self._damage_platform(target, missile)
                     else:
@@ -443,10 +462,26 @@ class Environment:
                     missile.terminal_speed_mps or 0.0,
                     missile.current_speed_mps - missile.decel_mps2 * dt_s)
 
-    def _hit_chance(self, target: Platform) -> float:
-        """命中概率：基础 ARM 命中率 × 目标机动修正。"""
+    def _try_soft_kill(self, target: Platform, missile: Missile) -> bool:
+        """目标发射箔条/诱饵软杀伤，成功则导弹被诱骗。"""
+        if missile.kind not in ("asm", "aam", "arm"):
+            return False
+        if target.chaff_count <= 0 and target.decoy_count <= 0:
+            return False
+        if self.rng.random() >= target.soft_kill_probability:
+            return False
+        if target.chaff_count > 0:
+            target.chaff_count -= 1
+        elif target.decoy_count > 0:
+            target.decoy_count -= 1
+        return True
+
+    def _hit_chance(self, target: Platform, missile: Missile | None = None) -> float:
+        """命中概率：基础 ARM 命中率 × 目标机动修正 × 导弹过载能力。"""
         base = self.arm_hit_probability
         maneuver_penalty = min(0.6, target.agility * 0.01)
+        if missile is not None and missile.max_g > 0 and target.agility > missile.max_g * 0.8:
+            maneuver_penalty = min(0.8, maneuver_penalty + 0.1)
         return max(0.05, base * (1.0 - maneuver_penalty))
 
     def _try_decoy_missile(self, missile: Missile, target: Platform) -> bool:
@@ -649,6 +684,7 @@ class Environment:
         self.step_missiles(dt_s)
         self.update_deception(dt_s)
         self.update_esm(dt_s)
+        self._process_pending_esm(dt_s)
         self.update_radar_detection(dt_s)
         self.update_ir_detection(dt_s)
         self.update_sonar_detection(dt_s)
@@ -842,7 +878,14 @@ class Environment:
                         result = self._intercept_source(esm, own, other, source, dt_s)
                         if result is None:
                             continue
-                        self._update_contact(own, esm, other, source, result)
+                        self.pending_esm.append({
+                            "available_at": self.time_s + esm.processing_time_s,
+                            "own": own,
+                            "esm": esm,
+                            "other": other,
+                            "source": source,
+                            "result": result,
+                        })
 
     def _active_sources_of(self, platform: Platform) -> list[tuple]:
         """返回平台上所有正在辐射的信号源。
@@ -883,8 +926,16 @@ class Environment:
 
         # 扫描截获概率：扫描雷达需要波束扫过 ESM；干扰机等常开信号概率为 1
         p = self._scan_intercept_probability(src, dt_s)
+        sidelobe = False
         if p < 1.0 and self.rng.random() > p:
-            return None
+            # 主瓣未截获：尝试副瓣截获（EW101 副瓣侦察）
+            sidelobe_gain = float(getattr(src, "sidelobe_gain_db", -20.0) or -20.0)
+            power_sidelobe_dbm = power_dbm + sidelobe_gain
+            p_sl = min(0.5, dt_s * 0.2)
+            if power_sidelobe_dbm >= esm.sensitivity_dbm and self.rng.random() < p_sl:
+                sidelobe = True
+            else:
+                return None
 
         true_bearing = initial_bearing_deg(own.latitude, own.longitude,
                                            other.latitude, other.longitude)
@@ -902,8 +953,9 @@ class Environment:
             "true_bearing_deg": true_bearing,
             "range_km": r_m / 1000.0,
             "power_dbm": power_dbm,
+            "sidelobe": sidelobe,
             "identified": identified,
-            "confidence": 0.9 if identified else 0.35,
+            "confidence": (0.6 if sidelobe else 0.9) if identified else (0.2 if sidelobe else 0.35),
         }
 
     @staticmethod
@@ -972,6 +1024,12 @@ class Environment:
                     if not target.alive:
                         continue
                     dist_m = _distance_m(radar_platform, target)
+                    # 波束仰角覆盖：低于/高于仰角范围视为盲区
+                    dh_m = (target.altitude_ft - radar_platform.altitude_ft) * 0.3048
+                    elev_deg = math.degrees(math.atan2(dh_m, max(dist_m, 1.0)))
+                    if elev_deg < emitter.elevation_min_deg or elev_deg > emitter.elevation_max_deg:
+                        radar_map.pop(target.id, None)
+                        continue
                     # 火控雷达盲区：天线后/侧向盲扇区
                     if emitter.blind_sector_half_deg > 0:
                         rel_bearing = (initial_bearing_deg(
@@ -1143,6 +1201,17 @@ class Environment:
                     target.comm_degraded = True
                     self.events.append({"time": self.time_s, "kind": "comm_jamming",
                                         "message": f"{target.name} 通信受 {jammer.name} 干扰"})
+
+    def _process_pending_esm(self, dt_s: float) -> None:
+        """处理已到处理时间的 ESM 截获结果。"""
+        still_pending = []
+        for item in self.pending_esm:
+            if self.time_s >= item["available_at"]:
+                self._update_contact(
+                    item["own"], item["esm"], item["other"], item["source"], item["result"])
+            else:
+                still_pending.append(item)
+        self.pending_esm = still_pending
 
     def update_contact_aging(self) -> None:
         """接触老化：信号丢失后进入记忆，超时后删除。"""

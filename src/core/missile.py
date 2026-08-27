@@ -28,3 +28,4 @@ class Missile:
     current_speed_mps: float | None = None
     terminal_speed_mps: float | None = None
     decel_mps2: float | None = None
+    max_g: float = 20.0

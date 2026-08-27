@@ -223,6 +223,9 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             if "gun" in mname.lower() or mname.lower().startswith("h/pj"):
                 platform.gun_range_km = max(platform.gun_range_km, 8.0)
                 platform.gun_hit_probability = max(platform.gun_hit_probability, 0.15)
+            if any(k in mname.lower() for k in ("chaff", "decoy", "decoy", "dl", "诱饵", "干扰弹")):
+                platform.chaff_count = max(platform.chaff_count,
+                                           int(mount.get("Capacity") or 12))
             if (any(k in mname.lower() for k in ("ssm", "anti-ship", "yj", "c-8"))
                     and "ssm" not in platform.weapons):
                 platform.weapons.append("ssm")
