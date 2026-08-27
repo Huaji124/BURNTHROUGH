@@ -63,6 +63,7 @@ class MainWindow(QMainWindow):
         self._build_toolbar()
 
         self.contact_list = ContactListWidget(self)
+        self.contact_list.marked_changed.connect(self._on_contact_mark_changed)
         self.add_dock(Qt.DockWidgetArea.RightDockWidgetArea,
                       QDockWidget("接触列表", self), self.contact_list)
 
@@ -361,6 +362,11 @@ class MainWindow(QMainWindow):
         self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(
             f"已加载完整 CMO 数据库：{len(self.env.platforms)} 个平台")
+
+    def _on_contact_mark_changed(self) -> None:
+        self.contact_list.update_contacts(self.env)
+        self.map_widget.refresh()
+        self.statusBar().showMessage("接触人工标记已更新")
 
     def _on_side_changed(self, text: str) -> None:
         side = "red" if text == "红方" else "blue"
