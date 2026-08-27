@@ -74,7 +74,7 @@
 
 | 项目 | 当前状态 | 下一步 |
 |---|---|---|
-| `sim.py` TODO | 时间循环主逻辑已移到 environment | 删除或改造成纯调度 |
+| `sim.py` | 已删除（时间循环主逻辑在 environment） | 无需处理 |
 | `cmo_world_loader` 挂载/弹药 | 只加载基础字段 | 接入 loadout_weapons/magazine/propulsion |
 | `cmo_full_by_country` 完整关系 | 游戏未完整使用 | 让“装载CMO世界”支持完整挂载/弹药/推进 |
 | `run_ui_cmo_all.py` | 引用已删除文件 | 更新为从按国家目录加载 |

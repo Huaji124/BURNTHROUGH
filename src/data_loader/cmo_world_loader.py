@@ -1,6 +1,6 @@
-"""从 CMO 世界数据导出 JSON（data/cmo_world_full.json）构建烧穿环境。
+"""从 CMO 世界数据（本地单文件或 cmo_full_by_country 国家目录）构建烧穿环境。
 
-该文件较大且为本地参考数据（已 .gitignore），适合在本地运行游戏时加载。
+推荐使用 load_cmo_country_environment() 从按国家拆分目录加载。
 """
 
 from __future__ import annotations
