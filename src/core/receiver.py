@@ -17,6 +17,7 @@ class Receiver:
     df_accuracy_deg: float | None = None   # 测向精度（ESM/RWR）
     param_library: list[str] = field(default_factory=list)  # 可识别的辐射源类型 ID
     signal_params: dict[str, dict] = field(default_factory=dict)  # 多参数信号库
+    toa_accuracy_ns: float = 0.0       # 到达时间测量精度（0=无TOA）
     processing_time_s: float = 1.0
     platform_id: str | None = None
 

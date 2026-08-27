@@ -747,6 +747,7 @@ class Environment:
         self.update_contact_aging()
         self.cross_fix_contacts()
         self.cross_fix_radar_ranges()
+        self.cross_fix_tdoa()
 
     def step_motion(self, dt_s: float) -> None:
         """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
@@ -1008,6 +1009,10 @@ class Environment:
         else:
             bearing = true_bearing
 
+        toa_ns = None
+        if esm.toa_accuracy_ns > 0:
+            toa_ns = r_m / 299792458.0 * 1e9 + self.rng.gauss(0.0, esm.toa_accuracy_ns)
+
         identified = source_id in esm.param_library
         pulse_match = False
         if not identified and esm.signal_params:
@@ -1034,6 +1039,7 @@ class Environment:
             "true_bearing_deg": true_bearing,
             "range_km": r_m / 1000.0,
             "power_dbm": power_dbm,
+            "toa_ns": toa_ns,
             "sidelobe": sidelobe,
             "identified": identified,
             "confidence": (0.6 if sidelobe else 0.9) if identified else (0.2 if sidelobe else 0.35),
@@ -1088,6 +1094,7 @@ class Environment:
             "power_dbm": result["power_dbm"],
             "range_km": result["range_km"],
             "identified": result["identified"],
+            "toa_ns": result.get("toa_ns"),
         }
 
     def _get_horizon_nm(self, a: Platform, b: Platform) -> float:
@@ -1424,6 +1431,47 @@ class Environment:
                     if lat is not None:
                         contact.latitude = lat
                         contact.longitude = lon
+
+    def cross_fix_tdoa(self) -> None:
+        """到达时间差（TDOA）多站定位：3 个以上 ESM 接收机粗网格搜索。"""
+        groups: dict[str, list[tuple[float, float, float, str, Contact]]] = {}
+        for own_id, contact_map in self.contacts.items():
+            own = self.platforms.get(own_id)
+            if own is None:
+                continue
+            for contact in contact_map.values():
+                toa = contact.extra.get("toa_ns")
+                if toa is None or contact.emitter_id is None:
+                    continue
+                groups.setdefault(contact.emitter_id, []).append(
+                    (own.latitude, own.longitude, toa, own_id, contact))
+
+        for entries in groups.values():
+            if len(entries) < 3:
+                continue
+            lat0 = sum(e[0] for e in entries) / len(entries)
+            lon0 = sum(e[1] for e in entries) / len(entries)
+            ref_lat, ref_lon, ref_toa, _, _ = entries[0]
+            best_lat, best_lon, best_cost = lat0, lon0, 1e18
+            for i in range(-20, 21):
+                for j in range(-20, 21):
+                    lat = lat0 + i * 0.1
+                    lon = lon0 + j * 0.1
+                    cost = 0.0
+                    for e in entries[1:]:
+                        d0 = haversine_nm(ref_lat, ref_lon, lat, lon) * 1.852
+                        d = haversine_nm(e[0], e[1], lat, lon) * 1.852
+                        predicted_diff = (d - d0) / 299792458.0 * 1e9
+                        measured_diff = e[2] - ref_toa
+                        cost += (predicted_diff - measured_diff) ** 2
+                    if cost < best_cost:
+                        best_cost = cost
+                        best_lat, best_lon = lat, lon
+            if best_cost < 1e14:
+                for _, _, _, _, contact in entries:
+                    contact.latitude = best_lat
+                    contact.longitude = best_lon
+                    contact.extra["tdoa_fix"] = True
 
     # ------------------------------------------------------------------
     # 传播链路（Phase 1 已有）
