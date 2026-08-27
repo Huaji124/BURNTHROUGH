@@ -72,7 +72,7 @@ class MapWidget(QGraphicsView):
         self.setDragMode(QGraphicsView.DragMode.NoDrag)
         self.setTransformationAnchor(QGraphicsView.ViewportAnchor.AnchorUnderMouse)
         self.setRenderHints(QPainter.RenderHint.Antialiasing)
-        self.setBackgroundBrush(QBrush(QColor("#101418")))
+        self.setBackgroundBrush(QBrush(QColor("#c9e3f2")))
 
         self._env: Environment | None = None
         self._projection: LocalProjection | None = None

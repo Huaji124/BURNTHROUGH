@@ -49,11 +49,11 @@ def draw_coastlines(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
         if len(pts) < 3:
             continue
         poly = scene.addPolygon(QPolygonF(pts))
-        poly.setPen(QPen(QColor("#5d6d7e"), 1))
+        poly.setPen(QPen(QColor("#7a9e7f"), 1))
         poly.setBrush(QBrush(QColor(93, 109, 126, 90)))
         poly.setZValue(0)
         label = QGraphicsSimpleTextItem(coast.get("name", ""))
-        label.setBrush(QBrush(QColor("#7f8c8d")))
+        label.setBrush(QBrush(QColor("#5d6d7e")))
         label.setFont(QFont("SansSerif", 8))
         label.setPos(pts[0].x(), pts[0].y())
         label.setZValue(1)
@@ -72,7 +72,7 @@ def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalP
             poly.append(QPointF(x + r * math.cos(a), y + r * math.sin(a)))
         item = scene.addPolygon(poly)
         item.setPen(QPen(QColor("#7f8c8d"), 1, Qt.PenStyle.SolidLine))
-        item.setBrush(QBrush(QColor(127, 140, 141, 40)))
+        item.setBrush(QBrush(QColor(127, 140, 141, 60)))
         item.setZValue(0)
         item.setToolTip(f"地形 {ob.get('height_ft',500)}$ft")
         label = QGraphicsSimpleTextItem("地形")
@@ -90,7 +90,7 @@ def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProj
     x1, y1 = proj.to_xy(proj.center_lat - span, proj.center_lon - span)
     x2, y2 = proj.to_xy(proj.center_lat + span, proj.center_lon + span)
     ocean = scene.addRect(min(x1,x2), min(y1,y2), abs(x2-x1), abs(y2-y1))
-    ocean.setBrush(QBrush(QColor(26, 48, 86)))
+    ocean.setBrush(QBrush(QColor(179, 212, 240)))
     ocean.setPen(Qt.NoPen)
     ocean.setZValue(-2)
     for coast in env.coastlines:
@@ -98,11 +98,11 @@ def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProj
         if len(pts) < 3:
             continue
         poly = scene.addPolygon(QPolygonF(pts))
-        poly.setPen(QPen(QColor("#5d6d7e"), 1))
-        poly.setBrush(QBrush(QColor(93, 109, 126, 150)))
+        poly.setPen(QPen(QColor("#7a9e7f"), 1))
+        poly.setBrush(QBrush(QColor(176, 212, 176, 180)))
         poly.setZValue(-1)
         label = QGraphicsSimpleTextItem(coast.get("name", ""))
-        label.setBrush(QBrush(QColor("#7f8c8d")))
+        label.setBrush(QBrush(QColor("#5d6d7e")))
         label.setFont(QFont("SansSerif", 8))
         label.setPos(pts[0].x(), pts[0].y())
         label.setZValue(0)
@@ -114,7 +114,7 @@ def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
     c_lat, c_lon = proj.center_lat, proj.center_lon
     span = 8.0
     step = 1.0
-    pen = QPen(QColor("#2a2f3a"), 1, Qt.PenStyle.DashLine)
+    pen = QPen(QColor("#8fa8bb"), 1, Qt.PenStyle.DashLine)
     font = QFont("SansSerif", 8)
 
     lat = math.floor((c_lat - span) / step) * step
@@ -126,7 +126,7 @@ def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
         line.setZValue(0)
         scene.addItem(line)
         label = QGraphicsSimpleTextItem(f"{lat:.0f}°N" if lat >= 0 else f"{-lat:.0f}°S")
-        label.setBrush(QBrush(QColor("#7f8c8d")))
+        label.setBrush(QBrush(QColor("#5d6d7e")))
         label.setFont(font)
         label.setPos(x1 + 3, y1 + 3)
         label.setZValue(0)
@@ -142,7 +142,7 @@ def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
         line.setZValue(0)
         scene.addItem(line)
         label = QGraphicsSimpleTextItem(f"{lon:.0f}°E" if lon >= 0 else f"{-lon:.0f}°W")
-        label.setBrush(QBrush(QColor("#7f8c8d")))
+        label.setBrush(QBrush(QColor("#5d6d7e")))
         label.setFont(font)
         label.setPos(x1 + 3, y1 + 3)
         label.setZValue(0)
@@ -618,7 +618,7 @@ def draw_legend(scene: QGraphicsScene, proj: LocalProjection, side: str | None =
         line.setZValue(20)
         scene.addItem(line)
         label = QGraphicsSimpleTextItem(text)
-        label.setBrush(QBrush(QColor("#ecf0f1")))
+        label.setBrush(QBrush(QColor("#2c3e50")))
         label.setFont(font)
         label.setPos(x + 28, y - 4)
         label.setZValue(20)
