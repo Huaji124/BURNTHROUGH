@@ -381,8 +381,7 @@ class MainWindow(QMainWindow):
         self.statusBar().showMessage(f"当前视角：{text}（仅显示己方/己方传感器接触）")
 
     def _on_fit_view(self) -> None:
-        self.map_widget.resetTransform()
-        self.map_widget.centerOn(0, 0)
+        self.map_widget.fit_to_world()
         self.statusBar().showMessage("视图已复位")
 
     def add_dock(self, area, dock: QDockWidget, widget):

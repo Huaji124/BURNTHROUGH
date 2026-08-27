@@ -112,10 +112,10 @@ def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProj
 def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
     """绘制经纬度网格线。"""
     c_lat, c_lon = proj.center_lat, proj.center_lon
-    span = 8.0
-    step = 1.0
-    pen = QPen(QColor("#8fa8bb"), 1, Qt.PenStyle.DashLine)
-    font = QFont("SansSerif", 8)
+    span = 10.0
+    step = 2.0
+    pen = QPen(QColor("#9db4c7"), 1, Qt.PenStyle.SolidLine)
+    font = QFont("SansSerif", 9)
 
     lat = math.floor((c_lat - span) / step) * step
     while lat <= c_lat + span:
