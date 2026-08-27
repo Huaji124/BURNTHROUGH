@@ -145,6 +145,13 @@ class Environment:
     contact_ttl_s: float = 60.0       # 接触总生存时间
     arm_hit_probability: float = 1.0  # ARM 命中概率（蒙特卡洛时可调）
     false_contacts: dict[str, list[FalseTarget]] = field(default_factory=dict)
+
+    # 环境层（Phase 7 环境）
+    terrain_obstacles: list[dict] = field(default_factory=list)
+    atmospheric_k: float = 4.0 / 3.0    # 大气折射系数（4/3 地球半径）
+    sea_state: int = 3                  # 海况 0~9
+    rain_mm_h: float = 0.0              # 降雨强度
+    visibility_km: float = 30.0         # 能见度
     _false_target_seq: int = 0
 
     # ------------------------------------------------------------------
@@ -909,10 +916,12 @@ class Environment:
         src, freq_hz, power_w, gain, source_id, source_name = source
 
         r_m = _distance_m(own, other)
-        horizon_nm = 1.23 * (math.sqrt(max(own.altitude_ft, 0.0)) +
-                             math.sqrt(max(other.altitude_ft, 0.0)))
+        horizon_nm = self._get_horizon_nm(own, other)
         horizon_m = horizon_nm * 1852.0
         if r_m > horizon_m:
+            return None
+        if self._line_of_sight_blocked(own.latitude, own.longitude,
+                                       other.latitude, other.longitude):
             return None
 
         if not esm.covers_frequency(freq_hz):
@@ -1001,6 +1010,46 @@ class Environment:
             "identified": result["identified"],
         }
 
+    def _get_horizon_nm(self, a: Platform, b: Platform) -> float:
+        """考虑大气折射系数后的雷达视距（海里）。"""
+        base = 1.23 * (math.sqrt(max(a.altitude_ft, 0.0)) +
+                       math.sqrt(max(b.altitude_ft, 0.0)))
+        return base * math.sqrt(self.atmospheric_k / (4.0 / 3.0))
+
+    def _line_of_sight_blocked(self, lat1: float, lon1: float, lat2: float, lon2: float) -> bool:
+        """地形遮蔽：路径穿过障碍物圆即视为被遮挡。"""
+        if not self.terrain_obstacles:
+            return False
+        # 局部投影近似用于线段-圆相交
+        for ob in self.terrain_obstacles:
+            olat, olon = ob["lat"], ob["lon"]
+            rkm = ob.get("radius_km", 20.0)
+            # 检查目标点在障碍物圆附近（简单包围盒）
+            d1 = haversine_nm(lat1, lon1, olat, olon) * 1.852
+            d2 = haversine_nm(lat2, lon2, olat, olon) * 1.852
+            if min(d1, d2) < rkm:
+                return True
+            # 中点检查
+            mlat = (lat1 + lat2) / 2.0
+            mlon = (lon1 + lon2) / 2.0
+            dm = haversine_nm(mlat, mlon, olat, olon) * 1.852
+            if dm < rkm * 0.8:
+                return True
+        return False
+
+    def _weather_penalty(self) -> float:
+        """天气对雷达/光学/ESM 的通用衰减系数（0.3~1.0）。"""
+        penalty = 1.0
+        penalty -= min(0.4, self.sea_state * 0.04)
+        penalty -= min(0.3, self.rain_mm_h / 50.0 * 0.3)
+        visibility = max(self.visibility_km, 1.0)
+        penalty -= min(0.2, (30.0 - visibility) / 30.0 * 0.2)
+        return max(0.3, penalty)
+
+    def _sonar_environment_factor(self) -> float:
+        """海况/降雨对声呐的影响。"""
+        return max(0.35, 1.0 - self.sea_state * 0.08 - min(0.2, self.rain_mm_h / 100.0))
+
     def update_radar_detection(self, dt_s: float) -> None:
         """雷达接触主流程：使用目标 RCS/红外特征决定是否发现。
 
@@ -1040,10 +1089,13 @@ class Environment:
                         if abs(delta) <= emitter.blind_sector_half_deg:
                             radar_map.pop(target.id, None)
                             continue
-                    # 视距
-                    horizon_nm = 1.23 * (math.sqrt(max(radar_platform.altitude_ft, 0.0)) +
-                                         math.sqrt(max(target.altitude_ft, 0.0)))
+                    # 视距与地形遮蔽
+                    horizon_nm = self._get_horizon_nm(radar_platform, target)
                     if dist_m > horizon_nm * 1852.0:
+                        radar_map.pop(target.id, None)
+                        continue
+                    if self._line_of_sight_blocked(radar_platform.latitude, radar_platform.longitude,
+                                                   target.latitude, target.longitude):
                         radar_map.pop(target.id, None)
                         continue
                     jammer = None
@@ -1060,7 +1112,7 @@ class Environment:
                         emitter, jammer, bandwidth_hz=1_000_000,
                         noise_figure=5.0, loss=6.0, snr_min_db=13.0,
                         target_platform=target)
-                    detection_km = result["detection_range_km"]
+                    detection_km = result["detection_range_km"] * self._weather_penalty()
                     if dist_m <= detection_km * 1000.0:
                         contact = radar_map.get(target.id)
                         # 扫描周期影响首次发现/重新截获概率；已跟踪则每帧刷新
@@ -1111,7 +1163,11 @@ class Environment:
                     continue
                 dist_km = haversine_nm(own.latitude, own.longitude,
                                        target.latitude, target.longitude) * 1.852
-                if dist_km <= target.ir_detection_km:
+                if self._line_of_sight_blocked(own.latitude, own.longitude,
+                                               target.latitude, target.longitude):
+                    ir_map.pop(target.id, None)
+                    continue
+                if dist_km <= target.ir_detection_km * self._weather_penalty():
                     contact = ir_map.get(target.id)
                     if contact is None:
                         contact = Contact(
@@ -1156,7 +1212,8 @@ class Environment:
                 dist_km = haversine_nm(own.latitude, own.longitude,
                                        target.latitude, target.longitude) * 1.852
                 # 简化声呐方程：目标信号越强，探测距离越远
-                range_km = 20.0 + max(0.0, target.sonar_signature_db - 100.0) * 0.2
+                range_km = (20.0 + max(0.0, target.sonar_signature_db - 100.0) * 0.2) \
+                    * self._sonar_environment_factor()
                 if dist_km <= range_km:
                     contact = sonar_map.get(target.id)
                     if contact is None:
