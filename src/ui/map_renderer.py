@@ -42,6 +42,29 @@ class WaypointRect(QGraphicsRectItem):
         return super().itemChange(change, value)
 
 
+def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制地形障碍物（岛屿/高地）。"""
+    for ob in env.terrain_obstacles:
+        x, y = proj.to_xy(ob["lat"], ob["lon"])
+        r = proj.km_to_px(ob.get("radius_km", 20.0))
+        poly = QPolygonF()
+        steps = 24
+        for i in range(steps):
+            a = 2.0 * math.pi * i / steps
+            poly.append(QPointF(x + r * math.cos(a), y + r * math.sin(a)))
+        item = scene.addPolygon(poly)
+        item.setPen(QPen(QColor("#7f8c8d"), 1, Qt.PenStyle.SolidLine))
+        item.setBrush(QBrush(QColor(127, 140, 141, 40)))
+        item.setZValue(0)
+        item.setToolTip(f"地形 {ob.get('height_ft',500)}$ft")
+        label = QGraphicsSimpleTextItem("地形")
+        label.setBrush(QBrush(QColor("#95a5a6")))
+        label.setFont(QFont("SansSerif", 8))
+        label.setPos(x - 12, y)
+        label.setZValue(1)
+        scene.addItem(label)
+
+
 def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
     """绘制经纬度网格线。"""
     c_lat, c_lon = proj.center_lat, proj.center_lon

@@ -9,6 +9,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from .emitter import Emitter
 from .environment import Environment, Platform
 from .jammer import Jammer
@@ -128,5 +130,10 @@ def build_demo_environment() -> Environment:
         platform_id="blue_ew",
     ))
     env.add_platform(blue_ew)
+
+    # 示例地形（本地数据）
+    terrain_path = "data/environment/terrain.json"
+    if Path(terrain_path).exists():
+        env.load_terrain_from_json(terrain_path)
 
     return env

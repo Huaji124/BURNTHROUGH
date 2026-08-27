@@ -11,6 +11,7 @@ from __future__ import annotations
 import math
 import random
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from common.geo import destination_point, haversine_nm, initial_bearing_deg
 
@@ -152,6 +153,10 @@ class Environment:
     sea_state: int = 3                  # 海况 0~9
     rain_mm_h: float = 0.0              # 降雨强度
     visibility_km: float = 30.0         # 能见度
+    wind_speed_kt: float = 0.0          # 风速
+    cloud_cover_pct: float = 0.0        # 云量 0~100
+    humidity_pct: float = 60.0          # 湿度 0~100
+    sound_speed_profile_m_s: list[float] = field(default_factory=list)
     _false_target_seq: int = 0
 
     # ------------------------------------------------------------------
@@ -159,6 +164,19 @@ class Environment:
     # ------------------------------------------------------------------
     def add_platform(self, platform: Platform) -> None:
         self.platforms[platform.id] = platform
+
+    def add_terrain_obstacle(self, lat: float, lon: float, radius_km: float,
+                             height_ft: float = 500.0) -> None:
+        self.terrain_obstacles.append({
+            "lat": lat, "lon": lon, "radius_km": radius_km, "height_ft": height_ft})
+
+    def load_terrain_from_json(self, path: str | Path) -> None:
+        import json as _json
+        data = _json.loads(Path(path).read_text(encoding="utf-8"))
+        for ob in data.get("terrain_obstacles", []):
+            self.add_terrain_obstacle(
+                ob["lat"], ob["lon"], ob.get("radius_km", 20.0),
+                ob.get("height_ft", 500.0))
 
     # ------------------------------------------------------------------
     # 指令与航路点
@@ -921,7 +939,8 @@ class Environment:
         if r_m > horizon_m:
             return None
         if self._line_of_sight_blocked(own.latitude, own.longitude,
-                                       other.latitude, other.longitude):
+                                       other.latitude, other.longitude,
+                                       own.altitude_ft, other.altitude_ft):
             return None
 
         if not esm.covers_frequency(freq_hz):
@@ -1016,25 +1035,24 @@ class Environment:
                        math.sqrt(max(b.altitude_ft, 0.0)))
         return base * math.sqrt(self.atmospheric_k / (4.0 / 3.0))
 
-    def _line_of_sight_blocked(self, lat1: float, lon1: float, lat2: float, lon2: float) -> bool:
-        """地形遮蔽：路径穿过障碍物圆即视为被遮挡。"""
+    def _line_of_sight_blocked(self, lat1: float, lon1: float, lat2: float, lon2: float,
+                                alt1_ft: float = 0.0, alt2_ft: float = 0.0) -> bool:
+        """地形遮蔽：沿视线采样多个点，障碍物高度超过视线高度即遮挡。"""
         if not self.terrain_obstacles:
             return False
-        # 局部投影近似用于线段-圆相交
-        for ob in self.terrain_obstacles:
-            olat, olon = ob["lat"], ob["lon"]
-            rkm = ob.get("radius_km", 20.0)
-            # 检查目标点在障碍物圆附近（简单包围盒）
-            d1 = haversine_nm(lat1, lon1, olat, olon) * 1.852
-            d2 = haversine_nm(lat2, lon2, olat, olon) * 1.852
-            if min(d1, d2) < rkm:
-                return True
-            # 中点检查
-            mlat = (lat1 + lat2) / 2.0
-            mlon = (lon1 + lon2) / 2.0
-            dm = haversine_nm(mlat, mlon, olat, olon) * 1.852
-            if dm < rkm * 0.8:
-                return True
+        samples = 8
+        for i in range(samples + 1):
+            t = i / samples
+            mlat = lat1 + (lat2 - lat1) * t
+            mlon = lon1 + (lon2 - lon1) * t
+            m_alt = alt1_ft + (alt2_ft - alt1_ft) * t
+            for ob in self.terrain_obstacles:
+                d = haversine_nm(mlat, mlon, ob["lat"], ob["lon"]) * 1.852
+                if d < ob.get("radius_km", 20.0):
+                    ob_h = ob.get("height_ft", 500.0)
+                    # 地面/海面障碍高度若高于该点视线高度则遮挡
+                    if ob_h > m_alt:
+                        return True
         return False
 
     def _weather_penalty(self) -> float:
@@ -1044,11 +1062,20 @@ class Environment:
         penalty -= min(0.3, self.rain_mm_h / 50.0 * 0.3)
         visibility = max(self.visibility_km, 1.0)
         penalty -= min(0.2, (30.0 - visibility) / 30.0 * 0.2)
+        penalty -= min(0.15, self.wind_speed_kt / 50.0 * 0.15)
+        penalty -= min(0.1, self.cloud_cover_pct / 100.0 * 0.1)
+        penalty -= min(0.1, max(0.0, self.humidity_pct - 80.0) / 20.0 * 0.1)
         return max(0.3, penalty)
 
     def _sonar_environment_factor(self) -> float:
-        """海况/降雨对声呐的影响。"""
-        return max(0.35, 1.0 - self.sea_state * 0.08 - min(0.2, self.rain_mm_h / 100.0))
+        """海况/降雨/声速剖面共同影响声呐。"""
+        f = 1.0 - self.sea_state * 0.08 - min(0.2, self.rain_mm_h / 100.0)
+        if self.sound_speed_profile_m_s:
+            # 声速剖面分层越稳定（速度差小）越好；这里用简单平均差值
+            avg = sum(self.sound_speed_profile_m_s) / len(self.sound_speed_profile_m_s)
+            var = max(1.0, max(self.sound_speed_profile_m_s) - min(self.sound_speed_profile_m_s))
+            f *= max(0.6, 1.0 - min(1.0, var / avg * 0.5))
+        return max(0.35, f)
 
     def update_radar_detection(self, dt_s: float) -> None:
         """雷达接触主流程：使用目标 RCS/红外特征决定是否发现。
@@ -1095,7 +1122,8 @@ class Environment:
                         radar_map.pop(target.id, None)
                         continue
                     if self._line_of_sight_blocked(radar_platform.latitude, radar_platform.longitude,
-                                                   target.latitude, target.longitude):
+                                                   target.latitude, target.longitude,
+                                                   radar_platform.altitude_ft, target.altitude_ft):
                         radar_map.pop(target.id, None)
                         continue
                     jammer = None
@@ -1164,7 +1192,8 @@ class Environment:
                 dist_km = haversine_nm(own.latitude, own.longitude,
                                        target.latitude, target.longitude) * 1.852
                 if self._line_of_sight_blocked(own.latitude, own.longitude,
-                                               target.latitude, target.longitude):
+                                               target.latitude, target.longitude,
+                                               own.altitude_ft, target.altitude_ft):
                     ir_map.pop(target.id, None)
                     continue
                 if dist_km <= target.ir_detection_km * self._weather_penalty():

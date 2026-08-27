@@ -1,0 +1,7 @@
+{
+  "terrain_obstacles": [
+    {"lat": 22.15, "lon": 120.5, "radius_km": 40, "height_ft": 1200},
+    {"lat": 22.6, "lon": 120.3, "radius_km": 25, "height_ft": 800},
+    {"lat": 21.8, "lon": 121.2, "radius_km": 30, "height_ft": 900}
+  ]
+}
