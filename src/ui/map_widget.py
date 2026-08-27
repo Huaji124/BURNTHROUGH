@@ -131,8 +131,13 @@ class MapWidget(QGraphicsView):
         if scale <= 0:
             return
         for item in self._scene.items():
-            if item.data(1) == "screen":
-                item.setScale(1.0 / scale)
+            if item.data(1) != "screen":
+                continue
+            item.setScale(1.0 / scale)
+            anchor = item.data(2)
+            if anchor is not None:
+                ax, ay, ox, oy = anchor
+                item.setPos(ax + ox / scale, ay + oy / scale)
 
     def _update_text_visibility(self) -> None:
         """根据当前缩放级别显示/隐藏地图文字标签。"""

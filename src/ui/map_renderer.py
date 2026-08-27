@@ -186,6 +186,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             label.setFont(QFont("SansSerif", 7))
             label.setPos(x + 6, y - 6)
             label.setZValue(15)
+            label.setData(2, (x, y, 6.0, -6.0))
             scene.addItem(label)
             screen_fixed(label)
         if len(pts) >= 2:
@@ -241,6 +242,7 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     label.setFont(QFont("SansSerif", 8, QFont.Weight.Bold))
     label.setPos(x + 8, y - 6)
     label.setZValue(11)
+    label.setData(2, (x, y, 8.0, -6.0))
     scene.addItem(label)
     screen_fixed(label)
 
@@ -436,6 +438,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             label.setFont(QFont("SansSerif", 7))
             label.setPos(x1 + 4, y1 - 4)
             label.setZValue(12)
+            label.setData(2, (x1, y1, 4.0, -4.0))
             scene.addItem(label)
             screen_fixed(label)
 
@@ -589,6 +592,7 @@ def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection
         label.setFont(QFont("SansSerif", 7, QFont.Weight.Bold))
         label.setPos(x + 6, y - 6)
         label.setZValue(16)
+        label.setData(2, (x, y, 6.0, -6.0))
         scene.addItem(label)
         screen_fixed(label)
 
