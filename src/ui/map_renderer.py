@@ -83,6 +83,32 @@ def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalP
         scene.addItem(label)
 
 
+def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+    """绘制海洋背景 + 陆地多边形。"""
+    # 海洋底色：覆盖当前投影范围
+    span = 12.0
+    x1, y1 = proj.to_xy(proj.center_lat - span, proj.center_lon - span)
+    x2, y2 = proj.to_xy(proj.center_lat + span, proj.center_lon + span)
+    ocean = scene.addRect(min(x1,x2), min(y1,y2), abs(x2-x1), abs(y2-y1))
+    ocean.setBrush(QBrush(QColor(26, 48, 86)))
+    ocean.setPen(Qt.NoPen)
+    ocean.setZValue(-2)
+    for coast in env.coastlines:
+        pts = [QPointF(*proj.to_xy(lat, lon)) for lat, lon in coast.get("points", [])]
+        if len(pts) < 3:
+            continue
+        poly = scene.addPolygon(QPolygonF(pts))
+        poly.setPen(QPen(QColor("#5d6d7e"), 1))
+        poly.setBrush(QBrush(QColor(93, 109, 126, 150)))
+        poly.setZValue(-1)
+        label = QGraphicsSimpleTextItem(coast.get("name", ""))
+        label.setBrush(QBrush(QColor("#7f8c8d")))
+        label.setFont(QFont("SansSerif", 8))
+        label.setPos(pts[0].x(), pts[0].y())
+        label.setZValue(0)
+        scene.addItem(label)
+
+
 def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
     """绘制经纬度网格线。"""
     c_lat, c_lon = proj.center_lat, proj.center_lon
@@ -142,7 +168,8 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
         for i, (lat, lon) in enumerate(wps):
             x, y = proj.to_xy(lat, lon)
             pts.append((x, y))
-            rect = WaypointRect(QRectF(x - 5, y - 5, 10, 10), pid, i, on_moved)
+            rect = WaypointRect(QRectF(-5, -5, 10, 10), pid, i, on_moved)
+            rect.setPos(x, y)
             rect.setPen(QPen(color, 1.5))
             rect.setBrush(QBrush(color.darker(150)))
             rect.setZValue(9)

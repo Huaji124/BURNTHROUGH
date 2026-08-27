@@ -42,6 +42,7 @@ from .map_renderer import (
     draw_ir_contacts,
     draw_jammer_sectors,
     draw_legend,
+    draw_map_background,
     draw_missiles,
     draw_orders,
     draw_platform,
@@ -458,6 +459,7 @@ class MapWidget(QGraphicsView):
         self._platform_items = {}
         self._contact_items = {}
         self._waypoint_items = []
+        draw_map_background(self._scene, self._env, self._projection)
         draw_grid(self._scene, self._projection)
         draw_coastlines(self._scene, self._env, self._projection)
         draw_terrain_obstacles(self._scene, self._env, self._projection)
