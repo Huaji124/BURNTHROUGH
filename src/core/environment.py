@@ -276,8 +276,17 @@ class Environment:
             terminal_speed_mps=float(spec.get("speed_mps", 300.0)) * 0.85,
             decel_mps2=float(spec.get("decel_mps2", 1.5)),
             max_g=float(spec.get("max_g", 20.0)),
+            guidance=str(spec.get("guidance", "active_radar")),
+            all_aspect=bool(spec.get("all_aspect", True)),
+            boost_duration_s=float(spec.get("boost_duration_s", 2.0)),
+            boost_accel_mps2=float(spec.get("boost_accel_mps2", 150.0)),
+            drag_coefficient=float(spec.get("drag_coefficient", 0.02)),
         )
         if kind == "arm":
+            missile.guidance = "anti_radiation"
+            missile.all_aspect = True
+            missile.boost_duration_s = 2.0
+            missile.boost_accel_mps2 = 120.0
             missile.last_locked_lat = target.latitude
             missile.last_locked_lon = target.longitude
         self.missiles.append(missile)
@@ -481,11 +490,17 @@ class Environment:
                 missile.lat, missile.lon = destination_point(
                     missile.lat, missile.lon, bearing, step_m / 1852.0)
 
-            # 能量衰减：导弹速度随飞行时间下降
-            if missile.decel_mps2 is not None and missile.current_speed_mps is not None:
-                missile.current_speed_mps = max(
-                    missile.terminal_speed_mps or 0.0,
-                    missile.current_speed_mps - missile.decel_mps2 * dt_s)
+            # 基于能量的助推-惯性模型（参考 CMO 教程）
+            if missile.current_speed_mps is None:
+                missile.current_speed_mps = missile.speed_mps
+            if missile.boost_duration_s > 0 and missile.flight_time_s <= missile.boost_duration_s:
+                missile.current_speed_mps += missile.boost_accel_mps2 * dt_s
+            else:
+                drag = missile.drag_coefficient * missile.current_speed_mps
+                if missile.decel_mps2 is not None:
+                    drag = max(drag, missile.decel_mps2)
+                missile.current_speed_mps -= drag * dt_s
+            missile.current_speed_mps = max(missile.terminal_speed_mps or 0.0, missile.current_speed_mps)
 
     def _try_soft_kill(self, target: Platform, missile: Missile) -> bool:
         """目标发射箔条/诱饵软杀伤，成功则导弹被诱骗。"""

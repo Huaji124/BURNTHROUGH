@@ -205,7 +205,7 @@ def test_asm_hit_causes_system_damage():
     blue_ship = Platform(
         id="blue_ship3", name="蓝方大型运输舰", side="blue", kind="ship",
         latitude=21.5, longitude=120.5, altitude_ft=0.0, speed_kt=0.0,
-        hp=200.0,
+        hp=200.0, gun_hit_probability=0.0, ciws=False,
     )
     env.add_platform(blue_ship)
     env.add_attack_order("red_ddg", "blue_ship3")
