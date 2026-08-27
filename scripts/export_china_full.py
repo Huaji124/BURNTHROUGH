@@ -91,6 +91,7 @@ def main() -> int:
     # 需要导出的唯一引用集合
     sensor_ids: set[int] = set()
     mount_ids: set[int] = set()
+    weapon_ids: set[int] = set()
     loadout_ids: set[int] = set()
     magazine_ids: set[int] = set()
     propulsion_ids: set[int] = set()
@@ -197,7 +198,18 @@ def main() -> int:
                 loadouts[lid] = dict(zip(cols, row))
                 for wrow in cur.execute("SELECT * FROM DataLoadoutWeapons WHERE ID=?", (lid,)).fetchall():
                     wcols = [d[1] for d in cur.execute("PRAGMA table_info(DataLoadoutWeapons)").fetchall()]
-                    loadout_weapons.append(dict(zip(wcols, wrow)))
+                    lw = dict(zip(wcols, wrow))
+                    # 挂载武器引用的是 DataWeaponRecord，需继续指向 DataWeapon
+                    lw["WeaponID"] = None
+                    rec = cur.execute("SELECT * FROM DataWeaponRecord WHERE ID=?", (lw.get("ComponentID"),)).fetchone()
+                    if rec:
+                        rec_cols = [d[1] for d in cur.execute("PRAGMA table_info(DataWeaponRecord)").fetchall()]
+                        rec_dict = dict(zip(rec_cols, rec))
+                        lw["WeaponID"] = rec_dict.get("ComponentID")
+                        lw["DefaultLoad"] = rec_dict.get("DefaultLoad")
+                        if rec_dict.get("ComponentID") is not None:
+                            weapon_ids.add(rec_dict["ComponentID"])
+                    loadout_weapons.append(lw)
     # 弹药库
     magazines: dict[int, dict] = {}
     magazine_weapons: list[dict] = []
@@ -209,7 +221,16 @@ def main() -> int:
                 magazines[mid] = dict(zip(cols, row))
                 for wrow in cur.execute("SELECT * FROM DataMagazineWeapons WHERE ID=?", (mid,)).fetchall():
                     wcols = [d[1] for d in cur.execute("PRAGMA table_info(DataMagazineWeapons)").fetchall()]
-                    magazine_weapons.append(dict(zip(wcols, wrow)))
+                    mw = dict(zip(wcols, wrow))
+                    mw["WeaponID"] = None
+                    rec = cur.execute("SELECT * FROM DataWeaponRecord WHERE ID=?", (mw.get("ComponentID"),)).fetchone()
+                    if rec:
+                        rec_cols = [d[1] for d in cur.execute("PRAGMA table_info(DataWeaponRecord)").fetchall()]
+                        rec_dict = dict(zip(rec_cols, rec))
+                        mw["WeaponID"] = rec_dict.get("ComponentID")
+                        if rec_dict.get("ComponentID") is not None:
+                            weapon_ids.add(rec_dict["ComponentID"])
+                    magazine_weapons.append(mw)
     # 推进
     propulsion: dict[int, dict] = {}
     propulsion_performance: list[dict] = []
@@ -239,6 +260,24 @@ def main() -> int:
                 cols = [d[1] for d in cur.execute("PRAGMA table_info(DataFuel)").fetchall()]
                 fuel[fid] = dict(zip(cols, row))
 
+    # 补齐挂载/弹库引用的武器/发射装置（mount_ids 可能在导出过程中扩充）
+    for wid in sorted(mount_ids):
+        if wid in mounts:
+            continue
+        row = cur.execute("SELECT * FROM DataMount WHERE ID=?", (wid,)).fetchone()
+        if row:
+            cols = [d[1] for d in cur.execute("PRAGMA table_info(DataMount)").fetchall()]
+            mounts[wid] = dict(zip(cols, row))
+
+    # 导出挂载/弹库引用的具体武器（DataWeapon）
+    weapons: dict[int, dict] = {}
+    if weapon_ids:
+        for wid in sorted(weapon_ids):
+            row = cur.execute("SELECT * FROM DataWeapon WHERE ID=?", (wid,)).fetchone()
+            if row:
+                cols = [d[1] for d in cur.execute("PRAGMA table_info(DataWeapon)").fetchall()]
+                weapons[wid] = dict(zip(cols, row))
+
     conn.close()
 
     data = {
@@ -247,6 +286,7 @@ def main() -> int:
         "platform_count": len(platforms),
         "sensor_count": len(sensors),
         "mount_count": len(mounts),
+        "weapon_count": len(weapons),
         "loadout_count": len(loadouts),
         "magazine_count": len(magazines),
         "propulsion_count": len(propulsion),
@@ -256,6 +296,7 @@ def main() -> int:
         # 以字符串 ID 为 key 便于 JSON 序列化
         "sensors": {str(k): v for k, v in sensors.items()},
         "mounts": {str(k): v for k, v in mounts.items()},
+        "weapons": {str(k): v for k, v in weapons.items()},
         "loadouts": {str(k): v for k, v in loadouts.items()},
         "loadout_weapons": loadout_weapons,
         "magazines": {str(k): v for k, v in magazines.items()},
@@ -271,6 +312,7 @@ def main() -> int:
     print(f"已生成完整导出: {args.out}")
     print(f"  平台 {len(platforms)}，传感器 {len(sensors)}，武器/装置 {len(mounts)}")
     print(f"  挂载方案 {len(loadouts)}，弹药库 {len(magazines)}，推进 {len(propulsion)}")
+    print(f"  武器条目 {len(weapons)}")
     return 0
 
 

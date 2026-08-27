@@ -17,7 +17,11 @@
 - [x] 想定保存/加载：JSON 想定文件 + UI 保存/加载
 - [x] 蒙特卡洛批量推演：ARM 命中率 / 生存率 / 欺骗干扰统计脚本
 - [x] UI：频谱监视面板、假目标列表
-- [x] 代码质量：pytest 24 项、ruff 全通过
+- [x] 信号特征接入探测模型（RCS/红外/声呐作为平台属性，雷达方程使用目标 RCS）
+- [x] 挂载方案生成实际导弹（PL-10/PL-12C/YJ-83K 等自动映射为 AAM/ASM）
+- [x] 弹药库消耗/装填（ammo/magazine/reload_time）
+- [x] 推进性能驱动速度/续航（max_speed_kt/fuel_kg/consumption）
+- [x] 代码质量：pytest 27 项、ruff 全通过
 - [x] 装备数据库：新增 AN/SPY-1D、AN/APG-66、ALR-67、ALQ-99、鱼叉/标准-2 等公开近似数据
 - [x] 中国军力参考数据：`data/china_units.json` + `data/china_full.json`（305 平台/238 传感器/129 武器/802 挂载/58 弹药库/129 推进）
 - [x] 游戏接入：`china_loader.py` + UI“装载中国军力”按钮

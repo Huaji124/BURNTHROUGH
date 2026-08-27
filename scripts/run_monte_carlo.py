@@ -50,9 +50,10 @@ def radar_detection_range_km(env) -> float | None:
             if j.is_jamming and j.covers_frequency(emitter.center_freq_hz):
                 jammer = j
                 break
+    target = next(iter([p for p in env.platforms.values() if p.side != red.side]), None)
     result = env.evaluate_radar_with_jamming(
         emitter, jammer, rcs_m2=1000.0, bandwidth_hz=1_000_000,
-        noise_figure=5.0, loss=6.0, snr_min_db=13.0)
+        noise_figure=5.0, loss=6.0, snr_min_db=13.0, target_platform=target)
     return result["detection_range_km"]
 
 

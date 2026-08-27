@@ -48,6 +48,20 @@ def _role_name(role_id: int | None) -> str:
     return "fire_control_radar"
 
 
+def _infer_weapon_kind(name: str) -> str:
+    """根据名称推断武器类型。"""
+    n = name.lower()
+    if "pl-" in n:
+        return "aam"
+    if "yj" in n or "c-8" in n or "ss-n" in n or "anti-ship" in n:
+        return "asm"
+    if "hq" in n or "sa-n" in n or "fl-3000" in n:
+        return "sam"
+    if n.startswith(("torpedo", "鱼雷", "tt")) or "torpedo" in n:
+        return "torpedo"
+    return "weapon"
+
+
 def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter], list[Receiver], list[Jammer]]:
     """将一个 DataSensor 记录映射为本项目组件。"""
     emitters: list[Emitter] = []
@@ -157,6 +171,16 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             hp=float(raw.get("DamagePoints") or 100),
         )
 
+        # 信号特征（RCS / 红外 / 声呐）
+        for sig in p.get("signatures", []):
+            sig_type = sig.get("Type")
+            if sig_type in (5001, 5002):
+                platform.sig_radar_db_sm = float(sig.get("Front") or 0)
+            elif sig_type in (4001, 4002):
+                platform.sig_ir_km = float(sig.get("Front") or 0)
+            elif sig_type in (1001, 1002, 1003, 1004, 2001):
+                platform.sig_sonar_db = float(sig.get("Front") or 0)
+
         # 传感器 -> 组件
         for sid in p.get("sensor_ids", []):
             sensor = data["sensors"].get(str(sid))
@@ -184,6 +208,71 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             if (any(k in mname.lower() for k in ("ssm", "anti-ship", "yj", "c-8"))
                     and "ssm" not in platform.weapons):
                 platform.weapons.append("ssm")
+
+        # 挂载方案 -> 实际导弹
+        for lid in p.get("loadout_ids", []):
+            loadout = data["loadouts"].get(str(lid))
+            if not loadout:
+                continue
+            for lw in data.get("loadout_weapons", []):
+                if lw.get("ID") != lid:
+                    continue
+                weapon = data["weapons"].get(str(lw.get("WeaponID")))
+                if not weapon:
+                    continue
+                wname = weapon.get("Name") or "? "
+                kind2 = _infer_weapon_kind(wname)
+                count = int(lw.get("DefaultLoad") or loadout.get("Capacity") or 1)
+                platform.loadout_weapons.append({
+                    "name": wname,
+                    "kind": kind2,
+                    "count": count,
+                })
+                if wname not in platform.ammo:
+                    platform.ammo[wname] = count
+                if wname not in platform.magazine:
+                    platform.magazine[wname] = 0
+
+        # 弹药库
+        for mid in p.get("magazine_ids", []):
+            mag = data["magazines"].get(str(mid))
+            if not mag:
+                continue
+            for mw in data.get("magazine_weapons", []):
+                if mw.get("ID") != mid:
+                    continue
+                weapon = data["weapons"].get(str(mw.get("WeaponID")))
+                if not weapon:
+                    continue
+                wname = weapon.get("Name") or "? "
+                platform.magazine[wname] = int(mag.get("Capacity") or 0)
+                if wname not in platform.ammo:
+                    platform.ammo[wname] = 0
+
+        # 推进性能 -> 最大速度/燃料
+        max_speed = 0.0
+        for prid in p.get("propulsion_ids", []):
+            for perf in data.get("propulsion_performance", []):
+                if perf.get("ID") == prid:
+                    spd = float(perf.get("Speed") or 0)
+                    max_speed = max(max_speed, spd)
+                    plat_fuel = float(perf.get("Consumption") or 0)
+                    if plat_fuel > 0:
+                        platform.fuel_consumption_kg_per_h = max(
+                            platform.fuel_consumption_kg_per_h, plat_fuel)
+        if max_speed > 0:
+            platform.max_speed_kt = max_speed
+            platform.speed_kt = min(platform.speed_kt, max_speed)
+            platform.cruise_speed_kt = min(platform.cruise_speed_kt, max_speed)
+
+        fuel_cap = 0.0
+        for fid in p.get("fuel_ids", []):
+            f = data["fuel"].get(str(fid))
+            if f:
+                fuel_cap += float(f.get("Capacity") or 0)
+        if fuel_cap > 0:
+            platform.fuel_capacity_kg = fuel_cap
+            platform.fuel_kg = fuel_cap
 
         # 挂载方案信息（原样保留在 extra）
         platform.extra_loadouts = {

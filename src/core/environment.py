@@ -47,11 +47,47 @@ class Platform:
     gun_hit_probability: float = 0.2
     system_damage: dict[str, float] = field(default_factory=lambda: {
         "sensor": 100.0, "weapon": 100.0, "mobility": 100.0, "power": 100.0})
+
+    # 信号特征（来自 CMO 数据库）
+    sig_radar_db_sm: float | None = None
+    sig_ir_km: float | None = None
+    sig_sonar_db: float | None = None
+
+    # 挂载与弹药
+    loadout_weapons: list[dict] = field(default_factory=list)   # 实际可用导弹
+    ammo: dict[str, int] = field(default_factory=dict)          # 待发/装填中
+    magazine: dict[str, int] = field(default_factory=dict)      # 弹库储量
+    reload_time_s: float = 12.0
+    reload_timers: dict[str, float] = field(default_factory=dict)
+
+    # 推进与续航
+    max_speed_kt: float | None = None
+    fuel_kg: float | None = None
+    fuel_capacity_kg: float = 100_000.0
+    fuel_consumption_kg_per_h: float = 1_000.0
     # 绕飞轨道（可选）：绕某点做圆周运动
     orbit_center_lat: float | None = None
     orbit_center_lon: float | None = None
     orbit_radius_km: float | None = None
     orbit_direction: int = 1          # 1 逆时针（正横右转），-1 顺时针
+
+
+    @property
+    def rcs_m2(self) -> float:
+        """雷达截面积（m²）。优先使用数据库信号特征 dBsm。"""
+        if self.sig_radar_db_sm is not None:
+            return 10 ** (self.sig_radar_db_sm / 10.0)
+        return 1000.0
+
+    @property
+    def ir_detection_km(self) -> float:
+        """红外探测距离（km），无数据时返回默认 20km。"""
+        return self.sig_ir_km if self.sig_ir_km is not None else 20.0
+
+    @property
+    def sonar_signature_db(self) -> float:
+        """被动声呐信号强度（dB），无数据时返回 120dB。"""
+        return self.sig_sonar_db if self.sig_sonar_db is not None else 120.0
 
 
 @dataclass
@@ -130,6 +166,74 @@ class Environment:
     # ------------------------------------------------------------------
     # 武器发射与导弹飞行（Phase 4 反辐射打击）
     # ------------------------------------------------------------------
+    def _consume_ammo(self, attacker: Platform, weapon_name: str) -> bool:
+        """消耗一发弹药；如果无弹药机制则始终允许。"""
+        if not attacker.ammo:
+            return True
+        if attacker.ammo.get(weapon_name, 0) <= 0:
+            return False
+        attacker.ammo[weapon_name] -= 1
+        return True
+
+    def _reload_systems(self, dt_s: float) -> None:
+        """弹药库向待发弹补充。"""
+        for p in self.platforms.values():
+            if not p.alive:
+                continue
+            for weapon, stored in list(p.magazine.items()):
+                ready = p.ammo.get(weapon, 0)
+                if ready <= 0 and stored > 0:
+                    timer = p.reload_timers.get(weapon, 0.0) + dt_s
+                    if timer >= p.reload_time_s:
+                        p.ammo[weapon] = min(p.ammo.get(weapon, 0) + 1, 1)
+                        p.magazine[weapon] -= 1
+                        timer = 0.0
+                    p.reload_timers[weapon] = timer
+
+    def _choose_weapon(self, attacker: Platform, target: Platform) -> tuple[str, dict] | None:
+        """根据挂载方案选择攻击武器。"""
+        for lw in attacker.loadout_weapons:
+            name = lw.get("name", "")
+            kind = lw.get("kind", "weapon")
+            if target.kind == "ship" and kind == "asm":
+                return name, lw
+            if target.kind == "aircraft" and kind in ("aam", "sam", "arm"):
+                return name, lw
+        if target.kind == "ship" and "ssm" in attacker.weapons:
+            return "反舰导弹", {"name": "反舰导弹", "kind": "asm", "range_km": 120, "speed_mps": 300}
+        if (target.kind == "aircraft"
+                and (any(e.is_emitting for e in target.emitters)
+                     or any(j.is_jamming for j in target.jammers))):
+            # 无专用挂载时，若目标正在辐射，使用反辐射导弹
+            return "反辐射导弹", {"name": "反辐射导弹", "kind": "arm", "range_km": 150, "speed_mps": 850}
+        return None
+
+    def _launch_weapon(self, attacker: Platform, target: Platform, weapon_name: str, spec: dict) -> bool:
+        """通用导弹发射。"""
+        kind = spec.get("kind", "arm")
+        if not self._consume_ammo(attacker, weapon_name):
+            self.events.append({"time": self.time_s, "kind": "no_ammo",
+                                "message": f"{attacker.name} {weapon_name} 弹药不足，无法发射"})
+            return False
+        self._missile_seq += 1
+        missile = Missile(
+            id=f"{kind}-{self._missile_seq}",
+            name=weapon_name,
+            kind=kind,
+            attacker_id=attacker.id,
+            target_id=target.id,
+            lat=attacker.latitude,
+            lon=attacker.longitude,
+            speed_mps=float(spec.get("speed_mps", 300.0)),
+            range_km=float(spec.get("range_km", 120.0)),
+            memory_if_shutdown=(kind == "arm"),
+        )
+        if kind == "arm":
+            missile.last_locked_lat = target.latitude
+            missile.last_locked_lon = target.longitude
+        self.missiles.append(missile)
+        return True
+
     def process_attack_orders(self) -> None:
         """将未处理的攻击指令转化为反辐射导弹发射。"""
         for order in self.orders:
@@ -148,16 +252,25 @@ class Environment:
                 self.events.append({"time": self.time_s, "kind": "attack_order",
                                     "message": f"{attacker.name} 攻击 {target.name}：目标超出射程"})
                 continue
-            if target.kind == "ship" and "ssm" in attacker.weapons:
-                self._launch_asm(attacker.id, target.id)
-                order["result"] = "launched_asm"
-                self.events.append({"time": self.time_s, "kind": "launch",
-                                    "message": f"{attacker.name} 向 {target.name} 发射反舰导弹"})
-            else:
-                self._launch_arm(attacker.id, target.id)
+            # 根据挂载方案选择武器
+            weapon = self._choose_weapon(attacker, target)
+            if weapon is None:
+                order["result"] = "no_weapon"
+                self.events.append({"time": self.time_s, "kind": "no_weapon",
+                                    "message": f"{attacker.name} 未选择适合 {target.name} 的武器"})
+                continue
+            weapon_name, spec = weapon
+            if dist_km > float(spec.get("range_km", 150.0)):
+                order["result"] = "out_of_range"
+                self.events.append({"time": self.time_s, "kind": "attack_order",
+                                    "message": f"{attacker.name} 攻击 {target.name}：目标超出射程"})
+                continue
+            if self._launch_weapon(attacker, target, weapon_name, spec):
                 order["result"] = "launched"
-            self.events.append({"time": self.time_s, "kind": "launch",
-                                "message": f"{attacker.name} 向 {target.name} 发射反辐射导弹"})
+                self.events.append({"time": self.time_s, "kind": "launch",
+                                    "message": f"{attacker.name} 向 {target.name} 发射 {weapon_name}"})
+            else:
+                order["result"] = "no_ammo"
 
     def _launch_arm(self, attacker_id: str, target_id: str) -> None:
         attacker = self.platforms.get(attacker_id)
@@ -220,7 +333,7 @@ class Environment:
                 missile.result = "miss"
                 continue
 
-            if missile.kind == "asm":
+            if missile.kind in ("asm", "aam"):
                 missile.last_locked_lat = target.latitude
                 missile.last_locked_lon = target.longitude
                 missile.no_emission_time = 0.0
@@ -269,6 +382,20 @@ class Environment:
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_miss",
                                             "message": f"{missile.name} 未命中（目标机动/干扰）"})
+                elif missile.kind == "aam":
+                    missile.active = False
+                    if actual_m < 500.0:
+                        if self.rng.random() < self.arm_hit_probability:
+                            missile.result = "hit"
+                            self._damage_platform(target, missile)
+                        else:
+                            missile.result = "miss"
+                            self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                                "message": f"{missile.name} 未命中（目标机动/干扰）"})
+                    else:
+                        missile.result = "miss"
+                        self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                            "message": f"{missile.name} 未命中（目标机动）"})
                 elif actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
                     missile.active = False
                     if self.rng.random() < self.arm_hit_probability:
@@ -489,6 +616,7 @@ class Environment:
         self.time_s += dt_s
         self.step_motion(dt_s)
         self.process_attack_orders()
+        self._reload_systems(dt_s)
         self.step_missiles(dt_s)
         self.update_deception(dt_s)
         self.update_esm(dt_s)
@@ -500,6 +628,14 @@ class Environment:
         for p in self.platforms.values():
             if not p.alive or p.speed_kt <= 0:
                 continue
+            # 推进限制与燃料
+            if p.max_speed_kt is not None:
+                p.speed_kt = min(p.speed_kt, p.max_speed_kt)
+            if p.fuel_kg is not None:
+                p.fuel_kg = max(0.0, p.fuel_kg - p.fuel_consumption_kg_per_h * dt_s / 3600.0)
+                if p.fuel_kg <= 0.0:
+                    p.speed_kt = 0.0
+                    continue
             dist_nm = p.speed_kt * dt_s / 3600.0
 
             # 1) 航路点导航
@@ -831,8 +967,14 @@ class Environment:
                                     bandwidth_hz: float = 1e6,
                                     noise_figure: float = 5.0,
                                     loss: float = 6.0,
-                                    snr_min_db: float = 13.0) -> dict:
-        """计算某部雷达在有/无指定干扰机时的探测与烧穿距离。"""
+                                    snr_min_db: float = 13.0,
+                                    target_platform: Platform | None = None) -> dict:
+        """计算某部雷达在有/无指定干扰机时的探测与烧穿距离。
+
+        如果传入 target_platform，则使用该目标的信号特征（RCS）替代 rcs_m2。
+        """
+        if target_platform is not None and target_platform.rcs_m2:
+            rcs_m2 = target_platform.rcs_m2
         snr_min = 10.0 ** (snr_min_db / 10.0)
         wavelength = propagation.wavelength_m(emitter.center_freq_hz)
         r_max = propagation.radar_max_range_m(

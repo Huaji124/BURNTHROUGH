@@ -217,3 +217,58 @@ def test_asm_hit_causes_system_damage():
     assert env.missiles[0].result == "hit"
     assert blue_ship.hp < 200.0
     assert any(v < 100.0 for v in blue_ship.system_damage.values())
+
+
+def test_china_loader_populates_signatures_and_loadout():
+    import sys
+    sys.path.insert(0, "src")
+    from data_loader.china_loader import load_china_environment
+    env = load_china_environment("data/china_full.json", side="red", limit_platforms=305)
+    # 找到一个有信号特征和武器挂载的平台
+    found_sig = any(p.sig_radar_db_sm is not None for p in env.platforms.values())
+    found_loadout = any(p.loadout_weapons for p in env.platforms.values())
+    found_ammo = any(p.ammo for p in env.platforms.values())
+    found_speed = any(p.max_speed_kt is not None for p in env.platforms.values())
+    assert found_sig and found_loadout and found_ammo and found_speed
+
+
+def test_ammo_consume_and_reload():
+    env = build_demo_environment()
+    red = env.platforms["red_ddg"]
+    # 构造弹药机制
+    red.weapons = ["ssm"]
+    red.loadout_weapons = [{"name": "YJ-83", "kind": "asm", "range_km": 120, "speed_mps": 300}]
+    red.ammo = {"YJ-83": 1}
+    red.magazine = {"YJ-83": 1}
+    red.reload_time_s = 1.0
+    blue_ship = Platform(
+        id="ammo_target", name="弹药测试目标", side="blue", kind="ship",
+        latitude=21.5, longitude=120.5, altitude_ft=0.0, speed_kt=0.0, hp=200.0,
+    )
+    env.add_platform(blue_ship)
+    env.add_attack_order("red_ddg", "ammo_target")
+    env.process_attack_orders()
+    assert env.missiles[0].name == "YJ-83"
+    assert red.ammo["YJ-83"] == 0
+    # 第二次无弹药
+    env.add_attack_order("red_ddg", "ammo_target")
+    env.process_attack_orders()
+    assert len(env.missiles) == 1
+    # 装填一回合
+    env.step(1.0)
+    env.step(1.0)
+    assert red.ammo["YJ-83"] == 1 and red.magazine["YJ-83"] == 0
+
+
+def test_china_signatures_and_loadout_specific():
+    import sys
+    sys.path.insert(0, "src")
+    from data_loader.china_loader import load_china_environment
+    env = load_china_environment("data/china_full.json", side="red")
+    lianoning = next(p for p in env.platforms.values() if "Type 001" in p.name)
+    assert lianoning.sig_radar_db_sm is not None
+    assert lianoning.rcs_m2 > 0
+    j20 = next(p for p in env.platforms.values() if p.name == "J-20 Mighty Dragon")
+    assert any(lw["kind"] == "aam" for lw in j20.loadout_weapons)
+    j16 = next(p for p in env.platforms.values() if p.name.startswith("J-16"))
+    assert any("YJ" in lw["name"] and lw["kind"] == "asm" for lw in j16.loadout_weapons)
