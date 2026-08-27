@@ -31,7 +31,8 @@ class WaypointRect(QGraphicsRectItem):
         self._idx = idx
         self._on_moved = on_moved
         self.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                      QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges)
+                      QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges |
+                      QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations)
         self.setData(0, f"waypoint::{pid}::{idx}")
         self.setCursor(Qt.CursorShape.OpenHandCursor)
         self._suppress = True
@@ -116,6 +117,12 @@ def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProj
         scene.addItem(label)
 
 
+def screen_fixed(item):
+    """让图标/文字在缩放时保持屏幕固定大小。"""
+    item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations, True)
+    return item
+
+
 def draw_grid(scene: QGraphicsScene, proj: LocalProjection) -> None:
     """绘制经纬度网格线。"""
     c_lat, c_lon = proj.center_lat, proj.center_lon
@@ -183,6 +190,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             rect.setZValue(14)
             rect.setToolTip(f"航路点 {i+1}（拖拽移动，右键删除）")
             scene.addItem(rect)
+            screen_fixed(rect)
             waypoint_items.append(rect)
             label = QGraphicsSimpleTextItem(f"WP{i+1}")
             label.setBrush(QBrush(color))
@@ -190,6 +198,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             label.setPos(x + 6, y - 6)
             label.setZValue(15)
             scene.addItem(label)
+            screen_fixed(label)
         if len(pts) >= 2:
             for i in range(len(pts) - 1):
                 line = QGraphicsLineItem(pts[i][0], pts[i][1], pts[i+1][0], pts[i+1][1])
@@ -326,6 +335,7 @@ def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos(pt(heading).x(), pt(heading).y())
             label.setZValue(3)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -356,6 +366,7 @@ def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProject
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -386,6 +397,7 @@ def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -429,6 +441,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             label.setPos(x1 + 4, y1 - 4)
             label.setZValue(12)
             scene.addItem(label)
+            screen_fixed(label)
 
             if contact.latitude is not None and contact.longitude is not None:
                 ex, ey = proj.to_xy(contact.latitude, contact.longitude)
@@ -448,6 +461,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             marker.setZValue(12)
             marker.setToolTip(f"{label_text}\n方位 {contact.bearing_deg:.1f}°")
             scene.addItem(marker)
+            screen_fixed(marker)
             contact_items.setdefault(f"{own_id}::{key}", []).append(marker)
 
 
@@ -516,6 +530,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 6)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
 
 
 def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
