@@ -21,6 +21,7 @@ from PySide6.QtWidgets import (
     QApplication,
     QGraphicsItem,
     QGraphicsScene,
+    QGraphicsSimpleTextItem,
     QGraphicsView,
     QMenu,
     QMessageBox,
@@ -518,6 +519,10 @@ class MapWidget(QGraphicsView):
         draw_missiles(self._scene, self._env, self._projection, self._player_side)
         if not self._env.world_land:
             draw_legend(self._scene, self._projection, self._player_side)
+        # 强制所有文字随地图缩放（清除残留的 ItemIgnoresTransformations）
+        for item in self._scene.items():
+            if isinstance(item, QGraphicsSimpleTextItem):
+                item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations, False)
         self._restore_selection_visuals()
 
     # ------------------------------------------------------------------
