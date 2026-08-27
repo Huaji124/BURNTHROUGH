@@ -731,6 +731,7 @@ class Environment:
         self.update_comm_jamming(dt_s)
         self.update_contact_aging()
         self.cross_fix_contacts()
+        self.cross_fix_radar_ranges()
 
     def step_motion(self, dt_s: float) -> None:
         """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
@@ -961,9 +962,13 @@ class Environment:
         if not esm.covers_frequency(freq_hz):
             return None
 
-        wavelength = propagation.wavelength_m(freq_hz)
-        power_dbm = propagation.esm_received_power_dbm(
-            power_w, gain, esm.gain_linear, wavelength, r_m)
+        # EW101 单向链路方程 + 大气损耗
+        pt_dbm = 10.0 * math.log10(max(power_w, 1e-12) * 1000.0)
+        range_km = r_m / 1000.0
+        atm_loss = propagation.atmospheric_loss_db(freq_hz, range_km)
+        power_dbm = propagation.one_way_link_power_dbm(
+            pt_dbm, 10.0 * math.log10(max(gain, 1e-6)),
+            esm.gain_db, range_km, freq_hz / 1e6, atm_loss)
         if power_dbm < esm.sensitivity_dbm:
             return None
 
@@ -1187,6 +1192,9 @@ class Environment:
                         contact.is_memory = False
                         contact.confidence = 0.95
                         contact.extra = {"detection_km": detection_km}
+                        if jammer is not None and jammer.active_technique == "tws_gain":
+                            contact.confidence = min(contact.confidence, 0.55)
+                            contact.extra["tws_degraded"] = True
                     else:
                         contact = radar_map.get(target.id)
                         if contact is not None and now - contact.last_update_s > self.memory_ttl_s:
@@ -1357,6 +1365,25 @@ class Environment:
                         contact.latitude = lat
                         contact.longitude = lon
 
+    def cross_fix_radar_ranges(self) -> None:
+        """多站测距交叉定位：使用雷达距离信息提高位置估计。"""
+        for contact_map in self.radar_contacts.values():
+            for contact in contact_map.values():
+                ranges = []
+                for own2, map2 in self.radar_contacts.items():
+                    c = map2.get(contact.emitter_id)
+                    if c is None or c.range_m is None:
+                        continue
+                    p = self.platforms.get(own2)
+                    if p is None:
+                        continue
+                    ranges.append((p.latitude, p.longitude, c.range_m / 1000.0))
+                if len(ranges) >= 2:
+                    lat, lon = triangulate_ranges(ranges)
+                    if lat is not None:
+                        contact.latitude = lat
+                        contact.longitude = lon
+
     # ------------------------------------------------------------------
     # 传播链路（Phase 1 已有）
     # ------------------------------------------------------------------
@@ -1459,3 +1486,40 @@ def triangulate_bearings(bearings: list[tuple[float, float, float]]) -> tuple[fl
         return None
     t = ((x2 - x1) * d2[1] - (y2 - y1) * d2[0]) / denom
     return from_xy(x1 + t * d1[0], y1 + t * d1[1])
+
+
+def triangulate_ranges(ranges: list[tuple[float, float, float]]) -> tuple[float, float] | None:
+    """多站测距交叉定位：两条距离圆交点（局部切平面近似）。"""
+    if len(ranges) < 2:
+        return None
+    center_lat = sum(r[0] for r in ranges) / len(ranges)
+    center_lon = sum(r[1] for r in ranges) / len(ranges)
+    cos_lat = math.cos(math.radians(center_lat))
+    R = 6371.0088
+
+    def to_xy(lat, lon):
+        return R * math.radians(lon - center_lon) * cos_lat, R * math.radians(lat - center_lat)
+
+    def from_xy(x, y):
+        return center_lat + math.degrees(y / R), center_lon + math.degrees(x / (R * cos_lat))
+
+    (lat1, lon1, r1), (lat2, lon2, r2) = ranges[0], ranges[1]
+    x1, y1 = to_xy(lat1, lon1)
+    x2, y2 = to_xy(lat2, lon2)
+    d = math.hypot(x2 - x1, y2 - y1)
+    if d > r1 + r2 or d < abs(r1 - r2):
+        return None
+    a = (r1 * r1 - r2 * r2 + d * d) / (2 * d)
+    h2 = r1 * r1 - a * a
+    h = math.sqrt(max(h2, 0.0))
+    xm = x1 + a * (x2 - x1) / d
+    ym = y1 + a * (y2 - y1) / d
+    rx = -(y2 - y1) * h / d
+    ry = (x2 - x1) * h / d
+    # 取离两平台中点最近的交点
+    mx = (x1 + x2) / 2
+    my = (y1 + y2) / 2
+    p1 = (xm + rx, ym + ry)
+    p2 = (xm - rx, ym - ry)
+    best = p1 if (p1[0]-mx)**2 + (p1[1]-my)**2 <= (p2[0]-mx)**2 + (p2[1]-my)**2 else p2
+    return from_xy(*best)

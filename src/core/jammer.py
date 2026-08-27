@@ -26,7 +26,8 @@ class Jammer:
     sector_half_deg: float = 360.0             # 干扰扇区半角，360=全向
     techniques: list[str] = field(default_factory=list)
     role: str = "ecm"                  # ecm / comm
-    active_technique: str = "none"    # none / rgpo / vgpo / false_target
+    active_technique: str = "none"    # none / rgpo / vgpo / false_target / tws_gain
+    look_through_enabled: bool = False
     reaction_time_s: float = 0.5
     max_targets: int = 4
     emcon_state: str = "off"          # on / off
@@ -55,7 +56,7 @@ class Jammer:
             self.current_mode = mode
 
     def set_technique(self, technique: str) -> None:
-        if technique in ("none", "rgpo", "vgpo", "false_target"):
+        if technique in ("none", "rgpo", "vgpo", "false_target", "tws_gain"):
             self.active_technique = technique
 
     def has_deception(self) -> bool:

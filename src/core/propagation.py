@@ -129,3 +129,32 @@ def esm_max_range_m(emitter_power_w: float, emitter_gain: float,
         (emitter_power_w * emitter_gain * esm_gain * wavelength ** 2) /
         ((4.0 * math.pi) ** 2 * sensitivity_w)
     )
+
+
+def free_space_loss_db(range_km: float, freq_mhz: float) -> float:
+    """EW101 扩展损耗公式 Ls = 32.4 + 20log10(d) + 20log10(f)。"""
+    if range_km <= 0 or freq_mhz <= 0:
+        return 0.0
+    return 32.4 + 20.0 * math.log10(range_km) + 20.0 * math.log10(freq_mhz)
+
+
+def atmospheric_loss_db(freq_hz: float, range_km: float) -> float:
+    """简化大气损耗（dB/km 按频段近似）。"""
+    freq_ghz = freq_hz / 1e9
+    loss_per_km = 0.0
+    if freq_ghz > 30:
+        loss_per_km = 0.3
+    elif freq_ghz > 15:
+        loss_per_km = 0.1
+    elif freq_ghz > 10:
+        loss_per_km = 0.03
+    elif freq_ghz > 6:
+        loss_per_km = 0.01
+    return loss_per_km * max(range_km, 0.0)
+
+
+def one_way_link_power_dbm(pt_dbm: float, gt_db: float, gr_db: float,
+                           range_km: float, freq_mhz: float,
+                           atm_loss_db: float = 0.0) -> float:
+    """EW101 单向链路方程接收功率（dBm）。"""
+    return pt_dbm + gt_db - free_space_loss_db(range_km, freq_mhz) - atm_loss_db + gr_db

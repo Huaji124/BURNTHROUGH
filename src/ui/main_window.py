@@ -124,7 +124,7 @@ class MainWindow(QMainWindow):
         toolbar.addSeparator()
         toolbar.addWidget(QLabel(" 欺骗技术: "))
         self.deception_combo = QComboBox()
-        self.deception_combo.addItems(["无", "RGPO", "VGPO", "假目标"])
+        self.deception_combo.addItems(["无", "RGPO", "VGPO", "假目标", "TWS增益"])
         self.deception_combo.setToolTip("选择蓝方干扰机的欺骗技术")
         self.deception_combo.currentTextChanged.connect(self._on_deception_changed)
         toolbar.addWidget(self.deception_combo)
@@ -297,6 +297,7 @@ class MainWindow(QMainWindow):
             "RGPO": "rgpo",
             "VGPO": "vgpo",
             "假目标": "false_target",
+            "TWS增益": "tws_gain",
         }.get(text, "none")
         for jammer in self.env.all_jammers():
             jammer.set_technique(technique)
