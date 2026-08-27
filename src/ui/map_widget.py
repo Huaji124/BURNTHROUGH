@@ -495,8 +495,8 @@ class MapWidget(QGraphicsView):
         self._contact_items = {}
         self._waypoint_items = []
         draw_map_background(self._scene, self._env, self._projection)
-        draw_grid(self._scene, self._projection)
         if not self._env.world_land:
+            draw_grid(self._scene, self._projection)
             draw_coastlines(self._scene, self._env, self._projection)
         draw_terrain_obstacles(self._scene, self._env, self._projection)
         self._waypoint_items = draw_waypoints(
@@ -516,7 +516,8 @@ class MapWidget(QGraphicsView):
         draw_sonar_contacts(self._scene, self._env, self._projection, self._player_side)
         draw_orders(self._scene, self._env, self._projection, self._player_side)
         draw_missiles(self._scene, self._env, self._projection, self._player_side)
-        draw_legend(self._scene, self._projection, self._player_side)
+        if not self._env.world_land:
+            draw_legend(self._scene, self._projection, self._player_side)
         self._restore_selection_visuals()
 
     # ------------------------------------------------------------------
