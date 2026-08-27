@@ -27,6 +27,7 @@ from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
 from .false_target_panel import FalseTargetPanel
 from .map_widget import MapWidget
+from .signal_library_panel import SignalLibraryPanel
 from .spectrum_widget import SpectrumWidget
 from .unit_info_bar import UnitInfoBar
 
@@ -38,6 +39,10 @@ class MainWindow(QMainWindow):
         self.resize(1280, 800)
 
         self.env = build_demo_environment()
+        try:
+            self.env.load_signal_library("data/signal_params.json")
+        except (OSError, ValueError, KeyError):
+            pass
 
         self.map_widget = MapWidget(self)
         self.map_widget.set_environment(self.env)
@@ -82,6 +87,10 @@ class MainWindow(QMainWindow):
         self.false_target_panel.update_false_targets(self.env)
         self.add_dock(Qt.DockWidgetArea.RightDockWidgetArea,
                       QDockWidget("假目标列表", self), self.false_target_panel)
+
+        self.signal_library_panel = SignalLibraryPanel(self)
+        self.add_dock(Qt.DockWidgetArea.RightDockWidgetArea,
+                      QDockWidget("信号参数库", self), self.signal_library_panel)
 
         self.statusBar().showMessage("就绪 | 左键选中 | 右键菜单/航路点 | 中键平移")
 
@@ -283,6 +292,10 @@ class MainWindow(QMainWindow):
             return
         self.env = load_scenario(path)
         self.map_widget.set_environment(self.env)
+        try:
+            self.env.load_signal_library("data/signal_params.json")
+        except (OSError, ValueError, KeyError):
+            pass
         self.emcon_panel.populate(self.env)
         self.contact_list.update_contacts(self.env)
         self.spectrum_widget.set_environment(self.env)

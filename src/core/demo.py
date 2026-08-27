@@ -31,6 +31,7 @@ def _make_esm(platform_id: str, esm_id: str, name: str) -> Receiver:
         df_accuracy_deg=3,
         param_library=RED_ESM_PARAM_LIB,
         toa_accuracy_ns=100.0,
+        fdoa_accuracy_hz=20.0,
         processing_time_s=1.5,
         platform_id=platform_id,
     )

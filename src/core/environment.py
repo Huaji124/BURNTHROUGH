@@ -166,6 +166,14 @@ class Environment:
     def add_platform(self, platform: Platform) -> None:
         self.platforms[platform.id] = platform
 
+    def load_signal_library(self, path: str | Path) -> None:
+        """从 JSON 加载多参数信号库并应用到所有 ESM/RWR 接收机。"""
+        import json as _json
+        data = _json.loads(Path(path).read_text(encoding="utf-8"))
+        for rec in self.all_receivers():
+            if rec.kind in ("esm", "rwr"):
+                rec.signal_params = data
+
     def add_terrain_obstacle(self, lat: float, lon: float, radius_km: float,
                              height_ft: float = 500.0) -> None:
         self.terrain_obstacles.append({
@@ -748,6 +756,7 @@ class Environment:
         self.cross_fix_contacts()
         self.cross_fix_radar_ranges()
         self.cross_fix_tdoa()
+        self.cross_fix_fdoa()
 
     def step_motion(self, dt_s: float) -> None:
         """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
@@ -1012,6 +1021,10 @@ class Environment:
         toa_ns = None
         if esm.toa_accuracy_ns > 0:
             toa_ns = r_m / 299792458.0 * 1e9 + self.rng.gauss(0.0, esm.toa_accuracy_ns)
+        doppler_hz = None
+        if esm.fdoa_accuracy_hz > 0:
+            doppler_hz = self._compute_doppler_hz(own, other, freq_hz) \
+                + self.rng.gauss(0.0, esm.fdoa_accuracy_hz)
 
         identified = source_id in esm.param_library
         pulse_match = False
@@ -1040,6 +1053,7 @@ class Environment:
             "range_km": r_m / 1000.0,
             "power_dbm": power_dbm,
             "toa_ns": toa_ns,
+            "doppler_hz": doppler_hz,
             "sidelobe": sidelobe,
             "identified": identified,
             "confidence": (0.6 if sidelobe else 0.9) if identified else (0.2 if sidelobe else 0.35),
@@ -1095,6 +1109,7 @@ class Environment:
             "range_km": result["range_km"],
             "identified": result["identified"],
             "toa_ns": result.get("toa_ns"),
+            "doppler_hz": result.get("doppler_hz"),
         }
 
     def _get_horizon_nm(self, a: Platform, b: Platform) -> float:
@@ -1122,6 +1137,24 @@ class Environment:
                     if ob_h > m_alt:
                         return True
         return False
+
+    @staticmethod
+    def _platform_velocity_mps(p: Platform) -> tuple[float, float]:
+        """返回平台速度的东/北分量（m/s）。"""
+        v = p.speed_kt * 0.514444
+        brg = math.radians(p.heading_deg)
+        return v * math.sin(brg), v * math.cos(brg)
+
+    def _compute_doppler_hz(self, own: Platform, other: Platform, freq_hz: float) -> float:
+        """简化多普勒：接收机与发射机沿视线方向相对速度产生的频移。"""
+        c = 299792458.0
+        v_own_e, v_own_n = self._platform_velocity_mps(own)
+        v_other_e, v_other_n = self._platform_velocity_mps(other)
+        bearing = math.radians(initial_bearing_deg(own.latitude, own.longitude,
+                                                  other.latitude, other.longitude))
+        u_e, u_n = math.sin(bearing), math.cos(bearing)
+        relative = (v_own_e * u_e + v_own_n * u_n) - (v_other_e * u_e + v_other_n * u_n)
+        return freq_hz * relative / c
 
     def _weather_penalty(self) -> float:
         """天气对雷达/光学/ESM 的通用衰减系数（0.3~1.0）。"""
@@ -1472,6 +1505,52 @@ class Environment:
                     contact.latitude = best_lat
                     contact.longitude = best_lon
                     contact.extra["tdoa_fix"] = True
+
+    def cross_fix_fdoa(self) -> None:
+        """多普勒差（FDOA）三站定位：网格搜索。"""
+        groups: dict[str, list[tuple[float, float, float, str, Contact]]] = {}
+        for own_id, contact_map in self.contacts.items():
+            own = self.platforms.get(own_id)
+            if own is None:
+                continue
+            for contact in contact_map.values():
+                dop = contact.extra.get("doppler_hz")
+                if dop is None or contact.emitter_id is None:
+                    continue
+                groups.setdefault(contact.emitter_id, []).append(
+                    (own.latitude, own.longitude, dop, own_id, contact))
+        for entries in groups.values():
+            if len(entries) < 3:
+                continue
+            lat0 = sum(e[0] for e in entries) / len(entries)
+            lon0 = sum(e[1] for e in entries) / len(entries)
+            ref = entries[0]
+            ref_dop = ref[2]
+            best_lat, best_lon, best_cost = lat0, lon0, 1e18
+            for i in range(-20, 21):
+                for j in range(-20, 21):
+                    lat = lat0 + i * 0.1
+                    lon = lon0 + j * 0.1
+                    cost = 0.0
+                    for e in entries[1:]:
+                        platform = self.platforms.get(e[3])
+                        if platform is None:
+                            continue
+                        v_e, v_n = self._platform_velocity_mps(platform)
+                        # 接收机指向源的方向
+                        brg = math.radians(initial_bearing_deg(
+                            platform.latitude, platform.longitude, lat, lon))
+                        u_e, u_n = math.sin(brg), math.cos(brg)
+                        pred_dop = (1470000000.0 * (v_e * u_e + v_n * u_n) / 299792458.0)
+                        cost += (pred_dop - (e[2] - ref_dop)) ** 2
+                    if cost < best_cost:
+                        best_cost = cost
+                        best_lat, best_lon = lat, lon
+            if best_cost < 1e8:
+                for _, _, _, _, contact in entries:
+                    contact.latitude = best_lat
+                    contact.longitude = best_lon
+                    contact.extra["fdoa_fix"] = True
 
     # ------------------------------------------------------------------
     # 传播链路（Phase 1 已有）

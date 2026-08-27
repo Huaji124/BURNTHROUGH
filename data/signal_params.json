@@ -1,0 +1,16 @@
+{
+  "type346_search_radar": {
+    "prf_min": 500,
+    "prf_max": 5000,
+    "pw_min": 0.5,
+    "pw_max": 50,
+    "emission_type": "normal"
+  },
+  "an_spy1d": {
+    "prf_min": 200,
+    "prf_max": 5000,
+    "pw_min": 1,
+    "pw_max": 50,
+    "emission_type": "normal"
+  }
+}
