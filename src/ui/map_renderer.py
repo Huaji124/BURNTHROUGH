@@ -222,14 +222,15 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
         pen = QPen(QColor("#60666e"), 2)
         brush = QBrush(QColor("#3a3f46"))
     if platform.kind == "aircraft":
-        pts = [QPointF(x, y - size * 0.7), QPointF(x - size * 0.7, y + size * 0.6),
-               QPointF(x, y + size * 0.25), QPointF(x + size * 0.7, y + size * 0.6)]
+        pts = [QPointF(0, -size * 0.7), QPointF(-size * 0.7, size * 0.6),
+               QPointF(0, size * 0.25), QPointF(size * 0.7, size * 0.6)]
         item = scene.addPolygon(pts, pen, brush)
     else:
-        item = scene.addRect(x - size / 2, y - size / 2, size, size, pen, brush)
-
+        item = scene.addRect(-size / 2, -size / 2, size, size, pen, brush)
+    item.setPos(x, y)
     item.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
-                  QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
+                  QGraphicsItem.GraphicsItemFlag.ItemIsFocusable |
+                  QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations)
     item.setData(0, f"platform::{platform.id}")
     item.setZValue(10)
     item.setToolTip(platform.name)
@@ -238,11 +239,12 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
 
     if platform.kind == "aircraft":
         hdg = math.radians(platform.heading_deg)
-        hx = x + math.sin(hdg) * 16
-        hy = y - math.cos(hdg) * 16
-        heading_line = QGraphicsLineItem(x, y, hx, hy)
+        hx = math.sin(hdg) * 16
+        hy = -math.cos(hdg) * 16
+        heading_line = QGraphicsLineItem(0, 0, hx, hy)
         heading_line.setPen(QPen(color, 1, Qt.PenStyle.SolidLine))
         heading_line.setZValue(9)
+        heading_line.setPos(x, y)
         scene.addItem(heading_line)
         screen_fixed(heading_line)
 
@@ -584,14 +586,18 @@ def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection
                 continue
         x, y = proj.to_xy(missile.lat, missile.lon)
         r = 5.0
-        pts = [QPointF(x, y - r), QPointF(x - r * 0.8, y + r * 0.8),
-               QPointF(x, y + r * 0.3), QPointF(x + r * 0.8, y + r * 0.8)]
+        pts = [QPointF(0, -r), QPointF(-r * 0.8, r * 0.8),
+               QPointF(0, r * 0.3), QPointF(r * 0.8, r * 0.8)]
         item = scene.addPolygon(pts)
-        item.setPen(QPen(QColor("#ffffff"), 1))
+        _pen = QPen(QColor("#ffffff"), 1)
+        _pen.setCosmetic(True)
+        item.setPen(_pen)
         item.setBrush(QBrush(QColor("#e74c3c")))
         item.setZValue(15)
+        item.setPos(x, y)
         target_name = env.platforms.get(missile.target_id).name if missile.target_id in env.platforms else missile.target_id
         item.setToolTip(f"{missile.name} -> {target_name}")
+        screen_fixed(item)
         label = QGraphicsSimpleTextItem("ARM")
         label.setBrush(QBrush(QColor("#e74c3c")))
         label.setFont(QFont("SansSerif", 7, QFont.Weight.Bold))
