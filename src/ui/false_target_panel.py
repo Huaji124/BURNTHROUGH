@@ -32,11 +32,17 @@ class FalseTargetPanel(QWidget):
         self.table.verticalHeader().setVisible(False)
         self.table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
         layout.addWidget(self.table)
+        self._player_side: str | None = None
+
+    def set_player_side(self, side: str | None) -> None:
+        self._player_side = side
 
     def update_false_targets(self, env: Environment) -> None:
         self.table.setRowCount(0)
         for radar_id, targets in env.false_contacts.items():
             radar = env.platforms.get(radar_id)
+            if radar is None or (self._player_side is not None and radar.side != self._player_side):
+                continue
             for t in targets:
                 if not t.active:
                     continue

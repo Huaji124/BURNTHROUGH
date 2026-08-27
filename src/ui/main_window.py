@@ -154,6 +154,14 @@ class MainWindow(QMainWindow):
         cmo_all_action.triggered.connect(self._on_load_cmo_all)
         toolbar.addAction(cmo_all_action)
 
+        toolbar.addSeparator()
+        toolbar.addWidget(QLabel(" 视角: "))
+        self.side_combo = QComboBox()
+        self.side_combo.addItems(["红方", "蓝方"])
+        self.side_combo.setCurrentText("红方")
+        self.side_combo.currentTextChanged.connect(self._on_side_changed)
+        toolbar.addWidget(self.side_combo)
+
     # ------------------------------------------------------------------
     # 模拟循环
     # ------------------------------------------------------------------
@@ -279,6 +287,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(f"想定已加载：{path}")
 
     def _on_deception_changed(self, text: str) -> None:
@@ -309,6 +318,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
 
     def _on_load_cmo_world(self) -> None:
@@ -327,6 +337,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(
             f"已加载 CMO 世界数据：{path}（{len(self.env.platforms)} 个平台）")
 
@@ -347,8 +358,21 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(
             f"已加载完整 CMO 数据库：{len(self.env.platforms)} 个平台")
+
+    def _on_side_changed(self, text: str) -> None:
+        side = "red" if text == "红方" else "blue"
+        self.map_widget.set_player_side(side)
+        self.contact_list.set_player_side(side)
+        self.emcon_panel.set_player_side(side)
+        self.emcon_panel.populate(self.env)
+        self.false_target_panel.set_player_side(side)
+        self.false_target_panel.update_false_targets(self.env)
+        self.spectrum_widget.set_player_side(side)
+        self._update_unit_info_bar()
+        self.statusBar().showMessage(f"当前视角：{text}（仅显示己方/己方传感器接触）")
 
     def _on_fit_view(self) -> None:
         self.map_widget.resetTransform()

@@ -167,9 +167,12 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     scene.addItem(label)
 
 
-def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                    side: str | None = None) -> None:
     """绘制雷达无干扰圈、干扰后圈、烧穿圈与干扰连线。"""
     for platform in env.platforms.values():
+        if side is not None and platform.side != side:
+            continue
         for emitter in platform.emitters:
             if emitter.emcon_state != "on":
                 continue
@@ -212,9 +215,12 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
                     scene.addItem(mid)
 
 
-def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                        side: str | None = None) -> None:
     """绘制有向干扰机的干扰扇区。"""
     for platform in env.platforms.values():
+        if side is not None and platform.side != side:
+            continue
         if not platform.alive:
             continue
         for jammer in platform.jammers:
@@ -246,11 +252,14 @@ def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProj
             scene.addItem(label)
 
 
-def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                      side: str | None = None) -> None:
     """绘制红外/视觉接触线。"""
     for own_id, c_map in getattr(env, "ir_contacts", {}).items():
         own = env.platforms.get(own_id)
         if own is None:
+            continue
+        if side is not None and own.side != side:
             continue
         for contact in c_map.values():
             target = env.platforms.get(contact.emitter_id)
@@ -273,11 +282,14 @@ def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProject
             scene.addItem(label)
 
 
-def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                         side: str | None = None) -> None:
     """绘制声呐接触线。"""
     for own_id, c_map in getattr(env, "sonar_contacts", {}).items():
         own = env.platforms.get(own_id)
         if own is None:
+            continue
+        if side is not None and own.side != side:
             continue
         for contact in c_map.values():
             target = env.platforms.get(contact.emitter_id)
@@ -301,13 +313,16 @@ def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
 
 
 def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
-                      contact_items: dict[str, list[QGraphicsItem]]) -> None:
+                      contact_items: dict[str, list[QGraphicsItem]],
+                      side: str | None = None) -> None:
     """绘制 ESM 辐射源接触：测向线、标记点。"""
     if not env.contacts:
         return
     for own_id, contact_map in env.contacts.items():
         own = env.platforms.get(own_id)
         if own is None:
+            continue
+        if side is not None and own.side != side:
             continue
         x0, y0 = proj.to_xy(own.latitude, own.longitude)
         for key, contact in contact_map.items():
@@ -360,9 +375,13 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             contact_items.setdefault(f"{own_id}::{key}", []).append(marker)
 
 
-def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                        side: str | None = None) -> None:
     """绘制欺骗干扰产生的假目标。"""
-    for targets in env.false_contacts.values():
+    for radar_id, targets in env.false_contacts.items():
+        radar = env.platforms.get(radar_id)
+        if side is not None and (radar is None or radar.side != side):
+            continue
         for t in targets:
             if not t.active:
                 continue
@@ -392,11 +411,14 @@ def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProje
             scene.addItem(label)
 
 
-def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                         side: str | None = None) -> None:
     """绘制雷达接触线。"""
     for own_id, radar_map in getattr(env, "radar_contacts", {}).items():
         own = env.platforms.get(own_id)
         if own is None:
+            continue
+        if side is not None and own.side != side:
             continue
         for contact in radar_map.values():
             target = env.platforms.get(contact.emitter_id)
@@ -420,7 +442,8 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             scene.addItem(label)
 
 
-def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                side: str | None = None) -> None:
     """绘制攻击指令线。"""
     for order in env.orders:
         if order["kind"] != "attack":
@@ -428,6 +451,8 @@ def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection) 
         attacker = env.platforms.get(order["attacker"])
         target = env.platforms.get(order["target"])
         if attacker is None or target is None:
+            continue
+        if side is not None and attacker.side != side:
             continue
         x1, y1 = proj.to_xy(attacker.latitude, attacker.longitude)
         x2, y2 = proj.to_xy(target.latitude, target.longitude)
@@ -443,11 +468,16 @@ def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection) 
         scene.addItem(label)
 
 
-def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
+def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
+                   side: str | None = None) -> None:
     """绘制飞行中的反辐射导弹。"""
     for missile in env.missiles:
         if not missile.active:
             continue
+        if side is not None:
+            attacker = env.platforms.get(missile.attacker_id)
+            if attacker is None or attacker.side != side:
+                continue
         x, y = proj.to_xy(missile.lat, missile.lon)
         r = 5.0
         pts = [QPointF(x, y - r), QPointF(x - r * 0.8, y + r * 0.8),
@@ -502,9 +532,10 @@ def find_jammer_against(env: Environment, victim_platform: Platform, emitter) ->
     return None
 
 
-def draw_legend(scene: QGraphicsScene, proj: LocalProjection) -> None:
+def draw_legend(scene: QGraphicsScene, proj: LocalProjection, side: str | None = None) -> None:
     """绘制图例。"""
     items = [
+        ("#ecf0f1", f"视角: {side or '全知'}"),
         ("#f1c40f", "无干扰探测圈"), ("#e67e22", "干扰后探测圈"),
         ("#e74c3c", "烧穿圈/攻击线"), ("#9b59b6", "干扰连线"),
         ("#1abc9c", "ESM 接触"), ("#f39c12", "记忆接触"),

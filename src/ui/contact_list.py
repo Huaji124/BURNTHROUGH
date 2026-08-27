@@ -19,7 +19,8 @@ class ContactListWidget(QWidget):
         super().__init__(parent)
         layout = QVBoxLayout(self)
         layout.setContentsMargins(4, 4, 4, 4)
-        self.title = QLabel("辐射源接触（ESM）")
+        self._player_side: str | None = None
+        self.title = QLabel("传感器接触（雷达/红外/声呐/ESM）")
         self.title.setStyleSheet("color:#ecf0f1; font-weight:bold;")
         layout.addWidget(self.title)
 
@@ -33,11 +34,16 @@ class ContactListWidget(QWidget):
         self.table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
         layout.addWidget(self.table)
 
+    def set_player_side(self, side: str | None) -> None:
+        self._player_side = side
+
     def update_contacts(self, env: Environment) -> None:
         self.table.setRowCount(0)
         # 雷达接触
         for own_id, radar_map in getattr(env, "radar_contacts", {}).items():
             own = env.platforms.get(own_id)
+            if own is None or (self._player_side is not None and own.side != self._player_side):
+                continue
             for contact in radar_map.values():
                 row = self.table.rowCount()
                 self.table.insertRow(row)
@@ -58,6 +64,8 @@ class ContactListWidget(QWidget):
         # 红外/视觉接触
         for own_id, ir_map in getattr(env, "ir_contacts", {}).items():
             own = env.platforms.get(own_id)
+            if own is None or (self._player_side is not None and own.side != self._player_side):
+                continue
             for contact in ir_map.values():
                 row = self.table.rowCount()
                 self.table.insertRow(row)
@@ -75,6 +83,8 @@ class ContactListWidget(QWidget):
         # 声呐接触
         for own_id, sonar_map in getattr(env, "sonar_contacts", {}).items():
             own = env.platforms.get(own_id)
+            if own is None or (self._player_side is not None and own.side != self._player_side):
+                continue
             for contact in sonar_map.values():
                 row = self.table.rowCount()
                 self.table.insertRow(row)
@@ -92,6 +102,8 @@ class ContactListWidget(QWidget):
         # ESM 辐射源接触
         for own_id, contact_map in env.contacts.items():
             own = env.platforms.get(own_id)
+            if own is None or (self._player_side is not None and own.side != self._player_side):
+                continue
             for contact in contact_map.values():
                 row = self.table.rowCount()
                 self.table.insertRow(row)

@@ -18,10 +18,15 @@ class SpectrumWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self._env: Environment | None = None
+        self._player_side: str | None = None
         self.setMinimumHeight(120)
 
     def set_environment(self, env: Environment) -> None:
         self._env = env
+        self.update()
+
+    def set_player_side(self, side: str | None) -> None:
+        self._player_side = side
         self.update()
 
     def paintEvent(self, event) -> None:
@@ -62,6 +67,8 @@ class SpectrumWidget(QWidget):
         # 收集活跃辐射源/干扰机
         sources = []
         for platform in self._env.platforms.values():
+            if self._player_side is not None and platform.side != self._player_side:
+                continue
             color = QColor("#e74c3c") if platform.side == "red" else QColor("#3498db")
             for e in platform.emitters:
                 if e.emcon_state == "on":

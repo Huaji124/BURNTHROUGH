@@ -84,6 +84,7 @@ class MapWidget(QGraphicsView):
         self._waypoint_moved = False
         self._selected_platform_ids: set[str] = set()
         self._selected_contact: tuple[str, str] | None = None
+        self._player_side: str = "red"
 
         # 鼠标拖拽状态
         self._left_press_screen: QPoint | None = None
@@ -117,6 +118,12 @@ class MapWidget(QGraphicsView):
 
     def selected_contact(self) -> tuple[str, str] | None:
         return self._selected_contact
+
+    def set_player_side(self, side: str) -> None:
+        self._player_side = side
+        self._selected_platform_ids = set()
+        self._selected_contact = None
+        self._rebuild()
 
     def set_jammer_on(self, on: bool) -> None:
         self._jammer_on = on
@@ -450,19 +457,22 @@ class MapWidget(QGraphicsView):
         draw_grid(self._scene, self._projection)
         self._waypoint_items = draw_waypoints(
             self._scene, self._env, self._projection, self._on_waypoint_moved)
-        draw_jammer_sectors(self._scene, self._env, self._projection)
+        draw_jammer_sectors(self._scene, self._env, self._projection, self._player_side)
         for platform in self._env.platforms.values():
+            if platform.side != self._player_side:
+                continue
             draw_platform(self._scene, platform, self._projection,
                           self.SIDE_COLORS, self._platform_items)
-        draw_ew_circles(self._scene, self._env, self._projection)
-        draw_false_targets(self._scene, self._env, self._projection)
-        draw_esm_contacts(self._scene, self._env, self._projection, self._contact_items)
-        draw_radar_contacts(self._scene, self._env, self._projection)
-        draw_ir_contacts(self._scene, self._env, self._projection)
-        draw_sonar_contacts(self._scene, self._env, self._projection)
-        draw_orders(self._scene, self._env, self._projection)
-        draw_missiles(self._scene, self._env, self._projection)
-        draw_legend(self._scene, self._projection)
+        draw_ew_circles(self._scene, self._env, self._projection, self._player_side)
+        draw_false_targets(self._scene, self._env, self._projection, self._player_side)
+        draw_esm_contacts(self._scene, self._env, self._projection,
+                          self._contact_items, self._player_side)
+        draw_radar_contacts(self._scene, self._env, self._projection, self._player_side)
+        draw_ir_contacts(self._scene, self._env, self._projection, self._player_side)
+        draw_sonar_contacts(self._scene, self._env, self._projection, self._player_side)
+        draw_orders(self._scene, self._env, self._projection, self._player_side)
+        draw_missiles(self._scene, self._env, self._projection, self._player_side)
+        draw_legend(self._scene, self._projection, self._player_side)
         self._restore_selection_visuals()
 
     # ------------------------------------------------------------------

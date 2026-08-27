@@ -35,13 +35,19 @@ class EmconPanel(QWidget):
         self.table.itemChanged.connect(self._on_item_changed)
         layout.addWidget(self.table)
         self._loading = False
+        self._player_side: str | None = None
         self._components: list[tuple] = []  # (row, component)
+
+    def set_player_side(self, side: str | None) -> None:
+        self._player_side = side
 
     def populate(self, env: Environment) -> None:
         self._loading = True
         self._components = []
         self.table.setRowCount(0)
         for platform in env.platforms.values():
+            if self._player_side is not None and platform.side != self._player_side:
+                continue
             for emitter in platform.emitters:
                 self._add_row(platform, emitter, "雷达/辐射源")
             for jammer in platform.jammers:
