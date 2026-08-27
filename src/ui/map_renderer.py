@@ -35,9 +35,10 @@ class WaypointRect(QGraphicsRectItem):
                       QGraphicsItem.GraphicsItemFlag.ItemSendsGeometryChanges)
         self.setData(0, f"waypoint::{pid}::{idx}")
         self.setCursor(Qt.CursorShape.OpenHandCursor)
+        self._suppress = True
 
     def itemChange(self, change, value):
-        if change == QGraphicsItem.GraphicsItemChange.ItemPositionHasChanged:
+        if change == QGraphicsItem.GraphicsItemChange.ItemPositionHasChanged and not self._suppress:
             self._on_moved(self._pid, self._idx, self.pos())
         return super().itemChange(change, value)
 
@@ -170,6 +171,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             pts.append((x, y))
             rect = WaypointRect(QRectF(-5, -5, 10, 10), pid, i, on_moved)
             rect.setPos(x, y)
+            rect._suppress = False
             rect.setPen(QPen(color, 1.5))
             rect.setBrush(QBrush(color.darker(150)))
             rect.setZValue(9)
