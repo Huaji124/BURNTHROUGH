@@ -59,7 +59,7 @@ class ContactListWidget(QWidget):
                 row = self.table.rowCount()
                 self.table.insertRow(row)
                 self._fill_row(row, contact, own, f"[雷达] {contact.emitter_name or contact.emitter_id or '?'}",
-                               "已识别", "记忆" if contact.is_memory else "雷达跟踪")
+                               "已识别", "记忆" if contact.is_memory else "火控级" if contact.extra.get("track_quality") == "fire_control" else "区域级")
         # 红外/视觉接触
         for own_id, ir_map in getattr(env, "ir_contacts", {}).items():
             own = env.platforms.get(own_id)
