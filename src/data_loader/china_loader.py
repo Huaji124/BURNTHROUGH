@@ -137,6 +137,7 @@ def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter]
             max_targets=int(sensor.get("ECMNumberOfTargets") or 4),
             techniques=["spot_noise", "barrage_noise", "rgpo", "vgpo", "false_target"],
             sector_half_deg=180.0,
+            role="comm" if rid == 4091 else "ecm",
             emcon_state="on",
             platform_id=platform_id,
         ))

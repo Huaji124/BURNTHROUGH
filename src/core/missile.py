@@ -25,3 +25,6 @@ class Missile:
     last_locked_lon: float | None = None
     result: str | None = None         # hit / miss / lost_lock
     kind: str = "arm"                 # arm / asm
+    current_speed_mps: float | None = None
+    terminal_speed_mps: float | None = None
+    decel_mps2: float | None = None

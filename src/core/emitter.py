@@ -22,6 +22,8 @@ class Emitter:
     scan_type: str = "mechanical_scan"
     scan_period_s: float = 4.0
     beam_width_deg: float = 1.5
+    blind_sector_half_deg: float = 0.0
+    blind_sector_center_deg: float = 180.0
     emcon_state: str = "on"          # on / off
     platform_id: str | None = None   # 载体平台 ID
 

@@ -68,6 +68,8 @@ class Platform:
     home_lon: float | None = None
     agility: float = 0.0              # 机动性（0~?，用于命中概率修正）
 
+    comm_degraded: bool = False
+
     # 推进与续航
     max_speed_kt: float | None = None
     fuel_kg: float | None = None
@@ -239,6 +241,9 @@ class Environment:
             speed_mps=float(spec.get("speed_mps", 300.0)),
             range_km=float(spec.get("range_km", 120.0)),
             memory_if_shutdown=(kind == "arm"),
+            current_speed_mps=float(spec.get("speed_mps", 300.0)),
+            terminal_speed_mps=float(spec.get("speed_mps", 300.0)) * 0.85,
+            decel_mps2=float(spec.get("decel_mps2", 1.5)),
         )
         if kind == "arm":
             missile.last_locked_lat = target.latitude
@@ -366,7 +371,7 @@ class Environment:
             aim_lat = missile.last_locked_lat if missile.last_locked_lat is not None else target.latitude
             aim_lon = missile.last_locked_lon if missile.last_locked_lon is not None else target.longitude
             dist_m = haversine_nm(missile.lat, missile.lon, aim_lat, aim_lon) * 1852.0
-            step_m = missile.speed_mps * dt_s
+            step_m = (missile.current_speed_mps or missile.speed_mps) * dt_s
 
             if dist_m <= step_m or dist_m < 100.0:
                 missile.lat, missile.lon = aim_lat, aim_lon
@@ -431,6 +436,12 @@ class Environment:
                 bearing = initial_bearing_deg(missile.lat, missile.lon, aim_lat, aim_lon)
                 missile.lat, missile.lon = destination_point(
                     missile.lat, missile.lon, bearing, step_m / 1852.0)
+
+            # 能量衰减：导弹速度随飞行时间下降
+            if missile.decel_mps2 is not None and missile.current_speed_mps is not None:
+                missile.current_speed_mps = max(
+                    missile.terminal_speed_mps or 0.0,
+                    missile.current_speed_mps - missile.decel_mps2 * dt_s)
 
     def _hit_chance(self, target: Platform) -> float:
         """命中概率：基础 ARM 命中率 × 目标机动修正。"""
@@ -641,6 +652,7 @@ class Environment:
         self.update_radar_detection(dt_s)
         self.update_ir_detection(dt_s)
         self.update_sonar_detection(dt_s)
+        self.update_comm_jamming(dt_s)
         self.update_contact_aging()
         self.cross_fix_contacts()
 
@@ -960,6 +972,16 @@ class Environment:
                     if not target.alive:
                         continue
                     dist_m = _distance_m(radar_platform, target)
+                    # 火控雷达盲区：天线后/侧向盲扇区
+                    if emitter.blind_sector_half_deg > 0:
+                        rel_bearing = (initial_bearing_deg(
+                            radar_platform.latitude, radar_platform.longitude,
+                            target.latitude, target.longitude) - radar_platform.heading_deg + 360.0) % 360.0
+                        center = emitter.blind_sector_center_deg
+                        delta = (rel_bearing - center + 180.0) % 360.0 - 180.0
+                        if abs(delta) <= emitter.blind_sector_half_deg:
+                            radar_map.pop(target.id, None)
+                            continue
                     # 视距
                     horizon_nm = 1.23 * (math.sqrt(max(radar_platform.altitude_ft, 0.0)) +
                                          math.sqrt(max(target.altitude_ft, 0.0)))
@@ -1104,6 +1126,23 @@ class Environment:
                         sonar_map.pop(target.id, None)
                     elif contact is not None:
                         contact.is_memory = True
+
+    def update_comm_jamming(self, dt_s: float) -> None:
+        """通信电子战简化模型：敌方通信干扰机使己方通信降级。"""
+        for p in self.platforms.values():
+            p.comm_degraded = False
+        for jammer_platform in self.platforms.values():
+            if not jammer_platform.alive:
+                continue
+            for jammer in jammer_platform.jammers:
+                if jammer.role != "comm" or not jammer.is_jamming:
+                    continue
+                for target in self.platforms.values():
+                    if target.side == jammer_platform.side or not target.alive:
+                        continue
+                    target.comm_degraded = True
+                    self.events.append({"time": self.time_s, "kind": "comm_jamming",
+                                        "message": f"{target.name} 通信受 {jammer.name} 干扰"})
 
     def update_contact_aging(self) -> None:
         """接触老化：信号丢失后进入记忆，超时后删除。"""

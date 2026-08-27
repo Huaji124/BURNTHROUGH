@@ -75,9 +75,10 @@ class UnitInfoBar(QWidget):
                 speed_txt += f" | 油量 {p.fuel_kg:.0f}kg"
             roe_cn = {"free": "自动开火", "weapons_free": "谨慎开火", "hold": "禁止开火"}.get(p.roe, p.roe)
             group_txt = f" | 编队 {p.group_id}" if p.group_id else ""
+            comm_txt = " | 通信受扰" if getattr(p, "comm_degraded", False) else ""
             self.motion_label.setText(
                 f"{speed_txt} | 高度 {p.altitude_ft:.0f}ft | 航向 {p.heading_deg:03.0f}°"
-                f" | {roe_cn}{group_txt}")
+                f" | {roe_cn}{group_txt}{comm_txt}")
             if p.ammo:
                 ammo_parts = [f"{w} {c}/{p.magazine.get(w, 0)+c}" for w, c in p.ammo.items()]
                 self.weapons_label.setText("弹药: " + " | ".join(ammo_parts[:6]))

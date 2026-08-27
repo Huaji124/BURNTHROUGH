@@ -25,6 +25,7 @@ class Jammer:
     current_mode: str = "spot_noise"           # spot_noise / barrage_noise
     sector_half_deg: float = 360.0             # 干扰扇区半角，360=全向
     techniques: list[str] = field(default_factory=list)
+    role: str = "ecm"                  # ecm / comm
     active_technique: str = "none"    # none / rgpo / vgpo / false_target
     reaction_time_s: float = 0.5
     max_targets: int = 4
