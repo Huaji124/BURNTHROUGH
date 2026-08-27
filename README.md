@@ -29,7 +29,7 @@
 - 中国军力参考数据：`data/china_units.json` 和 `data/china_full.json`（完整含挂载/弹药/推进等），由用户提供的 CMO/MoZi 风格 DB 提取
 - 游戏接入：UI 可一键“装载中国军力”，加载全部中国平台/传感器/武器到沙盘
 - 中国军力装备清单：`docs/CHINA_EQUIPMENT_REPORT.md`（99 舰/136 机/17 潜/112 武器）
-- CMO 世界数据：`scripts/export_cmo_world.py` 本地导出 `data/cmo_world_full.json`（未入库），UI 可“装载CMO世界”
+- 全球 CMO 数据：`data/cmo_full_by_country/`（120 国/8462 平台，含挂载/弹药/推进等拆分明细）
 
 ## 技术栈
 
