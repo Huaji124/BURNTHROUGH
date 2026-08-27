@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+APP_VERSION = "70d82a6"
+
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
 from PySide6.QtWidgets import (
@@ -35,7 +37,7 @@ from .unit_info_bar import UnitInfoBar
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("烧穿 BURNTHROUGH - 电子战海空兵推")
+        self.setWindowTitle(f"烧穿 BURNTHROUGH - 电子战海空兵推 [{APP_VERSION}]")
         self.resize(1280, 800)
 
         self.env = build_demo_environment()
