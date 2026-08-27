@@ -26,6 +26,7 @@ class Emitter:
     blind_sector_center_deg: float = 180.0
     coverage_half_deg: float = 60.0    # 相控阵天线扇面半角
     face_count: int = 1                # 相控阵天线面数（4=四面阵，3=三面阵）
+    fire_control_range_km: float = 0.0 # 火控跟踪距离（0=自动按探测距离70%计算）
     elevation_min_deg: float = -10.0
     elevation_max_deg: float = 85.0
     sidelobe_gain_db: float = -20.0

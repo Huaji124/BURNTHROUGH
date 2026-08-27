@@ -1303,7 +1303,18 @@ class Environment:
                         contact.last_update_s = now
                         contact.is_memory = False
                         contact.confidence = 0.95
-                        contact.extra = {"detection_km": detection_km}
+                        dist_km2 = dist_m / 1000.0
+                        if emitter.fire_control_range_km > 0:
+                            fire_control_ok = dist_km2 <= emitter.fire_control_range_km
+                        else:
+                            fire_control_ok = dist_km2 <= detection_km * 0.7
+                        if jammer is not None and jammer.active_technique == "tws_gain":
+                            fire_control_ok = False
+                        contact.extra.update({
+                            "detection_km": detection_km,
+                            "track_quality": "fire_control" if fire_control_ok else "search",
+                        })
+                        contact.confidence = 0.99 if fire_control_ok else 0.8
                         if jammer is not None and jammer.active_technique == "tws_gain":
                             contact.confidence = min(contact.confidence, 0.55)
                             contact.extra["tws_degraded"] = True
@@ -1452,8 +1463,19 @@ class Environment:
                 contact.last_update_s = self.time_s
                 contact.is_memory = False
                 contact.confidence = 0.95
-                contact.extra = {"detection_km": item["detection_km"]}
+                dist_km3 = item["dist_m"] / 1000.0
+                if item["emitter"].fire_control_range_km > 0:
+                    fire_control_ok = dist_km3 <= item["emitter"].fire_control_range_km
+                else:
+                    fire_control_ok = dist_km3 <= item["detection_km"] * 0.7
                 jammer = item.get("jammer")
+                if jammer is not None and jammer.active_technique == "tws_gain":
+                    fire_control_ok = False
+                contact.extra.update({
+                    "detection_km": item["detection_km"],
+                    "track_quality": "fire_control" if fire_control_ok else "search",
+                })
+                contact.confidence = 0.99 if fire_control_ok else 0.8
                 if jammer is not None and jammer.active_technique == "tws_gain":
                     contact.confidence = min(contact.confidence, 0.55)
                     contact.extra["tws_degraded"] = True
