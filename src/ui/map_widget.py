@@ -109,8 +109,8 @@ class MapWidget(QGraphicsView):
             self._projection = LocalProjection(0.0, 0.0, px_per_km=0.02)
         self._selected_platform_ids = set()
         self._selected_contact = None
-        self._rebuild()
         self.fit_to_world()
+        self._rebuild()
 
     def fit_to_world(self) -> None:
         """将初始视图缩放到世界范围。"""
@@ -122,6 +122,15 @@ class MapWidget(QGraphicsView):
         self.resetTransform()
         self.fitInView(rect, Qt.AspectRatioMode.KeepAspectRatio)
         self.centerOn(0, 0)
+        self._update_text_visibility()
+
+    def _update_text_visibility(self) -> None:
+        """根据当前缩放级别显示/隐藏地图文字标签。"""
+        scale = abs(self.transform().m11())
+        show = scale > 0.15
+        for item in self._scene.items():
+            if isinstance(item, QGraphicsSimpleTextItem):
+                item.setVisible(show)
 
     def refresh(self) -> None:
         self._rebuild()
@@ -168,6 +177,7 @@ class MapWidget(QGraphicsView):
     def wheelEvent(self, event) -> None:
         factor = 1.25 if event.angleDelta().y() > 0 else 0.8
         self.scale(factor, factor)
+        self._update_text_visibility()
 
     # ------------------------------------------------------------------
     # 鼠标交互
@@ -455,6 +465,7 @@ class MapWidget(QGraphicsView):
     def _set_selection(self, platform_ids: set[str], contact) -> None:
         self._selected_platform_ids = set(platform_ids)
         self._selected_contact = contact
+        self._update_text_visibility()
         self._restore_selection_visuals()
         self.selection_changed.emit()
 
@@ -523,6 +534,7 @@ class MapWidget(QGraphicsView):
         for item in self._scene.items():
             if isinstance(item, QGraphicsSimpleTextItem):
                 item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIgnoresTransformations, False)
+        self._update_text_visibility()
         self._restore_selection_visuals()
 
     # ------------------------------------------------------------------
