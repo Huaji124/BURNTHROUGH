@@ -16,5 +16,7 @@
   "beam_width_deg": 1.7,
   "frequency_agility": true,
   "pulse_compression_gain_db": 15,
-  "sidelobe_cancellation": true
+  "sidelobe_cancellation": true,
+  "face_count": 4,
+  "coverage_half_deg": 45
 }

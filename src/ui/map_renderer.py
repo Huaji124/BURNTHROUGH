@@ -296,10 +296,13 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
             draw_circle(scene, proj, x, y, unjammed_km, QColor("#f1c40f"),
                         "无干扰探测圈", dashed=True)
             if emitter.scan_type == "phased_array":
-                # 相控阵：用扇面表示覆盖方向（默认前向 120°）
-                draw_phased_array_sector(
-                    scene, proj, x, y, platform.heading_deg,
-                    emitter.coverage_half_deg, unjammed_km, QColor("#f1c40f"))
+                # 相控阵：按天线面数绘制多个扇面
+                face_span = 360.0 / max(emitter.face_count, 1)
+                for face in range(max(emitter.face_count, 1)):
+                    center = (platform.heading_deg + face * face_span) % 360.0
+                    draw_phased_array_sector(
+                        scene, proj, x, y, center,
+                        emitter.coverage_half_deg, unjammed_km, QColor("#f1c40f"))
             if jammer:
                 draw_circle(scene, proj, x, y, result["detection_range_km"],
                             QColor("#e67e22"), "干扰后探测圈", dashed=False)
@@ -308,10 +311,13 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
                     draw_circle(scene, proj, x, y, result["burn_through_km"],
                                 QColor("#e74c3c"), "烧穿圈", dashed=True)
                 if emitter.scan_type == "phased_array":
-                    draw_phased_array_sector(
-                        scene, proj, x, y, platform.heading_deg,
-                        emitter.coverage_half_deg, result["detection_range_km"],
-                        QColor("#e67e22"))
+                    face_span = 360.0 / max(emitter.face_count, 1)
+                    for face in range(max(emitter.face_count, 1)):
+                        center = (platform.heading_deg + face * face_span) % 360.0
+                        draw_phased_array_sector(
+                            scene, proj, x, y, center,
+                            emitter.coverage_half_deg, result["detection_range_km"],
+                            QColor("#e67e22"))
                 jp = env.find_jammer_platform(jammer)
                 if jp is not None:
                     jx, jy = proj.to_xy(jp.latitude, jp.longitude)
