@@ -61,6 +61,12 @@ class Platform:
     reload_time_s: float = 12.0
     reload_timers: dict[str, float] = field(default_factory=dict)
 
+    # 编队与交战规则
+    group_id: str | None = None
+    roe: str = "free"                 # free / weapons_free / hold / weapons_hold
+    home_lat: float | None = None
+    home_lon: float | None = None
+
     # 推进与续航
     max_speed_kt: float | None = None
     fuel_kg: float | None = None

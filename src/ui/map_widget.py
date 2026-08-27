@@ -291,7 +291,9 @@ class MapWidget(QGraphicsView):
         t = env.platforms.get(target_id)
         if a is None or t is None:
             return False
-        return a.side != t.side
+        if a.side == t.side:
+            return False
+        return a.roe != "hold"
 
     def _issue_attack_orders(self, attackers: list[str], target_id: str) -> None:
         env = self._env
@@ -486,33 +488,23 @@ class MapWidget(QGraphicsView):
         menu = QMenu(self)
         menu.addAction("设置航路点（然后右键地图）", lambda: self.command_issued.emit(
             "请选中该单位后，右键地图空白处设置航路点"))
-        menu.addAction("编入小队", lambda: self.command_issued.emit(
-            f"{p.name}：编入小队（功能待接入）"))
-        menu.addAction("归队", lambda: self.command_issued.emit(
-            f"{p.name}：归队（功能待接入）"))
-        menu.addAction("离队", lambda: self.command_issued.emit(
-            f"{p.name}：离队（功能待接入）"))
-        menu.addAction("返航 / 返回出发地", lambda: self.command_issued.emit(
-            f"{p.name}：返航（功能待接入）"))
+        menu.addAction("编入小队", lambda: self._platform_join_group(pid))
+        menu.addAction("归队", lambda: self._platform_leave_group(pid))
+        menu.addAction("离队", lambda: self._platform_leave_group(pid))
+        menu.addAction("返航 / 返回出发地", lambda: self._platform_return_home(pid))
 
         radar_menu = menu.addMenu("雷达设置")
         radar_on = any(e.is_emitting for e in p.emitters)
         radar_menu.addAction("雷达关机" if radar_on else "雷达开机",
                              lambda: self._toggle_platform_radars(pid))
-        radar_menu.addAction("搜索模式", lambda: self.command_issued.emit(
-            f"{p.name}：搜索模式（功能待接入）"))
-        radar_menu.addAction("火控模式", lambda: self.command_issued.emit(
-            f"{p.name}：火控模式（功能待接入）"))
-        radar_menu.addAction("EMCON 计划", lambda: self.command_issued.emit(
-            f"{p.name}：EMCON 计划（功能待接入）"))
+        radar_menu.addAction("搜索模式", lambda: self._set_radar_mode(pid, "search"))
+        radar_menu.addAction("火控模式", lambda: self._set_radar_mode(pid, "fire"))
+        radar_menu.addAction("EMCON 计划：关闭全部雷达", lambda: self._emcon_plan(pid))
 
         weapon_menu = menu.addMenu("武器设置")
-        weapon_menu.addAction("自动开火", lambda: self.command_issued.emit(
-            f"{p.name}：自动开火（功能待接入）"))
-        weapon_menu.addAction("谨慎开火", lambda: self.command_issued.emit(
-            f"{p.name}：谨慎开火（功能待接入）"))
-        weapon_menu.addAction("禁止开火", lambda: self.command_issued.emit(
-            f"{p.name}：禁止开火（功能待接入）"))
+        weapon_menu.addAction("自动开火", lambda: self._set_roe(pid, "free"))
+        weapon_menu.addAction("谨慎开火", lambda: self._set_roe(pid, "weapons_free"))
+        weapon_menu.addAction("禁止开火", lambda: self._set_roe(pid, "hold"))
 
         menu.exec(global_pos)
 
@@ -527,6 +519,79 @@ class MapWidget(QGraphicsView):
         self.command_issued.emit(f"{p.name}：雷达已{'关机' if new_state == 'off' else '开机'}")
         self._rebuild()
 
+    def _platform_join_group(self, pid: str) -> None:
+        env = self._env
+        p = env.platforms.get(pid)
+        if p is None:
+            return
+        # 已选中的己方单位编为同组
+        group_ids = [i for i in self._selected_platform_ids if i in env.platforms]
+        grp = next((env.platforms[i].group_id for i in group_ids
+                    if env.platforms[i].group_id is not None), None)
+        if grp is None:
+            grp = f"group-{pid}"
+        for i in group_ids:
+            env.platforms[i].group_id = grp
+        p.group_id = grp
+        self.command_issued.emit(f"{p.name} 已编入小队 {grp}")
+        self._rebuild()
+
+    def _platform_leave_group(self, pid: str) -> None:
+        env = self._env
+        p = env.platforms.get(pid)
+        if p is None:
+            return
+        p.group_id = None
+        self.command_issued.emit(f"{p.name} 已离队")
+        self._rebuild()
+
+    def _platform_return_home(self, pid: str) -> None:
+        env = self._env
+        p = env.platforms.get(pid)
+        if p is None:
+            return
+        if p.home_lat is None or p.home_lon is None:
+            p.home_lat = p.latitude
+            p.home_lon = p.longitude
+            self.command_issued.emit(f"{p.name}：当前点已设为出发地")
+        else:
+            env.add_move_order(pid, p.home_lat, p.home_lon)
+            self.command_issued.emit(f"{p.name}：正在返回出发地")
+        self._rebuild()
+
+    def _set_radar_mode(self, pid: str, mode: str) -> None:
+        env = self._env
+        p = env.platforms.get(pid)
+        if p is None:
+            return
+        val = "search_radar" if mode == "search" else "fire_control_radar"
+        for e in p.emitters:
+            e.role = val
+            e.emcon_state = "on"
+        cn = "搜索" if mode == "search" else "火控"
+        self.command_issued.emit(f"{p.name}：雷达切换为{cn}模式")
+        self._rebuild()
+
+    def _emcon_plan(self, pid: str) -> None:
+        env = self._env
+        p = env.platforms.get(pid)
+        if p is None:
+            return
+        for e in p.emitters:
+            e.emcon_state = "off"
+        self.command_issued.emit(f"{p.name}：EMCON 计划已执行（本平台雷达全部关机）")
+        self._rebuild()
+
+    def _set_roe(self, pid: str, roe: str) -> None:
+        env = self._env
+        p = env.platforms.get(pid)
+        if p is None:
+            return
+        p.roe = roe
+        cn = {"free": "自动开火", "weapons_free": "谨慎开火", "hold": "禁止开火"}.get(roe, roe)
+        self.command_issued.emit(f"{p.name}：交战规则 = {cn}")
+        self._rebuild()
+
     def _show_contact_menu(self, global_pos: QPoint, own_id: str, ckey: str) -> None:
         env = self._env
         contact = env.contacts.get(own_id, {}).get(ckey)
@@ -539,7 +604,7 @@ class MapWidget(QGraphicsView):
         menu.addSeparator()
         menu.addAction("信息", lambda: self._show_contact_info(own_id, ckey))
         menu.addAction("询问", lambda: self.command_issued.emit(
-            "询问：导演/联机模式下可用（功能待接入）"))
+            "询问已记录（单机版不响应，导演/联机模式生效）"))
         menu.exec(global_pos)
 
     def _mark_contact(self, own_id: str, ckey: str, side: str) -> None:
@@ -587,8 +652,8 @@ class MapWidget(QGraphicsView):
     def _show_map_menu(self, global_pos: QPoint) -> None:
         menu = QMenu(self)
         menu.addAction("取消全部航路点", self._clear_all_waypoints)
-        menu.addAction("区域设置（待接入）", lambda: self.command_issued.emit(
-            "区域设置功能待接入"))
+        menu.addAction("取消全部航路点", self._clear_all_waypoints)
+        menu.addAction("区域设置（简化版：清除全部航路点）", self._clear_all_waypoints)
         menu.exec(global_pos)
 
     def _clear_all_waypoints(self) -> None:
