@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
 from PySide6.QtWidgets import (
@@ -147,6 +149,10 @@ class MainWindow(QMainWindow):
         cmo_action = QAction("装载CMO世界", self)
         cmo_action.triggered.connect(self._on_load_cmo_world)
         toolbar.addAction(cmo_action)
+
+        cmo_all_action = QAction("装载完整CMO", self)
+        cmo_all_action.triggered.connect(self._on_load_cmo_all)
+        toolbar.addAction(cmo_all_action)
 
     # ------------------------------------------------------------------
     # 模拟循环
@@ -323,6 +329,26 @@ class MainWindow(QMainWindow):
         self._update_unit_info_bar()
         self.statusBar().showMessage(
             f"已加载 CMO 世界数据：{path}（{len(self.env.platforms)} 个平台）")
+
+    def _on_load_cmo_all(self) -> None:
+        # 直接加载本地完整 CMO 数据库（中国+世界），无需选择文件
+        path = Path("data/cmo_all_full.json")
+        if not path.exists():
+            QMessageBox.information(self, "数据不存在", "未找到 data/cmo_all_full.json")
+            return
+        try:
+            self.env = load_cmo_world_environment(path, side="blue")
+        except (OSError, ValueError, KeyError) as exc:
+            QMessageBox.warning(self, "加载失败", str(exc))
+            return
+        self.map_widget.set_environment(self.env)
+        self.emcon_panel.populate(self.env)
+        self.contact_list.update_contacts(self.env)
+        self.spectrum_widget.set_environment(self.env)
+        self.false_target_panel.update_false_targets(self.env)
+        self._update_unit_info_bar()
+        self.statusBar().showMessage(
+            f"已加载完整 CMO 数据库：{len(self.env.platforms)} 个平台")
 
     def _on_fit_view(self) -> None:
         self.map_widget.resetTransform()
