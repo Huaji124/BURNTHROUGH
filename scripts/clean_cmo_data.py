@@ -20,6 +20,7 @@ SRC = ROOT / "data" / "cmo_all_full.json"
 OUT = ROOT / "data" / "cmo_reference.json"
 
 import sqlite3
+
 DB_DEFAULT = Path('/mnt/c/Users/29938/Downloads/《指挥：现代作战》英文免安装版/Command Modern Operations/DB/DB3K_480.db3')
 
 
