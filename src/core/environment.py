@@ -66,6 +66,7 @@ class Platform:
     roe: str = "free"                 # free / weapons_free / hold / weapons_hold
     home_lat: float | None = None
     home_lon: float | None = None
+    agility: float = 0.0              # 机动性（0~?，用于命中概率修正）
 
     # 推进与续航
     max_speed_kt: float | None = None
@@ -386,7 +387,7 @@ class Environment:
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_intercepted",
                                             "message": f"{missile.name} 被 {target.name} 近防系统拦截"})
-                    elif self.rng.random() < self.arm_hit_probability:
+                    elif self.rng.random() < self._hit_chance(target):
                         missile.result = "hit"
                         self._damage_platform(target, missile)
                     else:
@@ -396,7 +397,7 @@ class Environment:
                 elif missile.kind == "aam":
                     missile.active = False
                     if actual_m < 500.0:
-                        if self.rng.random() < self.arm_hit_probability:
+                        if self.rng.random() < self._hit_chance(target):
                             missile.result = "hit"
                             self._damage_platform(target, missile)
                         else:
@@ -409,7 +410,7 @@ class Environment:
                                             "message": f"{missile.name} 未命中（目标机动）"})
                 elif actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
                     missile.active = False
-                    if self.rng.random() < self.arm_hit_probability:
+                    if self.rng.random() < self._hit_chance(target):
                         missile.result = "hit"
                         self._damage_platform(target, missile)
                     else:
@@ -430,6 +431,12 @@ class Environment:
                 bearing = initial_bearing_deg(missile.lat, missile.lon, aim_lat, aim_lon)
                 missile.lat, missile.lon = destination_point(
                     missile.lat, missile.lon, bearing, step_m / 1852.0)
+
+    def _hit_chance(self, target: Platform) -> float:
+        """命中概率：基础 ARM 命中率 × 目标机动修正。"""
+        base = self.arm_hit_probability
+        maneuver_penalty = min(0.6, target.agility * 0.01)
+        return max(0.05, base * (1.0 - maneuver_penalty))
 
     def _try_decoy_missile(self, missile: Missile, target: Platform) -> bool:
         """尝试让导弹被目标欺骗干扰诱骗。
@@ -976,6 +983,14 @@ class Environment:
                     detection_km = result["detection_range_km"]
                     if dist_m <= detection_km * 1000.0:
                         contact = radar_map.get(target.id)
+                        # 扫描周期影响首次发现/重新截获概率；已跟踪则每帧刷新
+                        p_scan = min(1.0, dt_s / max(emitter.scan_period_s, 0.1))
+                        if contact is not None and contact.is_memory and self.rng.random() > p_scan:
+                            continue
+                        if contact is not None and not contact.is_memory:
+                            pass  # 已跟踪，正常更新
+                        elif contact is None and self.rng.random() > p_scan:
+                            continue
                         if contact is None:
                             contact = Contact(
                                 id=f"{radar_platform.id}-r-{target.id}",

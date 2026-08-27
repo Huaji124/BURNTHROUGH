@@ -185,6 +185,8 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             cruise_speed_kt=speed_kt,
             hp=float(raw.get("DamagePoints") or 100),
         )
+        if raw.get("Agility"):
+            platform.agility = float(raw.get("Agility") or 0)
 
         # 信号特征（RCS / 红外 / 声呐）
         for sig in p.get("signatures", []):
