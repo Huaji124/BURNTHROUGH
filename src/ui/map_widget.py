@@ -526,7 +526,6 @@ class MapWidget(QGraphicsView):
         if not self._env.world_land:
             draw_grid(self._scene, self._projection)
             draw_coastlines(self._scene, self._env, self._projection)
-        draw_terrain_obstacles(self._scene, self._env, self._projection)
         self._waypoint_items = draw_waypoints(
             self._scene, self._env, self._projection, self._on_waypoint_moved)
         draw_jammer_sectors(self._scene, self._env, self._projection, self._player_side)
