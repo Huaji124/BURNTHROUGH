@@ -28,6 +28,8 @@ class Jammer:
     role: str = "ecm"                  # ecm / comm
     active_technique: str = "none"    # none / rgpo / vgpo / false_target / tws_gain
     look_through_enabled: bool = False
+    look_through_period_s: float = 2.0
+    look_through_duration_s: float = 0.2
     reaction_time_s: float = 0.5
     max_targets: int = 4
     emcon_state: str = "off"          # on / off

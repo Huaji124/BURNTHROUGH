@@ -65,6 +65,7 @@ class Platform:
     # 软杀伤
     chaff_count: int = 0
     decoy_count: int = 0
+    active_decoy_count: int = 0
     soft_kill_probability: float = 0.4
 
     # 编队与交战规则
@@ -503,10 +504,10 @@ class Environment:
             missile.current_speed_mps = max(missile.terminal_speed_mps or 0.0, missile.current_speed_mps)
 
     def _try_soft_kill(self, target: Platform, missile: Missile) -> bool:
-        """目标发射箔条/诱饵软杀伤，成功则导弹被诱骗。"""
+        """目标发射箔条/诱饵/有源诱饵软杀伤，成功则导弹被诱骗。"""
         if missile.kind not in ("asm", "aam", "arm"):
             return False
-        if target.chaff_count <= 0 and target.decoy_count <= 0:
+        if target.chaff_count <= 0 and target.decoy_count <= 0 and target.active_decoy_count <= 0:
             return False
         if self.rng.random() >= target.soft_kill_probability:
             return False
@@ -514,6 +515,8 @@ class Environment:
             target.chaff_count -= 1
         elif target.decoy_count > 0:
             target.decoy_count -= 1
+        elif target.active_decoy_count > 0:
+            target.active_decoy_count -= 1
         return True
 
     def _hit_chance(self, target: Platform, missile: Missile | None = None) -> float:
@@ -684,7 +687,7 @@ class Environment:
                     if not other.alive or other.side == platform.side:
                         continue
                     for jammer in other.jammers:
-                        if jammer.emcon_state != "on":
+                        if not self._jammer_actively_jamming(jammer):
                             continue
                         if jammer_load.get(jammer.id, 0) >= jammer.max_targets:
                             continue
@@ -701,6 +704,18 @@ class Environment:
                     assignment[emitter.id] = best_jammer.id
                     jammer_load[best_jammer.id] = jammer_load.get(best_jammer.id, 0) + 1
         return assignment
+
+    def _jammer_actively_jamming(self, jammer: Jammer) -> bool:
+        """考虑间断观察法：干扰机在观察窗口内不干扰。"""
+        if not jammer.is_jamming:
+            return False
+        if getattr(jammer, "look_through_enabled", False):
+            period = max(getattr(jammer, "look_through_period_s", 2.0), 0.1)
+            duration = min(getattr(jammer, "look_through_duration_s", 0.2), period)
+            cycle = self.time_s % period
+            if cycle < duration:
+                return False
+        return True
 
     def _jammer_sector_ok(self, jammer: Jammer, jammer_platform: Platform,
                           radar_platform: Platform) -> bool:
@@ -994,8 +1009,26 @@ class Environment:
             bearing = true_bearing
 
         identified = source_id in esm.param_library
+        pulse_match = False
+        if not identified and esm.signal_params:
+            src_prf_min = getattr(src, "prf_min_hz", None)
+            src_prf_max = getattr(src, "prf_max_hz", None)
+            src_pw_min = getattr(src, "pulse_width_min_us", None)
+            src_pw_max = getattr(src, "pulse_width_max_us", None)
+            for params in esm.signal_params.values():
+                prf_ok = (src_prf_min is not None and src_prf_max is not None
+                          and params.get("prf_min", 0) <= src_prf_max
+                          and params.get("prf_max", 1e12) >= src_prf_min)
+                pw_ok = (src_pw_min is not None and src_pw_max is not None
+                         and params.get("pw_min", 0) <= src_pw_max
+                         and params.get("pw_max", 1e9) >= src_pw_min)
+                if prf_ok and pw_ok:
+                    identified = True
+                    pulse_match = True
+                    break
         return {
             "source_id": source_id,
+            "pulse_match": pulse_match,
             "source_name": source_name,
             "bearing_deg": bearing,
             "true_bearing_deg": true_bearing,
@@ -1014,10 +1047,18 @@ class Environment:
         if scan_period is None or scan_period <= 0:
             return 1.0  # 常开/干扰
         scans = dt_s / scan_period
+        factor = 1.0
+        emission = getattr(source, "emission_type", "normal") or "normal"
+        if emission == "fh":
+            factor = 0.3
+        elif emission == "lfm":
+            factor = 0.5
+        elif emission == "dsss":
+            factor = 0.2
         if beam_width is None or beam_width <= 0:
-            return min(1.0, scans)
+            return min(1.0, scans * factor)
         # 每转主瓣扫过 ESM 的概率约 beam_width/360
-        return min(1.0, scans * max(beam_width / 360.0, 0.05))
+        return min(1.0, scans * max(beam_width / 360.0, 0.05) * factor)
 
     def _update_contact(self, own: Platform, esm: Receiver, other: Platform,
                         source: tuple, result: dict) -> None:
@@ -1151,7 +1192,7 @@ class Environment:
                         if other.side == radar_platform.side or not other.alive:
                             continue
                         for j in other.jammers:
-                            if j.is_jamming and j.covers_frequency(emitter.center_freq_hz):
+                            if self._jammer_actively_jamming(j) and j.covers_frequency(emitter.center_freq_hz):
                                 jammer = j
                                 break
                         if jammer is not None:
