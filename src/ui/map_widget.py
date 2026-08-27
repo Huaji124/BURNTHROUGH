@@ -49,7 +49,6 @@ from .map_renderer import (
     draw_platform,
     draw_radar_contacts,
     draw_sonar_contacts,
-    draw_terrain_obstacles,
     draw_waypoints,
 )
 
