@@ -1,0 +1,167 @@
+{
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "33": {
+  "ID": 33,
+  "Name": "AN/ARC-164 Have Quick",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "48": {
+  "ID": 48,
+  "Name": "AT-2/3/6/12/16 Command Datalink",
+  "Comments": "-",
+  "Type": 10032,
+  "Range": 10,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "55": {
+  "ID": 55,
+  "Name": "AS.11/12 Missile Command",
+  "Comments": "-",
+  "Type": 10015,
+  "Range": 4,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "72": {
+  "ID": 72,
+  "Name": "HF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "80": {
+  "ID": 80,
+  "Name": "AS.30 Command Datalink",
+  "Comments": "-",
+  "Type": 10019,
+  "Range": 50,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "144": {
+  "ID": 144,
+  "Name": "AA-12 Command Datalink",
+  "Comments": "-",
+  "Type": 10054,
+  "Range": 90,
+  "Channels": 12,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 1,
+  "Hypothetical": 0
+ },
+ "187": {
+  "ID": 187,
+  "Name": "UHF/VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 4,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "195": {
+  "ID": 195,
+  "Name": "UHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "209": {
+  "ID": 209,
+  "Name": "VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "217": {
+  "ID": 217,
+  "Name": "Link 11",
+  "Comments": "-",
+  "Type": 4003,
+  "Range": 300,
+  "Channels": 64,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "222": {
+  "ID": 222,
+  "Name": "MILSTAR SATCOM UHF",
+  "Comments": "-",
+  "Type": 2003,
+  "Range": 8000,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "238": {
+  "ID": 238,
+  "Name": "HF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "UHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ }
+}

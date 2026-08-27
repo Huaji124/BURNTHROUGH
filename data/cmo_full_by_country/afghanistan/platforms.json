@@ -1,0 +1,113 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4354,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "A-29B Super Tucano [EMB-314]",
+   "Comments": "20x",
+   "OperatorCountry": 2126,
+   "OperatorService": 2001,
+   "YearCommissioned": 2016,
+   "YearDecommissioned": 0,
+   "Length": 11.4,
+   "Span": 11.1,
+   "Height": 3.9,
+   "WeightEmpty": 3200,
+   "WeightMax": 5400,
+   "WeightPayload": 1500,
+   "Crew": 2,
+   "Agility": 1.5,
+   "ClimbRate": 24.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4958
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22164,
+   22165,
+   22166,
+   22167,
+   24852
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1582
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1357
+  ],
+  "signatures": [
+   {
+    "ID": 4354,
+    "Type": 3001,
+    "Front": 2.32,
+    "Side": 4.48,
+    "Rear": 2.32,
+    "Top": 6.34
+   },
+   {
+    "ID": 4354,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 2.67,
+    "Rear": 2.13,
+    "Top": 3.56
+   },
+   {
+    "ID": 4354,
+    "Type": 4001,
+    "Front": 2.32,
+    "Side": 6.42,
+    "Rear": 11.89,
+    "Top": 8.1
+   },
+   {
+    "ID": 4354,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 2.67,
+    "Rear": 1.33,
+    "Top": 3.56
+   },
+   {
+    "ID": 4354,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 4354,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ }
+]

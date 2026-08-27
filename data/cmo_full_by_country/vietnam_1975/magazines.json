@@ -1,0 +1,212 @@
+{
+ "305": {
+  "ID": 305,
+  "Name": "14.5mm/93 Twin MG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "432": {
+  "ID": 432,
+  "Name": "PK-16 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "436": {
+  "ID": 436,
+  "Name": "PK-16 DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 72,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "437": {
+  "ID": 437,
+  "Name": "PK-10 DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "502": {
+  "ID": 502,
+  "Name": "SA-N-5",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "514": {
+  "ID": 514,
+  "Name": "SA-N-5",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "765": {
+  "ID": 765,
+  "Name": "AK-630M",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "850": {
+  "ID": 850,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 360,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "851": {
+  "ID": 851,
+  "Name": "25mm/80 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "855": {
+  "ID": 855,
+  "Name": "25mm/60 Twin",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "858": {
+  "ID": 858,
+  "Name": "25mm/60 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "859": {
+  "ID": 859,
+  "Name": "25mm/80 Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "890": {
+  "ID": 890,
+  "Name": "Depth Charge",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 56,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "893": {
+  "ID": 893,
+  "Name": "RBU-1200",
+  "Comments": "4x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1085": {
+  "ID": 1085,
+  "Name": "14.5mm MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1207": {
+  "ID": 1207,
+  "Name": "AK-630",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1441": {
+  "ID": 1441,
+  "Name": "SA-N-5",
+  "Comments": "1x Mounts, Twin Lnchr, 16 rnds total",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 14,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1547": {
+  "ID": 1547,
+  "Name": "SA-N-5",
+  "Comments": "1x Mount, Extra",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

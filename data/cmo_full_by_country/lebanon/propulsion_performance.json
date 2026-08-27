@@ -1,0 +1,245 @@
+[
+ {
+  "ID": 1582,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 220,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 4.65
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 280,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 5.82
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 310,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 10.03
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 2,
+  "Throttle": 1,
+  "Speed": 220,
+  "AltitudeMin": 3657.6,
+  "AltitudeMax": 7315.2,
+  "Consumption": 3.77
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 2,
+  "Throttle": 2,
+  "Speed": 280,
+  "AltitudeMin": 3657.6,
+  "AltitudeMax": 7315.2,
+  "Consumption": 4.71
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 2,
+  "Throttle": 3,
+  "Speed": 330,
+  "AltitudeMin": 3657.6,
+  "AltitudeMax": 7315.2,
+  "Consumption": 8.13
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 3,
+  "Throttle": 1,
+  "Speed": 220,
+  "AltitudeMin": 7315.2,
+  "AltitudeMax": 10668.0,
+  "Consumption": 2.72
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 3,
+  "Throttle": 2,
+  "Speed": 280,
+  "AltitudeMin": 7315.2,
+  "AltitudeMax": 10668.0,
+  "Consumption": 3.39
+ },
+ {
+  "ID": 1582,
+  "AltitudeBand": 3,
+  "Throttle": 3,
+  "Speed": 310,
+  "AltitudeMin": 7315.2,
+  "AltitudeMax": 10668.0,
+  "Consumption": 5.84
+ },
+ {
+  "ID": 2411,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 120,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 3.06
+ },
+ {
+  "ID": 2411,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 180,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 3.83
+ },
+ {
+  "ID": 2411,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 220,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 6.69
+ },
+ {
+  "ID": 2411,
+  "AltitudeBand": 2,
+  "Throttle": 1,
+  "Speed": 120,
+  "AltitudeMin": 3657.6,
+  "AltitudeMax": 6858.0,
+  "Consumption": 2.35
+ },
+ {
+  "ID": 2411,
+  "AltitudeBand": 2,
+  "Throttle": 2,
+  "Speed": 180,
+  "AltitudeMin": 3657.6,
+  "AltitudeMax": 6858.0,
+  "Consumption": 2.95
+ },
+ {
+  "ID": 2411,
+  "AltitudeBand": 2,
+  "Throttle": 3,
+  "Speed": 220,
+  "AltitudeMin": 3657.6,
+  "AltitudeMax": 6858.0,
+  "Consumption": 5.16
+ },
+ {
+  "ID": 2610,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 5,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.89
+ },
+ {
+  "ID": 2610,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 14,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.99
+ },
+ {
+  "ID": 2610,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 18,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 2.44
+ },
+ {
+  "ID": 2610,
+  "AltitudeBand": 1,
+  "Throttle": 4,
+  "Speed": 21,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 3.89
+ },
+ {
+  "ID": 2611,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 5,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.9
+ },
+ {
+  "ID": 2611,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 9,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 1.0
+ },
+ {
+  "ID": 2611,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 10,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 1.89
+ },
+ {
+  "ID": 2611,
+  "AltitudeBand": 1,
+  "Throttle": 4,
+  "Speed": 11,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 3.75
+ },
+ {
+  "ID": 2617,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 5,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.89
+ },
+ {
+  "ID": 2617,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 11,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.99
+ },
+ {
+  "ID": 2617,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 24,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 1.89
+ },
+ {
+  "ID": 2617,
+  "AltitudeBand": 1,
+  "Throttle": 4,
+  "Speed": 28,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 3.74
+ }
+]

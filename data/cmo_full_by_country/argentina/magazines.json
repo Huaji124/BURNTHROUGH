@@ -1,0 +1,312 @@
+{
+ "61": {
+  "ID": 61,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "339": {
+  "ID": 339,
+  "Name": "40mm/70 Single Breda Type 564",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "417": {
+  "ID": 417,
+  "Name": "SCLAR",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "429": {
+  "ID": 429,
+  "Name": "Syllex DL",
+  "Comments": "2x Mounts, France",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "472": {
+  "ID": 472,
+  "Name": "20mm Single",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "536": {
+  "ID": 536,
+  "Name": "Veinticinco de Mayo",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 1200,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "594": {
+  "ID": 594,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "598": {
+  "ID": 598,
+  "Name": "Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "694": {
+  "ID": 694,
+  "Name": "A.244 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "808": {
+  "ID": 808,
+  "Name": "G738 [Type 182] Towed Torpedo Decoy",
+  "Comments": "Export",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 1,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "815": {
+  "ID": 815,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 170,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "830": {
+  "ID": 830,
+  "Name": "Aspide",
+  "Comments": "1x Mount, 1 x 16",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "832": {
+  "ID": 832,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "834": {
+  "ID": 834,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "840": {
+  "ID": 840,
+  "Name": "20mm/80 Oerlikon Mk10 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "847": {
+  "ID": 847,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 340,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "903": {
+  "ID": 903,
+  "Name": "12.7mm/50 Twin MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "984": {
+  "ID": 984,
+  "Name": "40mm/56 Mk1 Twin Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 820,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1068": {
+  "ID": 1068,
+  "Name": "40mm/60 Quad Bofors",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 615,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1074": {
+  "ID": 1074,
+  "Name": "20mm/80 Oerlikon Twin",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1087": {
+  "ID": 1087,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "10x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 1350,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1155": {
+  "ID": 1155,
+  "Name": "A.244 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1158": {
+  "ID": 1158,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1185": {
+  "ID": 1185,
+  "Name": "Munitions",
+  "Comments": "Empty",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1191": {
+  "ID": 1191,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 28,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1251": {
+  "ID": 1251,
+  "Name": "Mk11 Hedgehog ASW Mortar",
+  "Comments": "2x",
+  "ArmorGeneral": 1001,
+  "ROF": 180,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1316": {
+  "ID": 1316,
+  "Name": "Mk28 Chaffroc",
+  "Comments": "2x Mounts, 1969",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

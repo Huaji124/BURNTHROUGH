@@ -1,0 +1,74 @@
+{
+ "378": {
+  "ID": 378,
+  "Name": "2x Makila 1A1",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1877.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.481,
+  "SFCAfterburner": 0.0
+ },
+ "493": {
+  "ID": 493,
+  "Name": "2x Dart RDa.7 Mk.532-7L",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2100.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.57,
+  "SFCAfterburner": 0.0
+ },
+ "2465": {
+  "ID": 2465,
+  "Name": "2x PW123B",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2619.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.49,
+  "SFCAfterburner": 0.0
+ },
+ "2719": {
+  "ID": 2719,
+  "Name": "2x MAN 8L40/54 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2720": {
+  "ID": 2720,
+  "Name": "2x Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2721": {
+  "ID": 2721,
+  "Name": "2x B&W V.B.F 62 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

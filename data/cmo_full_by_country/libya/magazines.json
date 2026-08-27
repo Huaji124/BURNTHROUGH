@@ -1,0 +1,152 @@
+{
+ "432": {
+  "ID": 432,
+  "Name": "PK-16 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "514": {
+  "ID": 514,
+  "Name": "SA-N-5",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "521": {
+  "ID": 521,
+  "Name": "SA-N-5",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "574": {
+  "ID": 574,
+  "Name": "RBU-1200",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "832": {
+  "ID": 832,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "851": {
+  "ID": 851,
+  "Name": "25mm/80 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1058": {
+  "ID": 1058,
+  "Name": "35mm/90 Twin Oerlikon",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1158": {
+  "ID": 1158,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1191": {
+  "ID": 1191,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 28,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1205": {
+  "ID": 1205,
+  "Name": "BM-14-17 [Grad] 140mm Rockets",
+  "Comments": "2x Mounts, 4x reloads, 180 rnds total",
+  "ArmorGeneral": 1001,
+  "ROF": 20,
+  "Capacity": 144,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1323": {
+  "ID": 1323,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 810,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

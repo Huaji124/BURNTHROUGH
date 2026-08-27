@@ -1,0 +1,682 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1613,
+   "Category": 2001,
+   "Type": 4002,
+   "Name": "E-3A Sentry",
+   "Comments": "-",
+   "OperatorCountry": 2060,
+   "OperatorService": 2001,
+   "YearCommissioned": 1984,
+   "YearDecommissioned": 0,
+   "Length": 46.6,
+   "Span": 44.4,
+   "Height": 12.6,
+   "WeightEmpty": 73480,
+   "WeightMax": 147000,
+   "WeightPayload": 0,
+   "Crew": 17,
+   "Agility": 1.0,
+   "ClimbRate": 11.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   597,
+   913
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8076,
+   8077
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1498
+  ],
+  "comm_ids": [
+   264,
+   187,
+   238,
+   222,
+   236,
+   237
+  ],
+  "fuel_ids": [
+   1035
+  ],
+  "signatures": [
+   {
+    "ID": 1613,
+    "Type": 3001,
+    "Front": 8.16,
+    "Side": 15.14,
+    "Rear": 8.16,
+    "Top": 22.29
+   },
+   {
+    "ID": 1613,
+    "Type": 3002,
+    "Front": 3.8,
+    "Side": 7.36,
+    "Rear": 7.48,
+    "Top": 10.16
+   },
+   {
+    "ID": 1613,
+    "Type": 4001,
+    "Front": 8.16,
+    "Side": 14.46,
+    "Rear": 19.4,
+    "Top": 18.72
+   },
+   {
+    "ID": 1613,
+    "Type": 4002,
+    "Front": 3.8,
+    "Side": 7.36,
+    "Rear": 3.8,
+    "Top": 10.16
+   },
+   {
+    "ID": 1613,
+    "Type": 5001,
+    "Front": 18.8,
+    "Side": 20.6,
+    "Rear": 18.8,
+    "Top": 21.0
+   },
+   {
+    "ID": 1613,
+    "Type": 5002,
+    "Front": 18.8,
+    "Side": 20.6,
+    "Rear": 18.8,
+    "Top": 20.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1626,
+   "Category": 2001,
+   "Type": 4002,
+   "Name": "E-3A Sentry",
+   "Comments": "RSIP",
+   "OperatorCountry": 2060,
+   "OperatorService": 2001,
+   "YearCommissioned": 2006,
+   "YearDecommissioned": 0,
+   "Length": 46.6,
+   "Span": 44.4,
+   "Height": 12.6,
+   "WeightEmpty": 73480,
+   "WeightMax": 147000,
+   "WeightPayload": 0,
+   "Crew": 17,
+   "Agility": 1.0,
+   "ClimbRate": 11.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   581,
+   597,
+   599
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8076,
+   8077
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1498
+  ],
+  "comm_ids": [
+   52,
+   264,
+   187,
+   238,
+   222,
+   236,
+   237
+  ],
+  "fuel_ids": [
+   1035
+  ],
+  "signatures": [
+   {
+    "ID": 1626,
+    "Type": 3001,
+    "Front": 8.16,
+    "Side": 15.14,
+    "Rear": 8.16,
+    "Top": 22.29
+   },
+   {
+    "ID": 1626,
+    "Type": 3002,
+    "Front": 3.8,
+    "Side": 7.36,
+    "Rear": 7.48,
+    "Top": 10.16
+   },
+   {
+    "ID": 1626,
+    "Type": 4001,
+    "Front": 8.16,
+    "Side": 14.46,
+    "Rear": 19.4,
+    "Top": 18.72
+   },
+   {
+    "ID": 1626,
+    "Type": 4002,
+    "Front": 3.8,
+    "Side": 7.36,
+    "Rear": 3.8,
+    "Top": 10.16
+   },
+   {
+    "ID": 1626,
+    "Type": 5001,
+    "Front": 18.8,
+    "Side": 20.6,
+    "Rear": 18.8,
+    "Top": 21.0
+   },
+   {
+    "ID": 1626,
+    "Type": 5002,
+    "Front": 18.8,
+    "Side": 20.6,
+    "Rear": 18.8,
+    "Top": 20.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3186,
+   "Category": 2001,
+   "Type": 4002,
+   "Name": "E-3A Sentry",
+   "Comments": "-",
+   "OperatorCountry": 2060,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 46.6,
+   "Span": 44.4,
+   "Height": 12.6,
+   "WeightEmpty": 73480,
+   "WeightMax": 147000,
+   "WeightPayload": 0,
+   "Crew": 17,
+   "Agility": 1.0,
+   "ClimbRate": 11.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   597,
+   913,
+   2253
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8076,
+   8077
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1498
+  ],
+  "comm_ids": [
+   264,
+   187,
+   238,
+   222,
+   236,
+   237
+  ],
+  "fuel_ids": [
+   1035
+  ],
+  "signatures": [
+   {
+    "ID": 3186,
+    "Type": 3001,
+    "Front": 8.16,
+    "Side": 15.14,
+    "Rear": 8.16,
+    "Top": 22.29
+   },
+   {
+    "ID": 3186,
+    "Type": 3002,
+    "Front": 3.8,
+    "Side": 7.36,
+    "Rear": 7.48,
+    "Top": 10.16
+   },
+   {
+    "ID": 3186,
+    "Type": 4001,
+    "Front": 8.16,
+    "Side": 14.46,
+    "Rear": 19.4,
+    "Top": 18.72
+   },
+   {
+    "ID": 3186,
+    "Type": 4002,
+    "Front": 3.8,
+    "Side": 7.36,
+    "Rear": 3.8,
+    "Top": 10.16
+   },
+   {
+    "ID": 3186,
+    "Type": 5001,
+    "Front": 18.8,
+    "Side": 20.6,
+    "Rear": 18.8,
+    "Top": 21.0
+   },
+   {
+    "ID": 3186,
+    "Type": 5002,
+    "Front": 18.8,
+    "Side": 20.6,
+    "Rear": 18.8,
+    "Top": 20.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4234,
+   "Category": 2001,
+   "Type": 8201,
+   "Name": "RQ-4B Global Hawk Blk 40 UAV",
+   "Comments": "5x",
+   "OperatorCountry": 2060,
+   "OperatorService": 2001,
+   "YearCommissioned": 2018,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 39.9,
+   "Height": 4.7,
+   "WeightEmpty": 6781,
+   "WeightMax": 14628,
+   "WeightPayload": 0,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 45.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   200,
+   600,
+   5511,
+   2089,
+   2815
+  ],
+  "mount_ids": [
+   1580
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   21761,
+   21762
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2528
+  ],
+  "comm_ids": [
+   20,
+   222
+  ],
+  "fuel_ids": [
+   1314
+  ],
+  "signatures": [
+   {
+    "ID": 4234,
+    "Type": 3001,
+    "Front": 5.14,
+    "Side": 5.5,
+    "Rear": 5.14,
+    "Top": 14.03
+   },
+   {
+    "ID": 4234,
+    "Type": 3002,
+    "Front": 2.58,
+    "Side": 3.16,
+    "Rear": 4.71,
+    "Top": 6.91
+   },
+   {
+    "ID": 4234,
+    "Type": 4001,
+    "Front": 5.14,
+    "Side": 7.36,
+    "Rear": 16.2,
+    "Top": 13.75
+   },
+   {
+    "ID": 4234,
+    "Type": 4002,
+    "Front": 2.58,
+    "Side": 3.16,
+    "Rear": 2.58,
+    "Top": 6.91
+   },
+   {
+    "ID": 4234,
+    "Type": 5001,
+    "Front": 9.2,
+    "Side": 11.2,
+    "Rear": 9.2,
+    "Top": 11.7
+   },
+   {
+    "ID": 4234,
+    "Type": 5002,
+    "Front": 4.2,
+    "Side": 6.2,
+    "Rear": 4.2,
+    "Top": 6.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4453,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "C-17A Globemaster III",
+   "Comments": "3x",
+   "OperatorCountry": 2060,
+   "OperatorService": 2001,
+   "YearCommissioned": 2010,
+   "YearDecommissioned": 0,
+   "Length": 53.0,
+   "Span": 51.8,
+   "Height": 16.8,
+   "WeightEmpty": 128100,
+   "WeightMax": 265350,
+   "WeightPayload": 77500,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 14.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   597
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22552,
+   22553,
+   22554
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   732
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   280
+  ],
+  "signatures": [
+   {
+    "ID": 4453,
+    "Type": 3001,
+    "Front": 9.27,
+    "Side": 17.56,
+    "Rear": 9.27,
+    "Top": 25.31
+   },
+   {
+    "ID": 4453,
+    "Type": 3002,
+    "Front": 4.23,
+    "Side": 8.33,
+    "Rear": 8.49,
+    "Top": 11.29
+   },
+   {
+    "ID": 4453,
+    "Type": 4001,
+    "Front": 9.27,
+    "Side": 15.97,
+    "Rear": 20.38,
+    "Top": 20.38
+   },
+   {
+    "ID": 4453,
+    "Type": 4002,
+    "Front": 4.23,
+    "Side": 8.33,
+    "Rear": 4.23,
+    "Top": 11.29
+   },
+   {
+    "ID": 4453,
+    "Type": 5001,
+    "Front": 20.3,
+    "Side": 22.1,
+    "Rear": 20.3,
+    "Top": 22.5
+   },
+   {
+    "ID": 4453,
+    "Type": 5002,
+    "Front": 20.3,
+    "Side": 22.1,
+    "Rear": 20.3,
+    "Top": 22.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4708,
+   "Category": 2001,
+   "Type": 8001,
+   "Name": "Airbus A.330-200 MRTT [MFF]",
+   "Comments": "-",
+   "OperatorCountry": 2060,
+   "OperatorService": 2001,
+   "YearCommissioned": 2019,
+   "YearDecommissioned": 0,
+   "Length": 58.8,
+   "Span": 60.3,
+   "Height": 17.4,
+   "WeightEmpty": 125000,
+   "WeightMax": 230000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 20.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   970
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   25663,
+   25664
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1698
+  ],
+  "comm_ids": [
+   20,
+   305,
+   52
+  ],
+  "fuel_ids": [
+   753
+  ],
+  "signatures": [
+   {
+    "ID": 4708,
+    "Type": 3001,
+    "Front": 10.4,
+    "Side": 19.0,
+    "Rear": 10.4,
+    "Top": 28.4
+   },
+   {
+    "ID": 4708,
+    "Type": 3002,
+    "Front": 4.65,
+    "Side": 8.89,
+    "Rear": 9.53,
+    "Top": 12.43
+   },
+   {
+    "ID": 4708,
+    "Type": 4001,
+    "Front": 10.4,
+    "Side": 16.83,
+    "Rear": 21.31,
+    "Top": 22.0
+   },
+   {
+    "ID": 4708,
+    "Type": 4002,
+    "Front": 4.65,
+    "Side": 8.89,
+    "Rear": 4.65,
+    "Top": 12.43
+   },
+   {
+    "ID": 4708,
+    "Type": 5001,
+    "Front": 21.7,
+    "Side": 23.4,
+    "Rear": 21.7,
+    "Top": 23.8
+   },
+   {
+    "ID": 4708,
+    "Type": 5002,
+    "Front": 21.7,
+    "Side": 23.4,
+    "Rear": 21.7,
+    "Top": 23.4
+   }
+  ]
+ }
+]

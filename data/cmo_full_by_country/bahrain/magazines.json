@@ -1,0 +1,112 @@
+{
+ "64": {
+  "ID": 64,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1991",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "403": {
+  "ID": 403,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "418": {
+  "ID": 418,
+  "Name": "Barricade DL",
+  "Comments": "2x Mounts, 12x Tube",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "594": {
+  "ID": 594,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "829": {
+  "ID": 829,
+  "Name": "20mm/80 Oerlikon Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "832": {
+  "ID": 832,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "834": {
+  "ID": 834,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

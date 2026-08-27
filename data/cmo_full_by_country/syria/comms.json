@@ -1,0 +1,178 @@
+{
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "35": {
+  "ID": 35,
+  "Name": "Torpedo Wire Control [1 Wire]",
+  "Comments": "-",
+  "Type": 8002,
+  "Range": 30,
+  "Channels": 1,
+  "IsOptional": 1,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "48": {
+  "ID": 48,
+  "Name": "AT-2/3/6/12/16 Command Datalink",
+  "Comments": "-",
+  "Type": 10032,
+  "Range": 10,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "72": {
+  "ID": 72,
+  "Name": "HF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "144": {
+  "ID": 144,
+  "Name": "AA-12 Command Datalink",
+  "Comments": "-",
+  "Type": 10054,
+  "Range": 90,
+  "Channels": 12,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 1,
+  "Hypothetical": 0
+ },
+ "156": {
+  "ID": 156,
+  "Name": "AS-7/AS-10 Command Datalink",
+  "Comments": "-",
+  "Type": 10023,
+  "Range": 10,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "195": {
+  "ID": 195,
+  "Name": "UHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "198": {
+  "ID": 198,
+  "Name": "MF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "206": {
+  "ID": 206,
+  "Name": "LF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "209": {
+  "ID": 209,
+  "Name": "VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "238": {
+  "ID": 238,
+  "Name": "HF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "239": {
+  "ID": 239,
+  "Name": "MF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "UHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "279": {
+  "ID": 279,
+  "Name": "Generic Sonobuoy Receiver [18 Channels]",
+  "Comments": "-",
+  "Type": 9002,
+  "Range": 100,
+  "Channels": 18,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "350": {
+  "ID": 350,
+  "Name": "AA-10 Command Datalink",
+  "Comments": "-",
+  "Type": 10055,
+  "Range": 100,
+  "Channels": 6,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 1,
+  "Hypothetical": 0
+ }
+}

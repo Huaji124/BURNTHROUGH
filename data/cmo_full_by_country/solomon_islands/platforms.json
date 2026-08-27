@@ -1,0 +1,159 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2501,
+   "Category": 2002,
+   "Type": 3307,
+   "Name": "03 Lata [Pacific / Pacific Forum / ASI 315 Class]",
+   "Comments": "2x",
+   "OperatorCountry": 2120,
+   "OperatorService": 2002,
+   "YearCommissioned": 1989,
+   "YearDecommissioned": 0,
+   "Length": 31.5,
+   "Beam": 8.1,
+   "Draft": 1.8,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 140,
+   "DisplacementFull": 162,
+   "Crew": 18,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 50,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1501
+  ],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   542
+  ],
+  "propulsion_ids": [
+   2223
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   351
+  ],
+  "signatures": [
+   {
+    "ID": 2501,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2501,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2501,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2501,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2501,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2501,
+    "Type": 3001,
+    "Front": 5.52,
+    "Side": 9.38,
+    "Rear": 5.52,
+    "Top": 12.51
+   },
+   {
+    "ID": 2501,
+    "Type": 3002,
+    "Front": 2.35,
+    "Side": 4.17,
+    "Rear": 2.35,
+    "Top": 4.69
+   },
+   {
+    "ID": 2501,
+    "Type": 4001,
+    "Front": 5.52,
+    "Side": 9.38,
+    "Rear": 5.52,
+    "Top": 12.51
+   },
+   {
+    "ID": 2501,
+    "Type": 4002,
+    "Front": 2.35,
+    "Side": 4.17,
+    "Rear": 2.35,
+    "Top": 4.69
+   },
+   {
+    "ID": 2501,
+    "Type": 5001,
+    "Front": 12.0,
+    "Side": 14.9,
+    "Rear": 12.0,
+    "Top": 21.4
+   },
+   {
+    "ID": 2501,
+    "Type": 5002,
+    "Front": 12.0,
+    "Side": 14.9,
+    "Rear": 12.0,
+    "Top": 21.4
+   }
+  ]
+ }
+]

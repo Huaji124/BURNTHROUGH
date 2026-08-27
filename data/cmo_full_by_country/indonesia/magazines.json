@@ -1,0 +1,442 @@
+{
+ "196": {
+  "ID": 196,
+  "Name": "DL-12T SKWS DL",
+  "Comments": "2x Mounts, Sea Gnat, GIANT",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "294": {
+  "ID": 294,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "386": {
+  "ID": 386,
+  "Name": "30mm/75 DS30B Mk1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "420": {
+  "ID": 420,
+  "Name": "Super Barricade DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "430": {
+  "ID": 430,
+  "Name": "Mk33 RBOC",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "432": {
+  "ID": 432,
+  "Name": "PK-16 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "469": {
+  "ID": 469,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "470": {
+  "ID": 470,
+  "Name": "20mm Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "472": {
+  "ID": 472,
+  "Name": "20mm Single",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "514": {
+  "ID": 514,
+  "Name": "SA-N-5",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "531": {
+  "ID": 531,
+  "Name": "Stingray Mod 0 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "542": {
+  "ID": 542,
+  "Name": "12.7mm/50 MG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "594": {
+  "ID": 594,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "598": {
+  "ID": 598,
+  "Name": "Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "618": {
+  "ID": 618,
+  "Name": "533mm Torpedo",
+  "Comments": "SUT",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 2,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "780": {
+  "ID": 780,
+  "Name": "Simbad [Mistral]",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "804": {
+  "ID": 804,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 240,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "834": {
+  "ID": 834,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "835": {
+  "ID": 835,
+  "Name": "7.62mm MG",
+  "Comments": "1x Mount, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "899": {
+  "ID": 899,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "923": {
+  "ID": 923,
+  "Name": "20mm/80 Rhinemetall Mk20 Rh202",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "938": {
+  "ID": 938,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "962": {
+  "ID": 962,
+  "Name": "25mm/60 Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1030": {
+  "ID": 1030,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 405,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1061": {
+  "ID": 1061,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1085": {
+  "ID": 1085,
+  "Name": "14.5mm MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1094": {
+  "ID": 1094,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1098": {
+  "ID": 1098,
+  "Name": "23mm Twin",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1099": {
+  "ID": 1099,
+  "Name": "37mm/63 Single DP",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 240,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1191": {
+  "ID": 1191,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 28,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1207": {
+  "ID": 1207,
+  "Name": "AK-630",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1270": {
+  "ID": 1270,
+  "Name": "Mk44 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1271": {
+  "ID": 1271,
+  "Name": "Mk44 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 6,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1353": {
+  "ID": 1353,
+  "Name": "25mm/60 2M-3M Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1367": {
+  "ID": 1367,
+  "Name": "Tetral [Mistral 2]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1507": {
+  "ID": 1507,
+  "Name": "30mm China H/PJ-12 [Type 730]",
+  "Comments": "1x Mounts, Chinese Goalkeeper copy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

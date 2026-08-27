@@ -1,0 +1,29 @@
+[
+ {
+  "ID": 279,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 55,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 1.88
+ },
+ {
+  "ID": 279,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 100,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 2.37
+ },
+ {
+  "ID": 279,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 115,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 3657.6,
+  "Consumption": 4.19
+ }
+]

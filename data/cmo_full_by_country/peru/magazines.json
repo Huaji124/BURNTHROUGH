@@ -1,0 +1,192 @@
+{
+ "69": {
+  "ID": 69,
+  "Name": "20mm/80 Oerlikon",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "197": {
+  "ID": 197,
+  "Name": "MASS",
+  "Comments": "2x Mounts, Multi Ammo Softkill",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 128,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "228": {
+  "ID": 228,
+  "Name": "Helicopter Magazine",
+  "Comments": "Peru, Aguirre, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "417": {
+  "ID": 417,
+  "Name": "SCLAR",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "469": {
+  "ID": 469,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "594": {
+  "ID": 594,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "596": {
+  "ID": 596,
+  "Name": "SAGAIE AMBL-2A",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "780": {
+  "ID": 780,
+  "Name": "Simbad [Mistral]",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "815": {
+  "ID": 815,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 170,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "832": {
+  "ID": 832,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "990": {
+  "ID": 990,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 540,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "994": {
+  "ID": 994,
+  "Name": "30mm Goalkeeper",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1081": {
+  "ID": 1081,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "8x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 1080,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1155": {
+  "ID": 1155,
+  "Name": "A.244 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

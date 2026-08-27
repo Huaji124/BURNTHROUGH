@@ -1,0 +1,232 @@
+{
+ "195": {
+  "ID": 195,
+  "Name": "Philax 105 DL",
+  "Comments": "2x Mounts, Sweden, Chaff Only",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 64,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "197": {
+  "ID": 197,
+  "Name": "MASS",
+  "Comments": "2x Mounts, Multi Ammo Softkill",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 128,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "374": {
+  "ID": 374,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "542": {
+  "ID": 542,
+  "Name": "12.7mm/50 MG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "600": {
+  "ID": 600,
+  "Name": "Philax 106 DL",
+  "Comments": "2x Mounts, Sweden, Chaff & Flares",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "835": {
+  "ID": 835,
+  "Name": "7.62mm MG",
+  "Comments": "1x Mount, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "862": {
+  "ID": 862,
+  "Name": "Mk4 Squid ASW Mortar",
+  "Comments": "1x",
+  "ArmorGeneral": 1001,
+  "ROF": 180,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1190": {
+  "ID": 1190,
+  "Name": "7.62mm Twin MG",
+  "Comments": "1x Mount, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1256": {
+  "ID": 1256,
+  "Name": "Elma ASW-600 ASW Mortar [Soft Kill]",
+  "Comments": "1985, 4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1257": {
+  "ID": 1257,
+  "Name": "Elma ASW-600 ASW Mortar [Hard Kill]",
+  "Comments": "1993, 4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1258": {
+  "ID": 1258,
+  "Name": "Elma ASW-601 ASW Mortar [Hard Kill]",
+  "Comments": "1997, 2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1322": {
+  "ID": 1322,
+  "Name": "RB 07 Sea Cat",
+  "Comments": "1x Mount, 10 rnds",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1330": {
+  "ID": 1330,
+  "Name": "40mm/70 m/48 Single Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 540,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1331": {
+  "ID": 1331,
+  "Name": "40mm/70 m/48 Single Bofors",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 810,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1332": {
+  "ID": 1332,
+  "Name": "40mm/70 m/48 Single Bofors",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 405,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1333": {
+  "ID": 1333,
+  "Name": "40mm/70 m/48 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1412": {
+  "ID": 1412,
+  "Name": "40mm/70 m/48 Single Bofors Mk3",
+  "Comments": "2x Mounts, Renovated",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1413": {
+  "ID": 1413,
+  "Name": "20mm m/40-70 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1414": {
+  "ID": 1414,
+  "Name": "20mm m/40-70 Single Bofors",
+  "Comments": "2x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

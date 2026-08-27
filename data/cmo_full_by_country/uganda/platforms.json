@@ -1,0 +1,131 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3219,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "Su-30MK2 Flanker G",
+   "Comments": "6x",
+   "OperatorCountry": 2117,
+   "OperatorService": 2001,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 22.2,
+   "Span": 14.7,
+   "Height": 5.9,
+   "WeightEmpty": 16300,
+   "WeightMax": 30450,
+   "WeightPayload": 8000,
+   "Crew": 2,
+   "Agility": 4.5,
+   "ClimbRate": 166.5,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1288,
+   2301,
+   2828,
+   2829,
+   4314
+  ],
+  "mount_ids": [
+   284,
+   1681
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   17269,
+   17270,
+   17271,
+   22731,
+   22732,
+   22733,
+   22734,
+   22735,
+   22736,
+   22737,
+   22738,
+   22739,
+   22740,
+   22741
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   280
+  ],
+  "comm_ids": [
+   20,
+   144,
+   238
+  ],
+  "fuel_ids": [
+   720
+  ],
+  "signatures": [
+   {
+    "ID": 3219,
+    "Type": 3001,
+    "Front": 3.62,
+    "Side": 7.74,
+    "Rear": 3.62,
+    "Top": 9.89
+   },
+   {
+    "ID": 3219,
+    "Type": 3002,
+    "Front": 1.93,
+    "Side": 4.21,
+    "Rear": 3.32,
+    "Top": 5.16
+   },
+   {
+    "ID": 3219,
+    "Type": 4001,
+    "Front": 3.62,
+    "Side": 9.25,
+    "Rear": 14.14,
+    "Top": 10.89
+   },
+   {
+    "ID": 3219,
+    "Type": 4002,
+    "Front": 1.93,
+    "Side": 4.21,
+    "Rear": 1.93,
+    "Top": 5.16
+   },
+   {
+    "ID": 3219,
+    "Type": 5001,
+    "Front": 9.0,
+    "Side": 11.2,
+    "Rear": 9.0,
+    "Top": 11.6
+   },
+   {
+    "ID": 3219,
+    "Type": 5002,
+    "Front": 9.0,
+    "Side": 11.2,
+    "Rear": 9.0,
+    "Top": 11.2
+   }
+  ]
+ }
+]

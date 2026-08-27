@@ -1,0 +1,86 @@
+{
+ "68": {
+  "ID": 68,
+  "Name": "Static",
+  "Type": 9001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2285": {
+  "ID": 2285,
+  "Name": "Drift",
+  "Type": 3004,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2798": {
+  "ID": 2798,
+  "Name": "Movement",
+  "Type": 3004,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2811": {
+  "ID": 2811,
+  "Name": "2x Diesels, 1x Waterjet",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2812": {
+  "ID": 2812,
+  "Name": "2x Diesels, 1x Waterjet",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2813": {
+  "ID": 2813,
+  "Name": "2x Diesels, 2x Waterjets",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2819": {
+  "ID": 2819,
+  "Name": "1x Quadcopter",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 10.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.65,
+  "SFCAfterburner": 0.0
+ }
+}

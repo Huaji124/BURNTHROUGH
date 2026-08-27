@@ -1,0 +1,32 @@
+{
+ "105": {
+  "ID": 105,
+  "Name": "20mm/90 Giat 20F2",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1098": {
+  "ID": 1098,
+  "Name": "23mm Twin",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

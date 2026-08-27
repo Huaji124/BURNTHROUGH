@@ -1,0 +1,322 @@
+{
+ "5": {
+  "ID": 5,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7F",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "28": {
+  "ID": 28,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7F",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "45": {
+  "ID": 45,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7F",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "52": {
+  "ID": 52,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7F",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "320": {
+  "ID": 320,
+  "Name": "Mk16 ASROC",
+  "Comments": "Type 73",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "321": {
+  "ID": 321,
+  "Name": "Type 73 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "368": {
+  "ID": 368,
+  "Name": "Helicopter Magazine",
+  "Comments": "Japan, 2006",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "385": {
+  "ID": 385,
+  "Name": "30mm Mk46 Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "499": {
+  "ID": 499,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "504": {
+  "ID": 504,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7H",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "544": {
+  "ID": 544,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "545": {
+  "ID": 545,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "597": {
+  "ID": 597,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "659": {
+  "ID": 659,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "663": {
+  "ID": 663,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "664": {
+  "ID": 664,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "741": {
+  "ID": 741,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "771": {
+  "ID": 771,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "840": {
+  "ID": 840,
+  "Name": "20mm/80 Oerlikon Mk10 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "941": {
+  "ID": 941,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "950": {
+  "ID": 950,
+  "Name": "40mm/70 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "951": {
+  "ID": 951,
+  "Name": "20mm/76 Sea Vulcan",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "996": {
+  "ID": 996,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1060": {
+  "ID": 1060,
+  "Name": "20mm/76 Sea Vulcan",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1145": {
+  "ID": 1145,
+  "Name": "Mk16 ASROC",
+  "Comments": "Mk46 Mod 5",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

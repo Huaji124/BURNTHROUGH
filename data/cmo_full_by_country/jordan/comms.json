@@ -1,0 +1,57 @@
+{
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "43": {
+  "ID": 43,
+  "Name": "AIM-120 Command Datalink [One-Way]",
+  "Comments": "-",
+  "Type": 10009,
+  "Range": 40,
+  "Channels": 20,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 1,
+  "Hypothetical": 0
+ },
+ "80": {
+  "ID": 80,
+  "Name": "AS.30 Command Datalink",
+  "Comments": "-",
+  "Type": 10019,
+  "Range": 50,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "146": {
+  "ID": 146,
+  "Name": "TOW Guidance Unit",
+  "Comments": "-",
+  "Type": 10053,
+  "Range": 20,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "187": {
+  "ID": 187,
+  "Name": "UHF/VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 4,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ }
+}

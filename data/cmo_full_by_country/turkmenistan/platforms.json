@@ -1,0 +1,170 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2419,
+   "Category": 2002,
+   "Type": 3406,
+   "Name": "828 Edermen [Pr.1241.8 Tarantul V]",
+   "Comments": "-",
+   "OperatorCountry": 2112,
+   "OperatorService": 2002,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 59.9,
+   "Beam": 11.5,
+   "Draft": 2.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 391,
+   "DisplacementFull": 457,
+   "Crew": 41,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 110,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1097,
+   1548,
+   2400,
+   2420,
+   2427,
+   2646
+  ],
+  "mount_ids": [
+   258,
+   2818,
+   420,
+   460,
+   114
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   436,
+   502,
+   765
+  ],
+  "propulsion_ids": [
+   227
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1640
+  ],
+  "signatures": [
+   {
+    "ID": 2419,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2419,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2419,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2419,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2419,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2419,
+    "Type": 3001,
+    "Front": 6.69,
+    "Side": 11.38,
+    "Rear": 6.69,
+    "Top": 15.17
+   },
+   {
+    "ID": 2419,
+    "Type": 3002,
+    "Front": 2.84,
+    "Side": 5.06,
+    "Rear": 2.84,
+    "Top": 5.69
+   },
+   {
+    "ID": 2419,
+    "Type": 4001,
+    "Front": 6.69,
+    "Side": 11.38,
+    "Rear": 6.69,
+    "Top": 15.17
+   },
+   {
+    "ID": 2419,
+    "Type": 4002,
+    "Front": 2.84,
+    "Side": 5.06,
+    "Rear": 2.84,
+    "Top": 5.69
+   },
+   {
+    "ID": 2419,
+    "Type": 5001,
+    "Front": 18.7,
+    "Side": 21.9,
+    "Rear": 18.7,
+    "Top": 28.4
+   },
+   {
+    "ID": 2419,
+    "Type": 5002,
+    "Front": 18.7,
+    "Side": 21.9,
+    "Rear": 18.7,
+    "Top": 28.4
+   }
+  ]
+ }
+]

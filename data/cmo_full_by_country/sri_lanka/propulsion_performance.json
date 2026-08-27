@@ -1,0 +1,74 @@
+[
+ {
+  "ID": 1436,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 5,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.9
+ },
+ {
+  "ID": 1436,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 42,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 1.0
+ },
+ {
+  "ID": 1436,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 48,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 1.89
+ },
+ {
+  "ID": 1436,
+  "AltitudeBand": 1,
+  "Throttle": 4,
+  "Speed": 52,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 3.75
+ },
+ {
+  "ID": 2311,
+  "AltitudeBand": 1,
+  "Throttle": 1,
+  "Speed": 5,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.89
+ },
+ {
+  "ID": 2311,
+  "AltitudeBand": 1,
+  "Throttle": 2,
+  "Speed": 13,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 0.99
+ },
+ {
+  "ID": 2311,
+  "AltitudeBand": 1,
+  "Throttle": 3,
+  "Speed": 16,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 2.21
+ },
+ {
+  "ID": 2311,
+  "AltitudeBand": 1,
+  "Throttle": 4,
+  "Speed": 18,
+  "AltitudeMin": 0.0,
+  "AltitudeMax": 0.0,
+  "Consumption": 3.43
+ }
+]

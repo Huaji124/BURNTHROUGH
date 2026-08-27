@@ -1,0 +1,402 @@
+{
+ "171": {
+  "ID": 171,
+  "Name": "30mm China H/PJ-12 [Type 730]",
+  "Comments": "2x Mounts, Chinese Goalkeeper copy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "172": {
+  "ID": 172,
+  "Name": "China Type 946 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "184": {
+  "ID": 184,
+  "Name": "China Type 945G DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "226": {
+  "ID": 226,
+  "Name": "A.244S [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "296": {
+  "ID": 296,
+  "Name": "40mm/60 Mk9 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "327": {
+  "ID": 327,
+  "Name": "Helicopter Magazine",
+  "Comments": "France, 1972, Torpedo+Missile",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "347": {
+  "ID": 347,
+  "Name": "40mm/70 Single Breda Fast Forty",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "389": {
+  "ID": 389,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 720,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "390": {
+  "ID": 390,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 480,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "402": {
+  "ID": 402,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "420": {
+  "ID": 420,
+  "Name": "Super Barricade DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "441": {
+  "ID": 441,
+  "Name": "Outfit DLE Plessy Shield",
+  "Comments": "2x Mounts, 1983",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "457": {
+  "ID": 457,
+  "Name": "Super Barricade DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "470": {
+  "ID": 470,
+  "Name": "20mm Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "598": {
+  "ID": 598,
+  "Name": "Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "601": {
+  "ID": 601,
+  "Name": "Plessey Shield DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "745": {
+  "ID": 745,
+  "Name": "China Type 87 ASW Rockets",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 60,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "780": {
+  "ID": 780,
+  "Name": "Simbad [Mistral]",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "823": {
+  "ID": 823,
+  "Name": "7.62mm MG",
+  "Comments": "4x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "834": {
+  "ID": 834,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "858": {
+  "ID": 858,
+  "Name": "25mm/60 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "862": {
+  "ID": 862,
+  "Name": "Mk4 Squid ASW Mortar",
+  "Comments": "1x",
+  "ArmorGeneral": 1001,
+  "ROF": 180,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "910": {
+  "ID": 910,
+  "Name": "30mm/75 Twin Oerlikon Emerlec-30",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "923": {
+  "ID": 923,
+  "Name": "20mm/80 Rhinemetall Mk20 Rh202",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "951": {
+  "ID": 951,
+  "Name": "20mm/76 Sea Vulcan",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "995": {
+  "ID": 995,
+  "Name": "China Type 65 ASW Rockets",
+  "Comments": "6 Tubes, Luda, 2x Mounts, Type 65",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1019": {
+  "ID": 1019,
+  "Name": "A.244 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1026": {
+  "ID": 1026,
+  "Name": "40mm/70 Mk9",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1029": {
+  "ID": 1029,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1250": {
+  "ID": 1250,
+  "Name": "China Type 81 ASW Rockets",
+  "Comments": "5 Tubes, Jianghu, 2x Mounts, Type 65",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1256": {
+  "ID": 1256,
+  "Name": "Elma ASW-600 ASW Mortar [Soft Kill]",
+  "Comments": "1985, 4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1298": {
+  "ID": 1298,
+  "Name": "Yu-7 [External Tubes]",
+  "Comments": "12x",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1407": {
+  "ID": 1407,
+  "Name": "30mm China H/PJ-17",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1423": {
+  "ID": 1423,
+  "Name": "Generic Magazine",
+  "Comments": "For generic use",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1507": {
+  "ID": 1507,
+  "Name": "30mm China H/PJ-12 [Type 730]",
+  "Comments": "1x Mounts, Chinese Goalkeeper copy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

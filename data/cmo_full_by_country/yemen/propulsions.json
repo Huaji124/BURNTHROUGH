@@ -1,0 +1,98 @@
+{
+ "337": {
+  "ID": 337,
+  "Name": "2x RD-33",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 5041.0,
+  "ThrustPerEngineAfterburner": 8302.0,
+  "SFCMilitary": 0.74,
+  "SFCAfterburner": 2.05
+ },
+ "356": {
+  "ID": 356,
+  "Name": "2x TV3-117V",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2100.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.463,
+  "SFCAfterburner": 0.0
+ },
+ "370": {
+  "ID": 370,
+  "Name": "1x AL-21F-3",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 7800.0,
+  "ThrustPerEngineAfterburner": 11200.0,
+  "SFCMilitary": 0.76,
+  "SFCAfterburner": 1.86
+ },
+ "1480": {
+  "ID": 1480,
+  "Name": "1x R-13F-300",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4070.0,
+  "ThrustPerEngineAfterburner": 6495.0,
+  "SFCMilitary": 0.95,
+  "SFCAfterburner": 2.25
+ },
+ "1649": {
+  "ID": 1649,
+  "Name": "3x M-503A / Chinese Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2018": {
+  "ID": 2018,
+  "Name": "2x M-15 Gas Turbines",
+  "Type": 3003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2019": {
+  "ID": 2019,
+  "Name": "3x M-504B Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2177": {
+  "ID": 2177,
+  "Name": "2x MTU-8V Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

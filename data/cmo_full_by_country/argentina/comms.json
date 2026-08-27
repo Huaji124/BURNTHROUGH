@@ -1,0 +1,145 @@
+{
+ "16": {
+  "ID": 16,
+  "Name": "Generic NATO Sonobuoy Receiver [31 Channels]",
+  "Comments": "AN/ARR-72",
+  "Type": 9001,
+  "Range": 100,
+  "Channels": 31,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "17": {
+  "ID": 17,
+  "Name": "Generic NATO Sonobuoy Receiver [99 Channels]",
+  "Comments": "AN/ARR-78, 1985",
+  "Type": 9001,
+  "Range": 100,
+  "Channels": 99,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "55": {
+  "ID": 55,
+  "Name": "AS.11/12 Missile Command",
+  "Comments": "-",
+  "Type": 10015,
+  "Range": 4,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "72": {
+  "ID": 72,
+  "Name": "HF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "187": {
+  "ID": 187,
+  "Name": "UHF/VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 4,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "195": {
+  "ID": 195,
+  "Name": "UHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "207": {
+  "ID": 207,
+  "Name": "AN/ARC-161 HF Voice & Data Communications",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 400,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "209": {
+  "ID": 209,
+  "Name": "VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "238": {
+  "ID": 238,
+  "Name": "HF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "263": {
+  "ID": 263,
+  "Name": "AN/ARC-101 VHF Navigation & Communications",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 200,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "UHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ }
+}

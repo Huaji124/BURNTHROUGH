@@ -1,0 +1,22 @@
+{
+ "418": {
+  "ID": 418,
+  "Name": "Barricade DL",
+  "Comments": "2x Mounts, 12x Tube",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "418": {
+  "ID": 418,
+  "Name": "Barricade DL",
+  "Comments": "2x Mounts, 12x Tube",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "514": {
+  "ID": 514,
+  "Name": "SA-N-5",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1045": {
+  "ID": 1045,
+  "Name": "20mm Quad",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

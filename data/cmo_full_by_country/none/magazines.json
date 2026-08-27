@@ -1,0 +1,22 @@
+{
+ "155": {
+  "ID": 155,
+  "Name": "12.7mm/50 MG",
+  "Comments": "5x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 500,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1375": {
+  "ID": 1375,
+  "Name": "Carrier Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

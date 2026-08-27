@@ -1,0 +1,156 @@
+{
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "72": {
+  "ID": 72,
+  "Name": "HF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "148": {
+  "ID": 148,
+  "Name": "Gabriel Command Datalink",
+  "Comments": "-",
+  "Type": 10042,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 1,
+  "Hypothetical": 0
+ },
+ "187": {
+  "ID": 187,
+  "Name": "UHF/VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 4,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "195": {
+  "ID": 195,
+  "Name": "UHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "200": {
+  "ID": 200,
+  "Name": "AN/ARC-158 UHF Datalink",
+  "Comments": "-",
+  "Type": 4003,
+  "Range": 300,
+  "Channels": 4,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "209": {
+  "ID": 209,
+  "Name": "VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "218": {
+  "ID": 218,
+  "Name": "AN/WSC-3 FLTSATCOM SHF Shipboard Transceiver",
+  "Comments": "1982",
+  "Type": 2002,
+  "Range": 8000,
+  "Channels": 20,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "222": {
+  "ID": 222,
+  "Name": "MILSTAR SATCOM UHF",
+  "Comments": "-",
+  "Type": 2003,
+  "Range": 8000,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "227": {
+  "ID": 227,
+  "Name": "AN/SRR-1",
+  "Comments": "-",
+  "Type": 6001,
+  "Range": 1000,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "238": {
+  "ID": 238,
+  "Name": "HF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "256": {
+  "ID": 256,
+  "Name": "AN/ARC-51 UHF Communications",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 50,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "UHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ }
+}

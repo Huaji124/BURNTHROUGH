@@ -1,0 +1,26 @@
+{
+ "2338": {
+  "ID": 2338,
+  "Name": "4x Boilers, 2x Steam Turbines",
+  "Type": 3002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2649": {
+  "ID": 2649,
+  "Name": "4x Gas Turbines",
+  "Type": 3003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

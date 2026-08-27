@@ -1,0 +1,1358 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3756,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "J-6A Farmer [MiG-19P Copy]",
+   "Comments": "-",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 1980,
+   "YearDecommissioned": 0,
+   "Length": 14.9,
+   "Span": 9.2,
+   "Height": 3.9,
+   "WeightEmpty": 5760,
+   "WeightMax": 10000,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 76.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4510
+  ],
+  "mount_ids": [
+   293
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   514,
+   515,
+   516,
+   3319,
+   13312,
+   15994,
+   16106
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   464
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   815
+  ],
+  "signatures": [
+   {
+    "ID": 3756,
+    "Type": 3001,
+    "Front": 2.47,
+    "Side": 5.39,
+    "Rear": 2.47,
+    "Top": 6.74
+   },
+   {
+    "ID": 3756,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.11,
+    "Rear": 2.26,
+    "Top": 3.75
+   },
+   {
+    "ID": 3756,
+    "Type": 4001,
+    "Front": 2.47,
+    "Side": 7.27,
+    "Rear": 12.18,
+    "Top": 8.44
+   },
+   {
+    "ID": 3756,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.11,
+    "Rear": 1.4,
+    "Top": 3.75
+   },
+   {
+    "ID": 3756,
+    "Type": 5001,
+    "Front": 4.4,
+    "Side": 6.7,
+    "Rear": 4.4,
+    "Top": 7.1
+   },
+   {
+    "ID": 3756,
+    "Type": 5002,
+    "Front": 4.4,
+    "Side": 6.7,
+    "Rear": 4.4,
+    "Top": 6.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3757,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "MiG-29SE Fulcrum C",
+   "Comments": "23x",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 2003,
+   "YearDecommissioned": 0,
+   "Length": 17.3,
+   "Span": 11.4,
+   "Height": 4.73,
+   "WeightEmpty": 11200,
+   "WeightMax": 18500,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 183.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   555,
+   845,
+   2057,
+   2943,
+   4310,
+   5969
+  ],
+  "mount_ids": [
+   284,
+   1787
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18605,
+   18607,
+   18608,
+   18609,
+   18610,
+   18611,
+   18612,
+   18613,
+   18614,
+   18615,
+   18616,
+   18617,
+   18618,
+   18619,
+   18620,
+   18621,
+   18622,
+   18623,
+   26875
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1757
+  ],
+  "comm_ids": [
+   20,
+   72,
+   350
+  ],
+  "fuel_ids": [
+   1142
+  ],
+  "signatures": [
+   {
+    "ID": 3757,
+    "Type": 3001,
+    "Front": 2.89,
+    "Side": 6.22,
+    "Rear": 2.89,
+    "Top": 7.89
+   },
+   {
+    "ID": 3757,
+    "Type": 3002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 2.65,
+    "Top": 4.28
+   },
+   {
+    "ID": 3757,
+    "Type": 4001,
+    "Front": 2.89,
+    "Side": 7.99,
+    "Rear": 12.95,
+    "Top": 9.37
+   },
+   {
+    "ID": 3757,
+    "Type": 4002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 1.6,
+    "Top": 4.28
+   },
+   {
+    "ID": 3757,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 3757,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3758,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-25K Frogfoot A",
+   "Comments": "12x",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 2008,
+   "YearDecommissioned": 0,
+   "Length": 15.5,
+   "Span": 14.4,
+   "Height": 4.8,
+   "WeightEmpty": 9510,
+   "WeightMax": 17530,
+   "WeightPayload": 4400,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 53.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1010,
+   "AircraftFuselageArmor": 1010,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2309,
+   2943
+  ],
+  "mount_ids": [
+   2150,
+   1683
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18624,
+   18625,
+   18626,
+   18627,
+   18628,
+   18629,
+   18630,
+   18631,
+   18632,
+   18633,
+   18634,
+   18635,
+   18636,
+   18637,
+   18638,
+   18639,
+   18640
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1482
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   621
+  ],
+  "signatures": [
+   {
+    "ID": 3758,
+    "Type": 3001,
+    "Front": 3.0,
+    "Side": 5.78,
+    "Rear": 3.0,
+    "Top": 8.19
+   },
+   {
+    "ID": 3758,
+    "Type": 3002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 2.75,
+    "Top": 4.41
+   },
+   {
+    "ID": 3758,
+    "Type": 4001,
+    "Front": 3.0,
+    "Side": 7.61,
+    "Rear": 13.14,
+    "Top": 9.6
+   },
+   {
+    "ID": 3758,
+    "Type": 4002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 1.65,
+    "Top": 4.41
+   },
+   {
+    "ID": 3758,
+    "Type": 5001,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.4
+   },
+   {
+    "ID": 3758,
+    "Type": 5002,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3759,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-24MK Fencer D",
+   "Comments": "12x",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 2012,
+   "YearDecommissioned": 0,
+   "Length": 24.6,
+   "Span": 17.6,
+   "Height": 6.2,
+   "WeightEmpty": 22320,
+   "WeightMax": 39570,
+   "WeightPayload": 8100,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 84.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   898,
+   1279,
+   1791,
+   2237,
+   2255,
+   2943,
+   5078
+  ],
+  "mount_ids": [
+   2129,
+   1680
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18641,
+   18642,
+   18643,
+   18644,
+   18645,
+   18646,
+   18647,
+   18648,
+   18649,
+   18650,
+   18651,
+   18652,
+   18653,
+   18654,
+   18655,
+   18656,
+   18657,
+   18658,
+   18659,
+   23855,
+   23856,
+   23857,
+   23858,
+   23859,
+   23860,
+   23861,
+   23862,
+   23863,
+   23864,
+   23865,
+   23866,
+   23867,
+   23868,
+   23869,
+   23870,
+   23945,
+   23946
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   417
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   718
+  ],
+  "signatures": [
+   {
+    "ID": 3759,
+    "Type": 3001,
+    "Front": 4.09,
+    "Side": 8.41,
+    "Rear": 4.09,
+    "Top": 11.16
+   },
+   {
+    "ID": 3759,
+    "Type": 3002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 3.75,
+    "Top": 5.71
+   },
+   {
+    "ID": 3759,
+    "Type": 4001,
+    "Front": 4.09,
+    "Side": 9.77,
+    "Rear": 14.82,
+    "Top": 11.81
+   },
+   {
+    "ID": 3759,
+    "Type": 4002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 2.14,
+    "Top": 5.71
+   },
+   {
+    "ID": 3759,
+    "Type": 5001,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 13.0
+   },
+   {
+    "ID": 3759,
+    "Type": 5002,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 12.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3760,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "A-5C Fantan",
+   "Comments": "Q-5III, x20",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 2004,
+   "YearDecommissioned": 0,
+   "Length": 16.7,
+   "Span": 9.8,
+   "Height": 4.5,
+   "WeightEmpty": 6375,
+   "WeightMax": 11830,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 72.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2769
+  ],
+  "mount_ids": [
+   2097,
+   1826
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18660,
+   18661,
+   18662,
+   18663,
+   18664
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1595
+  ],
+  "comm_ids": [
+   194
+  ],
+  "fuel_ids": [
+   491
+  ],
+  "signatures": [
+   {
+    "ID": 3760,
+    "Type": 3001,
+    "Front": 2.69,
+    "Side": 6.01,
+    "Rear": 2.69,
+    "Top": 7.34
+   },
+   {
+    "ID": 3760,
+    "Type": 3002,
+    "Front": 1.51,
+    "Side": 3.41,
+    "Rear": 2.46,
+    "Top": 4.03
+   },
+   {
+    "ID": 3760,
+    "Type": 4001,
+    "Front": 2.69,
+    "Side": 7.81,
+    "Rear": 12.59,
+    "Top": 8.93
+   },
+   {
+    "ID": 3760,
+    "Type": 4002,
+    "Front": 1.51,
+    "Side": 3.41,
+    "Rear": 1.51,
+    "Top": 4.03
+   },
+   {
+    "ID": 3760,
+    "Type": 5001,
+    "Front": 5.4,
+    "Side": 7.7,
+    "Rear": 5.4,
+    "Top": 8.1
+   },
+   {
+    "ID": 3760,
+    "Type": 5002,
+    "Front": 5.4,
+    "Side": 7.7,
+    "Rear": 5.4,
+    "Top": 7.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3761,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "MiG-23BN Flogger H",
+   "Comments": "12x, Ex-Libyan",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 1988,
+   "YearDecommissioned": 0,
+   "Length": 15.3,
+   "Span": 14.0,
+   "Height": 4.4,
+   "WeightEmpty": 10440,
+   "WeightMax": 20000,
+   "WeightPayload": 3000,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 111.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1010,
+   "AircraftFuselageArmor": 1010,
+   "AircraftCockpitArmor": 1010,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2524,
+   2750,
+   1150
+  ],
+  "mount_ids": [
+   274,
+   1684
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18665,
+   18666,
+   18667,
+   18668,
+   18669,
+   18670,
+   18671,
+   18672,
+   18673,
+   18674,
+   18675,
+   18676,
+   18677,
+   18678,
+   24111,
+   24112,
+   24113,
+   24114,
+   24115,
+   24116,
+   24117,
+   24118,
+   24119,
+   24120,
+   24121,
+   24122,
+   24123
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   354
+  ],
+  "comm_ids": [
+   156,
+   195
+  ],
+  "fuel_ids": [
+   761
+  ],
+  "signatures": [
+   {
+    "ID": 3761,
+    "Type": 3001,
+    "Front": 2.94,
+    "Side": 5.62,
+    "Rear": 2.94,
+    "Top": 8.04
+   },
+   {
+    "ID": 3761,
+    "Type": 3002,
+    "Front": 1.62,
+    "Side": 3.22,
+    "Rear": 2.7,
+    "Top": 4.34
+   },
+   {
+    "ID": 3761,
+    "Type": 4001,
+    "Front": 2.94,
+    "Side": 7.47,
+    "Rear": 13.05,
+    "Top": 9.48
+   },
+   {
+    "ID": 3761,
+    "Type": 4002,
+    "Front": 1.62,
+    "Side": 3.22,
+    "Rear": 1.62,
+    "Top": 4.34
+   },
+   {
+    "ID": 3761,
+    "Type": 5001,
+    "Front": 6.5,
+    "Side": 8.8,
+    "Rear": 6.5,
+    "Top": 9.2
+   },
+   {
+    "ID": 3761,
+    "Type": 5002,
+    "Front": 6.5,
+    "Side": 8.8,
+    "Rear": 6.5,
+    "Top": 8.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3762,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "F-7B Fishbed [MiG-21 Copy]",
+   "Comments": "10x, Export J-7II",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 1981,
+   "YearDecommissioned": 0,
+   "Length": 14.0,
+   "Span": 7.2,
+   "Height": 4.1,
+   "WeightEmpty": 4871,
+   "WeightMax": 8625,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 83.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   869
+  ],
+  "mount_ids": [
+   293
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18679,
+   18680,
+   18681,
+   18682,
+   18683,
+   18684
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   338
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   565
+  ],
+  "signatures": [
+   {
+    "ID": 3762,
+    "Type": 3001,
+    "Front": 2.2,
+    "Side": 5.21,
+    "Rear": 2.2,
+    "Top": 6.01
+   },
+   {
+    "ID": 3762,
+    "Type": 3002,
+    "Front": 1.27,
+    "Side": 3.03,
+    "Rear": 2.02,
+    "Top": 3.41
+   },
+   {
+    "ID": 3762,
+    "Type": 4001,
+    "Front": 2.2,
+    "Side": 7.1,
+    "Rear": 11.65,
+    "Top": 7.81
+   },
+   {
+    "ID": 3762,
+    "Type": 4002,
+    "Front": 1.27,
+    "Side": 3.03,
+    "Rear": 1.27,
+    "Top": 3.41
+   },
+   {
+    "ID": 3762,
+    "Type": 5001,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.8
+   },
+   {
+    "ID": 3762,
+    "Type": 5002,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3763,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "F-7N Airguard",
+   "Comments": "22x, Iran",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 14.9,
+   "Span": 8.3,
+   "Height": 4.1,
+   "WeightEmpty": 5290,
+   "WeightMax": 9100,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 108.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   646
+  ],
+  "mount_ids": [
+   293
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18685,
+   18686,
+   18687,
+   18688,
+   18689,
+   18690,
+   18691,
+   18692,
+   18693,
+   18694,
+   18695
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   655
+  ],
+  "comm_ids": [
+   20,
+   264
+  ],
+  "fuel_ids": [
+   32
+  ],
+  "signatures": [
+   {
+    "ID": 3763,
+    "Type": 3001,
+    "Front": 2.39,
+    "Side": 5.44,
+    "Rear": 2.39,
+    "Top": 6.52
+   },
+   {
+    "ID": 3763,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.14,
+    "Rear": 2.19,
+    "Top": 3.65
+   },
+   {
+    "ID": 3763,
+    "Type": 4001,
+    "Front": 2.39,
+    "Side": 7.31,
+    "Rear": 12.02,
+    "Top": 8.25
+   },
+   {
+    "ID": 3763,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.14,
+    "Rear": 1.36,
+    "Top": 3.65
+   },
+   {
+    "ID": 3763,
+    "Type": 5001,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 3763,
+    "Type": 5002,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3764,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "Mi-24P Hind F",
+   "Comments": "20x++",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 2001,
+   "YearDecommissioned": 0,
+   "Length": 17.5,
+   "Span": 1.7,
+   "Height": 4.4,
+   "WeightEmpty": 8250,
+   "WeightMax": 12000,
+   "WeightPayload": 1480,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 12.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1015,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4626,
+   1985,
+   2750,
+   2924,
+   4623
+  ],
+  "mount_ids": [
+   950,
+   1848
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18696,
+   18697,
+   18698
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   356
+  ],
+  "comm_ids": [
+   20,
+   48
+  ],
+  "fuel_ids": [
+   668
+  ],
+  "signatures": [
+   {
+    "ID": 3764,
+    "Type": 3001,
+    "Front": 2.01,
+    "Side": 6.19,
+    "Rear": 2.01,
+    "Top": 5.5
+   },
+   {
+    "ID": 3764,
+    "Type": 3002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.84,
+    "Top": 3.16
+   },
+   {
+    "ID": 3764,
+    "Type": 4001,
+    "Front": 2.01,
+    "Side": 7.16,
+    "Rear": 10.12,
+    "Top": 6.62
+   },
+   {
+    "ID": 3764,
+    "Type": 4002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.18,
+    "Top": 3.16
+   },
+   {
+    "ID": 3764,
+    "Type": 5001,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.8
+   },
+   {
+    "ID": 3764,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3765,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "C-130H Hercules",
+   "Comments": "4x",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 1981,
+   "YearDecommissioned": 0,
+   "Length": 29.8,
+   "Span": 40.4,
+   "Height": 11.6,
+   "WeightEmpty": 34400,
+   "WeightMax": 70300,
+   "WeightPayload": 19090,
+   "Crew": 5,
+   "Agility": 1.0,
+   "ClimbRate": 9.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2690
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   18699,
+   18700,
+   18701,
+   18702,
+   18703,
+   18704
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   39
+  ],
+  "comm_ids": [
+   194,
+   238
+  ],
+  "fuel_ids": [
+   1322
+  ],
+  "signatures": [
+   {
+    "ID": 3765,
+    "Type": 3001,
+    "Front": 6.46,
+    "Side": 10.97,
+    "Rear": 6.46,
+    "Top": 17.65
+   },
+   {
+    "ID": 3765,
+    "Type": 3002,
+    "Front": 3.13,
+    "Side": 5.63,
+    "Rear": 5.92,
+    "Top": 8.36
+   },
+   {
+    "ID": 3765,
+    "Type": 4001,
+    "Front": 6.46,
+    "Side": 11.67,
+    "Rear": 17.71,
+    "Top": 16.02
+   },
+   {
+    "ID": 3765,
+    "Type": 4002,
+    "Front": 3.13,
+    "Side": 5.63,
+    "Rear": 3.13,
+    "Top": 8.36
+   },
+   {
+    "ID": 3765,
+    "Type": 5001,
+    "Front": 16.0,
+    "Side": 17.9,
+    "Rear": 16.0,
+    "Top": 18.3
+   },
+   {
+    "ID": 3765,
+    "Type": 5002,
+    "Front": 16.0,
+    "Side": 17.9,
+    "Rear": 16.0,
+    "Top": 17.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3766,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "Mi-8MT Hip H",
+   "Comments": "20x",
+   "OperatorCountry": 2114,
+   "OperatorService": 2001,
+   "YearCommissioned": 2004,
+   "YearDecommissioned": 0,
+   "Length": 18.2,
+   "Span": 5.7,
+   "Height": 5.7,
+   "WeightEmpty": 7160,
+   "WeightMax": 12000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   18705,
+   18706,
+   18707,
+   18708,
+   18709
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1530
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1058
+  ],
+  "signatures": [
+   {
+    "ID": 3766,
+    "Type": 3001,
+    "Front": 2.45,
+    "Side": 6.69,
+    "Rear": 2.45,
+    "Top": 6.69
+   },
+   {
+    "ID": 3766,
+    "Type": 3002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 2.25,
+    "Top": 3.73
+   },
+   {
+    "ID": 3766,
+    "Type": 4001,
+    "Front": 2.45,
+    "Side": 8.39,
+    "Rear": 12.15,
+    "Top": 8.39
+   },
+   {
+    "ID": 3766,
+    "Type": 4002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 1.39,
+    "Top": 3.73
+   },
+   {
+    "ID": 3766,
+    "Type": 5001,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 7.1
+   },
+   {
+    "ID": 3766,
+    "Type": 5002,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 6.6
+   }
+  ]
+ }
+]

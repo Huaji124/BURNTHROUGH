@@ -1,0 +1,110 @@
+{
+ "39": {
+  "ID": 39,
+  "Name": "4x T56-A-15",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 4591.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.54,
+  "SFCAfterburner": 0.0
+ },
+ "335": {
+  "ID": 335,
+  "Name": "1x Viper Mk.540-20",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1816.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.97,
+  "SFCAfterburner": 0.0
+ },
+ "656": {
+  "ID": 656,
+  "Name": "2x Larzac 04-C5",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1362.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.71,
+  "SFCAfterburner": 0.0
+ },
+ "1129": {
+  "ID": 1129,
+  "Name": "2x TV3-117MT",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1900.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.5,
+  "SFCAfterburner": 0.0
+ },
+ "1543": {
+  "ID": 1543,
+  "Name": "2x Arriel 1C2",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 700.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.55,
+  "SFCAfterburner": 0.0
+ },
+ "1548": {
+  "ID": 1548,
+  "Name": "1x Astazou XIVM",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 771.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.55,
+  "SFCAfterburner": 0.0
+ },
+ "2408": {
+  "ID": 2408,
+  "Name": "2x CT7-9C",
+  "Type": 2003,
+  "Comments": "Extra fuel",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1750.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.461,
+  "SFCAfterburner": 0.0
+ },
+ "2598": {
+  "ID": 2598,
+  "Name": "2x SACM 195V16 CZSHR Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2599": {
+  "ID": 2599,
+  "Name": "2x Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

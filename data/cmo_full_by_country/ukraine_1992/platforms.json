@@ -1,0 +1,9183 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2475,
+   "Category": 2002,
+   "Type": 3411,
+   "Name": "U 150 Konotop [Pr.206MR Vikhr]",
+   "Comments": "5x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1996,
+   "YearDecommissioned": 0,
+   "Length": 38.6,
+   "Beam": 12.5,
+   "Draft": 2.1,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 230,
+   "DisplacementFull": 250,
+   "Crew": 25,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 73,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1548,
+   3411
+  ],
+  "mount_ids": [
+   391,
+   460,
+   404,
+   258,
+   1482
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   768,
+   432
+  ],
+  "propulsion_ids": [
+   2196
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   463
+  ],
+  "signatures": [
+   {
+    "ID": 2475,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2475,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2475,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2475,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2475,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2475,
+    "Type": 3001,
+    "Front": 5.87,
+    "Side": 9.97,
+    "Rear": 5.87,
+    "Top": 13.3
+   },
+   {
+    "ID": 2475,
+    "Type": 3002,
+    "Front": 2.49,
+    "Side": 4.43,
+    "Rear": 2.49,
+    "Top": 4.99
+   },
+   {
+    "ID": 2475,
+    "Type": 4001,
+    "Front": 5.87,
+    "Side": 9.97,
+    "Rear": 5.87,
+    "Top": 13.3
+   },
+   {
+    "ID": 2475,
+    "Type": 4002,
+    "Front": 2.49,
+    "Side": 4.43,
+    "Rear": 2.49,
+    "Top": 4.99
+   },
+   {
+    "ID": 2475,
+    "Type": 5001,
+    "Front": 14.1,
+    "Side": 17.1,
+    "Rear": 14.1,
+    "Top": 23.6
+   },
+   {
+    "ID": 2475,
+    "Type": 5002,
+    "Front": 14.1,
+    "Side": 17.1,
+    "Rear": 14.1,
+    "Top": 23.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2476,
+   "Category": 2002,
+   "Type": 3406,
+   "Name": "U 155 Prodniprovja [Tarantul II, Pr.1241.1T]",
+   "Comments": "2x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 56.1,
+   "Beam": 10.2,
+   "Draft": 2.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 436,
+   "DisplacementFull": 493,
+   "Crew": 40,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 120,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1289,
+   2427,
+   1548,
+   2400,
+   473,
+   2420
+  ],
+  "mount_ids": [
+   258,
+   391,
+   420,
+   1900,
+   2920
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   432,
+   1547,
+   1209
+  ],
+  "propulsion_ids": [
+   2017
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1407
+  ],
+  "signatures": [
+   {
+    "ID": 2476,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2476,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2476,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2476,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2476,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2476,
+    "Type": 3001,
+    "Front": 6.56,
+    "Side": 11.16,
+    "Rear": 6.56,
+    "Top": 14.88
+   },
+   {
+    "ID": 2476,
+    "Type": 3002,
+    "Front": 2.79,
+    "Side": 4.96,
+    "Rear": 2.79,
+    "Top": 5.58
+   },
+   {
+    "ID": 2476,
+    "Type": 4001,
+    "Front": 6.56,
+    "Side": 11.16,
+    "Rear": 6.56,
+    "Top": 14.88
+   },
+   {
+    "ID": 2476,
+    "Type": 4002,
+    "Front": 2.79,
+    "Side": 4.96,
+    "Rear": 2.79,
+    "Top": 5.58
+   },
+   {
+    "ID": 2476,
+    "Type": 5001,
+    "Front": 18.0,
+    "Side": 21.2,
+    "Rear": 18.0,
+    "Top": 27.7
+   },
+   {
+    "ID": 2476,
+    "Type": 5002,
+    "Front": 18.0,
+    "Side": 21.2,
+    "Rear": 18.0,
+    "Top": 27.7
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2525,
+   "Category": 2002,
+   "Type": 3304,
+   "Name": "U 206 Vinnitsya [Grisha II Pr.1124P Albatros]",
+   "Comments": "2x, 1x unit retired 2005",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1994,
+   "YearDecommissioned": 0,
+   "Length": 71.2,
+   "Beam": 10.2,
+   "Draft": 3.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 880,
+   "DisplacementFull": 960,
+   "Crew": 79,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 210,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1100,
+   1289,
+   4537,
+   1534,
+   1555,
+   2354
+  ],
+  "mount_ids": [
+   397,
+   400,
+   1425
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   250
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   284
+  ],
+  "signatures": [
+   {
+    "ID": 2525,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2525,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2525,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2525,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2525,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2525,
+    "Type": 3001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2525,
+    "Type": 3002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2525,
+    "Type": 4001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2525,
+    "Type": 4002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2525,
+    "Type": 5001,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   },
+   {
+    "ID": 2525,
+    "Type": 5002,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2526,
+   "Category": 2002,
+   "Type": 3304,
+   "Name": "U 205 Lutsk [Grisha V Pr.1124ME Albatros]",
+   "Comments": "2x,",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1994,
+   "YearDecommissioned": 0,
+   "Length": 71.1,
+   "Beam": 10.2,
+   "Draft": 3.7,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 910,
+   "DisplacementFull": 1055,
+   "Crew": 90,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 220,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1100,
+   1289,
+   4536,
+   1474,
+   1548,
+   1591
+  ],
+  "mount_ids": [
+   258,
+   391,
+   400,
+   405,
+   460,
+   1424
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   432,
+   768
+  ],
+  "propulsion_ids": [
+   250
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   284
+  ],
+  "signatures": [
+   {
+    "ID": 2526,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2526,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2526,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2526,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2526,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2526,
+    "Type": 3001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.97
+   },
+   {
+    "ID": 2526,
+    "Type": 3002,
+    "Front": 2.99,
+    "Side": 5.32,
+    "Rear": 2.99,
+    "Top": 5.99
+   },
+   {
+    "ID": 2526,
+    "Type": 4001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.97
+   },
+   {
+    "ID": 2526,
+    "Type": 4002,
+    "Front": 2.99,
+    "Side": 5.32,
+    "Rear": 2.99,
+    "Top": 5.99
+   },
+   {
+    "ID": 2526,
+    "Type": 5001,
+    "Front": 20.5,
+    "Side": 23.7,
+    "Rear": 20.5,
+    "Top": 30.3
+   },
+   {
+    "ID": 2526,
+    "Type": 5002,
+    "Front": 20.5,
+    "Side": 23.7,
+    "Rear": 20.5,
+    "Top": 30.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2527,
+   "Category": 2002,
+   "Type": 3405,
+   "Name": "U 207 Uzgorod [Pauk I, Pr.1241.2 Molniya-2]",
+   "Comments": "2x Navy + 3x Border Guard",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1996,
+   "YearDecommissioned": 0,
+   "Length": 57.5,
+   "Beam": 10.2,
+   "Draft": 3.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 417,
+   "DisplacementFull": 475,
+   "Crew": 36,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 120,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1434,
+   1548,
+   1580,
+   2363,
+   2369,
+   2420,
+   258,
+   5388
+  ],
+  "mount_ids": [
+   258,
+   391,
+   420,
+   445,
+   1900,
+   521
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   432,
+   502,
+   574,
+   1207
+  ],
+  "propulsion_ids": [
+   445
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   1407
+  ],
+  "signatures": [
+   {
+    "ID": 2527,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2527,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2527,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2527,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2527,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2527,
+    "Type": 3001,
+    "Front": 6.61,
+    "Side": 11.24,
+    "Rear": 6.61,
+    "Top": 14.99
+   },
+   {
+    "ID": 2527,
+    "Type": 3002,
+    "Front": 2.81,
+    "Side": 5.0,
+    "Rear": 2.81,
+    "Top": 5.62
+   },
+   {
+    "ID": 2527,
+    "Type": 4001,
+    "Front": 6.61,
+    "Side": 11.24,
+    "Rear": 6.61,
+    "Top": 14.99
+   },
+   {
+    "ID": 2527,
+    "Type": 4002,
+    "Front": 2.81,
+    "Side": 5.0,
+    "Rear": 2.81,
+    "Top": 5.62
+   },
+   {
+    "ID": 2527,
+    "Type": 5001,
+    "Front": 18.3,
+    "Side": 21.4,
+    "Rear": 18.3,
+    "Top": 28.0
+   },
+   {
+    "ID": 2527,
+    "Type": 5002,
+    "Front": 18.3,
+    "Side": 21.4,
+    "Rear": 18.3,
+    "Top": 28.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2528,
+   "Category": 2002,
+   "Type": 6002,
+   "Name": "U 310 Zhovti Vodi [Pr.266M Natya I]",
+   "Comments": "2x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 61.0,
+   "Beam": 10.2,
+   "Draft": 3.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 750,
+   "DisplacementFull": 804,
+   "Crew": 68,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 140,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1434,
+   1545,
+   2354,
+   4701,
+   4657,
+   4681,
+   4654
+  ],
+  "mount_ids": [
+   234,
+   417,
+   420,
+   445
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   514,
+   574,
+   786,
+   851
+  ],
+  "propulsion_ids": [
+   23
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   424
+  ],
+  "signatures": [
+   {
+    "ID": 2528,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2528,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2528,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2528,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2528,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2528,
+    "Type": 3001,
+    "Front": 6.73,
+    "Side": 11.44,
+    "Rear": 6.73,
+    "Top": 15.26
+   },
+   {
+    "ID": 2528,
+    "Type": 3002,
+    "Front": 2.86,
+    "Side": 5.09,
+    "Rear": 2.86,
+    "Top": 5.72
+   },
+   {
+    "ID": 2528,
+    "Type": 4001,
+    "Front": 6.73,
+    "Side": 11.44,
+    "Rear": 6.73,
+    "Top": 15.26
+   },
+   {
+    "ID": 2528,
+    "Type": 4002,
+    "Front": 2.86,
+    "Side": 5.09,
+    "Rear": 2.86,
+    "Top": 5.72
+   },
+   {
+    "ID": 2528,
+    "Type": 5001,
+    "Front": 18.9,
+    "Side": 22.1,
+    "Rear": 18.9,
+    "Top": 28.6
+   },
+   {
+    "ID": 2528,
+    "Type": 5002,
+    "Front": 18.9,
+    "Side": 22.1,
+    "Rear": 18.9,
+    "Top": 28.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2529,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "U 120 Skadovsk [Zhuk Pr.1400M Grif]",
+   "Comments": "1x Navy, 19x Border Guards",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 23.8,
+   "Beam": 5.0,
+   "Draft": 1.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 36,
+   "DisplacementFull": 40,
+   "Crew": 10,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 17,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   2354
+  ],
+  "mount_ids": [
+   1036
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   305
+  ],
+  "propulsion_ids": [
+   1342
+  ],
+  "comm_ids": [
+   209,
+   264
+  ],
+  "fuel_ids": [
+   128
+  ],
+  "signatures": [
+   {
+    "ID": 2529,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2529,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2529,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2529,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2529,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2529,
+    "Type": 3001,
+    "Front": 5.07,
+    "Side": 8.63,
+    "Rear": 5.07,
+    "Top": 11.5
+   },
+   {
+    "ID": 2529,
+    "Type": 3002,
+    "Front": 2.16,
+    "Side": 3.83,
+    "Rear": 2.16,
+    "Top": 4.31
+   },
+   {
+    "ID": 2529,
+    "Type": 4001,
+    "Front": 5.07,
+    "Side": 8.63,
+    "Rear": 5.07,
+    "Top": 11.5
+   },
+   {
+    "ID": 2529,
+    "Type": 4002,
+    "Front": 2.16,
+    "Side": 3.83,
+    "Rear": 2.16,
+    "Top": 4.31
+   },
+   {
+    "ID": 2529,
+    "Type": 5001,
+    "Front": 9.1,
+    "Side": 11.9,
+    "Rear": 9.1,
+    "Top": 18.4
+   },
+   {
+    "ID": 2529,
+    "Type": 5002,
+    "Front": 9.1,
+    "Side": 11.9,
+    "Rear": 9.1,
+    "Top": 18.4
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2530,
+   "Category": 2003,
+   "Type": 4020,
+   "Name": "U 402 Konstyantyn Olshanskyy [Ropucha I Pr.775]",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 112.5,
+   "Beam": 15.0,
+   "Draft": 4.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 2768,
+   "DisplacementFull": 4012,
+   "Crew": 98,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 440,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 340,
+   "CargoCapacity": 500,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 4000,
+   "Cargo_Mass": 482.0,
+   "Cargo_Area": 540.0,
+   "Cargo_Crew": 150.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1534,
+   1555,
+   2354,
+   2417
+  ],
+  "mount_ids": [
+   397,
+   901
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   982
+  ],
+  "propulsion_ids": [
+   1064
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   504
+  ],
+  "signatures": [
+   {
+    "ID": 2530,
+    "Type": 1001,
+    "Front": 135.0,
+    "Side": 136.0,
+    "Rear": 137.0,
+    "Top": 136.0
+   },
+   {
+    "ID": 2530,
+    "Type": 1002,
+    "Front": 105.5,
+    "Side": 106.0,
+    "Rear": 107.0,
+    "Top": 106.0
+   },
+   {
+    "ID": 2530,
+    "Type": 1003,
+    "Front": 97.5,
+    "Side": 98.0,
+    "Rear": 99.0,
+    "Top": 98.0
+   },
+   {
+    "ID": 2530,
+    "Type": 1004,
+    "Front": 89.0,
+    "Side": 90.0,
+    "Rear": 91.0,
+    "Top": 90.0
+   },
+   {
+    "ID": 2530,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 2530,
+    "Type": 3001,
+    "Front": 8.09,
+    "Side": 13.75,
+    "Rear": 8.09,
+    "Top": 18.33
+   },
+   {
+    "ID": 2530,
+    "Type": 3002,
+    "Front": 3.44,
+    "Side": 6.11,
+    "Rear": 3.44,
+    "Top": 6.87
+   },
+   {
+    "ID": 2530,
+    "Type": 4001,
+    "Front": 8.09,
+    "Side": 13.75,
+    "Rear": 8.09,
+    "Top": 18.33
+   },
+   {
+    "ID": 2530,
+    "Type": 4002,
+    "Front": 3.44,
+    "Side": 6.11,
+    "Rear": 3.44,
+    "Top": 6.87
+   },
+   {
+    "ID": 2530,
+    "Type": 5001,
+    "Front": 25.2,
+    "Side": 28.7,
+    "Rear": 25.2,
+    "Top": 35.3
+   },
+   {
+    "ID": 2530,
+    "Type": 5002,
+    "Front": 25.2,
+    "Side": 28.7,
+    "Rear": 25.2,
+    "Top": 35.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2531,
+   "Category": 2003,
+   "Type": 4020,
+   "Name": "U 762 Rivne [Alligator Pr.1171 Tapir]",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 2006,
+   "Length": 113.1,
+   "Beam": 15.6,
+   "Draft": 4.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 3040,
+   "DisplacementFull": 4650,
+   "Crew": 69,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 470,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 440,
+   "CargoCapacity": 1000,
+   "MissileDefense": 6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 5000,
+   "Cargo_Mass": 1750.0,
+   "Cargo_Area": 850.0,
+   "Cargo_Crew": 440.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1434,
+   1558,
+   2354,
+   2439
+  ],
+  "mount_ids": [
+   385,
+   417,
+   928,
+   457
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   501,
+   851
+  ],
+  "propulsion_ids": [
+   3
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   504
+  ],
+  "signatures": [
+   {
+    "ID": 2531,
+    "Type": 1001,
+    "Front": 135.0,
+    "Side": 136.0,
+    "Rear": 137.0,
+    "Top": 136.0
+   },
+   {
+    "ID": 2531,
+    "Type": 1002,
+    "Front": 105.5,
+    "Side": 106.0,
+    "Rear": 107.0,
+    "Top": 106.0
+   },
+   {
+    "ID": 2531,
+    "Type": 1003,
+    "Front": 97.5,
+    "Side": 98.0,
+    "Rear": 99.0,
+    "Top": 98.0
+   },
+   {
+    "ID": 2531,
+    "Type": 1004,
+    "Front": 89.0,
+    "Side": 90.0,
+    "Rear": 91.0,
+    "Top": 90.0
+   },
+   {
+    "ID": 2531,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 2531,
+    "Type": 3001,
+    "Front": 8.1,
+    "Side": 13.77,
+    "Rear": 8.1,
+    "Top": 18.36
+   },
+   {
+    "ID": 2531,
+    "Type": 3002,
+    "Front": 3.44,
+    "Side": 6.12,
+    "Rear": 3.44,
+    "Top": 6.88
+   },
+   {
+    "ID": 2531,
+    "Type": 4001,
+    "Front": 8.1,
+    "Side": 13.77,
+    "Rear": 8.1,
+    "Top": 18.36
+   },
+   {
+    "ID": 2531,
+    "Type": 4002,
+    "Front": 3.44,
+    "Side": 6.12,
+    "Rear": 3.44,
+    "Top": 6.88
+   },
+   {
+    "ID": 2531,
+    "Type": 5001,
+    "Front": 25.3,
+    "Side": 28.8,
+    "Rear": 25.3,
+    "Top": 35.3
+   },
+   {
+    "ID": 2531,
+    "Type": 5002,
+    "Front": 25.3,
+    "Side": 28.8,
+    "Rear": 25.3,
+    "Top": 35.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2532,
+   "Category": 2003,
+   "Type": 4018,
+   "Name": "U 401 Kirovograd [Polnochny C Pr.773]",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 2002,
+   "YearDecommissioned": 0,
+   "Length": 81.3,
+   "Beam": 9.3,
+   "Draft": 2.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 920,
+   "DisplacementFull": 1192,
+   "Crew": 45,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 180,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 4000,
+   "Cargo_Mass": 350.0,
+   "Cargo_Area": 210.0,
+   "Cargo_Crew": 180.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1100,
+   1545,
+   1558
+  ],
+  "mount_ids": [
+   193,
+   234,
+   420,
+   258
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   521,
+   786,
+   1205,
+   432
+  ],
+  "propulsion_ids": [
+   2022
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   177
+  ],
+  "signatures": [
+   {
+    "ID": 2532,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2532,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2532,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2532,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2532,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2532,
+    "Type": 3001,
+    "Front": 7.34,
+    "Side": 12.47,
+    "Rear": 7.34,
+    "Top": 16.63
+   },
+   {
+    "ID": 2532,
+    "Type": 3002,
+    "Front": 3.12,
+    "Side": 5.54,
+    "Rear": 3.12,
+    "Top": 6.24
+   },
+   {
+    "ID": 2532,
+    "Type": 4001,
+    "Front": 7.34,
+    "Side": 12.47,
+    "Rear": 7.34,
+    "Top": 16.63
+   },
+   {
+    "ID": 2532,
+    "Type": 4002,
+    "Front": 3.12,
+    "Side": 5.54,
+    "Rear": 3.12,
+    "Top": 6.24
+   },
+   {
+    "ID": 2532,
+    "Type": 5001,
+    "Front": 21.9,
+    "Side": 25.2,
+    "Rear": 21.9,
+    "Top": 31.7
+   },
+   {
+    "ID": 2532,
+    "Type": 5002,
+    "Front": 21.9,
+    "Side": 25.2,
+    "Rear": 21.9,
+    "Top": 31.7
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2533,
+   "Category": 2002,
+   "Type": 3303,
+   "Name": "U 130 Hetman Sahaydachniy [Pr.1135.1 Krivak III]",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 123.5,
+   "Beam": 14.1,
+   "Draft": 4.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 3300,
+   "DisplacementFull": 3575,
+   "Crew": 200,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 600,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   945,
+   4545,
+   4536,
+   1474,
+   1548,
+   1580,
+   1581,
+   2588,
+   2644,
+   3329,
+   3637
+  ],
+  "mount_ids": [
+   258,
+   400,
+   405,
+   455,
+   460,
+   1430
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   216,
+   436,
+   765
+  ],
+  "propulsion_ids": [
+   2032
+  ],
+  "comm_ids": [
+   72,
+   209,
+   237,
+   264
+  ],
+  "fuel_ids": [
+   445,
+   198
+  ],
+  "signatures": [
+   {
+    "ID": 2533,
+    "Type": 1001,
+    "Front": 125.0,
+    "Side": 126.0,
+    "Rear": 127.0,
+    "Top": 126.0
+   },
+   {
+    "ID": 2533,
+    "Type": 1002,
+    "Front": 95.5,
+    "Side": 96.0,
+    "Rear": 97.0,
+    "Top": 96.0
+   },
+   {
+    "ID": 2533,
+    "Type": 1003,
+    "Front": 87.5,
+    "Side": 88.0,
+    "Rear": 89.0,
+    "Top": 88.0
+   },
+   {
+    "ID": 2533,
+    "Type": 1004,
+    "Front": 79.0,
+    "Side": 80.0,
+    "Rear": 81.0,
+    "Top": 80.0
+   },
+   {
+    "ID": 2533,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 2533,
+    "Type": 3001,
+    "Front": 8.32,
+    "Side": 14.14,
+    "Rear": 8.32,
+    "Top": 18.85
+   },
+   {
+    "ID": 2533,
+    "Type": 3002,
+    "Front": 3.53,
+    "Side": 6.28,
+    "Rear": 3.53,
+    "Top": 7.07
+   },
+   {
+    "ID": 2533,
+    "Type": 4001,
+    "Front": 8.32,
+    "Side": 14.14,
+    "Rear": 8.32,
+    "Top": 18.85
+   },
+   {
+    "ID": 2533,
+    "Type": 4002,
+    "Front": 3.53,
+    "Side": 6.28,
+    "Rear": 3.53,
+    "Top": 7.07
+   },
+   {
+    "ID": 2533,
+    "Type": 5001,
+    "Front": 26.2,
+    "Side": 29.7,
+    "Rear": 26.2,
+    "Top": 36.3
+   },
+   {
+    "ID": 2533,
+    "Type": 5002,
+    "Front": 26.2,
+    "Side": 29.7,
+    "Rear": 26.2,
+    "Top": 36.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2534,
+   "Category": 2002,
+   "Type": 6006,
+   "Name": "U 330 Melitopol [Sonya Pr.1265]",
+   "Comments": "2x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1996,
+   "YearDecommissioned": 0,
+   "Length": 48.8,
+   "Beam": 8.8,
+   "Draft": 2.45,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 427,
+   "DisplacementFull": 460,
+   "Crew": 45,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 90,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1558,
+   4702,
+   2420,
+   4654,
+   4657
+  ],
+  "mount_ids": [
+   234,
+   1034,
+   1398
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   926,
+   303,
+   316
+  ],
+  "propulsion_ids": [
+   1339
+  ],
+  "comm_ids": [
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1491
+  ],
+  "signatures": [
+   {
+    "ID": 2534,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2534,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2534,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2534,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2534,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2534,
+    "Type": 3001,
+    "Front": 6.29,
+    "Side": 10.7,
+    "Rear": 6.29,
+    "Top": 14.27
+   },
+   {
+    "ID": 2534,
+    "Type": 3002,
+    "Front": 2.68,
+    "Side": 4.76,
+    "Rear": 2.68,
+    "Top": 5.35
+   },
+   {
+    "ID": 2534,
+    "Type": 4001,
+    "Front": 6.29,
+    "Side": 10.7,
+    "Rear": 6.29,
+    "Top": 14.27
+   },
+   {
+    "ID": 2534,
+    "Type": 4002,
+    "Front": 2.68,
+    "Side": 4.76,
+    "Rear": 2.68,
+    "Top": 5.35
+   },
+   {
+    "ID": 2534,
+    "Type": 5001,
+    "Front": 16.5,
+    "Side": 19.7,
+    "Rear": 16.5,
+    "Top": 26.2
+   },
+   {
+    "ID": 2534,
+    "Type": 5002,
+    "Front": 16.5,
+    "Side": 19.7,
+    "Rear": 16.5,
+    "Top": 26.2
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2535,
+   "Category": 2003,
+   "Type": 4002,
+   "Name": "U 420 Donetsk [Pomornik Pr.1232.2 Zubr]",
+   "Comments": "4x, 1x remaining by 2006",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 57.6,
+   "Beam": 25.6,
+   "Draft": 1.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 500,
+   "DisplacementFull": 550,
+   "Crew": 27,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 110,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 360,
+   "CargoCapacity": 150,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 4000,
+   "Cargo_Mass": 130.0,
+   "Cargo_Area": 105.0,
+   "Cargo_Crew": 140.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1548,
+   2360,
+   2366,
+   2646,
+   3627,
+   2439
+  ],
+  "mount_ids": [
+   1897,
+   420,
+   460
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   765
+  ],
+  "propulsion_ids": [
+   612
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1471
+  ],
+  "signatures": [
+   {
+    "ID": 2535,
+    "Type": 1001,
+    "Front": 100.0,
+    "Side": 101.0,
+    "Rear": 102.0,
+    "Top": 101.0
+   },
+   {
+    "ID": 2535,
+    "Type": 1002,
+    "Front": 70.5,
+    "Side": 71.0,
+    "Rear": 72.0,
+    "Top": 71.0
+   },
+   {
+    "ID": 2535,
+    "Type": 1003,
+    "Front": 62.5,
+    "Side": 63.0,
+    "Rear": 64.0,
+    "Top": 63.0
+   },
+   {
+    "ID": 2535,
+    "Type": 1004,
+    "Front": 54.0,
+    "Side": 55.0,
+    "Rear": 56.0,
+    "Top": 55.0
+   },
+   {
+    "ID": 2535,
+    "Type": 2001,
+    "Front": 4.0,
+    "Side": 4.0,
+    "Rear": 4.0,
+    "Top": 4.0
+   },
+   {
+    "ID": 2535,
+    "Type": 3001,
+    "Front": 6.62,
+    "Side": 11.25,
+    "Rear": 6.62,
+    "Top": 14.99
+   },
+   {
+    "ID": 2535,
+    "Type": 3002,
+    "Front": 2.81,
+    "Side": 5.0,
+    "Rear": 2.81,
+    "Top": 5.62
+   },
+   {
+    "ID": 2535,
+    "Type": 4001,
+    "Front": 6.62,
+    "Side": 11.25,
+    "Rear": 6.62,
+    "Top": 14.99
+   },
+   {
+    "ID": 2535,
+    "Type": 4002,
+    "Front": 2.81,
+    "Side": 5.0,
+    "Rear": 2.81,
+    "Top": 5.62
+   },
+   {
+    "ID": 2535,
+    "Type": 5001,
+    "Front": 18.3,
+    "Side": 21.5,
+    "Rear": 18.3,
+    "Top": 28.0
+   },
+   {
+    "ID": 2535,
+    "Type": 5002,
+    "Front": 18.3,
+    "Side": 21.5,
+    "Rear": 18.3,
+    "Top": 28.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2536,
+   "Category": 2002,
+   "Type": 3405,
+   "Name": "BG 31 Bukovina [Stenka Pr.205P Tarantul]",
+   "Comments": "13x, 6x in service by 2013",
+   "OperatorCountry": 2099,
+   "OperatorService": 2013,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 39.8,
+   "Beam": 7.9,
+   "Draft": 2.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 211,
+   "DisplacementFull": 245,
+   "Crew": 25,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 69,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1545,
+   1580,
+   1581,
+   2195,
+   5385
+  ],
+  "mount_ids": [
+   234,
+   1411
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   786
+  ],
+  "propulsion_ids": [
+   524
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1262
+  ],
+  "signatures": [
+   {
+    "ID": 2536,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2536,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2536,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2536,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2536,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2536,
+    "Type": 3001,
+    "Front": 5.92,
+    "Side": 10.07,
+    "Rear": 5.92,
+    "Top": 13.42
+   },
+   {
+    "ID": 2536,
+    "Type": 3002,
+    "Front": 2.52,
+    "Side": 4.47,
+    "Rear": 2.52,
+    "Top": 5.03
+   },
+   {
+    "ID": 2536,
+    "Type": 4001,
+    "Front": 5.92,
+    "Side": 10.07,
+    "Rear": 5.92,
+    "Top": 13.42
+   },
+   {
+    "ID": 2536,
+    "Type": 4002,
+    "Front": 2.52,
+    "Side": 4.47,
+    "Rear": 2.52,
+    "Top": 5.03
+   },
+   {
+    "ID": 2536,
+    "Type": 5001,
+    "Front": 14.4,
+    "Side": 17.4,
+    "Rear": 14.4,
+    "Top": 24.0
+   },
+   {
+    "ID": 2536,
+    "Type": 5002,
+    "Front": 14.4,
+    "Side": 17.4,
+    "Rear": 14.4,
+    "Top": 24.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3101,
+   "Category": 2002,
+   "Type": 3407,
+   "Name": "U 174 Akkerman [Gurza-M, Pr.58155]",
+   "Comments": "2x + 4x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 2016,
+   "YearDecommissioned": 0,
+   "Length": 23.0,
+   "Beam": 4.8,
+   "Draft": 1.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 50,
+   "DisplacementFull": 54,
+   "Crew": 5,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 22,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1211
+  ],
+  "mount_ids": [
+   3018
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2764
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1941
+  ],
+  "signatures": [
+   {
+    "ID": 3101,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 3101,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 3101,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 3101,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 3101,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 3101,
+    "Type": 3001,
+    "Front": 5.02,
+    "Side": 8.54,
+    "Rear": 5.02,
+    "Top": 11.39
+   },
+   {
+    "ID": 3101,
+    "Type": 3002,
+    "Front": 2.13,
+    "Side": 3.8,
+    "Rear": 2.13,
+    "Top": 4.27
+   },
+   {
+    "ID": 3101,
+    "Type": 4001,
+    "Front": 5.02,
+    "Side": 8.54,
+    "Rear": 5.02,
+    "Top": 11.39
+   },
+   {
+    "ID": 3101,
+    "Type": 4002,
+    "Front": 2.13,
+    "Side": 3.8,
+    "Rear": 2.13,
+    "Top": 4.27
+   },
+   {
+    "ID": 3101,
+    "Type": 5001,
+    "Front": 8.7,
+    "Side": 11.5,
+    "Rear": 8.7,
+    "Top": 18.0
+   },
+   {
+    "ID": 3101,
+    "Type": 5002,
+    "Front": 8.7,
+    "Side": 11.5,
+    "Rear": 8.7,
+    "Top": 18.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 347,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "MiG-29 Fulcrum A",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 17.3,
+   "Span": 11.4,
+   "Height": 4.73,
+   "WeightEmpty": 10200,
+   "WeightMax": 18500,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 4.5,
+   "ClimbRate": 183.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   555,
+   2914,
+   2943,
+   4310,
+   5969
+  ],
+  "mount_ids": [
+   284,
+   1787
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5334,
+   5336,
+   5337,
+   5338,
+   5339,
+   5340,
+   5341,
+   5342,
+   5343,
+   5344,
+   5345,
+   5346,
+   5373,
+   5374,
+   5375,
+   9028,
+   10360,
+   10970,
+   10971,
+   10972,
+   10979,
+   26805
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   337
+  ],
+  "comm_ids": [
+   20,
+   72,
+   350
+  ],
+  "fuel_ids": [
+   388
+  ],
+  "signatures": [
+   {
+    "ID": 347,
+    "Type": 3001,
+    "Front": 2.89,
+    "Side": 6.22,
+    "Rear": 2.89,
+    "Top": 7.89
+   },
+   {
+    "ID": 347,
+    "Type": 3002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 2.65,
+    "Top": 4.28
+   },
+   {
+    "ID": 347,
+    "Type": 4001,
+    "Front": 2.89,
+    "Side": 7.99,
+    "Rear": 12.95,
+    "Top": 9.37
+   },
+   {
+    "ID": 347,
+    "Type": 4002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 1.6,
+    "Top": 4.28
+   },
+   {
+    "ID": 347,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 347,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 353,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Su-27S Flanker B",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 21.9,
+   "Span": 14.7,
+   "Height": 5.9,
+   "WeightEmpty": 16300,
+   "WeightMax": 30450,
+   "WeightPayload": 8000,
+   "Crew": 1,
+   "Agility": 4.5,
+   "ClimbRate": 166.5,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   572,
+   622,
+   2540,
+   2943,
+   4312,
+   5969
+  ],
+  "mount_ids": [
+   284,
+   1681
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   8715,
+   26876,
+   26877,
+   26878,
+   26879,
+   26880,
+   26881,
+   26882,
+   26883,
+   26884,
+   26885,
+   26886,
+   26887,
+   26888,
+   26889,
+   26890,
+   26891,
+   26892,
+   26893
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   280
+  ],
+  "comm_ids": [
+   20,
+   238,
+   350
+  ],
+  "fuel_ids": [
+   720
+  ],
+  "signatures": [
+   {
+    "ID": 353,
+    "Type": 3001,
+    "Front": 3.6,
+    "Side": 7.67,
+    "Rear": 3.6,
+    "Top": 9.82
+   },
+   {
+    "ID": 353,
+    "Type": 3002,
+    "Front": 1.92,
+    "Side": 4.17,
+    "Rear": 3.29,
+    "Top": 5.13
+   },
+   {
+    "ID": 353,
+    "Type": 4001,
+    "Front": 3.6,
+    "Side": 9.19,
+    "Rear": 14.1,
+    "Top": 10.84
+   },
+   {
+    "ID": 353,
+    "Type": 4002,
+    "Front": 1.92,
+    "Side": 4.17,
+    "Rear": 1.92,
+    "Top": 5.13
+   },
+   {
+    "ID": 353,
+    "Type": 5001,
+    "Front": 8.9,
+    "Side": 11.1,
+    "Rear": 8.9,
+    "Top": 11.5
+   },
+   {
+    "ID": 353,
+    "Type": 5002,
+    "Front": 8.9,
+    "Side": 11.1,
+    "Rear": 8.9,
+    "Top": 11.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 467,
+   "Category": 2001,
+   "Type": 7004,
+   "Name": "Su-24MP Fencer F",
+   "Comments": "EW",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1998,
+   "Length": 24.6,
+   "Span": 17.6,
+   "Height": 6.2,
+   "WeightEmpty": 21150,
+   "WeightMax": 39570,
+   "WeightPayload": 8100,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 84.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   690,
+   898,
+   1092,
+   1279,
+   1791,
+   1823,
+   2092,
+   2943,
+   5078
+  ],
+  "mount_ids": [
+   2129,
+   1680
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5601,
+   9851
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   417
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   718
+  ],
+  "signatures": [
+   {
+    "ID": 467,
+    "Type": 3001,
+    "Front": 4.09,
+    "Side": 8.41,
+    "Rear": 4.09,
+    "Top": 11.16
+   },
+   {
+    "ID": 467,
+    "Type": 3002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 3.75,
+    "Top": 5.71
+   },
+   {
+    "ID": 467,
+    "Type": 4001,
+    "Front": 4.09,
+    "Side": 9.77,
+    "Rear": 14.82,
+    "Top": 11.81
+   },
+   {
+    "ID": 467,
+    "Type": 4002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 2.14,
+    "Top": 5.71
+   },
+   {
+    "ID": 467,
+    "Type": 5001,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 13.0
+   },
+   {
+    "ID": 467,
+    "Type": 5002,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 12.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 468,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-24M Fencer D",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 24.6,
+   "Span": 17.6,
+   "Height": 6.2,
+   "WeightEmpty": 22320,
+   "WeightMax": 39570,
+   "WeightPayload": 8100,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 84.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   898,
+   1279,
+   1791,
+   2237,
+   2255,
+   2943,
+   5078
+  ],
+  "mount_ids": [
+   2129,
+   1680
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5482,
+   5483,
+   5484,
+   5485,
+   5486,
+   5487,
+   5488,
+   5489,
+   5490,
+   5491,
+   5492,
+   5493,
+   5494,
+   5495,
+   5496,
+   5497,
+   5498,
+   5499,
+   5500,
+   5501,
+   5502,
+   5503,
+   5504,
+   5505,
+   5506,
+   5507,
+   5508,
+   5509,
+   5510,
+   5511,
+   5512,
+   5513,
+   5514,
+   5515,
+   5516,
+   5517,
+   5518,
+   5519,
+   5520,
+   5521,
+   5522,
+   5523,
+   5524,
+   5525,
+   5526,
+   5527,
+   5528,
+   5529,
+   5530,
+   5531,
+   5532,
+   10017,
+   10018,
+   10229,
+   10230,
+   10627,
+   10628,
+   10629,
+   10630,
+   10635,
+   10636,
+   10637,
+   10661,
+   10662,
+   10663,
+   10667,
+   17681,
+   17682,
+   23675,
+   23676,
+   23677,
+   23678,
+   23679,
+   23680,
+   23681,
+   23682,
+   23683,
+   23684,
+   23685,
+   23686,
+   23687,
+   23688,
+   23689,
+   23690,
+   23691,
+   23692,
+   23693,
+   23694,
+   23695,
+   23696,
+   23697,
+   23698,
+   23699,
+   23700,
+   23701,
+   23702,
+   23703,
+   23704,
+   23705,
+   23706,
+   23707,
+   23708,
+   23709,
+   23710,
+   23711,
+   23712,
+   23713,
+   23714,
+   23715,
+   23716,
+   23906,
+   23907,
+   23921,
+   23922,
+   23923,
+   23924,
+   23925,
+   23926
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   417
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   718
+  ],
+  "signatures": [
+   {
+    "ID": 468,
+    "Type": 3001,
+    "Front": 4.09,
+    "Side": 8.41,
+    "Rear": 4.09,
+    "Top": 11.16
+   },
+   {
+    "ID": 468,
+    "Type": 3002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 3.75,
+    "Top": 5.71
+   },
+   {
+    "ID": 468,
+    "Type": 4001,
+    "Front": 4.09,
+    "Side": 9.77,
+    "Rear": 14.82,
+    "Top": 11.81
+   },
+   {
+    "ID": 468,
+    "Type": 4002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 2.14,
+    "Top": 5.71
+   },
+   {
+    "ID": 468,
+    "Type": 5001,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 13.0
+   },
+   {
+    "ID": 468,
+    "Type": 5002,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 12.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 767,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-25 Frogfoot A",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 15.5,
+   "Span": 14.4,
+   "Height": 4.8,
+   "WeightEmpty": 9510,
+   "WeightMax": 17530,
+   "WeightPayload": 4400,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 49.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1010,
+   "AircraftFuselageArmor": 1010,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2309,
+   2943
+  ],
+  "mount_ids": [
+   2150,
+   1683
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5602,
+   5603,
+   5604,
+   5605,
+   5606,
+   5607,
+   5608,
+   5609,
+   5610,
+   5611,
+   5612,
+   5613,
+   5614,
+   5615,
+   5616,
+   5617,
+   5618,
+   5619,
+   5620,
+   5621,
+   5622,
+   5623,
+   5624,
+   5625,
+   5626,
+   5627,
+   5628,
+   5629,
+   5630,
+   10247,
+   10248,
+   10569,
+   10570,
+   17679,
+   17680
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1482
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   621
+  ],
+  "signatures": [
+   {
+    "ID": 767,
+    "Type": 3001,
+    "Front": 3.0,
+    "Side": 5.78,
+    "Rear": 3.0,
+    "Top": 8.19
+   },
+   {
+    "ID": 767,
+    "Type": 3002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 2.75,
+    "Top": 4.41
+   },
+   {
+    "ID": 767,
+    "Type": 4001,
+    "Front": 3.0,
+    "Side": 7.61,
+    "Rear": 13.14,
+    "Top": 9.6
+   },
+   {
+    "ID": 767,
+    "Type": 4002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 1.65,
+    "Top": 4.41
+   },
+   {
+    "ID": 767,
+    "Type": 5001,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.4
+   },
+   {
+    "ID": 767,
+    "Type": 5002,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 992,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "Mi-26 Halo",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2006,
+   "Length": 33.7,
+   "Span": 6.2,
+   "Height": 8.1,
+   "WeightEmpty": 28600,
+   "WeightMax": 56000,
+   "WeightPayload": 20000,
+   "Crew": 5,
+   "Agility": 2.0,
+   "ClimbRate": 10.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8606,
+   8607,
+   9065,
+   13917
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1113
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1312
+  ],
+  "signatures": [
+   {
+    "ID": 992,
+    "Type": 3001,
+    "Front": 3.89,
+    "Side": 11.07,
+    "Rear": 3.89,
+    "Top": 10.61
+   },
+   {
+    "ID": 992,
+    "Type": 3002,
+    "Front": 2.05,
+    "Side": 5.67,
+    "Rear": 3.56,
+    "Top": 5.47
+   },
+   {
+    "ID": 992,
+    "Type": 4001,
+    "Front": 3.89,
+    "Side": 11.74,
+    "Rear": 14.53,
+    "Top": 11.42
+   },
+   {
+    "ID": 992,
+    "Type": 4002,
+    "Front": 2.05,
+    "Side": 5.67,
+    "Rear": 2.05,
+    "Top": 5.47
+   },
+   {
+    "ID": 992,
+    "Type": 5001,
+    "Front": 9.9,
+    "Side": 12.0,
+    "Rear": 9.9,
+    "Top": 12.4
+   },
+   {
+    "ID": 992,
+    "Type": 5002,
+    "Front": 9.9,
+    "Side": 12.0,
+    "Rear": 9.9,
+    "Top": 12.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1302,
+   "Category": 2001,
+   "Type": 6002,
+   "Name": "An-72P Coaler C",
+   "Comments": "Maritime Patrol",
+   "OperatorCountry": 2099,
+   "OperatorService": 2013,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 28.1,
+   "Span": 31.9,
+   "Height": 8.7,
+   "WeightEmpty": 19050,
+   "WeightMax": 34500,
+   "WeightPayload": 7500,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 20.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   863,
+   4598,
+   2713
+  ],
+  "mount_ids": [
+   1820
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   3173,
+   14807,
+   15261
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   851
+  ],
+  "comm_ids": [
+   20,
+   194,
+   238
+  ],
+  "fuel_ids": [
+   207
+  ],
+  "signatures": [
+   {
+    "ID": 1302,
+    "Type": 3001,
+    "Front": 5.61,
+    "Side": 9.87,
+    "Rear": 5.61,
+    "Top": 15.32
+   },
+   {
+    "ID": 1302,
+    "Type": 3002,
+    "Front": 2.78,
+    "Side": 5.15,
+    "Rear": 5.14,
+    "Top": 7.43
+   },
+   {
+    "ID": 1302,
+    "Type": 4001,
+    "Front": 5.61,
+    "Side": 10.87,
+    "Rear": 16.77,
+    "Top": 14.58
+   },
+   {
+    "ID": 1302,
+    "Type": 4002,
+    "Front": 2.78,
+    "Side": 5.15,
+    "Rear": 2.78,
+    "Top": 7.43
+   },
+   {
+    "ID": 1302,
+    "Type": 5001,
+    "Front": 14.3,
+    "Side": 16.2,
+    "Rear": 14.3,
+    "Top": 16.7
+   },
+   {
+    "ID": 1302,
+    "Type": 5002,
+    "Front": 14.3,
+    "Side": 16.2,
+    "Rear": 14.3,
+    "Top": 16.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1390,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "Mi-24P Hind F",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 17.5,
+   "Span": 1.7,
+   "Height": 4.4,
+   "WeightEmpty": 8250,
+   "WeightMax": 12000,
+   "WeightPayload": 1480,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 12.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1015,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4626,
+   1985,
+   2750,
+   2924,
+   4623
+  ],
+  "mount_ids": [
+   950,
+   1848
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   8624,
+   8625,
+   8626
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   356
+  ],
+  "comm_ids": [
+   20,
+   48
+  ],
+  "fuel_ids": [
+   668
+  ],
+  "signatures": [
+   {
+    "ID": 1390,
+    "Type": 3001,
+    "Front": 2.01,
+    "Side": 6.19,
+    "Rear": 2.01,
+    "Top": 5.5
+   },
+   {
+    "ID": 1390,
+    "Type": 3002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.84,
+    "Top": 3.16
+   },
+   {
+    "ID": 1390,
+    "Type": 4001,
+    "Front": 2.01,
+    "Side": 7.16,
+    "Rear": 10.12,
+    "Top": 6.62
+   },
+   {
+    "ID": 1390,
+    "Type": 4002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.18,
+    "Top": 3.16
+   },
+   {
+    "ID": 1390,
+    "Type": 5001,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.8
+   },
+   {
+    "ID": 1390,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1402,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "MiG-29 Fulcrum C",
+   "Comments": "9-13",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 17.3,
+   "Span": 11.4,
+   "Height": 4.73,
+   "WeightEmpty": 10900,
+   "WeightMax": 18500,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 183.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   555,
+   1962,
+   2914,
+   2943,
+   4310,
+   5969
+  ],
+  "mount_ids": [
+   284,
+   1787
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5356,
+   5358,
+   5359,
+   5360,
+   5361,
+   5362,
+   5363,
+   5364,
+   5365,
+   5366,
+   5367,
+   5368,
+   5369,
+   5370,
+   5371,
+   5372,
+   10364,
+   11002,
+   11003,
+   11004,
+   11005,
+   26831
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1756
+  ],
+  "comm_ids": [
+   20,
+   72,
+   350
+  ],
+  "fuel_ids": [
+   388
+  ],
+  "signatures": [
+   {
+    "ID": 1402,
+    "Type": 3001,
+    "Front": 2.89,
+    "Side": 6.22,
+    "Rear": 2.89,
+    "Top": 7.89
+   },
+   {
+    "ID": 1402,
+    "Type": 3002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 2.65,
+    "Top": 4.28
+   },
+   {
+    "ID": 1402,
+    "Type": 4001,
+    "Front": 2.89,
+    "Side": 7.99,
+    "Rear": 12.95,
+    "Top": 9.37
+   },
+   {
+    "ID": 1402,
+    "Type": 4002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 1.6,
+    "Top": 4.28
+   },
+   {
+    "ID": 1402,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 1402,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1668,
+   "Category": 2001,
+   "Type": 3101,
+   "Name": "Tu-22M-2 Backfire B",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1997,
+   "Length": 41.5,
+   "Span": 34.3,
+   "Height": 11.1,
+   "WeightEmpty": 54000,
+   "WeightMax": 122000,
+   "WeightPayload": 24000,
+   "Crew": 4,
+   "Agility": 2.0,
+   "ClimbRate": 26.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   829,
+   950,
+   1279,
+   1759,
+   2977,
+   3318,
+   3348
+  ],
+  "mount_ids": [
+   122,
+   1803
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5690,
+   5691,
+   5692,
+   5693,
+   5694,
+   5695,
+   5696,
+   8167,
+   9748,
+   9749,
+   10277,
+   10725,
+   10726,
+   10727,
+   10728,
+   10729
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1232
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   433
+  ],
+  "signatures": [
+   {
+    "ID": 1668,
+    "Type": 3001,
+    "Front": 6.93,
+    "Side": 13.61,
+    "Rear": 6.93,
+    "Top": 18.91
+   },
+   {
+    "ID": 1668,
+    "Type": 3002,
+    "Front": 3.31,
+    "Side": 6.74,
+    "Rear": 6.34,
+    "Top": 8.86
+   },
+   {
+    "ID": 1668,
+    "Type": 4001,
+    "Front": 6.93,
+    "Side": 13.47,
+    "Rear": 18.19,
+    "Top": 16.78
+   },
+   {
+    "ID": 1668,
+    "Type": 4002,
+    "Front": 3.31,
+    "Side": 6.74,
+    "Rear": 3.31,
+    "Top": 8.86
+   },
+   {
+    "ID": 1668,
+    "Type": 5001,
+    "Front": 16.8,
+    "Side": 18.7,
+    "Rear": 16.8,
+    "Top": 19.1
+   },
+   {
+    "ID": 1668,
+    "Type": 5002,
+    "Front": 16.8,
+    "Side": 18.7,
+    "Rear": 16.8,
+    "Top": 18.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1673,
+   "Category": 2001,
+   "Type": 3101,
+   "Name": "Tu-22M-3 Backfire C",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2001,
+   "Length": 42.5,
+   "Span": 34.3,
+   "Height": 11.1,
+   "WeightEmpty": 54000,
+   "WeightMax": 124000,
+   "WeightPayload": 24000,
+   "Crew": 4,
+   "Agility": 2.0,
+   "ClimbRate": 26.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   829,
+   1279,
+   1759,
+   2540,
+   3318,
+   3348,
+   3787
+  ],
+  "mount_ids": [
+   1829,
+   1803
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   9704,
+   9705,
+   9706,
+   9707,
+   9708,
+   9709,
+   9710,
+   9711,
+   9754,
+   9755,
+   10279,
+   10715,
+   10716,
+   10717,
+   10718,
+   10719
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1234
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   1065
+  ],
+  "signatures": [
+   {
+    "ID": 1673,
+    "Type": 3001,
+    "Front": 7.01,
+    "Side": 13.84,
+    "Rear": 7.01,
+    "Top": 19.14
+   },
+   {
+    "ID": 1673,
+    "Type": 3002,
+    "Front": 3.35,
+    "Side": 6.83,
+    "Rear": 6.42,
+    "Top": 8.95
+   },
+   {
+    "ID": 1673,
+    "Type": 4001,
+    "Front": 7.01,
+    "Side": 13.63,
+    "Rear": 18.28,
+    "Top": 16.91
+   },
+   {
+    "ID": 1673,
+    "Type": 4002,
+    "Front": 3.35,
+    "Side": 6.83,
+    "Rear": 3.35,
+    "Top": 8.95
+   },
+   {
+    "ID": 1673,
+    "Type": 5001,
+    "Front": 17.0,
+    "Side": 18.8,
+    "Rear": 17.0,
+    "Top": 19.2
+   },
+   {
+    "ID": 1673,
+    "Type": 5002,
+    "Front": 17.0,
+    "Side": 18.8,
+    "Rear": 17.0,
+    "Top": 18.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2508,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Su-15TM Flagon E/F",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1996,
+   "Length": 19.6,
+   "Span": 9.3,
+   "Height": 4.8,
+   "WeightEmpty": 10760,
+   "WeightMax": 17900,
+   "WeightPayload": 1500,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 127.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   554,
+   545
+  ],
+  "mount_ids": [
+   2154
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   9858,
+   9859,
+   9860
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   220
+  ],
+  "comm_ids": [
+   195
+  ],
+  "fuel_ids": [
+   1068
+  ],
+  "signatures": [
+   {
+    "ID": 2508,
+    "Type": 3001,
+    "Front": 2.91,
+    "Side": 6.82,
+    "Rear": 2.91,
+    "Top": 7.94
+   },
+   {
+    "ID": 2508,
+    "Type": 3002,
+    "Front": 1.61,
+    "Side": 3.79,
+    "Rear": 2.66,
+    "Top": 4.3
+   },
+   {
+    "ID": 2508,
+    "Type": 4001,
+    "Front": 2.91,
+    "Side": 8.5,
+    "Rear": 12.98,
+    "Top": 9.41
+   },
+   {
+    "ID": 2508,
+    "Type": 4002,
+    "Front": 1.61,
+    "Side": 3.79,
+    "Rear": 1.61,
+    "Top": 4.3
+   },
+   {
+    "ID": 2508,
+    "Type": 5001,
+    "Front": 6.4,
+    "Side": 8.6,
+    "Rear": 6.4,
+    "Top": 9.0
+   },
+   {
+    "ID": 2508,
+    "Type": 5002,
+    "Front": 6.4,
+    "Side": 8.6,
+    "Rear": 6.4,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2613,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "MiG-29MU1 Fulcrum C",
+   "Comments": "9-13",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 17.3,
+   "Span": 11.4,
+   "Height": 4.73,
+   "WeightEmpty": 10900,
+   "WeightMax": 18500,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 183.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   555,
+   1962,
+   4337,
+   2943,
+   4310,
+   5969
+  ],
+  "mount_ids": [
+   284,
+   1787
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5356,
+   5358,
+   5359,
+   5360,
+   5361,
+   5362,
+   5363,
+   5364,
+   5365,
+   5366,
+   5367,
+   5368,
+   5369,
+   5370,
+   5371,
+   5372,
+   10364,
+   26838
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1756
+  ],
+  "comm_ids": [
+   20,
+   72,
+   350
+  ],
+  "fuel_ids": [
+   388
+  ],
+  "signatures": [
+   {
+    "ID": 2613,
+    "Type": 3001,
+    "Front": 2.89,
+    "Side": 6.22,
+    "Rear": 2.89,
+    "Top": 7.89
+   },
+   {
+    "ID": 2613,
+    "Type": 3002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 2.65,
+    "Top": 4.28
+   },
+   {
+    "ID": 2613,
+    "Type": 4001,
+    "Front": 2.89,
+    "Side": 7.99,
+    "Rear": 12.95,
+    "Top": 9.37
+   },
+   {
+    "ID": 2613,
+    "Type": 4002,
+    "Front": 1.6,
+    "Side": 3.51,
+    "Rear": 1.6,
+    "Top": 4.28
+   },
+   {
+    "ID": 2613,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 2613,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2614,
+   "Category": 2003,
+   "Type": 6001,
+   "Name": "Ka-25BSh Hormone A",
+   "Comments": "ASW, Ka-25PL, 16x, Poor Service Record",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1993,
+   "Length": 9.8,
+   "Span": 3.8,
+   "Height": 5.4,
+   "WeightEmpty": 4765,
+   "WeightMax": 7100,
+   "WeightPayload": 600,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 7.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1292,
+   4290,
+   2912,
+   2923
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10384,
+   10385,
+   10386,
+   10387,
+   15336,
+   17122
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   277
+  ],
+  "comm_ids": [
+   20,
+   35,
+   177
+  ],
+  "fuel_ids": [
+   740
+  ],
+  "signatures": [
+   {
+    "ID": 2614,
+    "Type": 3001,
+    "Front": 1.48,
+    "Side": 4.45,
+    "Rear": 1.48,
+    "Top": 4.03
+   },
+   {
+    "ID": 2614,
+    "Type": 3002,
+    "Front": 0.91,
+    "Side": 2.65,
+    "Rear": 1.35,
+    "Top": 2.44
+   },
+   {
+    "ID": 2614,
+    "Type": 4001,
+    "Front": 1.48,
+    "Side": 6.4,
+    "Rear": 9.97,
+    "Top": 5.98
+   },
+   {
+    "ID": 2614,
+    "Type": 4002,
+    "Front": 0.91,
+    "Side": 2.65,
+    "Rear": 0.91,
+    "Top": 2.44
+   },
+   {
+    "ID": 2614,
+    "Type": 5001,
+    "Front": -1.8,
+    "Side": 0.8,
+    "Rear": -1.8,
+    "Top": 1.2
+   },
+   {
+    "ID": 2614,
+    "Type": 5002,
+    "Front": -1.8,
+    "Side": 0.8,
+    "Rear": -1.8,
+    "Top": 0.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2615,
+   "Category": 2003,
+   "Type": 6001,
+   "Name": "Ka-27PL Helix A",
+   "Comments": "12x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 11.3,
+   "Span": 3.65,
+   "Height": 5.4,
+   "WeightEmpty": 6800,
+   "WeightMax": 1800,
+   "WeightPayload": 12000,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 12.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1985,
+   2397,
+   4286,
+   2923
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10388,
+   10389,
+   10390,
+   10391,
+   13925,
+   15339,
+   17121
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   278
+  ],
+  "comm_ids": [
+   20,
+   35,
+   177
+  ],
+  "fuel_ids": [
+   1256
+  ],
+  "signatures": [
+   {
+    "ID": 2615,
+    "Type": 3001,
+    "Front": 1.61,
+    "Side": 4.85,
+    "Rear": 1.61,
+    "Top": 4.39
+   },
+   {
+    "ID": 2615,
+    "Type": 3002,
+    "Front": 0.98,
+    "Side": 2.85,
+    "Rear": 1.47,
+    "Top": 2.62
+   },
+   {
+    "ID": 2615,
+    "Type": 4001,
+    "Front": 1.61,
+    "Side": 6.77,
+    "Rear": 10.31,
+    "Top": 6.33
+   },
+   {
+    "ID": 2615,
+    "Type": 4002,
+    "Front": 0.98,
+    "Side": 2.85,
+    "Rear": 0.98,
+    "Top": 2.62
+   },
+   {
+    "ID": 2615,
+    "Type": 5001,
+    "Front": -0.8,
+    "Side": 1.8,
+    "Rear": -0.8,
+    "Top": 2.2
+   },
+   {
+    "ID": 2615,
+    "Type": 5002,
+    "Front": -0.8,
+    "Side": 1.8,
+    "Rear": -0.8,
+    "Top": 1.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2616,
+   "Category": 2003,
+   "Type": 4101,
+   "Name": "Ka-27PS Helix D",
+   "Comments": "4x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 11.3,
+   "Span": 3.65,
+   "Height": 5.4,
+   "WeightEmpty": 6500,
+   "WeightMax": 1800,
+   "WeightPayload": 12000,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 12.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1985
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10392,
+   10393
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1954
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1313
+  ],
+  "signatures": [
+   {
+    "ID": 2616,
+    "Type": 3001,
+    "Front": 1.61,
+    "Side": 4.85,
+    "Rear": 1.61,
+    "Top": 4.39
+   },
+   {
+    "ID": 2616,
+    "Type": 3002,
+    "Front": 0.98,
+    "Side": 2.85,
+    "Rear": 1.47,
+    "Top": 2.62
+   },
+   {
+    "ID": 2616,
+    "Type": 4001,
+    "Front": 1.61,
+    "Side": 6.77,
+    "Rear": 10.31,
+    "Top": 6.33
+   },
+   {
+    "ID": 2616,
+    "Type": 4002,
+    "Front": 0.98,
+    "Side": 2.85,
+    "Rear": 0.98,
+    "Top": 2.62
+   },
+   {
+    "ID": 2616,
+    "Type": 5001,
+    "Front": -0.8,
+    "Side": 1.8,
+    "Rear": -0.8,
+    "Top": 2.2
+   },
+   {
+    "ID": 2616,
+    "Type": 5002,
+    "Front": -0.8,
+    "Side": 1.8,
+    "Rear": -0.8,
+    "Top": 1.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2617,
+   "Category": 2008,
+   "Type": 6001,
+   "Name": "Be-12PL Mail",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 2000,
+   "YearDecommissioned": 2015,
+   "Length": 30.1,
+   "Span": 29.8,
+   "Height": 7.9,
+   "WeightEmpty": 24500,
+   "WeightMax": 36000,
+   "WeightPayload": 3000,
+   "Crew": 4,
+   "Agility": 1.0,
+   "ClimbRate": 15.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4430,
+   2840
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10394,
+   10395,
+   10396,
+   10397,
+   13450,
+   15322
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   223
+  ],
+  "comm_ids": [
+   13,
+   20,
+   238
+  ],
+  "fuel_ids": [
+   680
+  ],
+  "signatures": [
+   {
+    "ID": 2617,
+    "Type": 3001,
+    "Front": 5.6,
+    "Side": 10.16,
+    "Rear": 5.6,
+    "Top": 15.3
+   },
+   {
+    "ID": 2617,
+    "Type": 3002,
+    "Front": 2.78,
+    "Side": 5.28,
+    "Rear": 5.13,
+    "Top": 7.42
+   },
+   {
+    "ID": 2617,
+    "Type": 4001,
+    "Front": 5.6,
+    "Side": 11.09,
+    "Rear": 16.76,
+    "Top": 14.57
+   },
+   {
+    "ID": 2617,
+    "Type": 4002,
+    "Front": 2.78,
+    "Side": 5.28,
+    "Rear": 2.78,
+    "Top": 7.42
+   },
+   {
+    "ID": 2617,
+    "Type": 5001,
+    "Front": 14.3,
+    "Side": 16.2,
+    "Rear": 14.3,
+    "Top": 16.6
+   },
+   {
+    "ID": 2617,
+    "Type": 5002,
+    "Front": 14.3,
+    "Side": 16.2,
+    "Rear": 14.3,
+    "Top": 16.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2619,
+   "Category": 2001,
+   "Type": 6002,
+   "Name": "Tu-142MK Bear F Mod 3",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1992,
+   "Length": 49.5,
+   "Span": 53.1,
+   "Height": 12.2,
+   "WeightEmpty": 91800,
+   "WeightMax": 155000,
+   "WeightPayload": 15000,
+   "Crew": 11,
+   "Agility": 1.0,
+   "ClimbRate": 20.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 1020,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5660,
+   426,
+   788,
+   828,
+   872,
+   2750,
+   2713
+  ],
+  "mount_ids": [
+   276,
+   1803
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10402,
+   10403,
+   13443,
+   15312
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1154
+  ],
+  "comm_ids": [
+   20,
+   280,
+   238
+  ],
+  "fuel_ids": [
+   159
+  ],
+  "signatures": [
+   {
+    "ID": 2619,
+    "Type": 3001,
+    "Front": 9.09,
+    "Side": 15.71,
+    "Rear": 9.09,
+    "Top": 24.83
+   },
+   {
+    "ID": 2619,
+    "Type": 3002,
+    "Front": 4.16,
+    "Side": 7.59,
+    "Rear": 8.33,
+    "Top": 11.12
+   },
+   {
+    "ID": 2619,
+    "Type": 4001,
+    "Front": 9.09,
+    "Side": 14.83,
+    "Rear": 20.23,
+    "Top": 20.12
+   },
+   {
+    "ID": 2619,
+    "Type": 4002,
+    "Front": 4.16,
+    "Side": 7.59,
+    "Rear": 4.16,
+    "Top": 11.12
+   },
+   {
+    "ID": 2619,
+    "Type": 5001,
+    "Front": 20.1,
+    "Side": 21.8,
+    "Rear": 20.1,
+    "Top": 22.2
+   },
+   {
+    "ID": 2619,
+    "Type": 5002,
+    "Front": 20.1,
+    "Side": 21.8,
+    "Rear": 20.1,
+    "Top": 21.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2620,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "An-12BP Cub A",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2004,
+   "Length": 33.1,
+   "Span": 38.0,
+   "Height": 10.5,
+   "WeightEmpty": 28000,
+   "WeightMax": 61000,
+   "WeightPayload": 20000,
+   "Crew": 6,
+   "Agility": 1.0,
+   "ClimbRate": 9.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4,
+   4227
+  ],
+  "mount_ids": [
+   276
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10404,
+   10405,
+   10406,
+   14785,
+   14786,
+   14787,
+   25523,
+   25524
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1111
+  ],
+  "comm_ids": [
+   20,
+   194,
+   238
+  ],
+  "fuel_ids": [
+   198
+  ],
+  "signatures": [
+   {
+    "ID": 2620,
+    "Type": 3001,
+    "Front": 6.54,
+    "Side": 11.5,
+    "Rear": 6.54,
+    "Top": 17.85
+   },
+   {
+    "ID": 2620,
+    "Type": 3002,
+    "Front": 3.16,
+    "Side": 5.85,
+    "Rear": 5.99,
+    "Top": 8.44
+   },
+   {
+    "ID": 2620,
+    "Type": 4001,
+    "Front": 6.54,
+    "Side": 12.04,
+    "Rear": 17.79,
+    "Top": 16.14
+   },
+   {
+    "ID": 2620,
+    "Type": 4002,
+    "Front": 3.16,
+    "Side": 5.85,
+    "Rear": 3.16,
+    "Top": 8.44
+   },
+   {
+    "ID": 2620,
+    "Type": 5001,
+    "Front": 16.1,
+    "Side": 18.0,
+    "Rear": 16.1,
+    "Top": 18.4
+   },
+   {
+    "ID": 2620,
+    "Type": 5002,
+    "Front": 16.1,
+    "Side": 18.0,
+    "Rear": 16.1,
+    "Top": 18.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2621,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "An-24B Coke",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 23.5,
+   "Span": 29.2,
+   "Height": 8.3,
+   "WeightEmpty": 13300,
+   "WeightMax": 21000,
+   "WeightPayload": 5500,
+   "Crew": 5,
+   "Agility": 1.0,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   863
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10407,
+   10408,
+   10409,
+   14730
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1612
+  ],
+  "comm_ids": [
+   20,
+   194,
+   238
+  ],
+  "fuel_ids": [
+   1060
+  ],
+  "signatures": [
+   {
+    "ID": 2621,
+    "Type": 3001,
+    "Front": 4.99,
+    "Side": 8.65,
+    "Rear": 4.99,
+    "Top": 13.64
+   },
+   {
+    "ID": 2621,
+    "Type": 3002,
+    "Front": 2.52,
+    "Side": 4.62,
+    "Rear": 4.57,
+    "Top": 6.74
+   },
+   {
+    "ID": 2621,
+    "Type": 4001,
+    "Front": 4.99,
+    "Side": 9.96,
+    "Rear": 16.02,
+    "Top": 13.49
+   },
+   {
+    "ID": 2621,
+    "Type": 4002,
+    "Front": 2.52,
+    "Side": 4.62,
+    "Rear": 2.52,
+    "Top": 6.74
+   },
+   {
+    "ID": 2621,
+    "Type": 5001,
+    "Front": 12.9,
+    "Side": 14.9,
+    "Rear": 12.9,
+    "Top": 15.3
+   },
+   {
+    "ID": 2621,
+    "Type": 5002,
+    "Front": 12.9,
+    "Side": 14.9,
+    "Rear": 12.9,
+    "Top": 14.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2623,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "An-26 Curl A",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 23.8,
+   "Span": 29.2,
+   "Height": 8.3,
+   "WeightEmpty": 16300,
+   "WeightMax": 24000,
+   "WeightPayload": 5500,
+   "Crew": 5,
+   "Agility": 1.0,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   863
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   2529,
+   3535,
+   8430,
+   11013,
+   14734
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   421
+  ],
+  "comm_ids": [
+   20,
+   194,
+   238
+  ],
+  "fuel_ids": [
+   1060
+  ],
+  "signatures": [
+   {
+    "ID": 2623,
+    "Type": 3001,
+    "Front": 5.02,
+    "Side": 8.73,
+    "Rear": 5.02,
+    "Top": 13.7
+   },
+   {
+    "ID": 2623,
+    "Type": 3002,
+    "Front": 2.53,
+    "Side": 4.65,
+    "Rear": 4.6,
+    "Top": 6.77
+   },
+   {
+    "ID": 2623,
+    "Type": 4001,
+    "Front": 5.02,
+    "Side": 10.02,
+    "Rear": 16.05,
+    "Top": 13.54
+   },
+   {
+    "ID": 2623,
+    "Type": 4002,
+    "Front": 2.53,
+    "Side": 4.65,
+    "Rear": 2.53,
+    "Top": 6.77
+   },
+   {
+    "ID": 2623,
+    "Type": 5001,
+    "Front": 12.9,
+    "Side": 14.9,
+    "Rear": 12.9,
+    "Top": 15.4
+   },
+   {
+    "ID": 2623,
+    "Type": 5002,
+    "Front": 12.9,
+    "Side": 14.9,
+    "Rear": 12.9,
+    "Top": 14.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2625,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "Il-76MD Candid B",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 46.6,
+   "Span": 50.5,
+   "Height": 14.8,
+   "WeightEmpty": 88000,
+   "WeightMax": 195000,
+   "WeightPayload": 50000,
+   "Crew": 7,
+   "Agility": 1.0,
+   "ClimbRate": 10.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   861,
+   863,
+   2919,
+   2713
+  ],
+  "mount_ids": [
+   1820
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10416,
+   10417,
+   10418,
+   10419,
+   14802,
+   25509,
+   25510
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   727
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   282
+  ],
+  "signatures": [
+   {
+    "ID": 2625,
+    "Type": 3001,
+    "Front": 8.65,
+    "Side": 15.65,
+    "Rear": 8.65,
+    "Top": 23.63
+   },
+   {
+    "ID": 2625,
+    "Type": 3002,
+    "Front": 3.99,
+    "Side": 7.56,
+    "Rear": 7.93,
+    "Top": 10.67
+   },
+   {
+    "ID": 2625,
+    "Type": 4001,
+    "Front": 8.65,
+    "Side": 14.78,
+    "Rear": 19.84,
+    "Top": 19.46
+   },
+   {
+    "ID": 2625,
+    "Type": 4002,
+    "Front": 3.99,
+    "Side": 7.56,
+    "Rear": 3.99,
+    "Top": 10.67
+   },
+   {
+    "ID": 2625,
+    "Type": 5001,
+    "Front": 19.5,
+    "Side": 21.3,
+    "Rear": 19.5,
+    "Top": 21.7
+   },
+   {
+    "ID": 2625,
+    "Type": 5002,
+    "Front": 19.5,
+    "Side": 21.3,
+    "Rear": 19.5,
+    "Top": 21.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2626,
+   "Category": 2001,
+   "Type": 8001,
+   "Name": "Il-78M Midas",
+   "Comments": "Il-76 Mod",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1998,
+   "Length": 46.6,
+   "Span": 50.5,
+   "Height": 14.8,
+   "WeightEmpty": 88000,
+   "WeightMax": 195000,
+   "WeightPayload": 50000,
+   "Crew": 6,
+   "Agility": 1.0,
+   "ClimbRate": 10.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   863
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10420,
+   10421
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1987
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   1011
+  ],
+  "signatures": [
+   {
+    "ID": 2626,
+    "Type": 3001,
+    "Front": 8.65,
+    "Side": 15.65,
+    "Rear": 8.65,
+    "Top": 23.63
+   },
+   {
+    "ID": 2626,
+    "Type": 3002,
+    "Front": 3.99,
+    "Side": 7.56,
+    "Rear": 7.93,
+    "Top": 10.67
+   },
+   {
+    "ID": 2626,
+    "Type": 4001,
+    "Front": 8.65,
+    "Side": 14.78,
+    "Rear": 19.84,
+    "Top": 19.46
+   },
+   {
+    "ID": 2626,
+    "Type": 4002,
+    "Front": 3.99,
+    "Side": 7.56,
+    "Rear": 3.99,
+    "Top": 10.67
+   },
+   {
+    "ID": 2626,
+    "Type": 5001,
+    "Front": 19.5,
+    "Side": 21.3,
+    "Rear": 19.5,
+    "Top": 21.7
+   },
+   {
+    "ID": 2626,
+    "Type": 5002,
+    "Front": 19.5,
+    "Side": 21.3,
+    "Rear": 19.5,
+    "Top": 21.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2627,
+   "Category": 2003,
+   "Type": 7003,
+   "Name": "Ka-25Ts Hormone B",
+   "Comments": "OTH Targeting, Poor Service Record",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1997,
+   "Length": 9.8,
+   "Span": 3.8,
+   "Height": 5.4,
+   "WeightEmpty": 4765,
+   "WeightMax": 7100,
+   "WeightPayload": 600,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 7.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   3765
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10422,
+   10423
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   277
+  ],
+  "comm_ids": [
+   20,
+   196
+  ],
+  "fuel_ids": [
+   740
+  ],
+  "signatures": [
+   {
+    "ID": 2627,
+    "Type": 3001,
+    "Front": 1.48,
+    "Side": 4.45,
+    "Rear": 1.48,
+    "Top": 4.03
+   },
+   {
+    "ID": 2627,
+    "Type": 3002,
+    "Front": 0.91,
+    "Side": 2.65,
+    "Rear": 1.35,
+    "Top": 2.44
+   },
+   {
+    "ID": 2627,
+    "Type": 4001,
+    "Front": 1.48,
+    "Side": 6.4,
+    "Rear": 9.97,
+    "Top": 5.98
+   },
+   {
+    "ID": 2627,
+    "Type": 4002,
+    "Front": 0.91,
+    "Side": 2.65,
+    "Rear": 0.91,
+    "Top": 2.44
+   },
+   {
+    "ID": 2627,
+    "Type": 5001,
+    "Front": -1.8,
+    "Side": 0.8,
+    "Rear": -1.8,
+    "Top": 1.2
+   },
+   {
+    "ID": 2627,
+    "Type": 5002,
+    "Front": -1.8,
+    "Side": 0.8,
+    "Rear": -1.8,
+    "Top": 0.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2629,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "Mi-8T Hip C",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.2,
+   "Span": 5.7,
+   "Height": 5.7,
+   "WeightEmpty": 7160,
+   "WeightMax": 12000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10428,
+   10429,
+   10430,
+   10431,
+   13867
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1530
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1058
+  ],
+  "signatures": [
+   {
+    "ID": 2629,
+    "Type": 3001,
+    "Front": 2.45,
+    "Side": 6.69,
+    "Rear": 2.45,
+    "Top": 6.69
+   },
+   {
+    "ID": 2629,
+    "Type": 3002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 2.25,
+    "Top": 3.73
+   },
+   {
+    "ID": 2629,
+    "Type": 4001,
+    "Front": 2.45,
+    "Side": 8.39,
+    "Rear": 12.15,
+    "Top": 8.39
+   },
+   {
+    "ID": 2629,
+    "Type": 4002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 1.39,
+    "Top": 3.73
+   },
+   {
+    "ID": 2629,
+    "Type": 5001,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 7.1
+   },
+   {
+    "ID": 2629,
+    "Type": 5002,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 6.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2630,
+   "Category": 2003,
+   "Type": 4001,
+   "Name": "Mi-8PPA Hip K",
+   "Comments": "OECM",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.2,
+   "Span": 5.7,
+   "Height": 5.7,
+   "WeightEmpty": 7160,
+   "WeightMax": 12000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4287,
+   1021
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10432,
+   10433
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1530
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1058
+  ],
+  "signatures": [
+   {
+    "ID": 2630,
+    "Type": 3001,
+    "Front": 2.45,
+    "Side": 6.69,
+    "Rear": 2.45,
+    "Top": 6.69
+   },
+   {
+    "ID": 2630,
+    "Type": 3002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 2.25,
+    "Top": 3.73
+   },
+   {
+    "ID": 2630,
+    "Type": 4001,
+    "Front": 2.45,
+    "Side": 8.39,
+    "Rear": 12.15,
+    "Top": 8.39
+   },
+   {
+    "ID": 2630,
+    "Type": 4002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 1.39,
+    "Top": 3.73
+   },
+   {
+    "ID": 2630,
+    "Type": 5001,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 7.1
+   },
+   {
+    "ID": 2630,
+    "Type": 5002,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 6.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2631,
+   "Category": 2003,
+   "Type": 4001,
+   "Name": "Mi-8SMV Hip J",
+   "Comments": "OECM",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.2,
+   "Span": 5.7,
+   "Height": 5.7,
+   "WeightEmpty": 7160,
+   "WeightMax": 12000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4288,
+   2639
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10432,
+   10433
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1530
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1058
+  ],
+  "signatures": [
+   {
+    "ID": 2631,
+    "Type": 3001,
+    "Front": 2.45,
+    "Side": 6.69,
+    "Rear": 2.45,
+    "Top": 6.69
+   },
+   {
+    "ID": 2631,
+    "Type": 3002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 2.25,
+    "Top": 3.73
+   },
+   {
+    "ID": 2631,
+    "Type": 4001,
+    "Front": 2.45,
+    "Side": 8.39,
+    "Rear": 12.15,
+    "Top": 8.39
+   },
+   {
+    "ID": 2631,
+    "Type": 4002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 1.39,
+    "Top": 3.73
+   },
+   {
+    "ID": 2631,
+    "Type": 5001,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 7.1
+   },
+   {
+    "ID": 2631,
+    "Type": 5002,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 6.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2632,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "Mi-8MT Hip H",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.2,
+   "Span": 5.7,
+   "Height": 5.7,
+   "WeightEmpty": 7160,
+   "WeightMax": 12000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   4
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   13884,
+   13885,
+   13886,
+   13887,
+   13888
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1530
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1058
+  ],
+  "signatures": [
+   {
+    "ID": 2632,
+    "Type": 3001,
+    "Front": 2.45,
+    "Side": 6.69,
+    "Rear": 2.45,
+    "Top": 6.69
+   },
+   {
+    "ID": 2632,
+    "Type": 3002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 2.25,
+    "Top": 3.73
+   },
+   {
+    "ID": 2632,
+    "Type": 4001,
+    "Front": 2.45,
+    "Side": 8.39,
+    "Rear": 12.15,
+    "Top": 8.39
+   },
+   {
+    "ID": 2632,
+    "Type": 4002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 1.39,
+    "Top": 3.73
+   },
+   {
+    "ID": 2632,
+    "Type": 5001,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 7.1
+   },
+   {
+    "ID": 2632,
+    "Type": 5002,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 6.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2633,
+   "Category": 2003,
+   "Type": 6001,
+   "Name": "Mi-14PL Haze A",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.4,
+   "Span": 4.4,
+   "Height": 6.9,
+   "WeightEmpty": 8800,
+   "WeightMax": 14000,
+   "WeightPayload": 2000,
+   "Crew": 4,
+   "Agility": 1.0,
+   "ClimbRate": 7.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1292,
+   1898,
+   2912,
+   4290
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10434,
+   10435,
+   10436,
+   10437,
+   13903,
+   15370
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1039
+  ],
+  "comm_ids": [
+   20,
+   35,
+   279
+  ],
+  "fuel_ids": [
+   1259
+  ],
+  "signatures": [
+   {
+    "ID": 2633,
+    "Type": 3001,
+    "Front": 2.35,
+    "Side": 7.04,
+    "Rear": 2.35,
+    "Top": 6.41
+   },
+   {
+    "ID": 2633,
+    "Type": 3002,
+    "Front": 1.35,
+    "Side": 3.89,
+    "Rear": 2.15,
+    "Top": 3.6
+   },
+   {
+    "ID": 2633,
+    "Type": 4001,
+    "Front": 2.35,
+    "Side": 8.69,
+    "Rear": 11.95,
+    "Top": 8.16
+   },
+   {
+    "ID": 2633,
+    "Type": 4002,
+    "Front": 1.35,
+    "Side": 3.89,
+    "Rear": 1.35,
+    "Top": 3.6
+   },
+   {
+    "ID": 2633,
+    "Type": 5001,
+    "Front": 3.8,
+    "Side": 6.2,
+    "Rear": 3.8,
+    "Top": 6.6
+   },
+   {
+    "ID": 2633,
+    "Type": 5002,
+    "Front": 3.8,
+    "Side": 6.2,
+    "Rear": 3.8,
+    "Top": 6.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2634,
+   "Category": 2003,
+   "Type": 4101,
+   "Name": "Mi-14PS Haze C",
+   "Comments": "SAR",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.4,
+   "Span": 4.4,
+   "Height": 6.9,
+   "WeightEmpty": 8800,
+   "WeightMax": 14000,
+   "WeightPayload": 2000,
+   "Crew": 4,
+   "Agility": 1.0,
+   "ClimbRate": 7.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1080
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10438,
+   10439
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1039
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1259
+  ],
+  "signatures": [
+   {
+    "ID": 2634,
+    "Type": 3001,
+    "Front": 2.35,
+    "Side": 7.04,
+    "Rear": 2.35,
+    "Top": 6.41
+   },
+   {
+    "ID": 2634,
+    "Type": 3002,
+    "Front": 1.35,
+    "Side": 3.89,
+    "Rear": 2.15,
+    "Top": 3.6
+   },
+   {
+    "ID": 2634,
+    "Type": 4001,
+    "Front": 2.35,
+    "Side": 8.69,
+    "Rear": 11.95,
+    "Top": 8.16
+   },
+   {
+    "ID": 2634,
+    "Type": 4002,
+    "Front": 1.35,
+    "Side": 3.89,
+    "Rear": 1.35,
+    "Top": 3.6
+   },
+   {
+    "ID": 2634,
+    "Type": 5001,
+    "Front": 3.8,
+    "Side": 6.2,
+    "Rear": 3.8,
+    "Top": 6.6
+   },
+   {
+    "ID": 2634,
+    "Type": 5002,
+    "Front": 3.8,
+    "Side": 6.2,
+    "Rear": 3.8,
+    "Top": 6.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2636,
+   "Category": 2003,
+   "Type": 4201,
+   "Name": "Mi-14BT Haze B",
+   "Comments": "Mine Sweeper, Flawed",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1999,
+   "Length": 18.4,
+   "Span": 4.4,
+   "Height": 6.9,
+   "WeightEmpty": 8800,
+   "WeightMax": 14000,
+   "WeightPayload": 2000,
+   "Crew": 4,
+   "Agility": 1.0,
+   "ClimbRate": 7.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2912
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10440,
+   10441
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2373
+  ],
+  "comm_ids": [
+   20,
+   35
+  ],
+  "fuel_ids": [
+   1259
+  ],
+  "signatures": [
+   {
+    "ID": 2636,
+    "Type": 3001,
+    "Front": 2.35,
+    "Side": 7.04,
+    "Rear": 2.35,
+    "Top": 6.41
+   },
+   {
+    "ID": 2636,
+    "Type": 3002,
+    "Front": 1.35,
+    "Side": 3.89,
+    "Rear": 2.15,
+    "Top": 3.6
+   },
+   {
+    "ID": 2636,
+    "Type": 4001,
+    "Front": 2.35,
+    "Side": 8.69,
+    "Rear": 11.95,
+    "Top": 8.16
+   },
+   {
+    "ID": 2636,
+    "Type": 4002,
+    "Front": 1.35,
+    "Side": 3.89,
+    "Rear": 1.35,
+    "Top": 3.6
+   },
+   {
+    "ID": 2636,
+    "Type": 5001,
+    "Front": 3.8,
+    "Side": 6.2,
+    "Rear": 3.8,
+    "Top": 6.6
+   },
+   {
+    "ID": 2636,
+    "Type": 5002,
+    "Front": 3.8,
+    "Side": 6.2,
+    "Rear": 3.8,
+    "Top": 6.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2637,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "Mi-24V Hind E",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2002,
+   "Length": 17.5,
+   "Span": 1.7,
+   "Height": 4.4,
+   "WeightEmpty": 8200,
+   "WeightMax": 11500,
+   "WeightPayload": 1480,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 12.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1015,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4627,
+   1985,
+   2750,
+   2924,
+   4624
+  ],
+  "mount_ids": [
+   294,
+   1848
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10442,
+   10443,
+   10444
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   356
+  ],
+  "comm_ids": [
+   20,
+   48
+  ],
+  "fuel_ids": [
+   668
+  ],
+  "signatures": [
+   {
+    "ID": 2637,
+    "Type": 3001,
+    "Front": 2.01,
+    "Side": 6.19,
+    "Rear": 2.01,
+    "Top": 5.5
+   },
+   {
+    "ID": 2637,
+    "Type": 3002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.84,
+    "Top": 3.16
+   },
+   {
+    "ID": 2637,
+    "Type": 4001,
+    "Front": 2.01,
+    "Side": 7.16,
+    "Rear": 10.12,
+    "Top": 6.62
+   },
+   {
+    "ID": 2637,
+    "Type": 4002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.18,
+    "Top": 3.16
+   },
+   {
+    "ID": 2637,
+    "Type": 5001,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.8
+   },
+   {
+    "ID": 2637,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2638,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "MiG-23MLD Flogger K",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2001,
+   "Length": 16.7,
+   "Span": 14.0,
+   "Height": 4.8,
+   "WeightEmpty": 10230,
+   "WeightMax": 17800,
+   "WeightPayload": 2000,
+   "Crew": 1,
+   "Agility": 3.5,
+   "ClimbRate": 135.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   688,
+   2609,
+   2339
+  ],
+  "mount_ids": [
+   274,
+   1684,
+   1786
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10445,
+   10446,
+   10447,
+   10448,
+   10449,
+   10450,
+   10451,
+   10452,
+   10453,
+   10454,
+   10455,
+   10456,
+   10457,
+   10458,
+   10459,
+   10460,
+   10461,
+   10462,
+   10909,
+   10910,
+   10911,
+   10912,
+   10913,
+   10914,
+   10915,
+   23205,
+   23206,
+   23207,
+   23208,
+   24231,
+   24232,
+   24233,
+   24234,
+   24235,
+   24236,
+   24237,
+   24238,
+   24930,
+   24931,
+   24932,
+   24933,
+   24934,
+   24935,
+   24936,
+   24937,
+   24938,
+   24939,
+   24940,
+   24941,
+   24942,
+   24943,
+   24944,
+   24945,
+   24946,
+   24947,
+   24948,
+   24949,
+   24950,
+   24951,
+   24952,
+   24953,
+   24954
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   461
+  ],
+  "comm_ids": [
+   264,
+   156
+  ],
+  "fuel_ids": [
+   141
+  ],
+  "signatures": [
+   {
+    "ID": 2638,
+    "Type": 3001,
+    "Front": 3.07,
+    "Side": 6.08,
+    "Rear": 3.07,
+    "Top": 8.38
+   },
+   {
+    "ID": 2638,
+    "Type": 3002,
+    "Front": 1.68,
+    "Side": 3.44,
+    "Rear": 2.81,
+    "Top": 4.5
+   },
+   {
+    "ID": 2638,
+    "Type": 4001,
+    "Front": 3.07,
+    "Side": 7.88,
+    "Rear": 13.26,
+    "Top": 9.75
+   },
+   {
+    "ID": 2638,
+    "Type": 4002,
+    "Front": 1.68,
+    "Side": 3.44,
+    "Rear": 1.68,
+    "Top": 4.5
+   },
+   {
+    "ID": 2638,
+    "Type": 5001,
+    "Front": 7.0,
+    "Side": 9.3,
+    "Rear": 7.0,
+    "Top": 9.7
+   },
+   {
+    "ID": 2638,
+    "Type": 5002,
+    "Front": 7.0,
+    "Side": 9.3,
+    "Rear": 7.0,
+    "Top": 9.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2640,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "MiG-23M Flogger B",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1998,
+   "Length": 16.7,
+   "Span": 14.0,
+   "Height": 4.8,
+   "WeightEmpty": 10890,
+   "WeightMax": 18400,
+   "WeightPayload": 2000,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 135.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   545,
+   573,
+   593
+  ],
+  "mount_ids": [
+   274
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10479,
+   10480,
+   10481,
+   10482,
+   10483,
+   10484,
+   10485,
+   10486,
+   10487,
+   10488,
+   10489,
+   10490,
+   10491,
+   10492,
+   10493,
+   10494,
+   10806,
+   10807,
+   10808,
+   10809,
+   10810,
+   10812,
+   10813,
+   10816,
+   23203,
+   24146,
+   24147,
+   24148,
+   24149,
+   24150,
+   24151,
+   24152
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   527
+  ],
+  "comm_ids": [
+   195
+  ],
+  "fuel_ids": [
+   1014
+  ],
+  "signatures": [
+   {
+    "ID": 2640,
+    "Type": 3001,
+    "Front": 3.07,
+    "Side": 6.08,
+    "Rear": 3.07,
+    "Top": 8.38
+   },
+   {
+    "ID": 2640,
+    "Type": 3002,
+    "Front": 1.68,
+    "Side": 3.44,
+    "Rear": 2.81,
+    "Top": 4.5
+   },
+   {
+    "ID": 2640,
+    "Type": 4001,
+    "Front": 3.07,
+    "Side": 7.88,
+    "Rear": 13.26,
+    "Top": 9.75
+   },
+   {
+    "ID": 2640,
+    "Type": 4002,
+    "Front": 1.68,
+    "Side": 3.44,
+    "Rear": 1.68,
+    "Top": 4.5
+   },
+   {
+    "ID": 2640,
+    "Type": 5001,
+    "Front": 7.0,
+    "Side": 9.3,
+    "Rear": 7.0,
+    "Top": 9.7
+   },
+   {
+    "ID": 2640,
+    "Type": 5002,
+    "Front": 7.0,
+    "Side": 9.3,
+    "Rear": 7.0,
+    "Top": 9.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2641,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "MiG-25PDS Foxbat E",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1994,
+   "Length": 19.75,
+   "Span": 14.0,
+   "Height": 6.3,
+   "WeightEmpty": 20020,
+   "WeightMax": 36720,
+   "WeightPayload": 3000,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 115.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   545,
+   592,
+   2745
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10495,
+   10496,
+   10497
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1588
+  ],
+  "comm_ids": [
+   20,
+   73,
+   238
+  ],
+  "fuel_ids": [
+   430
+  ],
+  "signatures": [
+   {
+    "ID": 2641,
+    "Type": 3001,
+    "Front": 3.34,
+    "Side": 7.23,
+    "Rear": 3.34,
+    "Top": 9.13
+   },
+   {
+    "ID": 2641,
+    "Type": 3002,
+    "Front": 1.81,
+    "Side": 3.98,
+    "Rear": 3.06,
+    "Top": 4.83
+   },
+   {
+    "ID": 2641,
+    "Type": 4001,
+    "Front": 3.34,
+    "Side": 8.84,
+    "Rear": 13.71,
+    "Top": 10.32
+   },
+   {
+    "ID": 2641,
+    "Type": 4002,
+    "Front": 1.81,
+    "Side": 3.98,
+    "Rear": 1.81,
+    "Top": 4.83
+   },
+   {
+    "ID": 2641,
+    "Type": 5001,
+    "Front": 8.0,
+    "Side": 10.2,
+    "Rear": 8.0,
+    "Top": 10.7
+   },
+   {
+    "ID": 2641,
+    "Type": 5002,
+    "Front": 8.0,
+    "Side": 10.2,
+    "Rear": 8.0,
+    "Top": 10.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2643,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "MiG-25RBS Foxbat D",
+   "Comments": "SLAR",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1995,
+   "Length": 21.6,
+   "Span": 13.4,
+   "Height": 6.3,
+   "WeightEmpty": 20755,
+   "WeightMax": 39830,
+   "WeightPayload": 4000,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 115.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   490,
+   4128,
+   545,
+   1958
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10500,
+   10501
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   570
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   450
+  ],
+  "signatures": [
+   {
+    "ID": 2643,
+    "Type": 3001,
+    "Front": 3.45,
+    "Side": 7.69,
+    "Rear": 3.45,
+    "Top": 9.43
+   },
+   {
+    "ID": 2643,
+    "Type": 3002,
+    "Front": 1.86,
+    "Side": 4.19,
+    "Rear": 3.16,
+    "Top": 4.96
+   },
+   {
+    "ID": 2643,
+    "Type": 4001,
+    "Front": 3.45,
+    "Side": 9.21,
+    "Rear": 13.88,
+    "Top": 10.55
+   },
+   {
+    "ID": 2643,
+    "Type": 4002,
+    "Front": 1.86,
+    "Side": 4.19,
+    "Rear": 1.86,
+    "Top": 4.96
+   },
+   {
+    "ID": 2643,
+    "Type": 5001,
+    "Front": 8.4,
+    "Side": 10.6,
+    "Rear": 8.4,
+    "Top": 11.0
+   },
+   {
+    "ID": 2643,
+    "Type": 5002,
+    "Front": 8.4,
+    "Side": 10.6,
+    "Rear": 8.4,
+    "Top": 10.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2645,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "MiG-25RBT Foxbat B",
+   "Comments": "SLAR",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1995,
+   "Length": 21.6,
+   "Span": 13.4,
+   "Height": 6.3,
+   "WeightEmpty": 20755,
+   "WeightMax": 39830,
+   "WeightPayload": 4000,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 115.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   491,
+   506,
+   545,
+   1958
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   10500,
+   10501
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   570
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   450
+  ],
+  "signatures": [
+   {
+    "ID": 2645,
+    "Type": 3001,
+    "Front": 3.45,
+    "Side": 7.69,
+    "Rear": 3.45,
+    "Top": 9.43
+   },
+   {
+    "ID": 2645,
+    "Type": 3002,
+    "Front": 1.86,
+    "Side": 4.19,
+    "Rear": 3.16,
+    "Top": 4.96
+   },
+   {
+    "ID": 2645,
+    "Type": 4001,
+    "Front": 3.45,
+    "Side": 9.21,
+    "Rear": 13.88,
+    "Top": 10.55
+   },
+   {
+    "ID": 2645,
+    "Type": 4002,
+    "Front": 1.86,
+    "Side": 4.19,
+    "Rear": 1.86,
+    "Top": 4.96
+   },
+   {
+    "ID": 2645,
+    "Type": 5001,
+    "Front": 8.4,
+    "Side": 10.6,
+    "Rear": 8.4,
+    "Top": 11.0
+   },
+   {
+    "ID": 2645,
+    "Type": 5002,
+    "Front": 8.4,
+    "Side": 10.6,
+    "Rear": 8.4,
+    "Top": 10.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2646,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-24 Fencer C",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2003,
+   "Length": 22.7,
+   "Span": 17.6,
+   "Height": 5.9,
+   "WeightEmpty": 21150,
+   "WeightMax": 37900,
+   "WeightPayload": 8100,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 84.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   409,
+   1006,
+   2364,
+   2595,
+   2750
+  ],
+  "mount_ids": [
+   2129
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10502,
+   10503,
+   10504,
+   10505,
+   10506,
+   10507,
+   10508,
+   10509,
+   10510,
+   10511,
+   10512,
+   10513,
+   10514,
+   10515,
+   10516,
+   10517,
+   10518,
+   10519,
+   10520,
+   10521,
+   10522,
+   10523,
+   10524,
+   10525,
+   10526,
+   10527,
+   10528,
+   10529,
+   10530,
+   10531,
+   10532,
+   10533,
+   10534,
+   10535,
+   10536,
+   10537,
+   10651,
+   10652,
+   10653,
+   10654,
+   10655,
+   10656,
+   10657,
+   10664,
+   23593,
+   23594,
+   23595,
+   23596,
+   23597,
+   23598,
+   23599,
+   23600,
+   23601,
+   23602,
+   23603,
+   23604,
+   23605,
+   23606,
+   23607,
+   23608,
+   23609,
+   23610,
+   23611,
+   23612,
+   23613,
+   23614,
+   23615,
+   23616,
+   23617,
+   23618,
+   23619,
+   23620,
+   23621,
+   23622,
+   23623,
+   23624,
+   23625,
+   23626,
+   23627,
+   23628,
+   23629,
+   23630,
+   23631,
+   23632,
+   23900,
+   23901,
+   23913
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   417
+  ],
+  "comm_ids": [
+   20,
+   156,
+   238
+  ],
+  "fuel_ids": [
+   718
+  ],
+  "signatures": [
+   {
+    "ID": 2646,
+    "Type": 3001,
+    "Front": 3.92,
+    "Side": 7.87,
+    "Rear": 3.92,
+    "Top": 10.71
+   },
+   {
+    "ID": 2646,
+    "Type": 3002,
+    "Front": 2.06,
+    "Side": 4.26,
+    "Rear": 3.59,
+    "Top": 5.52
+   },
+   {
+    "ID": 2646,
+    "Type": 4001,
+    "Front": 3.92,
+    "Side": 9.35,
+    "Rear": 14.59,
+    "Top": 11.48
+   },
+   {
+    "ID": 2646,
+    "Type": 4002,
+    "Front": 2.06,
+    "Side": 4.26,
+    "Rear": 2.06,
+    "Top": 5.52
+   },
+   {
+    "ID": 2646,
+    "Type": 5001,
+    "Front": 10.0,
+    "Side": 12.1,
+    "Rear": 10.0,
+    "Top": 12.5
+   },
+   {
+    "ID": 2646,
+    "Type": 5002,
+    "Front": 10.0,
+    "Side": 12.1,
+    "Rear": 10.0,
+    "Top": 12.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2647,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Su-24MR Fencer E",
+   "Comments": "SLAR",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 24.6,
+   "Span": 17.6,
+   "Height": 6.2,
+   "WeightEmpty": 22320,
+   "WeightMax": 39570,
+   "WeightPayload": 8100,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 84.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5079,
+   1279,
+   1791,
+   1981,
+   2943,
+   5078,
+   5080,
+   5081,
+   5082
+  ],
+  "mount_ids": [
+   1680
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10538,
+   10539
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   417
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   718
+  ],
+  "signatures": [
+   {
+    "ID": 2647,
+    "Type": 3001,
+    "Front": 4.09,
+    "Side": 8.41,
+    "Rear": 4.09,
+    "Top": 11.16
+   },
+   {
+    "ID": 2647,
+    "Type": 3002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 3.75,
+    "Top": 5.71
+   },
+   {
+    "ID": 2647,
+    "Type": 4001,
+    "Front": 4.09,
+    "Side": 9.77,
+    "Rear": 14.82,
+    "Top": 11.81
+   },
+   {
+    "ID": 2647,
+    "Type": 4002,
+    "Front": 2.14,
+    "Side": 4.51,
+    "Rear": 2.14,
+    "Top": 5.71
+   },
+   {
+    "ID": 2647,
+    "Type": 5001,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 13.0
+   },
+   {
+    "ID": 2647,
+    "Type": 5002,
+    "Front": 10.5,
+    "Side": 12.6,
+    "Rear": 10.5,
+    "Top": 12.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2648,
+   "Category": 2001,
+   "Type": 4001,
+   "Name": "Yak-28PP Brewer E",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1994,
+   "Length": 20.34,
+   "Span": 11.64,
+   "Height": 4.3,
+   "WeightEmpty": 9970,
+   "WeightMax": 17845,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 101.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 175,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   50,
+   846,
+   1883,
+   1963,
+   2006,
+   2750
+  ],
+  "mount_ids": [
+   1801
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10540,
+   10541
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   297
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   969
+  ],
+  "signatures": [
+   {
+    "ID": 2648,
+    "Type": 3001,
+    "Front": 3.19,
+    "Side": 6.88,
+    "Rear": 3.19,
+    "Top": 8.7
+   },
+   {
+    "ID": 2648,
+    "Type": 3002,
+    "Front": 1.74,
+    "Side": 3.81,
+    "Rear": 2.92,
+    "Top": 4.64
+   },
+   {
+    "ID": 2648,
+    "Type": 4001,
+    "Front": 3.19,
+    "Side": 8.55,
+    "Rear": 13.45,
+    "Top": 10.0
+   },
+   {
+    "ID": 2648,
+    "Type": 4002,
+    "Front": 1.74,
+    "Side": 3.81,
+    "Rear": 1.74,
+    "Top": 4.64
+   },
+   {
+    "ID": 2648,
+    "Type": 5001,
+    "Front": 7.5,
+    "Side": 9.7,
+    "Rear": 7.5,
+    "Top": 10.1
+   },
+   {
+    "ID": 2648,
+    "Type": 5002,
+    "Front": 7.5,
+    "Side": 9.7,
+    "Rear": 7.5,
+    "Top": 9.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2649,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Tu-16P Badger L",
+   "Comments": "Jammer",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1994,
+   "Length": 34.8,
+   "Span": 33.0,
+   "Height": 10.4,
+   "WeightEmpty": 36600,
+   "WeightMax": 79000,
+   "WeightPayload": 0,
+   "Crew": 10,
+   "Agility": 1.5,
+   "ClimbRate": 18.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   543,
+   700,
+   706,
+   1038,
+   1722
+  ],
+  "mount_ids": [
+   1916,
+   1827
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10542,
+   10543
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   372
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   458
+  ],
+  "signatures": [
+   {
+    "ID": 2649,
+    "Type": 3001,
+    "Front": 6.26,
+    "Side": 11.88,
+    "Rear": 6.26,
+    "Top": 17.11
+   },
+   {
+    "ID": 2649,
+    "Type": 3002,
+    "Front": 3.05,
+    "Side": 6.01,
+    "Rear": 5.74,
+    "Top": 8.15
+   },
+   {
+    "ID": 2649,
+    "Type": 4001,
+    "Front": 6.26,
+    "Side": 12.3,
+    "Rear": 17.5,
+    "Top": 15.69
+   },
+   {
+    "ID": 2649,
+    "Type": 4002,
+    "Front": 3.05,
+    "Side": 6.01,
+    "Rear": 3.05,
+    "Top": 8.15
+   },
+   {
+    "ID": 2649,
+    "Type": 5001,
+    "Front": 15.6,
+    "Side": 17.5,
+    "Rear": 15.6,
+    "Top": 17.9
+   },
+   {
+    "ID": 2649,
+    "Type": 5002,
+    "Front": 15.6,
+    "Side": 17.5,
+    "Rear": 15.6,
+    "Top": 17.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2650,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Tu-22RD Blinder C",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1996,
+   "Length": 41.6,
+   "Span": 23.6,
+   "Height": 10.0,
+   "WeightEmpty": 47300,
+   "WeightMax": 92000,
+   "WeightPayload": 12000,
+   "Crew": 3,
+   "Agility": 1.5,
+   "ClimbRate": 15.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   545,
+   830,
+   910,
+   2749,
+   2795,
+   3203,
+   3403,
+   3789
+  ],
+  "mount_ids": [
+   276,
+   1801,
+   1802
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10544,
+   10545,
+   10546,
+   10547,
+   10548,
+   10549,
+   10550,
+   10551
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1233
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   456
+  ],
+  "signatures": [
+   {
+    "ID": 2650,
+    "Type": 3001,
+    "Front": 6.05,
+    "Side": 13.38,
+    "Rear": 6.05,
+    "Top": 16.51
+   },
+   {
+    "ID": 2650,
+    "Type": 3002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 5.54,
+    "Top": 7.91
+   },
+   {
+    "ID": 2650,
+    "Type": 4001,
+    "Front": 6.05,
+    "Side": 13.32,
+    "Rear": 17.26,
+    "Top": 15.33
+   },
+   {
+    "ID": 2650,
+    "Type": 4002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 2.96,
+    "Top": 7.91
+   },
+   {
+    "ID": 2650,
+    "Type": 5001,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.5
+   },
+   {
+    "ID": 2650,
+    "Type": 5002,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2651,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Tu-22RDK Blinder C",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1998,
+   "Length": 41.6,
+   "Span": 23.6,
+   "Height": 10.0,
+   "WeightEmpty": 47300,
+   "WeightMax": 94000,
+   "WeightPayload": 12000,
+   "Crew": 3,
+   "Agility": 1.5,
+   "ClimbRate": 15.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   490,
+   545,
+   830,
+   910,
+   2749,
+   2795,
+   3203,
+   3403,
+   3789
+  ],
+  "mount_ids": [
+   276,
+   1801,
+   1802
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10544,
+   10545,
+   10546,
+   10547,
+   10548,
+   10549,
+   10550,
+   10551
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1233
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   456
+  ],
+  "signatures": [
+   {
+    "ID": 2651,
+    "Type": 3001,
+    "Front": 6.05,
+    "Side": 13.38,
+    "Rear": 6.05,
+    "Top": 16.51
+   },
+   {
+    "ID": 2651,
+    "Type": 3002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 5.54,
+    "Top": 7.91
+   },
+   {
+    "ID": 2651,
+    "Type": 4001,
+    "Front": 6.05,
+    "Side": 13.32,
+    "Rear": 17.26,
+    "Top": 15.33
+   },
+   {
+    "ID": 2651,
+    "Type": 4002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 2.96,
+    "Top": 7.91
+   },
+   {
+    "ID": 2651,
+    "Type": 5001,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.5
+   },
+   {
+    "ID": 2651,
+    "Type": 5002,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2652,
+   "Category": 2001,
+   "Type": 4001,
+   "Name": "Tu-22PD Blinder E",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1997,
+   "Length": 41.6,
+   "Span": 23.6,
+   "Height": 10.0,
+   "WeightEmpty": 47300,
+   "WeightMax": 92000,
+   "WeightPayload": 0,
+   "Crew": 3,
+   "Agility": 1.5,
+   "ClimbRate": 15.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   545,
+   830,
+   1091,
+   1987,
+   3203,
+   3403,
+   3789
+  ],
+  "mount_ids": [
+   276,
+   1801
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   10551,
+   10552
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1233
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   456
+  ],
+  "signatures": [
+   {
+    "ID": 2652,
+    "Type": 3001,
+    "Front": 6.05,
+    "Side": 13.38,
+    "Rear": 6.05,
+    "Top": 16.51
+   },
+   {
+    "ID": 2652,
+    "Type": 3002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 5.54,
+    "Top": 7.91
+   },
+   {
+    "ID": 2652,
+    "Type": 4001,
+    "Front": 6.05,
+    "Side": 13.32,
+    "Rear": 17.26,
+    "Top": 15.33
+   },
+   {
+    "ID": 2652,
+    "Type": 4002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 2.96,
+    "Top": 7.91
+   },
+   {
+    "ID": 2652,
+    "Type": 5001,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.5
+   },
+   {
+    "ID": 2652,
+    "Type": 5002,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2661,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "Mi-24VP Hind F",
+   "Comments": "3x",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 17.5,
+   "Span": 1.7,
+   "Height": 4.4,
+   "WeightEmpty": 8250,
+   "WeightMax": 12000,
+   "WeightPayload": 1480,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 12.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1015,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4626,
+   1985,
+   2750,
+   2924,
+   4623
+  ],
+  "mount_ids": [
+   1217,
+   1848
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   8624,
+   8625,
+   8626
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   356
+  ],
+  "comm_ids": [
+   20,
+   48
+  ],
+  "fuel_ids": [
+   668
+  ],
+  "signatures": [
+   {
+    "ID": 2661,
+    "Type": 3001,
+    "Front": 2.01,
+    "Side": 6.19,
+    "Rear": 2.01,
+    "Top": 5.5
+   },
+   {
+    "ID": 2661,
+    "Type": 3002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.84,
+    "Top": 3.16
+   },
+   {
+    "ID": 2661,
+    "Type": 4001,
+    "Front": 2.01,
+    "Side": 7.16,
+    "Rear": 10.12,
+    "Top": 6.62
+   },
+   {
+    "ID": 2661,
+    "Type": 4002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.18,
+    "Top": 3.16
+   },
+   {
+    "ID": 2661,
+    "Type": 5001,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.8
+   },
+   {
+    "ID": 2661,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2664,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "Mi-24K Hind",
+   "Comments": "Forward Observer",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 17.5,
+   "Span": 1.7,
+   "Height": 4.4,
+   "WeightEmpty": 8200,
+   "WeightMax": 11500,
+   "WeightPayload": 1480,
+   "Crew": 3,
+   "Agility": 2.0,
+   "ClimbRate": 12.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1015,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4627,
+   1985,
+   2750,
+   4624
+  ],
+  "mount_ids": [
+   294,
+   1848
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   11041,
+   13911
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   356
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   668
+  ],
+  "signatures": [
+   {
+    "ID": 2664,
+    "Type": 3001,
+    "Front": 2.01,
+    "Side": 6.19,
+    "Rear": 2.01,
+    "Top": 5.5
+   },
+   {
+    "ID": 2664,
+    "Type": 3002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.84,
+    "Top": 3.16
+   },
+   {
+    "ID": 2664,
+    "Type": 4001,
+    "Front": 2.01,
+    "Side": 7.16,
+    "Rear": 10.12,
+    "Top": 6.62
+   },
+   {
+    "ID": 2664,
+    "Type": 4002,
+    "Front": 1.18,
+    "Side": 3.49,
+    "Rear": 1.18,
+    "Top": 3.16
+   },
+   {
+    "ID": 2664,
+    "Type": 5001,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.8
+   },
+   {
+    "ID": 2664,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.4,
+    "Rear": 1.9,
+    "Top": 4.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2670,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Su-17M-4R Fitter K",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2004,
+   "Length": 17.3,
+   "Span": 13.7,
+   "Height": 5.1,
+   "WeightEmpty": 10880,
+   "WeightMax": 19500,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 127.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2943
+  ],
+  "mount_ids": [
+   292,
+   1684,
+   1788
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   3378,
+   11042
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   370
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   1142
+  ],
+  "signatures": [
+   {
+    "ID": 2670,
+    "Type": 3001,
+    "Front": 3.1,
+    "Side": 6.31,
+    "Rear": 3.1,
+    "Top": 8.46
+   },
+   {
+    "ID": 2670,
+    "Type": 3002,
+    "Front": 1.7,
+    "Side": 3.55,
+    "Rear": 2.84,
+    "Top": 4.53
+   },
+   {
+    "ID": 2670,
+    "Type": 4001,
+    "Front": 3.1,
+    "Side": 8.07,
+    "Rear": 13.31,
+    "Top": 9.81
+   },
+   {
+    "ID": 2670,
+    "Type": 4002,
+    "Front": 1.7,
+    "Side": 3.55,
+    "Rear": 1.7,
+    "Top": 4.53
+   },
+   {
+    "ID": 2670,
+    "Type": 5001,
+    "Front": 7.1,
+    "Side": 9.4,
+    "Rear": 7.1,
+    "Top": 9.8
+   },
+   {
+    "ID": 2670,
+    "Type": 5002,
+    "Front": 7.1,
+    "Side": 9.4,
+    "Rear": 7.1,
+    "Top": 9.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2671,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "Mi-8MTV Hip H",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 18.2,
+   "Span": 5.7,
+   "Height": 5.7,
+   "WeightEmpty": 7160,
+   "WeightMax": 12000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   4
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   13884,
+   13885,
+   13886,
+   13887,
+   13888
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1530
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1058
+  ],
+  "signatures": [
+   {
+    "ID": 2671,
+    "Type": 3001,
+    "Front": 2.45,
+    "Side": 6.69,
+    "Rear": 2.45,
+    "Top": 6.69
+   },
+   {
+    "ID": 2671,
+    "Type": 3002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 2.25,
+    "Top": 3.73
+   },
+   {
+    "ID": 2671,
+    "Type": 4001,
+    "Front": 2.45,
+    "Side": 8.39,
+    "Rear": 12.15,
+    "Top": 8.39
+   },
+   {
+    "ID": 2671,
+    "Type": 4002,
+    "Front": 1.39,
+    "Side": 3.73,
+    "Rear": 1.39,
+    "Top": 3.73
+   },
+   {
+    "ID": 2671,
+    "Type": 5001,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 7.1
+   },
+   {
+    "ID": 2671,
+    "Type": 5002,
+    "Front": 4.3,
+    "Side": 6.6,
+    "Rear": 4.3,
+    "Top": 6.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2677,
+   "Category": 2001,
+   "Type": 3101,
+   "Name": "Tu-22KPD Blinder B",
+   "Comments": "SEAD",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 41.6,
+   "Span": 23.6,
+   "Height": 10.0,
+   "WeightEmpty": 47300,
+   "WeightMax": 94000,
+   "WeightPayload": 12000,
+   "Crew": 3,
+   "Agility": 1.5,
+   "ClimbRate": 15.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   545,
+   830,
+   2795,
+   3203,
+   3403,
+   3788,
+   4389
+  ],
+  "mount_ids": [
+   2139,
+   1801
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   11045,
+   11046,
+   11047,
+   11048,
+   11049,
+   11050,
+   11051,
+   11052,
+   11053,
+   11054,
+   11055,
+   11056,
+   11057
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1233
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   456
+  ],
+  "signatures": [
+   {
+    "ID": 2677,
+    "Type": 3001,
+    "Front": 6.05,
+    "Side": 13.38,
+    "Rear": 6.05,
+    "Top": 16.51
+   },
+   {
+    "ID": 2677,
+    "Type": 3002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 5.54,
+    "Top": 7.91
+   },
+   {
+    "ID": 2677,
+    "Type": 4001,
+    "Front": 6.05,
+    "Side": 13.32,
+    "Rear": 17.26,
+    "Top": 15.33
+   },
+   {
+    "ID": 2677,
+    "Type": 4002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 2.96,
+    "Top": 7.91
+   },
+   {
+    "ID": 2677,
+    "Type": 5001,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.5
+   },
+   {
+    "ID": 2677,
+    "Type": 5002,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2678,
+   "Category": 2001,
+   "Type": 3101,
+   "Name": "Tu-22KD Blinder B",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 1997,
+   "Length": 41.6,
+   "Span": 23.6,
+   "Height": 10.0,
+   "WeightEmpty": 47300,
+   "WeightMax": 94000,
+   "WeightPayload": 12000,
+   "Crew": 3,
+   "Agility": 1.5,
+   "ClimbRate": 15.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   545,
+   830,
+   2795,
+   3203,
+   3403,
+   3788
+  ],
+  "mount_ids": [
+   2139,
+   1801
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   11045,
+   11046,
+   11047,
+   11048,
+   11049,
+   11052,
+   11053,
+   11054,
+   11055,
+   11056,
+   11057
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1233
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   456
+  ],
+  "signatures": [
+   {
+    "ID": 2678,
+    "Type": 3001,
+    "Front": 6.05,
+    "Side": 13.38,
+    "Rear": 6.05,
+    "Top": 16.51
+   },
+   {
+    "ID": 2678,
+    "Type": 3002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 5.54,
+    "Top": 7.91
+   },
+   {
+    "ID": 2678,
+    "Type": 4001,
+    "Front": 6.05,
+    "Side": 13.32,
+    "Rear": 17.26,
+    "Top": 15.33
+   },
+   {
+    "ID": 2678,
+    "Type": 4002,
+    "Front": 2.96,
+    "Side": 6.64,
+    "Rear": 2.96,
+    "Top": 7.91
+   },
+   {
+    "ID": 2678,
+    "Type": 5001,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.5
+   },
+   {
+    "ID": 2678,
+    "Type": 5002,
+    "Front": 15.2,
+    "Side": 17.1,
+    "Rear": 15.2,
+    "Top": 17.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2682,
+   "Category": 2008,
+   "Type": 4101,
+   "Name": "Be-12PS Mail",
+   "Comments": "SAR, 1x, 1998-1999 & 2009-2015+",
+   "OperatorCountry": 2099,
+   "OperatorService": 2002,
+   "YearCommissioned": 1998,
+   "YearDecommissioned": 2015,
+   "Length": 30.1,
+   "Span": 29.8,
+   "Height": 7.9,
+   "WeightEmpty": 24500,
+   "WeightMax": 36000,
+   "WeightPayload": 3000,
+   "Crew": 6,
+   "Agility": 1.0,
+   "ClimbRate": 15.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4430
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   11064,
+   11065
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   223
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   680
+  ],
+  "signatures": [
+   {
+    "ID": 2682,
+    "Type": 3001,
+    "Front": 5.6,
+    "Side": 10.16,
+    "Rear": 5.6,
+    "Top": 15.3
+   },
+   {
+    "ID": 2682,
+    "Type": 3002,
+    "Front": 2.78,
+    "Side": 5.28,
+    "Rear": 5.13,
+    "Top": 7.42
+   },
+   {
+    "ID": 2682,
+    "Type": 4001,
+    "Front": 5.6,
+    "Side": 11.09,
+    "Rear": 16.76,
+    "Top": 14.57
+   },
+   {
+    "ID": 2682,
+    "Type": 4002,
+    "Front": 2.78,
+    "Side": 5.28,
+    "Rear": 2.78,
+    "Top": 7.42
+   },
+   {
+    "ID": 2682,
+    "Type": 5001,
+    "Front": 14.3,
+    "Side": 16.2,
+    "Rear": 14.3,
+    "Top": 16.6
+   },
+   {
+    "ID": 2682,
+    "Type": 5002,
+    "Front": 14.3,
+    "Side": 16.2,
+    "Rear": 14.3,
+    "Top": 16.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4713,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-25M1 Frogfoot A",
+   "Comments": "GPS/GLONASS Upgrade",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 2010,
+   "YearDecommissioned": 0,
+   "Length": 15.5,
+   "Span": 14.4,
+   "Height": 4.8,
+   "WeightEmpty": 9510,
+   "WeightMax": 17530,
+   "WeightPayload": 4400,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 49.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1010,
+   "AircraftFuselageArmor": 1010,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2309,
+   2943
+  ],
+  "mount_ids": [
+   2150,
+   1683
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5602,
+   5603,
+   5604,
+   5605,
+   5606,
+   5607,
+   5608,
+   5609,
+   5610,
+   5611,
+   5612,
+   5613,
+   5614,
+   5615,
+   5616,
+   5617,
+   5618,
+   5619,
+   5620,
+   5621,
+   5622,
+   5623,
+   5624,
+   5625,
+   5626,
+   5627,
+   5628,
+   5629,
+   5630,
+   10247,
+   10248,
+   10569,
+   10570,
+   17679,
+   17680
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1482
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   621
+  ],
+  "signatures": [
+   {
+    "ID": 4713,
+    "Type": 3001,
+    "Front": 3.0,
+    "Side": 5.78,
+    "Rear": 3.0,
+    "Top": 8.19
+   },
+   {
+    "ID": 4713,
+    "Type": 3002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 2.75,
+    "Top": 4.41
+   },
+   {
+    "ID": 4713,
+    "Type": 4001,
+    "Front": 3.0,
+    "Side": 7.61,
+    "Rear": 13.14,
+    "Top": 9.6
+   },
+   {
+    "ID": 4713,
+    "Type": 4002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 1.65,
+    "Top": 4.41
+   },
+   {
+    "ID": 4713,
+    "Type": 5001,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.4
+   },
+   {
+    "ID": 4713,
+    "Type": 5002,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4714,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Su-25M1K Frogfoot A",
+   "Comments": "Improved countermeasures",
+   "OperatorCountry": 2099,
+   "OperatorService": 2001,
+   "YearCommissioned": 2015,
+   "YearDecommissioned": 0,
+   "Length": 15.5,
+   "Span": 14.4,
+   "Height": 4.8,
+   "WeightEmpty": 9510,
+   "WeightMax": 17530,
+   "WeightPayload": 4400,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 49.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1010,
+   "AircraftFuselageArmor": 1010,
+   "AircraftCockpitArmor": 1030,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2309,
+   2943
+  ],
+  "mount_ids": [
+   2150,
+   3043
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5602,
+   5603,
+   5604,
+   5605,
+   5606,
+   5607,
+   5608,
+   5609,
+   5610,
+   5611,
+   5612,
+   5613,
+   5614,
+   5615,
+   5616,
+   5617,
+   5618,
+   5619,
+   5620,
+   5621,
+   5622,
+   5623,
+   5624,
+   5625,
+   5626,
+   5627,
+   5628,
+   5629,
+   5630,
+   10247,
+   10248,
+   10569,
+   10570,
+   17679,
+   17680
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1482
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   621
+  ],
+  "signatures": [
+   {
+    "ID": 4714,
+    "Type": 3001,
+    "Front": 3.0,
+    "Side": 5.78,
+    "Rear": 3.0,
+    "Top": 8.19
+   },
+   {
+    "ID": 4714,
+    "Type": 3002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 2.75,
+    "Top": 4.41
+   },
+   {
+    "ID": 4714,
+    "Type": 4001,
+    "Front": 3.0,
+    "Side": 7.61,
+    "Rear": 13.14,
+    "Top": 9.6
+   },
+   {
+    "ID": 4714,
+    "Type": 4002,
+    "Front": 1.65,
+    "Side": 3.3,
+    "Rear": 1.65,
+    "Top": 4.41
+   },
+   {
+    "ID": 4714,
+    "Type": 5001,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.4
+   },
+   {
+    "ID": 4714,
+    "Type": 5002,
+    "Front": 6.7,
+    "Side": 9.0,
+    "Rear": 6.7,
+    "Top": 9.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4820,
+   "Category": 2001,
+   "Type": 8202,
+   "Name": "Bayraktar TB2 UCAV",
+   "Comments": "-",
+   "OperatorCountry": 2099,
+   "OperatorService": 2003,
+   "YearCommissioned": 2019,
+   "YearDecommissioned": 0,
+   "Length": 6.5,
+   "Span": 12.0,
+   "Height": 2.1,
+   "WeightEmpty": 475,
+   "WeightMax": 630,
+   "WeightPayload": 55,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 3.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4576,
+   2924,
+   1727
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   25738,
+   25739,
+   25740
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2800
+  ],
+  "comm_ids": [
+   20,
+   222
+  ],
+  "fuel_ids": [
+   1816
+  ],
+  "signatures": [
+   {
+    "ID": 4820,
+    "Type": 3001,
+    "Front": 1.95,
+    "Side": 2.67,
+    "Rear": 1.95,
+    "Top": 5.31
+   },
+   {
+    "ID": 4820,
+    "Type": 3002,
+    "Front": 1.15,
+    "Side": 1.73,
+    "Rear": 1.78,
+    "Top": 3.08
+   },
+   {
+    "ID": 4820,
+    "Type": 4001,
+    "Front": 1.95,
+    "Side": 4.55,
+    "Rear": 11.11,
+    "Top": 7.2
+   },
+   {
+    "ID": 4820,
+    "Type": 4002,
+    "Front": 1.15,
+    "Side": 1.73,
+    "Rear": 1.15,
+    "Top": 3.08
+   },
+   {
+    "ID": 4820,
+    "Type": 5001,
+    "Front": -21.5,
+    "Side": -19.0,
+    "Rear": -21.5,
+    "Top": -18.6
+   },
+   {
+    "ID": 4820,
+    "Type": 5002,
+    "Front": -31.5,
+    "Side": -29.0,
+    "Rear": -31.5,
+    "Top": -29.0
+   }
+  ]
+ }
+]

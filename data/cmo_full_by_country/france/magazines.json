@@ -1,0 +1,552 @@
+{
+ "36": {
+  "ID": 36,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO2",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "73": {
+  "ID": 73,
+  "Name": "MU-90 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "105": {
+  "ID": 105,
+  "Name": "20mm/90 Giat 20F2",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "139": {
+  "ID": 139,
+  "Name": "20mm/70 Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "155": {
+  "ID": 155,
+  "Name": "12.7mm/50 MG",
+  "Comments": "5x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 500,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "207": {
+  "ID": 207,
+  "Name": "Carrier Magazine",
+  "Comments": "France, Mistal, 2005",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "212": {
+  "ID": 212,
+  "Name": "Helicopter Magazine",
+  "Comments": "France, 1991, Torpedo",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "213": {
+  "ID": 213,
+  "Name": "Carrier Magazine",
+  "Comments": "France, Clemenceau, 1992",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "280": {
+  "ID": 280,
+  "Name": "Crotale Modular",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "294": {
+  "ID": 294,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "327": {
+  "ID": 327,
+  "Name": "Helicopter Magazine",
+  "Comments": "France, 1972, Torpedo+Missile",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "329": {
+  "ID": 329,
+  "Name": "Carrier Magazine",
+  "Comments": "France, Clemenceau, 1975",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "373": {
+  "ID": 373,
+  "Name": "Carrier Magazine",
+  "Comments": "France, Clemenceau, 1998",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "416": {
+  "ID": 416,
+  "Name": "SAGAIE AMBL-2A",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "426": {
+  "ID": 426,
+  "Name": "NGDS DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 48,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "429": {
+  "ID": 429,
+  "Name": "Syllex DL",
+  "Comments": "2x Mounts, France",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "465": {
+  "ID": 465,
+  "Name": "30mm/82 Compact OTO-Breda/Mauser Mk30",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "466": {
+  "ID": 466,
+  "Name": "30mm/82 Compact OTO-Breda/Mauser Mk30",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 405,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "470": {
+  "ID": 470,
+  "Name": "20mm Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "496": {
+  "ID": 496,
+  "Name": "L5",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "594": {
+  "ID": 594,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "596": {
+  "ID": 596,
+  "Name": "SAGAIE AMBL-2A",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "598": {
+  "ID": 598,
+  "Name": "Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "628": {
+  "ID": 628,
+  "Name": "Helicopter Magazine",
+  "Comments": "France, 1984, Torpedo+Missile",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "668": {
+  "ID": 668,
+  "Name": "Carrier Magazine",
+  "Comments": "France, De Gaulle, 1999",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "762": {
+  "ID": 762,
+  "Name": "Sadral [Mistral]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 24,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "764": {
+  "ID": 764,
+  "Name": "Crotale Modular",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "767": {
+  "ID": 767,
+  "Name": "Helicopter Magazine",
+  "Comments": "France, 2006, Torpedo",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "771": {
+  "ID": 771,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "777": {
+  "ID": 777,
+  "Name": "Crotale NG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "779": {
+  "ID": 779,
+  "Name": "Simbad [Mistral]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "780": {
+  "ID": 780,
+  "Name": "Simbad [Mistral]",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "818": {
+  "ID": 818,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "836": {
+  "ID": 836,
+  "Name": "CONTRALTO-V [SLAT]",
+  "Comments": "Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "896": {
+  "ID": 896,
+  "Name": "Carrier Magazine",
+  "Comments": "France, Clemenceau, 1984",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "902": {
+  "ID": 902,
+  "Name": "Carrier Magazine",
+  "Comments": "France, De Gaulle, 2008",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "941": {
+  "ID": 941,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1036": {
+  "ID": 1036,
+  "Name": "20mm/90 Giat 20F2",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1054": {
+  "ID": 1054,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1055": {
+  "ID": 1055,
+  "Name": "Simbad [Mistral]",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 10,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1082": {
+  "ID": 1082,
+  "Name": "20mm/90 Giat 20F2",
+  "Comments": "8x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1299": {
+  "ID": 1299,
+  "Name": "20mm Single",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1419": {
+  "ID": 1419,
+  "Name": "7.62mm Mk77 Mod 0 Minigun",
+  "Comments": "4x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1481": {
+  "ID": 1481,
+  "Name": "Carrier Magazine",
+  "Comments": "France, De Gaulle, 2019",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1485": {
+  "ID": 1485,
+  "Name": "Carrier Magazine",
+  "Comments": "France, Clemenceau, 1995",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1491": {
+  "ID": 1491,
+  "Name": "20mm Narwhal 20B [M693]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1492": {
+  "ID": 1492,
+  "Name": "Carrier Magazine",
+  "Comments": "France, De Gaulle, 2017",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1495": {
+  "ID": 1495,
+  "Name": "Helicopter Magazine",
+  "Comments": "France, 2022, Torpedo, Sea Venom",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1519": {
+  "ID": 1519,
+  "Name": "SYLENA Mk1 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

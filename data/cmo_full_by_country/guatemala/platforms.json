@@ -1,0 +1,753 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2955,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "GC 651 Tecun Uman [Cutlass Class]",
+   "Comments": "-",
+   "OperatorCountry": 2037,
+   "OperatorService": 2002,
+   "YearCommissioned": 1971,
+   "YearDecommissioned": 0,
+   "Length": 19.7,
+   "Beam": 5.2,
+   "Draft": 0.9,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 42,
+   "DisplacementFull": 45,
+   "Crew": 10,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 19,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1501,
+   1673
+  ],
+  "mount_ids": [
+   104,
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1002,
+   761
+  ],
+  "propulsion_ids": [
+   2692
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   1849
+  ],
+  "signatures": [
+   {
+    "ID": 2955,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2955,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2955,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2955,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2955,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2955,
+    "Type": 3001,
+    "Front": 4.79,
+    "Side": 8.15,
+    "Rear": 4.79,
+    "Top": 10.87
+   },
+   {
+    "ID": 2955,
+    "Type": 3002,
+    "Front": 2.04,
+    "Side": 3.62,
+    "Rear": 2.04,
+    "Top": 4.08
+   },
+   {
+    "ID": 2955,
+    "Type": 4001,
+    "Front": 4.79,
+    "Side": 8.15,
+    "Rear": 4.79,
+    "Top": 10.87
+   },
+   {
+    "ID": 2955,
+    "Type": 4002,
+    "Front": 2.04,
+    "Side": 3.62,
+    "Rear": 2.04,
+    "Top": 4.08
+   },
+   {
+    "ID": 2955,
+    "Type": 5001,
+    "Front": 7.1,
+    "Side": 9.8,
+    "Rear": 7.1,
+    "Top": 16.3
+   },
+   {
+    "ID": 2955,
+    "Type": 5002,
+    "Front": 7.1,
+    "Side": 9.8,
+    "Rear": 7.1,
+    "Top": 16.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2956,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "GC-H 656 Gucumaz [Modified Cutlass Class]",
+   "Comments": "-",
+   "OperatorCountry": 2037,
+   "OperatorService": 2002,
+   "YearCommissioned": 1971,
+   "YearDecommissioned": 0,
+   "Length": 19.7,
+   "Beam": 5.2,
+   "Draft": 0.9,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 42,
+   "DisplacementFull": 45,
+   "Crew": 10,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 19,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1501,
+   1673
+  ],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   811
+  ],
+  "propulsion_ids": [
+   2692
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   1849
+  ],
+  "signatures": [
+   {
+    "ID": 2956,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2956,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2956,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2956,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2956,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2956,
+    "Type": 3001,
+    "Front": 4.79,
+    "Side": 8.15,
+    "Rear": 4.79,
+    "Top": 10.87
+   },
+   {
+    "ID": 2956,
+    "Type": 3002,
+    "Front": 2.04,
+    "Side": 3.62,
+    "Rear": 2.04,
+    "Top": 4.08
+   },
+   {
+    "ID": 2956,
+    "Type": 4001,
+    "Front": 4.79,
+    "Side": 8.15,
+    "Rear": 4.79,
+    "Top": 10.87
+   },
+   {
+    "ID": 2956,
+    "Type": 4002,
+    "Front": 2.04,
+    "Side": 3.62,
+    "Rear": 2.04,
+    "Top": 4.08
+   },
+   {
+    "ID": 2956,
+    "Type": 5001,
+    "Front": 7.1,
+    "Side": 9.8,
+    "Rear": 7.1,
+    "Top": 16.3
+   },
+   {
+    "ID": 2956,
+    "Type": 5002,
+    "Front": 7.1,
+    "Side": 9.8,
+    "Rear": 7.1,
+    "Top": 16.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2957,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "GC 851 Utatlan [Sewart Class]",
+   "Comments": "-",
+   "OperatorCountry": 2037,
+   "OperatorService": 2002,
+   "YearCommissioned": 1968,
+   "YearDecommissioned": 0,
+   "Length": 25.9,
+   "Beam": 5.7,
+   "Draft": 2.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 50,
+   "DisplacementFull": 54,
+   "Crew": 17,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 22,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1501,
+   1673
+  ],
+  "mount_ids": [
+   104,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1063,
+   665
+  ],
+  "propulsion_ids": [
+   2693
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   679
+  ],
+  "signatures": [
+   {
+    "ID": 2957,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2957,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2957,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2957,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2957,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2957,
+    "Type": 3001,
+    "Front": 5.2,
+    "Side": 8.85,
+    "Rear": 5.2,
+    "Top": 11.8
+   },
+   {
+    "ID": 2957,
+    "Type": 3002,
+    "Front": 2.21,
+    "Side": 3.93,
+    "Rear": 2.21,
+    "Top": 4.42
+   },
+   {
+    "ID": 2957,
+    "Type": 4001,
+    "Front": 5.2,
+    "Side": 8.85,
+    "Rear": 5.2,
+    "Top": 11.8
+   },
+   {
+    "ID": 2957,
+    "Type": 4002,
+    "Front": 2.21,
+    "Side": 3.93,
+    "Rear": 2.21,
+    "Top": 4.42
+   },
+   {
+    "ID": 2957,
+    "Type": 5001,
+    "Front": 9.9,
+    "Side": 12.8,
+    "Rear": 9.9,
+    "Top": 19.3
+   },
+   {
+    "ID": 2957,
+    "Type": 5002,
+    "Front": 9.9,
+    "Side": 12.8,
+    "Rear": 9.9,
+    "Top": 19.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2958,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "GC 1051 Kukulkan",
+   "Comments": "Flagship",
+   "OperatorCountry": 2037,
+   "OperatorService": 2002,
+   "YearCommissioned": 1977,
+   "YearDecommissioned": 0,
+   "Length": 32.0,
+   "Beam": 6.2,
+   "Draft": 1.9,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 91,
+   "DisplacementFull": 110,
+   "Crew": 20,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 35,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1501,
+   1673
+  ],
+  "mount_ids": [
+   104,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1002,
+   665
+  ],
+  "propulsion_ids": [
+   2694
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   810
+  ],
+  "signatures": [
+   {
+    "ID": 2958,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2958,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2958,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2958,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2958,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2958,
+    "Type": 3001,
+    "Front": 5.55,
+    "Side": 9.43,
+    "Rear": 5.55,
+    "Top": 12.57
+   },
+   {
+    "ID": 2958,
+    "Type": 3002,
+    "Front": 2.36,
+    "Side": 4.19,
+    "Rear": 2.36,
+    "Top": 4.71
+   },
+   {
+    "ID": 2958,
+    "Type": 4001,
+    "Front": 5.55,
+    "Side": 9.43,
+    "Rear": 5.55,
+    "Top": 12.57
+   },
+   {
+    "ID": 2958,
+    "Type": 4002,
+    "Front": 2.36,
+    "Side": 4.19,
+    "Rear": 2.36,
+    "Top": 4.71
+   },
+   {
+    "ID": 2958,
+    "Type": 5001,
+    "Front": 12.1,
+    "Side": 15.1,
+    "Rear": 12.1,
+    "Top": 21.6
+   },
+   {
+    "ID": 2958,
+    "Type": 5002,
+    "Front": 12.1,
+    "Side": 15.1,
+    "Rear": 12.1,
+    "Top": 21.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3036,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "A-37B Dragonfly [Super Tweet]",
+   "Comments": "-",
+   "OperatorCountry": 2037,
+   "OperatorService": 2001,
+   "YearCommissioned": 1972,
+   "YearDecommissioned": 0,
+   "Length": 8.6,
+   "Span": 10.9,
+   "Height": 2.7,
+   "WeightEmpty": 2817,
+   "WeightMax": 6350,
+   "WeightPayload": 2179,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 33.8,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   1844
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16031,
+   16032,
+   16033,
+   16034,
+   16035,
+   16036,
+   16037
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   374
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   673
+  ],
+  "signatures": [
+   {
+    "ID": 3036,
+    "Type": 3001,
+    "Front": 2.04,
+    "Side": 3.41,
+    "Rear": 2.04,
+    "Top": 5.57
+   },
+   {
+    "ID": 3036,
+    "Type": 3002,
+    "Front": 1.2,
+    "Side": 2.13,
+    "Rear": 1.87,
+    "Top": 3.2
+   },
+   {
+    "ID": 3036,
+    "Type": 4001,
+    "Front": 2.04,
+    "Side": 5.35,
+    "Rear": 11.31,
+    "Top": 7.43
+   },
+   {
+    "ID": 3036,
+    "Type": 4002,
+    "Front": 1.2,
+    "Side": 2.13,
+    "Rear": 1.2,
+    "Top": 3.2
+   },
+   {
+    "ID": 3036,
+    "Type": 5001,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.9
+   },
+   {
+    "ID": 3036,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ }
+]

@@ -1,0 +1,412 @@
+{
+ "135": {
+  "ID": 135,
+  "Name": "20mm/70 Oerlikon Mk2",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "184": {
+  "ID": 184,
+  "Name": "China Type 945G DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "185": {
+  "ID": 185,
+  "Name": "Mk46 Mod 2 [Improved Reloading]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "294": {
+  "ID": 294,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "339": {
+  "ID": 339,
+  "Name": "40mm/70 Single Breda Type 564",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "351": {
+  "ID": 351,
+  "Name": "30mm/70 OTO Breda",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "390": {
+  "ID": 390,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 480,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "392": {
+  "ID": 392,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 240,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "402": {
+  "ID": 402,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "403": {
+  "ID": 403,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "428": {
+  "ID": 428,
+  "Name": "Mk34 RBOC",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "446": {
+  "ID": 446,
+  "Name": "DL-12T SKWS DL",
+  "Comments": "2x Mounts, 2000, Outfit DLT",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "542": {
+  "ID": 542,
+  "Name": "12.7mm/50 MG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "598": {
+  "ID": 598,
+  "Name": "Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "601": {
+  "ID": 601,
+  "Name": "Plessey Shield DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "662": {
+  "ID": 662,
+  "Name": "Sadral [Mistral]",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "771": {
+  "ID": 771,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "779": {
+  "ID": 779,
+  "Name": "Simbad [Mistral]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "830": {
+  "ID": 830,
+  "Name": "Aspide",
+  "Comments": "1x Mount, 1 x 16",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "832": {
+  "ID": 832,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "834": {
+  "ID": 834,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "903": {
+  "ID": 903,
+  "Name": "12.7mm/50 Twin MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "911": {
+  "ID": 911,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "938": {
+  "ID": 938,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "993": {
+  "ID": 993,
+  "Name": "Carrier Magazine",
+  "Comments": "Thailand, 1997",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1059": {
+  "ID": 1059,
+  "Name": "30mm/75 Single Oerlikon",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1147": {
+  "ID": 1147,
+  "Name": "Mk46 Mod 2 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1191": {
+  "ID": 1191,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 28,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1250": {
+  "ID": 1250,
+  "Name": "China Type 81 ASW Rockets",
+  "Comments": "5 Tubes, Jianghu, 2x Mounts, Type 65",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1253": {
+  "ID": 1253,
+  "Name": "Mk9 Depth Charge",
+  "Comments": "36x DCs",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1344": {
+  "ID": 1344,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 820,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1416": {
+  "ID": 1416,
+  "Name": "30mm/75 DS30M Mk2",
+  "Comments": "2x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

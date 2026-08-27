@@ -1,0 +1,1293 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2984,
+   "Category": 2002,
+   "Type": 3419,
+   "Name": "ICGV Aegir",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 1969,
+   "YearDecommissioned": 0,
+   "Length": 71.15,
+   "Beam": 10.0,
+   "Draft": 5.8,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1214,
+   "DisplacementFull": 1500,
+   "Crew": 19,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 180,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5715,
+   1501,
+   653
+  ],
+  "mount_ids": [
+   2915,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   665
+  ],
+  "propulsion_ids": [
+   2719
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   157
+  ],
+  "signatures": [
+   {
+    "ID": 2984,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2984,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2984,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2984,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2984,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2984,
+    "Type": 3001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2984,
+    "Type": 3002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2984,
+    "Type": 4001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2984,
+    "Type": 4002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2984,
+    "Type": 5001,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   },
+   {
+    "ID": 2984,
+    "Type": 5002,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2985,
+   "Category": 2002,
+   "Type": 3419,
+   "Name": "ICGV Aegir",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 71.15,
+   "Beam": 10.0,
+   "Draft": 5.8,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1214,
+   "DisplacementFull": 1500,
+   "Crew": 19,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 180,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5715,
+   1501
+  ],
+  "mount_ids": [
+   944,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1029,
+   665
+  ],
+  "propulsion_ids": [
+   2719
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   157
+  ],
+  "signatures": [
+   {
+    "ID": 2985,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2985,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2985,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2985,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2985,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2985,
+    "Type": 3001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2985,
+    "Type": 3002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2985,
+    "Type": 4001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2985,
+    "Type": 4002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2985,
+    "Type": 5001,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   },
+   {
+    "ID": 2985,
+    "Type": 5002,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2986,
+   "Category": 2002,
+   "Type": 3419,
+   "Name": "ICGV Aegir",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 2012,
+   "YearDecommissioned": 0,
+   "Length": 71.15,
+   "Beam": 10.0,
+   "Draft": 5.8,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1214,
+   "DisplacementFull": 1500,
+   "Crew": 19,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 180,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5715,
+   1501
+  ],
+  "mount_ids": [
+   518,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   886,
+   665
+  ],
+  "propulsion_ids": [
+   2719
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   157
+  ],
+  "signatures": [
+   {
+    "ID": 2986,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2986,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2986,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2986,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2986,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2986,
+    "Type": 3001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2986,
+    "Type": 3002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2986,
+    "Type": 4001,
+    "Front": 7.05,
+    "Side": 11.98,
+    "Rear": 7.05,
+    "Top": 15.98
+   },
+   {
+    "ID": 2986,
+    "Type": 4002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2986,
+    "Type": 5001,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   },
+   {
+    "ID": 2986,
+    "Type": 5002,
+    "Front": 20.5,
+    "Side": 23.8,
+    "Rear": 20.5,
+    "Top": 30.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2987,
+   "Category": 2002,
+   "Type": 3419,
+   "Name": "ICGV Thor",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 2012,
+   "YearDecommissioned": 0,
+   "Length": 93.8,
+   "Beam": 16.0,
+   "Draft": 5.8,
+   "Height": 30.0,
+   "DisplacementEmpty": 3920,
+   "DisplacementStandard": 4321,
+   "DisplacementFull": 0,
+   "Crew": 48,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 500,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1501,
+   5329
+  ],
+  "mount_ids": [
+   518,
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   886,
+   761,
+   1302
+  ],
+  "propulsion_ids": [
+   2720
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1885,
+   1653
+  ],
+  "signatures": [
+   {
+    "ID": 2987,
+    "Type": 1001,
+    "Front": 135.0,
+    "Side": 136.0,
+    "Rear": 137.0,
+    "Top": 136.0
+   },
+   {
+    "ID": 2987,
+    "Type": 1002,
+    "Front": 105.5,
+    "Side": 106.0,
+    "Rear": 107.0,
+    "Top": 106.0
+   },
+   {
+    "ID": 2987,
+    "Type": 1003,
+    "Front": 97.5,
+    "Side": 98.0,
+    "Rear": 99.0,
+    "Top": 98.0
+   },
+   {
+    "ID": 2987,
+    "Type": 1004,
+    "Front": 89.0,
+    "Side": 90.0,
+    "Rear": 91.0,
+    "Top": 90.0
+   },
+   {
+    "ID": 2987,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 2987,
+    "Type": 3001,
+    "Front": 7.66,
+    "Side": 13.02,
+    "Rear": 7.66,
+    "Top": 17.36
+   },
+   {
+    "ID": 2987,
+    "Type": 3002,
+    "Front": 3.25,
+    "Side": 5.79,
+    "Rear": 3.25,
+    "Top": 6.51
+   },
+   {
+    "ID": 2987,
+    "Type": 4001,
+    "Front": 7.66,
+    "Side": 13.02,
+    "Rear": 7.66,
+    "Top": 17.36
+   },
+   {
+    "ID": 2987,
+    "Type": 4002,
+    "Front": 3.25,
+    "Side": 5.79,
+    "Rear": 3.25,
+    "Top": 6.51
+   },
+   {
+    "ID": 2987,
+    "Type": 5001,
+    "Front": 23.4,
+    "Side": 26.8,
+    "Rear": 23.4,
+    "Top": 33.3
+   },
+   {
+    "ID": 2987,
+    "Type": 5002,
+    "Front": 23.4,
+    "Side": 26.8,
+    "Rear": 23.4,
+    "Top": 33.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2988,
+   "Category": 2002,
+   "Type": 3419,
+   "Name": "ICGV Odinn",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 1961,
+   "YearDecommissioned": 0,
+   "Length": 63.68,
+   "Beam": 10.0,
+   "Draft": 5.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 910,
+   "DisplacementFull": 1200,
+   "Crew": 19,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 150,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5715,
+   1501
+  ],
+  "mount_ids": [
+   2915,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1302,
+   665
+  ],
+  "propulsion_ids": [
+   2721
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1885
+  ],
+  "signatures": [
+   {
+    "ID": 2988,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2988,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2988,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2988,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2988,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2988,
+    "Type": 3001,
+    "Front": 6.82,
+    "Side": 11.59,
+    "Rear": 6.82,
+    "Top": 15.45
+   },
+   {
+    "ID": 2988,
+    "Type": 3002,
+    "Front": 2.9,
+    "Side": 5.15,
+    "Rear": 2.9,
+    "Top": 5.79
+   },
+   {
+    "ID": 2988,
+    "Type": 4001,
+    "Front": 6.82,
+    "Side": 11.59,
+    "Rear": 6.82,
+    "Top": 15.45
+   },
+   {
+    "ID": 2988,
+    "Type": 4002,
+    "Front": 2.9,
+    "Side": 5.15,
+    "Rear": 2.9,
+    "Top": 5.79
+   },
+   {
+    "ID": 2988,
+    "Type": 5001,
+    "Front": 19.3,
+    "Side": 22.5,
+    "Rear": 19.3,
+    "Top": 29.1
+   },
+   {
+    "ID": 2988,
+    "Type": 5002,
+    "Front": 19.3,
+    "Side": 22.5,
+    "Rear": 19.3,
+    "Top": 29.1
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2989,
+   "Category": 2002,
+   "Type": 3419,
+   "Name": "ICGV Odinn",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 1990,
+   "YearDecommissioned": 2006,
+   "Length": 63.68,
+   "Beam": 10.0,
+   "Draft": 5.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 910,
+   "DisplacementFull": 1200,
+   "Crew": 19,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 150,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5715,
+   1501
+  ],
+  "mount_ids": [
+   944,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1029,
+   1302,
+   665
+  ],
+  "propulsion_ids": [
+   2721
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1885
+  ],
+  "signatures": [
+   {
+    "ID": 2989,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2989,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2989,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2989,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2989,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2989,
+    "Type": 3001,
+    "Front": 6.82,
+    "Side": 11.59,
+    "Rear": 6.82,
+    "Top": 15.45
+   },
+   {
+    "ID": 2989,
+    "Type": 3002,
+    "Front": 2.9,
+    "Side": 5.15,
+    "Rear": 2.9,
+    "Top": 5.79
+   },
+   {
+    "ID": 2989,
+    "Type": 4001,
+    "Front": 6.82,
+    "Side": 11.59,
+    "Rear": 6.82,
+    "Top": 15.45
+   },
+   {
+    "ID": 2989,
+    "Type": 4002,
+    "Front": 2.9,
+    "Side": 5.15,
+    "Rear": 2.9,
+    "Top": 5.79
+   },
+   {
+    "ID": 2989,
+    "Type": 5001,
+    "Front": 19.3,
+    "Side": 22.5,
+    "Rear": 19.3,
+    "Top": 29.1
+   },
+   {
+    "ID": 2989,
+    "Type": 5002,
+    "Front": 19.3,
+    "Side": 22.5,
+    "Rear": 19.3,
+    "Top": 29.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4555,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "SA.332L1 Super Puma",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 1996,
+   "YearDecommissioned": 0,
+   "Length": 15.5,
+   "Span": 3.4,
+   "Height": 4.9,
+   "WeightEmpty": 4330,
+   "WeightMax": 8600,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 9.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   23127,
+   23128,
+   23129,
+   23130
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   378
+  ],
+  "comm_ids": [
+   187
+  ],
+  "fuel_ids": [
+   522
+  ],
+  "signatures": [
+   {
+    "ID": 4555,
+    "Type": 3001,
+    "Front": 1.98,
+    "Side": 5.8,
+    "Rear": 1.98,
+    "Top": 5.42
+   },
+   {
+    "ID": 4555,
+    "Type": 3002,
+    "Front": 1.17,
+    "Side": 3.31,
+    "Rear": 1.82,
+    "Top": 3.13
+   },
+   {
+    "ID": 4555,
+    "Type": 4001,
+    "Front": 1.98,
+    "Side": 7.63,
+    "Rear": 11.19,
+    "Top": 7.29
+   },
+   {
+    "ID": 4555,
+    "Type": 4002,
+    "Front": 1.17,
+    "Side": 3.31,
+    "Rear": 1.17,
+    "Top": 3.13
+   },
+   {
+    "ID": 4555,
+    "Type": 5001,
+    "Front": 1.7,
+    "Side": 4.2,
+    "Rear": 1.7,
+    "Top": 4.6
+   },
+   {
+    "ID": 4555,
+    "Type": 5002,
+    "Front": 1.7,
+    "Side": 4.2,
+    "Rear": 1.7,
+    "Top": 4.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4556,
+   "Category": 2001,
+   "Type": 7002,
+   "Name": "F.27-200 Friendship",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 1978,
+   "YearDecommissioned": 2008,
+   "Length": 23.56,
+   "Span": 29.0,
+   "Height": 8.5,
+   "WeightEmpty": 10257,
+   "WeightMax": 17710,
+   "WeightPayload": 5000,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 7.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   863
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   23131,
+   23132,
+   23133
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   493
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   682
+  ],
+  "signatures": [
+   {
+    "ID": 4556,
+    "Type": 3001,
+    "Front": 4.98,
+    "Side": 8.72,
+    "Rear": 4.98,
+    "Top": 13.6
+   },
+   {
+    "ID": 4556,
+    "Type": 3002,
+    "Front": 2.52,
+    "Side": 4.65,
+    "Rear": 4.56,
+    "Top": 6.73
+   },
+   {
+    "ID": 4556,
+    "Type": 4001,
+    "Front": 4.98,
+    "Side": 10.01,
+    "Rear": 16.01,
+    "Top": 13.47
+   },
+   {
+    "ID": 4556,
+    "Type": 4002,
+    "Front": 2.52,
+    "Side": 4.65,
+    "Rear": 2.52,
+    "Top": 6.73
+   },
+   {
+    "ID": 4556,
+    "Type": 5001,
+    "Front": 12.8,
+    "Side": 14.9,
+    "Rear": 12.8,
+    "Top": 15.3
+   },
+   {
+    "ID": 4556,
+    "Type": 5002,
+    "Front": 12.8,
+    "Side": 14.9,
+    "Rear": 12.8,
+    "Top": 14.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4557,
+   "Category": 2001,
+   "Type": 6002,
+   "Name": "Dash-8-300 MPA",
+   "Comments": "-",
+   "OperatorCountry": 2111,
+   "OperatorService": 2005,
+   "YearCommissioned": 2009,
+   "YearDecommissioned": 0,
+   "Length": 25.68,
+   "Span": 27.43,
+   "Height": 7.49,
+   "WeightEmpty": 11791,
+   "WeightMax": 19500,
+   "WeightPayload": 5138,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 7.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   448,
+   5434,
+   892
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   23135,
+   23136,
+   23137
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2465
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   545
+  ],
+  "signatures": [
+   {
+    "ID": 4557,
+    "Type": 3001,
+    "Front": 5.03,
+    "Side": 8.99,
+    "Rear": 5.03,
+    "Top": 13.73
+   },
+   {
+    "ID": 4557,
+    "Type": 3002,
+    "Front": 2.54,
+    "Side": 4.77,
+    "Rear": 4.61,
+    "Top": 6.78
+   },
+   {
+    "ID": 4557,
+    "Type": 4001,
+    "Front": 5.03,
+    "Side": 10.22,
+    "Rear": 16.06,
+    "Top": 13.55
+   },
+   {
+    "ID": 4557,
+    "Type": 4002,
+    "Front": 2.54,
+    "Side": 4.77,
+    "Rear": 2.54,
+    "Top": 6.78
+   },
+   {
+    "ID": 4557,
+    "Type": 5001,
+    "Front": 13.0,
+    "Side": 15.0,
+    "Rear": 13.0,
+    "Top": 15.4
+   },
+   {
+    "ID": 4557,
+    "Type": 5002,
+    "Front": 13.0,
+    "Side": 15.0,
+    "Rear": 13.0,
+    "Top": 15.0
+   }
+  ]
+ }
+]

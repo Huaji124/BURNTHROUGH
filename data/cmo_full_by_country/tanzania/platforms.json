@@ -1,0 +1,238 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3750,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "J-7TN Fishbed [MiG-21 Copy]",
+   "Comments": "12x",
+   "OperatorCountry": 2116,
+   "OperatorService": 2001,
+   "YearCommissioned": 2011,
+   "YearDecommissioned": 0,
+   "Length": 14.0,
+   "Span": 8.3,
+   "Height": 4.1,
+   "WeightEmpty": 4871,
+   "WeightMax": 8625,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 4.0,
+   "ClimbRate": 112.8,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2770,
+   2771,
+   4174
+  ],
+  "mount_ids": [
+   256,
+   1826
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18566,
+   18567,
+   18568,
+   18569,
+   18570,
+   18571,
+   18572,
+   18573,
+   18574,
+   18575,
+   18576
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   400
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1055
+  ],
+  "signatures": [
+   {
+    "ID": 3750,
+    "Type": 3001,
+    "Front": 2.3,
+    "Side": 5.21,
+    "Rear": 2.3,
+    "Top": 6.29
+   },
+   {
+    "ID": 3750,
+    "Type": 3002,
+    "Front": 1.32,
+    "Side": 3.03,
+    "Rear": 2.11,
+    "Top": 3.54
+   },
+   {
+    "ID": 3750,
+    "Type": 4001,
+    "Front": 2.3,
+    "Side": 7.1,
+    "Rear": 11.86,
+    "Top": 8.05
+   },
+   {
+    "ID": 3750,
+    "Type": 4002,
+    "Front": 1.32,
+    "Side": 3.03,
+    "Rear": 1.32,
+    "Top": 3.54
+   },
+   {
+    "ID": 3750,
+    "Type": 5001,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 6.3
+   },
+   {
+    "ID": 3750,
+    "Type": 5002,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3752,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "F-7A Fishbed [MiG-21 Copy]",
+   "Comments": "12x",
+   "OperatorCountry": 2116,
+   "OperatorService": 2001,
+   "YearCommissioned": 1981,
+   "YearDecommissioned": 0,
+   "Length": 14.0,
+   "Span": 7.2,
+   "Height": 4.1,
+   "WeightEmpty": 4871,
+   "WeightMax": 8625,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 83.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   869
+  ],
+  "mount_ids": [
+   293
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18577,
+   18578,
+   18579,
+   18580,
+   18581,
+   18582
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   845
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   565
+  ],
+  "signatures": [
+   {
+    "ID": 3752,
+    "Type": 3001,
+    "Front": 2.2,
+    "Side": 5.21,
+    "Rear": 2.2,
+    "Top": 6.01
+   },
+   {
+    "ID": 3752,
+    "Type": 3002,
+    "Front": 1.27,
+    "Side": 3.03,
+    "Rear": 2.02,
+    "Top": 3.41
+   },
+   {
+    "ID": 3752,
+    "Type": 4001,
+    "Front": 2.2,
+    "Side": 7.1,
+    "Rear": 11.65,
+    "Top": 7.81
+   },
+   {
+    "ID": 3752,
+    "Type": 4002,
+    "Front": 1.27,
+    "Side": 3.03,
+    "Rear": 1.27,
+    "Top": 3.41
+   },
+   {
+    "ID": 3752,
+    "Type": 5001,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.8
+   },
+   {
+    "ID": 3752,
+    "Type": 5002,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.4
+   }
+  ]
+ }
+]

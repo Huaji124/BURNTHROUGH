@@ -1,0 +1,156 @@
+{
+ "9": {
+  "ID": 9,
+  "Name": "Derby Command Datalink",
+  "Comments": "-",
+  "Type": 10061,
+  "Range": 80,
+  "Channels": 8,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 1,
+  "Hypothetical": 0
+ },
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "72": {
+  "ID": 72,
+  "Name": "HF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "186": {
+  "ID": 186,
+  "Name": "Spike ER/LR Guidance Unit",
+  "Comments": "-",
+  "Type": 10053,
+  "Range": 20,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "195": {
+  "ID": 195,
+  "Name": "UHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "198": {
+  "ID": 198,
+  "Name": "MF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "206": {
+  "ID": 206,
+  "Name": "LF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "209": {
+  "ID": 209,
+  "Name": "VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "222": {
+  "ID": 222,
+  "Name": "MILSTAR SATCOM UHF",
+  "Comments": "-",
+  "Type": 2003,
+  "Range": 8000,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "237": {
+  "ID": 237,
+  "Name": "HF Datalink [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "238": {
+  "ID": 238,
+  "Name": "HF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "239": {
+  "ID": 239,
+  "Name": "MF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "UHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "378": {
+  "ID": 378,
+  "Name": "40mm/70 Single Breda Type 107",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1059": {
+  "ID": 1059,
+  "Name": "30mm/75 Single Oerlikon",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1069": {
+  "ID": 1069,
+  "Name": "7.62mm MG",
+  "Comments": "3x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1207": {
+  "ID": 1207,
+  "Name": "AK-630",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

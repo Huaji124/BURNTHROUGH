@@ -1,0 +1,122 @@
+{
+ "347": {
+  "ID": 347,
+  "Name": "1x F110-GE-100",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 8321.0,
+  "ThrustPerEngineAfterburner": 12993.0,
+  "SFCMilitary": 0.745,
+  "SFCAfterburner": 2.08
+ },
+ "376": {
+  "ID": 376,
+  "Name": "2x J85-GE-21",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1634.0,
+  "ThrustPerEngineAfterburner": 2270.0,
+  "SFCMilitary": 1.24,
+  "SFCAfterburner": 2.13
+ },
+ "658": {
+  "ID": 658,
+  "Name": "4x MTU 20V 538 TB93 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "659": {
+  "ID": 659,
+  "Name": "4x MTU MD872 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "698": {
+  "ID": 698,
+  "Name": "2x MTU 16V 538 TB92 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "983": {
+  "ID": 983,
+  "Name": "2x General Electric LM-2500 Gas Turbines, COGAG",
+  "Type": 3003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1537": {
+  "ID": 1537,
+  "Name": "2x Arriel 1C",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 660.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.55,
+  "SFCAfterburner": 0.0
+ },
+ "2238": {
+  "ID": 2238,
+  "Name": "1x Adour RT.172 Mk.951",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 2737.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.74,
+  "SFCAfterburner": 0.0
+ },
+ "2291": {
+  "ID": 2291,
+  "Name": "1x Lycoming AEIO-540-D4A5",
+  "Type": 2004,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 260.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.5,
+  "SFCAfterburner": 0.0
+ },
+ "2293": {
+  "ID": 2293,
+  "Name": "4x Honeywell LF-502-1F",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 3178.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.585,
+  "SFCAfterburner": 0.0
+ }
+}

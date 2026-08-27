@@ -1,0 +1,349 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3235,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "C-295M",
+   "Comments": "5x",
+   "OperatorCountry": 2023,
+   "OperatorService": 2001,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 24.5,
+   "Span": 25.8,
+   "Height": 8.6,
+   "WeightEmpty": 9600,
+   "WeightMax": 23200,
+   "WeightPayload": 9250,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 9.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4985
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   17369,
+   17370,
+   17371
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2119
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1738
+  ],
+  "signatures": [
+   {
+    "ID": 3235,
+    "Type": 3001,
+    "Front": 4.79,
+    "Side": 8.97,
+    "Rear": 4.79,
+    "Top": 13.07
+   },
+   {
+    "ID": 3235,
+    "Type": 3002,
+    "Front": 2.44,
+    "Side": 4.76,
+    "Rear": 4.39,
+    "Top": 6.51
+   },
+   {
+    "ID": 3235,
+    "Type": 4001,
+    "Front": 4.79,
+    "Side": 10.2,
+    "Rear": 15.76,
+    "Top": 13.12
+   },
+   {
+    "ID": 3235,
+    "Type": 4002,
+    "Front": 2.44,
+    "Side": 4.76,
+    "Rear": 2.44,
+    "Top": 6.51
+   },
+   {
+    "ID": 3235,
+    "Type": 5001,
+    "Front": 12.4,
+    "Side": 14.4,
+    "Rear": 12.4,
+    "Top": 14.8
+   },
+   {
+    "ID": 3235,
+    "Type": 5002,
+    "Front": 12.4,
+    "Side": 14.4,
+    "Rear": 12.4,
+    "Top": 14.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3957,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "L-159A Alca",
+   "Comments": "-",
+   "OperatorCountry": 2023,
+   "OperatorService": 2001,
+   "YearCommissioned": 2001,
+   "YearDecommissioned": 0,
+   "Length": 12.72,
+   "Span": 9.54,
+   "Height": 4.87,
+   "WeightEmpty": 4350,
+   "WeightMax": 8000,
+   "WeightPayload": 2340,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 53.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5421,
+   2486
+  ],
+  "mount_ids": [
+   2708
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   19832,
+   19833,
+   19834,
+   19836,
+   19837,
+   19838,
+   19839,
+   19840,
+   19841,
+   19842
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2417
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1747
+  ],
+  "signatures": [
+   {
+    "ID": 3957,
+    "Type": 3001,
+    "Front": 2.3,
+    "Side": 5.08,
+    "Rear": 2.3,
+    "Top": 6.28
+   },
+   {
+    "ID": 3957,
+    "Type": 3002,
+    "Front": 1.32,
+    "Side": 2.96,
+    "Rear": 2.11,
+    "Top": 3.53
+   },
+   {
+    "ID": 3957,
+    "Type": 4001,
+    "Front": 2.3,
+    "Side": 6.98,
+    "Rear": 11.85,
+    "Top": 8.04
+   },
+   {
+    "ID": 3957,
+    "Type": 4002,
+    "Front": 1.32,
+    "Side": 2.96,
+    "Rear": 1.32,
+    "Top": 3.53
+   },
+   {
+    "ID": 3957,
+    "Type": 5001,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 6.3
+   },
+   {
+    "ID": 3957,
+    "Type": 5002,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3958,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "L-159T1 Alca",
+   "Comments": "-",
+   "OperatorCountry": 2023,
+   "OperatorService": 2001,
+   "YearCommissioned": 2009,
+   "YearDecommissioned": 0,
+   "Length": 12.72,
+   "Span": 9.54,
+   "Height": 4.87,
+   "WeightEmpty": 4350,
+   "WeightMax": 8000,
+   "WeightPayload": 2340,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 53.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2486
+  ],
+  "mount_ids": [
+   2708
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   19832,
+   19833,
+   19834,
+   19835,
+   19836,
+   19837,
+   19838,
+   19839,
+   19840,
+   19860,
+   19861
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2417
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1747
+  ],
+  "signatures": [
+   {
+    "ID": 3958,
+    "Type": 3001,
+    "Front": 2.3,
+    "Side": 5.08,
+    "Rear": 2.3,
+    "Top": 6.28
+   },
+   {
+    "ID": 3958,
+    "Type": 3002,
+    "Front": 1.32,
+    "Side": 2.96,
+    "Rear": 2.11,
+    "Top": 3.53
+   },
+   {
+    "ID": 3958,
+    "Type": 4001,
+    "Front": 2.3,
+    "Side": 6.98,
+    "Rear": 11.85,
+    "Top": 8.04
+   },
+   {
+    "ID": 3958,
+    "Type": 4002,
+    "Front": 1.32,
+    "Side": 2.96,
+    "Rear": 1.32,
+    "Top": 3.53
+   },
+   {
+    "ID": 3958,
+    "Type": 5001,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 6.3
+   },
+   {
+    "ID": 3958,
+    "Type": 5002,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 5.9
+   }
+  ]
+ }
+]

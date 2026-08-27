@@ -1,0 +1,1465 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 347,
+   "Category": 1001,
+   "Type": 9004,
+   "Name": "NGS Buoy",
+   "Comments": "-",
+   "OperatorCountry": 1003,
+   "OperatorService": 1003,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 1.0,
+   "Beam": 1.0,
+   "Draft": 0.0,
+   "Height": 3.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 10000,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 1450,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   68
+  ],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 347,
+    "Type": 1001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 347,
+    "Type": 1002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 347,
+    "Type": 1003,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 347,
+    "Type": 1004,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 347,
+    "Type": 2001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 347,
+    "Type": 3001,
+    "Front": 2.06,
+    "Side": 3.5,
+    "Rear": 2.06,
+    "Top": 4.67
+   },
+   {
+    "ID": 347,
+    "Type": 3002,
+    "Front": 1.0,
+    "Side": 1.78,
+    "Rear": 1.0,
+    "Top": 2.0
+   },
+   {
+    "ID": 347,
+    "Type": 4001,
+    "Front": 1.96,
+    "Side": 3.33,
+    "Rear": 1.96,
+    "Top": 4.44
+   },
+   {
+    "ID": 347,
+    "Type": 4002,
+    "Front": 0.83,
+    "Side": 1.48,
+    "Rear": 0.83,
+    "Top": 1.67
+   },
+   {
+    "ID": 347,
+    "Type": 5001,
+    "Front": -24.0,
+    "Side": -22.6,
+    "Rear": -24.0,
+    "Top": -16.0
+   },
+   {
+    "ID": 347,
+    "Type": 5002,
+    "Front": -24.0,
+    "Side": -22.6,
+    "Rear": -24.0,
+    "Top": -16.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3107,
+   "Category": 1001,
+   "Type": 9004,
+   "Name": "Surveillance Buoy [LLTV]",
+   "Comments": "-",
+   "OperatorCountry": 1003,
+   "OperatorService": 1003,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 0.5,
+   "Beam": 0.5,
+   "Draft": 0.0,
+   "Height": 0.5,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 10000,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 1450,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   4344
+  ],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   68
+  ],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 3107,
+    "Type": 1001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3107,
+    "Type": 1002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3107,
+    "Type": 1003,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3107,
+    "Type": 1004,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3107,
+    "Type": 2001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3107,
+    "Type": 3001,
+    "Front": 1.59,
+    "Side": 2.71,
+    "Rear": 1.59,
+    "Top": 3.61
+   },
+   {
+    "ID": 3107,
+    "Type": 3002,
+    "Front": 0.68,
+    "Side": 1.2,
+    "Rear": 0.68,
+    "Top": 1.35
+   },
+   {
+    "ID": 3107,
+    "Type": 4001,
+    "Front": 1.59,
+    "Side": 2.71,
+    "Rear": 1.59,
+    "Top": 3.61
+   },
+   {
+    "ID": 3107,
+    "Type": 4002,
+    "Front": 0.68,
+    "Side": 1.2,
+    "Rear": 0.68,
+    "Top": 1.35
+   },
+   {
+    "ID": 3107,
+    "Type": 5001,
+    "Front": -31.2,
+    "Side": -30.1,
+    "Rear": -31.2,
+    "Top": -23.5
+   },
+   {
+    "ID": 3107,
+    "Type": 5002,
+    "Front": -31.2,
+    "Side": -30.1,
+    "Rear": -31.2,
+    "Top": -23.5
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3121,
+   "Category": 2004,
+   "Type": 1001,
+   "Name": "Marker, Invisible",
+   "Comments": "-",
+   "OperatorCountry": 1003,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 0.0,
+   "Beam": 0.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 0,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 1,
+   "MaxSeaState": 0,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cargo_Type": 1000,
+   "Cargo_Mass": 1.0,
+   "Cargo_Area": 1.0,
+   "Cargo_Crew": 8.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2798
+  ],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 3121,
+    "Type": 1001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 1002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 1003,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 1004,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 2001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3121,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3122,
+   "Category": 2006,
+   "Type": 9001,
+   "Name": "Floating Wreckage",
+   "Comments": "-",
+   "OperatorCountry": 1003,
+   "OperatorService": 1003,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 4.0,
+   "Beam": 4.0,
+   "Draft": 0.0,
+   "Height": 1.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 10000,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 410,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2285
+  ],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 3122,
+    "Type": 1001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3122,
+    "Type": 1002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3122,
+    "Type": 1003,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3122,
+    "Type": 1004,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3122,
+    "Type": 2001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 3122,
+    "Type": 3001,
+    "Front": 3.12,
+    "Side": 5.31,
+    "Rear": 3.12,
+    "Top": 7.07
+   },
+   {
+    "ID": 3122,
+    "Type": 3002,
+    "Front": 1.52,
+    "Side": 2.69,
+    "Rear": 1.52,
+    "Top": 3.03
+   },
+   {
+    "ID": 3122,
+    "Type": 4001,
+    "Front": 2.97,
+    "Side": 5.05,
+    "Rear": 2.97,
+    "Top": 6.74
+   },
+   {
+    "ID": 3122,
+    "Type": 4002,
+    "Front": 1.26,
+    "Side": 2.25,
+    "Rear": 1.26,
+    "Top": 2.53
+   },
+   {
+    "ID": 3122,
+    "Type": 5001,
+    "Front": -9.5,
+    "Side": -7.5,
+    "Rear": -9.5,
+    "Top": -1.0
+   },
+   {
+    "ID": 3122,
+    "Type": 5002,
+    "Front": -9.5,
+    "Side": -7.5,
+    "Rear": -9.5,
+    "Top": -1.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3124,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "7m RHIB",
+   "Comments": "Basic",
+   "OperatorCountry": 1003,
+   "OperatorService": 2002,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 7.5,
+   "Beam": 2.5,
+   "Draft": 0.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 2,
+   "DisplacementFull": 3,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 2,
+   "MaxSeaState": 3,
+   "RepairCapacity": 0,
+   "TroopCapacity": 6,
+   "CargoCapacity": 1450,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 3001,
+   "Hypothetical": 0,
+   "Cargo_Type": 1000,
+   "Cargo_Mass": 1.0,
+   "Cargo_Area": 1.0,
+   "Cargo_Crew": 6.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   835
+  ],
+  "propulsion_ids": [
+   2811
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   726
+  ],
+  "signatures": [
+   {
+    "ID": 3124,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 3124,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 3124,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 3124,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 3124,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 3124,
+    "Type": 3001,
+    "Front": 3.59,
+    "Side": 6.1,
+    "Rear": 3.59,
+    "Top": 8.13
+   },
+   {
+    "ID": 3124,
+    "Type": 3002,
+    "Front": 1.53,
+    "Side": 2.71,
+    "Rear": 1.53,
+    "Top": 3.05
+   },
+   {
+    "ID": 3124,
+    "Type": 4001,
+    "Front": 3.59,
+    "Side": 6.1,
+    "Rear": 3.59,
+    "Top": 8.13
+   },
+   {
+    "ID": 3124,
+    "Type": 4002,
+    "Front": 1.53,
+    "Side": 2.71,
+    "Rear": 1.53,
+    "Top": 3.05
+   },
+   {
+    "ID": 3124,
+    "Type": 5001,
+    "Front": -3.0,
+    "Side": -0.7,
+    "Rear": -3.0,
+    "Top": 5.9
+   },
+   {
+    "ID": 3124,
+    "Type": 5002,
+    "Front": -3.0,
+    "Side": -0.7,
+    "Rear": -3.0,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3125,
+   "Category": 2002,
+   "Type": 9008,
+   "Name": "7m RHIB",
+   "Comments": "Enhanced",
+   "OperatorCountry": 1003,
+   "OperatorService": 2002,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 7.5,
+   "Beam": 2.5,
+   "Draft": 0.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 2,
+   "DisplacementFull": 3,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 2,
+   "MaxSeaState": 3,
+   "RepairCapacity": 0,
+   "TroopCapacity": 6,
+   "CargoCapacity": 1450,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 3001,
+   "Hypothetical": 0,
+   "Cargo_Type": 1000,
+   "Cargo_Mass": 1.0,
+   "Cargo_Area": 1.0,
+   "Cargo_Crew": 6.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   4235,
+   1916
+  ],
+  "mount_ids": [
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   835
+  ],
+  "propulsion_ids": [
+   2812
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   726
+  ],
+  "signatures": [
+   {
+    "ID": 3125,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 3125,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 3125,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 3125,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 3125,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 3125,
+    "Type": 3001,
+    "Front": 3.59,
+    "Side": 6.1,
+    "Rear": 3.59,
+    "Top": 8.13
+   },
+   {
+    "ID": 3125,
+    "Type": 3002,
+    "Front": 1.53,
+    "Side": 2.71,
+    "Rear": 1.53,
+    "Top": 3.05
+   },
+   {
+    "ID": 3125,
+    "Type": 4001,
+    "Front": 3.59,
+    "Side": 6.1,
+    "Rear": 3.59,
+    "Top": 8.13
+   },
+   {
+    "ID": 3125,
+    "Type": 4002,
+    "Front": 1.53,
+    "Side": 2.71,
+    "Rear": 1.53,
+    "Top": 3.05
+   },
+   {
+    "ID": 3125,
+    "Type": 5001,
+    "Front": -3.0,
+    "Side": -0.7,
+    "Rear": -3.0,
+    "Top": 5.9
+   },
+   {
+    "ID": 3125,
+    "Type": 5002,
+    "Front": -3.0,
+    "Side": -0.7,
+    "Rear": -3.0,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3126,
+   "Category": 2002,
+   "Type": 9008,
+   "Name": "11m RHIB",
+   "Comments": "Basic",
+   "OperatorCountry": 1003,
+   "OperatorService": 2002,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 10.7,
+   "Beam": 3.2,
+   "Draft": 0.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 8,
+   "DisplacementStandard": 8,
+   "DisplacementFull": 9,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 5,
+   "MaxSeaState": 3,
+   "RepairCapacity": 0,
+   "TroopCapacity": 8,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 3001,
+   "Hypothetical": 0,
+   "Cargo_Type": 1000,
+   "Cargo_Mass": 1.0,
+   "Cargo_Area": 1.0,
+   "Cargo_Crew": 8.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1916
+  ],
+  "mount_ids": [
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   835
+  ],
+  "propulsion_ids": [
+   2813
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   1611
+  ],
+  "signatures": [
+   {
+    "ID": 3126,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 3126,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 3126,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 3126,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 3126,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 3126,
+    "Type": 3001,
+    "Front": 3.99,
+    "Side": 6.79,
+    "Rear": 3.99,
+    "Top": 9.05
+   },
+   {
+    "ID": 3126,
+    "Type": 3002,
+    "Front": 1.7,
+    "Side": 3.02,
+    "Rear": 1.7,
+    "Top": 3.39
+   },
+   {
+    "ID": 3126,
+    "Type": 4001,
+    "Front": 3.99,
+    "Side": 6.79,
+    "Rear": 3.99,
+    "Top": 9.05
+   },
+   {
+    "ID": 3126,
+    "Type": 4002,
+    "Front": 1.7,
+    "Side": 3.02,
+    "Rear": 1.7,
+    "Top": 3.39
+   },
+   {
+    "ID": 3126,
+    "Type": 5001,
+    "Front": 0.7,
+    "Side": 3.2,
+    "Rear": 0.7,
+    "Top": 9.7
+   },
+   {
+    "ID": 3126,
+    "Type": 5002,
+    "Front": 0.7,
+    "Side": 3.2,
+    "Rear": 0.7,
+    "Top": 9.7
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3127,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "11m RHIB",
+   "Comments": "Enhanced/SpecOps",
+   "OperatorCountry": 1003,
+   "OperatorService": 2002,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 10.7,
+   "Beam": 3.2,
+   "Draft": 0.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 8,
+   "DisplacementStandard": 8,
+   "DisplacementFull": 9,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 5,
+   "MaxSeaState": 3,
+   "RepairCapacity": 0,
+   "TroopCapacity": 8,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 3001,
+   "Hypothetical": 0,
+   "Cargo_Type": 1000,
+   "Cargo_Mass": 1.0,
+   "Cargo_Area": 1.0,
+   "Cargo_Crew": 8.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1916,
+   4235
+  ],
+  "mount_ids": [
+   439,
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   665,
+   542
+  ],
+  "propulsion_ids": [
+   2813
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   1611
+  ],
+  "signatures": [
+   {
+    "ID": 3127,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 3127,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 3127,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 3127,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 3127,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 3127,
+    "Type": 3001,
+    "Front": 3.99,
+    "Side": 6.79,
+    "Rear": 3.99,
+    "Top": 9.05
+   },
+   {
+    "ID": 3127,
+    "Type": 3002,
+    "Front": 1.7,
+    "Side": 3.02,
+    "Rear": 1.7,
+    "Top": 3.39
+   },
+   {
+    "ID": 3127,
+    "Type": 4001,
+    "Front": 3.99,
+    "Side": 6.79,
+    "Rear": 3.99,
+    "Top": 9.05
+   },
+   {
+    "ID": 3127,
+    "Type": 4002,
+    "Front": 1.7,
+    "Side": 3.02,
+    "Rear": 1.7,
+    "Top": 3.39
+   },
+   {
+    "ID": 3127,
+    "Type": 5001,
+    "Front": 0.7,
+    "Side": 3.2,
+    "Rear": 0.7,
+    "Top": 9.7
+   },
+   {
+    "ID": 3127,
+    "Type": 5002,
+    "Front": 0.7,
+    "Side": 3.2,
+    "Rear": 0.7,
+    "Top": 9.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4772,
+   "Category": 2003,
+   "Type": 8201,
+   "Name": "Generic Commercial Drone",
+   "Comments": "Professional, Long-Range",
+   "OperatorCountry": 1003,
+   "OperatorService": 1001,
+   "YearCommissioned": 2010,
+   "YearDecommissioned": 0,
+   "Length": 0.5,
+   "Span": 0.5,
+   "Height": 0.3,
+   "WeightEmpty": 3,
+   "WeightMax": 3,
+   "WeightPayload": 0,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 4.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 2.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2728
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   25962,
+   25963
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2819
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   2001
+  ],
+  "signatures": [
+   {
+    "ID": 4772,
+    "Type": 3001,
+    "Front": 0.14,
+    "Side": 0.31,
+    "Rear": 0.14,
+    "Top": 0.38
+   },
+   {
+    "ID": 4772,
+    "Type": 3002,
+    "Front": 0.13,
+    "Side": 0.29,
+    "Rear": 0.13,
+    "Top": 0.34
+   },
+   {
+    "ID": 4772,
+    "Type": 4001,
+    "Front": 0.14,
+    "Side": 1.09,
+    "Rear": 4.0,
+    "Top": 1.25
+   },
+   {
+    "ID": 4772,
+    "Type": 4002,
+    "Front": 0.13,
+    "Side": 0.29,
+    "Rear": 0.13,
+    "Top": 0.34
+   },
+   {
+    "ID": 4772,
+    "Type": 5001,
+    "Front": -30.2,
+    "Side": -26.4,
+    "Rear": -30.2,
+    "Top": -26.0
+   },
+   {
+    "ID": 4772,
+    "Type": 5002,
+    "Front": -30.2,
+    "Side": -26.4,
+    "Rear": -30.2,
+    "Top": -26.4
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 648,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "SDV [Generic]",
+   "OperatorCountry": 1003,
+   "OperatorService": 1003,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -6,
+   "DamagePoints": 3,
+   "Length": 7.0,
+   "Beam": 2.0,
+   "Draft": 0.0,
+   "Height": 2.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 18,
+   "DisplacementFull": 20,
+   "Crew": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 4001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 1
+  },
+  "sensor_ids": [
+   5843
+  ],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 648,
+    "Type": 1001,
+    "Front": 95.0,
+    "Side": 96.0,
+    "Rear": 97.0,
+    "Top": 96.0
+   },
+   {
+    "ID": 648,
+    "Type": 1002,
+    "Front": 65.5,
+    "Side": 66.0,
+    "Rear": 67.0,
+    "Top": 66.0
+   },
+   {
+    "ID": 648,
+    "Type": 1003,
+    "Front": 57.5,
+    "Side": 58.0,
+    "Rear": 59.0,
+    "Top": 58.0
+   },
+   {
+    "ID": 648,
+    "Type": 1004,
+    "Front": 49.0,
+    "Side": 50.0,
+    "Rear": 51.0,
+    "Top": 50.0
+   },
+   {
+    "ID": 648,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 648,
+    "Type": 3001,
+    "Front": 1.2,
+    "Side": 1.99,
+    "Rear": 1.2,
+    "Top": 2.49
+   },
+   {
+    "ID": 648,
+    "Type": 3002,
+    "Front": 0.3,
+    "Side": 0.5,
+    "Rear": 0.3,
+    "Top": 0.6
+   },
+   {
+    "ID": 648,
+    "Type": 4001,
+    "Front": 1.2,
+    "Side": 1.99,
+    "Rear": 1.2,
+    "Top": 2.49
+   },
+   {
+    "ID": 648,
+    "Type": 4002,
+    "Front": 0.3,
+    "Side": 0.5,
+    "Rear": 0.3,
+    "Top": 0.6
+   },
+   {
+    "ID": 648,
+    "Type": 5001,
+    "Front": 6.4,
+    "Side": 11.1,
+    "Rear": 6.4,
+    "Top": 8.1
+   },
+   {
+    "ID": 648,
+    "Type": 5002,
+    "Front": 6.4,
+    "Side": 11.1,
+    "Rear": 6.4,
+    "Top": 8.1
+   }
+  ]
+ }
+]

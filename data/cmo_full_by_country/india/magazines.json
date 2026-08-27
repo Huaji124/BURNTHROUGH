@@ -1,0 +1,512 @@
+{
+ "50": {
+  "ID": 50,
+  "Name": "SA-18",
+  "Comments": "6x Missiles",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "61": {
+  "ID": 61,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "76": {
+  "ID": 76,
+  "Name": "A.244S [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "77": {
+  "ID": 77,
+  "Name": "Carrier Magazine",
+  "Comments": "India, 2005, CVH",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "220": {
+  "ID": 220,
+  "Name": "Helicopter Magazine",
+  "Comments": "India, Sea King, Sea Eagle",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "221": {
+  "ID": 221,
+  "Name": "Helicopter Magazine",
+  "Comments": "India, Ka-25",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "226": {
+  "ID": 226,
+  "Name": "A.244S [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "286": {
+  "ID": 286,
+  "Name": "40mm/60 Mk7 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "287": {
+  "ID": 287,
+  "Name": "40mm/60 Mk5 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "294": {
+  "ID": 294,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "362": {
+  "ID": 362,
+  "Name": "Viraat",
+  "Comments": "2008",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 4000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "407": {
+  "ID": 407,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "420": {
+  "ID": 420,
+  "Name": "Super Barricade DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "432": {
+  "ID": 432,
+  "Name": "PK-16 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "437": {
+  "ID": 437,
+  "Name": "PK-10 DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "457": {
+  "ID": 457,
+  "Name": "Super Barricade DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "470": {
+  "ID": 470,
+  "Name": "20mm Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "502": {
+  "ID": 502,
+  "Name": "SA-N-5",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "514": {
+  "ID": 514,
+  "Name": "SA-N-5",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "545": {
+  "ID": 545,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "574": {
+  "ID": 574,
+  "Name": "RBU-1200",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "598": {
+  "ID": 598,
+  "Name": "Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "691": {
+  "ID": 691,
+  "Name": "Vikrant",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 2000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "757": {
+  "ID": 757,
+  "Name": "Generic Chaff/Flare DL",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "763": {
+  "ID": 763,
+  "Name": "AK-230 30mm/65",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "765": {
+  "ID": 765,
+  "Name": "AK-630M",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "766": {
+  "ID": 766,
+  "Name": "AK-630M",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "768": {
+  "ID": 768,
+  "Name": "AK-630M",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "800": {
+  "ID": 800,
+  "Name": "Viraat",
+  "Comments": "1987",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 4000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "805": {
+  "ID": 805,
+  "Name": "Helicopter Magazine",
+  "Comments": "India, Ka-27",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "808": {
+  "ID": 808,
+  "Name": "G738 [Type 182] Towed Torpedo Decoy",
+  "Comments": "Export",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 1,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "829": {
+  "ID": 829,
+  "Name": "20mm/80 Oerlikon Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "851": {
+  "ID": 851,
+  "Name": "25mm/80 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "901": {
+  "ID": 901,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "957": {
+  "ID": 957,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 600,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "973": {
+  "ID": 973,
+  "Name": "12.7mm/50 MG",
+  "Comments": "8x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1054": {
+  "ID": 1054,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1081": {
+  "ID": 1081,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "8x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 1080,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1206": {
+  "ID": 1206,
+  "Name": "AK-630",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1209": {
+  "ID": 1209,
+  "Name": "AK-630",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1226": {
+  "ID": 1226,
+  "Name": "WM-18 140mm Rockets",
+  "Comments": "2x Mounts, 4x reloads",
+  "ArmorGeneral": 1001,
+  "ROF": 20,
+  "Capacity": 144,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1271": {
+  "ID": 1271,
+  "Name": "Mk44 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 6,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1484": {
+  "ID": 1484,
+  "Name": "KT-216 DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1526": {
+  "ID": 1526,
+  "Name": "30mm CRN-91",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1547": {
+  "ID": 1547,
+  "Name": "SA-N-5",
+  "Comments": "1x Mount, Extra",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

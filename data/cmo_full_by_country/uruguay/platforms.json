@@ -1,0 +1,616 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2614,
+   "Category": 2002,
+   "Type": 3302,
+   "Name": "1 Uruguay [Mod Commandant Riviere]",
+   "Comments": "2x",
+   "OperatorCountry": 2108,
+   "OperatorService": 2002,
+   "YearCommissioned": 2009,
+   "YearDecommissioned": 0,
+   "Length": 102.7,
+   "Beam": 11.8,
+   "Draft": 3.8,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1760,
+   "DisplacementFull": 2250,
+   "Crew": 197,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 370,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   165,
+   676,
+   1354,
+   1714,
+   1792,
+   2418,
+   2552,
+   1452,
+   4403
+  ],
+  "mount_ids": [
+   536,
+   789,
+   1141,
+   1219,
+   1308
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   360,
+   402,
+   499
+  ],
+  "propulsion_ids": [
+   1360
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1555
+  ],
+  "signatures": [
+   {
+    "ID": 2614,
+    "Type": 1001,
+    "Front": 135.0,
+    "Side": 136.0,
+    "Rear": 137.0,
+    "Top": 136.0
+   },
+   {
+    "ID": 2614,
+    "Type": 1002,
+    "Front": 105.5,
+    "Side": 106.0,
+    "Rear": 107.0,
+    "Top": 106.0
+   },
+   {
+    "ID": 2614,
+    "Type": 1003,
+    "Front": 97.5,
+    "Side": 98.0,
+    "Rear": 99.0,
+    "Top": 98.0
+   },
+   {
+    "ID": 2614,
+    "Type": 1004,
+    "Front": 89.0,
+    "Side": 90.0,
+    "Rear": 91.0,
+    "Top": 90.0
+   },
+   {
+    "ID": 2614,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 2614,
+    "Type": 3001,
+    "Front": 7.87,
+    "Side": 13.38,
+    "Rear": 7.87,
+    "Top": 17.84
+   },
+   {
+    "ID": 2614,
+    "Type": 3002,
+    "Front": 3.34,
+    "Side": 5.95,
+    "Rear": 3.34,
+    "Top": 6.69
+   },
+   {
+    "ID": 2614,
+    "Type": 4001,
+    "Front": 7.87,
+    "Side": 13.38,
+    "Rear": 7.87,
+    "Top": 17.84
+   },
+   {
+    "ID": 2614,
+    "Type": 4002,
+    "Front": 3.34,
+    "Side": 5.95,
+    "Rear": 3.34,
+    "Top": 6.69
+   },
+   {
+    "ID": 2614,
+    "Type": 5001,
+    "Front": 24.3,
+    "Side": 27.7,
+    "Rear": 24.3,
+    "Top": 34.3
+   },
+   {
+    "ID": 2614,
+    "Type": 5002,
+    "Front": 24.3,
+    "Side": 27.7,
+    "Rear": 24.3,
+    "Top": 34.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3038,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "A-37B Dragonfly [Super Tweet]",
+   "Comments": "-",
+   "OperatorCountry": 2108,
+   "OperatorService": 2001,
+   "YearCommissioned": 1977,
+   "YearDecommissioned": 0,
+   "Length": 8.6,
+   "Span": 10.9,
+   "Height": 2.7,
+   "WeightEmpty": 2817,
+   "WeightMax": 6350,
+   "WeightPayload": 2179,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 33.8,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   1844
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16045,
+   16046,
+   16047,
+   16048,
+   16049,
+   16050,
+   16051
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   374
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   673
+  ],
+  "signatures": [
+   {
+    "ID": 3038,
+    "Type": 3001,
+    "Front": 2.04,
+    "Side": 3.41,
+    "Rear": 2.04,
+    "Top": 5.57
+   },
+   {
+    "ID": 3038,
+    "Type": 3002,
+    "Front": 1.2,
+    "Side": 2.13,
+    "Rear": 1.87,
+    "Top": 3.2
+   },
+   {
+    "ID": 3038,
+    "Type": 4001,
+    "Front": 2.04,
+    "Side": 5.35,
+    "Rear": 11.31,
+    "Top": 7.43
+   },
+   {
+    "ID": 3038,
+    "Type": 4002,
+    "Front": 1.2,
+    "Side": 2.13,
+    "Rear": 1.2,
+    "Top": 3.2
+   },
+   {
+    "ID": 3038,
+    "Type": 5001,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.9
+   },
+   {
+    "ID": 3038,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4519,
+   "Category": 2001,
+   "Type": 8101,
+   "Name": "Pilatus PC-7",
+   "Comments": "6x",
+   "OperatorCountry": 2108,
+   "OperatorService": 2001,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 9.78,
+   "Span": 10.4,
+   "Height": 3.21,
+   "WeightEmpty": 1330,
+   "WeightMax": 2700,
+   "WeightPayload": 1040,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 10.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22931,
+   22932,
+   22933
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2691
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1835
+  ],
+  "signatures": [
+   {
+    "ID": 4519,
+    "Type": 3001,
+    "Front": 2.1,
+    "Side": 3.87,
+    "Rear": 2.1,
+    "Top": 5.75
+   },
+   {
+    "ID": 4519,
+    "Type": 3002,
+    "Front": 1.23,
+    "Side": 2.36,
+    "Rear": 1.93,
+    "Top": 3.28
+   },
+   {
+    "ID": 4519,
+    "Type": 4001,
+    "Front": 2.1,
+    "Side": 5.82,
+    "Rear": 11.45,
+    "Top": 7.58
+   },
+   {
+    "ID": 4519,
+    "Type": 4002,
+    "Front": 1.23,
+    "Side": 2.36,
+    "Rear": 1.23,
+    "Top": 3.28
+   },
+   {
+    "ID": 4519,
+    "Type": 5001,
+    "Front": 2.5,
+    "Side": 4.9,
+    "Rear": 2.5,
+    "Top": 5.3
+   },
+   {
+    "ID": 4519,
+    "Type": 5002,
+    "Front": 2.5,
+    "Side": 4.9,
+    "Rear": 2.5,
+    "Top": 4.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4520,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "IA-58A Pucara",
+   "Comments": "6x",
+   "OperatorCountry": 2108,
+   "OperatorService": 2001,
+   "YearCommissioned": 1989,
+   "YearDecommissioned": 0,
+   "Length": 14.3,
+   "Span": 14.5,
+   "Height": 5.4,
+   "WeightEmpty": 4020,
+   "WeightMax": 6800,
+   "WeightPayload": 1500,
+   "Crew": 2,
+   "Agility": 1.5,
+   "ClimbRate": 18.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   2185,
+   2186
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   22934,
+   22935,
+   22936,
+   22937,
+   22938,
+   22939,
+   24859,
+   24860
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   373
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   287
+  ],
+  "signatures": [
+   {
+    "ID": 4520,
+    "Type": 3001,
+    "Front": 2.9,
+    "Side": 5.62,
+    "Rear": 2.9,
+    "Top": 7.92
+   },
+   {
+    "ID": 4520,
+    "Type": 3002,
+    "Front": 1.6,
+    "Side": 3.22,
+    "Rear": 2.66,
+    "Top": 4.29
+   },
+   {
+    "ID": 4520,
+    "Type": 4001,
+    "Front": 2.9,
+    "Side": 7.47,
+    "Rear": 12.97,
+    "Top": 9.39
+   },
+   {
+    "ID": 4520,
+    "Type": 4002,
+    "Front": 1.6,
+    "Side": 3.22,
+    "Rear": 1.6,
+    "Top": 4.29
+   },
+   {
+    "ID": 4520,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 4520,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4521,
+   "Category": 2003,
+   "Type": 4101,
+   "Name": "Wessex HC.2",
+   "Comments": "6x",
+   "OperatorCountry": 2108,
+   "OperatorService": 2002,
+   "YearCommissioned": 1995,
+   "YearDecommissioned": 0,
+   "Length": 12.0,
+   "Span": 3.0,
+   "Height": 4.8,
+   "WeightEmpty": 3767,
+   "WeightMax": 6123,
+   "WeightPayload": 0,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 8.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22940,
+   22941,
+   22942
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1550
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   1121
+  ],
+  "signatures": [
+   {
+    "ID": 4521,
+    "Type": 3001,
+    "Front": 1.61,
+    "Side": 4.87,
+    "Rear": 1.61,
+    "Top": 4.4
+   },
+   {
+    "ID": 4521,
+    "Type": 3002,
+    "Front": 0.98,
+    "Side": 2.86,
+    "Rear": 1.48,
+    "Top": 2.63
+   },
+   {
+    "ID": 4521,
+    "Type": 4001,
+    "Front": 1.61,
+    "Side": 6.79,
+    "Rear": 10.32,
+    "Top": 6.35
+   },
+   {
+    "ID": 4521,
+    "Type": 4002,
+    "Front": 0.98,
+    "Side": 2.86,
+    "Rear": 0.98,
+    "Top": 2.63
+   },
+   {
+    "ID": 4521,
+    "Type": 5001,
+    "Front": -0.8,
+    "Side": 1.8,
+    "Rear": -0.8,
+    "Top": 2.2
+   },
+   {
+    "ID": 4521,
+    "Type": 5002,
+    "Front": -0.8,
+    "Side": 1.8,
+    "Rear": -0.8,
+    "Top": 1.8
+   }
+  ]
+ }
+]

@@ -1,0 +1,313 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1791,
+   "Category": 2006,
+   "Type": 9001,
+   "Name": "Civilian Dhow [22m, Armed]",
+   "Comments": "Pirate",
+   "OperatorCountry": 1201,
+   "OperatorService": 9001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 22.0,
+   "Beam": 4.5,
+   "Draft": 3.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 30,
+   "DisplacementFull": 0,
+   "Crew": 4,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 3,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1916
+  ],
+  "mount_ids": [
+   147,
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   542
+  ],
+  "propulsion_ids": [
+   663
+  ],
+  "comm_ids": [],
+  "fuel_ids": [
+   320
+  ],
+  "signatures": [
+   {
+    "ID": 1791,
+    "Type": 1001,
+    "Front": 145.0,
+    "Side": 146.0,
+    "Rear": 147.0,
+    "Top": 146.0
+   },
+   {
+    "ID": 1791,
+    "Type": 1002,
+    "Front": 115.5,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 1791,
+    "Type": 1003,
+    "Front": 107.5,
+    "Side": 108.0,
+    "Rear": 109.0,
+    "Top": 108.0
+   },
+   {
+    "ID": 1791,
+    "Type": 1004,
+    "Front": 99.0,
+    "Side": 100.0,
+    "Rear": 101.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 1791,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 1791,
+    "Type": 3001,
+    "Front": 5.2,
+    "Side": 8.85,
+    "Rear": 5.2,
+    "Top": 11.8
+   },
+   {
+    "ID": 1791,
+    "Type": 3002,
+    "Front": 2.53,
+    "Side": 4.49,
+    "Rear": 2.53,
+    "Top": 5.06
+   },
+   {
+    "ID": 1791,
+    "Type": 4001,
+    "Front": 4.96,
+    "Side": 8.43,
+    "Rear": 4.96,
+    "Top": 11.23
+   },
+   {
+    "ID": 1791,
+    "Type": 4002,
+    "Front": 2.11,
+    "Side": 3.74,
+    "Rear": 2.11,
+    "Top": 4.21
+   },
+   {
+    "ID": 1791,
+    "Type": 5001,
+    "Front": 8.2,
+    "Side": 11.0,
+    "Rear": 8.2,
+    "Top": 17.5
+   },
+   {
+    "ID": 1791,
+    "Type": 5002,
+    "Front": 8.2,
+    "Side": 11.0,
+    "Rear": 8.2,
+    "Top": 17.5
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2405,
+   "Category": 2005,
+   "Type": 9001,
+   "Name": "Commercial Fishing Boat [35m, Armed]",
+   "Comments": "Mothership",
+   "OperatorCountry": 1201,
+   "OperatorService": 9001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 35.0,
+   "Beam": 7.0,
+   "Draft": 3.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 1,
+   "DisplacementStandard": 205,
+   "DisplacementFull": 0,
+   "Crew": 8,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 33,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1916,
+   1673
+  ],
+  "mount_ids": [
+   439,
+   147
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1371
+  ],
+  "propulsion_ids": [
+   1664
+  ],
+  "comm_ids": [
+   187
+  ],
+  "fuel_ids": [
+   1229
+  ],
+  "signatures": [
+   {
+    "ID": 2405,
+    "Type": 1001,
+    "Front": 145.0,
+    "Side": 146.0,
+    "Rear": 147.0,
+    "Top": 146.0
+   },
+   {
+    "ID": 2405,
+    "Type": 1002,
+    "Front": 115.5,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2405,
+    "Type": 1003,
+    "Front": 107.5,
+    "Side": 108.0,
+    "Rear": 109.0,
+    "Top": 108.0
+   },
+   {
+    "ID": 2405,
+    "Type": 1004,
+    "Front": 99.0,
+    "Side": 100.0,
+    "Rear": 101.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2405,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2405,
+    "Type": 3001,
+    "Front": 5.98,
+    "Side": 10.17,
+    "Rear": 5.98,
+    "Top": 13.56
+   },
+   {
+    "ID": 2405,
+    "Type": 3002,
+    "Front": 2.91,
+    "Side": 5.17,
+    "Rear": 2.91,
+    "Top": 5.81
+   },
+   {
+    "ID": 2405,
+    "Type": 4001,
+    "Front": 5.7,
+    "Side": 9.68,
+    "Rear": 5.7,
+    "Top": 12.91
+   },
+   {
+    "ID": 2405,
+    "Type": 4002,
+    "Front": 2.42,
+    "Side": 4.3,
+    "Rear": 2.42,
+    "Top": 4.84
+   },
+   {
+    "ID": 2405,
+    "Type": 5001,
+    "Front": 13.1,
+    "Side": 16.0,
+    "Rear": 13.1,
+    "Top": 22.6
+   },
+   {
+    "ID": 2405,
+    "Type": 5002,
+    "Front": 13.1,
+    "Side": 16.0,
+    "Rear": 13.1,
+    "Top": 22.6
+   }
+  ]
+ }
+]

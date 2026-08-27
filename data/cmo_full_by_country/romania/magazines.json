@@ -1,0 +1,122 @@
+{
+ "432": {
+  "ID": 432,
+  "Name": "PK-16 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "509": {
+  "ID": 509,
+  "Name": "14.5mm/73 Quad",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "520": {
+  "ID": 520,
+  "Name": "Depth Charge",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 28,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "521": {
+  "ID": 521,
+  "Name": "SA-N-5",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "534": {
+  "ID": 534,
+  "Name": "RBU-2500",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "574": {
+  "ID": 574,
+  "Name": "RBU-1200",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "804": {
+  "ID": 804,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 240,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "818": {
+  "ID": 818,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "960": {
+  "ID": 960,
+  "Name": "14.5mm/93 Quad MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

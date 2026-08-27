@@ -1,0 +1,38 @@
+{
+ "526": {
+  "ID": 526,
+  "Name": "2x Diesels, 1x Gas Turbine, CODAG",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1103": {
+  "ID": 1103,
+  "Name": "2x MTU 20V 538 TB92 Diesels, 2x Rolls-Royce Proteus Gas Turbines, CODAG",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1288": {
+  "ID": 1288,
+  "Name": "2x SEMT-Pielstick 12 PA4 V200 VGDS Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

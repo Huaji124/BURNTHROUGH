@@ -1,0 +1,1514 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2624,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Generic Light CATOBAR Carrier",
+   "Comments": "25k tons, 2 cats, 2 elev, needs sensors, weapons and mags",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 255.0,
+   "Beam": 30.0,
+   "Draft": 7.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 25000,
+   "DisplacementFull": 33000,
+   "Crew": 1800,
+   "ArmorBelt": 2002,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 2001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 2002,
+   "ArmorRudder": 1001,
+   "DamagePoints": 2980,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 8,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2006,
+   "Hypothetical": 1,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   155,
+   1375
+  ],
+  "propulsion_ids": [
+   2338
+  ],
+  "comm_ids": [
+   72,
+   209,
+   217,
+   219,
+   222,
+   264
+  ],
+  "fuel_ids": [
+   1414,
+   1499
+  ],
+  "signatures": [
+   {
+    "ID": 2624,
+    "Type": 1001,
+    "Front": 130.0,
+    "Side": 131.0,
+    "Rear": 132.0,
+    "Top": 131.0
+   },
+   {
+    "ID": 2624,
+    "Type": 1002,
+    "Front": 100.5,
+    "Side": 101.0,
+    "Rear": 102.0,
+    "Top": 101.0
+   },
+   {
+    "ID": 2624,
+    "Type": 1003,
+    "Front": 92.5,
+    "Side": 93.0,
+    "Rear": 94.0,
+    "Top": 93.0
+   },
+   {
+    "ID": 2624,
+    "Type": 1004,
+    "Front": 84.0,
+    "Side": 85.0,
+    "Rear": 86.0,
+    "Top": 85.0
+   },
+   {
+    "ID": 2624,
+    "Type": 2001,
+    "Front": 80.0,
+    "Side": 600.0,
+    "Rear": 80.0,
+    "Top": 600.0
+   },
+   {
+    "ID": 2624,
+    "Type": 3001,
+    "Front": 10.34,
+    "Side": 17.57,
+    "Rear": 10.34,
+    "Top": 23.43
+   },
+   {
+    "ID": 2624,
+    "Type": 3002,
+    "Front": 4.39,
+    "Side": 7.81,
+    "Rear": 4.39,
+    "Top": 8.79
+   },
+   {
+    "ID": 2624,
+    "Type": 4001,
+    "Front": 10.34,
+    "Side": 17.57,
+    "Rear": 10.34,
+    "Top": 23.43
+   },
+   {
+    "ID": 2624,
+    "Type": 4002,
+    "Front": 4.39,
+    "Side": 7.81,
+    "Rear": 4.39,
+    "Top": 8.79
+   },
+   {
+    "ID": 2624,
+    "Type": 5001,
+    "Front": 33.8,
+    "Side": 37.6,
+    "Rear": 33.8,
+    "Top": 44.1
+   },
+   {
+    "ID": 2624,
+    "Type": 5002,
+    "Front": 33.8,
+    "Side": 37.6,
+    "Rear": 33.8,
+    "Top": 44.1
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2625,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Generic Medium CATOBAR Carrier",
+   "Comments": "40k tons, 2 cats, 3 elev, needs sensors, weapons and mags",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 275.0,
+   "Beam": 35.0,
+   "Draft": 7.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 35000,
+   "DisplacementFull": 40000,
+   "Crew": 1900,
+   "ArmorBelt": 2002,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 2001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 2002,
+   "ArmorRudder": 1001,
+   "DamagePoints": 3890,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 8,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2006,
+   "Hypothetical": 1,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   155,
+   1375
+  ],
+  "propulsion_ids": [
+   2338
+  ],
+  "comm_ids": [
+   72,
+   209,
+   217,
+   219,
+   222,
+   264
+  ],
+  "fuel_ids": [
+   1224,
+   1499
+  ],
+  "signatures": [
+   {
+    "ID": 2625,
+    "Type": 1001,
+    "Front": 145.0,
+    "Side": 146.0,
+    "Rear": 147.0,
+    "Top": 146.0
+   },
+   {
+    "ID": 2625,
+    "Type": 1002,
+    "Front": 115.5,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2625,
+    "Type": 1003,
+    "Front": 107.5,
+    "Side": 108.0,
+    "Rear": 109.0,
+    "Top": 108.0
+   },
+   {
+    "ID": 2625,
+    "Type": 1004,
+    "Front": 99.0,
+    "Side": 100.0,
+    "Rear": 101.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2625,
+    "Type": 2001,
+    "Front": 100.0,
+    "Side": 800.0,
+    "Rear": 100.0,
+    "Top": 800.0
+   },
+   {
+    "ID": 2625,
+    "Type": 3001,
+    "Front": 10.57,
+    "Side": 17.98,
+    "Rear": 10.57,
+    "Top": 23.97
+   },
+   {
+    "ID": 2625,
+    "Type": 3002,
+    "Front": 4.49,
+    "Side": 7.99,
+    "Rear": 4.49,
+    "Top": 8.99
+   },
+   {
+    "ID": 2625,
+    "Type": 4001,
+    "Front": 10.57,
+    "Side": 17.98,
+    "Rear": 10.57,
+    "Top": 23.97
+   },
+   {
+    "ID": 2625,
+    "Type": 4002,
+    "Front": 4.49,
+    "Side": 7.99,
+    "Rear": 4.49,
+    "Top": 8.99
+   },
+   {
+    "ID": 2625,
+    "Type": 5001,
+    "Front": 34.6,
+    "Side": 38.4,
+    "Rear": 34.6,
+    "Top": 45.0
+   },
+   {
+    "ID": 2625,
+    "Type": 5002,
+    "Front": 34.6,
+    "Side": 38.4,
+    "Rear": 34.6,
+    "Top": 45.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2906,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Generic Heavy CATOBAR Carrier",
+   "Comments": "-",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 285.0,
+   "Beam": 39.0,
+   "Draft": 11.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 60000,
+   "DisplacementFull": 65500,
+   "Crew": 1450,
+   "ArmorBelt": 2002,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 2001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 2002,
+   "ArmorRudder": 1001,
+   "DamagePoints": 5950,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 16,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2006,
+   "Hypothetical": 1,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   155,
+   1375
+  ],
+  "propulsion_ids": [
+   2649
+  ],
+  "comm_ids": [
+   72,
+   209,
+   210,
+   217,
+   219,
+   264
+  ],
+  "fuel_ids": [
+   1238,
+   1306
+  ],
+  "signatures": [
+   {
+    "ID": 2906,
+    "Type": 1001,
+    "Front": 160.0,
+    "Side": 161.0,
+    "Rear": 162.0,
+    "Top": 161.0
+   },
+   {
+    "ID": 2906,
+    "Type": 1002,
+    "Front": 130.5,
+    "Side": 131.0,
+    "Rear": 132.0,
+    "Top": 131.0
+   },
+   {
+    "ID": 2906,
+    "Type": 1003,
+    "Front": 122.5,
+    "Side": 123.0,
+    "Rear": 124.0,
+    "Top": 123.0
+   },
+   {
+    "ID": 2906,
+    "Type": 1004,
+    "Front": 114.0,
+    "Side": 115.0,
+    "Rear": 116.0,
+    "Top": 115.0
+   },
+   {
+    "ID": 2906,
+    "Type": 2001,
+    "Front": 120.0,
+    "Side": 1000.0,
+    "Rear": 120.0,
+    "Top": 1000.0
+   },
+   {
+    "ID": 2906,
+    "Type": 3001,
+    "Front": 10.69,
+    "Side": 18.17,
+    "Rear": 10.69,
+    "Top": 24.23
+   },
+   {
+    "ID": 2906,
+    "Type": 3002,
+    "Front": 4.54,
+    "Side": 8.08,
+    "Rear": 4.54,
+    "Top": 9.08
+   },
+   {
+    "ID": 2906,
+    "Type": 4001,
+    "Front": 10.69,
+    "Side": 18.17,
+    "Rear": 10.69,
+    "Top": 24.23
+   },
+   {
+    "ID": 2906,
+    "Type": 4002,
+    "Front": 4.54,
+    "Side": 8.08,
+    "Rear": 4.54,
+    "Top": 9.08
+   },
+   {
+    "ID": 2906,
+    "Type": 5001,
+    "Front": 34.9,
+    "Side": 38.8,
+    "Rear": 34.9,
+    "Top": 45.4
+   },
+   {
+    "ID": 2906,
+    "Type": 5002,
+    "Front": 34.9,
+    "Side": 38.8,
+    "Rear": 34.9,
+    "Top": 45.4
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 92,
+   "Category": 2002,
+   "Type": 9001,
+   "Name": "Biologic Whale",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -300,
+   "DamagePoints": 2,
+   "Length": 35.0,
+   "Beam": 0.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 5,
+   "DisplacementFull": 5,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 92,
+    "Type": 1001,
+    "Front": 110.0,
+    "Side": 111.0,
+    "Rear": 112.0,
+    "Top": 111.0
+   },
+   {
+    "ID": 92,
+    "Type": 1002,
+    "Front": 80.5,
+    "Side": 81.0,
+    "Rear": 82.0,
+    "Top": 81.0
+   },
+   {
+    "ID": 92,
+    "Type": 1003,
+    "Front": 72.5,
+    "Side": 73.0,
+    "Rear": 74.0,
+    "Top": 73.0
+   },
+   {
+    "ID": 92,
+    "Type": 1004,
+    "Front": 64.0,
+    "Side": 65.0,
+    "Rear": 66.0,
+    "Top": 65.0
+   },
+   {
+    "ID": 92,
+    "Type": 2001,
+    "Front": 0.0,
+    "Side": 2.0,
+    "Rear": 0.0,
+    "Top": 2.0
+   },
+   {
+    "ID": 92,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 92,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 92,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 92,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 92,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 92,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 93,
+   "Category": 2003,
+   "Type": 9002,
+   "Name": "False Contact (Small)",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -1000,
+   "DamagePoints": 1,
+   "Length": 0.0,
+   "Beam": 0.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 0,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 93,
+    "Type": 1001,
+    "Front": 110.0,
+    "Side": 111.0,
+    "Rear": 112.0,
+    "Top": 111.0
+   },
+   {
+    "ID": 93,
+    "Type": 1002,
+    "Front": 80.5,
+    "Side": 81.0,
+    "Rear": 82.0,
+    "Top": 81.0
+   },
+   {
+    "ID": 93,
+    "Type": 1003,
+    "Front": 72.5,
+    "Side": 73.0,
+    "Rear": 74.0,
+    "Top": 73.0
+   },
+   {
+    "ID": 93,
+    "Type": 1004,
+    "Front": 64.0,
+    "Side": 65.0,
+    "Rear": 66.0,
+    "Top": 65.0
+   },
+   {
+    "ID": 93,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 20.0,
+    "Rear": 20.0,
+    "Top": 20.0
+   },
+   {
+    "ID": 93,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 93,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 93,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 93,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 93,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 93,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 94,
+   "Category": 2003,
+   "Type": 9002,
+   "Name": "False Contact (Medium)",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -1000,
+   "DamagePoints": 1,
+   "Length": 0.0,
+   "Beam": 0.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 0,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 94,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 94,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 94,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 94,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 94,
+    "Type": 2001,
+    "Front": 100.0,
+    "Side": 100.0,
+    "Rear": 100.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 94,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 94,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 94,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 94,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 94,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 94,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 95,
+   "Category": 2003,
+   "Type": 9002,
+   "Name": "False Contact (Large)",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -1000,
+   "DamagePoints": 1,
+   "Length": 0.0,
+   "Beam": 0.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 0,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 95,
+    "Type": 1001,
+    "Front": 130.0,
+    "Side": 131.0,
+    "Rear": 132.0,
+    "Top": 131.0
+   },
+   {
+    "ID": 95,
+    "Type": 1002,
+    "Front": 100.5,
+    "Side": 101.0,
+    "Rear": 102.0,
+    "Top": 101.0
+   },
+   {
+    "ID": 95,
+    "Type": 1003,
+    "Front": 92.5,
+    "Side": 93.0,
+    "Rear": 94.0,
+    "Top": 93.0
+   },
+   {
+    "ID": 95,
+    "Type": 1004,
+    "Front": 84.0,
+    "Side": 85.0,
+    "Rear": 86.0,
+    "Top": 85.0
+   },
+   {
+    "ID": 95,
+    "Type": 2001,
+    "Front": 400.0,
+    "Side": 400.0,
+    "Rear": 400.0,
+    "Top": 400.0
+   },
+   {
+    "ID": 95,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 95,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 95,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 95,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 95,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 95,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 354,
+   "Category": 2002,
+   "Type": 9001,
+   "Name": "Biologic Fish School",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -300,
+   "DamagePoints": 1,
+   "Length": 2.0,
+   "Beam": 0.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1,
+   "DisplacementFull": 1,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 354,
+    "Type": 1001,
+    "Front": 110.0,
+    "Side": 111.0,
+    "Rear": 112.0,
+    "Top": 111.0
+   },
+   {
+    "ID": 354,
+    "Type": 1002,
+    "Front": 80.5,
+    "Side": 81.0,
+    "Rear": 82.0,
+    "Top": 81.0
+   },
+   {
+    "ID": 354,
+    "Type": 1003,
+    "Front": 72.5,
+    "Side": 73.0,
+    "Rear": 74.0,
+    "Top": 73.0
+   },
+   {
+    "ID": 354,
+    "Type": 1004,
+    "Front": 64.0,
+    "Side": 65.0,
+    "Rear": 66.0,
+    "Top": 65.0
+   },
+   {
+    "ID": 354,
+    "Type": 2001,
+    "Front": 0.0,
+    "Side": 2.0,
+    "Rear": 0.0,
+    "Top": 2.0
+   },
+   {
+    "ID": 354,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 354,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 354,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 354,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 354,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 354,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 355,
+   "Category": 2002,
+   "Type": 9001,
+   "Name": "Biologic Orcas",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "-",
+   "MaxDepth": -300,
+   "DamagePoints": 1,
+   "Length": 2.0,
+   "Beam": 0.5,
+   "Draft": 0.5,
+   "Height": 0.5,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1,
+   "DisplacementFull": 1,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 355,
+    "Type": 1001,
+    "Front": 110.0,
+    "Side": 111.0,
+    "Rear": 112.0,
+    "Top": 111.0
+   },
+   {
+    "ID": 355,
+    "Type": 1002,
+    "Front": 80.5,
+    "Side": 81.0,
+    "Rear": 82.0,
+    "Top": 81.0
+   },
+   {
+    "ID": 355,
+    "Type": 1003,
+    "Front": 72.5,
+    "Side": 73.0,
+    "Rear": 74.0,
+    "Top": 73.0
+   },
+   {
+    "ID": 355,
+    "Type": 1004,
+    "Front": 64.0,
+    "Side": 65.0,
+    "Rear": 66.0,
+    "Top": 65.0
+   },
+   {
+    "ID": 355,
+    "Type": 2001,
+    "Front": 0.0,
+    "Side": 2.0,
+    "Rear": 0.0,
+    "Top": 2.0
+   },
+   {
+    "ID": 355,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 355,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 355,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 355,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 355,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 355,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 653,
+   "Category": 2003,
+   "Type": 9002,
+   "Name": "False Contact (Magnetic)",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "Magnetic signature only",
+   "MaxDepth": -1000,
+   "DamagePoints": 1,
+   "Length": 50.0,
+   "Beam": 20.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 0,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 653,
+    "Type": 1001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 1002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 1003,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 1004,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 2001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 653,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ },
+ {
+  "kind": "submarine",
+  "raw": {
+   "ID": 654,
+   "Category": 2003,
+   "Type": 9002,
+   "Name": "False Contact (Wreck)",
+   "OperatorCountry": 1001,
+   "OperatorService": 1001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Comments": "Magnetic and acoustic signatures",
+   "MaxDepth": -1000,
+   "DamagePoints": 1,
+   "Length": 100.0,
+   "Beam": 20.0,
+   "Draft": 0.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 0,
+   "DisplacementFull": 0,
+   "Crew": 0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "ROVRadius": 0.0,
+   "PhysicalSizeCode": 1001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "Cargo_Volume": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [],
+  "comm_ids": [],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 654,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 654,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 654,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 654,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 654,
+    "Type": 2001,
+    "Front": 100.0,
+    "Side": 100.0,
+    "Rear": 100.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 654,
+    "Type": 3001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 654,
+    "Type": 3002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 654,
+    "Type": 4001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 654,
+    "Type": 4002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 654,
+    "Type": 5001,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   },
+   {
+    "ID": 654,
+    "Type": 5002,
+    "Front": -10000.0,
+    "Side": -10000.0,
+    "Rear": -10000.0,
+    "Top": -10000.0
+   }
+  ]
+ }
+]

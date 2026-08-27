@@ -1,0 +1,5748 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 308,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "P 561 Kawkab",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1970,
+   "YearDecommissioned": 0,
+   "Length": 17.6,
+   "Beam": 5.1,
+   "Draft": 1.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 29,
+   "DisplacementFull": 32,
+   "Crew": 10,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 14,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   977
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   470
+  ],
+  "propulsion_ids": [
+   699
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   679
+  ],
+  "signatures": [
+   {
+    "ID": 308,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 308,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 308,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 308,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 308,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 308,
+    "Type": 3001,
+    "Front": 4.64,
+    "Side": 7.88,
+    "Rear": 4.64,
+    "Top": 10.51
+   },
+   {
+    "ID": 308,
+    "Type": 3002,
+    "Front": 1.97,
+    "Side": 3.5,
+    "Rear": 1.97,
+    "Top": 3.94
+   },
+   {
+    "ID": 308,
+    "Type": 4001,
+    "Front": 4.64,
+    "Side": 7.88,
+    "Rear": 4.64,
+    "Top": 10.51
+   },
+   {
+    "ID": 308,
+    "Type": 4002,
+    "Front": 1.97,
+    "Side": 3.5,
+    "Rear": 1.97,
+    "Top": 3.94
+   },
+   {
+    "ID": 308,
+    "Type": 5001,
+    "Front": 5.9,
+    "Side": 8.6,
+    "Rear": 5.9,
+    "Top": 15.1
+   },
+   {
+    "ID": 308,
+    "Type": 5002,
+    "Front": 5.9,
+    "Side": 8.6,
+    "Rear": 5.9,
+    "Top": 15.1
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1218,
+   "Category": 2002,
+   "Type": 3303,
+   "Name": "F 01 Abu Dhabi [Kortenaer]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1999,
+   "YearDecommissioned": 2006,
+   "Length": 130.2,
+   "Beam": 14.4,
+   "Draft": 4.4,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 3000,
+   "DisplacementFull": 3786,
+   "Crew": 190,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 560,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   165,
+   1087,
+   1191,
+   1194,
+   1356,
+   1802,
+   3384,
+   3946
+  ],
+  "mount_ids": [
+   108,
+   529,
+   550,
+   552,
+   565,
+   942,
+   1308
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   659,
+   715,
+   994,
+   1154,
+   1302
+  ],
+  "propulsion_ids": [
+   955
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   290,
+   519
+  ],
+  "signatures": [
+   {
+    "ID": 1218,
+    "Type": 1001,
+    "Front": 110.0,
+    "Side": 111.0,
+    "Rear": 112.0,
+    "Top": 111.0
+   },
+   {
+    "ID": 1218,
+    "Type": 1002,
+    "Front": 80.5,
+    "Side": 81.0,
+    "Rear": 82.0,
+    "Top": 81.0
+   },
+   {
+    "ID": 1218,
+    "Type": 1003,
+    "Front": 72.5,
+    "Side": 73.0,
+    "Rear": 74.0,
+    "Top": 73.0
+   },
+   {
+    "ID": 1218,
+    "Type": 1004,
+    "Front": 64.0,
+    "Side": 65.0,
+    "Rear": 66.0,
+    "Top": 65.0
+   },
+   {
+    "ID": 1218,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 1218,
+    "Type": 3001,
+    "Front": 8.45,
+    "Side": 14.36,
+    "Rear": 8.45,
+    "Top": 19.15
+   },
+   {
+    "ID": 1218,
+    "Type": 3002,
+    "Front": 3.59,
+    "Side": 6.38,
+    "Rear": 3.59,
+    "Top": 7.18
+   },
+   {
+    "ID": 1218,
+    "Type": 4001,
+    "Front": 8.45,
+    "Side": 14.36,
+    "Rear": 8.45,
+    "Top": 19.15
+   },
+   {
+    "ID": 1218,
+    "Type": 4002,
+    "Front": 3.59,
+    "Side": 6.38,
+    "Rear": 3.59,
+    "Top": 7.18
+   },
+   {
+    "ID": 1218,
+    "Type": 5001,
+    "Front": 26.8,
+    "Side": 30.3,
+    "Rear": 26.8,
+    "Top": 36.8
+   },
+   {
+    "ID": 1218,
+    "Type": 5002,
+    "Front": 26.8,
+    "Side": 30.3,
+    "Rear": 26.8,
+    "Top": 36.8
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1219,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "P 6501 Murray Jip [FPB-62]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1991,
+   "YearDecommissioned": 0,
+   "Length": 63.0,
+   "Beam": 9.3,
+   "Draft": 2.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 550,
+   "DisplacementFull": 600,
+   "Crew": 49,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 150,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   519,
+   741,
+   1085,
+   1089,
+   1511,
+   1736,
+   3534
+  ],
+  "mount_ids": [
+   216,
+   492,
+   522,
+   529,
+   800
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   594,
+   994,
+   1302
+  ],
+  "propulsion_ids": [
+   658
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   177
+  ],
+  "signatures": [
+   {
+    "ID": 1219,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 1219,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 1219,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 1219,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 1219,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 1219,
+    "Type": 3001,
+    "Front": 6.8,
+    "Side": 11.55,
+    "Rear": 6.8,
+    "Top": 15.4
+   },
+   {
+    "ID": 1219,
+    "Type": 3002,
+    "Front": 2.89,
+    "Side": 5.13,
+    "Rear": 2.89,
+    "Top": 5.78
+   },
+   {
+    "ID": 1219,
+    "Type": 4001,
+    "Front": 6.8,
+    "Side": 11.55,
+    "Rear": 6.8,
+    "Top": 15.4
+   },
+   {
+    "ID": 1219,
+    "Type": 4002,
+    "Front": 2.89,
+    "Side": 5.13,
+    "Rear": 2.89,
+    "Top": 5.78
+   },
+   {
+    "ID": 1219,
+    "Type": 5001,
+    "Front": 19.2,
+    "Side": 22.4,
+    "Rear": 19.2,
+    "Top": 29.0
+   },
+   {
+    "ID": 1219,
+    "Type": 5002,
+    "Front": 19.2,
+    "Side": 22.4,
+    "Rear": 19.2,
+    "Top": 29.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1220,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "P 4401 Mubarraz [FPB-44]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1991,
+   "YearDecommissioned": 0,
+   "Length": 44.0,
+   "Beam": 7.0,
+   "Draft": 2.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 210,
+   "DisplacementFull": 235,
+   "Crew": 40,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 68,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   519,
+   741,
+   1085,
+   1089,
+   1736,
+   3761
+  ],
+  "mount_ids": [
+   216,
+   437,
+   492,
+   1416
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   594
+  ],
+  "propulsion_ids": [
+   660
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   789
+  ],
+  "signatures": [
+   {
+    "ID": 1220,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 1220,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 1220,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 1220,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 1220,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 1220,
+    "Type": 3001,
+    "Front": 6.1,
+    "Side": 10.37,
+    "Rear": 6.1,
+    "Top": 13.83
+   },
+   {
+    "ID": 1220,
+    "Type": 3002,
+    "Front": 2.59,
+    "Side": 4.61,
+    "Rear": 2.59,
+    "Top": 5.19
+   },
+   {
+    "ID": 1220,
+    "Type": 4001,
+    "Front": 6.1,
+    "Side": 10.37,
+    "Rear": 6.1,
+    "Top": 13.83
+   },
+   {
+    "ID": 1220,
+    "Type": 4002,
+    "Front": 2.59,
+    "Side": 4.61,
+    "Rear": 2.59,
+    "Top": 5.19
+   },
+   {
+    "ID": 1220,
+    "Type": 5001,
+    "Front": 15.5,
+    "Side": 18.5,
+    "Rear": 15.5,
+    "Top": 25.1
+   },
+   {
+    "ID": 1220,
+    "Type": 5002,
+    "Front": 15.5,
+    "Side": 18.5,
+    "Rear": 15.5,
+    "Top": 25.1
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1221,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "P 4501 Baniyas [TNC-45]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1981,
+   "YearDecommissioned": 0,
+   "Length": 44.9,
+   "Beam": 7.0,
+   "Draft": 2.46,
+   "Height": 0.0,
+   "DisplacementEmpty": 228,
+   "DisplacementStandard": 259,
+   "DisplacementFull": 0,
+   "Crew": 42,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 80,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   519,
+   741,
+   1085,
+   1089,
+   1736,
+   3761
+  ],
+  "mount_ids": [
+   439,
+   492,
+   550,
+   1416,
+   515
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   832,
+   665,
+   834
+  ],
+  "propulsion_ids": [
+   659
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   1397
+  ],
+  "signatures": [
+   {
+    "ID": 1221,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 1221,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 1221,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 1221,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 1221,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 1221,
+    "Type": 3001,
+    "Front": 6.14,
+    "Side": 10.44,
+    "Rear": 6.14,
+    "Top": 13.92
+   },
+   {
+    "ID": 1221,
+    "Type": 3002,
+    "Front": 2.61,
+    "Side": 4.64,
+    "Rear": 2.61,
+    "Top": 5.22
+   },
+   {
+    "ID": 1221,
+    "Type": 4001,
+    "Front": 6.14,
+    "Side": 10.44,
+    "Rear": 6.14,
+    "Top": 13.92
+   },
+   {
+    "ID": 1221,
+    "Type": 4002,
+    "Front": 2.61,
+    "Side": 4.64,
+    "Rear": 2.61,
+    "Top": 5.22
+   },
+   {
+    "ID": 1221,
+    "Type": 5001,
+    "Front": 15.7,
+    "Side": 18.8,
+    "Rear": 15.7,
+    "Top": 25.3
+   },
+   {
+    "ID": 1221,
+    "Type": 5002,
+    "Front": 15.7,
+    "Side": 18.8,
+    "Rear": 15.7,
+    "Top": 25.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1222,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "P 1101 Ardhana [Vosper 110-foot Class]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1975,
+   "YearDecommissioned": 0,
+   "Length": 33.5,
+   "Beam": 6.4,
+   "Draft": 1.7,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 110,
+   "DisplacementFull": 140,
+   "Crew": 26,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 41,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   3761
+  ],
+  "mount_ids": [
+   104,
+   451
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   899,
+   1063
+  ],
+  "propulsion_ids": [
+   1183
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   844
+  ],
+  "signatures": [
+   {
+    "ID": 1222,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 1222,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 1222,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 1222,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 1222,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 1222,
+    "Type": 3001,
+    "Front": 5.62,
+    "Side": 9.56,
+    "Rear": 5.62,
+    "Top": 12.74
+   },
+   {
+    "ID": 1222,
+    "Type": 3002,
+    "Front": 2.39,
+    "Side": 4.25,
+    "Rear": 2.39,
+    "Top": 4.78
+   },
+   {
+    "ID": 1222,
+    "Type": 4001,
+    "Front": 5.62,
+    "Side": 9.56,
+    "Rear": 5.62,
+    "Top": 12.74
+   },
+   {
+    "ID": 1222,
+    "Type": 4002,
+    "Front": 2.39,
+    "Side": 4.25,
+    "Rear": 2.39,
+    "Top": 4.78
+   },
+   {
+    "ID": 1222,
+    "Type": 5001,
+    "Front": 12.6,
+    "Side": 15.6,
+    "Rear": 12.6,
+    "Top": 22.1
+   },
+   {
+    "ID": 1222,
+    "Type": 5002,
+    "Front": 12.6,
+    "Side": 15.6,
+    "Rear": 12.6,
+    "Top": 22.1
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2486,
+   "Category": 2002,
+   "Type": 3304,
+   "Name": "P 171 Baynunah",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2012,
+   "YearDecommissioned": 0,
+   "Length": 71.3,
+   "Beam": 11.0,
+   "Draft": 2.8,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 915,
+   "DisplacementFull": 0,
+   "Crew": 37,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 220,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   2776,
+   2615,
+   5111,
+   5107,
+   5271,
+   5108,
+   5109
+  ],
+  "mount_ids": [
+   216,
+   783,
+   2175,
+   2448,
+   2450,
+   927
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   109,
+   197,
+   1302
+  ],
+  "propulsion_ids": [
+   2199
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   108
+  ],
+  "signatures": [
+   {
+    "ID": 2486,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2486,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2486,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2486,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2486,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2486,
+    "Type": 3001,
+    "Front": 7.05,
+    "Side": 11.99,
+    "Rear": 7.05,
+    "Top": 15.99
+   },
+   {
+    "ID": 2486,
+    "Type": 3002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2486,
+    "Type": 4001,
+    "Front": 7.05,
+    "Side": 11.99,
+    "Rear": 7.05,
+    "Top": 15.99
+   },
+   {
+    "ID": 2486,
+    "Type": 4002,
+    "Front": 3.0,
+    "Side": 5.33,
+    "Rear": 3.0,
+    "Top": 5.99
+   },
+   {
+    "ID": 2486,
+    "Type": 5001,
+    "Front": 17.5,
+    "Side": 20.8,
+    "Rear": 17.5,
+    "Top": 27.3
+   },
+   {
+    "ID": 2486,
+    "Type": 5002,
+    "Front": 17.5,
+    "Side": 20.8,
+    "Rear": 17.5,
+    "Top": 27.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2724,
+   "Category": 2002,
+   "Type": 3408,
+   "Name": "P 191 Abu Dhabi [Mod Commmandante Cigala Fulgosi]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2015,
+   "YearDecommissioned": 0,
+   "Length": 88.4,
+   "Beam": 12.2,
+   "Draft": 3.4,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1500,
+   "DisplacementFull": 1650,
+   "Crew": 70,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 320,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5368,
+   5365,
+   4841,
+   1871,
+   1872,
+   4219,
+   348,
+   5330,
+   5369,
+   5372
+  ],
+  "mount_ids": [
+   216,
+   2464,
+   2667,
+   561,
+   2337,
+   1176,
+   927
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1409,
+   1302,
+   761,
+   377,
+   197
+  ],
+  "propulsion_ids": [
+   2169
+  ],
+  "comm_ids": [
+   209,
+   264
+  ],
+  "fuel_ids": [
+   177
+  ],
+  "signatures": [
+   {
+    "ID": 2724,
+    "Type": 1001,
+    "Front": 100.0,
+    "Side": 101.0,
+    "Rear": 102.0,
+    "Top": 101.0
+   },
+   {
+    "ID": 2724,
+    "Type": 1002,
+    "Front": 70.5,
+    "Side": 71.0,
+    "Rear": 72.0,
+    "Top": 71.0
+   },
+   {
+    "ID": 2724,
+    "Type": 1003,
+    "Front": 62.5,
+    "Side": 63.0,
+    "Rear": 64.0,
+    "Top": 63.0
+   },
+   {
+    "ID": 2724,
+    "Type": 1004,
+    "Front": 54.0,
+    "Side": 55.0,
+    "Rear": 56.0,
+    "Top": 55.0
+   },
+   {
+    "ID": 2724,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2724,
+    "Type": 3001,
+    "Front": 7.52,
+    "Side": 12.79,
+    "Rear": 7.52,
+    "Top": 17.05
+   },
+   {
+    "ID": 2724,
+    "Type": 3002,
+    "Front": 3.2,
+    "Side": 5.68,
+    "Rear": 3.2,
+    "Top": 6.39
+   },
+   {
+    "ID": 2724,
+    "Type": 4001,
+    "Front": 7.52,
+    "Side": 12.79,
+    "Rear": 7.52,
+    "Top": 17.05
+   },
+   {
+    "ID": 2724,
+    "Type": 4002,
+    "Front": 3.2,
+    "Side": 5.68,
+    "Rear": 3.2,
+    "Top": 6.39
+   },
+   {
+    "ID": 2724,
+    "Type": 5001,
+    "Front": 12.7,
+    "Side": 16.1,
+    "Rear": 12.7,
+    "Top": 22.6
+   },
+   {
+    "ID": 2724,
+    "Type": 5002,
+    "Front": 2.7,
+    "Side": 6.1,
+    "Rear": 2.7,
+    "Top": 12.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2725,
+   "Category": 2002,
+   "Type": 5028,
+   "Name": "Ghannatha [Transport]",
+   "Comments": "12x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2003,
+   "YearDecommissioned": 2012,
+   "Length": 26.5,
+   "Beam": 5.1,
+   "Draft": 1.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 45,
+   "DisplacementFull": 0,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 20,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 42,
+   "CargoCapacity": 4,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2388
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   128
+  ],
+  "signatures": [
+   {
+    "ID": 2725,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2725,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2725,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2725,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2725,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2725,
+    "Type": 3001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2725,
+    "Type": 3002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2725,
+    "Type": 4001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2725,
+    "Type": 4002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2725,
+    "Type": 5001,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   },
+   {
+    "ID": 2725,
+    "Type": 5002,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2726,
+   "Category": 2002,
+   "Type": 5028,
+   "Name": "P 301 Ghannatha II",
+   "Comments": "12x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2014,
+   "YearDecommissioned": 0,
+   "Length": 26.5,
+   "Beam": 5.1,
+   "Draft": 1.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 50,
+   "DisplacementFull": 0,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 22,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 4,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1211,
+   5365
+  ],
+  "mount_ids": [
+   2671,
+   783,
+   2465
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   108,
+   1470
+  ],
+  "propulsion_ids": [
+   2389
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   128
+  ],
+  "signatures": [
+   {
+    "ID": 2726,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2726,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2726,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2726,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2726,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2726,
+    "Type": 3001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2726,
+    "Type": 3002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2726,
+    "Type": 4001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2726,
+    "Type": 4002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2726,
+    "Type": 5001,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   },
+   {
+    "ID": 2726,
+    "Type": 5002,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2727,
+   "Category": 2002,
+   "Type": 5028,
+   "Name": "Ghannatha [Mortar Conversion]",
+   "Comments": "6x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 26.5,
+   "Beam": 5.1,
+   "Draft": 1.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 45,
+   "DisplacementFull": 0,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 20,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 42,
+   "CargoCapacity": 4,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1211
+  ],
+  "mount_ids": [
+   2672,
+   2465
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1470
+  ],
+  "propulsion_ids": [
+   2388
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   128
+  ],
+  "signatures": [
+   {
+    "ID": 2727,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2727,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2727,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2727,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2727,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2727,
+    "Type": 3001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2727,
+    "Type": 3002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2727,
+    "Type": 4001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2727,
+    "Type": 4002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2727,
+    "Type": 5001,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   },
+   {
+    "ID": 2727,
+    "Type": 5002,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2728,
+   "Category": 2002,
+   "Type": 5028,
+   "Name": "Ghannatha [Gun Conversion]",
+   "Comments": "6x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 26.5,
+   "Beam": 5.1,
+   "Draft": 1.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 45,
+   "DisplacementFull": 0,
+   "Crew": 3,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 20,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 42,
+   "CargoCapacity": 4,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   783,
+   2465
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   108,
+   1470
+  ],
+  "propulsion_ids": [
+   2388
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   128
+  ],
+  "signatures": [
+   {
+    "ID": 2728,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2728,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2728,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2728,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2728,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2728,
+    "Type": 3001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2728,
+    "Type": 3002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2728,
+    "Type": 4001,
+    "Front": 5.24,
+    "Side": 8.91,
+    "Rear": 5.24,
+    "Top": 11.88
+   },
+   {
+    "ID": 2728,
+    "Type": 4002,
+    "Front": 2.23,
+    "Side": 3.96,
+    "Rear": 2.23,
+    "Top": 4.45
+   },
+   {
+    "ID": 2728,
+    "Type": 5001,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   },
+   {
+    "ID": 2728,
+    "Type": 5002,
+    "Front": 10.2,
+    "Side": 13.0,
+    "Rear": 10.2,
+    "Top": 19.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2922,
+   "Category": 2002,
+   "Type": 3406,
+   "Name": "P 251 Ghantoot [Falaj 2 Class]",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2016,
+   "YearDecommissioned": 0,
+   "Length": 55.7,
+   "Beam": 8.8,
+   "Draft": 2.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 550,
+   "DisplacementFull": 0,
+   "Crew": 28,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 150,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 8,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5330,
+   5365,
+   5368,
+   5372,
+   1593
+  ],
+  "mount_ids": [
+   216,
+   561,
+   927,
+   2337,
+   2821
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   761,
+   1302,
+   197
+  ],
+  "propulsion_ids": [
+   2659
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264,
+   122
+  ],
+  "fuel_ids": [
+   810
+  ],
+  "signatures": [
+   {
+    "ID": 2922,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2922,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2922,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2922,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2922,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2922,
+    "Type": 3001,
+    "Front": 6.55,
+    "Side": 11.13,
+    "Rear": 6.55,
+    "Top": 14.84
+   },
+   {
+    "ID": 2922,
+    "Type": 3002,
+    "Front": 2.78,
+    "Side": 4.95,
+    "Rear": 2.78,
+    "Top": 5.57
+   },
+   {
+    "ID": 2922,
+    "Type": 4001,
+    "Front": 6.55,
+    "Side": 11.13,
+    "Rear": 6.55,
+    "Top": 14.84
+   },
+   {
+    "ID": 2922,
+    "Type": 4002,
+    "Front": 2.78,
+    "Side": 4.95,
+    "Rear": 2.78,
+    "Top": 5.57
+   },
+   {
+    "ID": 2922,
+    "Type": 5001,
+    "Front": 14.9,
+    "Side": 18.1,
+    "Rear": 14.9,
+    "Top": 24.6
+   },
+   {
+    "ID": 2922,
+    "Type": 5002,
+    "Front": 14.9,
+    "Side": 18.1,
+    "Rear": 14.9,
+    "Top": 24.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3080,
+   "Category": 2003,
+   "Type": 5001,
+   "Name": "HSV 2 Swift",
+   "Comments": "Catamaran, Unarmed",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2015,
+   "YearDecommissioned": 2016,
+   "Length": 98.0,
+   "Beam": 27.0,
+   "Draft": 3.4,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 955,
+   "DisplacementFull": 1695,
+   "Crew": 35,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 190,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 4000,
+   "Cargo_Mass": 615.0,
+   "Cargo_Area": 2670.0,
+   "Cargo_Crew": 300.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   382
+  ],
+  "mount_ids": [],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1302
+  ],
+  "propulsion_ids": [
+   1346
+  ],
+  "comm_ids": [
+   72,
+   194,
+   195,
+   209,
+   238,
+   264
+  ],
+  "fuel_ids": [
+   1517
+  ],
+  "signatures": [
+   {
+    "ID": 3080,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 3080,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 3080,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 3080,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 3080,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 3080,
+    "Type": 3001,
+    "Front": 7.76,
+    "Side": 13.19,
+    "Rear": 7.76,
+    "Top": 17.59
+   },
+   {
+    "ID": 3080,
+    "Type": 3002,
+    "Front": 3.3,
+    "Side": 5.86,
+    "Rear": 3.3,
+    "Top": 6.6
+   },
+   {
+    "ID": 3080,
+    "Type": 4001,
+    "Front": 7.76,
+    "Side": 13.19,
+    "Rear": 7.76,
+    "Top": 17.59
+   },
+   {
+    "ID": 3080,
+    "Type": 4002,
+    "Front": 3.3,
+    "Side": 5.86,
+    "Rear": 3.3,
+    "Top": 6.6
+   },
+   {
+    "ID": 3080,
+    "Type": 5001,
+    "Front": 20.8,
+    "Side": 24.2,
+    "Rear": 20.8,
+    "Top": 30.7
+   },
+   {
+    "ID": 3080,
+    "Type": 5002,
+    "Front": 20.8,
+    "Side": 24.2,
+    "Rear": 20.8,
+    "Top": 30.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 30,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Mirage 2000-8",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1991,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 9.1,
+   "Height": 5.2,
+   "WeightEmpty": 7500,
+   "WeightMax": 17000,
+   "WeightPayload": 6300,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 141.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   880,
+   1928,
+   1945
+  ],
+  "mount_ids": [
+   295,
+   1797
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4451,
+   4452,
+   4456,
+   4466,
+   14359,
+   19746,
+   19747
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1461
+  ],
+  "comm_ids": [
+   20,
+   264
+  ],
+  "fuel_ids": [
+   645
+  ],
+  "signatures": [
+   {
+    "ID": 30,
+    "Type": 3001,
+    "Front": 2.41,
+    "Side": 5.6,
+    "Rear": 2.41,
+    "Top": 6.59
+   },
+   {
+    "ID": 30,
+    "Type": 3002,
+    "Front": 1.38,
+    "Side": 3.21,
+    "Rear": 2.21,
+    "Top": 3.68
+   },
+   {
+    "ID": 30,
+    "Type": 4001,
+    "Front": 2.41,
+    "Side": 7.45,
+    "Rear": 12.08,
+    "Top": 8.31
+   },
+   {
+    "ID": 30,
+    "Type": 4002,
+    "Front": 1.38,
+    "Side": 3.21,
+    "Rear": 1.38,
+    "Top": 3.68
+   },
+   {
+    "ID": 30,
+    "Type": 5001,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.9
+   },
+   {
+    "ID": 30,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.3,
+    "Rear": 1.9,
+    "Top": 4.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 63,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Mirage 2000-9",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2005,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 9.1,
+   "Height": 5.2,
+   "WeightEmpty": 7500,
+   "WeightMax": 17000,
+   "WeightPayload": 6300,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 141.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2038,
+   1932,
+   2333,
+   3891
+  ],
+  "mount_ids": [
+   295,
+   1235,
+   1796
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4467,
+   4470,
+   6378,
+   6379,
+   6380,
+   6382,
+   6418,
+   14362,
+   19748,
+   19749
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1461
+  ],
+  "comm_ids": [
+   20,
+   264,
+   122
+  ],
+  "fuel_ids": [
+   645
+  ],
+  "signatures": [
+   {
+    "ID": 63,
+    "Type": 3001,
+    "Front": 2.41,
+    "Side": 5.6,
+    "Rear": 2.41,
+    "Top": 6.59
+   },
+   {
+    "ID": 63,
+    "Type": 3002,
+    "Front": 1.38,
+    "Side": 3.21,
+    "Rear": 2.21,
+    "Top": 3.68
+   },
+   {
+    "ID": 63,
+    "Type": 4001,
+    "Front": 2.41,
+    "Side": 7.45,
+    "Rear": 12.08,
+    "Top": 8.31
+   },
+   {
+    "ID": 63,
+    "Type": 4002,
+    "Front": 1.38,
+    "Side": 3.21,
+    "Rear": 1.38,
+    "Top": 3.68
+   },
+   {
+    "ID": 63,
+    "Type": 5001,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.9
+   },
+   {
+    "ID": 63,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.3,
+    "Rear": 1.9,
+    "Top": 4.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 484,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "AH-64A Apache",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2003,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 14.96,
+   "Span": 5.2,
+   "Height": 4.6,
+   "WeightEmpty": 5165,
+   "WeightMax": 10450,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 14.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1005,
+   "AircraftFuselageArmor": 1005,
+   "AircraftCockpitArmor": 1020,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   665,
+   666,
+   1487,
+   2660,
+   2924,
+   3825
+  ],
+  "mount_ids": [
+   165,
+   1799
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4866,
+   4867,
+   4868,
+   13933
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1526
+  ],
+  "comm_ids": [
+   33,
+   165
+  ],
+  "fuel_ids": [
+   251
+  ],
+  "signatures": [
+   {
+    "ID": 484,
+    "Type": 3001,
+    "Front": 2.1,
+    "Side": 5.59,
+    "Rear": 2.1,
+    "Top": 5.74
+   },
+   {
+    "ID": 484,
+    "Type": 3002,
+    "Front": 1.23,
+    "Side": 3.21,
+    "Rear": 1.93,
+    "Top": 3.28
+   },
+   {
+    "ID": 484,
+    "Type": 4001,
+    "Front": 2.1,
+    "Side": 6.7,
+    "Rear": 10.3,
+    "Top": 6.82
+   },
+   {
+    "ID": 484,
+    "Type": 4002,
+    "Front": 1.23,
+    "Side": 3.21,
+    "Rear": 1.23,
+    "Top": 3.28
+   },
+   {
+    "ID": 484,
+    "Type": 5001,
+    "Front": 2.4,
+    "Side": 4.9,
+    "Rear": 2.4,
+    "Top": 5.3
+   },
+   {
+    "ID": 484,
+    "Type": 5002,
+    "Front": 2.4,
+    "Side": 4.9,
+    "Rear": 2.4,
+    "Top": 4.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1000,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "MB.339A",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1985,
+   "YearDecommissioned": 0,
+   "Length": 11.0,
+   "Span": 10.9,
+   "Height": 3.6,
+   "WeightEmpty": 3075,
+   "WeightMax": 5897,
+   "WeightPayload": 1816,
+   "Crew": 2,
+   "Agility": 2.5,
+   "ClimbRate": 31.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   2187
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   5726,
+   5727,
+   5728,
+   8958,
+   14951,
+   14952,
+   14953
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   491
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   915
+  ],
+  "signatures": [
+   {
+    "ID": 1000,
+    "Type": 3001,
+    "Front": 2.27,
+    "Side": 4.29,
+    "Rear": 2.27,
+    "Top": 6.19
+   },
+   {
+    "ID": 1000,
+    "Type": 3002,
+    "Front": 1.31,
+    "Side": 2.58,
+    "Rear": 2.08,
+    "Top": 3.49
+   },
+   {
+    "ID": 1000,
+    "Type": 4001,
+    "Front": 2.27,
+    "Side": 6.24,
+    "Rear": 11.78,
+    "Top": 7.96
+   },
+   {
+    "ID": 1000,
+    "Type": 4002,
+    "Front": 1.31,
+    "Side": 2.58,
+    "Rear": 1.31,
+    "Top": 3.49
+   },
+   {
+    "ID": 1000,
+    "Type": 5001,
+    "Front": 3.3,
+    "Side": 5.7,
+    "Rear": 3.3,
+    "Top": 6.2
+   },
+   {
+    "ID": 1000,
+    "Type": 5002,
+    "Front": 3.3,
+    "Side": 5.7,
+    "Rear": 3.3,
+    "Top": 5.7
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1071,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16E Blk 60 Desert Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2006,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8715,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   381,
+   1030,
+   2412,
+   2661,
+   2662
+  ],
+  "mount_ids": [
+   286,
+   1579,
+   1706
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2132,
+   2555,
+   2560,
+   3228,
+   4455,
+   4457,
+   4458,
+   4459,
+   4460,
+   4461,
+   4462,
+   4463,
+   6384,
+   6385,
+   11794,
+   11795,
+   11796,
+   11797,
+   11798,
+   11799,
+   11800,
+   16871
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1470
+  ],
+  "comm_ids": [
+   43,
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 1071,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 1071,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 1071,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 1071,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 1071,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 1071,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1241,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Mirage IIIEAD",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1970,
+   "YearDecommissioned": 1999,
+   "Length": 15.0,
+   "Span": 8.2,
+   "Height": 4.5,
+   "WeightEmpty": 7050,
+   "WeightMax": 13700,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 95.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   908,
+   2919
+  ],
+  "mount_ids": [
+   297
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4971,
+   4972,
+   4973,
+   4974,
+   4975,
+   4976,
+   4977
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   342
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   38
+  ],
+  "signatures": [
+   {
+    "ID": 1241,
+    "Type": 3001,
+    "Front": 2.39,
+    "Side": 5.57,
+    "Rear": 2.39,
+    "Top": 6.52
+   },
+   {
+    "ID": 1241,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 2.19,
+    "Top": 3.65
+   },
+   {
+    "ID": 1241,
+    "Type": 4001,
+    "Front": 2.39,
+    "Side": 7.43,
+    "Rear": 12.02,
+    "Top": 8.25
+   },
+   {
+    "ID": 1241,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 1.36,
+    "Top": 3.65
+   },
+   {
+    "ID": 1241,
+    "Type": 5001,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 1241,
+    "Type": 5002,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1242,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Mirage 5AD",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1977,
+   "YearDecommissioned": 1999,
+   "Length": 14.8,
+   "Span": 8.2,
+   "Height": 4.0,
+   "WeightEmpty": 5915,
+   "WeightMax": 13700,
+   "WeightPayload": 4000,
+   "Crew": 1,
+   "Agility": 3.5,
+   "ClimbRate": 103.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2919
+  ],
+  "mount_ids": [
+   297
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4897,
+   4898,
+   4899,
+   4900,
+   4901,
+   4902,
+   14242
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   343
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   1213
+  ],
+  "signatures": [
+   {
+    "ID": 1242,
+    "Type": 3001,
+    "Front": 2.37,
+    "Side": 5.39,
+    "Rear": 2.37,
+    "Top": 6.47
+   },
+   {
+    "ID": 1242,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.11,
+    "Rear": 2.17,
+    "Top": 3.62
+   },
+   {
+    "ID": 1242,
+    "Type": 4001,
+    "Front": 2.37,
+    "Side": 7.27,
+    "Rear": 11.99,
+    "Top": 8.2
+   },
+   {
+    "ID": 1242,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.11,
+    "Rear": 1.36,
+    "Top": 3.62
+   },
+   {
+    "ID": 1242,
+    "Type": 5001,
+    "Front": 3.9,
+    "Side": 6.2,
+    "Rear": 3.9,
+    "Top": 6.7
+   },
+   {
+    "ID": 1242,
+    "Type": 5002,
+    "Front": 3.9,
+    "Side": 6.2,
+    "Rear": 3.9,
+    "Top": 6.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1304,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "AS.550 Fennec",
+   "Comments": "6x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2008,
+   "YearDecommissioned": 0,
+   "Length": 10.9,
+   "Span": 2.5,
+   "Height": 3.3,
+   "WeightEmpty": 1220,
+   "WeightMax": 2250,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 1.0,
+   "ClimbRate": 9.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8739,
+   8740
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1186
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1339
+  ],
+  "signatures": [
+   {
+    "ID": 1304,
+    "Type": 3001,
+    "Front": 1.46,
+    "Side": 4.19,
+    "Rear": 1.46,
+    "Top": 3.98
+   },
+   {
+    "ID": 1304,
+    "Type": 3002,
+    "Front": 0.9,
+    "Side": 2.52,
+    "Rear": 1.33,
+    "Top": 2.42
+   },
+   {
+    "ID": 1304,
+    "Type": 4001,
+    "Front": 1.46,
+    "Side": 6.14,
+    "Rear": 9.92,
+    "Top": 5.93
+   },
+   {
+    "ID": 1304,
+    "Type": 4002,
+    "Front": 0.9,
+    "Side": 2.52,
+    "Rear": 0.9,
+    "Top": 2.42
+   },
+   {
+    "ID": 1304,
+    "Type": 5001,
+    "Front": -2.0,
+    "Side": 0.6,
+    "Rear": -2.0,
+    "Top": 1.0
+   },
+   {
+    "ID": 1304,
+    "Type": 5002,
+    "Front": -2.0,
+    "Side": 0.6,
+    "Rear": -2.0,
+    "Top": 0.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1687,
+   "Category": 2003,
+   "Type": 6001,
+   "Name": "AS.565SB Panther",
+   "Comments": "7x, Ex-SA.365M Dauphin 2",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2000,
+   "YearDecommissioned": 0,
+   "Length": 11.3,
+   "Span": 3.0,
+   "Height": 4.1,
+   "WeightEmpty": 2300,
+   "WeightMax": 4300,
+   "WeightPayload": 1600,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   130,
+   1690,
+   2840
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   6126,
+   6127,
+   8520,
+   14687,
+   14700
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1541
+  ],
+  "comm_ids": [
+   187
+  ],
+  "fuel_ids": [
+   72
+  ],
+  "signatures": [
+   {
+    "ID": 1687,
+    "Type": 3001,
+    "Front": 1.54,
+    "Side": 4.51,
+    "Rear": 1.54,
+    "Top": 4.22
+   },
+   {
+    "ID": 1687,
+    "Type": 3002,
+    "Front": 0.95,
+    "Side": 2.68,
+    "Rear": 1.41,
+    "Top": 2.54
+   },
+   {
+    "ID": 1687,
+    "Type": 4001,
+    "Front": 1.54,
+    "Side": 6.45,
+    "Rear": 10.15,
+    "Top": 6.17
+   },
+   {
+    "ID": 1687,
+    "Type": 4002,
+    "Front": 0.95,
+    "Side": 2.68,
+    "Rear": 0.95,
+    "Top": 2.54
+   },
+   {
+    "ID": 1687,
+    "Type": 5001,
+    "Front": -1.3,
+    "Side": 1.3,
+    "Rear": -1.3,
+    "Top": 1.7
+   },
+   {
+    "ID": 1687,
+    "Type": 5002,
+    "Front": -1.3,
+    "Side": 1.3,
+    "Rear": -1.3,
+    "Top": 1.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1690,
+   "Category": 2003,
+   "Type": 7402,
+   "Name": "SA.319B Alouette III",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 1981,
+   "YearDecommissioned": 0,
+   "Length": 10.0,
+   "Span": 3.0,
+   "Height": 3.0,
+   "WeightEmpty": 1143,
+   "WeightMax": 2200,
+   "WeightPayload": 750,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8476,
+   8477,
+   14670
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   279
+  ],
+  "comm_ids": [
+   187
+  ],
+  "fuel_ids": [
+   153
+  ],
+  "signatures": [
+   {
+    "ID": 1690,
+    "Type": 3001,
+    "Front": 1.42,
+    "Side": 3.87,
+    "Rear": 1.42,
+    "Top": 3.87
+   },
+   {
+    "ID": 1690,
+    "Type": 3002,
+    "Front": 0.88,
+    "Side": 2.36,
+    "Rear": 1.3,
+    "Top": 2.36
+   },
+   {
+    "ID": 1690,
+    "Type": 4001,
+    "Front": 1.42,
+    "Side": 5.82,
+    "Rear": 9.82,
+    "Top": 5.82
+   },
+   {
+    "ID": 1690,
+    "Type": 4002,
+    "Front": 0.88,
+    "Side": 2.36,
+    "Rear": 0.88,
+    "Top": 2.36
+   },
+   {
+    "ID": 1690,
+    "Type": 5001,
+    "Front": -2.3,
+    "Side": 0.3,
+    "Rear": -2.3,
+    "Top": 0.7
+   },
+   {
+    "ID": 1690,
+    "Type": 5002,
+    "Front": -2.3,
+    "Side": 0.3,
+    "Rear": -2.3,
+    "Top": 0.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2064,
+   "Category": 2001,
+   "Type": 6002,
+   "Name": "Dash-8-300 MPA",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 0,
+   "Length": 25.68,
+   "Span": 27.43,
+   "Height": 7.49,
+   "WeightEmpty": 11791,
+   "WeightMax": 19500,
+   "WeightPayload": 5138,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 7.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1593,
+   5134,
+   2840,
+   1727,
+   2216,
+   5464,
+   326
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   7185,
+   8973,
+   23134
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2465
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   545
+  ],
+  "signatures": [
+   {
+    "ID": 2064,
+    "Type": 3001,
+    "Front": 5.03,
+    "Side": 8.99,
+    "Rear": 5.03,
+    "Top": 13.73
+   },
+   {
+    "ID": 2064,
+    "Type": 3002,
+    "Front": 2.54,
+    "Side": 4.77,
+    "Rear": 4.61,
+    "Top": 6.78
+   },
+   {
+    "ID": 2064,
+    "Type": 4001,
+    "Front": 5.03,
+    "Side": 10.22,
+    "Rear": 16.06,
+    "Top": 13.55
+   },
+   {
+    "ID": 2064,
+    "Type": 4002,
+    "Front": 2.54,
+    "Side": 4.77,
+    "Rear": 2.54,
+    "Top": 6.78
+   },
+   {
+    "ID": 2064,
+    "Type": 5001,
+    "Front": 13.0,
+    "Side": 15.0,
+    "Rear": 13.0,
+    "Top": 15.4
+   },
+   {
+    "ID": 2064,
+    "Type": 5002,
+    "Front": 13.0,
+    "Side": 15.0,
+    "Rear": 13.0,
+    "Top": 15.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2462,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "Mirage 2000-8",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1995,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 9.1,
+   "Height": 5.2,
+   "WeightEmpty": 7500,
+   "WeightMax": 17000,
+   "WeightPayload": 6300,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 141.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   880,
+   2038,
+   1932
+  ],
+  "mount_ids": [
+   295,
+   1797
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4451,
+   4452,
+   4453,
+   4456,
+   4466,
+   9605,
+   14359,
+   19746,
+   19747
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1461
+  ],
+  "comm_ids": [
+   20,
+   264
+  ],
+  "fuel_ids": [
+   645
+  ],
+  "signatures": [
+   {
+    "ID": 2462,
+    "Type": 3001,
+    "Front": 2.41,
+    "Side": 5.6,
+    "Rear": 2.41,
+    "Top": 6.59
+   },
+   {
+    "ID": 2462,
+    "Type": 3002,
+    "Front": 1.38,
+    "Side": 3.21,
+    "Rear": 2.21,
+    "Top": 3.68
+   },
+   {
+    "ID": 2462,
+    "Type": 4001,
+    "Front": 2.41,
+    "Side": 7.45,
+    "Rear": 12.08,
+    "Top": 8.31
+   },
+   {
+    "ID": 2462,
+    "Type": 4002,
+    "Front": 1.38,
+    "Side": 3.21,
+    "Rear": 1.38,
+    "Top": 3.68
+   },
+   {
+    "ID": 2462,
+    "Type": 5001,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.9
+   },
+   {
+    "ID": 2462,
+    "Type": 5002,
+    "Front": 1.9,
+    "Side": 4.3,
+    "Rear": 1.9,
+    "Top": 4.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3070,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Mirage 5RAD",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1977,
+   "YearDecommissioned": 1999,
+   "Length": 14.8,
+   "Span": 8.2,
+   "Height": 4.0,
+   "WeightEmpty": 5915,
+   "WeightMax": 13700,
+   "WeightPayload": 4000,
+   "Crew": 1,
+   "Agility": 3.5,
+   "ClimbRate": 103.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2919
+  ],
+  "mount_ids": [
+   297
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16331,
+   16332
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   343
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   1213
+  ],
+  "signatures": [
+   {
+    "ID": 3070,
+    "Type": 3001,
+    "Front": 2.37,
+    "Side": 5.39,
+    "Rear": 2.37,
+    "Top": 6.47
+   },
+   {
+    "ID": 3070,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.11,
+    "Rear": 2.17,
+    "Top": 3.62
+   },
+   {
+    "ID": 3070,
+    "Type": 4001,
+    "Front": 2.37,
+    "Side": 7.27,
+    "Rear": 11.99,
+    "Top": 8.2
+   },
+   {
+    "ID": 3070,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.11,
+    "Rear": 1.36,
+    "Top": 3.62
+   },
+   {
+    "ID": 3070,
+    "Type": 5001,
+    "Front": 3.9,
+    "Side": 6.2,
+    "Rear": 3.9,
+    "Top": 6.7
+   },
+   {
+    "ID": 3070,
+    "Type": 5002,
+    "Front": 3.9,
+    "Side": 6.2,
+    "Rear": 3.9,
+    "Top": 6.2
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3462,
+   "Category": 2001,
+   "Type": 4002,
+   "Name": "Saab 2000 AEW&C [Erieye]",
+   "Comments": "2x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2011,
+   "YearDecommissioned": 0,
+   "Length": 27.3,
+   "Span": 24.8,
+   "Height": 7.7,
+   "WeightEmpty": 13800,
+   "WeightMax": 22800,
+   "WeightPayload": 5700,
+   "Crew": 5,
+   "Agility": 1.0,
+   "ClimbRate": 11.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   544,
+   1593
+  ],
+  "mount_ids": [
+   1690
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   17810,
+   17811
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2008
+  ],
+  "comm_ids": [
+   194,
+   264
+  ],
+  "fuel_ids": [
+   1375
+  ],
+  "signatures": [
+   {
+    "ID": 3462,
+    "Type": 3001,
+    "Front": 4.94,
+    "Side": 9.43,
+    "Rear": 4.94,
+    "Top": 13.5
+   },
+   {
+    "ID": 3462,
+    "Type": 3002,
+    "Front": 2.5,
+    "Side": 4.96,
+    "Rear": 4.53,
+    "Top": 6.69
+   },
+   {
+    "ID": 3462,
+    "Type": 4001,
+    "Front": 4.94,
+    "Side": 10.55,
+    "Rear": 15.96,
+    "Top": 13.4
+   },
+   {
+    "ID": 3462,
+    "Type": 4002,
+    "Front": 2.5,
+    "Side": 4.96,
+    "Rear": 2.5,
+    "Top": 6.69
+   },
+   {
+    "ID": 3462,
+    "Type": 5001,
+    "Front": 12.8,
+    "Side": 14.8,
+    "Rear": 12.8,
+    "Top": 15.2
+   },
+   {
+    "ID": 3462,
+    "Type": 5002,
+    "Front": 12.8,
+    "Side": 14.8,
+    "Rear": 12.8,
+    "Top": 14.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3547,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16F Blk 60 Desert Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2006,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8715,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 2,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   381,
+   1030,
+   2412,
+   2661,
+   2662
+  ],
+  "mount_ids": [
+   286,
+   1579,
+   1706
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2132,
+   2555,
+   2560,
+   3228,
+   4455,
+   4457,
+   4458,
+   4459,
+   4460,
+   4461,
+   4462,
+   4463,
+   6384,
+   6385,
+   11794,
+   11795,
+   11796,
+   11797,
+   11798,
+   11799,
+   11800,
+   16871
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1470
+  ],
+  "comm_ids": [
+   43,
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 3547,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 3547,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 3547,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 3547,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 3547,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 3547,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4248,
+   "Category": 2003,
+   "Type": 3001,
+   "Name": "AH-64A Apache",
+   "Comments": "Cirit",
+   "OperatorCountry": 2098,
+   "OperatorService": 2003,
+   "YearCommissioned": 2015,
+   "YearDecommissioned": 0,
+   "Length": 14.96,
+   "Span": 5.2,
+   "Height": 4.6,
+   "WeightEmpty": 5165,
+   "WeightMax": 10450,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 2.0,
+   "ClimbRate": 14.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1005,
+   "AircraftFuselageArmor": 1005,
+   "AircraftCockpitArmor": 1020,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   665,
+   666,
+   1487,
+   2660,
+   2924,
+   3825
+  ],
+  "mount_ids": [
+   165,
+   1799
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   4866,
+   4867,
+   4868,
+   13933,
+   21817
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1526
+  ],
+  "comm_ids": [
+   33,
+   165
+  ],
+  "fuel_ids": [
+   251
+  ],
+  "signatures": [
+   {
+    "ID": 4248,
+    "Type": 3001,
+    "Front": 2.1,
+    "Side": 5.59,
+    "Rear": 2.1,
+    "Top": 5.74
+   },
+   {
+    "ID": 4248,
+    "Type": 3002,
+    "Front": 1.23,
+    "Side": 3.21,
+    "Rear": 1.93,
+    "Top": 3.28
+   },
+   {
+    "ID": 4248,
+    "Type": 4001,
+    "Front": 2.1,
+    "Side": 6.7,
+    "Rear": 10.3,
+    "Top": 6.82
+   },
+   {
+    "ID": 4248,
+    "Type": 4002,
+    "Front": 1.23,
+    "Side": 3.21,
+    "Rear": 1.23,
+    "Top": 3.28
+   },
+   {
+    "ID": 4248,
+    "Type": 5001,
+    "Front": 2.4,
+    "Side": 4.9,
+    "Rear": 2.4,
+    "Top": 5.3
+   },
+   {
+    "ID": 4248,
+    "Type": 5002,
+    "Front": 2.4,
+    "Side": 4.9,
+    "Rear": 2.4,
+    "Top": 4.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4375,
+   "Category": 2001,
+   "Type": 8201,
+   "Name": "United 40 Blk 5 [Smart Eye 2] UAV",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2017,
+   "YearDecommissioned": 0,
+   "Length": 20.0,
+   "Span": 11.13,
+   "Height": 4.38,
+   "WeightEmpty": 520,
+   "WeightMax": 1500,
+   "WeightPayload": 1000,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 7.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1727,
+   4576
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22224,
+   22225
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2590
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1311
+  ],
+  "signatures": [
+   {
+    "ID": 4375,
+    "Type": 3001,
+    "Front": 3.11,
+    "Side": 6.81,
+    "Rear": 3.11,
+    "Top": 8.49
+   },
+   {
+    "ID": 4375,
+    "Type": 3002,
+    "Front": 1.7,
+    "Side": 3.78,
+    "Rear": 2.85,
+    "Top": 4.54
+   },
+   {
+    "ID": 4375,
+    "Type": 4001,
+    "Front": 3.11,
+    "Side": 8.49,
+    "Rear": 13.33,
+    "Top": 9.84
+   },
+   {
+    "ID": 4375,
+    "Type": 4002,
+    "Front": 1.7,
+    "Side": 3.78,
+    "Rear": 1.7,
+    "Top": 4.54
+   },
+   {
+    "ID": 4375,
+    "Type": 5001,
+    "Front": -15.9,
+    "Side": -13.6,
+    "Rear": -15.9,
+    "Top": -13.2
+   },
+   {
+    "ID": 4375,
+    "Type": 5002,
+    "Front": -25.9,
+    "Side": -23.6,
+    "Rear": -25.9,
+    "Top": -23.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4376,
+   "Category": 2001,
+   "Type": 8201,
+   "Name": "United 40 Blk 6 MPA UAV",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2002,
+   "YearCommissioned": 2017,
+   "YearDecommissioned": 0,
+   "Length": 20.0,
+   "Span": 11.13,
+   "Height": 4.38,
+   "WeightEmpty": 520,
+   "WeightMax": 1500,
+   "WeightPayload": 1000,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 7.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4789,
+   4576
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22226,
+   22227,
+   22228
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2590
+  ],
+  "comm_ids": [
+   20,
+   13
+  ],
+  "fuel_ids": [
+   1311
+  ],
+  "signatures": [
+   {
+    "ID": 4376,
+    "Type": 3001,
+    "Front": 3.11,
+    "Side": 6.81,
+    "Rear": 3.11,
+    "Top": 8.49
+   },
+   {
+    "ID": 4376,
+    "Type": 3002,
+    "Front": 1.7,
+    "Side": 3.78,
+    "Rear": 2.85,
+    "Top": 4.54
+   },
+   {
+    "ID": 4376,
+    "Type": 4001,
+    "Front": 3.11,
+    "Side": 8.49,
+    "Rear": 13.33,
+    "Top": 9.84
+   },
+   {
+    "ID": 4376,
+    "Type": 4002,
+    "Front": 1.7,
+    "Side": 3.78,
+    "Rear": 1.7,
+    "Top": 4.54
+   },
+   {
+    "ID": 4376,
+    "Type": 5001,
+    "Front": -15.9,
+    "Side": -13.6,
+    "Rear": -15.9,
+    "Top": -13.2
+   },
+   {
+    "ID": 4376,
+    "Type": 5002,
+    "Front": -25.9,
+    "Side": -23.6,
+    "Rear": -25.9,
+    "Top": -23.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4378,
+   "Category": 2001,
+   "Type": 8201,
+   "Name": "RQ-1 Predator XP UAV",
+   "Comments": "-",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2016,
+   "YearDecommissioned": 0,
+   "Length": 8.2,
+   "Span": 14.8,
+   "Height": 2.1,
+   "WeightEmpty": 513,
+   "WeightMax": 1020,
+   "WeightPayload": 0,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 3.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2822,
+   5617
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   8862,
+   8863
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2592
+  ],
+  "comm_ids": [
+   20,
+   222
+  ],
+  "fuel_ids": [
+   595
+  ],
+  "signatures": [
+   {
+    "ID": 4378,
+    "Type": 3001,
+    "Front": 2.37,
+    "Side": 3.14,
+    "Rear": 2.37,
+    "Top": 6.47
+   },
+   {
+    "ID": 4378,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 1.98,
+    "Rear": 2.17,
+    "Top": 3.62
+   },
+   {
+    "ID": 4378,
+    "Type": 4001,
+    "Front": 2.37,
+    "Side": 5.07,
+    "Rear": 11.99,
+    "Top": 8.2
+   },
+   {
+    "ID": 4378,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 1.98,
+    "Rear": 1.36,
+    "Top": 3.62
+   },
+   {
+    "ID": 4378,
+    "Type": 5001,
+    "Front": -19.1,
+    "Side": -16.8,
+    "Rear": -19.1,
+    "Top": -16.3
+   },
+   {
+    "ID": 4378,
+    "Type": 5002,
+    "Front": -29.1,
+    "Side": -26.8,
+    "Rear": -29.1,
+    "Top": -26.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4470,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "IOMAX Archangel [S2R-T660]",
+   "Comments": "24",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2016,
+   "YearDecommissioned": 0,
+   "Length": 11.0,
+   "Span": 17.4,
+   "Height": 3.8,
+   "WeightEmpty": 2903,
+   "WeightMax": 6719,
+   "WeightPayload": 2177,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 9.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5682,
+   5177
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22623,
+   22624,
+   25437
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2671
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 4470,
+    "Type": 3001,
+    "Front": 2.86,
+    "Side": 4.35,
+    "Rear": 2.86,
+    "Top": 7.82
+   },
+   {
+    "ID": 4470,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 2.6,
+    "Rear": 2.62,
+    "Top": 4.24
+   },
+   {
+    "ID": 4470,
+    "Type": 4001,
+    "Front": 2.86,
+    "Side": 6.3,
+    "Rear": 12.9,
+    "Top": 9.31
+   },
+   {
+    "ID": 4470,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 2.6,
+    "Rear": 1.59,
+    "Top": 4.24
+   },
+   {
+    "ID": 4470,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.4,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 4470,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.4,
+    "Rear": 6.2,
+    "Top": 8.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4471,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "IOMAX Blk 1 [AT-802U]",
+   "Comments": "10x, later 4x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2011,
+   "YearDecommissioned": 2017,
+   "Length": 10.87,
+   "Span": 18.0,
+   "Height": 3.5,
+   "WeightEmpty": 2903,
+   "WeightMax": 7257,
+   "WeightPayload": 2177,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 9.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5177
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22625,
+   22626
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2672
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1047
+  ],
+  "signatures": [
+   {
+    "ID": 4471,
+    "Type": 3001,
+    "Front": 2.9,
+    "Side": 4.23,
+    "Rear": 2.9,
+    "Top": 7.93
+   },
+   {
+    "ID": 4471,
+    "Type": 3002,
+    "Front": 1.61,
+    "Side": 2.55,
+    "Rear": 2.66,
+    "Top": 4.29
+   },
+   {
+    "ID": 4471,
+    "Type": 4001,
+    "Front": 2.9,
+    "Side": 6.19,
+    "Rear": 12.98,
+    "Top": 9.4
+   },
+   {
+    "ID": 4471,
+    "Type": 4002,
+    "Front": 1.61,
+    "Side": 2.55,
+    "Rear": 1.61,
+    "Top": 4.29
+   },
+   {
+    "ID": 4471,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 4471,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4472,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "IOMAX Blk 2 [AT-802U]",
+   "Comments": "14x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2013,
+   "YearDecommissioned": 2017,
+   "Length": 10.87,
+   "Span": 18.0,
+   "Height": 3.5,
+   "WeightEmpty": 2903,
+   "WeightMax": 7257,
+   "WeightPayload": 2177,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 9.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5177
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22625,
+   22626,
+   25419
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2672
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1047
+  ],
+  "signatures": [
+   {
+    "ID": 4472,
+    "Type": 3001,
+    "Front": 2.9,
+    "Side": 4.23,
+    "Rear": 2.9,
+    "Top": 7.93
+   },
+   {
+    "ID": 4472,
+    "Type": 3002,
+    "Front": 1.61,
+    "Side": 2.55,
+    "Rear": 2.66,
+    "Top": 4.29
+   },
+   {
+    "ID": 4472,
+    "Type": 4001,
+    "Front": 2.9,
+    "Side": 6.19,
+    "Rear": 12.98,
+    "Top": 9.4
+   },
+   {
+    "ID": 4472,
+    "Type": 4002,
+    "Front": 1.61,
+    "Side": 2.55,
+    "Rear": 1.61,
+    "Top": 4.29
+   },
+   {
+    "ID": 4472,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 4472,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4473,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "IOMAX Blk 2 [AT-802U]",
+   "Comments": "14x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2012,
+   "YearDecommissioned": 0,
+   "Length": 10.87,
+   "Span": 18.0,
+   "Height": 3.5,
+   "WeightEmpty": 2903,
+   "WeightMax": 7257,
+   "WeightPayload": 2177,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 9.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5177
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22625,
+   22626,
+   25419
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2672
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1047
+  ],
+  "signatures": [
+   {
+    "ID": 4473,
+    "Type": 3001,
+    "Front": 2.9,
+    "Side": 4.23,
+    "Rear": 2.9,
+    "Top": 7.93
+   },
+   {
+    "ID": 4473,
+    "Type": 3002,
+    "Front": 1.61,
+    "Side": 2.55,
+    "Rear": 2.66,
+    "Top": 4.29
+   },
+   {
+    "ID": 4473,
+    "Type": 4001,
+    "Front": 2.9,
+    "Side": 6.19,
+    "Rear": 12.98,
+    "Top": 9.4
+   },
+   {
+    "ID": 4473,
+    "Type": 4002,
+    "Front": 1.61,
+    "Side": 2.55,
+    "Rear": 1.61,
+    "Top": 4.29
+   },
+   {
+    "ID": 4473,
+    "Type": 5001,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 9.0
+   },
+   {
+    "ID": 4473,
+    "Type": 5002,
+    "Front": 6.3,
+    "Side": 8.6,
+    "Rear": 6.3,
+    "Top": 8.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4490,
+   "Category": 2001,
+   "Type": 8201,
+   "Name": "Seeker II [Seeker 2E Vehicle] UAV",
+   "Comments": "11x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 4.5,
+   "Span": 7.0,
+   "Height": 1.5,
+   "WeightEmpty": 180,
+   "WeightMax": 280,
+   "WeightPayload": 50,
+   "Crew": 0,
+   "Agility": 0.5,
+   "ClimbRate": 5.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5687,
+   5688
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22676,
+   22677
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2679
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   436
+  ],
+  "signatures": [
+   {
+    "ID": 4490,
+    "Type": 3001,
+    "Front": 1.27,
+    "Side": 1.93,
+    "Rear": 1.27,
+    "Top": 3.46
+   },
+   {
+    "ID": 4490,
+    "Type": 3002,
+    "Front": 0.81,
+    "Side": 1.32,
+    "Rear": 1.16,
+    "Top": 2.15
+   },
+   {
+    "ID": 4490,
+    "Type": 4001,
+    "Front": 1.27,
+    "Side": 3.66,
+    "Rear": 9.4,
+    "Top": 5.41
+   },
+   {
+    "ID": 4490,
+    "Type": 4002,
+    "Front": 0.81,
+    "Side": 1.32,
+    "Rear": 0.81,
+    "Top": 2.15
+   },
+   {
+    "ID": 4490,
+    "Type": 5001,
+    "Front": -3.7,
+    "Side": -1.0,
+    "Rear": -3.7,
+    "Top": -0.6
+   },
+   {
+    "ID": 4490,
+    "Type": 5002,
+    "Front": -3.7,
+    "Side": -1.0,
+    "Rear": -3.7,
+    "Top": -1.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4605,
+   "Category": 2001,
+   "Type": 8001,
+   "Name": "Airbus A.330-200 MRTT",
+   "Comments": "3x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2014,
+   "YearDecommissioned": 0,
+   "Length": 58.8,
+   "Span": 60.3,
+   "Height": 17.4,
+   "WeightEmpty": 125000,
+   "WeightMax": 230000,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 20.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2006,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   970
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   25069,
+   25070
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1698
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   753
+  ],
+  "signatures": [
+   {
+    "ID": 4605,
+    "Type": 3001,
+    "Front": 10.4,
+    "Side": 19.0,
+    "Rear": 10.4,
+    "Top": 28.4
+   },
+   {
+    "ID": 4605,
+    "Type": 3002,
+    "Front": 4.65,
+    "Side": 8.89,
+    "Rear": 9.53,
+    "Top": 12.43
+   },
+   {
+    "ID": 4605,
+    "Type": 4001,
+    "Front": 10.4,
+    "Side": 16.83,
+    "Rear": 21.31,
+    "Top": 22.0
+   },
+   {
+    "ID": 4605,
+    "Type": 4002,
+    "Front": 4.65,
+    "Side": 8.89,
+    "Rear": 4.65,
+    "Top": 12.43
+   },
+   {
+    "ID": 4605,
+    "Type": 5001,
+    "Front": 21.7,
+    "Side": 23.4,
+    "Rear": 21.7,
+    "Top": 23.8
+   },
+   {
+    "ID": 4605,
+    "Type": 5002,
+    "Front": 21.7,
+    "Side": 23.4,
+    "Rear": 21.7,
+    "Top": 23.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4668,
+   "Category": 2006,
+   "Type": 8902,
+   "Name": "AN/TPS-63 LASS Aerostat",
+   "Comments": "1x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 71.0,
+   "Span": 10.0,
+   "Height": 10.0,
+   "WeightEmpty": 0,
+   "WeightMax": 0,
+   "WeightPayload": 2300,
+   "Crew": 0,
+   "Agility": 0.0,
+   "ClimbRate": 9.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2292
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   11024
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1758
+  ],
+  "comm_ids": [
+   275
+  ],
+  "fuel_ids": [],
+  "signatures": [
+   {
+    "ID": 4668,
+    "Type": 3001,
+    "Front": 7.72,
+    "Side": 21.08,
+    "Rear": 7.72,
+    "Top": 21.08
+   },
+   {
+    "ID": 4668,
+    "Type": 3002,
+    "Front": 4.18,
+    "Side": 11.17,
+    "Rear": 8.08,
+    "Top": 11.17
+   },
+   {
+    "ID": 4668,
+    "Type": 4001,
+    "Front": 7.35,
+    "Side": 17.46,
+    "Rear": 18.62,
+    "Top": 17.46
+   },
+   {
+    "ID": 4668,
+    "Type": 4002,
+    "Front": 3.48,
+    "Side": 9.31,
+    "Rear": 3.48,
+    "Top": 9.31
+   },
+   {
+    "ID": 4668,
+    "Type": 5001,
+    "Front": 17.5,
+    "Side": 19.4,
+    "Rear": 17.5,
+    "Top": 19.8
+   },
+   {
+    "ID": 4668,
+    "Type": 5002,
+    "Front": 17.5,
+    "Side": 19.4,
+    "Rear": 17.5,
+    "Top": 19.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4669,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "CH-47F Chinook",
+   "Comments": "16x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2003,
+   "YearCommissioned": 2010,
+   "YearDecommissioned": 0,
+   "Length": 15.9,
+   "Span": 3.8,
+   "Height": 5.8,
+   "WeightEmpty": 10615,
+   "WeightMax": 22668,
+   "WeightPayload": 10896,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 7.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2284,
+   2236,
+   5443,
+   5177
+  ],
+  "mount_ids": [
+   1081
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   25528,
+   25529,
+   25530,
+   25531,
+   25532
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1988
+  ],
+  "comm_ids": [
+   194,
+   195
+  ],
+  "fuel_ids": [
+   1341
+  ],
+  "signatures": [
+   {
+    "ID": 4669,
+    "Type": 3001,
+    "Front": 2.06,
+    "Side": 6.14,
+    "Rear": 2.06,
+    "Top": 5.62
+   },
+   {
+    "ID": 4669,
+    "Type": 3002,
+    "Front": 1.21,
+    "Side": 3.47,
+    "Rear": 1.89,
+    "Top": 3.22
+   },
+   {
+    "ID": 4669,
+    "Type": 4001,
+    "Front": 2.06,
+    "Side": 7.92,
+    "Rear": 11.35,
+    "Top": 7.47
+   },
+   {
+    "ID": 4669,
+    "Type": 4002,
+    "Front": 1.21,
+    "Side": 3.47,
+    "Rear": 1.21,
+    "Top": 3.22
+   },
+   {
+    "ID": 4669,
+    "Type": 5001,
+    "Front": 2.2,
+    "Side": 4.6,
+    "Rear": 2.2,
+    "Top": 5.0
+   },
+   {
+    "ID": 4669,
+    "Type": 5002,
+    "Front": 2.2,
+    "Side": 4.6,
+    "Rear": 2.2,
+    "Top": 4.6
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4670,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "C-17A Globemaster III",
+   "Comments": "2x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2015,
+   "YearDecommissioned": 0,
+   "Length": 53.0,
+   "Span": 51.8,
+   "Height": 16.8,
+   "WeightEmpty": 128100,
+   "WeightMax": 265350,
+   "WeightPayload": 77500,
+   "Crew": 3,
+   "Agility": 1.0,
+   "ClimbRate": 14.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2005,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   597
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   25533,
+   25534,
+   25535
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   732
+  ],
+  "comm_ids": [
+   20,
+   238
+  ],
+  "fuel_ids": [
+   280
+  ],
+  "signatures": [
+   {
+    "ID": 4670,
+    "Type": 3001,
+    "Front": 9.27,
+    "Side": 17.56,
+    "Rear": 9.27,
+    "Top": 25.31
+   },
+   {
+    "ID": 4670,
+    "Type": 3002,
+    "Front": 4.23,
+    "Side": 8.33,
+    "Rear": 8.49,
+    "Top": 11.29
+   },
+   {
+    "ID": 4670,
+    "Type": 4001,
+    "Front": 9.27,
+    "Side": 15.97,
+    "Rear": 20.38,
+    "Top": 20.38
+   },
+   {
+    "ID": 4670,
+    "Type": 4002,
+    "Front": 4.23,
+    "Side": 8.33,
+    "Rear": 4.23,
+    "Top": 11.29
+   },
+   {
+    "ID": 4670,
+    "Type": 5001,
+    "Front": 20.3,
+    "Side": 22.1,
+    "Rear": 20.3,
+    "Top": 22.5
+   },
+   {
+    "ID": 4670,
+    "Type": 5002,
+    "Front": 20.3,
+    "Side": 22.1,
+    "Rear": 20.3,
+    "Top": 22.1
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4671,
+   "Category": 2003,
+   "Type": 7101,
+   "Name": "UH-60M Blackhawk",
+   "Comments": "26x",
+   "OperatorCountry": 2098,
+   "OperatorService": 2003,
+   "YearCommissioned": 2011,
+   "YearDecommissioned": 0,
+   "Length": 15.3,
+   "Span": 2.4,
+   "Height": 5.1,
+   "WeightEmpty": 5118,
+   "WeightMax": 11113,
+   "WeightPayload": 0,
+   "Crew": 4,
+   "Agility": 1.0,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   3825
+  ],
+  "mount_ids": [
+   2768
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   25536,
+   25537,
+   25538,
+   25539
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1524
+  ],
+  "comm_ids": [
+   72
+  ],
+  "fuel_ids": [
+   1282
+  ],
+  "signatures": [
+   {
+    "ID": 4671,
+    "Type": 3001,
+    "Front": 1.87,
+    "Side": 5.8,
+    "Rear": 1.87,
+    "Top": 5.11
+   },
+   {
+    "ID": 4671,
+    "Type": 3002,
+    "Front": 1.11,
+    "Side": 3.31,
+    "Rear": 1.71,
+    "Top": 2.98
+   },
+   {
+    "ID": 4671,
+    "Type": 4001,
+    "Front": 1.87,
+    "Side": 7.63,
+    "Rear": 10.94,
+    "Top": 7.01
+   },
+   {
+    "ID": 4671,
+    "Type": 4002,
+    "Front": 1.11,
+    "Side": 3.31,
+    "Rear": 1.11,
+    "Top": 2.98
+   },
+   {
+    "ID": 4671,
+    "Type": 5001,
+    "Front": 1.0,
+    "Side": 3.5,
+    "Rear": 1.0,
+    "Top": 3.9
+   },
+   {
+    "ID": 4671,
+    "Type": 5002,
+    "Front": 1.0,
+    "Side": 3.5,
+    "Rear": 1.0,
+    "Top": 3.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4726,
+   "Category": 2001,
+   "Type": 8202,
+   "Name": "Wing Loong [Pterodactyl] II UCAV",
+   "Comments": "3+",
+   "OperatorCountry": 2098,
+   "OperatorService": 2001,
+   "YearCommissioned": 2018,
+   "YearDecommissioned": 0,
+   "Length": 11.0,
+   "Span": 20.5,
+   "Height": 4.1,
+   "WeightEmpty": 1500,
+   "WeightMax": 4200,
+   "WeightPayload": 480,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 36.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1727,
+   2924,
+   4576
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   25717,
+   25718,
+   25719,
+   25720
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2795
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   2026
+  ],
+  "signatures": [
+   {
+    "ID": 4726,
+    "Type": 3001,
+    "Front": 3.14,
+    "Side": 4.43,
+    "Rear": 3.14,
+    "Top": 8.58
+   },
+   {
+    "ID": 4726,
+    "Type": 3002,
+    "Front": 1.72,
+    "Side": 2.64,
+    "Rear": 2.88,
+    "Top": 4.58
+   },
+   {
+    "ID": 4726,
+    "Type": 4001,
+    "Front": 3.14,
+    "Side": 6.37,
+    "Rear": 13.38,
+    "Top": 9.91
+   },
+   {
+    "ID": 4726,
+    "Type": 4002,
+    "Front": 1.72,
+    "Side": 2.64,
+    "Rear": 1.72,
+    "Top": 4.58
+   },
+   {
+    "ID": 4726,
+    "Type": 5001,
+    "Front": -15.7,
+    "Side": -13.5,
+    "Rear": -15.7,
+    "Top": -13.1
+   },
+   {
+    "ID": 4726,
+    "Type": 5002,
+    "Front": -25.7,
+    "Side": -23.5,
+    "Rear": -25.7,
+    "Top": -23.5
+   }
+  ]
+ }
+]

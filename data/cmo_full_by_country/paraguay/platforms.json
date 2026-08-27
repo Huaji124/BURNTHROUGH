@@ -1,0 +1,163 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 881,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "P 06 Capitan Ortiz",
+   "Comments": "-",
+   "OperatorCountry": 2071,
+   "OperatorService": 2002,
+   "YearCommissioned": 1978,
+   "YearDecommissioned": 0,
+   "Length": 22.9,
+   "Beam": 5.5,
+   "Draft": 0.9,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 47,
+   "DisplacementFull": 52,
+   "Crew": 12,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 21,
+   "MaxSeaState": 4,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   2177
+  ],
+  "mount_ids": [
+   561,
+   768
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   542,
+   874
+  ],
+  "propulsion_ids": [
+   707
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   294
+  ],
+  "signatures": [
+   {
+    "ID": 881,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 881,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 881,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 881,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 881,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 881,
+    "Type": 3001,
+    "Front": 5.02,
+    "Side": 8.53,
+    "Rear": 5.02,
+    "Top": 11.37
+   },
+   {
+    "ID": 881,
+    "Type": 3002,
+    "Front": 2.13,
+    "Side": 3.79,
+    "Rear": 2.13,
+    "Top": 4.26
+   },
+   {
+    "ID": 881,
+    "Type": 4001,
+    "Front": 5.02,
+    "Side": 8.53,
+    "Rear": 5.02,
+    "Top": 11.37
+   },
+   {
+    "ID": 881,
+    "Type": 4002,
+    "Front": 2.13,
+    "Side": 3.79,
+    "Rear": 2.13,
+    "Top": 4.26
+   },
+   {
+    "ID": 881,
+    "Type": 5001,
+    "Front": 8.7,
+    "Side": 11.4,
+    "Rear": 8.7,
+    "Top": 18.0
+   },
+   {
+    "ID": 881,
+    "Type": 5002,
+    "Front": 8.7,
+    "Side": 11.4,
+    "Rear": 8.7,
+    "Top": 18.0
+   }
+  ]
+ }
+]

@@ -1,0 +1,50 @@
+{
+ "1187": {
+  "ID": 1187,
+  "Name": "2x 40DM Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1203": {
+  "ID": 1203,
+  "Name": "1x Stork-Wärtsilä RUB 215X12 Diesel",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1530": {
+  "ID": 1530,
+  "Name": "2x TV2-117A",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1670.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.6,
+  "SFCAfterburner": 0.0
+ },
+ "2724": {
+  "ID": 2724,
+  "Name": "2x MAN D 2842 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

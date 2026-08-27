@@ -1,0 +1,152 @@
+{
+ "14": {
+  "ID": 14,
+  "Name": "Mistral MANPADS",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "59": {
+  "ID": 59,
+  "Name": "23mm Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "61": {
+  "ID": 61,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "197": {
+  "ID": 197,
+  "Name": "MASS",
+  "Comments": "2x Mounts, Multi Ammo Softkill",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 128,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "420": {
+  "ID": 420,
+  "Name": "Super Barricade DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "542": {
+  "ID": 542,
+  "Name": "12.7mm/50 MG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "574": {
+  "ID": 574,
+  "Name": "RBU-1200",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "600": {
+  "ID": 600,
+  "Name": "Philax 106 DL",
+  "Comments": "2x Mounts, Sweden, Chaff & Flares",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1256": {
+  "ID": 1256,
+  "Name": "Elma ASW-600 ASW Mortar [Soft Kill]",
+  "Comments": "1985, 4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1392": {
+  "ID": 1392,
+  "Name": "23mm ZU-23-2",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

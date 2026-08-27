@@ -1,0 +1,598 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2996,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "A 230 Admiral Pitka",
+   "Comments": "-",
+   "OperatorCountry": 2030,
+   "OperatorService": 2002,
+   "YearCommissioned": 2001,
+   "YearDecommissioned": 2013,
+   "Length": 74.8,
+   "Beam": 12.2,
+   "Draft": 5.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 1500,
+   "DisplacementFull": 1970,
+   "Crew": 43,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 320,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   653,
+   1524,
+   2084
+  ],
+  "mount_ids": [
+   358,
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1302,
+   761
+  ],
+  "propulsion_ids": [
+   21
+  ],
+  "comm_ids": [
+   72,
+   209,
+   264
+  ],
+  "fuel_ids": [
+   1530
+  ],
+  "signatures": [
+   {
+    "ID": 2996,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2996,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2996,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2996,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2996,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2996,
+    "Type": 3001,
+    "Front": 7.15,
+    "Side": 12.16,
+    "Rear": 7.15,
+    "Top": 16.22
+   },
+   {
+    "ID": 2996,
+    "Type": 3002,
+    "Front": 3.04,
+    "Side": 5.41,
+    "Rear": 3.04,
+    "Top": 6.08
+   },
+   {
+    "ID": 2996,
+    "Type": 4001,
+    "Front": 7.15,
+    "Side": 12.16,
+    "Rear": 7.15,
+    "Top": 16.22
+   },
+   {
+    "ID": 2996,
+    "Type": 4002,
+    "Front": 3.04,
+    "Side": 5.41,
+    "Rear": 3.04,
+    "Top": 6.08
+   },
+   {
+    "ID": 2996,
+    "Type": 5001,
+    "Front": 21.0,
+    "Side": 24.3,
+    "Rear": 21.0,
+    "Top": 30.8
+   },
+   {
+    "ID": 2996,
+    "Type": 5002,
+    "Front": 21.0,
+    "Side": 24.3,
+    "Rear": 21.0,
+    "Top": 30.8
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2999,
+   "Category": 2002,
+   "Type": 6002,
+   "Name": "M 411 Vambola [Type 89.1 Kondor I]",
+   "Comments": "-",
+   "OperatorCountry": 2030,
+   "OperatorService": 2002,
+   "YearCommissioned": 1994,
+   "YearDecommissioned": 2000,
+   "Length": 51.98,
+   "Beam": 7.12,
+   "Draft": 2.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 400,
+   "DisplacementFull": 449,
+   "Crew": 29,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 110,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 25,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   4698,
+   4654,
+   4657,
+   1916
+  ],
+  "mount_ids": [
+   1408
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   1098
+  ],
+  "propulsion_ids": [
+   1187
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   1714
+  ],
+  "signatures": [
+   {
+    "ID": 2999,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2999,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2999,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2999,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2999,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2999,
+    "Type": 3001,
+    "Front": 6.41,
+    "Side": 10.91,
+    "Rear": 6.41,
+    "Top": 14.54
+   },
+   {
+    "ID": 2999,
+    "Type": 3002,
+    "Front": 2.73,
+    "Side": 4.85,
+    "Rear": 2.73,
+    "Top": 5.45
+   },
+   {
+    "ID": 2999,
+    "Type": 4001,
+    "Front": 6.41,
+    "Side": 10.91,
+    "Rear": 6.41,
+    "Top": 14.54
+   },
+   {
+    "ID": 2999,
+    "Type": 4002,
+    "Front": 2.73,
+    "Side": 4.85,
+    "Rear": 2.73,
+    "Top": 5.45
+   },
+   {
+    "ID": 2999,
+    "Type": 5001,
+    "Front": 17.2,
+    "Side": 20.3,
+    "Rear": 17.2,
+    "Top": 26.9
+   },
+   {
+    "ID": 2999,
+    "Type": 5002,
+    "Front": 17.2,
+    "Side": 20.3,
+    "Rear": 17.2,
+    "Top": 26.9
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3000,
+   "Category": 2002,
+   "Type": 6002,
+   "Name": "M 313 Admiral Cowan [Sandown Class]",
+   "Comments": "2x SeaFox Inspection ROV",
+   "OperatorCountry": 2030,
+   "OperatorService": 2002,
+   "YearCommissioned": 2008,
+   "YearDecommissioned": 0,
+   "Length": 52.5,
+   "Beam": 10.9,
+   "Draft": 2.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 484,
+   "DisplacementFull": 0,
+   "Crew": 34,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 110,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   316,
+   482,
+   1452,
+   3965,
+   4654,
+   4657,
+   4681
+  ],
+  "mount_ids": [
+   1198,
+   1335,
+   2161
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   418,
+   293
+  ],
+  "propulsion_ids": [
+   696
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   351
+  ],
+  "signatures": [
+   {
+    "ID": 3000,
+    "Type": 1001,
+    "Front": 100.0,
+    "Side": 101.0,
+    "Rear": 102.0,
+    "Top": 101.0
+   },
+   {
+    "ID": 3000,
+    "Type": 1002,
+    "Front": 70.5,
+    "Side": 71.0,
+    "Rear": 72.0,
+    "Top": 71.0
+   },
+   {
+    "ID": 3000,
+    "Type": 1003,
+    "Front": 62.5,
+    "Side": 63.0,
+    "Rear": 64.0,
+    "Top": 63.0
+   },
+   {
+    "ID": 3000,
+    "Type": 1004,
+    "Front": 54.0,
+    "Side": 55.0,
+    "Rear": 56.0,
+    "Top": 55.0
+   },
+   {
+    "ID": 3000,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 3000,
+    "Type": 3001,
+    "Front": 6.43,
+    "Side": 10.94,
+    "Rear": 6.43,
+    "Top": 14.58
+   },
+   {
+    "ID": 3000,
+    "Type": 3002,
+    "Front": 2.73,
+    "Side": 4.86,
+    "Rear": 2.73,
+    "Top": 5.47
+   },
+   {
+    "ID": 3000,
+    "Type": 4001,
+    "Front": 6.43,
+    "Side": 10.94,
+    "Rear": 6.43,
+    "Top": 14.58
+   },
+   {
+    "ID": 3000,
+    "Type": 4002,
+    "Front": 2.73,
+    "Side": 4.86,
+    "Rear": 2.73,
+    "Top": 5.47
+   },
+   {
+    "ID": 3000,
+    "Type": 5001,
+    "Front": 17.3,
+    "Side": 20.5,
+    "Rear": 17.3,
+    "Top": 27.0
+   },
+   {
+    "ID": 3000,
+    "Type": 5002,
+    "Front": 17.3,
+    "Side": 20.5,
+    "Rear": 17.3,
+    "Top": 27.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4560,
+   "Category": 2001,
+   "Type": 7301,
+   "Name": "An-2T Colt",
+   "Comments": "-",
+   "OperatorCountry": 2030,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 0,
+   "Length": 12.4,
+   "Span": 18.2,
+   "Height": 4.1,
+   "WeightEmpty": 3300,
+   "WeightMax": 5440,
+   "WeightPayload": 2140,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 3.5,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   23145,
+   23146,
+   23147
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2399
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1111
+  ],
+  "signatures": [
+   {
+    "ID": 4560,
+    "Type": 3001,
+    "Front": 3.06,
+    "Side": 4.79,
+    "Rear": 3.06,
+    "Top": 8.36
+   },
+   {
+    "ID": 4560,
+    "Type": 3002,
+    "Front": 1.68,
+    "Side": 2.82,
+    "Rear": 2.8,
+    "Top": 4.49
+   },
+   {
+    "ID": 4560,
+    "Type": 4001,
+    "Front": 3.06,
+    "Side": 6.72,
+    "Rear": 13.25,
+    "Top": 9.74
+   },
+   {
+    "ID": 4560,
+    "Type": 4002,
+    "Front": 1.68,
+    "Side": 2.82,
+    "Rear": 1.68,
+    "Top": 4.49
+   },
+   {
+    "ID": 4560,
+    "Type": 5001,
+    "Front": 7.0,
+    "Side": 9.2,
+    "Rear": 7.0,
+    "Top": 9.6
+   },
+   {
+    "ID": 4560,
+    "Type": 5002,
+    "Front": 7.0,
+    "Side": 9.2,
+    "Rear": 7.0,
+    "Top": 9.2
+   }
+  ]
+ }
+]

@@ -1,0 +1,27 @@
+{
+ "297": {
+  "ID": 297,
+  "Name": "30mm DEFA 552 x 2 [125 rnds x 2]",
+  "Comments": "Aircraft, Mirage III",
+  "ArmorGeneral": 1001,
+  "ROF": 5,
+  "Capacity": 5,
+  "MagazineROF": 0,
+  "MagazineCapacity": 0,
+  "DamagePoints": 0.0,
+  "Logistic": 0,
+  "ReserveTarget": 0,
+  "CanHotReload": 0,
+  "Availability": 100,
+  "Trainable": 0,
+  "Autonomous": 0,
+  "LocalControl": 1,
+  "Hypothetical": 0,
+  "Cargo_Type": 0,
+  "Cargo_Mass": 0.0,
+  "Cargo_Area": 0.0,
+  "Cargo_Crew": 0.0,
+  "Cargo_ParadropCapable": 0,
+  "MobileUnitCategory": 0
+ }
+}

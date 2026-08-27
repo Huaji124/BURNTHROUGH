@@ -1,0 +1,2392 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 279,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "10 Al Riffa [FPB-38]",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2002,
+   "YearCommissioned": 1983,
+   "YearDecommissioned": 0,
+   "Length": 38.5,
+   "Beam": 7.0,
+   "Draft": 2.2,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 188,
+   "DisplacementFull": 205,
+   "Crew": 27,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 63,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   3349,
+   3373,
+   3530,
+   3761,
+   3915
+  ],
+  "mount_ids": [
+   469,
+   1335,
+   515
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   832,
+   418
+  ],
+  "propulsion_ids": [
+   698
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   1394
+  ],
+  "signatures": [
+   {
+    "ID": 279,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 279,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 279,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 279,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 279,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 279,
+    "Type": 3001,
+    "Front": 5.86,
+    "Side": 9.97,
+    "Rear": 5.86,
+    "Top": 13.29
+   },
+   {
+    "ID": 279,
+    "Type": 3002,
+    "Front": 2.49,
+    "Side": 4.43,
+    "Rear": 2.49,
+    "Top": 4.98
+   },
+   {
+    "ID": 279,
+    "Type": 4001,
+    "Front": 5.86,
+    "Side": 9.97,
+    "Rear": 5.86,
+    "Top": 13.29
+   },
+   {
+    "ID": 279,
+    "Type": 4002,
+    "Front": 2.49,
+    "Side": 4.43,
+    "Rear": 2.49,
+    "Top": 4.98
+   },
+   {
+    "ID": 279,
+    "Type": 5001,
+    "Front": 14.1,
+    "Side": 17.1,
+    "Rear": 14.1,
+    "Top": 23.6
+   },
+   {
+    "ID": 279,
+    "Type": 5002,
+    "Front": 14.1,
+    "Side": 17.1,
+    "Rear": 14.1,
+    "Top": 23.6
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 280,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "22 Abdul Rahman Al Fadel [TNC-45]",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2002,
+   "YearCommissioned": 1987,
+   "YearDecommissioned": 0,
+   "Length": 44.9,
+   "Beam": 7.0,
+   "Draft": 2.46,
+   "Height": 0.0,
+   "DisplacementEmpty": 228,
+   "DisplacementStandard": 259,
+   "DisplacementFull": 0,
+   "Crew": 42,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 80,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1085,
+   1089,
+   1736,
+   3523,
+   3761,
+   3951
+  ],
+  "mount_ids": [
+   439,
+   492,
+   550,
+   1416,
+   515
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   832,
+   665,
+   834
+  ],
+  "propulsion_ids": [
+   659
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   1397
+  ],
+  "signatures": [
+   {
+    "ID": 280,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 280,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 280,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 280,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 280,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 280,
+    "Type": 3001,
+    "Front": 6.14,
+    "Side": 10.44,
+    "Rear": 6.14,
+    "Top": 13.92
+   },
+   {
+    "ID": 280,
+    "Type": 3002,
+    "Front": 2.61,
+    "Side": 4.64,
+    "Rear": 2.61,
+    "Top": 5.22
+   },
+   {
+    "ID": 280,
+    "Type": 4001,
+    "Front": 6.14,
+    "Side": 10.44,
+    "Rear": 6.14,
+    "Top": 13.92
+   },
+   {
+    "ID": 280,
+    "Type": 4002,
+    "Front": 2.61,
+    "Side": 4.64,
+    "Rear": 2.61,
+    "Top": 5.22
+   },
+   {
+    "ID": 280,
+    "Type": 5001,
+    "Front": 15.7,
+    "Side": 18.8,
+    "Rear": 15.7,
+    "Top": 25.3
+   },
+   {
+    "ID": 280,
+    "Type": 5002,
+    "Front": 15.7,
+    "Side": 18.8,
+    "Rear": 15.7,
+    "Top": 25.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 331,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "50 Al Manama [FPB-62-001]",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2002,
+   "YearCommissioned": 1988,
+   "YearDecommissioned": 0,
+   "Length": 63.0,
+   "Beam": 9.3,
+   "Draft": 2.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 550,
+   "DisplacementFull": 600,
+   "Crew": 49,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 150,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   519,
+   1085,
+   1089,
+   1740,
+   2018,
+   3523,
+   3761
+  ],
+  "mount_ids": [
+   425,
+   492,
+   517,
+   550,
+   515
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   832,
+   594,
+   829,
+   1302
+  ],
+  "propulsion_ids": [
+   658
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   177
+  ],
+  "signatures": [
+   {
+    "ID": 331,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 331,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 331,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 331,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 331,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 331,
+    "Type": 3001,
+    "Front": 6.8,
+    "Side": 11.55,
+    "Rear": 6.8,
+    "Top": 15.4
+   },
+   {
+    "ID": 331,
+    "Type": 3002,
+    "Front": 2.89,
+    "Side": 5.13,
+    "Rear": 2.89,
+    "Top": 5.78
+   },
+   {
+    "ID": 331,
+    "Type": 4001,
+    "Front": 6.8,
+    "Side": 11.55,
+    "Rear": 6.8,
+    "Top": 15.4
+   },
+   {
+    "ID": 331,
+    "Type": 4002,
+    "Front": 2.89,
+    "Side": 5.13,
+    "Rear": 2.89,
+    "Top": 5.78
+   },
+   {
+    "ID": 331,
+    "Type": 5001,
+    "Front": 19.2,
+    "Side": 22.4,
+    "Rear": 19.2,
+    "Top": 29.0
+   },
+   {
+    "ID": 331,
+    "Type": 5002,
+    "Front": 19.2,
+    "Side": 22.4,
+    "Rear": 19.2,
+    "Top": 29.0
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1889,
+   "Category": 2002,
+   "Type": 3409,
+   "Name": "20 Ahmed Al Fateh [TNC-45]",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2002,
+   "YearCommissioned": 1985,
+   "YearDecommissioned": 0,
+   "Length": 44.9,
+   "Beam": 7.0,
+   "Draft": 2.46,
+   "Height": 0.0,
+   "DisplacementEmpty": 228,
+   "DisplacementStandard": 259,
+   "DisplacementFull": 0,
+   "Crew": 42,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 80,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1085,
+   1089,
+   1736,
+   3523,
+   3761,
+   3951
+  ],
+  "mount_ids": [
+   439,
+   492,
+   550,
+   1416,
+   515
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   832,
+   665,
+   834
+  ],
+  "propulsion_ids": [
+   659
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   1397
+  ],
+  "signatures": [
+   {
+    "ID": 1889,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 1889,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 1889,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 1889,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 1889,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 1889,
+    "Type": 3001,
+    "Front": 6.14,
+    "Side": 10.44,
+    "Rear": 6.14,
+    "Top": 13.92
+   },
+   {
+    "ID": 1889,
+    "Type": 3002,
+    "Front": 2.61,
+    "Side": 4.64,
+    "Rear": 2.61,
+    "Top": 5.22
+   },
+   {
+    "ID": 1889,
+    "Type": 4001,
+    "Front": 6.14,
+    "Side": 10.44,
+    "Rear": 6.14,
+    "Top": 13.92
+   },
+   {
+    "ID": 1889,
+    "Type": 4002,
+    "Front": 2.61,
+    "Side": 4.64,
+    "Rear": 2.61,
+    "Top": 5.22
+   },
+   {
+    "ID": 1889,
+    "Type": 5001,
+    "Front": 15.7,
+    "Side": 18.8,
+    "Rear": 15.7,
+    "Top": 25.3
+   },
+   {
+    "ID": 1889,
+    "Type": 5002,
+    "Front": 15.7,
+    "Side": 18.8,
+    "Rear": 15.7,
+    "Top": 25.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 3081,
+   "Category": 2002,
+   "Type": 3303,
+   "Name": "90 Sabha [Perry]",
+   "Comments": "ex FFG-24",
+   "OperatorCountry": 2008,
+   "OperatorService": 2002,
+   "YearCommissioned": 1995,
+   "YearDecommissioned": 0,
+   "Length": 135.9,
+   "Beam": 13.5,
+   "Draft": 7.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 2500,
+   "DisplacementStandard": 3200,
+   "DisplacementFull": 3800,
+   "Crew": 176,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 590,
+   "MaxSeaState": 6,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 16,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1069,
+   1095,
+   1380,
+   1484,
+   1501,
+   1642,
+   1615
+  ],
+  "mount_ids": [
+   550,
+   553,
+   561,
+   1046,
+   1219,
+   1308,
+   1414
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   64,
+   1302,
+   403,
+   761,
+   935
+  ],
+  "propulsion_ids": [
+   983
+  ],
+  "comm_ids": [
+   209,
+   219,
+   227,
+   264
+  ],
+  "fuel_ids": [
+   1418,
+   28
+  ],
+  "signatures": [
+   {
+    "ID": 3081,
+    "Type": 1001,
+    "Front": 110.0,
+    "Side": 111.0,
+    "Rear": 112.0,
+    "Top": 111.0
+   },
+   {
+    "ID": 3081,
+    "Type": 1002,
+    "Front": 80.5,
+    "Side": 81.0,
+    "Rear": 82.0,
+    "Top": 81.0
+   },
+   {
+    "ID": 3081,
+    "Type": 1003,
+    "Front": 72.5,
+    "Side": 73.0,
+    "Rear": 74.0,
+    "Top": 73.0
+   },
+   {
+    "ID": 3081,
+    "Type": 1004,
+    "Front": 64.0,
+    "Side": 65.0,
+    "Rear": 66.0,
+    "Top": 65.0
+   },
+   {
+    "ID": 3081,
+    "Type": 2001,
+    "Front": 35.0,
+    "Side": 200.0,
+    "Rear": 35.0,
+    "Top": 200.0
+   },
+   {
+    "ID": 3081,
+    "Type": 3001,
+    "Front": 8.56,
+    "Side": 14.55,
+    "Rear": 8.56,
+    "Top": 19.4
+   },
+   {
+    "ID": 3081,
+    "Type": 3002,
+    "Front": 3.64,
+    "Side": 6.47,
+    "Rear": 3.64,
+    "Top": 7.27
+   },
+   {
+    "ID": 3081,
+    "Type": 4001,
+    "Front": 8.56,
+    "Side": 14.55,
+    "Rear": 8.56,
+    "Top": 19.4
+   },
+   {
+    "ID": 3081,
+    "Type": 4002,
+    "Front": 3.64,
+    "Side": 6.47,
+    "Rear": 3.64,
+    "Top": 7.27
+   },
+   {
+    "ID": 3081,
+    "Type": 5001,
+    "Front": 27.2,
+    "Side": 30.8,
+    "Rear": 27.2,
+    "Top": 37.3
+   },
+   {
+    "ID": 3081,
+    "Type": 5002,
+    "Front": 27.2,
+    "Side": 30.8,
+    "Rear": 27.2,
+    "Top": 37.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1034,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16CG Blk 40 Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1991,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8280,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   577,
+   1720
+  ],
+  "mount_ids": [
+   286,
+   1740
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2065,
+   2092,
+   2093,
+   2096,
+   3217,
+   4411,
+   4413,
+   4414,
+   4415,
+   4416,
+   4417,
+   4418,
+   4419,
+   11961,
+   11963
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   347
+  ],
+  "comm_ids": [
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 1034,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 1034,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 1034,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 1034,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 1034,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 1034,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1175,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16CG Blk 40 Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8280,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   577,
+   1720
+  ],
+  "mount_ids": [
+   286,
+   1740
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2065,
+   2092,
+   2093,
+   2096,
+   3217,
+   4411,
+   4413,
+   4414,
+   4415,
+   4416,
+   4417,
+   4418,
+   4419,
+   11961,
+   11963
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   347
+  ],
+  "comm_ids": [
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 1175,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 1175,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 1175,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 1175,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 1175,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 1175,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1176,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16CG Blk 40 Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 2003,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8280,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 1,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   577,
+   1720
+  ],
+  "mount_ids": [
+   286,
+   1740
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2065,
+   2092,
+   2093,
+   2096,
+   2098,
+   3217,
+   4411,
+   4413,
+   4414,
+   4415,
+   4416,
+   4417,
+   4418,
+   4419,
+   11961,
+   11962,
+   11963,
+   16813
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   347
+  ],
+  "comm_ids": [
+   43,
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 1176,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 1176,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 1176,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 1176,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 1176,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 1176,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1800,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5E Tiger II",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1989,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 8.0,
+   "Height": 4.1,
+   "WeightEmpty": 4349,
+   "WeightMax": 11214,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.5,
+   "ClimbRate": 97.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   858,
+   305
+  ],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   6533,
+   6534,
+   6535,
+   6536,
+   6537,
+   6538,
+   6914,
+   14158
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   376
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 1800,
+    "Type": 3001,
+    "Front": 2.31,
+    "Side": 5.31,
+    "Rear": 2.31,
+    "Top": 6.31
+   },
+   {
+    "ID": 1800,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 2.12,
+    "Top": 3.55
+   },
+   {
+    "ID": 1800,
+    "Type": 4001,
+    "Front": 2.31,
+    "Side": 7.2,
+    "Rear": 11.88,
+    "Top": 8.07
+   },
+   {
+    "ID": 1800,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 1.33,
+    "Top": 3.55
+   },
+   {
+    "ID": 1800,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 1800,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1809,
+   "Category": 2003,
+   "Type": 6001,
+   "Name": "SA.365F Dauphin 2",
+   "Comments": "2x, Panther, Naval AS.365N",
+   "OperatorCountry": 2008,
+   "OperatorService": 2002,
+   "YearCommissioned": 1988,
+   "YearDecommissioned": 0,
+   "Length": 11.3,
+   "Span": 3.0,
+   "Height": 4.1,
+   "WeightEmpty": 2200,
+   "WeightMax": 4100,
+   "WeightPayload": 1600,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   130,
+   2840
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   2550,
+   5422,
+   8507,
+   14690,
+   14698
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1537
+  ],
+  "comm_ids": [
+   187
+  ],
+  "fuel_ids": [
+   72
+  ],
+  "signatures": [
+   {
+    "ID": 1809,
+    "Type": 3001,
+    "Front": 1.54,
+    "Side": 4.51,
+    "Rear": 1.54,
+    "Top": 4.22
+   },
+   {
+    "ID": 1809,
+    "Type": 3002,
+    "Front": 0.95,
+    "Side": 2.68,
+    "Rear": 1.41,
+    "Top": 2.54
+   },
+   {
+    "ID": 1809,
+    "Type": 4001,
+    "Front": 1.54,
+    "Side": 6.45,
+    "Rear": 10.15,
+    "Top": 6.17
+   },
+   {
+    "ID": 1809,
+    "Type": 4002,
+    "Front": 0.95,
+    "Side": 2.68,
+    "Rear": 0.95,
+    "Top": 2.54
+   },
+   {
+    "ID": 1809,
+    "Type": 5001,
+    "Front": -1.3,
+    "Side": 1.3,
+    "Rear": -1.3,
+    "Top": 1.7
+   },
+   {
+    "ID": 1809,
+    "Type": 5002,
+    "Front": -1.3,
+    "Side": 1.3,
+    "Rear": -1.3,
+    "Top": 1.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3549,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16DG Blk 40 Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1991,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8280,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 2,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   577,
+   1720
+  ],
+  "mount_ids": [
+   286,
+   1740
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2065,
+   2092,
+   2093,
+   2096,
+   3217,
+   4411,
+   4413,
+   4414,
+   4415,
+   4416,
+   4417,
+   4418,
+   4419,
+   11961,
+   11963
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   347
+  ],
+  "comm_ids": [
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 3549,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 3549,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 3549,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 3549,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 3549,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 3549,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3550,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16DG Blk 40 Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8280,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 2,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   577,
+   1720
+  ],
+  "mount_ids": [
+   286,
+   1740
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2065,
+   2092,
+   2093,
+   2096,
+   3217,
+   4411,
+   4413,
+   4414,
+   4415,
+   4416,
+   4417,
+   4418,
+   4419,
+   11961,
+   11963
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   347
+  ],
+  "comm_ids": [
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 3550,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 3550,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 3550,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 3550,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 3550,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 3550,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3551,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-16DG Blk 40 Falcon",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 2003,
+   "YearDecommissioned": 0,
+   "Length": 14.5,
+   "Span": 9.5,
+   "Height": 4.8,
+   "WeightEmpty": 8280,
+   "WeightMax": 19200,
+   "WeightPayload": 6894,
+   "Crew": 2,
+   "Agility": 4.9,
+   "ClimbRate": 174.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   577,
+   1720
+  ],
+  "mount_ids": [
+   286,
+   1740
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2065,
+   2092,
+   2093,
+   2096,
+   2098,
+   3217,
+   4411,
+   4413,
+   4414,
+   4415,
+   4416,
+   4417,
+   4418,
+   4419,
+   11961,
+   11962,
+   11963,
+   16813
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   347
+  ],
+  "comm_ids": [
+   43,
+   165
+  ],
+  "fuel_ids": [
+   340
+  ],
+  "signatures": [
+   {
+    "ID": 3551,
+    "Type": 3001,
+    "Front": 2.46,
+    "Side": 5.52,
+    "Rear": 2.46,
+    "Top": 6.72
+   },
+   {
+    "ID": 3551,
+    "Type": 3002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 2.25,
+    "Top": 3.74
+   },
+   {
+    "ID": 3551,
+    "Type": 4001,
+    "Front": 2.46,
+    "Side": 7.38,
+    "Rear": 12.17,
+    "Top": 8.41
+   },
+   {
+    "ID": 3551,
+    "Type": 4002,
+    "Front": 1.4,
+    "Side": 3.18,
+    "Rear": 1.4,
+    "Top": 3.74
+   },
+   {
+    "ID": 3551,
+    "Type": 5001,
+    "Front": 3.4,
+    "Side": 5.7,
+    "Rear": 3.4,
+    "Top": 6.1
+   },
+   {
+    "ID": 3551,
+    "Type": 5002,
+    "Front": 2.1,
+    "Side": 4.5,
+    "Rear": 2.1,
+    "Top": 4.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3581,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5F Tiger II",
+   "Comments": "-",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1989,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 8.0,
+   "Height": 4.1,
+   "WeightEmpty": 4349,
+   "WeightMax": 11214,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 3.5,
+   "ClimbRate": 97.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   858,
+   305
+  ],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   6533,
+   6534,
+   6535,
+   6536,
+   6537,
+   6538,
+   6914,
+   14158
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   376
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 3581,
+    "Type": 3001,
+    "Front": 2.31,
+    "Side": 5.31,
+    "Rear": 2.31,
+    "Top": 6.31
+   },
+   {
+    "ID": 3581,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 2.12,
+    "Top": 3.55
+   },
+   {
+    "ID": 3581,
+    "Type": 4001,
+    "Front": 2.31,
+    "Side": 7.2,
+    "Rear": 11.88,
+    "Top": 8.07
+   },
+   {
+    "ID": 3581,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 1.33,
+    "Top": 3.55
+   },
+   {
+    "ID": 3581,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 3581,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3667,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Hawk 129 LIFT",
+   "Comments": "6x",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 2007,
+   "YearDecommissioned": 0,
+   "Length": 12.4,
+   "Span": 9.9,
+   "Height": 4.0,
+   "WeightEmpty": 4400,
+   "WeightMax": 9100,
+   "WeightPayload": 3084,
+   "Crew": 2,
+   "Agility": 3.0,
+   "ClimbRate": 51.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2919,
+   1727
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   18255,
+   18256,
+   18257,
+   18258
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2238
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   513
+  ],
+  "signatures": [
+   {
+    "ID": 3667,
+    "Type": 3001,
+    "Front": 2.3,
+    "Side": 4.77,
+    "Rear": 2.3,
+    "Top": 6.29
+   },
+   {
+    "ID": 3667,
+    "Type": 3002,
+    "Front": 1.32,
+    "Side": 2.81,
+    "Rear": 2.11,
+    "Top": 3.54
+   },
+   {
+    "ID": 3667,
+    "Type": 4001,
+    "Front": 2.3,
+    "Side": 6.7,
+    "Rear": 11.86,
+    "Top": 8.05
+   },
+   {
+    "ID": 3667,
+    "Type": 4002,
+    "Front": 1.32,
+    "Side": 2.81,
+    "Rear": 1.32,
+    "Top": 3.54
+   },
+   {
+    "ID": 3667,
+    "Type": 5001,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 6.3
+   },
+   {
+    "ID": 3667,
+    "Type": 5002,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3669,
+   "Category": 2001,
+   "Type": 8101,
+   "Name": "T.67M-260 Firefly",
+   "Comments": "3x",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 2003,
+   "YearDecommissioned": 0,
+   "Length": 7.55,
+   "Span": 10.69,
+   "Height": 2.36,
+   "WeightEmpty": 794,
+   "WeightMax": 1157,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 7.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   18261,
+   18262
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2291
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1684
+  ],
+  "signatures": [
+   {
+    "ID": 3669,
+    "Type": 3001,
+    "Front": 1.92,
+    "Side": 3.03,
+    "Rear": 1.92,
+    "Top": 5.25
+   },
+   {
+    "ID": 3669,
+    "Type": 3002,
+    "Front": 1.14,
+    "Side": 1.93,
+    "Rear": 1.76,
+    "Top": 3.04
+   },
+   {
+    "ID": 3669,
+    "Type": 4001,
+    "Front": 1.92,
+    "Side": 4.95,
+    "Rear": 11.05,
+    "Top": 7.14
+   },
+   {
+    "ID": 3669,
+    "Type": 4002,
+    "Front": 1.14,
+    "Side": 1.93,
+    "Rear": 1.14,
+    "Top": 3.04
+   },
+   {
+    "ID": 3669,
+    "Type": 5001,
+    "Front": 1.4,
+    "Side": 3.8,
+    "Rear": 1.4,
+    "Top": 4.2
+   },
+   {
+    "ID": 3669,
+    "Type": 5002,
+    "Front": 1.4,
+    "Side": 3.8,
+    "Rear": 1.4,
+    "Top": 3.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3678,
+   "Category": 2001,
+   "Type": 7301,
+   "Name": "Avro RJ85 [Mod BAe 146-200]",
+   "Comments": "1x + 1x VIP",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 28.55,
+   "Span": 26.34,
+   "Height": 8.59,
+   "WeightEmpty": 24820,
+   "WeightMax": 42185,
+   "WeightPayload": 9500,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   970
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   18279,
+   18280
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2293
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1685
+  ],
+  "signatures": [
+   {
+    "ID": 3678,
+    "Type": 3001,
+    "Front": 5.18,
+    "Side": 9.95,
+    "Rear": 5.18,
+    "Top": 14.14
+   },
+   {
+    "ID": 3678,
+    "Type": 3002,
+    "Front": 2.6,
+    "Side": 5.19,
+    "Rear": 4.75,
+    "Top": 6.95
+   },
+   {
+    "ID": 3678,
+    "Type": 4001,
+    "Front": 5.18,
+    "Side": 10.93,
+    "Rear": 16.25,
+    "Top": 13.82
+   },
+   {
+    "ID": 3678,
+    "Type": 4002,
+    "Front": 2.6,
+    "Side": 5.19,
+    "Rear": 2.6,
+    "Top": 6.95
+   },
+   {
+    "ID": 3678,
+    "Type": 5001,
+    "Front": 13.3,
+    "Side": 15.3,
+    "Rear": 13.3,
+    "Top": 15.7
+   },
+   {
+    "ID": 3678,
+    "Type": 5002,
+    "Front": 13.3,
+    "Side": 15.3,
+    "Rear": 13.3,
+    "Top": 15.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3679,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "Avro RJ100 [Mod BAe 146-300]",
+   "Comments": "3x, VIP",
+   "OperatorCountry": 2008,
+   "OperatorService": 2001,
+   "YearCommissioned": 2002,
+   "YearDecommissioned": 0,
+   "Length": 30.99,
+   "Span": 26.34,
+   "Height": 8.59,
+   "WeightEmpty": 25670,
+   "WeightMax": 44226,
+   "WeightPayload": 10640,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   970
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   18281,
+   18282
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2293
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1685
+  ],
+  "signatures": [
+   {
+    "ID": 3679,
+    "Type": 3001,
+    "Front": 5.39,
+    "Side": 10.54,
+    "Rear": 5.39,
+    "Top": 14.71
+   },
+   {
+    "ID": 3679,
+    "Type": 3002,
+    "Front": 2.69,
+    "Side": 5.44,
+    "Rear": 4.93,
+    "Top": 7.18
+   },
+   {
+    "ID": 3679,
+    "Type": 4001,
+    "Front": 5.39,
+    "Side": 11.36,
+    "Rear": 16.5,
+    "Top": 14.19
+   },
+   {
+    "ID": 3679,
+    "Type": 4002,
+    "Front": 2.69,
+    "Side": 5.44,
+    "Rear": 2.69,
+    "Top": 7.18
+   },
+   {
+    "ID": 3679,
+    "Type": 5001,
+    "Front": 13.8,
+    "Side": 15.8,
+    "Rear": 13.8,
+    "Top": 16.2
+   },
+   {
+    "ID": 3679,
+    "Type": 5002,
+    "Front": 13.8,
+    "Side": 15.8,
+    "Rear": 13.8,
+    "Top": 15.8
+   }
+  ]
+ }
+]

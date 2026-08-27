@@ -1,0 +1,110 @@
+{
+ "207": {
+  "ID": 207,
+  "Name": "1x AI-25TL",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1721.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.75,
+  "SFCAfterburner": 0.0
+ },
+ "250": {
+  "ID": 250,
+  "Name": "2x M-507A Diesels, 1x M-8 Gas Turbine, CODAG",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "575": {
+  "ID": 575,
+  "Name": "2x Maybach Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "811": {
+  "ID": 811,
+  "Name": "2x MTU 16V 396 TB94 Diesels, 1x LM-500 General Electric Gas Turbine",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1159": {
+  "ID": 1159,
+  "Name": "1x Napier 9-59K Deltic Diesel",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1530": {
+  "ID": 1530,
+  "Name": "2x TV2-117A",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1670.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.6,
+  "SFCAfterburner": 0.0
+ },
+ "1535": {
+  "ID": 1535,
+  "Name": "2x AE2100D3",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 6000.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.441,
+  "SFCAfterburner": 0.0
+ },
+ "1537": {
+  "ID": 1537,
+  "Name": "2x Arriel 1C",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 660.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.55,
+  "SFCAfterburner": 0.0
+ },
+ "1936": {
+  "ID": 1936,
+  "Name": "2x Wichmann 7AX Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

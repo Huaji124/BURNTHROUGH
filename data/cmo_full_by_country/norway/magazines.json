@@ -1,0 +1,222 @@
+{
+ "14": {
+  "ID": 14,
+  "Name": "Mistral MANPADS",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "69": {
+  "ID": 69,
+  "Name": "20mm/80 Oerlikon",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "197": {
+  "ID": 197,
+  "Name": "MASS",
+  "Comments": "2x Mounts, Multi Ammo Softkill",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 128,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "339": {
+  "ID": 339,
+  "Name": "40mm/70 Single Breda Type 564",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "354": {
+  "ID": 354,
+  "Name": "DL-12T SKWS DL",
+  "Comments": "2x Mounts, Norway, Loki, Sea Gnat",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "378": {
+  "ID": 378,
+  "Name": "40mm/70 Single Breda Type 107",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "398": {
+  "ID": 398,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "402": {
+  "ID": 402,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "504": {
+  "ID": 504,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7H",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "531": {
+  "ID": 531,
+  "Name": "Stingray Mod 0 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "542": {
+  "ID": 542,
+  "Name": "12.7mm/50 MG",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "659": {
+  "ID": 659,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "780": {
+  "ID": 780,
+  "Name": "Simbad [Mistral]",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "897": {
+  "ID": 897,
+  "Name": "20mm/80 Oerlikon Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "923": {
+  "ID": 923,
+  "Name": "20mm/80 Rhinemetall Mk20 Rh202",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1076": {
+  "ID": 1076,
+  "Name": "20mm/80 Rhinemetall Mk20 Rh202",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1339": {
+  "ID": 1339,
+  "Name": "20mm/80 Rhinemetall Mk20 Rh202",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

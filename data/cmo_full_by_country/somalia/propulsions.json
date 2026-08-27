@@ -1,0 +1,50 @@
+{
+ "421": {
+  "ID": 421,
+  "Name": "2x AI-24T",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2560.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.51,
+  "SFCAfterburner": 0.0
+ },
+ "1176": {
+  "ID": 1176,
+  "Name": "1x VK-1F",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 2700.0,
+  "ThrustPerEngineAfterburner": 3377.0,
+  "SFCMilitary": 1.1,
+  "SFCAfterburner": 2.66
+ },
+ "1480": {
+  "ID": 1480,
+  "Name": "1x R-13F-300",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4070.0,
+  "ThrustPerEngineAfterburner": 6495.0,
+  "SFCMilitary": 0.95,
+  "SFCAfterburner": 2.25
+ },
+ "1530": {
+  "ID": 1530,
+  "Name": "2x TV2-117A",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1670.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.6,
+  "SFCAfterburner": 0.0
+ }
+}

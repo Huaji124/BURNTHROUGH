@@ -1,0 +1,432 @@
+{
+ "158": {
+  "ID": 158,
+  "Name": "20mm/120 Meroka Mod 2B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "159": {
+  "ID": 159,
+  "Name": "20mm/120 Meroka Mod 2A",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "161": {
+  "ID": 161,
+  "Name": "20mm/120 Meroka Mod 2A",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "162": {
+  "ID": 162,
+  "Name": "20mm/120 Meroka Mod 2B",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "177": {
+  "ID": 177,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "342": {
+  "ID": 342,
+  "Name": "Helicopter Magazine",
+  "Comments": "Spain, 2003",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "379": {
+  "ID": 379,
+  "Name": "40mm/70 Single Breda Type 564",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "399": {
+  "ID": 399,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "403": {
+  "ID": 403,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "407": {
+  "ID": 407,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "408": {
+  "ID": 408,
+  "Name": "Mk36 SRBOC",
+  "Comments": "6x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "418": {
+  "ID": 418,
+  "Name": "Barricade DL",
+  "Comments": "2x Mounts, 12x Tube",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "498": {
+  "ID": 498,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "504": {
+  "ID": 504,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7H",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "597": {
+  "ID": 597,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "659": {
+  "ID": 659,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "660": {
+  "ID": 660,
+  "Name": "Mk16 ASROC",
+  "Comments": "Mk46 Mod 2",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "710": {
+  "ID": 710,
+  "Name": "Carrier Magazine",
+  "Comments": "Spain, CV, 1997",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "718": {
+  "ID": 718,
+  "Name": "Mk36 SRBOC",
+  "Comments": "6x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "756": {
+  "ID": 756,
+  "Name": "Mk37 Mod 3",
+  "Comments": "Baleares, 12 Torpedoes Total",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "816": {
+  "ID": 816,
+  "Name": "Mk46 Mod 5 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "826": {
+  "ID": 826,
+  "Name": "20mm/120 Meroka Mod 2",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "925": {
+  "ID": 925,
+  "Name": "Carrier Magazine",
+  "Comments": "Spain, CV, 2002",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "938": {
+  "ID": 938,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1013": {
+  "ID": 1013,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1015": {
+  "ID": 1015,
+  "Name": "Mk46 Mod 5 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 18,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1071": {
+  "ID": 1071,
+  "Name": "40mm/60 Quad Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1075": {
+  "ID": 1075,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "9x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 1800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1080": {
+  "ID": 1080,
+  "Name": "20mm/120 Meroka Mod 2",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1145": {
+  "ID": 1145,
+  "Name": "Mk16 ASROC",
+  "Comments": "Mk46 Mod 5",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1272": {
+  "ID": 1272,
+  "Name": "Carrier Magazine",
+  "Comments": "Spain, CV, 1988",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1305": {
+  "ID": 1305,
+  "Name": "25mm/75 Mk38 Mod 2 Bushmaster",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1328": {
+  "ID": 1328,
+  "Name": "25mm/75 Mk38 Mod 2 Bushmaster",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1329": {
+  "ID": 1329,
+  "Name": "12.7mm/50 Mini-Typhoon",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1375": {
+  "ID": 1375,
+  "Name": "Carrier Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

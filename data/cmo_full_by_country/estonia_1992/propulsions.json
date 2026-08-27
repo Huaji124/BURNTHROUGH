@@ -1,0 +1,50 @@
+{
+ "21": {
+  "ID": 21,
+  "Name": "3x Burmeister & Wain 16V 23LU Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "696": {
+  "ID": 696,
+  "Name": "2x Paxman-Valenta 6RP200E Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1187": {
+  "ID": 1187,
+  "Name": "2x 40DM Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2399": {
+  "ID": 2399,
+  "Name": "1x Shvetsov ASh-62",
+  "Type": 2004,
+  "Comments": "Wright R-1820 Copy",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1000.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.5,
+  "SFCAfterburner": 0.0
+ }
+}

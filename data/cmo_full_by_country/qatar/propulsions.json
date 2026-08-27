@@ -1,0 +1,110 @@
+{
+ "272": {
+  "ID": 272,
+  "Name": "2x Gnome H.1400-1",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1660.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.62,
+  "SFCAfterburner": 0.0
+ },
+ "656": {
+  "ID": 656,
+  "Name": "2x Larzac 04-C5",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1362.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.71,
+  "SFCAfterburner": 0.0
+ },
+ "992": {
+  "ID": 992,
+  "Name": "4x MTU 20V 538 TB91 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1122": {
+  "ID": 1122,
+  "Name": "4x MTU 20V 538 TB93 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1461": {
+  "ID": 1461,
+  "Name": "1x M53-P2",
+  "Type": 2002,
+  "Comments": "2000 liter tank",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 6562.0,
+  "ThrustPerEngineAfterburner": 8943.0,
+  "SFCMilitary": 0.92,
+  "SFCAfterburner": 2.12
+ },
+ "1525": {
+  "ID": 1525,
+  "Name": "2x T700-GE-701D",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1944.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.465,
+  "SFCAfterburner": 0.0
+ },
+ "1912": {
+  "ID": 1912,
+  "Name": "2x F110-GE-129",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 8081.0,
+  "ThrustPerEngineAfterburner": 13211.0,
+  "SFCMilitary": 0.726,
+  "SFCAfterburner": 2.06
+ },
+ "1969": {
+  "ID": 1969,
+  "Name": "1x Atar 9K-50",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 5018.0,
+  "ThrustPerEngineAfterburner": 7206.0,
+  "SFCMilitary": 0.981,
+  "SFCAfterburner": 1.991
+ },
+ "2404": {
+  "ID": 2404,
+  "Name": "2x SNECMA M88-9",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 6118.0,
+  "ThrustPerEngineAfterburner": 9177.0,
+  "SFCMilitary": 0.775,
+  "SFCAfterburner": 2.0
+ }
+}

@@ -1,0 +1,462 @@
+{
+ "11": {
+  "ID": 11,
+  "Name": "30mm/75 Twin Oerlikon Emerlec-30",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "197": {
+  "ID": 197,
+  "Name": "MASS",
+  "Comments": "2x Mounts, Multi Ammo Softkill",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 128,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "294": {
+  "ID": 294,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "323": {
+  "ID": 323,
+  "Name": "Mk46 Mod 1 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "424": {
+  "ID": 424,
+  "Name": "Protean DL",
+  "Comments": "4x Mounts, Philax",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 144,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "428": {
+  "ID": 428,
+  "Name": "Mk34 RBOC",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "430": {
+  "ID": 430,
+  "Name": "Mk33 RBOC",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "470": {
+  "ID": 470,
+  "Name": "20mm Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "472": {
+  "ID": 472,
+  "Name": "20mm Single",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "498": {
+  "ID": 498,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "499": {
+  "ID": 499,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "594": {
+  "ID": 594,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "597": {
+  "ID": 597,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "759": {
+  "ID": 759,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "771": {
+  "ID": 771,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "772": {
+  "ID": 772,
+  "Name": "40mm/60 Quad Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "815": {
+  "ID": 815,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 170,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "823": {
+  "ID": 823,
+  "Name": "7.62mm MG",
+  "Comments": "4x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "889": {
+  "ID": 889,
+  "Name": "Helicopter Magazine",
+  "Comments": "Sea Skua, 8x",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "910": {
+  "ID": 910,
+  "Name": "30mm/75 Twin Oerlikon Emerlec-30",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "941": {
+  "ID": 941,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "950": {
+  "ID": 950,
+  "Name": "40mm/70 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "951": {
+  "ID": 951,
+  "Name": "20mm/76 Sea Vulcan",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "954": {
+  "ID": 954,
+  "Name": "40mm/56 Mk1 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "977": {
+  "ID": 977,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 255,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "994": {
+  "ID": 994,
+  "Name": "30mm Goalkeeper",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1007": {
+  "ID": 1007,
+  "Name": "DAGAIE Mk2 AMBL-1B",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1020": {
+  "ID": 1020,
+  "Name": "40mm/56 Mk1 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1029": {
+  "ID": 1029,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1040": {
+  "ID": 1040,
+  "Name": "30mm Goalkeeper",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1041": {
+  "ID": 1041,
+  "Name": "30mm/75 Twin Oerlikon Emerlec-30",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1042": {
+  "ID": 1042,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1158": {
+  "ID": 1158,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1202": {
+  "ID": 1202,
+  "Name": "40mm/70 Twin Breda Vesta Fast Forty",
+  "Comments": "2x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 170,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1251": {
+  "ID": 1251,
+  "Name": "Mk11 Hedgehog ASW Mortar",
+  "Comments": "2x",
+  "ArmorGeneral": 1001,
+  "ROF": 180,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1253": {
+  "ID": 1253,
+  "Name": "Mk9 Depth Charge",
+  "Comments": "36x DCs",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1317": {
+  "ID": 1317,
+  "Name": "K-745 Blue Shark [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1352": {
+  "ID": 1352,
+  "Name": "AK-306",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1446": {
+  "ID": 1446,
+  "Name": "AGS-30 Grenade Launcher",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 970,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1451": {
+  "ID": 1451,
+  "Name": "12.7mm/50 Mini-Typhoon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

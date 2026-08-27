@@ -1,0 +1,512 @@
+{
+ "61": {
+  "ID": 61,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "73": {
+  "ID": 73,
+  "Name": "MU-90 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "200": {
+  "ID": 200,
+  "Name": "Mk46 Mod 5A(SW) [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "201": {
+  "ID": 201,
+  "Name": "Mk46 Mod 5A(SW) [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "256": {
+  "ID": 256,
+  "Name": "Carrier Magazine",
+  "Comments": "Australia",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "275": {
+  "ID": 275,
+  "Name": "Outfit DLC Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "293": {
+  "ID": 293,
+  "Name": "30mm/75 DS30B Mk1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "382": {
+  "ID": 382,
+  "Name": "DL-6T SKWS DL",
+  "Comments": "4x Mounts, 2004, PIRATE, LRCR",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "403": {
+  "ID": 403,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "420": {
+  "ID": 420,
+  "Name": "Super Barricade DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "428": {
+  "ID": 428,
+  "Name": "Mk34 RBOC",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "455": {
+  "ID": 455,
+  "Name": "DL-6T SKWS DL",
+  "Comments": "2x Mounts, 2004, PIRATE, LRCR",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "471": {
+  "ID": 471,
+  "Name": "25mm/75 Typhoon-G",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "498": {
+  "ID": 498,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "499": {
+  "ID": 499,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "544": {
+  "ID": 544,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "545": {
+  "ID": 545,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "597": {
+  "ID": 597,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "624": {
+  "ID": 624,
+  "Name": "MU-90 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "632": {
+  "ID": 632,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1A",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "654": {
+  "ID": 654,
+  "Name": "RB 70 Rayrider Mk2 MANPADS",
+  "Comments": "Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "724": {
+  "ID": 724,
+  "Name": "MU-90 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "823": {
+  "ID": 823,
+  "Name": "7.62mm MG",
+  "Comments": "4x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "835": {
+  "ID": 835,
+  "Name": "7.62mm MG",
+  "Comments": "1x Mount, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "873": {
+  "ID": 873,
+  "Name": "Mk53 Nulka",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "904": {
+  "ID": 904,
+  "Name": "12.7mm/50 MG",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 600,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "956": {
+  "ID": 956,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "981": {
+  "ID": 981,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "990": {
+  "ID": 990,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 540,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1030": {
+  "ID": 1030,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 405,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1042": {
+  "ID": 1042,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1054": {
+  "ID": 1054,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1152": {
+  "ID": 1152,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1158": {
+  "ID": 1158,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1164": {
+  "ID": 1164,
+  "Name": "Mk46 Mod 2 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 18,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1166": {
+  "ID": 1166,
+  "Name": "Mk46 Mod 5 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1292": {
+  "ID": 1292,
+  "Name": "25mm/75 Typhoon-G",
+  "Comments": "2x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1294": {
+  "ID": 1294,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "1x Mount, 10 rnds",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1344": {
+  "ID": 1344,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 820,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1375": {
+  "ID": 1375,
+  "Name": "Carrier Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1378": {
+  "ID": 1378,
+  "Name": "7.62mm MG",
+  "Comments": "6x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 600,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1379": {
+  "ID": 1379,
+  "Name": "25mm/75 Typhoon-G",
+  "Comments": "4x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1418": {
+  "ID": 1418,
+  "Name": "Helicopter Magazine",
+  "Comments": "Australia, Mk46",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1452": {
+  "ID": 1452,
+  "Name": "Helicopter Magazine",
+  "Comments": "Australia, Mk54, AGM-114K, MH-60R",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

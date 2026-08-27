@@ -1,0 +1,62 @@
+{
+ "342": {
+  "ID": 342,
+  "Name": "1x Atar 9C",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4281.0,
+  "ThrustPerEngineAfterburner": 6205.0,
+  "SFCMilitary": 1.01,
+  "SFCAfterburner": 2.03
+ },
+ "345": {
+  "ID": 345,
+  "Name": "2x Avon RA.28 Mk.207",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 4562.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.88,
+  "SFCAfterburner": 0.0
+ },
+ "376": {
+  "ID": 376,
+  "Name": "2x J85-GE-21",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1634.0,
+  "ThrustPerEngineAfterburner": 2270.0,
+  "SFCMilitary": 1.24,
+  "SFCAfterburner": 2.13
+ },
+ "713": {
+  "ID": 713,
+  "Name": "2x F404-GE-402",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 5420.0,
+  "ThrustPerEngineAfterburner": 8030.0,
+  "SFCMilitary": 0.85,
+  "SFCAfterburner": 1.74
+ },
+ "1965": {
+  "ID": 1965,
+  "Name": "1x Atar 9C",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4281.0,
+  "ThrustPerEngineAfterburner": 6205.0,
+  "SFCMilitary": 1.01,
+  "SFCAfterburner": 2.03
+ }
+}

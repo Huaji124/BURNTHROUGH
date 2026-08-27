@@ -1,0 +1,26 @@
+{
+ "735": {
+  "ID": 735,
+  "Name": "2x EJ200",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 6015.0,
+  "ThrustPerEngineAfterburner": 9080.0,
+  "SFCMilitary": 0.785,
+  "SFCAfterburner": 1.667
+ },
+ "1962": {
+  "ID": 1962,
+  "Name": "1x RM6C",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 5493.0,
+  "ThrustPerEngineAfterburner": 7134.0,
+  "SFCMilitary": 0.932,
+  "SFCAfterburner": 1.853
+ }
+}

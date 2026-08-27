@@ -1,0 +1,942 @@
+{
+ "36": {
+  "ID": 36,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO2",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "140": {
+  "ID": 140,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "177": {
+  "ID": 177,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "191": {
+  "ID": 191,
+  "Name": "Outfit DLJ(2)",
+  "Comments": "8x Mounts, 1994",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "192": {
+  "ID": 192,
+  "Name": "Outfit DLB",
+  "Comments": "2x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "193": {
+  "ID": 193,
+  "Name": "Outfit DLH",
+  "Comments": "4x Mounts, 2004, Active Decoy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "Outfit DLH",
+  "Comments": "8x Mounts, 2004, Active Decoy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "217": {
+  "ID": 217,
+  "Name": "Mk46 Mod 2 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "227": {
+  "ID": 227,
+  "Name": "Stingray Mod 0 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "262": {
+  "ID": 262,
+  "Name": "Stingray Mod 1 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "263": {
+  "ID": 263,
+  "Name": "Stingray Mod 1 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "265": {
+  "ID": 265,
+  "Name": "Stingray Mod 0 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "266": {
+  "ID": 266,
+  "Name": "Stingray Mod 1 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "274": {
+  "ID": 274,
+  "Name": "Outfit DLB",
+  "Comments": "2x Mounts, 1995",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "275": {
+  "ID": 275,
+  "Name": "Outfit DLC Corvus DL",
+  "Comments": "2x Mounts, 8x Barrels",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "276": {
+  "ID": 276,
+  "Name": "Outfit DLK Barricade",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "288": {
+  "ID": 288,
+  "Name": "AS.12",
+  "Comments": "HMS Endurance",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 8,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "289": {
+  "ID": 289,
+  "Name": "Stingray Mod 0 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 4,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "290": {
+  "ID": 290,
+  "Name": "Helicopter Magazine",
+  "Comments": "Sea Skua, 4x",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "293": {
+  "ID": 293,
+  "Name": "30mm/75 DS30B Mk1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "295": {
+  "ID": 295,
+  "Name": "40mm/60 Mk9 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "296": {
+  "ID": 296,
+  "Name": "40mm/60 Mk9 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "367": {
+  "ID": 367,
+  "Name": "Stingray Mod 0 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "386": {
+  "ID": 386,
+  "Name": "30mm/75 DS30B Mk1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "388": {
+  "ID": 388,
+  "Name": "Type 2170",
+  "Comments": "2006, SSTD",
+  "ArmorGeneral": 1001,
+  "ROF": 1,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "410": {
+  "ID": 410,
+  "Name": "Outfit DLJ(1)",
+  "Comments": "4x Mounts, 1997",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "411": {
+  "ID": 411,
+  "Name": "Outfit DLB",
+  "Comments": "2x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "413": {
+  "ID": 413,
+  "Name": "Outfit DLB",
+  "Comments": "4x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "414": {
+  "ID": 414,
+  "Name": "Outfit DLB",
+  "Comments": "4x Mounts, 1995",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "418": {
+  "ID": 418,
+  "Name": "Barricade DL",
+  "Comments": "2x Mounts, 12x Tube",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "441": {
+  "ID": 441,
+  "Name": "Outfit DLE Plessy Shield",
+  "Comments": "2x Mounts, 1983",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "442": {
+  "ID": 442,
+  "Name": "Outfit DLE Plessy Shield",
+  "Comments": "4x Mounts, 1983",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "448": {
+  "ID": 448,
+  "Name": "Outfit DLJ(2)",
+  "Comments": "8x Mounts, 1994",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "449": {
+  "ID": 449,
+  "Name": "Outfit DLD SRBOC",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "469": {
+  "ID": 469,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "525": {
+  "ID": 525,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "535": {
+  "ID": 535,
+  "Name": "Stingray Mod 0 [Internal Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "544": {
+  "ID": 544,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "545": {
+  "ID": 545,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "603": {
+  "ID": 603,
+  "Name": "Outfit DLB",
+  "Comments": "4x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "646": {
+  "ID": 646,
+  "Name": "Type 182 Towed Torpedo Decoy",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 1,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "672": {
+  "ID": 672,
+  "Name": "Carrier Magazine",
+  "Comments": "UK, 2007",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "673": {
+  "ID": 673,
+  "Name": "Carrier Magazine",
+  "Comments": "UK",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "729": {
+  "ID": 729,
+  "Name": "Carrier Magazine",
+  "Comments": "UK, 1998, Ocean",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "730": {
+  "ID": 730,
+  "Name": "Sea Wolf",
+  "Comments": "Type 22.2/3, 24x Missiles",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 26,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "733": {
+  "ID": 733,
+  "Name": "Sea Wolf Blk 2",
+  "Comments": "Type 22.2/22.3, 24x Missiles",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 26,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "759": {
+  "ID": 759,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "792": {
+  "ID": 792,
+  "Name": "Stingray Mod 0 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "818": {
+  "ID": 818,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "823": {
+  "ID": 823,
+  "Name": "7.62mm MG",
+  "Comments": "4x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "835": {
+  "ID": 835,
+  "Name": "7.62mm MG",
+  "Comments": "1x Mount, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "836": {
+  "ID": 836,
+  "Name": "CONTRALTO-V [SLAT]",
+  "Comments": "Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "889": {
+  "ID": 889,
+  "Name": "Helicopter Magazine",
+  "Comments": "Sea Skua, 8x",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "897": {
+  "ID": 897,
+  "Name": "20mm/80 Oerlikon Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "898": {
+  "ID": 898,
+  "Name": "AS.12",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 4,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "908": {
+  "ID": 908,
+  "Name": "Carrier Magazine",
+  "Comments": "UK, 2001",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "922": {
+  "ID": 922,
+  "Name": "Sea Wolf",
+  "Comments": "Type 22.1, 24x Missiles",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 26,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "938": {
+  "ID": 938,
+  "Name": "20mm/90 Oerlikon GAM-BO1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "942": {
+  "ID": 942,
+  "Name": "30mm/75 Single Oerlikon",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "956": {
+  "ID": 956,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "992": {
+  "ID": 992,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "994": {
+  "ID": 994,
+  "Name": "30mm Goalkeeper",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "996": {
+  "ID": 996,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1001": {
+  "ID": 1001,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1002": {
+  "ID": 1002,
+  "Name": "20mm/80 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1005": {
+  "ID": 1005,
+  "Name": "30mm/75 Single Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1020": {
+  "ID": 1020,
+  "Name": "40mm/56 Mk1 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1025": {
+  "ID": 1025,
+  "Name": "40mm/70 Mk9",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1039": {
+  "ID": 1039,
+  "Name": "Sea Wolf",
+  "Comments": "Leander, 12x Missiles",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1040": {
+  "ID": 1040,
+  "Name": "30mm Goalkeeper",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1051": {
+  "ID": 1051,
+  "Name": "Mk46 Mod 2 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 8,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1053": {
+  "ID": 1053,
+  "Name": "30mm/75 Twin Oerlikon GCM-AO1",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1059": {
+  "ID": 1059,
+  "Name": "30mm/75 Single Oerlikon",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1069": {
+  "ID": 1069,
+  "Name": "7.62mm MG",
+  "Comments": "3x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1077": {
+  "ID": 1077,
+  "Name": "30mm Goalkeeper",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1143": {
+  "ID": 1143,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 56,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1152": {
+  "ID": 1152,
+  "Name": "Mk46 Mod 2 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1164": {
+  "ID": 1164,
+  "Name": "Mk46 Mod 2 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 18,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1165": {
+  "ID": 1165,
+  "Name": "Stingray Mod 1 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1191": {
+  "ID": 1191,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 28,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1294": {
+  "ID": 1294,
+  "Name": "Sea Cat Mod 1",
+  "Comments": "1x Mount, 10 rnds",
+  "ArmorGeneral": 2001,
+  "ROF": 450,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1378": {
+  "ID": 1378,
+  "Name": "7.62mm MG",
+  "Comments": "6x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 600,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1380": {
+  "ID": 1380,
+  "Name": "Carrier Magazine",
+  "Comments": "UK, 2018",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1400": {
+  "ID": 1400,
+  "Name": "30mm/75 DS30M Mk2",
+  "Comments": "3x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1416": {
+  "ID": 1416,
+  "Name": "30mm/75 DS30M Mk2",
+  "Comments": "2x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1460": {
+  "ID": 1460,
+  "Name": "30mm/75 DS30M Mk2",
+  "Comments": "4x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1493": {
+  "ID": 1493,
+  "Name": "Helicopter Magazine",
+  "Comments": "Martlet [FASGW(L) / LMM]",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1494": {
+  "ID": 1494,
+  "Name": "Helicopter Magazine",
+  "Comments": "Sea Venom [FASGW(H) / ANL], Martlet [FASGW(L) / LMM]",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ }
+}

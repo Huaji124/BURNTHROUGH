@@ -1,0 +1,112 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4595,
+   "Category": 2001,
+   "Type": 8201,
+   "Name": "WD-1K Wing Loong [Pterodactyl] I UAV",
+   "Comments": "-",
+   "OperatorCountry": 2129,
+   "OperatorService": 2001,
+   "YearCommissioned": 2016,
+   "YearDecommissioned": 0,
+   "Length": 9.05,
+   "Span": 14.0,
+   "Height": 2.77,
+   "WeightEmpty": 600,
+   "WeightMax": 1100,
+   "WeightPayload": 0,
+   "Crew": 0,
+   "Agility": 1.0,
+   "ClimbRate": 3.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "C,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   1727,
+   4576,
+   2924
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   17496,
+   17497
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2217
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   595
+  ],
+  "signatures": [
+   {
+    "ID": 4595,
+    "Type": 3001,
+    "Front": 2.37,
+    "Side": 3.55,
+    "Rear": 2.37,
+    "Top": 6.48
+   },
+   {
+    "ID": 4595,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 2.2,
+    "Rear": 2.17,
+    "Top": 3.63
+   },
+   {
+    "ID": 4595,
+    "Type": 4001,
+    "Front": 2.37,
+    "Side": 5.5,
+    "Rear": 11.99,
+    "Top": 8.21
+   },
+   {
+    "ID": 4595,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 2.2,
+    "Rear": 1.36,
+    "Top": 3.63
+   },
+   {
+    "ID": 4595,
+    "Type": 5001,
+    "Front": -19.1,
+    "Side": -16.7,
+    "Rear": -19.1,
+    "Top": -16.3
+   },
+   {
+    "ID": 4595,
+    "Type": 5002,
+    "Front": -29.1,
+    "Side": -26.7,
+    "Rear": -29.1,
+    "Top": -26.7
+   }
+  ]
+ }
+]

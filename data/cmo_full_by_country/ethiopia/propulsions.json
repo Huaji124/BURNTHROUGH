@@ -1,0 +1,74 @@
+{
+ "354": {
+  "ID": 354,
+  "Name": "1x R-29B-300",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 8002.0,
+  "ThrustPerEngineAfterburner": 11503.0,
+  "SFCMilitary": 0.94,
+  "SFCAfterburner": 1.8
+ },
+ "376": {
+  "ID": 376,
+  "Name": "2x J85-GE-21",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1634.0,
+  "ThrustPerEngineAfterburner": 2270.0,
+  "SFCMilitary": 1.24,
+  "SFCAfterburner": 2.13
+ },
+ "421": {
+  "ID": 421,
+  "Name": "2x AI-24T",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2560.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.51,
+  "SFCAfterburner": 0.0
+ },
+ "484": {
+  "ID": 484,
+  "Name": "2x J85-GE-13",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1234.0,
+  "ThrustPerEngineAfterburner": 1852.0,
+  "SFCMilitary": 1.26,
+  "SFCAfterburner": 2.22
+ },
+ "1111": {
+  "ID": 1111,
+  "Name": "4x AI-20D-6",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 4080.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.529,
+  "SFCAfterburner": 0.0
+ },
+ "1480": {
+  "ID": 1480,
+  "Name": "1x R-13F-300",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4070.0,
+  "ThrustPerEngineAfterburner": 6495.0,
+  "SFCMilitary": 0.95,
+  "SFCAfterburner": 2.25
+ }
+}

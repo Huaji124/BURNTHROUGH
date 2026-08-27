@@ -1,0 +1,1655 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 925,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F/A-18C Hornet",
+   "Comments": "26x",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 17.1,
+   "Span": 11.4,
+   "Height": 4.88,
+   "WeightEmpty": 10810,
+   "WeightMax": 23500,
+   "WeightPayload": 7030,
+   "Crew": 1,
+   "Agility": 4.5,
+   "ClimbRate": 155.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   628,
+   1510,
+   1756
+  ],
+  "mount_ids": [
+   278,
+   1838
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2986,
+   2987,
+   3306,
+   12047,
+   25660,
+   25661,
+   25662
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   713
+  ],
+  "comm_ids": [
+   43,
+   187
+  ],
+  "fuel_ids": [
+   173
+  ],
+  "signatures": [
+   {
+    "ID": 925,
+    "Type": 3001,
+    "Front": 2.87,
+    "Side": 6.21,
+    "Rear": 2.87,
+    "Top": 7.84
+   },
+   {
+    "ID": 925,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 2.63,
+    "Top": 4.25
+   },
+   {
+    "ID": 925,
+    "Type": 4001,
+    "Front": 2.87,
+    "Side": 7.98,
+    "Rear": 12.92,
+    "Top": 9.33
+   },
+   {
+    "ID": 925,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 1.59,
+    "Top": 4.25
+   },
+   {
+    "ID": 925,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 925,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1265,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Mirage IIIS",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1968,
+   "YearDecommissioned": 0,
+   "Length": 15.0,
+   "Span": 8.2,
+   "Height": 4.5,
+   "WeightEmpty": 7050,
+   "WeightMax": 13700,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 95.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   541
+  ],
+  "mount_ids": [
+   297
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2713,
+   2959,
+   2961,
+   2966,
+   2968,
+   2969,
+   2970,
+   14222
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1965
+  ],
+  "comm_ids": [
+   20,
+   80
+  ],
+  "fuel_ids": [
+   38
+  ],
+  "signatures": [
+   {
+    "ID": 1265,
+    "Type": 3001,
+    "Front": 2.39,
+    "Side": 5.57,
+    "Rear": 2.39,
+    "Top": 6.52
+   },
+   {
+    "ID": 1265,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 2.19,
+    "Top": 3.65
+   },
+   {
+    "ID": 1265,
+    "Type": 4001,
+    "Front": 2.39,
+    "Side": 7.43,
+    "Rear": 12.02,
+    "Top": 8.25
+   },
+   {
+    "ID": 1265,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 1.36,
+    "Top": 3.65
+   },
+   {
+    "ID": 1265,
+    "Type": 5001,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 1265,
+    "Type": 5002,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1266,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Mirage IIIS",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1990,
+   "YearDecommissioned": 1999,
+   "Length": 15.0,
+   "Span": 8.2,
+   "Height": 4.5,
+   "WeightEmpty": 7050,
+   "WeightMax": 13700,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 95.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   541
+  ],
+  "mount_ids": [
+   297,
+   1698
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2734,
+   2971,
+   2972,
+   2982,
+   2983,
+   2984,
+   2985,
+   22709
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1965
+  ],
+  "comm_ids": [
+   20,
+   80
+  ],
+  "fuel_ids": [
+   38
+  ],
+  "signatures": [
+   {
+    "ID": 1266,
+    "Type": 3001,
+    "Front": 2.39,
+    "Side": 5.57,
+    "Rear": 2.39,
+    "Top": 6.52
+   },
+   {
+    "ID": 1266,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 2.19,
+    "Top": 3.65
+   },
+   {
+    "ID": 1266,
+    "Type": 4001,
+    "Front": 2.39,
+    "Side": 7.43,
+    "Rear": 12.02,
+    "Top": 8.25
+   },
+   {
+    "ID": 1266,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 1.36,
+    "Top": 3.65
+   },
+   {
+    "ID": 1266,
+    "Type": 5001,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 1266,
+    "Type": 5002,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1575,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F/A-18C Hornet",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 2008,
+   "YearDecommissioned": 0,
+   "Length": 17.1,
+   "Span": 11.4,
+   "Height": 4.88,
+   "WeightEmpty": 10810,
+   "WeightMax": 23500,
+   "WeightPayload": 7030,
+   "Crew": 1,
+   "Agility": 4.5,
+   "ClimbRate": 155.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   628,
+   1510,
+   1756
+  ],
+  "mount_ids": [
+   278,
+   1753
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   3607,
+   3608,
+   3611,
+   12046,
+   25656,
+   25657,
+   25658
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   713
+  ],
+  "comm_ids": [
+   43,
+   187
+  ],
+  "fuel_ids": [
+   173
+  ],
+  "signatures": [
+   {
+    "ID": 1575,
+    "Type": 3001,
+    "Front": 2.87,
+    "Side": 6.21,
+    "Rear": 2.87,
+    "Top": 7.84
+   },
+   {
+    "ID": 1575,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 2.63,
+    "Top": 4.25
+   },
+   {
+    "ID": 1575,
+    "Type": 4001,
+    "Front": 2.87,
+    "Side": 7.98,
+    "Rear": 12.92,
+    "Top": 9.33
+   },
+   {
+    "ID": 1575,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 1.59,
+    "Top": 4.25
+   },
+   {
+    "ID": 1575,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 1575,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2279,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5E Tiger II",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1979,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 8.0,
+   "Height": 4.1,
+   "WeightEmpty": 4392,
+   "WeightMax": 11214,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.5,
+   "ClimbRate": 97.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   858,
+   1835
+  ],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   7388,
+   7389,
+   7391,
+   7392,
+   7393,
+   7394,
+   7395,
+   14168
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   376
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 2279,
+    "Type": 3001,
+    "Front": 2.31,
+    "Side": 5.31,
+    "Rear": 2.31,
+    "Top": 6.31
+   },
+   {
+    "ID": 2279,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 2.12,
+    "Top": 3.55
+   },
+   {
+    "ID": 2279,
+    "Type": 4001,
+    "Front": 2.31,
+    "Side": 7.2,
+    "Rear": 11.88,
+    "Top": 8.07
+   },
+   {
+    "ID": 2279,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 1.33,
+    "Top": 3.55
+   },
+   {
+    "ID": 2279,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 2279,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2899,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Hunter Mk58A",
+   "Comments": "30x + 22x",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1973,
+   "YearDecommissioned": 0,
+   "Length": 13.9,
+   "Span": 10.3,
+   "Height": 4.0,
+   "WeightEmpty": 6405,
+   "WeightMax": 11158,
+   "WeightPayload": 3400,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 67.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4484
+  ],
+  "mount_ids": [
+   282
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   15011,
+   15012,
+   15013,
+   15014,
+   15024,
+   15029,
+   15033,
+   22700,
+   22701
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   345
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   915
+  ],
+  "signatures": [
+   {
+    "ID": 2899,
+    "Type": 3001,
+    "Front": 2.48,
+    "Side": 5.16,
+    "Rear": 2.48,
+    "Top": 6.77
+   },
+   {
+    "ID": 2899,
+    "Type": 3002,
+    "Front": 1.41,
+    "Side": 3.0,
+    "Rear": 2.27,
+    "Top": 3.76
+   },
+   {
+    "ID": 2899,
+    "Type": 4001,
+    "Front": 2.48,
+    "Side": 7.06,
+    "Rear": 12.2,
+    "Top": 8.46
+   },
+   {
+    "ID": 2899,
+    "Type": 4002,
+    "Front": 1.41,
+    "Side": 3.0,
+    "Rear": 1.41,
+    "Top": 3.76
+   },
+   {
+    "ID": 2899,
+    "Type": 5001,
+    "Front": 4.4,
+    "Side": 6.8,
+    "Rear": 4.4,
+    "Top": 7.2
+   },
+   {
+    "ID": 2899,
+    "Type": 5002,
+    "Front": 4.4,
+    "Side": 6.8,
+    "Rear": 4.4,
+    "Top": 6.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 2902,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Hunter Mk58A",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1986,
+   "YearDecommissioned": 1993,
+   "Length": 13.9,
+   "Span": 10.3,
+   "Height": 4.0,
+   "WeightEmpty": 6405,
+   "WeightMax": 11158,
+   "WeightPayload": 3400,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 67.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4484
+  ],
+  "mount_ids": [
+   282,
+   1708
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   15011,
+   15012,
+   15013,
+   15014,
+   15029,
+   15033,
+   15034,
+   15035,
+   15036,
+   22702,
+   22703,
+   22704,
+   22705,
+   22706,
+   22707
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   345
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   915
+  ],
+  "signatures": [
+   {
+    "ID": 2902,
+    "Type": 3001,
+    "Front": 2.48,
+    "Side": 5.16,
+    "Rear": 2.48,
+    "Top": 6.77
+   },
+   {
+    "ID": 2902,
+    "Type": 3002,
+    "Front": 1.41,
+    "Side": 3.0,
+    "Rear": 2.27,
+    "Top": 3.76
+   },
+   {
+    "ID": 2902,
+    "Type": 4001,
+    "Front": 2.48,
+    "Side": 7.06,
+    "Rear": 12.2,
+    "Top": 8.46
+   },
+   {
+    "ID": 2902,
+    "Type": 4002,
+    "Front": 1.41,
+    "Side": 3.0,
+    "Rear": 1.41,
+    "Top": 3.76
+   },
+   {
+    "ID": 2902,
+    "Type": 5001,
+    "Front": 4.4,
+    "Side": 6.8,
+    "Rear": 4.4,
+    "Top": 7.2
+   },
+   {
+    "ID": 2902,
+    "Type": 5002,
+    "Front": 4.4,
+    "Side": 6.8,
+    "Rear": 4.4,
+    "Top": 6.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3415,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F/A-18D Hornet",
+   "Comments": "8x",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1997,
+   "YearDecommissioned": 0,
+   "Length": 17.1,
+   "Span": 11.4,
+   "Height": 4.88,
+   "WeightEmpty": 10810,
+   "WeightMax": 23500,
+   "WeightPayload": 7030,
+   "Crew": 2,
+   "Agility": 4.5,
+   "ClimbRate": 155.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   628,
+   1510,
+   1756
+  ],
+  "mount_ids": [
+   278,
+   1838
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2986,
+   2987,
+   3306,
+   12047,
+   25660,
+   25661,
+   25662
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   713
+  ],
+  "comm_ids": [
+   43,
+   187
+  ],
+  "fuel_ids": [
+   173
+  ],
+  "signatures": [
+   {
+    "ID": 3415,
+    "Type": 3001,
+    "Front": 2.87,
+    "Side": 6.21,
+    "Rear": 2.87,
+    "Top": 7.84
+   },
+   {
+    "ID": 3415,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 2.63,
+    "Top": 4.25
+   },
+   {
+    "ID": 3415,
+    "Type": 4001,
+    "Front": 2.87,
+    "Side": 7.98,
+    "Rear": 12.92,
+    "Top": 9.33
+   },
+   {
+    "ID": 3415,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 1.59,
+    "Top": 4.25
+   },
+   {
+    "ID": 3415,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 3415,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3416,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F/A-18D Hornet",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 2008,
+   "YearDecommissioned": 0,
+   "Length": 17.1,
+   "Span": 11.4,
+   "Height": 4.88,
+   "WeightEmpty": 10810,
+   "WeightMax": 23500,
+   "WeightPayload": 7030,
+   "Crew": 2,
+   "Agility": 4.5,
+   "ClimbRate": 155.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   628,
+   1510,
+   1756
+  ],
+  "mount_ids": [
+   278,
+   1753
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   3607,
+   3608,
+   3611,
+   12046,
+   25656,
+   25657,
+   25658
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   713
+  ],
+  "comm_ids": [
+   43,
+   187
+  ],
+  "fuel_ids": [
+   173
+  ],
+  "signatures": [
+   {
+    "ID": 3416,
+    "Type": 3001,
+    "Front": 2.87,
+    "Side": 6.21,
+    "Rear": 2.87,
+    "Top": 7.84
+   },
+   {
+    "ID": 3416,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 2.63,
+    "Top": 4.25
+   },
+   {
+    "ID": 3416,
+    "Type": 4001,
+    "Front": 2.87,
+    "Side": 7.98,
+    "Rear": 12.92,
+    "Top": 9.33
+   },
+   {
+    "ID": 3416,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 1.59,
+    "Top": 4.25
+   },
+   {
+    "ID": 3416,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 3416,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3600,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5F Tiger II",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1979,
+   "YearDecommissioned": 0,
+   "Length": 14.4,
+   "Span": 8.0,
+   "Height": 4.1,
+   "WeightEmpty": 4392,
+   "WeightMax": 11214,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 3.5,
+   "ClimbRate": 97.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   858,
+   1835
+  ],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   7388,
+   7389,
+   7391,
+   7392,
+   7393,
+   7394,
+   7395,
+   14168
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   376
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 3600,
+    "Type": 3001,
+    "Front": 2.31,
+    "Side": 5.31,
+    "Rear": 2.31,
+    "Top": 6.31
+   },
+   {
+    "ID": 3600,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 2.12,
+    "Top": 3.55
+   },
+   {
+    "ID": 3600,
+    "Type": 4001,
+    "Front": 2.31,
+    "Side": 7.2,
+    "Rear": 11.88,
+    "Top": 8.07
+   },
+   {
+    "ID": 3600,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 1.33,
+    "Top": 3.55
+   },
+   {
+    "ID": 3600,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 3600,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4500,
+   "Category": 2001,
+   "Type": 7003,
+   "Name": "Mirage IIIRS",
+   "Comments": "18x",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1966,
+   "YearDecommissioned": 2002,
+   "Length": 15.0,
+   "Span": 8.2,
+   "Height": 4.5,
+   "WeightEmpty": 7050,
+   "WeightMax": 13700,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 95.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   910,
+   2919
+  ],
+  "mount_ids": [
+   297
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   22697,
+   22698
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   342
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   38
+  ],
+  "signatures": [
+   {
+    "ID": 4500,
+    "Type": 3001,
+    "Front": 2.39,
+    "Side": 5.57,
+    "Rear": 2.39,
+    "Top": 6.52
+   },
+   {
+    "ID": 4500,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 2.19,
+    "Top": 3.65
+   },
+   {
+    "ID": 4500,
+    "Type": 4001,
+    "Front": 2.39,
+    "Side": 7.43,
+    "Rear": 12.02,
+    "Top": 8.25
+   },
+   {
+    "ID": 4500,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 1.36,
+    "Top": 3.65
+   },
+   {
+    "ID": 4500,
+    "Type": 5001,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 4500,
+    "Type": 5002,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4501,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Mirage IIIS",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 1985,
+   "YearDecommissioned": 0,
+   "Length": 15.0,
+   "Span": 8.2,
+   "Height": 4.5,
+   "WeightEmpty": 7050,
+   "WeightMax": 13700,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 95.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   541
+  ],
+  "mount_ids": [
+   297
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   2713,
+   2959,
+   2961,
+   2966,
+   2968,
+   2969,
+   2970,
+   14222,
+   22708
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1965
+  ],
+  "comm_ids": [
+   20,
+   80
+  ],
+  "fuel_ids": [
+   38
+  ],
+  "signatures": [
+   {
+    "ID": 4501,
+    "Type": 3001,
+    "Front": 2.39,
+    "Side": 5.57,
+    "Rear": 2.39,
+    "Top": 6.52
+   },
+   {
+    "ID": 4501,
+    "Type": 3002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 2.19,
+    "Top": 3.65
+   },
+   {
+    "ID": 4501,
+    "Type": 4001,
+    "Front": 2.39,
+    "Side": 7.43,
+    "Rear": 12.02,
+    "Top": 8.25
+   },
+   {
+    "ID": 4501,
+    "Type": 4002,
+    "Front": 1.36,
+    "Side": 3.2,
+    "Rear": 1.36,
+    "Top": 3.65
+   },
+   {
+    "ID": 4501,
+    "Type": 5001,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 4501,
+    "Type": 5002,
+    "Front": 4.0,
+    "Side": 6.3,
+    "Rear": 4.0,
+    "Top": 6.3
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4705,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F/A-18C Hornet",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 2014,
+   "YearDecommissioned": 0,
+   "Length": 17.1,
+   "Span": 11.4,
+   "Height": 4.88,
+   "WeightEmpty": 10810,
+   "WeightMax": 23500,
+   "WeightPayload": 7030,
+   "Crew": 1,
+   "Agility": 4.5,
+   "ClimbRate": 155.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   628,
+   1510,
+   1756
+  ],
+  "mount_ids": [
+   278,
+   1753
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   25650,
+   25651,
+   25652,
+   25653,
+   25654,
+   25655,
+   25659
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   713
+  ],
+  "comm_ids": [
+   43,
+   187
+  ],
+  "fuel_ids": [
+   173
+  ],
+  "signatures": [
+   {
+    "ID": 4705,
+    "Type": 3001,
+    "Front": 2.87,
+    "Side": 6.21,
+    "Rear": 2.87,
+    "Top": 7.84
+   },
+   {
+    "ID": 4705,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 2.63,
+    "Top": 4.25
+   },
+   {
+    "ID": 4705,
+    "Type": 4001,
+    "Front": 2.87,
+    "Side": 7.98,
+    "Rear": 12.92,
+    "Top": 9.33
+   },
+   {
+    "ID": 4705,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 1.59,
+    "Top": 4.25
+   },
+   {
+    "ID": 4705,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 4705,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4706,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F/A-18D Hornet",
+   "Comments": "-",
+   "OperatorCountry": 2092,
+   "OperatorService": 2001,
+   "YearCommissioned": 2014,
+   "YearDecommissioned": 0,
+   "Length": 17.1,
+   "Span": 11.4,
+   "Height": 4.88,
+   "WeightEmpty": 10810,
+   "WeightMax": 23500,
+   "WeightPayload": 7030,
+   "Crew": 2,
+   "Agility": 4.5,
+   "ClimbRate": 155.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   628,
+   1510,
+   1756
+  ],
+  "mount_ids": [
+   278,
+   1753
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   25650,
+   25651,
+   25652,
+   25653,
+   25654,
+   25655,
+   25659
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   713
+  ],
+  "comm_ids": [
+   43,
+   187
+  ],
+  "fuel_ids": [
+   173
+  ],
+  "signatures": [
+   {
+    "ID": 4706,
+    "Type": 3001,
+    "Front": 2.87,
+    "Side": 6.21,
+    "Rear": 2.87,
+    "Top": 7.84
+   },
+   {
+    "ID": 4706,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 2.63,
+    "Top": 4.25
+   },
+   {
+    "ID": 4706,
+    "Type": 4001,
+    "Front": 2.87,
+    "Side": 7.98,
+    "Rear": 12.92,
+    "Top": 9.33
+   },
+   {
+    "ID": 4706,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 3.5,
+    "Rear": 1.59,
+    "Top": 4.25
+   },
+   {
+    "ID": 4706,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 4706,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ }
+]

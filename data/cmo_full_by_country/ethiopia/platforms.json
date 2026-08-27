@@ -1,0 +1,942 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3041,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5A Freedom Fighter",
+   "Comments": "-",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1967,
+   "YearDecommissioned": 1984,
+   "Length": 14.4,
+   "Span": 7.9,
+   "Height": 4.0,
+   "WeightEmpty": 3670,
+   "WeightMax": 9387,
+   "WeightPayload": 3087,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 80.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16126,
+   16127,
+   16128
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   484
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1016
+  ],
+  "signatures": [
+   {
+    "ID": 3041,
+    "Type": 3001,
+    "Front": 2.3,
+    "Side": 5.29,
+    "Rear": 2.3,
+    "Top": 6.29
+   },
+   {
+    "ID": 3041,
+    "Type": 3002,
+    "Front": 1.32,
+    "Side": 3.06,
+    "Rear": 2.11,
+    "Top": 3.54
+   },
+   {
+    "ID": 3041,
+    "Type": 4001,
+    "Front": 2.3,
+    "Side": 7.17,
+    "Rear": 11.86,
+    "Top": 8.05
+   },
+   {
+    "ID": 3041,
+    "Type": 4002,
+    "Front": 1.32,
+    "Side": 3.06,
+    "Rear": 1.32,
+    "Top": 3.54
+   },
+   {
+    "ID": 3041,
+    "Type": 5001,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 6.3
+   },
+   {
+    "ID": 3041,
+    "Type": 5002,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3042,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5E Tiger II",
+   "Comments": "-",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1976,
+   "YearDecommissioned": 1985,
+   "Length": 14.4,
+   "Span": 8.0,
+   "Height": 4.1,
+   "WeightEmpty": 4392,
+   "WeightMax": 11214,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.5,
+   "ClimbRate": 97.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   858,
+   305
+  ],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16129,
+   16130,
+   16131,
+   16132,
+   16133,
+   16134,
+   16135
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   376
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 3042,
+    "Type": 3001,
+    "Front": 2.31,
+    "Side": 5.31,
+    "Rear": 2.31,
+    "Top": 6.31
+   },
+   {
+    "ID": 3042,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 2.12,
+    "Top": 3.55
+   },
+   {
+    "ID": 3042,
+    "Type": 4001,
+    "Front": 2.31,
+    "Side": 7.2,
+    "Rear": 11.88,
+    "Top": 8.07
+   },
+   {
+    "ID": 3042,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 1.33,
+    "Top": 3.55
+   },
+   {
+    "ID": 3042,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 3042,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3055,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "MiG-21MF Fishbed J",
+   "Comments": "-",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1978,
+   "YearDecommissioned": 0,
+   "Length": 14.1,
+   "Span": 7.2,
+   "Height": 4.1,
+   "WeightEmpty": 5350,
+   "WeightMax": 9661,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 101.6,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   887,
+   2750
+  ],
+  "mount_ids": [
+   274
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16204,
+   16205,
+   16206,
+   16207,
+   16208,
+   16209,
+   16210,
+   16211,
+   16212,
+   16213,
+   16214,
+   16215
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1480
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1256
+  ],
+  "signatures": [
+   {
+    "ID": 3055,
+    "Type": 3001,
+    "Front": 2.21,
+    "Side": 5.24,
+    "Rear": 2.21,
+    "Top": 6.03
+   },
+   {
+    "ID": 3055,
+    "Type": 3002,
+    "Front": 1.28,
+    "Side": 3.04,
+    "Rear": 2.02,
+    "Top": 3.42
+   },
+   {
+    "ID": 3055,
+    "Type": 4001,
+    "Front": 2.21,
+    "Side": 7.13,
+    "Rear": 11.67,
+    "Top": 7.83
+   },
+   {
+    "ID": 3055,
+    "Type": 4002,
+    "Front": 1.28,
+    "Side": 3.04,
+    "Rear": 1.28,
+    "Top": 3.42
+   },
+   {
+    "ID": 3055,
+    "Type": 5001,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.9
+   },
+   {
+    "ID": 3055,
+    "Type": 5002,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3060,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "MiG-23BN Flogger H",
+   "Comments": "-",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1978,
+   "YearDecommissioned": 0,
+   "Length": 15.3,
+   "Span": 14.0,
+   "Height": 4.4,
+   "WeightEmpty": 10440,
+   "WeightMax": 20000,
+   "WeightPayload": 3000,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 111.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1010,
+   "AircraftFuselageArmor": 1010,
+   "AircraftCockpitArmor": 1010,
+   "Visibility": "B,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   2524,
+   2750,
+   1150
+  ],
+  "mount_ids": [
+   274,
+   1684
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16261,
+   16262,
+   16263,
+   16264,
+   16265,
+   16266,
+   16267,
+   16268,
+   16269,
+   16270,
+   16271,
+   16272,
+   16273,
+   16274,
+   24033,
+   24034,
+   24035,
+   24036,
+   24037,
+   24038,
+   24039,
+   24040,
+   24041,
+   24042,
+   24043,
+   24044,
+   24045
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   354
+  ],
+  "comm_ids": [
+   156,
+   195
+  ],
+  "fuel_ids": [
+   761
+  ],
+  "signatures": [
+   {
+    "ID": 3060,
+    "Type": 3001,
+    "Front": 2.94,
+    "Side": 5.62,
+    "Rear": 2.94,
+    "Top": 8.04
+   },
+   {
+    "ID": 3060,
+    "Type": 3002,
+    "Front": 1.62,
+    "Side": 3.22,
+    "Rear": 2.7,
+    "Top": 4.34
+   },
+   {
+    "ID": 3060,
+    "Type": 4001,
+    "Front": 2.94,
+    "Side": 7.47,
+    "Rear": 13.05,
+    "Top": 9.48
+   },
+   {
+    "ID": 3060,
+    "Type": 4002,
+    "Front": 1.62,
+    "Side": 3.22,
+    "Rear": 1.62,
+    "Top": 4.34
+   },
+   {
+    "ID": 3060,
+    "Type": 5001,
+    "Front": 6.5,
+    "Side": 8.8,
+    "Rear": 6.5,
+    "Top": 9.2
+   },
+   {
+    "ID": 3060,
+    "Type": 5002,
+    "Front": 6.5,
+    "Side": 8.8,
+    "Rear": 6.5,
+    "Top": 8.8
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3131,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "An-26 Curl A",
+   "Comments": "6x",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1979,
+   "YearDecommissioned": 0,
+   "Length": 23.8,
+   "Span": 29.2,
+   "Height": 8.3,
+   "WeightEmpty": 16300,
+   "WeightMax": 24000,
+   "WeightPayload": 5500,
+   "Crew": 5,
+   "Agility": 1.0,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   863
+  ],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   16624,
+   16625,
+   16626,
+   16627,
+   16628
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   421
+  ],
+  "comm_ids": [
+   20,
+   194,
+   238
+  ],
+  "fuel_ids": [
+   1060
+  ],
+  "signatures": [
+   {
+    "ID": 3131,
+    "Type": 3001,
+    "Front": 5.02,
+    "Side": 8.73,
+    "Rear": 5.02,
+    "Top": 13.7
+   },
+   {
+    "ID": 3131,
+    "Type": 3002,
+    "Front": 2.53,
+    "Side": 4.65,
+    "Rear": 4.6,
+    "Top": 6.77
+   },
+   {
+    "ID": 3131,
+    "Type": 4001,
+    "Front": 5.02,
+    "Side": 10.02,
+    "Rear": 16.05,
+    "Top": 13.54
+   },
+   {
+    "ID": 3131,
+    "Type": 4002,
+    "Front": 2.53,
+    "Side": 4.65,
+    "Rear": 2.53,
+    "Top": 6.77
+   },
+   {
+    "ID": 3131,
+    "Type": 5001,
+    "Front": 12.9,
+    "Side": 14.9,
+    "Rear": 12.9,
+    "Top": 15.4
+   },
+   {
+    "ID": 3131,
+    "Type": 5002,
+    "Front": 12.9,
+    "Side": 14.9,
+    "Rear": 12.9,
+    "Top": 14.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3133,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "An-12B Cub A",
+   "Comments": "2x",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1979,
+   "YearDecommissioned": 0,
+   "Length": 33.1,
+   "Span": 38.0,
+   "Height": 10.5,
+   "WeightEmpty": 28000,
+   "WeightMax": 61000,
+   "WeightPayload": 20000,
+   "Crew": 6,
+   "Agility": 1.0,
+   "ClimbRate": 9.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2004,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 20.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4,
+   4227
+  ],
+  "mount_ids": [
+   276
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16629,
+   16630,
+   16631,
+   16632,
+   16633,
+   16634
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1111
+  ],
+  "comm_ids": [
+   20,
+   194,
+   238
+  ],
+  "fuel_ids": [
+   198
+  ],
+  "signatures": [
+   {
+    "ID": 3133,
+    "Type": 3001,
+    "Front": 6.54,
+    "Side": 11.5,
+    "Rear": 6.54,
+    "Top": 17.85
+   },
+   {
+    "ID": 3133,
+    "Type": 3002,
+    "Front": 3.16,
+    "Side": 5.85,
+    "Rear": 5.99,
+    "Top": 8.44
+   },
+   {
+    "ID": 3133,
+    "Type": 4001,
+    "Front": 6.54,
+    "Side": 12.04,
+    "Rear": 17.79,
+    "Top": 16.14
+   },
+   {
+    "ID": 3133,
+    "Type": 4002,
+    "Front": 3.16,
+    "Side": 5.85,
+    "Rear": 3.16,
+    "Top": 8.44
+   },
+   {
+    "ID": 3133,
+    "Type": 5001,
+    "Front": 16.1,
+    "Side": 18.0,
+    "Rear": 16.1,
+    "Top": 18.4
+   },
+   {
+    "ID": 3133,
+    "Type": 5002,
+    "Front": 16.1,
+    "Side": 18.0,
+    "Rear": 16.1,
+    "Top": 18.0
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3564,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5B Freedom Fighter",
+   "Comments": "-",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1967,
+   "YearDecommissioned": 1984,
+   "Length": 14.4,
+   "Span": 7.9,
+   "Height": 4.0,
+   "WeightEmpty": 3670,
+   "WeightMax": 9387,
+   "WeightPayload": 3087,
+   "Crew": 2,
+   "Agility": 3.0,
+   "ClimbRate": 80.4,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16126,
+   16127,
+   16128
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   484
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1016
+  ],
+  "signatures": [
+   {
+    "ID": 3564,
+    "Type": 3001,
+    "Front": 2.3,
+    "Side": 5.29,
+    "Rear": 2.3,
+    "Top": 6.29
+   },
+   {
+    "ID": 3564,
+    "Type": 3002,
+    "Front": 1.32,
+    "Side": 3.06,
+    "Rear": 2.11,
+    "Top": 3.54
+   },
+   {
+    "ID": 3564,
+    "Type": 4001,
+    "Front": 2.3,
+    "Side": 7.17,
+    "Rear": 11.86,
+    "Top": 8.05
+   },
+   {
+    "ID": 3564,
+    "Type": 4002,
+    "Front": 1.32,
+    "Side": 3.06,
+    "Rear": 1.32,
+    "Top": 3.54
+   },
+   {
+    "ID": 3564,
+    "Type": 5001,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 6.3
+   },
+   {
+    "ID": 3564,
+    "Type": 5002,
+    "Front": 3.5,
+    "Side": 5.9,
+    "Rear": 3.5,
+    "Top": 5.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3588,
+   "Category": 2001,
+   "Type": 2002,
+   "Name": "F-5F Tiger II",
+   "Comments": "-",
+   "OperatorCountry": 2110,
+   "OperatorService": 2001,
+   "YearCommissioned": 1976,
+   "YearDecommissioned": 1985,
+   "Length": 14.4,
+   "Span": 8.0,
+   "Height": 4.1,
+   "WeightEmpty": 4392,
+   "WeightMax": 11214,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 3.5,
+   "ClimbRate": 97.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   858,
+   305
+  ],
+  "mount_ids": [
+   289
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   16129,
+   16130,
+   16131,
+   16132,
+   16133,
+   16134,
+   16135
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   376
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   649
+  ],
+  "signatures": [
+   {
+    "ID": 3588,
+    "Type": 3001,
+    "Front": 2.31,
+    "Side": 5.31,
+    "Rear": 2.31,
+    "Top": 6.31
+   },
+   {
+    "ID": 3588,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 2.12,
+    "Top": 3.55
+   },
+   {
+    "ID": 3588,
+    "Type": 4001,
+    "Front": 2.31,
+    "Side": 7.2,
+    "Rear": 11.88,
+    "Top": 8.07
+   },
+   {
+    "ID": 3588,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 3.08,
+    "Rear": 1.33,
+    "Top": 3.55
+   },
+   {
+    "ID": 3588,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 3588,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ }
+]

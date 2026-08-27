@@ -1,0 +1,38 @@
+{
+ "345": {
+  "ID": 345,
+  "Name": "2x Avon RA.28 Mk.207",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 4562.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.88,
+  "SFCAfterburner": 0.0
+ },
+ "845": {
+  "ID": 845,
+  "Name": "1x WP-7A",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 3950.0,
+  "ThrustPerEngineAfterburner": 6000.0,
+  "SFCMilitary": 0.95,
+  "SFCAfterburner": 2.06
+ },
+ "1503": {
+  "ID": 1503,
+  "Name": "1x Adour RT.172 Mk.861-49",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 2474.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.74,
+  "SFCAfterburner": 0.0
+ }
+}

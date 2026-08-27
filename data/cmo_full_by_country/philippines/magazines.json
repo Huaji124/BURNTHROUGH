@@ -1,0 +1,292 @@
+{
+ "61": {
+  "ID": 61,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "261": {
+  "ID": 261,
+  "Name": "40mm/60 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "365": {
+  "ID": 365,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "402": {
+  "ID": 402,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "469": {
+  "ID": 469,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "479": {
+  "ID": 479,
+  "Name": "Stinger MANPADS",
+  "Comments": "2x Mounts, 1992",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "638": {
+  "ID": 638,
+  "Name": "20mm/70 Oerlikon Mk7",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "771": {
+  "ID": 771,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "829": {
+  "ID": 829,
+  "Name": "20mm/80 Oerlikon Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "901": {
+  "ID": 901,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "910": {
+  "ID": 910,
+  "Name": "30mm/75 Twin Oerlikon Emerlec-30",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "941": {
+  "ID": 941,
+  "Name": "40mm/60 Twin Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "954": {
+  "ID": 954,
+  "Name": "40mm/56 Mk1 Twin Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 410,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1002": {
+  "ID": 1002,
+  "Name": "20mm/80 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1029": {
+  "ID": 1029,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1066": {
+  "ID": 1066,
+  "Name": "40mm/56 Mk1 Twin Bofors",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 615,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1223": {
+  "ID": 1223,
+  "Name": "20mm/70 Oerlikon Mk16 Twin",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1224": {
+  "ID": 1224,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "3x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1225": {
+  "ID": 1225,
+  "Name": "20mm/70 Oerlikon Mk4",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1252": {
+  "ID": 1252,
+  "Name": "Mk11 Hedgehog ASW Mortar",
+  "Comments": "1x",
+  "ArmorGeneral": 1001,
+  "ROF": 180,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1253": {
+  "ID": 1253,
+  "Name": "Mk9 Depth Charge",
+  "Comments": "36x DCs",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 36,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1254": {
+  "ID": 1254,
+  "Name": "Mk6 Depth Charge",
+  "Comments": "30x DCs",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1305": {
+  "ID": 1305,
+  "Name": "25mm/75 Mk38 Mod 2 Bushmaster",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1306": {
+  "ID": 1306,
+  "Name": "Mk52 Mod 0 SRBOC",
+  "Comments": "2x Mounts, 1993",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1343": {
+  "ID": 1343,
+  "Name": "20mm/70 Oerlikon Mk10",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

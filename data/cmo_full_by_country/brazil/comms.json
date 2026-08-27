@@ -1,0 +1,211 @@
+{
+ "16": {
+  "ID": 16,
+  "Name": "Generic NATO Sonobuoy Receiver [31 Channels]",
+  "Comments": "AN/ARR-72",
+  "Type": 9001,
+  "Range": 100,
+  "Channels": 31,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "20": {
+  "ID": 20,
+  "Name": "UHF/VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "48": {
+  "ID": 48,
+  "Name": "AT-2/3/6/12/16 Command Datalink",
+  "Comments": "-",
+  "Type": 10032,
+  "Range": 10,
+  "Channels": 1,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "72": {
+  "ID": 72,
+  "Name": "HF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "101": {
+  "ID": 101,
+  "Name": "Link 16 MIDS",
+  "Comments": "-",
+  "Type": 4004,
+  "Range": 600,
+  "Channels": 255,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "187": {
+  "ID": 187,
+  "Name": "UHF/VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 4,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "194": {
+  "ID": 194,
+  "Name": "VHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "195": {
+  "ID": 195,
+  "Name": "UHF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "209": {
+  "ID": 209,
+  "Name": "VHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "210": {
+  "ID": 210,
+  "Name": "Link 10",
+  "Comments": "-",
+  "Type": 4002,
+  "Range": 160,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "213": {
+  "ID": 213,
+  "Name": "VLF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "217": {
+  "ID": 217,
+  "Name": "Link 11",
+  "Comments": "-",
+  "Type": 4003,
+  "Range": 300,
+  "Channels": 64,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "218": {
+  "ID": 218,
+  "Name": "AN/WSC-3 FLTSATCOM SHF Shipboard Transceiver",
+  "Comments": "1982",
+  "Type": 2002,
+  "Range": 8000,
+  "Channels": 20,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "219": {
+  "ID": 219,
+  "Name": "Link 14",
+  "Comments": "-",
+  "Type": 4005,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "222": {
+  "ID": 222,
+  "Name": "MILSTAR SATCOM UHF",
+  "Comments": "-",
+  "Type": 2003,
+  "Range": 8000,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "227": {
+  "ID": 227,
+  "Name": "AN/SRR-1",
+  "Comments": "-",
+  "Type": 6001,
+  "Range": 1000,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "238": {
+  "ID": 238,
+  "Name": "HF Radio [Unsecure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 300,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "263": {
+  "ID": 263,
+  "Name": "AN/ARC-101 VHF Navigation & Communications",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 200,
+  "Channels": 2,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ },
+ "264": {
+  "ID": 264,
+  "Name": "UHF Radio [Secure]",
+  "Comments": "-",
+  "Type": 7001,
+  "Range": 100,
+  "Channels": 10,
+  "IsOptional": 0,
+  "WeaponLinkRequiresSensor": 0,
+  "Hypothetical": 0
+ }
+}

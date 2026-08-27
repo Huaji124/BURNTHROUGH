@@ -1,0 +1,1452 @@
+{
+ "7": {
+  "ID": 7,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1972",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "13": {
+  "ID": 13,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1991",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "31": {
+  "ID": 31,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1991",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "62": {
+  "ID": 62,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1991",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "64": {
+  "ID": 64,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1991",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "75": {
+  "ID": 75,
+  "Name": "Mk53 Nulka Mod 4",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 96,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "121": {
+  "ID": 121,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 1998, CG/DD/DDG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "126": {
+  "ID": 126,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2002, CG/DD/DDG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "140": {
+  "ID": 140,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "152": {
+  "ID": 152,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 16x, 1991-1994",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "180": {
+  "ID": 180,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 8x, 1984, RGM-84C",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "181": {
+  "ID": 181,
+  "Name": "Sea Stinger",
+  "Comments": "1987",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "182": {
+  "ID": 182,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 8x, 197x, RGM-84A",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "196": {
+  "ID": 196,
+  "Name": "DL-12T SKWS DL",
+  "Comments": "2x Mounts, Sea Gnat, GIANT",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "203": {
+  "ID": 203,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1991",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "204": {
+  "ID": 204,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "233": {
+  "ID": 233,
+  "Name": "Torpedo Magazine [Improved Reloading]",
+  "Comments": "USN, 1984",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "234": {
+  "ID": 234,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1984",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "235": {
+  "ID": 235,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1984",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "236": {
+  "ID": 236,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1984",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "237": {
+  "ID": 237,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1984",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "240": {
+  "ID": 240,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 2005",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "245": {
+  "ID": 245,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 2005",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "246": {
+  "ID": 246,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 2005",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "310": {
+  "ID": 310,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 34,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "311": {
+  "ID": 311,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 2005",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 34,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "328": {
+  "ID": 328,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 1994, FFG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "340": {
+  "ID": 340,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2002, FFG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "346": {
+  "ID": 346,
+  "Name": "Truxtun",
+  "Comments": "1975, 8x Mk48 Mod 1",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 22,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "365": {
+  "ID": 365,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "383": {
+  "ID": 383,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 1998, FFG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "384": {
+  "ID": 384,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 1994, CG/DD/DDG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "385": {
+  "ID": 385,
+  "Name": "30mm Mk46 Mod 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "395": {
+  "ID": 395,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2006, LPD",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "396": {
+  "ID": 396,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2008, LCS",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "397": {
+  "ID": 397,
+  "Name": "Mk53 Nulka",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "398": {
+  "ID": 398,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "399": {
+  "ID": 399,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "400": {
+  "ID": 400,
+  "Name": "Mk36 SRBOC",
+  "Comments": "6x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "401": {
+  "ID": 401,
+  "Name": "Mk36 SRBOC",
+  "Comments": "8x Mounts, 1988",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "402": {
+  "ID": 402,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "403": {
+  "ID": 403,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "404": {
+  "ID": 404,
+  "Name": "Mk36 SRBOC",
+  "Comments": "6x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "405": {
+  "ID": 405,
+  "Name": "Mk36 SRBOC",
+  "Comments": "8x Mounts, 1990",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "406": {
+  "ID": 406,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "407": {
+  "ID": 407,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "408": {
+  "ID": 408,
+  "Name": "Mk36 SRBOC",
+  "Comments": "6x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "409": {
+  "ID": 409,
+  "Name": "Mk36 SRBOC",
+  "Comments": "8x Mounts, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "428": {
+  "ID": 428,
+  "Name": "Mk34 RBOC",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "430": {
+  "ID": 430,
+  "Name": "Mk33 RBOC",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "461": {
+  "ID": 461,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 16x, 197x",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "462": {
+  "ID": 462,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1972",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "463": {
+  "ID": 463,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1972",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "464": {
+  "ID": 464,
+  "Name": "Torpedo Magazine [Improved Reloading]",
+  "Comments": "USN, 1972",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "469": {
+  "ID": 469,
+  "Name": "20mm/70 Oerlikon",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "470": {
+  "ID": 470,
+  "Name": "20mm Single",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "472": {
+  "ID": 472,
+  "Name": "20mm Single",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "479": {
+  "ID": 479,
+  "Name": "Stinger MANPADS",
+  "Comments": "2x Mounts, 1992",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "483": {
+  "ID": 483,
+  "Name": "Stinger MANPADS",
+  "Comments": "2x Mounts, 1987",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "504": {
+  "ID": 504,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7H",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "512": {
+  "ID": 512,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7P",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "522": {
+  "ID": 522,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 1975",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "523": {
+  "ID": 523,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 1994",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "544": {
+  "ID": 544,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "545": {
+  "ID": 545,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "597": {
+  "ID": 597,
+  "Name": "Mk36 SRBOC",
+  "Comments": "4x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "602": {
+  "ID": 602,
+  "Name": "Mk50 Mod 1 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "629": {
+  "ID": 629,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHA, 1976",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "632": {
+  "ID": 632,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1A",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "634": {
+  "ID": 634,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHA, 1997",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "639": {
+  "ID": 639,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHA, 2003",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "659": {
+  "ID": 659,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7M",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "660": {
+  "ID": 660,
+  "Name": "Mk16 ASROC",
+  "Comments": "Mk46 Mod 2",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "681": {
+  "ID": 681,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 16x, 1984",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "712": {
+  "ID": 712,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "717": {
+  "ID": 717,
+  "Name": "Mk36 SRBOC",
+  "Comments": "8x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 160,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "718": {
+  "ID": 718,
+  "Name": "Mk36 SRBOC",
+  "Comments": "6x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "727": {
+  "ID": 727,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1A",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "811": {
+  "ID": 811,
+  "Name": "12.7mm/50 MG",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "823": {
+  "ID": 823,
+  "Name": "7.62mm MG",
+  "Comments": "4x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "835": {
+  "ID": 835,
+  "Name": "7.62mm MG",
+  "Comments": "1x Mount, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "854": {
+  "ID": 854,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 1985",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "860": {
+  "ID": 860,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 2003",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "861": {
+  "ID": 861,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 1997",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "863": {
+  "ID": 863,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 2007",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "866": {
+  "ID": 866,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHD, 1997",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "867": {
+  "ID": 867,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHD, 2003",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "868": {
+  "ID": 868,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHD, 2007",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "873": {
+  "ID": 873,
+  "Name": "Mk53 Nulka",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "875": {
+  "ID": 875,
+  "Name": "20mm/80 Mk67",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "886": {
+  "ID": 886,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "1x Mount, 1200 rnds pr mount typically",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 135,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "900": {
+  "ID": 900,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHD, 1989",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "901": {
+  "ID": 901,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "903": {
+  "ID": 903,
+  "Name": "12.7mm/50 Twin MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "904": {
+  "ID": 904,
+  "Name": "12.7mm/50 MG",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 600,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "948": {
+  "ID": 948,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "967": {
+  "ID": 967,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "973": {
+  "ID": 973,
+  "Name": "12.7mm/50 MG",
+  "Comments": "8x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "981": {
+  "ID": 981,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "992": {
+  "ID": 992,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "996": {
+  "ID": 996,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1001": {
+  "ID": 1001,
+  "Name": "20mm/85 Mk15 Phalanx Blk 1",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1029": {
+  "ID": 1029,
+  "Name": "40mm/60 Mk3 Single Bofors",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 205,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1038": {
+  "ID": 1038,
+  "Name": "Sea Sparrow",
+  "Comments": "RIM-7E",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1042": {
+  "ID": 1042,
+  "Name": "20mm/100 Mk15 Phalanx Blk 1B",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1057": {
+  "ID": 1057,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1067": {
+  "ID": 1067,
+  "Name": "20mm/80 Mk67",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1069": {
+  "ID": 1069,
+  "Name": "7.62mm MG",
+  "Comments": "3x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 300,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1090": {
+  "ID": 1090,
+  "Name": "20mm/80 Mk67",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 600,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1145": {
+  "ID": 1145,
+  "Name": "Mk16 ASROC",
+  "Comments": "Mk46 Mod 5",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1148": {
+  "ID": 1148,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1160": {
+  "ID": 1160,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1185": {
+  "ID": 1185,
+  "Name": "Munitions",
+  "Comments": "Empty",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1196": {
+  "ID": 1196,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 8x, 1988, RGM-84C",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1197": {
+  "ID": 1197,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 16x, 1988",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1198": {
+  "ID": 1198,
+  "Name": "Mk16 ASROC",
+  "Comments": "USN, 8x, 1991, RGM-84C",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1247": {
+  "ID": 1247,
+  "Name": "TOW",
+  "Comments": "18x, BGM-71A",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 18,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1273": {
+  "ID": 1273,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 1972",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1296": {
+  "ID": 1296,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHA, 1983",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1303": {
+  "ID": 1303,
+  "Name": "25mm/75 Mk96 Mod 0 Bushmaster",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1304": {
+  "ID": 1304,
+  "Name": "25mm/75 Mk38 Mod 2 Bushmaster",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1305": {
+  "ID": 1305,
+  "Name": "25mm/75 Mk38 Mod 2 Bushmaster",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1306": {
+  "ID": 1306,
+  "Name": "Mk52 Mod 0 SRBOC",
+  "Comments": "2x Mounts, 1993",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1314": {
+  "ID": 1314,
+  "Name": "25mm/75 Mk38 Mod 1 Bushmaster",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1315": {
+  "ID": 1315,
+  "Name": "7.62mm MG",
+  "Comments": "8x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 800,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1316": {
+  "ID": 1316,
+  "Name": "Mk28 Chaffroc",
+  "Comments": "2x Mounts, 1969",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1368": {
+  "ID": 1368,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2010, CG/DD/DDG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1369": {
+  "ID": 1369,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2010, FFG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1465": {
+  "ID": 1465,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, CV, 2017",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1509": {
+  "ID": 1509,
+  "Name": "Helicopter Magazine",
+  "Comments": "USN, 2015, CG/DD/DDG",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1522": {
+  "ID": 1522,
+  "Name": "12.7mm/50 Mini-Typhoon",
+  "Comments": "1x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1557": {
+  "ID": 1557,
+  "Name": "Carrier Magazine",
+  "Comments": "USN, LHD, 2017",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1563": {
+  "ID": 1563,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 2015",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1564": {
+  "ID": 1564,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 2015",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 30,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1565": {
+  "ID": 1565,
+  "Name": "Torpedo Magazine [External Tubes]",
+  "Comments": "USN, 2015",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1568": {
+  "ID": 1568,
+  "Name": "Torpedo Magazine [Internal Tubes]",
+  "Comments": "USN, 2015",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 34,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1582": {
+  "ID": 1582,
+  "Name": "Carrier Magazine",
+  "Comments": "USA, Essex, ASW",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1593": {
+  "ID": 1593,
+  "Name": "RGM-114L Hellfire II",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

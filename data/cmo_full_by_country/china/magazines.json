@@ -1,0 +1,582 @@
+{
+ "59": {
+  "ID": 59,
+  "Name": "23mm Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "170": {
+  "ID": 170,
+  "Name": "PK-10 DL",
+  "Comments": "8x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "171": {
+  "ID": 171,
+  "Name": "30mm China H/PJ-12 [Type 730]",
+  "Comments": "2x Mounts, Chinese Goalkeeper copy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "172": {
+  "ID": 172,
+  "Name": "China Type 946 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "184": {
+  "ID": 184,
+  "Name": "China Type 945G DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "389": {
+  "ID": 389,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 720,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "390": {
+  "ID": 390,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 480,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "392": {
+  "ID": 392,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 240,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "430": {
+  "ID": 430,
+  "Name": "Mk33 RBOC",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 80,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "574": {
+  "ID": 574,
+  "Name": "RBU-1200",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "694": {
+  "ID": 694,
+  "Name": "A.244 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "745": {
+  "ID": 745,
+  "Name": "China Type 87 ASW Rockets",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 60,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "752": {
+  "ID": 752,
+  "Name": "HQ-7 [FM-80] Naval",
+  "Comments": "8x Reloads",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "765": {
+  "ID": 765,
+  "Name": "AK-630M",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "766": {
+  "ID": 766,
+  "Name": "AK-630M",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "768": {
+  "ID": 768,
+  "Name": "AK-630M",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "804": {
+  "ID": 804,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 240,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "807": {
+  "ID": 807,
+  "Name": "14.5mm/73 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "850": {
+  "ID": 850,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 360,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "851": {
+  "ID": 851,
+  "Name": "25mm/80 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "855": {
+  "ID": 855,
+  "Name": "25mm/60 Twin",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "858": {
+  "ID": 858,
+  "Name": "25mm/60 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "888": {
+  "ID": 888,
+  "Name": "14.5mm/93 Quad MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "903": {
+  "ID": 903,
+  "Name": "12.7mm/50 Twin MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "919": {
+  "ID": 919,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 480,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "960": {
+  "ID": 960,
+  "Name": "14.5mm/93 Quad MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "962": {
+  "ID": 962,
+  "Name": "25mm/60 Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "995": {
+  "ID": 995,
+  "Name": "China Type 65 ASW Rockets",
+  "Comments": "6 Tubes, Luda, 2x Mounts, Type 65",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1019": {
+  "ID": 1019,
+  "Name": "A.244 [Helicopter Magazine]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1033": {
+  "ID": 1033,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 720,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1061": {
+  "ID": 1061,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1085": {
+  "ID": 1085,
+  "Name": "14.5mm MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1228": {
+  "ID": 1228,
+  "Name": "30mm/65 China Type 65 Twin [AK-230 Copy]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1250": {
+  "ID": 1250,
+  "Name": "China Type 81 ASW Rockets",
+  "Comments": "5 Tubes, Jianghu, 2x Mounts, Type 65",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1298": {
+  "ID": 1298,
+  "Name": "Yu-7 [External Tubes]",
+  "Comments": "12x",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 12,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1371": {
+  "ID": 1371,
+  "Name": "Munitions",
+  "Comments": "Empty, AE/AOE/AKE",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1401": {
+  "ID": 1401,
+  "Name": "China Type 726-4 DL",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1404": {
+  "ID": 1404,
+  "Name": "HQ-7B [FM-90] Naval",
+  "Comments": "8x Reloads",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1407": {
+  "ID": 1407,
+  "Name": "30mm China H/PJ-17",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1507": {
+  "ID": 1507,
+  "Name": "30mm China H/PJ-12 [Type 730]",
+  "Comments": "1x Mounts, Chinese Goalkeeper copy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "132": {
+  "ID": 132,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "3x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 360,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "344": {
+  "ID": 344,
+  "Name": "14.5mm/73 Twin",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "393": {
+  "ID": 393,
+  "Name": "37mm/63 Type 76A Twin DP",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "937": {
+  "ID": 937,
+  "Name": "Helicopter Magazine",
+  "Comments": "China, 1998",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1097": {
+  "ID": 1097,
+  "Name": "HQ-7 [FM-80] Naval",
+  "Comments": "24x Reloads",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 24,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1199": {
+  "ID": 1199,
+  "Name": "Carrier Magazine",
+  "Comments": "China, CV, 2015",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1319": {
+  "ID": 1319,
+  "Name": "30mm China H/PJ-14 [Type 1130]",
+  "Comments": "4x Mounts, Upgr Chinese Goalkeeper copy",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1320": {
+  "ID": 1320,
+  "Name": "China Type 726-4A DL",
+  "Comments": "4x Mounts, 24-rnd Launcher",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1350": {
+  "ID": 1350,
+  "Name": "37mm/63 Type 76 Twin DP",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 480,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1402": {
+  "ID": 1402,
+  "Name": "China Type 726-4 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1403": {
+  "ID": 1403,
+  "Name": "China Type 726-4A DL",
+  "Comments": "2x Mounts, 24-rnd Launcher",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 120,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1464": {
+  "ID": 1464,
+  "Name": "30mm China H/PJ-14 [Type 1130]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1506": {
+  "ID": 1506,
+  "Name": "China Type 947 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 60,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1508": {
+  "ID": 1508,
+  "Name": "30mm China H/PJ-14 [Type 1130]",
+  "Comments": "1x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1524": {
+  "ID": 1524,
+  "Name": "30mm China H/PJ-17",
+  "Comments": "1x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1589": {
+  "ID": 1589,
+  "Name": "30mm China H/PJ-11",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

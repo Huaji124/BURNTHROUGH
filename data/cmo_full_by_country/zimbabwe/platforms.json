@@ -1,0 +1,452 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1847,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Hawk 60",
+   "Comments": "-",
+   "OperatorCountry": 2107,
+   "OperatorService": 2001,
+   "YearCommissioned": 1982,
+   "YearDecommissioned": 2011,
+   "Length": 12.0,
+   "Span": 9.4,
+   "Height": 4.0,
+   "WeightEmpty": 3647,
+   "WeightMax": 8569,
+   "WeightPayload": 2540,
+   "Crew": 2,
+   "Agility": 3.0,
+   "ClimbRate": 42.5,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   5390,
+   6677,
+   6678,
+   6679,
+   15169,
+   15170,
+   15171
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1503
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   513
+  ],
+  "signatures": [
+   {
+    "ID": 1847,
+    "Type": 3001,
+    "Front": 2.22,
+    "Side": 4.66,
+    "Rear": 2.22,
+    "Top": 6.06
+   },
+   {
+    "ID": 1847,
+    "Type": 3002,
+    "Front": 1.28,
+    "Side": 2.76,
+    "Rear": 2.03,
+    "Top": 3.43
+   },
+   {
+    "ID": 1847,
+    "Type": 4001,
+    "Front": 2.22,
+    "Side": 6.6,
+    "Rear": 11.69,
+    "Top": 7.86
+   },
+   {
+    "ID": 1847,
+    "Type": 4002,
+    "Front": 1.28,
+    "Side": 2.76,
+    "Rear": 1.28,
+    "Top": 3.43
+   },
+   {
+    "ID": 1847,
+    "Type": 5001,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.9
+   },
+   {
+    "ID": 1847,
+    "Type": 5002,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 1848,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Hawk 60A",
+   "Comments": "-",
+   "OperatorCountry": 2107,
+   "OperatorService": 2001,
+   "YearCommissioned": 1992,
+   "YearDecommissioned": 2011,
+   "Length": 12.0,
+   "Span": 9.4,
+   "Height": 4.0,
+   "WeightEmpty": 3647,
+   "WeightMax": 8569,
+   "WeightPayload": 2540,
+   "Crew": 2,
+   "Agility": 3.0,
+   "ClimbRate": 42.5,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   5390,
+   6677,
+   6678,
+   6679,
+   15169,
+   15170,
+   15171
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1503
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   513
+  ],
+  "signatures": [
+   {
+    "ID": 1848,
+    "Type": 3001,
+    "Front": 2.22,
+    "Side": 4.66,
+    "Rear": 2.22,
+    "Top": 6.06
+   },
+   {
+    "ID": 1848,
+    "Type": 3002,
+    "Front": 1.28,
+    "Side": 2.76,
+    "Rear": 2.03,
+    "Top": 3.43
+   },
+   {
+    "ID": 1848,
+    "Type": 4001,
+    "Front": 2.22,
+    "Side": 6.6,
+    "Rear": 11.69,
+    "Top": 7.86
+   },
+   {
+    "ID": 1848,
+    "Type": 4002,
+    "Front": 1.28,
+    "Side": 2.76,
+    "Rear": 1.28,
+    "Top": 3.43
+   },
+   {
+    "ID": 1848,
+    "Type": 5001,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.9
+   },
+   {
+    "ID": 1848,
+    "Type": 5002,
+    "Front": 3.1,
+    "Side": 5.5,
+    "Rear": 3.1,
+    "Top": 5.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3751,
+   "Category": 2001,
+   "Type": 2001,
+   "Name": "F-7IIN Fishbed [MiG-21 Copy]",
+   "Comments": "12x",
+   "OperatorCountry": 2107,
+   "OperatorService": 2001,
+   "YearCommissioned": 1986,
+   "YearDecommissioned": 0,
+   "Length": 14.0,
+   "Span": 7.2,
+   "Height": 4.1,
+   "WeightEmpty": 4871,
+   "WeightMax": 8625,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 3.0,
+   "ClimbRate": 83.2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   869
+  ],
+  "mount_ids": [
+   293
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18577,
+   18578,
+   18579,
+   18580,
+   18581,
+   18582
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   845
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   565
+  ],
+  "signatures": [
+   {
+    "ID": 3751,
+    "Type": 3001,
+    "Front": 2.2,
+    "Side": 5.21,
+    "Rear": 2.2,
+    "Top": 6.01
+   },
+   {
+    "ID": 3751,
+    "Type": 3002,
+    "Front": 1.27,
+    "Side": 3.03,
+    "Rear": 2.02,
+    "Top": 3.41
+   },
+   {
+    "ID": 3751,
+    "Type": 4001,
+    "Front": 2.2,
+    "Side": 7.1,
+    "Rear": 11.65,
+    "Top": 7.81
+   },
+   {
+    "ID": 3751,
+    "Type": 4002,
+    "Front": 1.27,
+    "Side": 3.03,
+    "Rear": 1.27,
+    "Top": 3.41
+   },
+   {
+    "ID": 3751,
+    "Type": 5001,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.8
+   },
+   {
+    "ID": 3751,
+    "Type": 5002,
+    "Front": 3.0,
+    "Side": 5.4,
+    "Rear": 3.0,
+    "Top": 5.4
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3753,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Hunter FGA Mk.9 [Export FGA.9]",
+   "Comments": "17x",
+   "OperatorCountry": 2107,
+   "OperatorService": 2001,
+   "YearCommissioned": 1962,
+   "YearDecommissioned": 2002,
+   "Length": 13.9,
+   "Span": 10.3,
+   "Height": 4.0,
+   "WeightEmpty": 6405,
+   "WeightMax": 11158,
+   "WeightPayload": 0,
+   "Crew": 1,
+   "Agility": 2.5,
+   "ClimbRate": 67.7,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2002,
+   "RunwayLengthCode": 2004,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 5.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "B,A,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   4484
+  ],
+  "mount_ids": [
+   282
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   18583,
+   18584,
+   18585,
+   18586,
+   18587,
+   18588
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   345
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   915
+  ],
+  "signatures": [
+   {
+    "ID": 3753,
+    "Type": 3001,
+    "Front": 2.48,
+    "Side": 5.16,
+    "Rear": 2.48,
+    "Top": 6.77
+   },
+   {
+    "ID": 3753,
+    "Type": 3002,
+    "Front": 1.41,
+    "Side": 3.0,
+    "Rear": 2.27,
+    "Top": 3.76
+   },
+   {
+    "ID": 3753,
+    "Type": 4001,
+    "Front": 2.48,
+    "Side": 7.06,
+    "Rear": 12.2,
+    "Top": 8.46
+   },
+   {
+    "ID": 3753,
+    "Type": 4002,
+    "Front": 1.41,
+    "Side": 3.0,
+    "Rear": 1.41,
+    "Top": 3.76
+   },
+   {
+    "ID": 3753,
+    "Type": 5001,
+    "Front": 4.4,
+    "Side": 6.8,
+    "Rear": 4.4,
+    "Top": 7.2
+   },
+   {
+    "ID": 3753,
+    "Type": 5002,
+    "Front": 4.4,
+    "Side": 6.8,
+    "Rear": 4.4,
+    "Top": 6.8
+   }
+  ]
+ }
+]

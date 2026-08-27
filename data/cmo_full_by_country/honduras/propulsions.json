@@ -1,0 +1,110 @@
+{
+ "374": {
+  "ID": 374,
+  "Name": "2x J85-GE-17A",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1293.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.95,
+  "SFCAfterburner": 0.0
+ },
+ "376": {
+  "ID": 376,
+  "Name": "2x J85-GE-21",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1634.0,
+  "ThrustPerEngineAfterburner": 2270.0,
+  "SFCMilitary": 1.24,
+  "SFCAfterburner": 2.13
+ },
+ "1976": {
+  "ID": 1976,
+  "Name": "4x T56-A-9",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 3775.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.528,
+  "SFCAfterburner": 0.0
+ },
+ "1980": {
+  "ID": 1980,
+  "Name": "2x PT6T-3B",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1290.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.596,
+  "SFCAfterburner": 0.0
+ },
+ "2288": {
+  "ID": 2288,
+  "Name": "1x TFE731-3-1J",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1589.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.504,
+  "SFCAfterburner": 0.0
+ },
+ "2695": {
+  "ID": 2695,
+  "Name": "2x MTU 16V 538 TB90 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2696": {
+  "ID": 2696,
+  "Name": "2x GM 12V-71TA Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2697": {
+  "ID": 2697,
+  "Name": "2x Catepillar Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2698": {
+  "ID": 2698,
+  "Name": "1x J52-P-8A",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4222.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.86,
+  "SFCAfterburner": 0.0
+ }
+}

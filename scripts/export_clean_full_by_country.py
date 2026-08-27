@@ -116,10 +116,7 @@ def main() -> int:
         save_json(out_dir / "comms.json", {str(k): v for k, v in all_comms.items() if int(k) in comm_ids})
         save_json(out_dir / "fuel.json", {str(k): v for k, v in all_fuel.items() if int(k) in fuel_ids})
         # 信号特征
-        sig_list = []
-        for p in plats:
-            for sig in p.get("signatures", []):
-                sig_list.append(sig)
+        sig_list = [sig for p in plats for sig in p.get("signatures", [])]
         if sig_list:
             save_json(out_dir / "signatures.json", sig_list)
 

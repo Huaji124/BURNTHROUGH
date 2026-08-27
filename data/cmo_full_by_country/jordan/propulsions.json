@@ -1,0 +1,110 @@
+{
+ "46": {
+  "ID": 46,
+  "Name": "1x T53-L-703",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1800.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.568,
+  "SFCAfterburner": 0.0
+ },
+ "376": {
+  "ID": 376,
+  "Name": "2x J85-GE-21",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1634.0,
+  "ThrustPerEngineAfterburner": 2270.0,
+  "SFCMilitary": 1.24,
+  "SFCAfterburner": 2.13
+ },
+ "498": {
+  "ID": 498,
+  "Name": "2x CT7-9C",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1750.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.461,
+  "SFCAfterburner": 0.0
+ },
+ "1123": {
+  "ID": 1123,
+  "Name": "1x F100-PW-200",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 6623.0,
+  "ThrustPerEngineAfterburner": 10260.0,
+  "SFCMilitary": 0.735,
+  "SFCAfterburner": 2.14
+ },
+ "1969": {
+  "ID": 1969,
+  "Name": "1x Atar 9K-50",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 5018.0,
+  "ThrustPerEngineAfterburner": 7206.0,
+  "SFCMilitary": 0.981,
+  "SFCAfterburner": 1.991
+ },
+ "2119": {
+  "ID": 2119,
+  "Name": "2x PW127G",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2645.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.474,
+  "SFCAfterburner": 0.0
+ },
+ "2289": {
+  "ID": 2289,
+  "Name": "1x TFE731-5",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1589.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.504,
+  "SFCAfterburner": 0.0
+ },
+ "2291": {
+  "ID": 2291,
+  "Name": "1x Lycoming AEIO-540-D4A5",
+  "Type": 2004,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 260.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.5,
+  "SFCAfterburner": 0.0
+ },
+ "2672": {
+  "ID": 2672,
+  "Name": "1x PT6A-67F",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1600.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.55,
+  "SFCAfterburner": 0.0
+ }
+}

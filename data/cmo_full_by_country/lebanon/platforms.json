@@ -1,0 +1,861 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2852,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "301 Tripoli [Attacker / Tracker Mk2 Class]",
+   "Comments": "Ex-UK",
+   "OperatorCountry": 2052,
+   "OperatorService": 2002,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 20.0,
+   "Beam": 5.2,
+   "Draft": 1.5,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 38,
+   "DisplacementFull": 0,
+   "Crew": 13,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 18,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   5643
+  ],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   811
+  ],
+  "propulsion_ids": [
+   2610
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   1839
+  ],
+  "signatures": [
+   {
+    "ID": 2852,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2852,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2852,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2852,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2852,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2852,
+    "Type": 3001,
+    "Front": 4.82,
+    "Side": 8.19,
+    "Rear": 4.82,
+    "Top": 10.92
+   },
+   {
+    "ID": 2852,
+    "Type": 3002,
+    "Front": 2.05,
+    "Side": 3.64,
+    "Rear": 2.05,
+    "Top": 4.09
+   },
+   {
+    "ID": 2852,
+    "Type": 4001,
+    "Front": 4.82,
+    "Side": 8.19,
+    "Rear": 4.82,
+    "Top": 10.92
+   },
+   {
+    "ID": 2852,
+    "Type": 4002,
+    "Front": 2.05,
+    "Side": 3.64,
+    "Rear": 2.05,
+    "Top": 4.09
+   },
+   {
+    "ID": 2852,
+    "Type": 5001,
+    "Front": 7.2,
+    "Side": 10.0,
+    "Rear": 7.2,
+    "Top": 16.5
+   },
+   {
+    "ID": 2852,
+    "Type": 5002,
+    "Front": 7.2,
+    "Side": 10.0,
+    "Rear": 7.2,
+    "Top": 16.5
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2853,
+   "Category": 2003,
+   "Type": 4007,
+   "Name": "21 Sour [EDIC Class]",
+   "Comments": "-",
+   "OperatorCountry": 2052,
+   "OperatorService": 2002,
+   "YearCommissioned": 1986,
+   "YearDecommissioned": 0,
+   "Length": 59.0,
+   "Beam": 12.0,
+   "Draft": 1.3,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 670,
+   "DisplacementFull": 0,
+   "Crew": 20,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 140,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 69,
+   "CargoCapacity": 0,
+   "MissileDefense": 1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 3004,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1511
+  ],
+  "mount_ids": [
+   561,
+   1132,
+   439
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   761,
+   469,
+   835
+  ],
+  "propulsion_ids": [
+   2611
+  ],
+  "comm_ids": [
+   72,
+   198,
+   206,
+   238,
+   239
+  ],
+  "fuel_ids": [
+   1230
+  ],
+  "signatures": [
+   {
+    "ID": 2853,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 2853,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 2853,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 2853,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 2853,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 2853,
+    "Type": 3001,
+    "Front": 6.66,
+    "Side": 11.33,
+    "Rear": 6.66,
+    "Top": 15.1
+   },
+   {
+    "ID": 2853,
+    "Type": 3002,
+    "Front": 2.83,
+    "Side": 5.03,
+    "Rear": 2.83,
+    "Top": 5.66
+   },
+   {
+    "ID": 2853,
+    "Type": 4001,
+    "Front": 6.66,
+    "Side": 11.33,
+    "Rear": 6.66,
+    "Top": 15.1
+   },
+   {
+    "ID": 2853,
+    "Type": 4002,
+    "Front": 2.83,
+    "Side": 5.03,
+    "Rear": 2.83,
+    "Top": 5.66
+   },
+   {
+    "ID": 2853,
+    "Type": 5001,
+    "Front": 18.5,
+    "Side": 21.7,
+    "Rear": 18.5,
+    "Top": 28.3
+   },
+   {
+    "ID": 2853,
+    "Type": 5002,
+    "Front": 18.5,
+    "Side": 21.7,
+    "Rear": 18.5,
+    "Top": 28.3
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2854,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "401 Inshore Patrol Craft [M-Boot Class]",
+   "Comments": "Ex-US Army",
+   "OperatorCountry": 2052,
+   "OperatorService": 2002,
+   "YearCommissioned": 1993,
+   "YearDecommissioned": 0,
+   "Length": 8.2,
+   "Beam": 2.5,
+   "Draft": 0.6,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 6,
+   "DisplacementFull": 0,
+   "Crew": 4,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 4,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2001,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   2389
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2610
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   1878
+  ],
+  "signatures": [
+   {
+    "ID": 2854,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2854,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2854,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2854,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2854,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2854,
+    "Type": 3001,
+    "Front": 3.69,
+    "Side": 6.27,
+    "Rear": 3.69,
+    "Top": 8.36
+   },
+   {
+    "ID": 2854,
+    "Type": 3002,
+    "Front": 1.57,
+    "Side": 2.79,
+    "Rear": 1.57,
+    "Top": 3.13
+   },
+   {
+    "ID": 2854,
+    "Type": 4001,
+    "Front": 3.69,
+    "Side": 6.27,
+    "Rear": 3.69,
+    "Top": 8.36
+   },
+   {
+    "ID": 2854,
+    "Type": 4002,
+    "Front": 1.57,
+    "Side": 2.79,
+    "Rear": 1.57,
+    "Top": 3.13
+   },
+   {
+    "ID": 2854,
+    "Type": 5001,
+    "Front": -2.0,
+    "Side": 0.3,
+    "Rear": -2.0,
+    "Top": 6.8
+   },
+   {
+    "ID": 2854,
+    "Type": 5002,
+    "Front": -2.0,
+    "Side": 0.3,
+    "Rear": -2.0,
+    "Top": 6.8
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 2874,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "LCSC 42 Trablous",
+   "Comments": "-",
+   "OperatorCountry": 2052,
+   "OperatorService": 2002,
+   "YearCommissioned": 2014,
+   "YearDecommissioned": 0,
+   "Length": 43.5,
+   "Beam": 8.5,
+   "Draft": 2.0,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 265,
+   "DisplacementFull": 0,
+   "Crew": 22,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 80,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 10,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2003,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1511,
+   1727
+  ],
+  "mount_ids": [
+   561
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   811
+  ],
+  "propulsion_ids": [
+   2617
+  ],
+  "comm_ids": [
+   194,
+   195,
+   238
+  ],
+  "fuel_ids": [
+   1840
+  ],
+  "signatures": [
+   {
+    "ID": 2874,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 2874,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 2874,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 2874,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 2874,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 2874,
+    "Type": 3001,
+    "Front": 6.08,
+    "Side": 10.34,
+    "Rear": 6.08,
+    "Top": 13.78
+   },
+   {
+    "ID": 2874,
+    "Type": 3002,
+    "Front": 2.58,
+    "Side": 4.59,
+    "Rear": 2.58,
+    "Top": 5.17
+   },
+   {
+    "ID": 2874,
+    "Type": 4001,
+    "Front": 6.08,
+    "Side": 10.34,
+    "Rear": 6.08,
+    "Top": 13.78
+   },
+   {
+    "ID": 2874,
+    "Type": 4002,
+    "Front": 2.58,
+    "Side": 4.59,
+    "Rear": 2.58,
+    "Top": 5.17
+   },
+   {
+    "ID": 2874,
+    "Type": 5001,
+    "Front": 15.3,
+    "Side": 18.4,
+    "Rear": 15.3,
+    "Top": 24.9
+   },
+   {
+    "ID": 2874,
+    "Type": 5002,
+    "Front": 15.3,
+    "Side": 18.4,
+    "Rear": 15.3,
+    "Top": 24.9
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3947,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "Cessna AC-208B Combat Caravan",
+   "Comments": "1x + 1x",
+   "OperatorCountry": 2052,
+   "OperatorService": 2001,
+   "YearCommissioned": 2010,
+   "YearDecommissioned": 0,
+   "Length": 12.67,
+   "Span": 15.88,
+   "Height": 4.32,
+   "WeightEmpty": 2073,
+   "WeightMax": 3969,
+   "WeightPayload": 0,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 3.9,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2002,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,B,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [
+   5177,
+   405
+  ],
+  "mount_ids": [
+   2692
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   19794,
+   19795,
+   19796
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2411
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1739
+  ],
+  "signatures": [
+   {
+    "ID": 3947,
+    "Type": 3001,
+    "Front": 2.88,
+    "Side": 4.92,
+    "Rear": 2.88,
+    "Top": 7.85
+   },
+   {
+    "ID": 3947,
+    "Type": 3002,
+    "Front": 1.59,
+    "Side": 2.89,
+    "Rear": 2.63,
+    "Top": 4.26
+   },
+   {
+    "ID": 3947,
+    "Type": 4001,
+    "Front": 2.88,
+    "Side": 6.84,
+    "Rear": 12.93,
+    "Top": 9.34
+   },
+   {
+    "ID": 3947,
+    "Type": 4002,
+    "Front": 1.59,
+    "Side": 2.89,
+    "Rear": 1.59,
+    "Top": 4.26
+   },
+   {
+    "ID": 3947,
+    "Type": 5001,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.9
+   },
+   {
+    "ID": 3947,
+    "Type": 5002,
+    "Front": 6.2,
+    "Side": 8.5,
+    "Rear": 6.2,
+    "Top": 8.5
+   }
+  ]
+ },
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4823,
+   "Category": 2001,
+   "Type": 3001,
+   "Name": "A-29A Super Tucano [EMB-314]",
+   "Comments": "6x",
+   "OperatorCountry": 2052,
+   "OperatorService": 2001,
+   "YearCommissioned": 2019,
+   "YearDecommissioned": 0,
+   "Length": 11.4,
+   "Span": 11.1,
+   "Height": 3.9,
+   "WeightEmpty": 3200,
+   "WeightMax": 5400,
+   "WeightPayload": 1500,
+   "Crew": 1,
+   "Agility": 2.0,
+   "ClimbRate": 24.0,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [
+   981
+  ],
+  "loadout_ids": [
+   3,
+   4,
+   26279,
+   26280,
+   26281,
+   26282,
+   26283,
+   26284,
+   26285,
+   26286,
+   26287,
+   26304
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   1582
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1357
+  ],
+  "signatures": [
+   {
+    "ID": 4823,
+    "Type": 3001,
+    "Front": 2.32,
+    "Side": 4.48,
+    "Rear": 2.32,
+    "Top": 6.34
+   },
+   {
+    "ID": 4823,
+    "Type": 3002,
+    "Front": 1.33,
+    "Side": 2.67,
+    "Rear": 2.13,
+    "Top": 3.56
+   },
+   {
+    "ID": 4823,
+    "Type": 4001,
+    "Front": 2.32,
+    "Side": 6.42,
+    "Rear": 11.89,
+    "Top": 8.1
+   },
+   {
+    "ID": 4823,
+    "Type": 4002,
+    "Front": 1.33,
+    "Side": 2.67,
+    "Rear": 1.33,
+    "Top": 3.56
+   },
+   {
+    "ID": 4823,
+    "Type": 5001,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.4
+   },
+   {
+    "ID": 4823,
+    "Type": 5002,
+    "Front": 3.6,
+    "Side": 6.0,
+    "Rear": 3.6,
+    "Top": 6.0
+   }
+  ]
+ }
+]

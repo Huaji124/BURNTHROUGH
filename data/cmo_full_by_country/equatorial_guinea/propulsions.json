@@ -1,0 +1,110 @@
+{
+ "207": {
+  "ID": 207,
+  "Name": "1x AI-25TL",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1721.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.75,
+  "SFCAfterburner": 0.0
+ },
+ "356": {
+  "ID": 356,
+  "Name": "2x TV3-117V",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2100.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.463,
+  "SFCAfterburner": 0.0
+ },
+ "727": {
+  "ID": 727,
+  "Name": "4x D-30KP",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 12012.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.37,
+  "SFCAfterburner": 0.0
+ },
+ "851": {
+  "ID": 851,
+  "Name": "2x D-36-3A",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 6505.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.36,
+  "SFCAfterburner": 0.0
+ },
+ "1113": {
+  "ID": 1113,
+  "Name": "2x D-136",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 11400.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.456,
+  "SFCAfterburner": 0.0
+ },
+ "1453": {
+  "ID": 1453,
+  "Name": "4x AI-20M",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 4250.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.44,
+  "SFCAfterburner": 0.0
+ },
+ "1482": {
+  "ID": 1482,
+  "Name": "2x R-19S",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 4100.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.86,
+  "SFCAfterburner": 0.0
+ },
+ "1953": {
+  "ID": 1953,
+  "Name": "2x TV3-117VK",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2200.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.45,
+  "SFCAfterburner": 0.0
+ },
+ "2556": {
+  "ID": 2556,
+  "Name": "4x Caterpillar C 280",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

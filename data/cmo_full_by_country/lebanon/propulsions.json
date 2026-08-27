@@ -1,0 +1,62 @@
+{
+ "1582": {
+  "ID": 1582,
+  "Name": "1x PT6A-68C",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 1600.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.54,
+  "SFCAfterburner": 0.0
+ },
+ "2411": {
+  "ID": 2411,
+  "Name": "2x PT6A-114A",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 675.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.64,
+  "SFCAfterburner": 0.0
+ },
+ "2610": {
+  "ID": 2610,
+  "Name": "2x 12V-71TA Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2611": {
+  "ID": 2611,
+  "Name": "2x SACM MGO 175V12 M1 Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "2617": {
+  "ID": 2617,
+  "Name": "2x MTU20V4000M93L Diesels, 2x Water Jets",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ }
+}

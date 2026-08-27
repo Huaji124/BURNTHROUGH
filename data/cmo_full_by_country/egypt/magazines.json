@@ -1,0 +1,362 @@
+{
+ "73": {
+  "ID": 73,
+  "Name": "MU-90 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "301": {
+  "ID": 301,
+  "Name": "23mm ZU-23-2",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "379": {
+  "ID": 379,
+  "Name": "40mm/70 Single Breda Type 564",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "423": {
+  "ID": 423,
+  "Name": "Protean DL",
+  "Comments": "2x Mounts, Philax",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 72,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "424": {
+  "ID": 424,
+  "Name": "Protean DL",
+  "Comments": "4x Mounts, Philax",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 144,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "426": {
+  "ID": 426,
+  "Name": "NGDS DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 48,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "498": {
+  "ID": 498,
+  "Name": "Mk46 Mod 5 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 18,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "502": {
+  "ID": 502,
+  "Name": "SA-N-5",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 4,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "574": {
+  "ID": 574,
+  "Name": "RBU-1200",
+  "Comments": "2x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "665": {
+  "ID": 665,
+  "Name": "7.62mm MG",
+  "Comments": "2x Mounts, Ship",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "715": {
+  "ID": 715,
+  "Name": "Mk36 SRBOC",
+  "Comments": "2x Mounts, 1979",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "760": {
+  "ID": 760,
+  "Name": "12.7mm/50 MG",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "761": {
+  "ID": 761,
+  "Name": "12.7mm/50 MG",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "765": {
+  "ID": 765,
+  "Name": "AK-630M",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 2001,
+  "ROF": 600,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "786": {
+  "ID": 786,
+  "Name": "AK-230 30mm/65",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "830": {
+  "ID": 830,
+  "Name": "Aspide",
+  "Comments": "1x Mount, 1 x 16",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 16,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "832": {
+  "ID": 832,
+  "Name": "40mm/70 Twin Breda Compact",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 85,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "858": {
+  "ID": 858,
+  "Name": "25mm/60 Twin",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "890": {
+  "ID": 890,
+  "Name": "Depth Charge",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 56,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "893": {
+  "ID": 893,
+  "Name": "RBU-1200",
+  "Comments": "4x Mounts, 4x Salvos",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "905": {
+  "ID": 905,
+  "Name": "40mm/70 Single Bofors",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 270,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "919": {
+  "ID": 919,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 480,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "926": {
+  "ID": 926,
+  "Name": "AK-230 30mm/65",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 30,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "927": {
+  "ID": 927,
+  "Name": "23mm Twin",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 100,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "935": {
+  "ID": 935,
+  "Name": "20mm/85 Mk15 Phalanx Blk 0",
+  "Comments": "1x Mount",
+  "ArmorGeneral": 2001,
+  "ROF": 300,
+  "Capacity": 10,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "942": {
+  "ID": 942,
+  "Name": "30mm/75 Single Oerlikon",
+  "Comments": "4x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 400,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1033": {
+  "ID": 1033,
+  "Name": "37mm/63 Twin DP",
+  "Comments": "6x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 720,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1205": {
+  "ID": 1205,
+  "Name": "BM-14-17 [Grad] 140mm Rockets",
+  "Comments": "2x Mounts, 4x reloads, 180 rnds total",
+  "ArmorGeneral": 1001,
+  "ROF": 20,
+  "Capacity": 144,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1250": {
+  "ID": 1250,
+  "Name": "China Type 81 ASW Rockets",
+  "Comments": "5 Tubes, Jianghu, 2x Mounts, Type 65",
+  "ArmorGeneral": 1001,
+  "ROF": 120,
+  "Capacity": 8,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1297": {
+  "ID": 1297,
+  "Name": "PK-10 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 20,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1302": {
+  "ID": 1302,
+  "Name": "Helicopter Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 1001,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1375": {
+  "ID": 1375,
+  "Name": "Carrier Magazine",
+  "Comments": "Generic, Empty",
+  "ArmorGeneral": 2003,
+  "ROF": 60,
+  "Capacity": 10000,
+  "AviationMagazine": 1,
+  "Hypothetical": 0
+ },
+ "1387": {
+  "ID": 1387,
+  "Name": "MU-90 [External Tubes]",
+  "Comments": "-",
+  "ArmorGeneral": 1001,
+  "ROF": 600,
+  "Capacity": 6,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1491": {
+  "ID": 1491,
+  "Name": "20mm Narwhal 20B [M693]",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 15,
+  "Capacity": 200,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1519": {
+  "ID": 1519,
+  "Name": "SYLENA Mk1 DL",
+  "Comments": "2x Mounts",
+  "ArmorGeneral": 1001,
+  "ROF": 300,
+  "Capacity": 40,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ },
+ "1548": {
+  "ID": 1548,
+  "Name": "SA-N-10",
+  "Comments": "1x Mounts, Extra",
+  "ArmorGeneral": 1001,
+  "ROF": 90,
+  "Capacity": 12,
+  "AviationMagazine": 0,
+  "Hypothetical": 0
+ }
+}

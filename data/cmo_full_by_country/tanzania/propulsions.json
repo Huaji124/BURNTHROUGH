@@ -1,0 +1,26 @@
+{
+ "400": {
+  "ID": 400,
+  "Name": "1x WP-13F [R-13F-300 Copy]",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4500.0,
+  "ThrustPerEngineAfterburner": 6500.0,
+  "SFCMilitary": 0.93,
+  "SFCAfterburner": 2.43
+ },
+ "845": {
+  "ID": 845,
+  "Name": "1x WP-7A",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 3950.0,
+  "ThrustPerEngineAfterburner": 6000.0,
+  "SFCMilitary": 0.95,
+  "SFCAfterburner": 2.06
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "732": {
+  "ID": 732,
+  "Name": "4x F117-PW-100",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 18931.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.34,
+  "SFCAfterburner": 0.0
+ },
+ "1498": {
+  "ID": 1498,
+  "Name": "4x TF33-PW-100A/JT3D-3B",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 4.0,
+  "ThrustPerEngineMilitary": 9534.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.56,
+  "SFCAfterburner": 0.0
+ },
+ "1698": {
+  "ID": 1698,
+  "Name": "2x CF6-80E1",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 30645.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.332,
+  "SFCAfterburner": 0.0
+ },
+ "2528": {
+  "ID": 2528,
+  "Name": "1x AE3007H",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 3441.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.63,
+  "SFCAfterburner": 0.0
+ }
+}

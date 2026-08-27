@@ -1,0 +1,26 @@
+{
+ "2119": {
+  "ID": 2119,
+  "Name": "2x PW127G",
+  "Type": 2003,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 2645.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.474,
+  "SFCAfterburner": 0.0
+ },
+ "2417": {
+  "ID": 2417,
+  "Name": "1x F124-GA-100",
+  "Type": 2002,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 2870.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.77,
+  "SFCAfterburner": 0.0
+ }
+}

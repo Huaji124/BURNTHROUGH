@@ -1,0 +1,62 @@
+{
+ "176": {
+  "ID": 176,
+  "Name": "3x M-503G Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "393": {
+  "ID": 393,
+  "Name": "1x R-25-300",
+  "Type": 2001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 1.0,
+  "ThrustPerEngineMilitary": 4100.0,
+  "ThrustPerEngineAfterburner": 7100.0,
+  "SFCMilitary": 0.961,
+  "SFCAfterburner": 2.206
+ },
+ "1103": {
+  "ID": 1103,
+  "Name": "2x MTU 20V 538 TB92 Diesels, 2x Rolls-Royce Proteus Gas Turbines, CODAG",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1288": {
+  "ID": 1288,
+  "Name": "2x SEMT-Pielstick 12 PA4 V200 VGDS Diesels",
+  "Type": 3001,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 0.0,
+  "ThrustPerEngineMilitary": 0.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.0,
+  "SFCAfterburner": 0.0
+ },
+ "1530": {
+  "ID": 1530,
+  "Name": "2x TV2-117A",
+  "Type": 2005,
+  "Comments": "-",
+  "Hypothetical": 0,
+  "NumberOfEngines": 2.0,
+  "ThrustPerEngineMilitary": 1670.0,
+  "ThrustPerEngineAfterburner": 0.0,
+  "SFCMilitary": 0.6,
+  "SFCAfterburner": 0.0
+ }
+}

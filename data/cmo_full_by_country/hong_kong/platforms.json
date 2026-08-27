@@ -1,0 +1,320 @@
+[
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1524,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "P 239 Peacock",
+   "Comments": "-",
+   "OperatorCountry": 2039,
+   "OperatorService": 2005,
+   "YearCommissioned": 1987,
+   "YearDecommissioned": 1997,
+   "Length": 62.6,
+   "Beam": 10.0,
+   "Draft": 2.7,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 690,
+   "DisplacementFull": 763,
+   "Crew": 31,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 170,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 15,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1041,
+   1453
+  ],
+  "mount_ids": [
+   439,
+   1132,
+   550
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   665,
+   469
+  ],
+  "propulsion_ids": [
+   1330
+  ],
+  "comm_ids": [
+   209,
+   264
+  ],
+  "fuel_ids": [
+   200
+  ],
+  "signatures": [
+   {
+    "ID": 1524,
+    "Type": 1001,
+    "Front": 120.0,
+    "Side": 121.0,
+    "Rear": 122.0,
+    "Top": 121.0
+   },
+   {
+    "ID": 1524,
+    "Type": 1002,
+    "Front": 90.5,
+    "Side": 91.0,
+    "Rear": 92.0,
+    "Top": 91.0
+   },
+   {
+    "ID": 1524,
+    "Type": 1003,
+    "Front": 82.5,
+    "Side": 83.0,
+    "Rear": 84.0,
+    "Top": 83.0
+   },
+   {
+    "ID": 1524,
+    "Type": 1004,
+    "Front": 74.0,
+    "Side": 75.0,
+    "Rear": 76.0,
+    "Top": 75.0
+   },
+   {
+    "ID": 1524,
+    "Type": 2001,
+    "Front": 20.0,
+    "Side": 100.0,
+    "Rear": 20.0,
+    "Top": 100.0
+   },
+   {
+    "ID": 1524,
+    "Type": 3001,
+    "Front": 6.78,
+    "Side": 11.53,
+    "Rear": 6.78,
+    "Top": 15.37
+   },
+   {
+    "ID": 1524,
+    "Type": 3002,
+    "Front": 2.88,
+    "Side": 5.12,
+    "Rear": 2.88,
+    "Top": 5.77
+   },
+   {
+    "ID": 1524,
+    "Type": 4001,
+    "Front": 6.78,
+    "Side": 11.53,
+    "Rear": 6.78,
+    "Top": 15.37
+   },
+   {
+    "ID": 1524,
+    "Type": 4002,
+    "Front": 2.88,
+    "Side": 5.12,
+    "Rear": 2.88,
+    "Top": 5.77
+   },
+   {
+    "ID": 1524,
+    "Type": 5001,
+    "Front": 19.1,
+    "Side": 22.4,
+    "Rear": 19.1,
+    "Top": 28.9
+   },
+   {
+    "ID": 1524,
+    "Type": 5002,
+    "Front": 19.1,
+    "Side": 22.4,
+    "Rear": 19.1,
+    "Top": 28.9
+   }
+  ]
+ },
+ {
+  "kind": "ship",
+  "raw": {
+   "ID": 1525,
+   "Category": 2002,
+   "Type": 3401,
+   "Name": "P 1007 Beachampton [Ton Class]",
+   "Comments": "-",
+   "OperatorCountry": 2039,
+   "OperatorService": 2005,
+   "YearCommissioned": 1971,
+   "YearDecommissioned": 1985,
+   "Length": 46.6,
+   "Beam": 8.5,
+   "Draft": 2.4,
+   "Height": 0.0,
+   "DisplacementEmpty": 0,
+   "DisplacementStandard": 425,
+   "DisplacementFull": 440,
+   "Crew": 38,
+   "ArmorBelt": 1001,
+   "ArmorBulkheads": 1001,
+   "ArmorDeck": 1001,
+   "ArmorBridge": 1001,
+   "ArmorCIC": 1001,
+   "ArmorEngineering": 1001,
+   "ArmorRudder": 1001,
+   "DamagePoints": 90,
+   "MaxSeaState": 5,
+   "RepairCapacity": 0,
+   "TroopCapacity": 0,
+   "CargoCapacity": 0,
+   "MissileDefense": 2,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 20,
+   "OODAEvasiveCycle": 2,
+   "PhysicalSizeCode": 2005,
+   "Hypothetical": 0,
+   "Cargo_Type": 0,
+   "Cargo_Mass": 0.0,
+   "Cargo_Area": 0.0,
+   "Cargo_Crew": 0.0,
+   "Cargo_Volume": null,
+   "Cost": 0
+  },
+  "sensor_ids": [
+   1453
+  ],
+  "mount_ids": [
+   439,
+   1026
+  ],
+  "loadout_ids": [],
+  "magazine_ids": [
+   295,
+   823
+  ],
+  "propulsion_ids": [
+   1331
+  ],
+  "comm_ids": [
+   209,
+   264
+  ],
+  "fuel_ids": [
+   810
+  ],
+  "signatures": [
+   {
+    "ID": 1525,
+    "Type": 1001,
+    "Front": 115.0,
+    "Side": 116.0,
+    "Rear": 117.0,
+    "Top": 116.0
+   },
+   {
+    "ID": 1525,
+    "Type": 1002,
+    "Front": 85.5,
+    "Side": 86.0,
+    "Rear": 87.0,
+    "Top": 86.0
+   },
+   {
+    "ID": 1525,
+    "Type": 1003,
+    "Front": 77.5,
+    "Side": 78.0,
+    "Rear": 79.0,
+    "Top": 78.0
+   },
+   {
+    "ID": 1525,
+    "Type": 1004,
+    "Front": 69.0,
+    "Side": 70.0,
+    "Rear": 71.0,
+    "Top": 70.0
+   },
+   {
+    "ID": 1525,
+    "Type": 2001,
+    "Front": 8.0,
+    "Side": 40.0,
+    "Rear": 8.0,
+    "Top": 40.0
+   },
+   {
+    "ID": 1525,
+    "Type": 3001,
+    "Front": 6.21,
+    "Side": 10.55,
+    "Rear": 6.21,
+    "Top": 14.07
+   },
+   {
+    "ID": 1525,
+    "Type": 3002,
+    "Front": 2.64,
+    "Side": 4.69,
+    "Rear": 2.64,
+    "Top": 5.28
+   },
+   {
+    "ID": 1525,
+    "Type": 4001,
+    "Front": 6.21,
+    "Side": 10.55,
+    "Rear": 6.21,
+    "Top": 14.07
+   },
+   {
+    "ID": 1525,
+    "Type": 4002,
+    "Front": 2.64,
+    "Side": 4.69,
+    "Rear": 2.64,
+    "Top": 5.28
+   },
+   {
+    "ID": 1525,
+    "Type": 5001,
+    "Front": 16.1,
+    "Side": 19.2,
+    "Rear": 16.1,
+    "Top": 25.7
+   },
+   {
+    "ID": 1525,
+    "Type": 5002,
+    "Front": 16.1,
+    "Side": 19.2,
+    "Rear": 16.1,
+    "Top": 25.7
+   }
+  ]
+ }
+]

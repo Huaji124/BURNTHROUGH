@@ -1,0 +1,108 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 4350,
+   "Category": 2001,
+   "Type": 7101,
+   "Name": "Y-12",
+   "Comments": "-",
+   "OperatorCountry": 2125,
+   "OperatorService": 2001,
+   "YearCommissioned": 0,
+   "YearDecommissioned": 0,
+   "Length": 14.86,
+   "Span": 17.24,
+   "Height": 5.68,
+   "WeightEmpty": 2840,
+   "WeightMax": 5300,
+   "WeightPayload": 1700,
+   "Crew": 2,
+   "Agility": 0.5,
+   "ClimbRate": 8.1,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2003,
+   "RunwayLengthCode": 2003,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 10.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,C,C",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   22151,
+   22152
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   2578
+  ],
+  "comm_ids": [
+   20
+  ],
+  "fuel_ids": [
+   1810
+  ],
+  "signatures": [
+   {
+    "ID": 4350,
+    "Type": 3001,
+    "Front": 3.2,
+    "Side": 5.84,
+    "Rear": 3.2,
+    "Top": 8.73
+   },
+   {
+    "ID": 4350,
+    "Type": 3002,
+    "Front": 1.74,
+    "Side": 3.33,
+    "Rear": 2.93,
+    "Top": 4.65
+   },
+   {
+    "ID": 4350,
+    "Type": 4001,
+    "Front": 3.2,
+    "Side": 7.66,
+    "Rear": 13.47,
+    "Top": 10.02
+   },
+   {
+    "ID": 4350,
+    "Type": 4002,
+    "Front": 1.74,
+    "Side": 3.33,
+    "Rear": 1.74,
+    "Top": 4.65
+   },
+   {
+    "ID": 4350,
+    "Type": 5001,
+    "Front": 7.5,
+    "Side": 9.7,
+    "Rear": 7.5,
+    "Top": 10.1
+   },
+   {
+    "ID": 4350,
+    "Type": 5002,
+    "Front": 7.5,
+    "Side": 9.7,
+    "Rear": 7.5,
+    "Top": 9.7
+   }
+  ]
+ }
+]

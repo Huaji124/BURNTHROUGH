@@ -1,0 +1,109 @@
+[
+ {
+  "kind": "aircraft",
+  "raw": {
+   "ID": 3099,
+   "Category": 2003,
+   "Type": 7402,
+   "Name": "SA.319B Alouette III",
+   "Comments": "11x",
+   "OperatorCountry": 2026,
+   "OperatorService": 2001,
+   "YearCommissioned": 1968,
+   "YearDecommissioned": 1987,
+   "Length": 10.0,
+   "Span": 3.0,
+   "Height": 3.0,
+   "WeightEmpty": 1143,
+   "WeightMax": 2200,
+   "WeightPayload": 750,
+   "Crew": 2,
+   "Agility": 1.0,
+   "ClimbRate": 4.3,
+   "OODADetectionCycle": 15,
+   "OODATargetingCycle": 0,
+   "OODAEvasiveCycle": 2,
+   "TotalEndurance": 0,
+   "PhysicalSizeCode": 2001,
+   "RunwayLengthCode": 2001,
+   "Hypothetical": 0,
+   "Cost": 0,
+   "DamagePoints": 3.0,
+   "AircraftEngineArmor": 1001,
+   "AircraftFuselageArmor": 1001,
+   "AircraftCockpitArmor": 1001,
+   "Visibility": "A,A,B",
+   "FuelOffloadRate": 0,
+   "Deprecated": 0
+  },
+  "sensor_ids": [],
+  "mount_ids": [],
+  "loadout_ids": [
+   3,
+   4,
+   16455,
+   16456,
+   16457
+  ],
+  "magazine_ids": [],
+  "propulsion_ids": [
+   279
+  ],
+  "comm_ids": [
+   187
+  ],
+  "fuel_ids": [
+   153
+  ],
+  "signatures": [
+   {
+    "ID": 3099,
+    "Type": 3001,
+    "Front": 1.42,
+    "Side": 3.87,
+    "Rear": 1.42,
+    "Top": 3.87
+   },
+   {
+    "ID": 3099,
+    "Type": 3002,
+    "Front": 0.88,
+    "Side": 2.36,
+    "Rear": 1.3,
+    "Top": 2.36
+   },
+   {
+    "ID": 3099,
+    "Type": 4001,
+    "Front": 1.42,
+    "Side": 5.82,
+    "Rear": 9.82,
+    "Top": 5.82
+   },
+   {
+    "ID": 3099,
+    "Type": 4002,
+    "Front": 0.88,
+    "Side": 2.36,
+    "Rear": 0.88,
+    "Top": 2.36
+   },
+   {
+    "ID": 3099,
+    "Type": 5001,
+    "Front": -2.3,
+    "Side": 0.3,
+    "Rear": -2.3,
+    "Top": 0.7
+   },
+   {
+    "ID": 3099,
+    "Type": 5002,
+    "Front": -2.3,
+    "Side": 0.3,
+    "Rear": -2.3,
+    "Top": 0.3
+   }
+  ]
+ }
+]
