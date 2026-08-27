@@ -85,14 +85,21 @@ def draw_terrain_obstacles(scene: QGraphicsScene, env: Environment, proj: LocalP
 
 def draw_map_background(scene: QGraphicsScene, env: Environment, proj: LocalProjection) -> None:
     """绘制海洋背景 + 陆地多边形。"""
-    # 海洋底色：覆盖当前投影范围
-    span = 12.0
-    x1, y1 = proj.to_xy(proj.center_lat - span, proj.center_lon - span)
-    x2, y2 = proj.to_xy(proj.center_lat + span, proj.center_lon + span)
+    # 海洋底色：尽量覆盖世界范围
+    x1, y1 = proj.to_xy(-90, -180)
+    x2, y2 = proj.to_xy(90, 180)
     ocean = scene.addRect(min(x1,x2), min(y1,y2), abs(x2-x1), abs(y2-y1))
     ocean.setBrush(QBrush(QColor(179, 212, 240)))
     ocean.setPen(Qt.NoPen)
     ocean.setZValue(-2)
+    for poly in getattr(env, 'world_land', []):
+        pts = [QPointF(*proj.to_xy(lat, lon)) for lat, lon in poly if isinstance(lat,(int,float))]
+        if len(pts) < 3:
+            continue
+        land = scene.addPolygon(QPolygonF(pts))
+        land.setPen(QPen(QColor("#7a9e7f"), 1))
+        land.setBrush(QBrush(QColor(176, 212, 176, 180)))
+        land.setZValue(-1)
     for coast in env.coastlines:
         pts = [QPointF(*proj.to_xy(lat, lon)) for lat, lon in coast.get("points", [])]
         if len(pts) < 3:

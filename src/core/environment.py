@@ -153,6 +153,7 @@ class Environment:
     # 环境层（Phase 7 环境）
     terrain_obstacles: list[dict] = field(default_factory=list)
     coastlines: list[dict] = field(default_factory=list)  # 简化海岸线多边形
+    world_land: list[dict] = field(default_factory=list)  # 世界陆地多边形
     atmospheric_k: float = 4.0 / 3.0    # 大气折射系数（4/3 地球半径）
     sea_state: int = 3                  # 海况 0~9
     rain_mm_h: float = 0.0              # 降雨强度
@@ -194,6 +195,11 @@ class Environment:
         import json as _json
         data = _json.loads(Path(path).read_text(encoding="utf-8"))
         self.coastlines.extend(data.get("coastlines", []))
+
+    def load_world_land_from_json(self, path: str | Path) -> None:
+        import json as _json
+        data = _json.loads(Path(path).read_text(encoding="utf-8"))
+        self.world_land.extend(data.get("polygons", []))
 
     # ------------------------------------------------------------------
     # 指令与航路点

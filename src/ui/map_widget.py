@@ -105,25 +105,18 @@ class MapWidget(QGraphicsView):
     def set_environment(self, env: Environment) -> None:
         self._env = env
         if env.platforms:
-            lats = [p.latitude for p in env.platforms.values()]
-            lons = [p.longitude for p in env.platforms.values()]
-            center_lat = sum(lats) / len(lats)
-            center_lon = sum(lons) / len(lons)
-            self._projection = LocalProjection(center_lat, center_lon, px_per_km=0.5)
+            self._projection = LocalProjection(0.0, 0.0, px_per_km=0.02)
         self._selected_platform_ids = set()
         self._selected_contact = None
         self._rebuild()
         self.fit_to_world()
 
     def fit_to_world(self) -> None:
-        """将初始视图缩放到中心 ±8 度范围，显示完整区域。"""
+        """将初始视图缩放到世界范围。"""
         if self._projection is None:
             return
-        span = 8.0
-        tl = self._projection.to_xy(self._projection.center_lat + span,
-                                    self._projection.center_lon - span)
-        br = self._projection.to_xy(self._projection.center_lat - span,
-                                    self._projection.center_lon + span)
+        tl = self._projection.to_xy(90, -180)
+        br = self._projection.to_xy(-90, 180)
         rect = QRectF(QPointF(*tl), QPointF(*br))
         self.resetTransform()
         self.fitInView(rect, Qt.AspectRatioMode.KeepAspectRatio)
