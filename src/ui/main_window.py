@@ -177,7 +177,8 @@ class MainWindow(QMainWindow):
     # ------------------------------------------------------------------
     def _sim_tick(self) -> None:
         self.env.step(dt_s=1.0)
-        self.map_widget.refresh()
+        if not getattr(self.env, 'waypoint_drag_lock', False):
+            self.map_widget.refresh()
         self.contact_list.update_contacts(self.env)
         self.spectrum_widget.update()
         self.false_target_panel.update_false_targets(self.env)
