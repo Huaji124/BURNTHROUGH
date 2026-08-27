@@ -199,6 +199,7 @@ def draw_waypoints(scene: QGraphicsScene, env: Environment, proj: LocalProjectio
             label.setZValue(15)
             scene.addItem(label)
             screen_fixed(label)
+            screen_fixed(label)
         if len(pts) >= 2:
             for i in range(len(pts) - 1):
                 line = QGraphicsLineItem(pts[i][0], pts[i][1], pts[i+1][0], pts[i+1][1])
@@ -232,6 +233,7 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     item.setData(0, f"platform::{platform.id}")
     item.setZValue(10)
     item.setToolTip(platform.name)
+    screen_fixed(item)
     platform_items[platform.id] = item
 
     if platform.kind == "aircraft":
@@ -242,6 +244,7 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
         heading_line.setPen(QPen(color, 1, Qt.PenStyle.SolidLine))
         heading_line.setZValue(9)
         scene.addItem(heading_line)
+        screen_fixed(heading_line)
 
     label_text = platform.name if platform.alive else f"{platform.name} (被击毁)"
     label = QGraphicsSimpleTextItem(label_text)
@@ -250,6 +253,7 @@ def draw_platform(scene: QGraphicsScene, platform: Platform, proj: LocalProjecti
     label.setPos(x + 8, y - 6)
     label.setZValue(11)
     scene.addItem(label)
+    screen_fixed(label)
 
 
 def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -336,6 +340,7 @@ def draw_jammer_sectors(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setZValue(3)
             scene.addItem(label)
             screen_fixed(label)
+            screen_fixed(label)
 
 
 def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -367,6 +372,7 @@ def draw_ir_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProject
             label.setZValue(4)
             scene.addItem(label)
             screen_fixed(label)
+            screen_fixed(label)
 
 
 def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
@@ -397,6 +403,7 @@ def draw_sonar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 + 4)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
             screen_fixed(label)
 
 
@@ -442,6 +449,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             label.setZValue(12)
             scene.addItem(label)
             screen_fixed(label)
+            screen_fixed(label)
 
             if contact.latitude is not None and contact.longitude is not None:
                 ex, ey = proj.to_xy(contact.latitude, contact.longitude)
@@ -461,6 +469,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             marker.setZValue(12)
             marker.setToolTip(f"{label_text}\n方位 {contact.bearing_deg:.1f}°")
             scene.addItem(marker)
+            screen_fixed(marker)
             screen_fixed(marker)
             contact_items.setdefault(f"{own_id}::{key}", []).append(marker)
 
@@ -530,6 +539,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 6)
             label.setZValue(4)
             scene.addItem(label)
+            screen_fixed(label)
             screen_fixed(label)
 
 
