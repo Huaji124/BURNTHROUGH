@@ -606,16 +606,17 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 # 火控级：按目标类型显示精确目标符号
                 size = 7.0
                 if target.kind == "aircraft":
-                    pts = [QPointF(x2, y2 - size), QPointF(x2 - size * 0.8, y2 + size * 0.8),
-                           QPointF(x2, y2 + size * 0.3), QPointF(x2 + size * 0.8, y2 + size * 0.8)]
+                    pts = [QPointF(0, -size), QPointF(-size * 0.8, size * 0.8),
+                           QPointF(0, size * 0.3), QPointF(size * 0.8, size * 0.8)]
                     marker = scene.addPolygon(QPolygonF(pts))
                     added = True
                 elif target.kind == "ship":
-                    marker = scene.addRect(x2 - size / 2, y2 - size / 2, size, size)
+                    marker = scene.addRect(-size / 2, -size / 2, size, size)
                     added = True
                 else:
-                    marker = QGraphicsEllipseItem(x2 - size / 2, y2 - size / 2, size, size)
+                    marker = QGraphicsEllipseItem(-size / 2, -size / 2, size, size)
                     added = False
+                marker.setPos(x2, y2)
                 marker.setPen(QPen(color, 1.5))
                 marker.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 80)))
                 marker.setZValue(5)
