@@ -599,20 +599,28 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             line.setToolTip(f"雷达接触: {target.name} / {contact.range_m/1852.0:.1f}nm")
             scene.addItem(line)
             quality = contact.extra.get("track_quality", "search")
+            dist_km = (contact.range_m or 0.0) / 1000.0
             if quality == "fire_control":
-                # 火控级：精确位置点
-                marker = QGraphicsEllipseItem(-3, -3, 6, 6)
+                # 火控级：按目标类型显示精确目标符号
+                size = 7.0
+                if target.kind == "aircraft":
+                    pts = [QPointF(x2, y2 - size), QPointF(x2 - size * 0.8, y2 + size * 0.8),
+                           QPointF(x2, y2 + size * 0.3), QPointF(x2 + size * 0.8, y2 + size * 0.8)]
+                    marker = scene.addPolygon(QPolygonF(pts))
+                elif target.kind == "ship":
+                    marker = scene.addRect(x2 - size / 2, y2 - size / 2, size, size)
+                else:
+                    marker = QGraphicsEllipseItem(x2 - size / 2, y2 - size / 2, size, size)
                 marker.setPen(QPen(color, 1.5))
-                marker.setBrush(QBrush(color))
-                marker.setPos(x2, y2)
+                marker.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 80)))
                 marker.setZValue(5)
                 screen_fixed(marker)
                 scene.addItem(marker)
-                label_text = "火控级"
+                label_text = f"[火控] {target.name} {dist_km:.0f}km"
                 label_color = QColor("#e74c3c")
             else:
-                # 区域级：不确定范围圈
-                err_km = 20.0
+                # 区域级：不确定范围圈随距离增大而增大
+                err_km = max(10.0, min(50.0, dist_km * 0.15))
                 rpx = proj.km_to_px(err_km)
                 ell = QGraphicsEllipseItem(x2 - rpx, y2 - rpx, 2 * rpx, 2 * rpx)
                 pen2 = QPen(color, 1.0, Qt.PenStyle.DashLine)
@@ -621,13 +629,14 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 ell.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 25)))
                 ell.setZValue(4)
                 scene.addItem(ell)
-                label_text = "区域级"
+                label_text = f"[区域] {target.name} ±{err_km:.0f}km"
                 label_color = color
             label = QGraphicsSimpleTextItem(label_text)
             label.setBrush(QBrush(label_color))
             label.setFont(QFont("SansSerif", 7))
+            label.setData(2, (x2, y2, 10.0, -6.0))
             label.setPos((x1 + x2) / 2, (y1 + y2) / 2 - 6)
-            label.setZValue(4)
+            label.setZValue(6)
             scene.addItem(label)
             screen_fixed(label)
 
