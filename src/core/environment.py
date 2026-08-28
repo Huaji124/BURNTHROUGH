@@ -226,9 +226,11 @@ class Environment:
     def clear_waypoints(self, platform_id: str) -> None:
         self.waypoints.pop(platform_id, None)
 
-    def add_attack_order(self, attacker_id: str, target_id: str) -> None:
+    def add_attack_order(self, attacker_id: str, target_id: str,
+                         weapon_name: str | None = None) -> None:
         self.orders.append({"kind": "attack", "attacker": attacker_id,
-                            "target": target_id, "time": self.time_s})
+                            "target": target_id, "time": self.time_s,
+                            "weapon_name": weapon_name})
 
     # ------------------------------------------------------------------
     # 武器发射与导弹飞行（Phase 4 反辐射打击）

@@ -36,6 +36,7 @@ class WeaponPanel(QWidget):
         self.buttons_layout = QHBoxLayout()
         layout.addLayout(self.buttons_layout)
         self._buttons: list[QPushButton] = []
+        self._selected_name: str | None = None
 
     def show_platform(self, env: Environment, platform_id: str | None) -> None:
         self.clear_buttons()
@@ -57,6 +58,12 @@ class WeaponPanel(QWidget):
         if not self._buttons:
             label = QLabel("无武器")
             self.buttons_layout.addWidget(label)
+        # 恢复已选武器
+        if self._selected_name:
+            for b in self._buttons:
+                if b.text().startswith(self._selected_name):
+                    b.setChecked(True)
+                    break
 
     def clear_buttons(self) -> None:
         for b in self._buttons:
@@ -64,6 +71,7 @@ class WeaponPanel(QWidget):
         self._buttons = []
 
     def _on_click(self, name: str) -> None:
+        self._selected_name = name
         for b in self._buttons:
             if b.text().startswith(name):
                 b.setChecked(True)
