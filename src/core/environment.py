@@ -739,6 +739,46 @@ class Environment:
                     jammer_load[best_jammer.id] = jammer_load.get(best_jammer.id, 0) + 1
         return assignment
 
+    @staticmethod
+    def _infer_platform_type(p: Platform) -> str:
+        """根据已知信息推测目标型号/类别（简化规则）。"""
+        name = p.name or ""
+        if "Type 052D" in name or "052D" in name:
+            return "052D型驱逐舰"
+        if "Type 055" in name or "055" in name:
+            return "055型驱逐舰"
+        if "Type 052" in name or "052" in name or "Luyang" in name:
+            return "052型驱逐舰"
+        if "Type 054" in name or "054" in name:
+            return "054型护卫舰"
+        if "Type 056" in name or "056" in name:
+            return "056型轻型护卫舰"
+        if "Type 001" in name or "辽宁" in name:
+            return "001型航母"
+        if "J-20" in name:
+            return "歼-20"
+        if "J-16" in name:
+            return "歼-16"
+        if "J-15" in name:
+            return "歼-15"
+        if "J-10" in name:
+            return "歼-10"
+        if "J-11" in name:
+            return "歼-11"
+        if "H-6" in name:
+            return "轰-6轰炸机"
+        if "KJ-500" in name or "KJ-200" in name or "KJ-2000" in name:
+            return "预警机"
+        if "YJ" in name:
+            return "导弹艇/反舰平台"
+        if p.kind == "aircraft":
+            return "空中目标"
+        if p.kind == "submarine":
+            return "水下目标"
+        if p.kind == "ship":
+            return "水面舰艇"
+        return "未知目标"
+
     def _jammer_actively_jamming(self, jammer: Jammer) -> bool:
         """考虑间断观察法：干扰机在观察窗口内不干扰。"""
         if not jammer.is_jamming:
@@ -1140,6 +1180,16 @@ class Environment:
             "toa_ns": result.get("toa_ns"),
             "doppler_hz": result.get("doppler_hz"),
         }
+        if "source_name" in result:
+            sn = result["source_name"]
+            if "干扰" in sn or "ECM" in sn.upper() or "ALQ" in sn.upper():
+                contact.extra["inferred_type"] = "电子战飞机"
+            elif "雷达" in sn or "Radar" in sn:
+                contact.extra["inferred_type"] = "雷达辐射源"
+            else:
+                contact.extra["inferred_type"] = "未知辐射源"
+        else:
+            contact.extra["inferred_type"] = "未知辐射源"
 
     def _get_horizon_nm(self, a: Platform, b: Platform) -> float:
         """考虑大气折射系数后的雷达视距（海里）。"""
@@ -1313,6 +1363,7 @@ class Environment:
                         contact.extra.update({
                             "detection_km": detection_km,
                             "track_quality": "fire_control" if fire_control_ok else "search",
+                            "inferred_type": self._infer_platform_type(target),
                         })
                         contact.confidence = 0.99 if fire_control_ok else 0.8
                         if jammer is not None and jammer.active_technique == "tws_gain":
@@ -1474,6 +1525,7 @@ class Environment:
                 contact.extra.update({
                     "detection_km": item["detection_km"],
                     "track_quality": "fire_control" if fire_control_ok else "search",
+                    "inferred_type": self._infer_platform_type(target),
                 })
                 contact.confidence = 0.99 if fire_control_ok else 0.8
                 if jammer is not None and jammer.active_technique == "tws_gain":

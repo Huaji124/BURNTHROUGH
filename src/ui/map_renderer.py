@@ -503,7 +503,9 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
             side_mark = {"friendly": " [友]", "enemy": " [敌]",
                          "neutral": " [中]", "unknown": " [未]"} \
                 .get(contact.marked_side or "", "")
-            label_text = f"{contact.emitter_name} [{ident}]{side_mark}{mem}"
+            inferred = contact.extra.get("inferred_type")
+            display = inferred or contact.emitter_name or contact.emitter_id or "?"
+            label_text = f"{display} [{ident}]{side_mark}{mem}"
             label = QGraphicsSimpleTextItem(label_text)
             label.setBrush(QBrush(color))
             label.setFont(QFont("SansSerif", 7))
@@ -616,7 +618,8 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 marker.setZValue(5)
                 screen_fixed(marker)
                 scene.addItem(marker)
-                label_text = f"[火控] {target.name} {dist_km:.0f}km"
+                inferred = contact.extra.get("inferred_type") or "未知目标"
+                label_text = f"[火控] {inferred} {dist_km:.0f}km"
                 label_color = QColor("#e74c3c")
             else:
                 # 区域级：不确定范围圈随距离增大而增大
@@ -629,7 +632,8 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 ell.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 25)))
                 ell.setZValue(4)
                 scene.addItem(ell)
-                label_text = f"[区域] {target.name} ±{err_km:.0f}km"
+                inferred = contact.extra.get("inferred_type") or "未知目标"
+                label_text = f"[区域] {inferred} ±{err_km:.0f}km"
                 label_color = color
             label = QGraphicsSimpleTextItem(label_text)
             label.setBrush(QBrush(label_color))
