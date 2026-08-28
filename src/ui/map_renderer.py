@@ -619,7 +619,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 marker.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
                                 QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
                 marker.setData(0, f"contact::{own_id}::{contact.emitter_id}")
-                marker.setToolTip(f"火控级 {label_text}")
+                marker.setToolTip("火控级 精确跟踪目标")
                 screen_fixed(marker)
                 scene.addItem(marker)
                 inferred = contact.extra.get("inferred_type") or "未知目标"
@@ -638,7 +638,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 ell.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
                              QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
                 ell.setData(0, f"contact::{own_id}::{contact.emitter_id}")
-                ell.setToolTip(f"区域级 {label_text}")
+                ell.setToolTip("区域级 目标大致范围")
                 scene.addItem(ell)
                 inferred = contact.extra.get("inferred_type") or "未知目标"
                 label_text = f"[区域] {inferred} ±{err_km:.0f}km"
