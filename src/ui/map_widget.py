@@ -322,6 +322,24 @@ class MapWidget(QGraphicsView):
             pid = data
             # 已选中单位 + 左键敌方 -> 攻击
             if self._selected_platform_ids:
+                # 若点击处同时有敌方接触，优先攻击接触目标
+                chit = self._hit_test_contact(scene_pos)
+                if chit is not None:
+                    c_own, c_key = chit
+                    contact, _ = self._find_contact(self._env, c_own, c_key)
+                    if contact is not None:
+                        tgt = None
+                        if contact.emitter_id is not None:
+                            tp = self._env.find_platform_by_source_id(contact.emitter_id)
+                            tgt = tp.id if tp is not None else contact.emitter_id
+                            if tgt not in self._env.platforms:
+                                tgt = None
+                        if tgt:
+                            attackers = [i for i in self._selected_platform_ids
+                                         if self._can_attack(i, tgt)]
+                            if attackers:
+                                self._issue_attack_orders(attackers, tgt)
+                                return
                 attackers = [i for i in self._selected_platform_ids
                              if self._can_attack(i, pid)]
                 if attackers:
@@ -480,6 +498,17 @@ class MapWidget(QGraphicsView):
                 parts = data.split("::")
                 if len(parts) == 3:
                     return ("waypoint", (parts[1], int(parts[2])))
+        return None
+
+    def _hit_test_contact(self, scene_pos: QPointF) -> tuple[str, str] | None:
+        """只检测接触标记（用于已选中单位后点击敌人）。"""
+        items = self._scene.items(scene_pos, Qt.ItemSelectionMode.IntersectsItemShape)
+        for item in items:
+            data = item.data(0)
+            if isinstance(data, str) and data.startswith("contact::"):
+                parts = data.split("::")
+                if len(parts) == 3:
+                    return (parts[1], parts[2])
         return None
 
     def _items_in_band(self, band_rect: QRect) -> list[tuple[str, object]]:
