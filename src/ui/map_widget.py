@@ -330,14 +330,21 @@ class MapWidget(QGraphicsView):
             self._set_selection({pid}, None)
         elif kind == "contact":
             own_id, ckey = data
-            contact = env.contacts.get(own_id, {}).get(ckey)
+            contact, _ = self._find_contact(env, own_id, ckey)
             if contact is None:
                 return
-            if self._selected_platform_ids and contact.target_platform_id:
+            # 从接触推测目标平台ID
+            target_id = None
+            if contact.emitter_id is not None:
+                t = env.find_platform_by_source_id(contact.emitter_id)
+                target_id = t.id if t is not None else contact.emitter_id
+                if target_id not in env.platforms:
+                    target_id = None
+            if self._selected_platform_ids and target_id:
                 attackers = [i for i in self._selected_platform_ids
-                             if self._can_attack(i, contact.target_platform_id)]
+                             if self._can_attack(i, target_id)]
                 if attackers:
-                    self._issue_attack_orders(attackers, contact.target_platform_id)
+                    self._issue_attack_orders(attackers, target_id)
                     return
             self._set_selection(set(), (own_id, ckey))
 
