@@ -165,6 +165,7 @@ def test_asm_launch_and_ciws_intercept():
         speed_kt=0.0,
         ciws=True,
         ciws_hit_probability=1.0,
+        gun_hit_probability=0.0,
     )
     env.add_platform(blue_ship)
     env.add_attack_order("red_ddg", "blue_ship")
