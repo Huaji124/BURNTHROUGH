@@ -1248,7 +1248,8 @@ class Environment:
         penalty -= min(0.4, self.sea_state * 0.04)
         penalty -= min(0.3, self.rain_mm_h / 50.0 * 0.3)
         visibility = max(self.visibility_km, 1.0)
-        penalty -= min(0.2, (30.0 - visibility) / 30.0 * 0.2)
+        if visibility < 30.0:
+            penalty -= min(0.2, (30.0 - visibility) / 30.0 * 0.2)
         penalty -= min(0.15, self.wind_speed_kt / 50.0 * 0.15)
         penalty -= min(0.1, self.cloud_cover_pct / 100.0 * 0.1)
         penalty -= min(0.1, max(0.0, self.humidity_pct - 80.0) / 20.0 * 0.1)

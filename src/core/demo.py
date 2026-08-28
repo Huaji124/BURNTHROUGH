@@ -39,11 +39,17 @@ def _make_esm(platform_id: str, esm_id: str, name: str) -> Receiver:
 
 def build_demo_environment() -> Environment:
     env = Environment()
+    # 演示想定使用良好天气，避免天气衰减导致雷达探测不到
+    env.sea_state = 0
+    env.rain_mm_h = 0.0
+    env.visibility_km = 50.0
+    env.cloud_cover_pct = 0.0
+    env.humidity_pct = 50.0
 
     # 红方驱逐舰
     red_ddg = Platform(
         id="red_ddg",
-        name="红方驱逐舰",
+        name="红方055-1",
         side="red",
         kind="ship",
         latitude=22.0,
@@ -86,7 +92,7 @@ def build_demo_environment() -> Environment:
     # 红方护卫舰（交叉定位站）
     red_ffg = Platform(
         id="red_ffg",
-        name="红方护卫舰",
+        name="红方055-2",
         side="red",
         kind="ship",
         latitude=22.9,
@@ -97,7 +103,21 @@ def build_demo_environment() -> Environment:
         cruise_speed_kt=20.0,
     )
     red_ffg.weapons = ["反舰导弹 x4", "防空导弹 x8"]
-    red_ffg.receivers.append(_make_esm("red_ffg", "esm_ffg", "护卫舰 ESM"))
+    red_ffg.receivers.append(_make_esm("red_ffg", "esm_ffg", "055-2 ESM"))
+    red_ffg.emitters.append(Emitter(
+        id="type346_search_radar_ffg",
+        name="055-2 搜索雷达",
+        role="multifunction_radar",
+        band="S",
+        freq_min_hz=2_000_000_000,
+        freq_max_hz=4_000_000_000,
+        peak_power_w=1_000_000,
+        antenna_gain_db=40,
+        scan_period_s=4,
+        beam_width_deg=1.5,
+        emcon_state="on",
+        platform_id="red_ffg",
+    ))
     env.add_platform(red_ffg)
 
     # 蓝方电子战飞机：绕红方驱逐舰飞行，半径约 103 km
@@ -119,6 +139,20 @@ def build_demo_environment() -> Environment:
         orbit_direction=1,
     )
     blue_ew.weapons = ["反辐射导弹 x2", "空空导弹 x4"]
+    blue_ew.emitters.append(Emitter(
+        id="apg66_blue",
+        name="蓝方战机搜索雷达",
+        role="search_radar",
+        band="X",
+        freq_min_hz=9_000_000_000,
+        freq_max_hz=10_000_000_000,
+        peak_power_w=100_000,
+        antenna_gain_db=34,
+        scan_period_s=2,
+        beam_width_deg=2.5,
+        emcon_state="on",
+        platform_id="blue_ew",
+    ))
     blue_ew.jammers.append(Jammer(
         id="ecm_pod_rkz",
         name="有源干扰吊舱（演示）",

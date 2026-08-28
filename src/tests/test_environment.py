@@ -77,6 +77,10 @@ def test_arm_loses_lock_after_jammer_off():
     env.step(1.0)
     for jammer in env.all_jammers():
         jammer.emcon_state = 'off'
+    # 蓝方战机雷达也关闭，确保目标完全无辐射
+    for e in env.all_emitters():
+        if e.platform_id == 'blue_ew':
+            e.emcon_state = 'off'
     for _ in range(30):
         env.step(1.0)
         if any(m.result in ('lost_lock', 'miss', 'hit') for m in env.missiles):
