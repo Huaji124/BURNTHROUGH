@@ -455,10 +455,16 @@ class MapWidget(QGraphicsView):
     # ------------------------------------------------------------------
     def _hit_test(self, scene_pos: QPointF) -> tuple[str, object] | None:
         items = self._scene.items(scene_pos, Qt.ItemSelectionMode.IntersectsItemShape)
+        # 优先命中己方平台，避免被敌方接触标记遮挡
         for item in items:
             data = item.data(0)
             if isinstance(data, str) and data.startswith("platform::"):
-                return ("platform", data.split("::", 1)[1])
+                pid = data.split("::", 1)[1]
+                p = self._env.platforms.get(pid) if self._env else None
+                if p is not None and p.side == self._player_side:
+                    return ("platform", pid)
+        for item in items:
+            data = item.data(0)
             if isinstance(data, str) and data.startswith("contact::"):
                 parts = data.split("::")
                 if len(parts) == 3:
