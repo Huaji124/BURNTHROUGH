@@ -663,9 +663,18 @@ class MapWidget(QGraphicsView):
         self.command_issued.emit(f"{p.name}：交战规则 = {cn}")
         self._rebuild()
 
+    @staticmethod
+    def _find_contact(env, own_id: str, ckey: str):
+        """在所有传感器接触中查找接触对象。"""
+        for source in ("contacts", "radar_contacts", "ir_contacts", "sonar_contacts"):
+            c = getattr(env, source, {}).get(own_id, {}).get(ckey)
+            if c is not None:
+                return c, source
+        return None, None
+
     def _show_contact_menu(self, global_pos: QPoint, own_id: str, ckey: str) -> None:
         env = self._env
-        contact = env.contacts.get(own_id, {}).get(ckey)
+        contact, _ = self._find_contact(env, own_id, ckey)
         if contact is None:
             return
         menu = QMenu(self)
@@ -680,7 +689,7 @@ class MapWidget(QGraphicsView):
 
     def _mark_contact(self, own_id: str, ckey: str, side: str) -> None:
         env = self._env
-        contact = env.contacts.get(own_id, {}).get(ckey)
+        contact, _ = self._find_contact(env, own_id, ckey)
         if contact is None:
             return
         contact.marked_side = side
@@ -690,7 +699,7 @@ class MapWidget(QGraphicsView):
 
     def _show_contact_info(self, own_id: str, ckey: str) -> None:
         env = self._env
-        contact = env.contacts.get(own_id, {}).get(ckey)
+        contact, _ = self._find_contact(env, own_id, ckey)
         if contact is None:
             return
         ident = "已识别" if contact.confidence >= 0.6 else "未知"
