@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-APP_VERSION = "803f7ae"
+APP_VERSION = "f941d32"
 
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QAction, QKeySequence
