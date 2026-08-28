@@ -619,7 +619,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 marker.setPos(x2, y2)
                 marker.setPen(QPen(color, 1.5))
                 marker.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 80)))
-                marker.setZValue(5)
+                marker.setZValue(20)
                 marker.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
                                 QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
                 marker.setData(0, f"contact::{own_id}::{contact.emitter_id}")
@@ -639,7 +639,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 pen2.setCosmetic(True)
                 ell.setPen(pen2)
                 ell.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 25)))
-                ell.setZValue(4)
+                ell.setZValue(20)
                 ell.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
                              QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
                 ell.setData(0, f"contact::{own_id}::{contact.emitter_id}")
