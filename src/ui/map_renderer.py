@@ -609,10 +609,13 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                     pts = [QPointF(x2, y2 - size), QPointF(x2 - size * 0.8, y2 + size * 0.8),
                            QPointF(x2, y2 + size * 0.3), QPointF(x2 + size * 0.8, y2 + size * 0.8)]
                     marker = scene.addPolygon(QPolygonF(pts))
+                    added = True
                 elif target.kind == "ship":
                     marker = scene.addRect(x2 - size / 2, y2 - size / 2, size, size)
+                    added = True
                 else:
                     marker = QGraphicsEllipseItem(x2 - size / 2, y2 - size / 2, size, size)
+                    added = False
                 marker.setPen(QPen(color, 1.5))
                 marker.setBrush(QBrush(QColor(color.red(), color.green(), color.blue(), 80)))
                 marker.setZValue(5)
@@ -621,7 +624,8 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
                 marker.setData(0, f"contact::{own_id}::{contact.emitter_id}")
                 marker.setToolTip("火控级 精确跟踪目标")
                 screen_fixed(marker)
-                scene.addItem(marker)
+                if not added:
+                    scene.addItem(marker)
                 inferred = contact.extra.get("inferred_type") or "未知目标"
                 label_text = f"[火控] {inferred} {dist_km:.0f}km"
                 label_color = QColor("#e74c3c")
