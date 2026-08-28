@@ -54,6 +54,13 @@ def build_demo_environment() -> Environment:
         cruise_speed_kt=20.0,
     )
     red_ddg.weapons = ["反舰导弹 x8", "防空导弹 x16"]
+    red_ddg.loadout_weapons = [
+        {"name": "YJ-83反舰导弹", "kind": "asm", "range_km": 120, "speed_mps": 300, "count": 4},
+        {"name": "反辐射导弹", "kind": "arm", "range_km": 150, "speed_mps": 850, "count": 2},
+    ]
+    red_ddg.ammo = {"YJ-83反舰导弹": 4, "反辐射导弹": 2}
+    red_ddg.max_ammo = {"YJ-83反舰导弹": 4, "反辐射导弹": 2}
+
     red_ddg.emitters.append(Emitter(
         id="type346_search_radar",
         name="Type 346 搜索雷达（演示）",

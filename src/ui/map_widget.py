@@ -89,6 +89,7 @@ class MapWidget(QGraphicsView):
         self._selected_platform_ids: set[str] = set()
         self._selected_contact: tuple[str, str] | None = None
         self._player_side: str = "red"
+        self._selected_weapon_name: str | None = None
 
         # 鼠标拖拽状态
         self._left_press_screen: QPoint | None = None
@@ -153,6 +154,9 @@ class MapWidget(QGraphicsView):
 
     def selected_contact(self) -> tuple[str, str] | None:
         return self._selected_contact
+
+    def set_selected_weapon(self, weapon_name: str | None) -> None:
+        self._selected_weapon_name = weapon_name
 
     def set_player_side(self, side: str) -> None:
         self._player_side = side
@@ -338,12 +342,14 @@ class MapWidget(QGraphicsView):
                             attackers = [i for i in self._selected_platform_ids
                                          if self._can_attack(i, tgt)]
                             if attackers:
-                                self._issue_attack_orders(attackers, tgt)
+                                self._issue_attack_orders(attackers, tgt,
+                                                          self._selected_weapon_name)
                                 return
                 attackers = [i for i in self._selected_platform_ids
                              if self._can_attack(i, pid)]
                 if attackers:
-                    self._issue_attack_orders(attackers, pid)
+                    self._issue_attack_orders(attackers, pid,
+                                              self._selected_weapon_name)
                     return
             self._set_selection({pid}, None)
         elif kind == "contact":
@@ -362,7 +368,8 @@ class MapWidget(QGraphicsView):
                 attackers = [i for i in self._selected_platform_ids
                              if self._can_attack(i, target_id)]
                 if attackers:
-                    self._issue_attack_orders(attackers, target_id)
+                    self._issue_attack_orders(attackers, target_id,
+                                              self._selected_weapon_name)
                     return
             self._set_selection(set(), (own_id, ckey))
 
@@ -376,10 +383,11 @@ class MapWidget(QGraphicsView):
             return False
         return a.roe != "hold"
 
-    def _issue_attack_orders(self, attackers: list[str], target_id: str) -> None:
+    def _issue_attack_orders(self, attackers: list[str], target_id: str,
+                             weapon_name: str | None = None) -> None:
         env = self._env
         for aid in attackers:
-            env.add_attack_order(aid, target_id)
+            env.add_attack_order(aid, target_id, weapon_name=weapon_name)
         names = [env.platforms[a].name for a in attackers]
         target = env.platforms[target_id].name if target_id in env.platforms else target_id
         self.command_issued.emit(f"{', '.join(names)} -> {target}：攻击指令已下达")

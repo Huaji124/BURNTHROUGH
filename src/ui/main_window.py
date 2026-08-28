@@ -32,6 +32,7 @@ from .map_widget import MapWidget
 from .signal_library_panel import SignalLibraryPanel
 from .spectrum_widget import SpectrumWidget
 from .unit_info_bar import UnitInfoBar
+from .weapon_panel import WeaponPanel
 
 
 class MainWindow(QMainWindow):
@@ -64,6 +65,9 @@ class MainWindow(QMainWindow):
         central_layout.setContentsMargins(0, 0, 0, 0)
         central_layout.setSpacing(0)
         central_layout.addWidget(self.map_widget, 1)
+        self.weapon_panel = WeaponPanel(self)
+        self.weapon_panel.weapon_selected.connect(self._on_weapon_selected)
+        central_layout.addWidget(self.weapon_panel)
         central_layout.addWidget(self.unit_info_bar)
         self.setCentralWidget(central)
 
@@ -185,6 +189,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.update()
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
         if len(self.env.events) > self._last_event_count:
             self._last_event_count = len(self.env.events)
             msg = self.env.events[-1]["message"]
@@ -206,8 +211,13 @@ class MainWindow(QMainWindow):
     # ------------------------------------------------------------------
     # 选择与底边栏
     # ------------------------------------------------------------------
+    def _selected_platform_id(self) -> str | None:
+        ids = self.map_widget.selected_platform_ids()
+        return ids[0] if ids else None
+
     def _on_selection_changed(self) -> None:
         self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
 
     def _update_unit_info_bar(self) -> None:
         ids = self.map_widget.selected_platform_ids()
@@ -304,6 +314,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
         self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(f"想定已加载：{path}")
 
@@ -336,6 +347,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
         self.side_combo.setCurrentText("红方")
         self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
 
@@ -355,6 +367,7 @@ class MainWindow(QMainWindow):
         self.spectrum_widget.set_environment(self.env)
         self.false_target_panel.update_false_targets(self.env)
         self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
         self.side_combo.setCurrentText("蓝方")
         self.statusBar().showMessage(
             f"已加载 CMO 国家数据：{path}（{len(self.env.platforms)} 个平台）")
@@ -364,6 +377,10 @@ class MainWindow(QMainWindow):
             self, "说明",
             "完整 CMO 合并文件已移除（只保留 data/cmo_full_by_country）。\n"
             "请使用“装载CMO世界”选择一个国家目录加载。")
+
+    def _on_weapon_selected(self, name: str) -> None:
+        self.map_widget.set_selected_weapon(name)
+        self.statusBar().showMessage(f"已选择武器：{name}")
 
     def _on_contact_mark_changed(self) -> None:
         self.contact_list.update_contacts(self.env)
@@ -380,6 +397,7 @@ class MainWindow(QMainWindow):
         self.false_target_panel.update_false_targets(self.env)
         self.spectrum_widget.set_player_side(side)
         self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
         self.statusBar().showMessage(f"当前视角：{text}（仅显示己方/己方传感器接触）")
 
     def _on_fit_view(self) -> None:

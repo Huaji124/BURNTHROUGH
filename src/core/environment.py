@@ -258,8 +258,13 @@ class Environment:
                         timer = 0.0
                     p.reload_timers[weapon] = timer
 
-    def _choose_weapon(self, attacker: Platform, target: Platform) -> tuple[str, dict] | None:
-        """根据挂载方案选择攻击武器。"""
+    def _choose_weapon(self, attacker: Platform, target: Platform,
+                       preferred: str | None = None) -> tuple[str, dict] | None:
+        """根据挂载方案选择攻击武器；preferred 为手动指定武器名。"""
+        if preferred:
+            for lw in attacker.loadout_weapons:
+                if lw.get("name") == preferred:
+                    return preferred, lw
         for lw in attacker.loadout_weapons:
             name = lw.get("name", "")
             kind = lw.get("kind", "weapon")
@@ -337,7 +342,7 @@ class Environment:
                                     "message": f"{attacker.name} 攻击 {target.name}：目标超出射程"})
                 continue
             # 根据挂载方案选择武器
-            weapon = self._choose_weapon(attacker, target)
+            weapon = self._choose_weapon(attacker, target, order.get("weapon_name"))
             if weapon is None:
                 order["result"] = "no_weapon"
                 self.events.append({"time": self.time_s, "kind": "no_weapon",
