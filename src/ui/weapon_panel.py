@@ -66,8 +66,11 @@ class WeaponPanel(QWidget):
                     break
 
     def clear_buttons(self) -> None:
-        for b in self._buttons:
-            b.deleteLater()
+        while self.buttons_layout.count():
+            item = self.buttons_layout.takeAt(0)
+            w = item.widget()
+            if w is not None:
+                w.deleteLater()
         self._buttons = []
 
     def _on_click(self, name: str) -> None:
