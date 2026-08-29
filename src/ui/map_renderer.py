@@ -684,34 +684,32 @@ def draw_orders(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
 
 def draw_missiles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
                    side: str | None = None) -> None:
-    """绘制飞行中的反辐射导弹。"""
+    """绘制飞行中的导弹，使用与普通单位一致的图标/标签风格。"""
     for missile in env.missiles:
         if not missile.active:
             continue
-        if side is not None:
-            attacker = env.platforms.get(missile.attacker_id)
-            if attacker is None or attacker.side != side:
-                continue
+        attacker = env.platforms.get(missile.attacker_id)
         x, y = proj.to_xy(missile.lat, missile.lon)
-        r = 5.0
-        pts = [QPointF(0, -r), QPointF(-r * 0.8, r * 0.8),
-               QPointF(0, r * 0.3), QPointF(r * 0.8, r * 0.8)]
-        item = scene.addPolygon(pts)
-        _pen = QPen(QColor("#ffffff"), 1)
-        _pen.setCosmetic(True)
-        item.setPen(_pen)
-        item.setBrush(QBrush(QColor("#e74c3c")))
-        item.setZValue(15)
+        color = QColor("#e74c3c") if attacker is not None and attacker.side == "red" else QColor("#3498db")
+        size = 8.0
+        pts = [QPointF(0, -size), QPointF(-size * 0.7, size * 0.6),
+               QPointF(0, size * 0.25), QPointF(size * 0.7, size * 0.6)]
+        item = scene.addPolygon(pts, QPen(color, 2), QBrush(color.darker(160)))
         item.setPos(x, y)
+        item.setFlags(QGraphicsItem.GraphicsItemFlag.ItemIsSelectable |
+                      QGraphicsItem.GraphicsItemFlag.ItemIsFocusable)
+        item.setData(0, f"missile::{missile.id}")
+        item.setZValue(15)
         target_name = env.platforms.get(missile.target_id).name if missile.target_id in env.platforms else missile.target_id
-        item.setToolTip(f"{missile.name} -> {target_name}")
+        item.setToolTip(f"{missile.name}（{missile.kind.upper()}）-> {target_name}")
         screen_fixed(item)
-        label = QGraphicsSimpleTextItem("ARM")
-        label.setBrush(QBrush(QColor("#e74c3c")))
+        label_text = missile.name if missile.name else "导弹"
+        label = QGraphicsSimpleTextItem(label_text)
+        label.setBrush(QBrush(color))
         label.setFont(QFont("SansSerif", 7, QFont.Weight.Bold))
-        label.setPos(x + 6, y - 6)
+        label.setPos(x + 8, y - 6)
         label.setZValue(16)
-        label.setData(2, (x, y, 6.0, -6.0))
+        label.setData(2, (x, y, 8.0, -6.0))
         scene.addItem(label)
         screen_fixed(label)
 

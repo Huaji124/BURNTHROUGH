@@ -88,6 +88,7 @@ class MapWidget(QGraphicsView):
         self._waypoint_drag_item: _WaypointRect | None = None
         self._selected_platform_ids: set[str] = set()
         self._selected_contact: tuple[str, str] | None = None
+        self._selected_missile_id: str | None = None
         self._player_side: str = "red"
         self._selected_weapon_name: str | None = None
 
@@ -109,6 +110,7 @@ class MapWidget(QGraphicsView):
             self._projection = LocalProjection(0.0, 0.0, px_per_km=0.02)
         self._selected_platform_ids = set()
         self._selected_contact = None
+        self._selected_missile_id = None
         self.fit_to_world()
         self._rebuild()
 
@@ -162,6 +164,7 @@ class MapWidget(QGraphicsView):
         self._player_side = side
         self._selected_platform_ids = set()
         self._selected_contact = None
+        self._selected_missile_id = None
         self._rebuild()
 
     def set_jammer_on(self, on: bool) -> None:
@@ -352,6 +355,8 @@ class MapWidget(QGraphicsView):
                                               self._selected_weapon_name)
                     return
             self._set_selection({pid}, None)
+        elif kind == "missile":
+            self._set_missile_selection(data)
         elif kind == "contact":
             own_id, ckey = data
             contact, _ = self._find_contact(env, own_id, ckey)
@@ -488,6 +493,8 @@ class MapWidget(QGraphicsView):
         best_dist = 1e18
         for item in items:
             data = item.data(0)
+            if isinstance(data, str) and data.startswith("missile::"):
+                return ("missile", data.split("::", 1)[1])
             if isinstance(data, str) and data.startswith("platform::"):
                 pid = data.split("::", 1)[1]
                 p = self._env.platforms.get(pid) if self._env else None
@@ -538,6 +545,16 @@ class MapWidget(QGraphicsView):
     def _set_selection(self, platform_ids: set[str], contact) -> None:
         self._selected_platform_ids = set(platform_ids)
         self._selected_contact = contact
+        self._selected_missile_id = None
+        self._apply_inverse_scale()
+        self._update_text_visibility()
+        self._restore_selection_visuals()
+        self.selection_changed.emit()
+
+    def _set_missile_selection(self, missile_id: str) -> None:
+        self._selected_platform_ids = set()
+        self._selected_contact = None
+        self._selected_missile_id = missile_id
         self._apply_inverse_scale()
         self._update_text_visibility()
         self._restore_selection_visuals()
@@ -569,6 +586,10 @@ class MapWidget(QGraphicsView):
             sel = (self._selected_contact is not None and key == f"{self._selected_contact[0]}::{self._selected_contact[1]}")
             for item in items:
                 item.setSelected(sel)
+        for item in self._scene.items():
+            data = item.data(0)
+            if isinstance(data, str) and data.startswith("missile::"):
+                item.setSelected(data.split("::", 1)[1] == self._selected_missile_id)
 
     # ------------------------------------------------------------------
     # 场景重建与绘制
