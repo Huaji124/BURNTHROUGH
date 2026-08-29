@@ -23,10 +23,10 @@ from PySide6.QtWidgets import (
 from core.demo import build_demo_environment
 from core.scenario import load_scenario, save_scenario
 from data_loader.china_loader import load_china_environment
-from data_loader.unit_loader import load_unit_file
 from data_loader.cmo_world_loader import (
     load_cmo_country_environment,
 )
+from data_loader.unit_loader import load_unit_file
 
 from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
