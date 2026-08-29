@@ -1,0 +1,193 @@
+{
+ "platform": {
+  "ID": 2511,
+  "Category": 2002,
+  "Type": 4002,
+  "Name": "Type 724 Jingsah II [LCAC]",
+  "Comments": "Carried by Type 072 LST, 20-30x",
+  "OperatorCountry": 2018,
+  "OperatorService": 2002,
+  "YearCommissioned": 1995,
+  "YearDecommissioned": 0,
+  "Length": 12.4,
+  "Beam": 4.7,
+  "Draft": 0.0,
+  "Height": 0.0,
+  "DisplacementEmpty": 0,
+  "DisplacementStandard": 6,
+  "DisplacementFull": 0,
+  "Crew": 2,
+  "ArmorBelt": 1001,
+  "ArmorBulkheads": 1001,
+  "ArmorDeck": 1001,
+  "ArmorBridge": 1001,
+  "ArmorCIC": 1001,
+  "ArmorEngineering": 1001,
+  "ArmorRudder": 1001,
+  "DamagePoints": 4,
+  "MaxSeaState": 4,
+  "RepairCapacity": 0,
+  "TroopCapacity": 10,
+  "CargoCapacity": 0,
+  "MissileDefense": 2,
+  "OODADetectionCycle": 15,
+  "OODATargetingCycle": 0,
+  "OODAEvasiveCycle": 2,
+  "PhysicalSizeCode": 3004,
+  "Hypothetical": 0,
+  "Cargo_Type": 1000,
+  "Cargo_Mass": 20.0,
+  "Cargo_Area": 48.0,
+  "Cargo_Crew": 10.0,
+  "Cargo_Volume": null,
+  "Cost": 0
+ },
+ "kind": "ship",
+ "sensor_ids": [],
+ "mount_ids": [],
+ "loadout_ids": [],
+ "magazine_ids": [],
+ "propulsion_ids": [
+  2233
+ ],
+ "signatures": [
+  {
+   "ID": 2511,
+   "Type": 1001,
+   "Front": 100.0,
+   "Side": 101.0,
+   "Rear": 102.0,
+   "Top": 101.0
+  },
+  {
+   "ID": 2511,
+   "Type": 1002,
+   "Front": 70.5,
+   "Side": 71.0,
+   "Rear": 72.0,
+   "Top": 71.0
+  },
+  {
+   "ID": 2511,
+   "Type": 1003,
+   "Front": 62.5,
+   "Side": 63.0,
+   "Rear": 64.0,
+   "Top": 63.0
+  },
+  {
+   "ID": 2511,
+   "Type": 1004,
+   "Front": 54.0,
+   "Side": 55.0,
+   "Rear": 56.0,
+   "Top": 55.0
+  },
+  {
+   "ID": 2511,
+   "Type": 2001,
+   "Front": 4.0,
+   "Side": 4.0,
+   "Rear": 4.0,
+   "Top": 4.0
+  },
+  {
+   "ID": 2511,
+   "Type": 3001,
+   "Front": 4.17,
+   "Side": 7.09,
+   "Rear": 4.17,
+   "Top": 9.46
+  },
+  {
+   "ID": 2511,
+   "Type": 3002,
+   "Front": 1.77,
+   "Side": 3.15,
+   "Rear": 1.77,
+   "Top": 3.55
+  },
+  {
+   "ID": 2511,
+   "Type": 4001,
+   "Front": 4.17,
+   "Side": 7.09,
+   "Rear": 4.17,
+   "Top": 9.46
+  },
+  {
+   "ID": 2511,
+   "Type": 4002,
+   "Front": 1.77,
+   "Side": 3.15,
+   "Rear": 1.77,
+   "Top": 3.55
+  },
+  {
+   "ID": 2511,
+   "Type": 5001,
+   "Front": 2.3,
+   "Side": 4.8,
+   "Rear": 2.3,
+   "Top": 11.3
+  },
+  {
+   "ID": 2511,
+   "Type": 5002,
+   "Front": 2.3,
+   "Side": 4.8,
+   "Rear": 2.3,
+   "Top": 11.3
+  }
+ ],
+ "sensors": {},
+ "mounts": {},
+ "loadouts": {},
+ "loadout_weapons": [],
+ "magazines": {},
+ "magazine_weapons": [],
+ "weapons": {},
+ "propulsions": {
+  "2233": {
+   "ID": 2233,
+   "Name": "2x BF12L913C Diesels",
+   "Type": 3001,
+   "Comments": "-",
+   "Hypothetical": 0,
+   "NumberOfEngines": 0.0,
+   "ThrustPerEngineMilitary": 0.0,
+   "ThrustPerEngineAfterburner": 0.0,
+   "SFCMilitary": 0.0,
+   "SFCAfterburner": 0.0
+  }
+ },
+ "propulsion_performance": [
+  {
+   "ID": 2233,
+   "AltitudeBand": 1,
+   "Throttle": 1,
+   "Speed": 5,
+   "AltitudeMin": 0.0,
+   "AltitudeMax": 0.0,
+   "Consumption": 0.9
+  },
+  {
+   "ID": 2233,
+   "AltitudeBand": 1,
+   "Throttle": 2,
+   "Speed": 40,
+   "AltitudeMin": 0.0,
+   "AltitudeMax": 0.0,
+   "Consumption": 1.0
+  },
+  {
+   "ID": 2233,
+   "AltitudeBand": 1,
+   "Throttle": 3,
+   "Speed": 45,
+   "AltitudeMin": 0.0,
+   "AltitudeMax": 0.0,
+   "Consumption": 1.89
+  }
+ ]
+}

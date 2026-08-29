@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 APP_VERSION = "f941d32"
 
 from PySide6.QtCore import Qt, QTimer
@@ -21,6 +23,7 @@ from PySide6.QtWidgets import (
 from core.demo import build_demo_environment
 from core.scenario import load_scenario, save_scenario
 from data_loader.china_loader import load_china_environment
+from data_loader.unit_loader import load_unit_file
 from data_loader.cmo_world_loader import (
     load_cmo_country_environment,
 )
@@ -162,13 +165,9 @@ class MainWindow(QMainWindow):
         china_action.triggered.connect(self._on_load_china)
         toolbar.addAction(china_action)
 
-        cmo_action = QAction("装载CMO世界", self)
-        cmo_action.triggered.connect(self._on_load_cmo_world)
-        toolbar.addAction(cmo_action)
-
-        cmo_all_action = QAction("装载完整CMO", self)
-        cmo_all_action.triggered.connect(self._on_load_cmo_all)
-        toolbar.addAction(cmo_all_action)
+        unit_action = QAction("加载单位", self)
+        unit_action.triggered.connect(self._on_load_unit)
+        toolbar.addAction(unit_action)
 
         toolbar.addSeparator()
         toolbar.addWidget(QLabel(" 视角: "))
@@ -357,6 +356,29 @@ class MainWindow(QMainWindow):
         self._bind_environment()
         self.side_combo.setCurrentText("红方")
         self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
+
+    def _on_load_unit(self) -> None:
+        path, _ = QFileDialog.getOpenFileName(
+            self, "加载单个单位", "data/units", "JSON (*.json)")
+        if not path:
+            return
+        side = "red" if self.side_combo.currentText() == "红方" else "blue"
+        try:
+            unit_env = load_unit_file(path, side=side)
+        except (OSError, ValueError, KeyError) as exc:
+            QMessageBox.warning(self, "加载失败", str(exc))
+            return
+        for p in unit_env.platforms.values():
+            self.env.add_platform(p)
+        self.map_widget.set_environment(self.env)
+        self.emcon_panel.populate(self.env)
+        self.contact_list.update_contacts(self.env)
+        self.spectrum_widget.set_environment(self.env)
+        self.false_target_panel.update_false_targets(self.env)
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
+        self._update_unit_info_bar()
+        self._on_side_changed(self.side_combo.currentText())
+        self.statusBar().showMessage(f"已加载单位：{Path(path).name}")
 
     def _on_load_cmo_world(self) -> None:
         path = QFileDialog.getExistingDirectory(
