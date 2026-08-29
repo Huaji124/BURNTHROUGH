@@ -47,10 +47,34 @@ class WeaponPanel(QWidget):
         if p is None:
             return
         self.title.setText(f"武器栏 - {p.name}")
+        seen = set()
         for lw in p.loadout_weapons:
             name = lw.get("name", "")
+            if name in seen:
+                continue
+            seen.add(name)
             ammo = p.ammo.get(name, 0)
             btn = QPushButton(f"{name} x{ammo}")
+            btn.setCheckable(True)
+            btn.clicked.connect(lambda checked, n=name: self._on_click(n))
+            self.buttons_layout.addWidget(btn)
+            self._buttons.append(btn)
+        # 弹药库中的武器也显示
+        for name, ammo in p.ammo.items():
+            if name in seen:
+                continue
+            seen.add(name)
+            btn = QPushButton(f"{name} x{ammo}")
+            btn.setCheckable(True)
+            btn.clicked.connect(lambda checked, n=name: self._on_click(n))
+            self.buttons_layout.addWidget(btn)
+            self._buttons.append(btn)
+        # 仅有武器列表的舰船也要显示按钮
+        for name in p.weapons:
+            if name in seen or name == "ssm":
+                continue
+            seen.add(name)
+            btn = QPushButton(f"{name}")
             btn.setCheckable(True)
             btn.clicked.connect(lambda checked, n=name: self._on_click(n))
             self.buttons_layout.addWidget(btn)

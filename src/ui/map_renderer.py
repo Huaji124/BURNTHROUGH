@@ -337,7 +337,7 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
                 # 若烧穿圈与干扰后探测圈几乎重合，则不再重复绘制，避免重叠
                 if abs(result["burn_through_km"] - result["detection_range_km"]) > 0.5:
                     draw_circle(scene, proj, x, y, result["burn_through_km"],
-                                QColor("#e74c3c"), "烧穿圈", dashed=True)
+                                QColor("#e74c3c"), "", dashed=True)
                 if emitter.scan_type == "phased_array":
                     face_span = 360.0 / max(emitter.face_count, 1)
                     for face in range(max(emitter.face_count, 1)):
@@ -539,7 +539,7 @@ def draw_esm_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjec
 
 def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
                         side: str | None = None) -> None:
-    """绘制欺骗干扰产生的假目标。"""
+    """绘制欺骗干扰产生的假目标（识别前与普通目标类似的小标记）。"""
     for radar_id, targets in env.false_contacts.items():
         radar = env.platforms.get(radar_id)
         if side is not None and (radar is None or radar.side != side):
@@ -548,30 +548,16 @@ def draw_false_targets(scene: QGraphicsScene, env: Environment, proj: LocalProje
             if not t.active:
                 continue
             x, y = proj.to_xy(t.latitude, t.longitude)
-            r = 8.0
-            circle = QGraphicsEllipseItem(x - r, y - r, 2 * r, 2 * r)
-            circle.setPen(QPen(QColor("#d35400"), 1.5, Qt.PenStyle.DashLine))
-            circle.setBrush(QBrush(QColor(211, 84, 0, 50)))
-            circle.setZValue(7)
-            circle.setToolTip(f"假目标：{t.technique}（由干扰机 {t.jammer_id} 生成）")
-            scene.addItem(circle)
-            # 交叉线
-            line1 = QGraphicsLineItem(x - r, y - r, x + r, y + r)
-            line2 = QGraphicsLineItem(x - r, y + r, x + r, y - r)
-            pen = QPen(QColor("#e67e22"), 1.2)
-            line1.setPen(pen)
-            line2.setPen(pen)
-            line1.setZValue(7)
-            line2.setZValue(7)
-            scene.addItem(line1)
-            scene.addItem(line2)
-            label = QGraphicsSimpleTextItem("假目标")
-            label.setBrush(QBrush(QColor("#e67e22")))
-            label.setFont(QFont("SansSerif", 7))
-            label.setPos(x + 10, y - 8)
-            label.setZValue(8)
-            scene.addItem(label)
-            screen_fixed(label)
+            marker = QGraphicsEllipseItem(-4, -4, 8, 8)
+            pen = QPen(QColor("#d35400"), 1.5, Qt.PenStyle.DashLine)
+            pen.setCosmetic(True)
+            marker.setPen(pen)
+            marker.setBrush(QBrush(QColor(211, 84, 0, 60)))
+            marker.setPos(x, y)
+            marker.setZValue(5)
+            marker.setToolTip(f"假目标：{t.technique}")
+            scene.addItem(marker)
+            screen_fixed(marker)
 
 
 def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProjection,

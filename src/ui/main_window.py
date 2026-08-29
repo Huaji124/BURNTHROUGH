@@ -35,6 +35,7 @@ from .map_widget import MapWidget
 from .signal_library_panel import SignalLibraryPanel
 from .spectrum_widget import SpectrumWidget
 from .unit_info_bar import UnitInfoBar
+from .unit_picker import UnitPickerDialog
 from .weapon_panel import WeaponPanel
 
 
@@ -161,10 +162,6 @@ class MainWindow(QMainWindow):
         load_action.triggered.connect(self._on_load_scenario)
         toolbar.addAction(load_action)
 
-        china_action = QAction("装载中国军力", self)
-        china_action.triggered.connect(self._on_load_china)
-        toolbar.addAction(china_action)
-
         unit_action = QAction("加载单位", self)
         unit_action.triggered.connect(self._on_load_unit)
         toolbar.addAction(unit_action)
@@ -177,11 +174,19 @@ class MainWindow(QMainWindow):
         self.side_combo.currentTextChanged.connect(self._on_side_changed)
         toolbar.addWidget(self.side_combo)
 
+        toolbar.addWidget(QLabel(" 速度: "))
+        self.speed_combo = QComboBox()
+        self.speed_combo.addItems(["1x", "2x", "5x", "10x"])
+        self.speed_combo.setCurrentText("1x")
+        toolbar.addWidget(self.speed_combo)
+
     # ------------------------------------------------------------------
     # 模拟循环
     # ------------------------------------------------------------------
     def _sim_tick(self) -> None:
-        self.env.step(dt_s=1.0)
+        speed = int(self.speed_combo.currentText().replace("x", ""))
+        for _ in range(max(1, speed)):
+            self.env.step(dt_s=1.0)
         if not getattr(self.env, 'waypoint_drag_lock', False):
             self.map_widget.refresh()
         self.contact_list.update_contacts(self.env)
@@ -358,10 +363,10 @@ class MainWindow(QMainWindow):
         self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
 
     def _on_load_unit(self) -> None:
-        path, _ = QFileDialog.getOpenFileName(
-            self, "加载单个单位", "data/units", "JSON (*.json)")
-        if not path:
+        dlg = UnitPickerDialog(self)
+        if dlg.exec() != UnitPickerDialog.DialogCode.Accepted or dlg.selected_path is None:
             return
+        path = dlg.selected_path
         side = "red" if self.side_combo.currentText() == "红方" else "blue"
         try:
             unit_env = load_unit_file(path, side=side)

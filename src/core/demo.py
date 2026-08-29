@@ -153,6 +153,12 @@ def build_demo_environment() -> Environment:
         emcon_state="on",
         platform_id="blue_ew",
     ))
+    blue_ew.loadout_weapons = [
+        {"name": "PL-12C", "kind": "aam", "range_km": 90, "speed_mps": 1200, "count": 4},
+        {"name": "反辐射导弹", "kind": "arm", "range_km": 150, "speed_mps": 850, "count": 2},
+    ]
+    blue_ew.ammo = {"PL-12C": 4, "反辐射导弹": 2}
+    blue_ew.max_ammo = {"PL-12C": 4, "反辐射导弹": 2}
     blue_ew.jammers.append(Jammer(
         id="ecm_pod_rkz",
         name="有源干扰吊舱（演示）",
