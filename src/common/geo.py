@@ -15,13 +15,18 @@ EARTH_RADIUS_M = EARTH_RADIUS_NM * 1852.0
 
 
 def haversine_nm(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    """大圆距离（海里）。"""
+    """大圆距离（海里）。
+
+    对浮点误差做钳位：a 理论上落在 [0, 1]，但在对跖点等边界上可能因舍入
+    略微超过 1，直接 asin 会抛出 math domain error。该函数在仿真中每帧被
+    调用数千次，必须保证不因边界输入崩溃。
+    """
     p1 = math.radians(lat1)
     p2 = math.radians(lat2)
     dp = math.radians(lat2 - lat1)
     dl = math.radians(lon2 - lon1)
     a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
-    return 2.0 * EARTH_RADIUS_NM * math.asin(math.sqrt(a))
+    return 2.0 * EARTH_RADIUS_NM * math.asin(math.sqrt(min(1.0, max(0.0, a))))
 
 
 def initial_bearing_deg(lat1: float, lon1: float, lat2: float, lon2: float) -> float:

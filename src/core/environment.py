@@ -68,6 +68,9 @@ class Platform:
     active_decoy_count: int = 0
     soft_kill_probability: float = 0.4
 
+    # 数据来源附加信息（各加载器写入，仅作展示/追溯用）
+    extra_loadouts: dict = field(default_factory=dict)
+
     # 编队与交战规则
     group_id: str | None = None
     roe: str = "free"                 # free / weapons_free / hold / weapons_hold
@@ -147,6 +150,7 @@ class Environment:
     rng: random.Random = field(default_factory=lambda: random.Random(12345))
     memory_ttl_s: float = 20.0        # 信号丢失后保留记忆接触的时长
     contact_ttl_s: float = 60.0       # 接触总生存时间
+    events_max: int = 2000            # 事件日志上限，防止长时间推演无界增长
     arm_hit_probability: float = 1.0  # ARM 命中概率（蒙特卡洛时可调）
     false_contacts: dict[str, list[FalseTarget]] = field(default_factory=dict)
 
@@ -162,6 +166,7 @@ class Environment:
     cloud_cover_pct: float = 0.0        # 云量 0~100
     humidity_pct: float = 60.0          # 湿度 0~100
     sound_speed_profile_m_s: list[float] = field(default_factory=list)
+    data_source: str = ""            # 数据来源路径/标识，供 UI 与日志显示
     _false_target_seq: int = 0
 
     # ------------------------------------------------------------------
@@ -363,49 +368,6 @@ class Environment:
             else:
                 order["result"] = "no_ammo"
 
-    def _launch_arm(self, attacker_id: str, target_id: str) -> None:
-        attacker = self.platforms.get(attacker_id)
-        target = self.platforms.get(target_id)
-        if attacker is None or target is None:
-            return
-        self._missile_seq += 1
-        missile = Missile(
-            id=f"arm-{self._missile_seq}",
-            name="反辐射导弹",
-            kind="arm",
-            attacker_id=attacker_id,
-            target_id=target_id,
-            lat=attacker.latitude,
-            lon=attacker.longitude,
-            speed_mps=850.0,
-            range_km=150.0,
-            memory_if_shutdown=True,
-        )
-        missile.last_locked_lat = target.latitude
-        missile.last_locked_lon = target.longitude
-        self.missiles.append(missile)
-
-    def _launch_asm(self, attacker_id: str, target_id: str) -> None:
-        """发射反舰导弹（ASM）。"""
-        attacker = self.platforms.get(attacker_id)
-        target = self.platforms.get(target_id)
-        if attacker is None or target is None:
-            return
-        self._missile_seq += 1
-        missile = Missile(
-            id=f"asm-{self._missile_seq}",
-            name="反舰导弹",
-            kind="asm",
-            attacker_id=attacker_id,
-            target_id=target_id,
-            lat=attacker.latitude,
-            lon=attacker.longitude,
-            speed_mps=300.0,
-            range_km=120.0,
-            memory_if_shutdown=False,
-        )
-        self.missiles.append(missile)
-
     def step_missiles(self, dt_s: float) -> None:
         """导弹飞行、制导与命中判定（简化模型）。"""
         for missile in list(self.missiles):
@@ -413,7 +375,11 @@ class Environment:
                 continue
             target = self.platforms.get(missile.target_id)
             missile.flight_time_s += dt_s
-            if missile.flight_time_s * missile.speed_mps > missile.range_km * 1000.0:
+            # 用累计航程判定射程，而不是「标称速度 × 飞行时间」：
+            # 导弹实际速度受助推/阻力调制，两者偏差可达 30% 以上。
+            missile.distance_flown_m += (
+                missile.current_speed_mps or missile.speed_mps) * dt_s
+            if missile.distance_flown_m > missile.range_km * 1000.0:
                 missile.active = False
                 missile.result = "miss"
                 self.events.append({"time": self.time_s, "kind": "missile_miss",
@@ -495,19 +461,29 @@ class Environment:
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_miss",
                                             "message": f"{missile.name} 未命中（目标机动）"})
-                elif actual_m < 500.0 and self._target_is_emitting(target) and not missile.decoyed:
+                elif actual_m < 500.0 and not missile.decoyed:
+                    # 反辐射/其他：导弹抵达锁定点，按残差距离判定命中。
+                    # 注意：目标已停止辐射时仍可能命中（记忆攻击），只是末段无
+                    # 辐射源可寻的，命中概率打折——此前实现要求目标必须仍在辐射，
+                    # 导致雷达一关机 ARM 就 100% 脱靶，记忆攻击形同虚设。
                     missile.active = False
                     if self._try_soft_kill(target, missile):
                         missile.result = "miss"
                         self.events.append({"time": self.time_s, "kind": "missile_decoyed",
                                             "message": f"{missile.name} 被 {target.name} 箔条/诱饵诱骗"})
-                    elif self.rng.random() < self._hit_chance(target, missile):
-                        missile.result = "hit"
-                        self._damage_platform(target, missile)
                     else:
-                        missile.result = "miss"
-                        self.events.append({"time": self.time_s, "kind": "missile_miss",
-                                            "message": f"{missile.name} 未命中（目标机动/近防拦截）"})
+                        chance = self._hit_chance(target, missile)
+                        still_emitting = self._target_is_emitting(target)
+                        if not still_emitting:
+                            chance *= 0.4
+                        if self.rng.random() < chance:
+                            missile.result = "hit"
+                            self._damage_platform(target, missile)
+                        else:
+                            missile.result = "miss"
+                            reason = "目标机动/近防拦截" if still_emitting else "辐射源已关机，记忆攻击失的"
+                            self.events.append({"time": self.time_s, "kind": "missile_miss",
+                                                "message": f"{missile.name} 未命中（{reason}）"})
                 elif missile.decoyed:
                     missile.active = False
                     missile.result = "miss"
@@ -542,7 +518,13 @@ class Environment:
                 if missile.decel_mps2 is not None:
                     drag = max(drag, missile.decel_mps2)
                 missile.current_speed_mps -= drag * dt_s
-            missile.current_speed_mps = max(missile.terminal_speed_mps or 0.0, missile.current_speed_mps)
+            # 末速下限：未显式配置时按标称速度的 50% 兜底。此前用
+            # `terminal_speed_mps or 0.0`，配置缺失时下限为 0，阻力会让导弹
+            # 一路减速到停在空中、永远到不了目标。
+            floor = missile.terminal_speed_mps
+            if floor is None or floor <= 0:
+                floor = missile.speed_mps * 0.5
+            missile.current_speed_mps = max(floor, missile.current_speed_mps)
 
     def _try_soft_kill(self, target: Platform, missile: Missile) -> bool:
         """目标发射箔条/诱饵/有源诱饵软杀伤，成功则导弹被诱骗。"""
@@ -621,7 +603,8 @@ class Environment:
 
     @staticmethod
     def _target_is_emitting(target: Platform) -> bool:
-        return any(e.is_emitting for e in target.emitters) or                any(j.is_jamming for j in target.jammers)
+        return (any(e.is_emitting for e in target.emitters)
+                or any(j.is_jamming for j in target.jammers))
 
     def _damage_platform(self, target: Platform, missile: Missile) -> None:
         """导弹命中后的简化分系统损伤。"""
@@ -831,12 +814,14 @@ class Environment:
         self.cross_fix_radar_ranges()
         self.cross_fix_tdoa()
         self.cross_fix_fdoa()
+        if len(self.events) > self.events_max:
+            del self.events[:len(self.events) - self.events_max]
 
     def step_motion(self, dt_s: float) -> None:
         """运动模型：优先沿航路点，其次绕飞轨道，最后直线。"""
+        if self.waypoint_drag_lock:
+            return
         for p in self.platforms.values():
-            if self.waypoint_drag_lock:
-                break
             if not p.alive or p.speed_kt <= 0:
                 continue
             # 推进限制与燃料
@@ -867,14 +852,23 @@ class Environment:
                 continue
 
             # 2) 绕飞轨道
-            if p.orbit_center_lat is not None and p.orbit_radius_km is not None:
+            if (p.orbit_center_lat is not None and p.orbit_center_lon is not None
+                    and p.orbit_radius_km is not None and p.orbit_radius_km > 0.0):
                 bearing_to_center = initial_bearing_deg(p.latitude, p.longitude,
                                                         p.orbit_center_lat, p.orbit_center_lon)
                 tangent = (bearing_to_center + 90.0 * p.orbit_direction + 360.0) % 360.0
                 p.heading_deg = tangent
-            else:
-                tangent = p.heading_deg
-
+                p.latitude, p.longitude = destination_point(
+                    p.latitude, p.longitude, tangent, dist_nm)
+                # 沿切线直飞会让半径逐帧变大（实测 5 km 轨道 30 分钟外扩到 10.9 km）。
+                # 这里把平台重新投影回精确半径，保持真圆轨道。
+                brg_from_center = initial_bearing_deg(
+                    p.orbit_center_lat, p.orbit_center_lon, p.latitude, p.longitude)
+                p.latitude, p.longitude = destination_point(
+                    p.orbit_center_lat, p.orbit_center_lon,
+                    brg_from_center, p.orbit_radius_km / 1.852)
+                continue
+            tangent = p.heading_deg
             p.latitude, p.longitude = destination_point(
                 p.latitude, p.longitude, tangent, dist_nm)
 
@@ -1006,6 +1000,8 @@ class Environment:
     def update_esm(self, dt_s: float) -> None:
         """每帧更新所有 ESM/RWR 接收机对辐射源的截获。"""
         for own in self.platforms.values():
+            if not own.alive:
+                continue
             for esm in own.receivers:
                 if esm.kind not in ("esm", "rwr"):
                     continue
@@ -1014,7 +1010,7 @@ class Environment:
                         continue
                     if other.side == own.side:
                         continue  # Phase 2：只截获跨阵营辐射源
-                    if not own.alive or not other.alive:
+                    if not other.alive:
                         continue
                     for source in self._active_sources_of(other):
                         result = self._intercept_source(esm, own, other, source, dt_s)
@@ -1124,6 +1120,7 @@ class Environment:
             "source_id": source_id,
             "pulse_match": pulse_match,
             "source_name": source_name,
+            "freq_hz": freq_hz,
             "bearing_deg": bearing,
             "true_bearing_deg": true_bearing,
             "range_km": r_m / 1000.0,
@@ -1186,6 +1183,7 @@ class Environment:
             "identified": result["identified"],
             "toa_ns": result.get("toa_ns"),
             "doppler_hz": result.get("doppler_hz"),
+            "freq_hz": result.get("freq_hz"),
         }
         if "source_name" in result:
             sn = result["source_name"]
@@ -1271,6 +1269,11 @@ class Environment:
         生成 radar_contacts[雷达平台][目标平台] = Contact。
         """
         now = self.time_s
+        # 干扰资源分配每帧只算一次。此前在「平台×辐射源×目标」的循环里为每部
+        # 雷达各自找一台干扰机，既重复计算（O(N^3) 热点），又与 assign_jammers
+        # 的分配口径不一致（漏掉干扰扇区/多目标上限约束）。
+        assignment = self.assign_jammers()
+        jammer_by_id = {j.id: j for j in self.all_jammers()}
         for radar_platform in self.platforms.values():
             if not radar_platform.alive:
                 continue
@@ -1280,6 +1283,8 @@ class Environment:
                 if emitter.role not in ("multifunction_radar", "search_radar",
                                         "fire_control_radar"):
                     continue
+                jammer_id = assignment.get(emitter.id)
+                jammer = jammer_by_id.get(jammer_id) if jammer_id is not None else None
                 # 本平台对敌方目标的雷达接触
                 radar_map = self.radar_contacts.setdefault(radar_platform.id, {})
                 for target in self.platforms.values():
@@ -1314,16 +1319,6 @@ class Environment:
                                                    radar_platform.altitude_ft, target.altitude_ft):
                         radar_map.pop(target.id, None)
                         continue
-                    jammer = None
-                    for other in self.platforms.values():
-                        if other.side == radar_platform.side or not other.alive:
-                            continue
-                        for j in other.jammers:
-                            if self._jammer_actively_jamming(j) and j.covers_frequency(emitter.center_freq_hz):
-                                jammer = j
-                                break
-                        if jammer is not None:
-                            break
                     result = self.evaluate_radar_with_jamming(
                         emitter, jammer, bandwidth_hz=1_000_000,
                         noise_figure=5.0, loss=6.0, snr_min_db=13.0,
@@ -1385,7 +1380,11 @@ class Environment:
                             contact.is_memory = True
 
     def update_ir_detection(self, dt_s: float) -> None:
-        """红外探测主流程：无源可见光/红外发现目标。"""
+        """红外探测主流程：无源可见光/红外发现目标。
+
+        红外/光电是严格视距传播，此前完全没有视距约束，水天线两侧的平台
+        也能互相"看见"。这里补上与雷达一致的视距判定。
+        """
         now = self.time_s
         for own in self.platforms.values():
             if not own.alive:
@@ -1396,6 +1395,11 @@ class Environment:
                     continue
                 dist_km = haversine_nm(own.latitude, own.longitude,
                                        target.latitude, target.longitude) * 1.852
+                # 红外为视距传播：超出水天线即不可见
+                horizon_nm = self._get_horizon_nm(own, target)
+                if dist_km > horizon_nm * 1.852:
+                    ir_map.pop(target.id, None)
+                    continue
                 if self._line_of_sight_blocked(own.latitude, own.longitude,
                                                target.latitude, target.longitude,
                                                own.altitude_ft, target.altitude_ft):
@@ -1477,7 +1481,14 @@ class Environment:
                         contact.is_memory = True
 
     def update_comm_jamming(self, dt_s: float) -> None:
-        """通信电子战简化模型：敌方通信干扰机使己方通信降级。"""
+        """通信电子战简化模型：敌方通信干扰机使己方通信降级。
+
+        事件只在「未降级 -> 已降级」的状态跃变时记录一次；此前实现每帧为
+        每个受扰目标追加一条事件，长时间推演会让 events 无界增长。
+        """
+        # 先快照上一帧的降级状态：本函数开头会把所有平台重置为 False，
+        # 若重置后再比较就永远都是 False->True，事件又会每帧刷一遍。
+        prev_degraded = {pid: p.comm_degraded for pid, p in self.platforms.items()}
         for p in self.platforms.values():
             p.comm_degraded = False
         for jammer_platform in self.platforms.values():
@@ -1490,8 +1501,9 @@ class Environment:
                     if target.side == jammer_platform.side or not target.alive:
                         continue
                     target.comm_degraded = True
-                    self.events.append({"time": self.time_s, "kind": "comm_jamming",
-                                        "message": f"{target.name} 通信受 {jammer.name} 干扰"})
+                    if not prev_degraded.get(target.id, False):
+                        self.events.append({"time": self.time_s, "kind": "comm_jamming",
+                                            "message": f"{target.name} 通信受 {jammer.name} 干扰"})
 
     def _process_pending_radar(self, dt_s: float) -> None:
         """处理已到处理时间的雷达新接触。"""
@@ -1636,69 +1648,125 @@ class Environment:
             lat0 = sum(e[0] for e in entries) / len(entries)
             lon0 = sum(e[1] for e in entries) / len(entries)
             ref_lat, ref_lon, ref_toa, _, _ = entries[0]
+            # 与 FDOA 同样的处理：优先用已有定位结果做种子，并用多分辨率搜索
+            seeds = [(e[4].latitude, e[4].longitude)
+                     for e in entries if e[4].latitude is not None]
+            if seeds:
+                lat0 = sum(s[0] for s in seeds) / len(seeds)
+                lon0 = sum(s[1] for s in seeds) / len(seeds)
+                passes = ((10, 0.02), (5, 0.005), (5, 0.001))
+            else:
+                passes = ((25, 0.05), (5, 0.01), (5, 0.002))
+
             best_lat, best_lon, best_cost = lat0, lon0, 1e18
-            for i in range(-20, 21):
-                for j in range(-20, 21):
-                    lat = lat0 + i * 0.1
-                    lon = lon0 + j * 0.1
-                    cost = 0.0
-                    for e in entries[1:]:
-                        d0 = haversine_nm(ref_lat, ref_lon, lat, lon) * 1.852
-                        d = haversine_nm(e[0], e[1], lat, lon) * 1.852
-                        predicted_diff = (d - d0) / 299792458.0 * 1e9
-                        measured_diff = e[2] - ref_toa
-                        cost += (predicted_diff - measured_diff) ** 2
-                    if cost < best_cost:
-                        best_cost = cost
-                        best_lat, best_lon = lat, lon
-            if best_cost < 1e14:
+            for span, step in passes:
+                pass_lat, pass_lon = best_lat, best_lon
+                best_cost = 1e18
+                for i in range(-span, span + 1):
+                    for j in range(-span, span + 1):
+                        lat = pass_lat + i * step
+                        lon = pass_lon + j * step
+                        cost = 0.0
+                        for e in entries[1:]:
+                            d0 = haversine_nm(ref_lat, ref_lon, lat, lon) * 1.852
+                            d = haversine_nm(e[0], e[1], lat, lon) * 1.852
+                            predicted_diff = (d - d0) / 299792458.0 * 1e9
+                            measured_diff = e[2] - ref_toa
+                            cost += (predicted_diff - measured_diff) ** 2
+                        if cost < best_cost:
+                            best_cost = cost
+                            best_lat, best_lon = lat, lon
+            # 按参与比对的站数归一化后取均方根；阈值 2000 ns（约 600 m 光程误差）。
+            # 此前直接用 cost < 1e14，等价于容忍 5 ms 量级的到达时间误差，
+            # 门槛形同虚设。
+            n_cmp = max(1, len(entries) - 1)
+            if (best_cost / n_cmp) ** 0.5 < 2000.0:
                 for _, _, _, _, contact in entries:
                     contact.latitude = best_lat
                     contact.longitude = best_lon
                     contact.extra["tdoa_fix"] = True
 
     def cross_fix_fdoa(self) -> None:
-        """多普勒差（FDOA）三站定位：网格搜索。"""
-        groups: dict[str, list[tuple[float, float, float, str, Contact]]] = {}
+        """多普勒差（FDOA）三站定位：网格搜索。
+
+        代价函数比较「预测多普勒差」与「实测多普勒差」。
+
+        此前实现有两处错误：
+        1) 载波频率硬编码为 1.47 GHz，而非接触信号本身的频率；
+        2) 用单站的**绝对**多普勒去比对两站之间的**差值**，量纲不匹配，
+           代价函数恒为巨大值，定位结果实为噪声。
+        """
+        # (lat, lon, doppler_hz, own_id, contact, freq_hz)
+        groups: dict[str, list[tuple[float, float, float, str, Contact, float]]] = {}
         for own_id, contact_map in self.contacts.items():
             own = self.platforms.get(own_id)
             if own is None:
                 continue
             for contact in contact_map.values():
                 dop = contact.extra.get("doppler_hz")
-                if dop is None or contact.emitter_id is None:
+                freq = contact.extra.get("freq_hz")
+                if dop is None or contact.emitter_id is None or not freq:
                     continue
                 groups.setdefault(contact.emitter_id, []).append(
-                    (own.latitude, own.longitude, dop, own_id, contact))
+                    (own.latitude, own.longitude, dop, own_id, contact, float(freq)))
+
         for entries in groups.values():
             if len(entries) < 3:
                 continue
             lat0 = sum(e[0] for e in entries) / len(entries)
             lon0 = sum(e[1] for e in entries) / len(entries)
-            ref = entries[0]
-            ref_dop = ref[2]
+            ref_dop, ref_own, ref_freq = entries[0][2], entries[0][3], entries[0][5]
+            ref_platform = self.platforms.get(ref_own)
+            if ref_platform is None:
+                continue
+
+            def _abs_doppler(platform: Platform, lat: float, lon: float,
+                             freq_hz: float) -> float:
+                """接收机运动在指向 (lat, lon) 方向上产生的多普勒频移（Hz）。"""
+                v_e, v_n = self._platform_velocity_mps(platform)
+                brg = math.radians(initial_bearing_deg(
+                    platform.latitude, platform.longitude, lat, lon))
+                return freq_hz * (v_e * math.sin(brg) + v_n * math.cos(brg)) / 299792458.0
+
+            # 起始点优先用已有的测向交叉定位结果：FDOA 代价曲面存在多个
+            # 伪极小盆地，从纯几何质心起搜很容易锁到错误的盆地里。
+            seeds = [(e[4].latitude, e[4].longitude) for e in entries
+                     if e[4].latitude is not None]
+            if seeds:
+                lat0 = sum(s[0] for s in seeds) / len(seeds)
+                lon0 = sum(s[1] for s in seeds) / len(seeds)
+                # 已有初值：只在附近小范围精修
+                passes = ((10, 0.02), (5, 0.005), (5, 0.001))
+            else:
+                # 无初值：粗网格必须足够密，否则会跨过真解所在的窄谷
+                passes = ((25, 0.05), (5, 0.01), (5, 0.002))
+
             best_lat, best_lon, best_cost = lat0, lon0, 1e18
-            for i in range(-20, 21):
-                for j in range(-20, 21):
-                    lat = lat0 + i * 0.1
-                    lon = lon0 + j * 0.1
-                    cost = 0.0
-                    for e in entries[1:]:
-                        platform = self.platforms.get(e[3])
-                        if platform is None:
-                            continue
-                        v_e, v_n = self._platform_velocity_mps(platform)
-                        # 接收机指向源的方向
-                        brg = math.radians(initial_bearing_deg(
-                            platform.latitude, platform.longitude, lat, lon))
-                        u_e, u_n = math.sin(brg), math.cos(brg)
-                        pred_dop = (1470000000.0 * (v_e * u_e + v_n * u_n) / 299792458.0)
-                        cost += (pred_dop - (e[2] - ref_dop)) ** 2
-                    if cost < best_cost:
-                        best_cost = cost
-                        best_lat, best_lon = lat, lon
-            if best_cost < 1e8:
-                for _, _, _, _, contact in entries:
+            # 多分辨率搜索：粗定位后逐级细化，比直接铺一层细网格便宜两个数量级
+            for span, step in passes:
+                ref_lat_pass, ref_lon_pass = best_lat, best_lon
+                best_cost = 1e18
+                for i in range(-span, span + 1):
+                    for j in range(-span, span + 1):
+                        lat = ref_lat_pass + i * step
+                        lon = ref_lon_pass + j * step
+                        ref_pred = _abs_doppler(ref_platform, lat, lon, ref_freq)
+                        cost = 0.0
+                        for e in entries[1:]:
+                            platform = self.platforms.get(e[3])
+                            if platform is None:
+                                continue
+                            # 预测差 = 本站绝对多普勒 - 参考站绝对多普勒
+                            pred_diff = _abs_doppler(platform, lat, lon, e[5]) - ref_pred
+                            cost += (pred_diff - (e[2] - ref_dop)) ** 2
+                        if cost < best_cost:
+                            best_cost = cost
+                            best_lat, best_lon = lat, lon
+            # 按参与比对的站数归一化后取均方根，阈值 50 Hz
+            n_cmp = max(1, len(entries) - 1)
+            if (best_cost / n_cmp) ** 0.5 < 50.0:
+                for entry in entries:
+                    contact = entry[4]
                     contact.latitude = best_lat
                     contact.longitude = best_lon
                     contact.extra["fdoa_fix"] = True
@@ -1734,7 +1802,18 @@ class Environment:
                 "js_at_burnthrough": None,
             }
 
-        rj = _distance_m(self._platform_of(jammer), self._platform_of(emitter))
+        jammer_platform = self._platform_of(jammer)
+        emitter_platform = self._platform_of(emitter)
+        if jammer_platform is None or emitter_platform is None:
+            # 干扰机/雷达未注册到环境时无法计算 J/S，退化为无干扰结果
+            return {
+                "emitter": emitter.id,
+                "jammer": jammer.id,
+                "detection_range_km": r_max / 1000.0,
+                "un-jammed_range_km": r_max / 1000.0,
+                "burn_through_km": None,
+            }
+        rj = _distance_m(jammer_platform, emitter_platform)
         r_bt = propagation.burn_through_standoff_m(
             emitter.peak_power_w, emitter.gain_linear, rcs_m2,
             jammer.power_w, jammer.gain_linear, bandwidth_hz, jammer.bandwidth_hz,
@@ -1826,7 +1905,7 @@ def triangulate_ranges(ranges: list[tuple[float, float, float]]) -> tuple[float,
     x1, y1 = to_xy(lat1, lon1)
     x2, y2 = to_xy(lat2, lon2)
     d = math.hypot(x2 - x1, y2 - y1)
-    if d > r1 + r2 or d < abs(r1 - r2):
+    if d <= 1e-6 or d > r1 + r2 or d < abs(r1 - r2):
         return None
     a = (r1 * r1 - r2 * r2 + d * d) / (2 * d)
     h2 = r1 * r1 - a * a

@@ -21,6 +21,9 @@ from core.environment import Environment, Platform
 from core.jammer import Jammer
 from core.receiver import Receiver
 
+from .common import DEFAULT_CENTER, index_by_id, scatter_point
+from .weapon_kind import infer_weapon_kind
+
 SENSOR_ROLE_RADAR = set(range(2001, 2200)) | {2207, 2208, 2209}
 SENSOR_ROLE_ECM = {4001, 4011, 4021, 4031, 4091}
 SENSOR_ROLE_RWR = {3001}
@@ -37,9 +40,8 @@ def _hz(mhz_value: float | None) -> float:
 def _role_name(role_id: int | None) -> str:
     if role_id is None:
         return "search_radar"
-    if role_id in SENSOR_ROLE_RWR:
-        return "multifunction_radar" if False else "search_radar"
-    if role_id in SENSOR_ROLE_ECM or role_id in SENSOR_ROLE_ESM:
+    # 非雷达类传感器（RWR / ESM / ECM）角色一律按搜索雷达建发射机模型
+    if role_id in SENSOR_ROLE_RWR or role_id in SENSOR_ROLE_ECM or role_id in SENSOR_ROLE_ESM:
         return "search_radar"
     if role_id <= 2100:
         return "search_radar"
@@ -48,18 +50,6 @@ def _role_name(role_id: int | None) -> str:
     return "fire_control_radar"
 
 
-def _infer_weapon_kind(name: str) -> str:
-    """根据名称推断武器类型。"""
-    n = name.lower()
-    if "pl-" in n:
-        return "aam"
-    if "yj" in n or "c-8" in n or "ss-n" in n or "anti-ship" in n:
-        return "asm"
-    if "hq" in n or "sa-n" in n or "fl-3000" in n:
-        return "sam"
-    if n.startswith(("torpedo", "鱼雷", "tt")) or "torpedo" in n:
-        return "torpedo"
-    return "weapon"
 
 
 def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter], list[Receiver], list[Jammer]]:
@@ -147,8 +137,14 @@ def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter]
 
 def load_china_environment(path: str | Path = "data/china_full.json",
                            side: str = "red",
-                           limit_platforms: int | None = None) -> Environment:
-    """从完整导出 JSON 构建一个环境（平台位置默认 0,0，可后续设置）。"""
+                           limit_platforms: int | None = None,
+                           center: tuple[float, float] = DEFAULT_CENTER,
+                           spread_km: float = 250.0) -> Environment:
+    """从完整导出 JSON 构建一个环境。
+
+    数据库不含经纬度，所有单位按 center / spread_km 在指定海域展开
+    （此前一律放在 (0, 0)，全部重叠在几内亚湾一个点上）。
+    """
     path = Path(path)
     data = json.loads(path.read_text(encoding="utf-8"))
     env = Environment()
@@ -157,7 +153,12 @@ def load_china_environment(path: str | Path = "data/china_full.json",
     if limit_platforms is not None:
         selected = selected[:limit_platforms]
 
-    for p in selected:
+    lw_by_id = index_by_id(data.get("loadout_weapons", []))
+    mw_by_id = index_by_id(data.get("magazine_weapons", []))
+    perf_by_id = index_by_id(data.get("propulsion_performance", []))
+    total = len(selected)
+
+    for idx, p in enumerate(selected):
         raw = p.get("raw", {})
         pid = f"{p['kind']}-{raw.get('ID')}"
         name = raw.get("Name") or pid
@@ -173,13 +174,15 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             kind = "aircraft"
             speed_kt = float(raw.get("CruiseSpeedKts") or 400)
 
+        lat, lon = scatter_point(idx, total, center, spread_km)
+
         platform = Platform(
             id=pid,
             name=name,
             side=side,
             kind=kind,
-            latitude=0.0,
-            longitude=0.0,
+            latitude=lat,
+            longitude=lon,
             altitude_ft=30_000.0 if kind == "aircraft" else 0.0,
             heading_deg=0.0,
             speed_kt=speed_kt,
@@ -235,14 +238,12 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             loadout = data["loadouts"].get(str(lid))
             if not loadout:
                 continue
-            for lw in data.get("loadout_weapons", []):
-                if lw.get("ID") != lid:
-                    continue
+            for lw in lw_by_id.get(lid, []):
                 weapon = data["weapons"].get(str(lw.get("WeaponID")))
                 if not weapon:
                     continue
                 wname = weapon.get("Name") or "? "
-                kind2 = _infer_weapon_kind(wname)
+                kind2 = infer_weapon_kind(wname)
                 count = int(lw.get("DefaultLoad") or loadout.get("Capacity") or 1)
                 platform.loadout_weapons.append({
                     "name": wname,
@@ -260,9 +261,7 @@ def load_china_environment(path: str | Path = "data/china_full.json",
             mag = data["magazines"].get(str(mid))
             if not mag:
                 continue
-            for mw in data.get("magazine_weapons", []):
-                if mw.get("ID") != mid:
-                    continue
+            for mw in mw_by_id.get(mid, []):
                 weapon = data["weapons"].get(str(mw.get("WeaponID")))
                 if not weapon:
                     continue
@@ -271,19 +270,21 @@ def load_china_environment(path: str | Path = "data/china_full.json",
                 if wname not in platform.ammo:
                     platform.ammo[wname] = 0
                 if wname not in platform.max_ammo:
-                    platform.max_ammo[wname] = max(1, int(mag.get("Capacity") or 0) and 1 or 1)
+                    # 保持原语义：待发弹位固定 1 发，其余靠装填补充。
+                    # 原式写作 max(1, int(...) and 1 or 1) 恒等于 1，语义不明，
+                    # 这里改写为直白写法，未改变实际行为。
+                    platform.max_ammo[wname] = 1
 
         # 推进性能 -> 最大速度/燃料
         max_speed = 0.0
         for prid in p.get("propulsion_ids", []):
-            for perf in data.get("propulsion_performance", []):
-                if perf.get("ID") == prid:
-                    spd = float(perf.get("Speed") or 0)
-                    max_speed = max(max_speed, spd)
-                    plat_fuel = float(perf.get("Consumption") or 0)
-                    if plat_fuel > 0:
-                        platform.fuel_consumption_kg_per_h = max(
-                            platform.fuel_consumption_kg_per_h, plat_fuel)
+            for perf in perf_by_id.get(prid, []):
+                spd = float(perf.get("Speed") or 0)
+                max_speed = max(max_speed, spd)
+                plat_fuel = float(perf.get("Consumption") or 0)
+                if plat_fuel > 0:
+                    platform.fuel_consumption_kg_per_h = max(
+                        platform.fuel_consumption_kg_per_h, plat_fuel)
         if max_speed > 0:
             platform.max_speed_kt = max_speed
             platform.speed_kt = min(platform.speed_kt, max_speed)

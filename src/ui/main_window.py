@@ -253,16 +253,17 @@ class MainWindow(QMainWindow):
         self._sync_toolbar_actions()
 
     def _sync_toolbar_actions(self) -> None:
-        for jammer in self.env.all_jammers():
+        """按首个辐射源/干扰机的状态同步工具栏开关。"""
+        jammer = next(iter(self.env.all_jammers()), None)
+        if jammer is not None:
             self.jammer_action.blockSignals(True)
             self.jammer_action.setChecked(jammer.is_jamming)
             self.jammer_action.blockSignals(False)
-            break
-        for emitter in self.env.all_emitters():
+        emitter = next(iter(self.env.all_emitters()), None)
+        if emitter is not None:
             self.radar_action.blockSignals(True)
             self.radar_action.setChecked(emitter.is_emitting)
             self.radar_action.blockSignals(False)
-            break
 
     def _on_radar_toggled(self, checked: bool) -> None:
         for emitter in self.env.all_emitters():
@@ -281,14 +282,36 @@ class MainWindow(QMainWindow):
         self.emcon_panel.populate(self.env)
 
     def _on_jammer_mode_clicked(self) -> None:
-        for jammer in self.env.all_jammers():
+        jammers = self.env.all_jammers()
+        for jammer in jammers:
             new_mode = "barrage_noise" if jammer.current_mode == "spot_noise" else "spot_noise"
             jammer.set_mode(new_mode)
-        mode = self.env.all_jammers()[0].current_mode if self.env.all_jammers() else "spot_noise"
+        mode = jammers[0].current_mode if jammers else "spot_noise"
         label = "干扰样式：阻塞" if mode == "barrage_noise" else "干扰样式：瞄准"
         self.jammer_mode_action.setText(label)
         self.map_widget.refresh()
         self.statusBar().showMessage(f"干扰样式已切换为 {'阻塞式' if mode == 'barrage_noise' else '瞄准式'}噪声")
+
+    def _bind_environment(self, load_signal_library: bool = False) -> None:
+        """切换 Environment 后统一刷新各面板。
+
+        此前三个加载入口各自重复了 7 行刷新代码，且都没有重置
+        _last_event_count：换到事件数更少的新想定后，状态栏会因为
+        len(events) 一直追不上旧计数而彻底不再显示事件消息。
+        """
+        if load_signal_library:
+            try:
+                self.env.load_signal_library("data/signal_params.json")
+            except (OSError, ValueError, KeyError):
+                pass
+        self.map_widget.set_environment(self.env)
+        self.emcon_panel.populate(self.env)
+        self.contact_list.update_contacts(self.env)
+        self.spectrum_widget.set_environment(self.env)
+        self.false_target_panel.update_false_targets(self.env)
+        self._update_unit_info_bar()
+        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
+        self._last_event_count = len(self.env.events)
 
     def _on_save_scenario(self) -> None:
         path, _ = QFileDialog.getSaveFileName(
@@ -304,17 +327,7 @@ class MainWindow(QMainWindow):
         if not path:
             return
         self.env = load_scenario(path)
-        self.map_widget.set_environment(self.env)
-        try:
-            self.env.load_signal_library("data/signal_params.json")
-        except (OSError, ValueError, KeyError):
-            pass
-        self.emcon_panel.populate(self.env)
-        self.contact_list.update_contacts(self.env)
-        self.spectrum_widget.set_environment(self.env)
-        self.false_target_panel.update_false_targets(self.env)
-        self._update_unit_info_bar()
-        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
+        self._bind_environment(load_signal_library=True)
         self._on_side_changed(self.side_combo.currentText())
         self.statusBar().showMessage(f"想定已加载：{path}")
 
@@ -341,13 +354,7 @@ class MainWindow(QMainWindow):
         except (OSError, ValueError, KeyError) as exc:
             QMessageBox.warning(self, "加载失败", str(exc))
             return
-        self.map_widget.set_environment(self.env)
-        self.emcon_panel.populate(self.env)
-        self.contact_list.update_contacts(self.env)
-        self.spectrum_widget.set_environment(self.env)
-        self.false_target_panel.update_false_targets(self.env)
-        self._update_unit_info_bar()
-        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
+        self._bind_environment()
         self.side_combo.setCurrentText("红方")
         self.statusBar().showMessage(f"已加载中国军力数据：{path}（{len(self.env.platforms)} 个平台）")
 
@@ -361,13 +368,7 @@ class MainWindow(QMainWindow):
         except (OSError, ValueError, KeyError) as exc:
             QMessageBox.warning(self, "加载失败", str(exc))
             return
-        self.map_widget.set_environment(self.env)
-        self.emcon_panel.populate(self.env)
-        self.contact_list.update_contacts(self.env)
-        self.spectrum_widget.set_environment(self.env)
-        self.false_target_panel.update_false_targets(self.env)
-        self._update_unit_info_bar()
-        self.weapon_panel.show_platform(self.env, self._selected_platform_id())
+        self._bind_environment()
         self.side_combo.setCurrentText("蓝方")
         self.statusBar().showMessage(
             f"已加载 CMO 国家数据：{path}（{len(self.env.platforms)} 个平台）")

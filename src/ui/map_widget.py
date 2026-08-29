@@ -421,6 +421,8 @@ class MapWidget(QGraphicsView):
     def _move_selected_to(self, scene_pos: QPointF) -> None:
         env = self._env
         proj = self._projection
+        if env is None or proj is None:
+            return
         lat, lon = proj.from_xy(scene_pos.x(), scene_pos.y())
         append = bool(QApplication.keyboardModifiers() & Qt.KeyboardModifier.ShiftModifier)
         moved = []
@@ -617,7 +619,6 @@ class MapWidget(QGraphicsView):
         menu.addAction("设置航路点（然后右键地图）", lambda: self.command_issued.emit(
             "请选中该单位后，右键地图空白处设置航路点"))
         menu.addAction("编入小队", lambda: self._platform_join_group(pid))
-        menu.addAction("归队", lambda: self._platform_leave_group(pid))
         menu.addAction("离队", lambda: self._platform_leave_group(pid))
         menu.addAction("返航 / 返回出发地", lambda: self._platform_return_home(pid))
 
@@ -787,15 +788,25 @@ class MapWidget(QGraphicsView):
             self._rebuild()
 
     def _show_map_menu(self, global_pos: QPoint) -> None:
+        # 此前这里有三个条目，其中两个文案不同但都执行同一个
+        # _clear_all_waypoints，属复制粘贴残留。
         menu = QMenu(self)
-        menu.addAction("取消全部航路点", self._clear_all_waypoints)
-        menu.addAction("取消全部航路点", self._clear_all_waypoints)
-        menu.addAction("区域设置（简化版：清除全部航路点）", self._clear_all_waypoints)
+        menu.addAction("取消选中单位的航路点",
+                       lambda: self._clear_waypoints(only_selected=True))
+        menu.addAction("取消全部单位的航路点",
+                       lambda: self._clear_waypoints(only_selected=False))
         menu.exec(global_pos)
 
-    def _clear_all_waypoints(self) -> None:
+    def _clear_waypoints(self, only_selected: bool = True) -> None:
         env = self._env
-        for pid in list(self._selected_platform_ids):
-            env.clear_waypoints(pid)
-        self.command_issued.emit("已取消选中单位的全部航路点")
+        if env is None:
+            return
+        if only_selected:
+            for pid in list(self._selected_platform_ids):
+                env.clear_waypoints(pid)
+            self.command_issued.emit("已取消选中单位的全部航路点")
+        else:
+            count = len(env.waypoints)
+            env.waypoints.clear()
+            self.command_issued.emit(f"已取消全部单位的航路点（{count} 条航线）")
         self._rebuild()

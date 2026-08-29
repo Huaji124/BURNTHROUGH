@@ -20,6 +20,7 @@ class Missile:
     decoyed: bool = False             # 是否被欺骗干扰诱骗
     active: bool = True
     flight_time_s: float = 0.0
+    distance_flown_m: float = 0.0     # 累计航程，用于射程耗尽判定
     no_emission_time: float = 0.0
     last_locked_lat: float | None = None
     last_locked_lon: float | None = None

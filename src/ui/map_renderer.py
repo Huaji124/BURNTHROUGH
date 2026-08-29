@@ -297,6 +297,11 @@ def draw_phased_array_sector(scene: QGraphicsScene, proj: LocalProjection,
 def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjection,
                     side: str | None = None) -> None:
     """绘制雷达无干扰圈、干扰后圈、烧穿圈与干扰连线。"""
+    # 干扰资源分配与干扰机索引各算一次。此前 assign_jammers() 位于「平台 ×
+    # 辐射源」的二重循环内部，每部雷达都要重跑一遍全局分配（复杂度约
+    # O(辐射源 × 平台² × 干扰机)），装备库一上量就会直接卡死界面。
+    assignment = env.assign_jammers()
+    jammer_by_id = {j.id: j for j in env.all_jammers()}
     for platform in env.platforms.values():
         if side is not None and platform.side != side:
             continue
@@ -306,15 +311,8 @@ def draw_ew_circles(scene: QGraphicsScene, env: Environment, proj: LocalProjecti
             if emitter.role not in ("multifunction_radar", "search_radar", "fire_control_radar"):
                 continue
             # Phase 3：使用全局干扰资源分配结果
-            assignment = env.assign_jammers()
             jammer_id = assignment.get(emitter.id)
-            jammer = None
-            if jammer_id is not None:
-                for other in env.platforms.values():
-                    for j in other.jammers:
-                        if j.id == jammer_id:
-                            jammer = j
-                            break
+            jammer = jammer_by_id.get(jammer_id) if jammer_id is not None else None
             result = env.evaluate_radar_with_jamming(
                 emitter, jammer, rcs_m2=1000.0, bandwidth_hz=1_000_000,
                 noise_figure=5.0, loss=6.0, snr_min_db=13.0)
