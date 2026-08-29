@@ -590,7 +590,8 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             line = QGraphicsLineItem(x1, y1, x2, y2)
             line.setPen(pen)
             line.setZValue(4)
-            line.setToolTip(f"雷达接触: {target.name} / {contact.range_m/1852.0:.1f}nm")
+            target_name = target.name if target is not None else missile.name
+            line.setToolTip(f"雷达接触: {target_name} / {contact.range_m/1852.0:.1f}nm")
             scene.addItem(line)
             quality = contact.extra.get("track_quality", "search")
             dist_km = (contact.range_m or 0.0) / 1000.0
