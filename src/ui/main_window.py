@@ -372,9 +372,9 @@ class MainWindow(QMainWindow):
                 path = dlg.selected_local_path
                 unit_env = load_unit_file(path, side=side)
             elif dlg.selected_country is not None:
-                cdir, pid = dlg.selected_country
+                cdir, pid, kind = dlg.selected_country
                 path = Path(cdir) / f"{pid}.json"
-                unit_env = load_country_unit_file(cdir, pid, side=side)
+                unit_env = load_country_unit_file(cdir, pid, side=side, kind=kind)
             else:
                 return
         except (OSError, ValueError, KeyError) as exc:

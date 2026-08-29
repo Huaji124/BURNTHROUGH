@@ -30,11 +30,11 @@ SENSOR_ROLE_RWR = {3001}
 SENSOR_ROLE_ESM = {3011, 3012, 3031, 3032, 3201, 3202}
 
 
-def _hz(mhz_value: float | None) -> float:
-    """CMO 数据库频率以 MHz 存储；统一转 Hz。"""
-    if not mhz_value:
+def _hz(hz_value: float | None) -> float:
+    """CMO 数据库频率/带宽字段以 Hz 存储；统一返回 Hz。"""
+    if not hz_value:
         return 1_000_000_000.0
-    return float(mhz_value) * 1_000_000
+    return float(hz_value)
 
 
 def _role_name(role_id: int | None) -> str:
@@ -70,7 +70,8 @@ def _sensor_to_components(sensor: dict, platform_id: str) -> tuple[list[Emitter]
             freq_min_hz=_hz(sensor.get("FrequencyLower")),
             freq_max_hz=_hz(sensor.get("FrequencyUpper")),
             peak_power_w=float(sensor.get("RadarPeakPower") or 100_000),
-            antenna_gain_db=0.0,
+            # 数据库未导出天线增益；给雷达一个典型波束增益，保证视距内探测
+            antenna_gain_db=40.0,
             prf_min_hz=float(sensor.get("RadarPRF") or 500),
             prf_max_hz=float(sensor.get("RadarPRF") or 5000),
             scan_period_s=float(sensor.get("ScanInterval") or 4.0),

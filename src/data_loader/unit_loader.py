@@ -83,6 +83,9 @@ def add_unit_to_environment(env: Environment, data: dict, side: str = "red") -> 
             platform.gun_hit_probability = max(platform.gun_hit_probability, 0.15)
         if any(k in mname.lower() for k in ("chaff", "decoy", "dl", "诱饵", "干扰弹")):
             platform.chaff_count = max(platform.chaff_count, int(mount.get("Capacity") or 12))
+        if (any(k in mname.lower() for k in ("ssm", "anti-ship", "yj", "c-8", "ss-n", "harpoon"))
+                and "ssm" not in platform.weapons):
+            platform.weapons.append("ssm")
 
     # 挂载 -> 实际导弹
     for lw in data.get("loadout_weapons", []):
@@ -129,12 +132,18 @@ def add_unit_to_environment(env: Environment, data: dict, side: str = "red") -> 
 
 
 def load_country_unit_file(country_dir: str | Path, platform_id: str,
-                           side: str = "blue") -> Environment:
+                           side: str = "blue",
+                           kind: str | None = None) -> Environment:
     """从 cmo_full_by_country 国家目录加载单个平台。"""
     from data_loader.cmo_world_loader import _build_from_data
     cdir = Path(country_dir)
     platforms = json.loads((cdir / "platforms.json").read_text(encoding="utf-8"))
-    selected = next((p for p in platforms if str(p.get("raw", {}).get("ID")) == str(platform_id)), None)
+    candidates = [p for p in platforms if str(p.get("raw", {}).get("ID")) == str(platform_id)]
+    selected = None
+    if kind:
+        selected = next((p for p in candidates if p.get("kind") == kind), None)
+    if selected is None:
+        selected = candidates[0] if candidates else None
     if selected is None:
         raise ValueError(f"未找到平台 {platform_id}")
 

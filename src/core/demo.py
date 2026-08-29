@@ -11,7 +11,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from .emitter import Emitter
 from .environment import Environment, Platform
 from .jammer import Jammer
 from .receiver import Receiver
@@ -37,155 +36,85 @@ def _make_esm(platform_id: str, esm_id: str, name: str) -> Receiver:
     )
 
 
+def _rebind_platform_components(platform: Platform) -> None:
+    """平台 ID 被重命名后，同步其传感器/干扰机/接收机归属。"""
+    for e in platform.emitters:
+        e.platform_id = platform.id
+    for r in platform.receivers:
+        r.platform_id = platform.id
+    for j in platform.jammers:
+        j.platform_id = platform.id
+
+
 def build_demo_environment() -> Environment:
+    """演示想定：直接使用数据库单位（两艘055 + EA-18G）。"""
+    from data_loader.unit_loader import load_country_unit_file, load_unit_file
+
     env = Environment()
-    # 演示想定使用良好天气，避免天气衰减导致雷达探测不到
     env.sea_state = 0
     env.rain_mm_h = 0.0
     env.visibility_km = 50.0
     env.cloud_cover_pct = 0.0
     env.humidity_pct = 50.0
 
-    # 红方驱逐舰
-    red_ddg = Platform(
-        id="red_ddg",
-        name="红方055-1",
-        side="red",
-        kind="ship",
-        latitude=22.0,
-        longitude=120.0,
-        altitude_ft=50.0,
-        heading_deg=0.0,
-        speed_kt=0.0,
-        cruise_speed_kt=20.0,
-    )
-    red_ddg.weapons = ["反舰导弹 x8", "防空导弹 x16"]
-    red_ddg.loadout_weapons = [
-        {"name": "YJ-83反舰导弹", "kind": "asm", "range_km": 120, "speed_mps": 300, "count": 4},
-        {"name": "反辐射导弹", "kind": "arm", "range_km": 150, "speed_mps": 850, "count": 2},
-    ]
-    red_ddg.ammo = {"YJ-83反舰导弹": 4, "反辐射导弹": 2}
-    red_ddg.max_ammo = {"YJ-83反舰导弹": 4, "反辐射导弹": 2}
+    u1 = load_unit_file("data/units/ship-2834.json", side="red")
+    p1 = next(iter(u1.platforms.values()))
+    p1.id = "red_ddg"
+    p1.name = "红方055-1"
+    p1.latitude = 22.0
+    p1.longitude = 120.0
+    _rebind_platform_components(p1)
+    env.add_platform(p1)
 
-    red_ddg.emitters.append(Emitter(
-        id="type346_search_radar",
-        name="Type 346 搜索雷达（演示）",
-        role="multifunction_radar",
-        band="S",
-        freq_min_hz=2_000_000_000,
-        freq_max_hz=4_000_000_000,
-        peak_power_w=1_000_000,
-        antenna_gain_db=40,
-        pulse_width_min_us=0.5,
-        pulse_width_max_us=50,
-        prf_min_hz=500,
-        prf_max_hz=5000,
-        scan_type="mechanical_scan",
-        scan_period_s=4,
-        beam_width_deg=1.5,
-        emcon_state="on",
-        platform_id="red_ddg",
-    ))
-    red_ddg.receivers.append(_make_esm("red_ddg", "esm_ddg", "驱逐舰 ESM"))
-    env.add_platform(red_ddg)
+    u2 = load_unit_file("data/units/ship-2834.json", side="red")
+    p2 = next(iter(u2.platforms.values()))
+    p2.id = "red_ffg"
+    p2.name = "红方055-2"
+    p2.latitude = 22.5
+    p2.longitude = 120.5
+    _rebind_platform_components(p2)
+    env.add_platform(p2)
 
-    # 红方护卫舰（交叉定位站）
-    red_ffg = Platform(
-        id="red_ffg",
-        name="红方055-2",
-        side="red",
-        kind="ship",
-        latitude=22.9,
-        longitude=120.55,
-        altitude_ft=40.0,
-        heading_deg=0.0,
-        speed_kt=0.0,
-        cruise_speed_kt=20.0,
-    )
-    red_ffg.weapons = ["反舰导弹 x4", "防空导弹 x8"]
-    red_ffg.receivers.append(_make_esm("red_ffg", "esm_ffg", "055-2 ESM"))
-    red_ffg.emitters.append(Emitter(
-        id="type346_search_radar_ffg",
-        name="055-2 搜索雷达",
-        role="multifunction_radar",
-        band="S",
-        freq_min_hz=2_000_000_000,
-        freq_max_hz=4_000_000_000,
-        peak_power_w=1_000_000,
-        antenna_gain_db=40,
-        scan_period_s=4,
-        beam_width_deg=1.5,
-        emcon_state="on",
-        platform_id="red_ffg",
-    ))
-    env.add_platform(red_ffg)
+    # 055 的生成 DB 中没有可发射反舰/反辐射武器；演示想定补充弹药，
+    # 让红方舰艇可以展示导弹发射/拦截/反辐射攻击链路。
+    for p in (p1, p2):
+        # 数据库里的扫描周期写入处理延迟/首次截获概率；演示缩短为秒级以便观察
+        for r in p.receivers:
+            if r.kind in ("esm", "rwr"):
+                r.processing_time_s = 1.0
+        for e in p.emitters:
+            if e.role in ("multifunction_radar", "search_radar", "fire_control_radar"):
+                e.scan_period_s = min(e.scan_period_s, 1.0)
+        if not p.loadout_weapons:
+            p.loadout_weapons = [
+                {"name": "反舰导弹", "kind": "asm", "range_km": 120, "speed_mps": 300, "count": 16},
+                {"name": "反辐射导弹", "kind": "arm", "range_km": 150, "speed_mps": 850, "count": 4},
+            ]
+            p.ammo = {"反舰导弹": 16, "反辐射导弹": 4}
+            p.max_ammo = {"反舰导弹": 16, "反辐射导弹": 4}
+            p.weapons.append("ssm")
 
-    # 蓝方电子战飞机：绕红方驱逐舰飞行，半径约 103 km
-    orbit_radius_km = 103.0
-    blue_ew = Platform(
-        id="blue_ew",
-        name="蓝方电子战机",
-        side="blue",
-        kind="aircraft",
-        latitude=22.0,
-        longitude=121.0,
-        altitude_ft=30_000,
-        heading_deg=0.0,
-        speed_kt=420.0,
-        cruise_speed_kt=420.0,
-        orbit_center_lat=22.0,
-        orbit_center_lon=120.0,
-        orbit_radius_km=orbit_radius_km,
-        orbit_direction=1,
-    )
-    blue_ew.weapons = ["反辐射导弹 x2", "空空导弹 x4"]
-    blue_ew.emitters.append(Emitter(
-        id="apg66_blue",
-        name="蓝方战机搜索雷达",
-        role="search_radar",
-        band="X",
-        freq_min_hz=9_000_000_000,
-        freq_max_hz=10_000_000_000,
-        peak_power_w=100_000,
-        antenna_gain_db=34,
-        scan_period_s=2,
-        beam_width_deg=2.5,
-        emcon_state="on",
-        platform_id="blue_ew",
-    ))
-    blue_ew.loadout_weapons = [
-        {"name": "PL-12C", "kind": "aam", "range_km": 90, "speed_mps": 1200, "count": 4},
-        {"name": "反辐射导弹", "kind": "arm", "range_km": 150, "speed_mps": 850, "count": 2},
-    ]
-    blue_ew.ammo = {"PL-12C": 4, "反辐射导弹": 2}
-    blue_ew.max_ammo = {"PL-12C": 4, "反辐射导弹": 2}
-    blue_ew.jammers.append(Jammer(
-        id="ecm_pod_rkz",
-        name="有源干扰吊舱（演示）",
-        mode=["noise", "deception"],
-        band=["S", "X", "Ku"],
-        freq_min_hz=2_000_000_000,
-        freq_max_hz=18_000_000_000,
-        power_w=100,
-        gain_db=20,
-        spot_bandwidth_hz=20_000_000,
-        barrage_bandwidth_hz=500_000_000,
-        current_mode="spot_noise",
-        sector_half_deg=360.0,
-        techniques=["spot_noise", "barrage_noise"],
-        reaction_time_s=0.5,
-        max_targets=4,
-        emcon_state="on",
-        platform_id="blue_ew",
-    ))
-    env.add_platform(blue_ew)
+    u3 = load_country_unit_file("data/cmo_full_by_country/united_states", "343", side="blue", kind="aircraft")
+    b = next(iter(u3.platforms.values()))
+    b.id = "blue_ew"
+    b.name = "蓝方EA-18G电子战机"
+    b.latitude = 22.0
+    b.longitude = 121.0
+    _rebind_platform_components(b)
+    # 补充：保证演示 EW 场景有可识别的干扰吊舱（数据库里的 AN/USQ-113
+    # 通信干扰机不覆盖舰载雷达频段，因此把演示吊舱放在首位）。
+    b.jammers.insert(0, Jammer(
+        id="ecm_pod_rkz", name="有源干扰吊舱（演示）",
+        mode=["noise", "deception"], band=["S", "X", "Ku"],
+        freq_min_hz=500_000_000, freq_max_hz=18_000_000_000,
+        power_w=100, gain_db=30, spot_bandwidth_hz=20_000_000,
+        barrage_bandwidth_hz=500_000_000, current_mode="spot_noise",
+        sector_half_deg=360.0, emcon_state="on", platform_id="blue_ew"))
+    # 演示反辐射链路时不让箔条随机干扰 ARM 命中，假目标诱骗由专门测试覆盖
+    b.chaff_count = 0
+    env.add_platform(b)
 
-    # 示例地形（本地数据）
-    coast_path = "data/environment/coastlines.json"
-    if Path(coast_path).exists():
-        env.load_coastlines_from_json(coast_path)
     world_path = "data/environment/world_land.json"
     if Path(world_path).exists():
         env.load_world_land_from_json(world_path)
-
     return env

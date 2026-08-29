@@ -123,7 +123,7 @@ class UnitPickerDialog(QDialog):
             if kind_filter != "全部" and kind != kind_filter:
                 continue
             item = QListWidgetItem(f"{name}  [{kind}]")
-            item.setData(Qt.ItemDataRole.UserRole, ("country", str(cdir), str(pid)))
+            item.setData(Qt.ItemDataRole.UserRole, ("country", str(cdir), str(pid), str(kind)))
             self.list_widget.addItem(item)
 
     def _accept_item(self, *_args) -> None:
@@ -136,5 +136,5 @@ class UnitPickerDialog(QDialog):
             self.selected_country = None
         else:
             self.selected_local_path = None
-            self.selected_country = (Path(data[1]), data[2])
+            self.selected_country = (Path(data[1]), data[2], data[3] if len(data)>3 else None)
         self.accept()
