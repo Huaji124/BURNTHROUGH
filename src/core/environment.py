@@ -1402,7 +1402,7 @@ class Environment:
                 continue
             # 导弹RCS较小
             result = self.evaluate_radar_with_jamming(
-                emitter, jammer, rcs_m2=5.0)
+                emitter, jammer, rcs_m2=20.0)
             detection_km = result["detection_range_km"] * self._weather_penalty()
             if dist_m <= detection_km * 1000.0:
                 contact = radar_map.get(missile.id)
