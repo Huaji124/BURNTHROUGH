@@ -126,3 +126,31 @@ def add_unit_to_environment(env: Environment, data: dict, side: str = "red") -> 
 
     env.add_platform(platform)
     return platform.id
+
+
+def load_country_unit_file(country_dir: str | Path, platform_id: str,
+                           side: str = "blue") -> Environment:
+    """从 cmo_full_by_country 国家目录加载单个平台。"""
+    from data_loader.cmo_world_loader import _build_from_data
+    cdir = Path(country_dir)
+    platforms = json.loads((cdir / "platforms.json").read_text(encoding="utf-8"))
+    selected = next((p for p in platforms if str(p.get("raw", {}).get("ID")) == str(platform_id)), None)
+    if selected is None:
+        raise ValueError(f"未找到平台 {platform_id}")
+
+    def load_dict(name: str) -> dict:
+        pth = cdir / name
+        if pth.exists():
+            return json.loads(pth.read_text(encoding="utf-8"))
+        return {}
+
+    data = {
+        "platforms": [selected],
+        "sensors": load_dict("sensors.json"),
+        "mounts": load_dict("mounts.json"),
+        "weapons": load_dict("weapons.json"),
+        "loadout_weapons": list(load_dict("loadout_weapons.json")) if isinstance(load_dict("loadout_weapons.json"), list) else load_dict("loadout_weapons.json"),
+        "loadouts": load_dict("loadouts.json"),
+    }
+    env = _build_from_data(data, side=side, limit_platforms=1)
+    return env

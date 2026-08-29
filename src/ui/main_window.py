@@ -26,7 +26,7 @@ from data_loader.china_loader import load_china_environment
 from data_loader.cmo_world_loader import (
     load_cmo_country_environment,
 )
-from data_loader.unit_loader import load_unit_file
+from data_loader.unit_loader import load_country_unit_file, load_unit_file
 
 from .contact_list import ContactListWidget
 from .emcon_panel import EmconPanel
@@ -364,12 +364,19 @@ class MainWindow(QMainWindow):
 
     def _on_load_unit(self) -> None:
         dlg = UnitPickerDialog(self)
-        if dlg.exec() != UnitPickerDialog.DialogCode.Accepted or dlg.selected_path is None:
+        if dlg.exec() != UnitPickerDialog.DialogCode.Accepted:
             return
-        path = dlg.selected_path
         side = "red" if self.side_combo.currentText() == "红方" else "blue"
         try:
-            unit_env = load_unit_file(path, side=side)
+            if dlg.selected_local_path is not None:
+                path = dlg.selected_local_path
+                unit_env = load_unit_file(path, side=side)
+            elif dlg.selected_country is not None:
+                cdir, pid = dlg.selected_country
+                path = Path(cdir) / f"{pid}.json"
+                unit_env = load_country_unit_file(cdir, pid, side=side)
+            else:
+                return
         except (OSError, ValueError, KeyError) as exc:
             QMessageBox.warning(self, "加载失败", str(exc))
             return
@@ -383,7 +390,7 @@ class MainWindow(QMainWindow):
         self.weapon_panel.show_platform(self.env, self._selected_platform_id())
         self._update_unit_info_bar()
         self._on_side_changed(self.side_combo.currentText())
-        self.statusBar().showMessage(f"已加载单位：{Path(path).name}")
+        self.statusBar().showMessage(f"已加载单位：{path.name}")
 
     def _on_load_cmo_world(self) -> None:
         path = QFileDialog.getExistingDirectory(
