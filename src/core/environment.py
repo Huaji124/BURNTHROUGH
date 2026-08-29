@@ -1378,6 +1378,65 @@ class Environment:
                             radar_map.pop(target.id, None)
                         elif contact is not None:
                             contact.is_memory = True
+            # 探测飞行导弹
+            self._update_missile_contacts_for_radar(
+                radar_platform, emitter, radar_map, jammer, now)
+
+    def _update_missile_contacts_for_radar(self, radar_platform: Platform,
+                                            emitter: Emitter, radar_map: dict,
+                                            jammer: Jammer | None, now: float) -> None:
+        """雷达对飞行中导弹的探测。"""
+        for missile in self.missiles:
+            if not missile.active:
+                continue
+            attacker = self.platforms.get(missile.attacker_id)
+            if attacker is not None and attacker.side == radar_platform.side:
+                continue
+            if not attacker or not attacker.alive:
+                continue
+            dist_m = haversine_nm(radar_platform.latitude, radar_platform.longitude,
+                                  missile.lat, missile.lon) * 1852.0
+            horizon_nm = self._get_horizon_nm(radar_platform, attacker)
+            if dist_m > horizon_nm * 1852.0:
+                radar_map.pop(missile.id, None)
+                continue
+            # 导弹RCS较小
+            result = self.evaluate_radar_with_jamming(
+                emitter, jammer, rcs_m2=5.0)
+            detection_km = result["detection_range_km"] * self._weather_penalty()
+            if dist_m <= detection_km * 1000.0:
+                contact = radar_map.get(missile.id)
+                if contact is None:
+                    contact = Contact(
+                        id=f"{radar_platform.id}-r-{missile.id}",
+                        kind="radar_contact",
+                        own_platform_id=radar_platform.id,
+                        time_s=now,
+                        emitter_id=missile.id,
+                        emitter_name=missile.name,
+                    )
+                    radar_map[missile.id] = contact
+                contact.bearing_deg = initial_bearing_deg(
+                    radar_platform.latitude, radar_platform.longitude,
+                    missile.lat, missile.lon)
+                contact.range_m = dist_m
+                contact.latitude = missile.lat
+                contact.longitude = missile.lon
+                contact.time_s = now
+                contact.last_update_s = now
+                contact.is_memory = False
+                contact.confidence = 0.8
+                contact.extra.update({
+                    "detection_km": detection_km,
+                    "track_quality": "fire_control" if dist_m <= detection_km * 0.7 * 1000.0 else "search",
+                    "inferred_type": "飞行导弹",
+                })
+            else:
+                contact = radar_map.get(missile.id)
+                if contact is not None and now - contact.last_update_s > self.memory_ttl_s:
+                    radar_map.pop(missile.id, None)
+                elif contact is not None:
+                    contact.is_memory = True
 
     def update_ir_detection(self, dt_s: float) -> None:
         """红外探测主流程：无源可见光/红外发现目标。

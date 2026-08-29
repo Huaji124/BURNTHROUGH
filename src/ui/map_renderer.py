@@ -574,10 +574,15 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             continue
         for contact in radar_map.values():
             target = env.platforms.get(contact.emitter_id)
-            if target is None:
+            missile = next((m for m in env.missiles if m.id == contact.emitter_id and m.active), None)
+            if target is None and missile is None:
                 continue
+            if target is not None:
+                tx, ty = target.latitude, target.longitude
+            else:
+                tx, ty = missile.lat, missile.lon
             x1, y1 = proj.to_xy(own.latitude, own.longitude)
-            x2, y2 = proj.to_xy(target.latitude, target.longitude)
+            x2, y2 = proj.to_xy(tx, ty)
             color = QColor("#7f8c8d") if contact.is_memory else QColor("#2980b9")
             pen = QPen(color, 1.0)
             pen.setStyle(Qt.PenStyle.DashLine if contact.is_memory else Qt.PenStyle.SolidLine)
@@ -592,7 +597,7 @@ def draw_radar_contacts(scene: QGraphicsScene, env: Environment, proj: LocalProj
             if quality == "fire_control":
                 # 火控级：按目标类型显示精确目标符号
                 size = 7.0
-                if target.kind == "aircraft":
+                if missile is not None or target.kind == "aircraft":
                     pts = [QPointF(0, -size), QPointF(-size * 0.8, size * 0.8),
                            QPointF(0, size * 0.3), QPointF(size * 0.8, size * 0.8)]
                     marker = scene.addPolygon(QPolygonF(pts))
